@@ -1,0 +1,60 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+**/logs/
+
+# Large/generated files - never commit these
+*.docx
+*.xlsx
+*.pdf
+*.json
+*.bacpac
+*.bak
+*.db
+*.duckdb
+*.zip
+*.tar.gz
+*.txt
+*.png
+
+# Raw data and generated outputs - archive separately, e.g. Zenodo
+/Datalakes/
+**/csv/
+**/data/
+**/knowledge/
+**/ccm_output/
+**/outputs/
+outputs/
+results/
+ERDs/
+
+# Dataset folders are excluded from the public code repository
+/Airportdb/
+/Chinook/
+/DellStore2/
+/Employees/
+/FDA_AdverseEvents/
+/IMDBJoinOrderBenchmark/
+/LahmanBaseball/
+/Mondial/
+/Northwind/
+/Sakila/
+/StackOverflowDataDump/
+/Synthea/
+/TPCDS/
+/WideWorldImporters/
+/adventure_works/
+/eicu/
+/mimiciv/
+/tcph/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Office lock files
+~$*
