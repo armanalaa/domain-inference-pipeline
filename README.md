@@ -113,6 +113,9 @@ DomainMiner/
 |   +-- list_derived_weights.py    # Cross-dataset similarity weight summary
 |   +-- sum_row_col.py             # Dataset table/column totals
 |   +-- extract_erd.py             # Generate ERD files from one schema/subdomain JSON
++-- erds/                         # ERDs used for evaluation
+|   +-- DomainMiner_ERDs.zip       # Zip archive of all ERDs
+|   +-- <Dataset>/                 # Complete schema and inferred-domain ERDs
 +-- validation/                   # Expert validation material for review
 |   +-- Questionnaire.pdf          # Blank questionnaire shown to the experts
 |   +-- Expert_Validation_Responses_Anonymized.xlsx
@@ -136,7 +139,7 @@ DomainMiner/
             +-- tune_params_summary.txt
 ```
 
-The `validation/` folder contains only anonymized expert validation material. The original Google Forms export is not included because it contains identifying information such as names, email addresses, and timestamps.
+The `erds/` folder contains the ERDs used during evaluation, including full data lake schema ERDs and ERDs for the inferred labeled domains. The `validation/` folder contains only anonymized expert validation material. The original Google Forms export is not included because it contains identifying information such as names, email addresses, and timestamps.
 
 ---
 
