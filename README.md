@@ -23,8 +23,8 @@ DomainMiner takes a collection of CSV files and groups them into business domain
    - [Step 7 - Pick the best result](#step-7---pick-the-best-result)
 7. [Running a Single Configuration](#running-a-single-configuration)
 8. [Parameter Reference](#parameter-reference)
-9. [Internal Pipeline Scripts - Parameters & Examples](#internal-pipeline-scripts---parameters--examples)
-10. [Analysis & Reporting Utilities](#analysis--reporting-utilities)
+9. [Internal Pipeline Scripts - Parameters & Examples](#internal-pipeline-scripts)
+10. [Analysis & Reporting Utilities](#analysis-reporting-utilities)
 
 ---
 
@@ -157,7 +157,7 @@ The `validation/` folder contains only anonymized expert validation material. Th
 
 ### Internal pipeline step scripts
 
-These are called automatically by `run_pipeline.py`; you do not normally run them directly. Stage names follow the paper sections 4.1-4.5; see [Internal Pipeline Scripts - Parameters & Examples](#internal-pipeline-scripts---parameters--examples) for full CLI reference and standalone usage.
+These are called automatically by `run_pipeline.py`; you do not normally run them directly. Stage names follow the paper sections 4.1-4.5; see [Internal Pipeline Scripts - Parameters & Examples](#internal-pipeline-scripts) for full CLI reference and standalone usage.
 
 | Script | Paper Stage | What it does |
 |---|---|---|
@@ -170,7 +170,7 @@ These are called automatically by `run_pipeline.py`; you do not normally run the
 
 ### Analysis & reporting scripts
 
-Run these from the DomainMiner root **after** one or more datasets in `Datalakes/` have completed `scripts/tune_params.py`. They never modify pipeline outputs; they are read-only summarizers. See [Analysis & Reporting Utilities](#analysis--reporting-utilities) for full usage.
+Run these from the DomainMiner root **after** one or more datasets in `Datalakes/` have completed `scripts/tune_params.py`. They never modify pipeline outputs; they are read-only summarizers. See [Analysis & Reporting Utilities](#analysis-reporting-utilities) for full usage.
 
 | Script | Purpose | Scope |
 |---|---|---|
@@ -402,6 +402,8 @@ python scripts/run_pipeline.py \
 
 ---
 
+<a id="internal-pipeline-scripts"></a>
+
 ## Internal Pipeline Scripts - Parameters & Examples
 
 These are normally invoked automatically by `scripts/run_pipeline.py`, but each accepts `--dataset_dir` and can be run standalone. This is useful for debugging a single stage or resuming after a manual fix, without using `--start_from`. All commands below are run from the DomainMiner root.
@@ -535,6 +537,8 @@ python pipeline/domain_discovery.py \
 > **In practice:** running the five internal scripts standalone, in order, for one parameter combination is equivalent to a single `scripts/run_pipeline.py` call (see [Running a Single Configuration](#running-a-single-configuration)). Use the standalone form only when debugging one stage or re-deriving weights/graphs without LLM calls.
 
 ---
+
+<a id="analysis-reporting-utilities"></a>
 
 ## Analysis & Reporting Utilities
 
