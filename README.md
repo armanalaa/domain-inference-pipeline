@@ -25,7 +25,6 @@ DomainMiner takes a collection of CSV files and groups them into business domain
 8. [Parameter Reference](#parameter-reference)
 9. [Internal Pipeline Scripts - Parameters & Examples](#internal-pipeline-scripts---parameters--examples)
 10. [Analysis & Reporting Utilities](#analysis--reporting-utilities)
-11. [Validated Datasets](#validated-datasets)
 
 ---
 
