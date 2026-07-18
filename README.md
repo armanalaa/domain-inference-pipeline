@@ -116,6 +116,9 @@ DomainMiner/
 +-- erds/                         # ERDs used for evaluation
 |   +-- DomainMiner_ERDs.zip       # Zip archive of all ERDs
 |   +-- <Dataset>/                 # Complete schema and inferred-domain ERDs
+|       +-- schema.png             # ERD of the complete data lake schema
+|       +-- domains_<config>/      # ERDs of the inferred domains
+|           +-- D0_<label>.png     # Domain ERD; filename includes the assigned label
 +-- validation/                   # Expert validation material for review
 |   +-- Questionnaire.pdf          # Blank questionnaire shown to the experts
 |   +-- Expert_Validation_Responses_Anonymized.xlsx
@@ -603,15 +606,49 @@ The same concise results printed on screen are written to `results/row_col_total
 
 ### `tools/extract_erd.py` - generate an ERD from one JSON file
 
-Generates Mermaid (`.mmd`) and Graphviz (`.dot`) ERD files from a single DomainMiner-style `schema.json` or one extracted domain JSON file. If Graphviz `dot` is available on your PATH, it also renders `.svg` and `.png` files.
+Generates Mermaid (`.mmd`) and Graphviz (`.dot`) ERD files from a single DomainMiner-style `schema.json` or one inferred domain JSON file. If Graphviz `dot` is available on your PATH, it also renders `.svg` and `.png` files.
+
+Run the script from the DomainMiner root. To generate the ERD of a complete data lake schema:
 
 ```bash
-python tools/extract_erd.py Datalakes/Sakila/schema.json
-python tools/extract_erd.py Datalakes/Sakila/ccm_output/tA0.6_tT0.75_r1.0/domains/domain_01.json --out ERDs/Sakila
-python tools/extract_erd.py Datalakes/Sakila/schema.json --no-render
+python tools/extract_erd.py Datalakes/Sakila/schema.json --out erds/Sakila
 ```
 
-By default, outputs are written to an `erd/` folder next to the input JSON file. Use `--out` to choose a different output folder.
+This writes:
+
+```text
+erds/Sakila/schema.mmd
+erds/Sakila/schema.dot
+erds/Sakila/schema.svg   # if Graphviz is available
+erds/Sakila/schema.png   # if Graphviz is available
+```
+
+To generate the ERD of one inferred domain, pass the corresponding domain JSON file and choose an output folder for that pipeline configuration:
+
+```bash
+python tools/extract_erd.py \
+  Datalakes/Sakila/ccm_output/tA0.6_tT0.75_r1.0/domains/domain_01.json \
+  --out erds/Sakila/domains_tA0.6_tT0.75_r1.0
+```
+
+This writes files named after the input JSON stem, for example:
+
+```text
+erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.mmd
+erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.dot
+erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.svg   # if Graphviz is available
+erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.png   # if Graphviz is available
+```
+
+Use `--no-render` when you only need Mermaid and Graphviz source files, or when Graphviz is not installed:
+
+```bash
+python tools/extract_erd.py Datalakes/Sakila/schema.json --out erds/Sakila --no-render
+```
+
+If `--out` is omitted, outputs are written to an `erd/` folder next to the input JSON file. For review artifacts, use the explicit `erds/<Dataset>/` structure shown above so complete-schema ERDs and inferred-domain ERDs are easy to find.
+
+The checked-in `erds/` folder contains the evaluation ERDs already generated for the submitted experiments. Its `schema.png` files show complete data lake schemas; its `domains_<config>/D<index>_<label>.png` files show the inferred domains, with the generated domain label included in each filename.
 
 ---
 **Tables/Domain ratio** = Total Tables / Domains for the best-Q configuration. Lower values indicate finer-grained domain separation (e.g. eicu at 1.18); higher values indicate coarser clustering relative to schema size (e.g. adventure_works at 5.70). Generated automatically by `tools/list_best_configs.py`.
