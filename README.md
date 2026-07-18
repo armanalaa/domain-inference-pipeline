@@ -114,6 +114,11 @@ DomainMiner/
 |   +-- list_derived_weights.py    # Cross-dataset similarity weight summary
 |   +-- sum_row_col.py             # Dataset table/column totals
 |   +-- extract_erd.py             # Generate ERD files from one schema/subdomain JSON
++-- validation/                   # Expert validation material for review
+|   +-- Questionnaire.pdf          # Blank questionnaire shown to the experts
+|   +-- Expert_Validation_Responses_Anonymized.xlsx
+|   |                              # Coded responses with experts labeled E1-E16
+|   +-- README.txt                 # Validation protocol and file descriptions
 +-- Datalakes/                    # Local datasets; ignored by Git
     +-- <YourDataset>/
         +-- csv/                   # Put all CSV files here
@@ -131,6 +136,8 @@ DomainMiner/
             +-- tune_params_results.xlsx
             +-- tune_params_summary.txt
 ```
+
+The `validation/` folder contains only anonymized expert validation material. The original Google Forms export is not included because it contains identifying information such as names, email addresses, and timestamps.
 
 ---
 
