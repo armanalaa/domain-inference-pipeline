@@ -139,7 +139,6 @@ DomainMiner/
 |   |                              # Coded responses with experts labeled E1-E16
 |   +-- README.txt                 # Validation protocol and file descriptions
 |   +-- erds/                      # ERDs used for evaluation
-|       +-- DomainMiner_ERDs.zip   # Zip archive of all ERDs
 |       +-- <Dataset>/             # Complete schema and inferred-domain ERDs
 |           +-- schema.png         # ERD of the complete data lake schema
 |           +-- domains_<config>/  # ERDs of the inferred domains
