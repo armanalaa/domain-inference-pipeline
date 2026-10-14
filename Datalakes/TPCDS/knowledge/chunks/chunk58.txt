@@ -1,0 +1,56 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Manager, HR Manager
+
+Activity:
+- Call center managers assign new employees to specific call centers based on staffing needs (cc_employees).
+- HR managers update employee records with personal and employment details (cc_name, cc_class, cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Manager, Market Manager
+
+Activity:
+- Call center managers assign call centers to specific markets based on geographical location (cc_mkt_id, cc_division).
+- Market managers update market details such as name and description (cc_division_name, cc_market_manager).
+
+## 3. Call Center Facility Management
+
+Performed By: Call Center Manager, Warehouse Staff
+
+Activity:
+- Call center managers oversee the maintenance and upkeep of call center facilities (cc_sq_ft, cc_hours).
+- Warehouse staff track inventory for office supplies and equipment (cc_street_number, cc_city, cc_county, cc_state, cc_zip).
+
+## 4. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls from customers (cc_call_center_id).
+- Call center representatives record call details such as start and end dates, closed date, and customer information (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk, cr_refunded_customer_sk).
+
+## 5. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update inventory with returned items (cr_item_sk, cr_warehouse_sk).
+
+## 7. Policy Challenge and Review
+
+Performed By: Administrator, Council Members
+
+Activity:
+- Administrators initiate policy challenges by sending notices to the challengee and relevant parties (not specified in database schema).
+- Council members review policy challenges, determine violations, and make recommendations to the Council (not specified in database schema).

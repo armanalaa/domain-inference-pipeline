@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Pharmaceutical Company Staff, Healthcare Providers
+
+Activity:
+- Pharmaceutical company staff compile adverse event details and submit reports to the FDA. (icsrmessagedate, icsrmessagesenderidentifier)
+- Healthcare providers document adverse events and share relevant information with pharmaceutical companies for reporting. (productcode, patientdemographics, adversetype, dosage)
+- Pharmaceutical company staff verify the accuracy of received reports before submission to the FDA. (reportacknowledgmentcode)
+
+## 2. Adverse Event Acknowledgement
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff receive and acknowledge receipt of adverse event reports from pharmaceutical companies. (icsrmessagedate, icsrmessagereceiveridentifier, reportacknowledgmentcode)
+- FDA staff review the acknowledgement messages for errors or issues. (parsingerrormessage)
+
+## 3. Adverse Event Data Processing
+
+Performed By: FDA IT Systems
+
+Activity:
+- FDA IT systems store and process incoming adverse event reports in the FDA_AdverseEvents database. (icsrmessagedate, productcode, patientdemographics, adversetype, dosage)
+
+## 4. Adverse Event Case Review
+
+Performed By: FDA Medical Officers
+
+Activity:
+- FDA medical officers assess the severity and potential impact of adverse events on public health. (adversetype, patientoutcome)
+- FDA medical officers determine if further investigation is necessary based on the assessment. (investigationrequired)
+
+## 5. Adverse Event Investigation
+
+Performed By: FDA Investigators
+
+Activity:
+- FDA investigators gather additional information about adverse events requiring further investigation. (additionalinformation, followupactions)
+- FDA investigators collaborate with pharmaceutical companies to obtain necessary data for the investigation. (companycontactinformation)
+
+## 6. Adverse Event Analysis and Reporting
+
+Performed By: FDA Data Analysts
+
+Activity:
+- FDA data analysts analyze adverse event data to identify trends, patterns, or potential risks associated with specific products. (productcode, adversetype, patientdemographics)
+- FDA data analysts prepare reports summarizing their findings and recommendations for further action. (reportsummary, recommendedactions)
+
+## 7. Adverse Event Regulatory Action
+
+Performed By: FDA Regulatory Officers
+
+Activity:
+- FDA regulatory officers review the analysis and recommendations provided by data analysts. (reportsummary, recommendedactions)
+- FDA regulatory officers determine appropriate regulatory actions based on the findings, such as product warnings or recalls. (regulatoryaction)

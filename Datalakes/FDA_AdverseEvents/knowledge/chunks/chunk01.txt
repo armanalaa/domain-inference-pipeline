@@ -1,0 +1,46 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Consumers, Manufacturers
+
+Activity:
+- Healthcare professionals and consumers report adverse events associated with the use of a medical product to FDA.
+- Manufacturers receive adverse event reports from various sources and send them to FDA.
+- FDA receives adverse event reports directly or indirectly through healthcare professionals, consumers, and manufacturers.
+
+## 2. Adverse Event Data Collection
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff collects adverse event reports identified by an 8-digit string.
+- Subsequent updates to individual reports are submitted in separate reports.
+
+## 3. Adverse Event Data Formatting and Organization
+
+Performed By: FDA IT Team
+
+Activity:
+- Adverse event reports are formatted and organized using the ICH E2b/M2 version 2.1 standard.
+
+## 4. Adverse Event Data Processing
+
+Performed By: FDA IT Team
+
+Activity:
+- The processed adverse event data is converted into JSON, a widely used machine readable format.
+
+## 5. Adverse Event Data Publication
+
+Performed By: openFDA API
+
+Activity:
+- The openFDA API publishes the processed and annotated adverse event data.
+
+## 6. Adverse Event Data Analysis
+
+Performed By: Researchers, Pharmacovigilance Teams
+
+Activity:
+- Researchers and pharmacovigilance teams analyze the published adverse event data to identify trends, patterns, and potential safety issues related to drugs.

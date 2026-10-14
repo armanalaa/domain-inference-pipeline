@@ -1,0 +1,66 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators optimize the cost model to improve query performance.
+- Content managers input movie information such as title, production year, and keywords.
+- Database administrators create and manage indexes for efficient data retrieval.
+
+## 2. Actor Data Management
+
+Performed By: Casting Directors, Database Administrators
+
+Activity:
+- Casting directors register actors by recording their names, roles, and associated movies.
+- Database administrators ensure actor information is correctly stored and indexed for efficient retrieval.
+
+## 3. Company Data Management
+
+Performed By: Company Representatives, Database Administrators
+
+Activity:
+- Company representatives input company details including name, country, and type.
+- Database administrators create and manage company records for future reference.
+
+## 4. Movie-Actor Association Creation
+
+Performed By: Casting Directors, Database Administrators
+
+Activity:
+- Casting directors associate actors with their respective movies by specifying roles and movie IDs.
+- Database administrators update the cast_info table to reflect these associations.
+
+## 5. Movie Keyword Association
+
+Performed By: Content Managers, Database Administrators
+
+Activity:
+- Content managers assign relevant keywords to movies for easy searchability.
+- Database administrators add movie keyword associations in the movie_keyword table.
+
+## 6. Company-Movie Association Creation
+
+Performed By: Production Companies, Database Administrators
+
+Activity:
+- Production companies input their involvement in a movie by specifying company IDs and associated movies.
+- Database administrators update the movie_companies table to reflect these associations.
+
+## 7. Movie Information Management
+
+Performed By: Content Managers, Database Administrators
+
+Activity:
+- Content managers add additional information about movies such as plot summaries or production notes.
+- Database administrators store this information in the movie_info table for future reference.
+
+## 8. Query Execution and Optimization
+
+Performed By: Database Administrators, Query Analysts
+
+Activity:
+- Database administrators optimize query performance by adjusting cost models and index configurations.
+- Query analysts analyze query results to ensure accuracy and efficiency.

@@ -1,0 +1,439 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Alias and Name Information Management",
+    "definition": "Unifying activities related to managing aliases, names, and associated data for actors, movies, and companies.",
+    "tables": [
+      "aka_name",
+      "char_name",
+      "company_name",
+      "name"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "aka_name": {
+      "_description": "Captures alternate names and biographical information for individuals in the IMDb database.",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for alternate names of movie entities.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "person_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the person_ entity",
+          "samples": [
+            4061927,
+            4,
+            2701136,
+            15,
+            19
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores variant names of actors and actresses.",
+          "samples": [
+            "Smith, Jessica Noel",
+            "Short, Too",
+            "Abdul-Hamid, Jaffar",
+            "Al-Hamid, Jaffar Abd",
+            "Viera, Michael 'Power'"
+          ]
+        },
+        {
+          "name": "imdb_index",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores alternate names for individuals, often including nicknames or stage names.",
+          "samples": [
+            " Chaz 'We'll sail without'em'\"",
+            " \\\"The\"",
+            " Mario Moreno\"",
+            " Michael\"",
+            " José Luís\""
+          ]
+        },
+        {
+          "name": "name_pcode_cf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores IMDB alias names encoded as 10-character alphanumeric codes.",
+          "samples": [
+            "S5325",
+            "S63",
+            "A1345",
+            "A4532",
+            "V6524"
+          ]
+        },
+        {
+          "name": "name_pcode_nf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores IMDB alias names with a 10-character numeric prefix code.",
+          "samples": [
+            "J2542",
+            "T263",
+            "J1613",
+            "M2416",
+            "J2524"
+          ]
+        },
+        {
+          "name": "surname_pcode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated surnames of actors/actresses in IMDB database.",
+          "samples": [
+            "S53",
+            "A453",
+            "V6",
+            "S24",
+            "S362"
+          ]
+        },
+        {
+          "name": "md5sum",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores MD5 hashes of alternate film names.",
+          "samples": [
+            "25c9d464e3ff2957533546aa92b397ed",
+            "4e26116e5f9800cef90c8f8c38de2584",
+            "fb5126fe9992e13156c636d726cec257",
+            "179ad5f75c84c4bddd6733c66b6b0bb7",
+            "354cea2b99f8b1f745ea6092eefa2bd7"
+          ]
+        }
+      ]
+    },
+    "char_name": {
+      "_description": "Captures character names and their associated metadata from IMDb, including unique identifiers, names, surnames, and checksums.",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for characters in the IMDBJoinOrderBenchmark database.",
+          "samples": [
+            6010,
+            98533,
+            98721,
+            7058,
+            99474
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores character names from various films and television shows.",
+          "samples": [
+            "U.S.S. Soldier",
+            "Chris Teigler",
+            "Frankie Mulholland",
+            "Count Rood",
+            "Keach"
+          ]
+        },
+        {
+          "name": "imdb_index",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores IMDb identifiers for characters, represented as text strings, often enclosed in quotes.",
+          "samples": [
+            " amigo de Mateo\"",
+            " medic\"",
+            " in episode...\\\"\"",
+            "DM",
+            "I"
+          ]
+        },
+        {
+          "name": "imdb_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the imdb_ entity",
+          "samples": [
+            " 6",
+            " JEOL Microscopes\"",
+            " Baseball\"",
+            " Alter Ellerkamp",
+            " Storz\""
+          ]
+        },
+        {
+          "name": "name_pcode_nf",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique 50-character alphanumeric codes for character names.",
+          "samples": [
+            "U2436",
+            "C6232",
+            "F6525",
+            "C5363",
+            "K2"
+          ]
+        },
+        {
+          "name": "surname_pcode",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores surname initials encoded as five-digit codes for characters in the IMDBJoinOrderBenchmark database.",
+          "samples": [
+            "S436",
+            "T246",
+            "M453",
+            "R3",
+            "V23"
+          ]
+        },
+        {
+          "name": "md5sum",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores MD5 hashes of character names.",
+          "samples": [
+            "ff2690cc3b3b8486ecc17fc597bc9d47",
+            "3b77037f2161dae4d2d860a2cf66291b",
+            "9b43f308c87dbac17adb9f4fc9137c4f",
+            "10c0099f53636b7a10e36ecd2b12b510",
+            "557f7f53be50c1ee5caa2614382ec1e3"
+          ]
+        }
+      ]
+    },
+    "company_name": {
+      "_description": "Captures information about international film production companies and their unique identifiers.",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various IMDB companies.",
+          "samples": [
+            34634,
+            63635,
+            35051,
+            23380,
+            31373
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores up to 255 characters of the names of various film production companies.",
+          "samples": [
+            "Comfilm.de",
+            "Dusty Nose Productions",
+            "WTTW National Productions",
+            "Film House",
+            "AVI Group"
+          ]
+        },
+        {
+          "name": "country_code",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries associated with film companies.",
+          "samples": [
+            "[de]",
+            "[us]",
+            "[gb]",
+            "[it]",
+            "[es]"
+          ]
+        },
+        {
+          "name": "imdb_id",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the imdb_ entity",
+          "samples": [
+            "[ru]",
+            "[us]",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "name_pcode_nf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores 10-character alphanumeric codes for IMDB company names.",
+          "samples": [
+            "C5145",
+            "D2352",
+            "W3535",
+            "F452",
+            "A1261"
+          ]
+        },
+        {
+          "name": "name_pcode_sf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a 10-character alphanumeric code for IMDB company names.",
+          "samples": [
+            "C5145",
+            "D2352",
+            "W3535",
+            "F452",
+            "A1261"
+          ]
+        },
+        {
+          "name": "md5sum",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique MD5 hashes of company names.",
+          "samples": [
+            "103fec65d8a8129bfea07e4a98dfa0e5",
+            "7a9718e93925d720de807fe027665fbe",
+            "002eb2b89338ca14386743e11e7a425f",
+            "20c818c9a457fa6e902ff4b0d406525e",
+            "d90465c48c1e51f556562ad903aacdfa"
+          ]
+        }
+      ]
+    },
+    "name": {
+      "_description": "Captures actor and actress names along with associated metadata for IMDB indexing and hashing.",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movie names in the database.",
+          "samples": [
+            3343,
+            446,
+            126,
+            1678,
+            3610
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores up to 255 characters of filmmakers' names, including first names with initials and surnames.",
+          "samples": [
+            "Abela, Mike",
+            "A., David",
+            "-Alverio, Esteban Rodriguez",
+            "Abbas, Athar",
+            "Aberer, Leo"
+          ]
+        },
+        {
+          "name": "imdb_index",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique identifiers for IMDb movies (II, XII, I, IV, V).",
+          "samples": [
+            "II",
+            "XII",
+            "I",
+            "IV",
+            "V"
+          ]
+        },
+        {
+          "name": "imdb_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the imdb_ entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "gender",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores character gender as either 'm' for male or 'f' for female (up to 10 characters).",
+          "samples": [
+            "m",
+            "f",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "name_pcode_cf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores 10-character alphanumeric production codes for movie names.",
+          "samples": [
+            "A1452",
+            "A313",
+            "A4162",
+            "A1236",
+            "A164"
+          ]
+        },
+        {
+          "name": "name_pcode_nf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores 10-character alphanumeric production codes for movie names.",
+          "samples": [
+            "M214",
+            "D13",
+            "E2315",
+            "A3612",
+            "L16"
+          ]
+        },
+        {
+          "name": "surname_pcode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated last names with a 10-character alphanumeric code.",
+          "samples": [
+            "A14",
+            "A",
+            "A416",
+            "A12",
+            "A16"
+          ]
+        },
+        {
+          "name": "md5sum",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique MD5 hashes of movie names.",
+          "samples": [
+            "61f733c0298a7cb5a461fd787a655d70",
+            "cf45e7b42fbc800c61462988ad1156d2",
+            "f5c410bff6839b545d04c531f776e8f2",
+            "cf230f6ed718a330dc688c20b8d741d3",
+            "05684f16b84db387e613d3de57eca5b7"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_division, cc_company).
+
+## 2. Call Center Setup
+
+Performed By: Facilities Managers, IT Staff
+
+Activity:
+- Facilities managers determine the size, layout, and location of call centers (cc_sq_ft, cc_street_number, cc_street_name, cc_city).
+- IT staff configure call center systems, including hardware, software, and network infrastructure (cc_hours, cc_manager, cc_mkt_id, cc_division).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Agents, Supervisors
+
+Activity:
+- Call center agents handle customer inquiries, process orders, and manage returns (cc_call_center_sk, cr_returned_date_sk, cr_refunded_customer_sk).
+- Supervisors monitor agent performance, provide training, and address customer complaints (cc_open_date_sk, cc_closed_date_sk).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog with product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing managers create and update marketing descriptions for each department (cc_mkt_desc).
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders, confirm availability, and schedule delivery (cr_order_number, cr_ship_mode_sk, cr_warehouse_sk).
+- Warehouse staff pick, pack, and ship ordered items to the customer's specified address (cr_returning_addr_sk).
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns, record return reasons, and issue refunds (cr_reason_sk, cr_refunded_customer_sk).
+- Warehouse staff receive returned items, inspect for damage, and update inventory accordingly (cr_returned_date_sk, cr_returning_addr_sk, cr_item_sk).
+
+## 7. Financial Reporting
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record financial transactions, including sales, returns, and expenses (cc_tax_percentage).
+- They generate reports on revenue, costs, and profitability for management review and decision making (not specific column/table references provided in the source materials).

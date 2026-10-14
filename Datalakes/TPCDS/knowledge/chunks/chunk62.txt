@@ -1,0 +1,53 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the required skills, qualifications, and job description.
+- HR managers review applications, conduct interviews, and make hiring decisions based on the call center's needs and applicants' qualifications.
+- Call center managers assign newly hired employees to specific call centers according to their skills and availability.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls from customers, providing assistance or addressing inquiries.
+- Call center managers monitor employee performance, ensuring adherence to service standards and quality control.
+- Call center employees record customer interactions, including call duration, issue resolution, and feedback, for future reference and analysis.
+
+## 3. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers assign call centers to specific markets based on geographical location and market needs.
+- Call center managers implement strategies tailored to the assigned market, such as language support or local promotions.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers add new items to the catalog by entering product details like name, category, list price, and product code.
+- Marketing teams create and update catalog pages, organizing products into departments and categories for easy navigation.
+
+## 5. Customer Returns Processing
+
+Performed By: Customers, Call Center Employees, Warehouse Staff
+
+Activity:
+- Customers initiate returns by contacting the call center to request a refund or exchange.
+- Call center employees process return requests, providing customers with return instructions and tracking numbers.
+- Warehouse staff receive returned items, verify their condition, and update the database accordingly.
+
+## 6. Financial Reporting
+
+Performed By: Finance Teams, Call Center Managers
+
+Activity:
+- Finance teams track call center expenses, including salaries, utilities, and marketing costs.
+- Call center managers review financial reports to ensure budget adherence and identify areas for cost optimization.
+- Finance teams generate invoices for clients based on the call center's services provided and hours worked.

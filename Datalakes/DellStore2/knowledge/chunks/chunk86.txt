@@ -1,0 +1,45 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when receiving shipments of newly registered products.
+- Product managers review sales data from orderlines to identify best-selling products and adjust pricing accordingly.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details into the customers table during account creation or updates.
+- Customer service agents assist customers with placing orders by verifying their information and shipping addresses.
+- HR managers update creditcard, creditcardexpiration, username, and "password" when onboarding new employees.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance
+
+Activity:
+- Sales representatives generate orders by linking customerid, orderdate, and product details from the customers and products tables.
+- Warehouse staff track quan_in_stock to ensure sufficient stock for each order.
+- Purchasing teams issue purchase orders when inventory levels are low based on reorder data.
+- Finance records netamount, tax, and totalamount in the orders table upon order completion.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff update quan_in_stock when shipping products to customers or receiving new inventory.
+- Inventory managers monitor sales and reorder data to forecast future demand and adjust inventory levels accordingly.
+
+## 5. Reporting & Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract and analyze data from the orders, orderlines, customers, products, and inventory tables for performance reports.
+- Management reviews these reports to make informed decisions about pricing strategies, marketing efforts, and operational efficiency.

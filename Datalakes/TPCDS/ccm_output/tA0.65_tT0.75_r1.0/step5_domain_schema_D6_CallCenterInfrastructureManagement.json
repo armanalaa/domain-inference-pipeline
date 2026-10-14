@@ -1,0 +1,1511 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "CallCenterInfrastructureManagement",
+    "definition": "The unifying capability across all tables is the management of call centers' infrastructure, including locations, employees, and financial details.",
+    "tables": [
+      "call_center",
+      "customer_address",
+      "store",
+      "warehouse",
+      "web_site"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "call_center": {
+      "_description": "Tracks call center details, including location, management, and employee count, for a market within a company.",
+      "columns": [
+        {
+          "name": "cc_call_center_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for call centers.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cc_call_center_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the cc_call_center_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center record start dates as YYYY-MM-DD formatted strings.",
+          "samples": [
+            "1998-01-01",
+            "2001-01-01",
+            "2000-01-02",
+            "2002-01-01",
+            null
+          ]
+        },
+        {
+          "name": "cc_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center record end dates in YYYY-MM-DD format.",
+          "samples": [
+            "2000-12-31",
+            "2000-01-01",
+            "2001-12-31",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_closed_date_sk",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores unique identifiers for closed call center dates as text.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_open_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential unique identifiers for call center open dates.",
+          "samples": [
+            2450952,
+            2451136,
+            2451039,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of call center names, often representing geographical regions.",
+          "samples": [
+            "NY Metro",
+            "Mid Atlantic",
+            "North Midwest",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center agent classifications: large, medium.",
+          "samples": [
+            "large",
+            "medium",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_employees",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of employees working at each call center.",
+          "samples": [
+            2,
+            6,
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "name": "cc_sq_ft",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square footage of call centers.",
+          "samples": [
+            1138,
+            2268,
+            4134,
+            649,
+            795
+          ]
+        },
+        {
+          "name": "cc_hours",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center operating hours in a 24-hour format (e.g., \"8AM-4PM\").",
+          "samples": [
+            "8AM-4PM",
+            "8AM-8AM",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of call center managers.",
+          "samples": [
+            "Bob Belcher",
+            "Felipe Perkins",
+            "Mark Hightower",
+            "Larry Mccray",
+            null
+          ]
+        },
+        {
+          "name": "cc_mkt_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the cc_mkt_ entity",
+          "samples": [
+            6,
+            2,
+            5,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_mkt_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores marketing classifications for call center customers.",
+          "samples": [
+            "More than other authori",
+            "Lips know to a units. Open members ought to beat ",
+            "Nights may arrange below somewhat interest",
+            "Rational ways will cultivate significant a",
+            "Instead male prospects would make old images. M"
+          ]
+        },
+        {
+          "name": "cc_mkt_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores marketing descriptions for call center customers, varying from product promotions to service offerings.",
+          "samples": [
+            "Shared others could not count fully dollars. New members ca",
+            "Wrong members must get compatibl",
+            "Nowhere certain tourists cannot help only. Retail terms wake at a panels; largely blank years put s",
+            "Studies may not influence multiple coins. Consumers may raise",
+            null
+          ]
+        },
+        {
+          "name": "cc_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of market managers within the call center, often named Julius, Matthew, or Gary.",
+          "samples": [
+            "Julius Tran",
+            "Julius Durham",
+            "Matthew Clifton",
+            "Gary Colburn",
+            null
+          ]
+        },
+        {
+          "name": "cc_division",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores division identifiers for call centers, ranging from 1 to 5.",
+          "samples": [
+            3,
+            5,
+            1,
+            4,
+            null
+          ]
+        },
+        {
+          "name": "cc_division_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores names of up to 10 characters for call center divisions, such as 'pri', 'anti', 'ought', 'ese'.",
+          "samples": [
+            "pri",
+            "anti",
+            "ought",
+            "ese",
+            null
+          ]
+        },
+        {
+          "name": "cc_company",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the companies operating call centers.",
+          "samples": [
+            6,
+            1,
+            2,
+            3,
+            null
+          ]
+        },
+        {
+          "name": "cc_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of call center company names, such as 'cally', 'ought', 'able', 'pri', 'pri'.",
+          "samples": [
+            "cally",
+            "ought",
+            "able",
+            "pri",
+            null
+          ]
+        },
+        {
+          "name": "cc_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores individual street numbers for call centers.",
+          "samples": [
+            730,
+            306,
+            121,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_street_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of street names for call centers.",
+          "samples": [
+            "Ash Hill",
+            "14th ",
+            "Franklin ",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type names, such as Boulevard, Wy, Court.",
+          "samples": [
+            "Boulevard",
+            "Wy",
+            "Court",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores identifiers for call center suites (e.g., Suite 0, Suite 60).",
+          "samples": [
+            "Suite 0",
+            "Suite 60",
+            "Suite 150",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of city names for call centers.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores county names for call center locations, consistently being Williamson County.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for call center locations within Tennessee.",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit zip codes for call centers.",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country names for call centers.",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores call center's Greenwich Mean Time offset in hours (negative for west of GMT).",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores call center tax rates as decimal percentages.",
+          "samples": [
+            0.11,
+            0.12,
+            0.01,
+            0.05,
+            null
+          ]
+        }
+      ]
+    },
+    "customer_address": {
+      "_description": "Captures customer residential and business addresses along with related geographical details.",
+      "columns": [
+        {
+          "name": "ca_address_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for customer addresses.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ca_address_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the ca_address_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "ca_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores individual house numbers within customer street addresses.",
+          "samples": [
+            18,
+            362,
+            585,
+            111,
+            31
+          ]
+        },
+        {
+          "name": "ca_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of street names for customer addresses.",
+          "samples": [
+            "Jackson ",
+            "Washington 6th",
+            "Dogwood Washington",
+            "Smith ",
+            "College "
+          ]
+        },
+        {
+          "name": "ca_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type designations such as Parkway, RD, Circle, Wy, Blvd.",
+          "samples": [
+            "Parkway",
+            "RD",
+            "Circle",
+            "Wy",
+            "Blvd"
+          ]
+        },
+        {
+          "name": "ca_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores suite numbers for customer addresses, up to 10 characters long.",
+          "samples": [
+            "Suite 280",
+            "Suite 80",
+            "Suite Q",
+            "Suite A",
+            "Suite 180"
+          ]
+        },
+        {
+          "name": "ca_city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for customer addresses, as shown by Fairfield, Fairview, Pleasant Valley, Oak Ridge, and Glendale.",
+          "samples": [
+            "Fairfield",
+            "Fairview",
+            "Pleasant Valley",
+            "Oak Ridge",
+            "Glendale"
+          ]
+        },
+        {
+          "name": "ca_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores county names for customer addresses.",
+          "samples": [
+            "Maricopa County",
+            "Taos County",
+            "York County",
+            "Kit Carson County",
+            "Barry County"
+          ]
+        },
+        {
+          "name": "ca_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations of U.S. states for customer addresses.",
+          "samples": [
+            "AZ",
+            "NM",
+            "PA",
+            "CO",
+            "MO"
+          ]
+        },
+        {
+          "name": "ca_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit zip codes for customer addresses.",
+          "samples": [
+            86192,
+            85709,
+            12477,
+            88371,
+            63951
+          ]
+        },
+        {
+          "name": "ca_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country names for customer addresses, consistently US in these samples.",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ca_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores Greenwich Mean Time offsets (in hours) for customer addresses.",
+          "samples": [
+            -7.0,
+            -5.0,
+            -6.0,
+            -8.0,
+            -9.0
+          ]
+        },
+        {
+          "name": "ca_location_type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores type of residential location for customers (condo or single family)",
+          "samples": [
+            "condo",
+            "single family",
+            "apartment",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "store": {
+      "_description": "Captures detailed information about individual retail stores within a market.",
+      "columns": [
+        {
+          "name": "s_store_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual stores.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "s_store_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the s_store_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "s_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the initial sales transaction date for each store.",
+          "samples": [
+            "1997-03-13",
+            "2000-03-13",
+            "1999-03-14",
+            "2001-03-13",
+            null
+          ]
+        },
+        {
+          "name": "s_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the end date of store records (format: YYYY-MM-DD).",
+          "samples": [
+            "2000-03-12",
+            "1999-03-13",
+            "2001-03-12",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_closed_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores store identification numbers for their closure dates.",
+          "samples": [
+            2451189,
+            2451044,
+            2450910,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_store_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the names of up to 10 characters for various stores (e.g., 'ought', 'able', 'ese', 'anti').",
+          "samples": [
+            "ought",
+            "able",
+            "ese",
+            "anti",
+            "cally"
+          ]
+        },
+        {
+          "name": "s_number_employees",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the count of employees in each store.",
+          "samples": [
+            245,
+            236,
+            218,
+            288,
+            229
+          ]
+        },
+        {
+          "name": "s_floor_space",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square feet of retail floor space for each store.",
+          "samples": [
+            5250760,
+            5285950,
+            7557959,
+            9341467,
+            9078805
+          ]
+        },
+        {
+          "name": "s_hours",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores store operating hours in a 12-hour format (e.g., \"8AM-4PM\").",
+          "samples": [
+            "8AM-4PM",
+            "8AM-12AM",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The store table's s_manager column stores names of individual store managers.",
+          "samples": [
+            "William Ward",
+            "Scott Smith",
+            "Edwin Adams",
+            "David Thomas",
+            "Brett Yates"
+          ]
+        },
+        {
+          "name": "s_market_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the s_market_ entity",
+          "samples": [
+            2,
+            8,
+            7,
+            4,
+            10
+          ]
+        },
+        {
+          "name": "s_geography_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the geographical classification (Unknown) for each store.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_market_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptions of market locations, often geographical or demographic, as indicated by the diverse and seemingly descriptive sample values.",
+          "samples": [
+            "Enough high areas stop expectations. Elaborate, local is",
+            "Fingers will access spots. Even local pieces used to come perhaps back ",
+            "Results would face m",
+            "Economic shadows may pay over; federal, stupid dru",
+            "Now electoral duties fit never o"
+          ]
+        },
+        {
+          "name": "s_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of market managers for individual stores.",
+          "samples": [
+            "Charles Bartley",
+            "David Lamontagne",
+            "Thomas Pollack",
+            "Thomas Benton",
+            "Dean Morrison"
+          ]
+        },
+        {
+          "name": "s_division_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the s_division_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_division_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the division names within each store, limited to 10 characters.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_company_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the s_company_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the short company names (up to 10 characters) for each store in the database.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores integer values representing individual street numbers for stores.",
+          "samples": [
+            767,
+            255,
+            877,
+            27,
+            220
+          ]
+        },
+        {
+          "name": "s_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of streets associated with stores.",
+          "samples": [
+            "Spring ",
+            "Sycamore ",
+            "Park Laurel",
+            "Lake ",
+            "Lee 6th"
+          ]
+        },
+        {
+          "name": "s_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the type of street (e.g., Wy, Dr., Road, Ln, Court) for store locations.",
+          "samples": [
+            "Wy",
+            "Dr.",
+            "Road",
+            "Ln",
+            "Court"
+          ]
+        },
+        {
+          "name": "s_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the label for individual office suites within stores.",
+          "samples": [
+            "Suite 250",
+            "Suite 410",
+            "Suite T",
+            "Suite 260",
+            "Suite 80"
+          ]
+        },
+        {
+          "name": "s_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each store location, all stores are located in either Midway or Fairview.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the county names for each store location.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the two-letter abbreviation for the state where each store is located (e.g., TN for Tennessee).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit ZIP codes for store locations.",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each store is located (all stores are in United States).",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the store's Greenwich Mean Time offset in hours (negative for west of GMT).",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant tax percentage rate of 3% for all stores.",
+          "samples": [
+            0.03,
+            0.01,
+            0.08,
+            0.06,
+            0.11
+          ]
+        }
+      ]
+    },
+    "warehouse": {
+      "_description": "Tracks information about physical storehouses in the retail supply chain.",
+      "columns": [
+        {
+          "name": "w_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouse locations.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "w_warehouse_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the w_warehouse_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "w_warehouse_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of warehouse names, such as Conventional childr, Of course ot, Social, royal laws m, Terms overcome instr.",
+          "samples": [
+            "Conventional childr",
+            "Of course ot",
+            "Social, royal laws m",
+            "Terms overcome instr",
+            null
+          ]
+        },
+        {
+          "name": "w_warehouse_sq_ft",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square footage of warehouses.",
+          "samples": [
+            977787,
+            138504,
+            294242,
+            621234,
+            null
+          ]
+        },
+        {
+          "name": "w_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores numerical identifiers for individual houses along a warehouse street.",
+          "samples": [
+            651,
+            600,
+            534,
+            368,
+            null
+          ]
+        },
+        {
+          "name": "w_street_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street names for warehouses, up to 10 characters long.",
+          "samples": [
+            "6th ",
+            "View First",
+            "Ash Laurel",
+            "Wilson Elm",
+            null
+          ]
+        },
+        {
+          "name": "w_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type names, such as Parkway, Avenue, Dr., Drive.",
+          "samples": [
+            "Parkway",
+            "Avenue",
+            "Dr.",
+            "Drive",
+            null
+          ]
+        },
+        {
+          "name": "w_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores suite numbers for various warehouse locations, up to 10 characters long.",
+          "samples": [
+            "Suite 470",
+            "Suite P",
+            "Suite 0",
+            "Suite 80",
+            null
+          ]
+        },
+        {
+          "name": "w_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each warehouse location, all being Fairview.",
+          "samples": [
+            "Fairview",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of counties associated with each warehouse.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for the state where each warehouse is located (e.g., TN for Tennessee).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the 5-digit zip code for each warehouse location.",
+          "samples": [
+            35709,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each warehouse is located (all examples are from United States).",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the Greenwich Mean Time offset (in hours) for each warehouse location.",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "web_site": {
+      "_description": "Captures detailed information about various websites, including their attributes, management, marketing, and physical location.",
+      "columns": [
+        {
+          "name": "web_site_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web sites.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "web_site_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in web_site",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "web_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the starting date (in YYYY-MM-DD format) for each web site record.",
+          "samples": [
+            "1997-08-16",
+            "2000-08-16",
+            "1999-08-17",
+            "2001-08-16",
+            null
+          ]
+        },
+        {
+          "name": "web_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the end date (format: YYYY-MM-DD) of individual website records.",
+          "samples": [
+            "2000-08-15",
+            "1999-08-16",
+            "2001-08-15",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores fixed 10-character identifiers for web sites (e.g., site_0).",
+          "samples": [
+            "site_0",
+            "site_1",
+            "site_2",
+            "site_3",
+            "site_4"
+          ]
+        },
+        {
+          "name": "web_open_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for web site open dates.",
+          "samples": [
+            2450807,
+            2450798,
+            2450781,
+            2450756,
+            2450747
+          ]
+        },
+        {
+          "name": "web_close_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique integer identifiers for the closing dates of web sites.",
+          "samples": [
+            2447148,
+            2448956,
+            2448922,
+            2447080,
+            2447046
+          ]
+        },
+        {
+          "name": "web_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores web site classification as 'Unknown'.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of web site managers.",
+          "samples": [
+            "Ronald Shaffer",
+            "Tommy Jones",
+            "Harold Wilson",
+            "Michael Shade",
+            "Moses Hicks"
+          ]
+        },
+        {
+          "name": "web_mkt_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the web_mkt_ entity",
+          "samples": [
+            4,
+            6,
+            3,
+            5,
+            1
+          ]
+        },
+        {
+          "name": "web_mkt_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The web_mkt_class column stores marketing classifications for various websites.",
+          "samples": [
+            "Grey lines ought to result indeed centres. Tod",
+            "Otherwise simple years account as senior ",
+            "Open arms shall make sports. Dates ",
+            "Reports protect more northern, wide other",
+            "Years arrest quite different contexts; ani"
+          ]
+        },
+        {
+          "name": "web_mkt_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive marketing text for various websites.",
+          "samples": [
+            "Well similar decisions used to keep hardly democratic, personal priorities.",
+            "Results shall not encourage interesting colours",
+            "Old, secure files drive external rats; large, recent years might not look really angry ch",
+            "Never chief police must consider therefor",
+            "Sincerely secondary events could pump famous projects. Successes"
+          ]
+        },
+        {
+          "name": "web_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of web market managers.",
+          "samples": [
+            "Joe George",
+            "David Myers",
+            "Robert Ly",
+            "James Harris",
+            "Edward George"
+          ]
+        },
+        {
+          "name": "web_company_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the web_company_ entity",
+          "samples": [
+            6,
+            4,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "name": "web_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores short names of up to 10 characters for web companies associated with websites.",
+          "samples": [
+            "cally",
+            "ese",
+            "anti",
+            "ought",
+            "able"
+          ]
+        },
+        {
+          "name": "web_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores numerical identifiers for individual houses within a street in web sites.",
+          "samples": [
+            51,
+            358,
+            805,
+            784,
+            835
+          ]
+        },
+        {
+          "name": "web_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of street names for web sites.",
+          "samples": [
+            "Dogwood Sunset",
+            "Ridge Wilson",
+            "7th ",
+            "Hill Hill",
+            "2nd 3rd"
+          ]
+        },
+        {
+          "name": "web_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type abbreviations such as Ln, Cir., Pkwy, Dr., Road.",
+          "samples": [
+            "Ln",
+            "Cir.",
+            "Pkwy",
+            "Dr.",
+            "Road"
+          ]
+        },
+        {
+          "name": "web_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores identifiers for various web suites (e.g., Suite 330, Suite 150, etc.), including some labeled as 'Suite R'.",
+          "samples": [
+            "Suite 330",
+            "Suite 150",
+            "Suite 210",
+            "Suite R",
+            "Suite 130"
+          ]
+        },
+        {
+          "name": "web_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each web site location.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of counties associated with web sites.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for the state of a website's location (e.g., TN).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the 5-digit ZIP code for a web site's location (all sites share the same ZIP code).",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each web site is located (all examples are from United States)",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the Greenwich Mean Time offset (in hours) for each web site.",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores floating-point values representing tax percentages for various web sites.",
+          "samples": [
+            0.1,
+            0.0,
+            0.02,
+            0.08,
+            0.12
+          ]
+        }
+      ]
+    }
+  }
+}

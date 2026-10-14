@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific call centers based on workload (cc_employees).
+- Warehouse staff update call center square footage and hours of operation (cc_sq_ft, cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers
+
+Activity:
+- Call center managers categorize each call center according to market class and description (cc_mkt_class, cc_mkt_desc).
+
+## 3. General Meeting Preparation
+
+Performed By: TPC Administrator
+
+Activity:
+- The TPC Administrator prepares General Meeting materials for distribution within 24 hours of the meeting's conclusion (not specified).
+
+## 4. Collateral Production
+
+Performed By: TPC Administrator
+
+Activity:
+- TPC Administrator produces collateral for the PRC, including benchmark status reports and extended benchmark status reports (not specified).
+
+## 5. Auditor Exam Question Development
+
+Performed By: TPC Members
+
+Activity:
+- TPC members develop at least 50 questions and answers for auditor exams (not specified).
+
+## 6. Pre-Publication Board Management
+
+Performed By: TPC Members
+
+Activity:
+- TPC members form and manage a Pre-Publication Board as needed (Policies § Section 10).
+
+## 7. General Meeting Minutes Recording
+
+Performed By: TPC Administrator
+
+Activity:
+- TPC Administrator records and posts the minutes of the General Meetings, including materials presented by Members (not specified).
+
+## 8. Technical Meeting Scheduling
+
+Performed By: Standing Committee/Technical Subcommittee Chairpersons
+
+Activity:
+- The chairperson schedules meetings for their respective committees or subcommittees, specifying the meeting format (Policies § 4.1.2).

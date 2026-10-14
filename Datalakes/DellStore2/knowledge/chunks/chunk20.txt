@@ -1,0 +1,81 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their details (firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, username).
+- Customer service agents update customer information (email, phone) when contacted.
+- Sales representatives assign customers to specific regions (region).
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update product details (title, actor, price) as needed.
+- Product managers mark common products (common_prod_id) for cross-selling opportunities.
+
+## 3. Order Placement
+
+Performed By: Customers
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details (customerid, orderdate).
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Sales representatives confirm order availability (quan_in_stock) for each product selected by the customer.
+- Warehouse staff pick and pack ordered items, updating inventory (quan_in_stock).
+- Warehouse staff generate order lines (orderlineid, prod_id, quantity, orderdate) for each item in an order.
+
+## 5. Order Fulfillment
+
+Performed By: Shipping Department
+
+Activity:
+- Shipping department prepares orders for shipment by generating shipping labels and tracking numbers.
+
+## 6. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team calculates the net amount (netamount) based on order lines and taxes.
+- Finance team generates invoices (orderid, netamount, tax, totalamount).
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers pay for their orders using the provided payment methods (creditcard).
+- Finance team records customer payments and updates customer accounts accordingly.
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory (quan_in_stock) when new items are received or existing items are sold.
+- Purchasing teams issue purchase orders to replenish low stock levels (date_low, quan_low).
+
+## 9. Reorder Processing
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff record reordered quantities (quan_reordered) and expected delivery dates (date_expected) when purchase orders are fulfilled.
+
+## 10. Data Analysis and Reporting
+
+Performed By: Analytics Team
+
+Activity:
+- Analytics team analyzes sales data to identify trends, best-selling products, and customer behavior patterns.
+- Analytics team generates reports for management based on the analyzed data.

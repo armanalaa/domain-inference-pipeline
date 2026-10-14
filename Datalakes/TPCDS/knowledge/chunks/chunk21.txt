@@ -1,0 +1,68 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Administrator
+
+Activity:
+- Call center managers assign specific call centers to market divisions (cc_division).
+- The administrator updates the contact information of primary and secondary representatives for each member company (cc_name, cc_email).
+- Call center managers determine the number of employees and square footage required for each call center (cc_employees, cc_sq_ft).
+- Administrator sets the operating hours for each call center (cc_hours).
+- Call center managers assign market class and description to each call center (cc_mkt_class, cc_mkt_desc).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff answer incoming calls from customers during operating hours (cc_rec_start_date, cc_rec_end_date).
+- Call center staff direct calls to appropriate departments based on customer inquiries or issues (cp_department).
+- Call center staff record the reason for each call and the resolution provided (cr_reason_sk).
+- Warehouse staff track inventory levels and update them accordingly when processing returns from customers (cr_warehouse_sk).
+- Call center managers close calls once they are resolved or escalate them to appropriate teams if necessary (cc_closed_date_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new products are added to the catalog (cr_item_sk).
+- Product managers monitor sales performance of each product in the catalog and make adjustments as needed (cr_order_number).
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Customer service representatives update the inventory levels when processing returns from customers (cr_warehouse_sk).
+- Warehouse staff inspect returned items for damage or defects before updating their status in the system (cr_reason_sk).
+- Customer service representatives issue refunds to customers based on the return reason and the original purchase price (cr_refunded_customer_sk, cr_refunded_amount).
+
+## 5. Financial Management
+
+Performed By: Finance Team
+
+Activity:
+- Finance team records tax percentage for each call center location (cc_tax_percentage).
+- Finance team generates financial reports based on call center operations and sales data (not specified in provided schema).
+
+## 6. Committee Management
+
+Performed By: Administrator, Primary Representatives, Secondary Representatives
+
+Activity:
+- The administrator manages the list of primary representatives and secondary representatives for each member company (cc_name, cc_email).
+- Primary representatives or secondary representatives designate additional persons in their member company to be added to TPC distribution lists or given access to TPC documents (not specified in provided schema).
+- In cases where the Bylaws or Policies require formal communication between the TPC and a Member, such communication is sent to the primary representative (cc_name, email).
+- Certain TPC Confidential documents may be restricted to primary representatives upon written request to the SC.
+
+## 7. Technical Subcommittee Participation
+
+Performed By: Members, Technical Experts
+
+Activity:
+- Members participate as voting members of technical subcommittee activities as set forth in the Policies (not specified in provided schema).
+- Members serve on standing committees if duly elected (not specified in provided schema).

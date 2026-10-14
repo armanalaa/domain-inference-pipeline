@@ -1,0 +1,68 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Operations Team, Airline Management
+
+Activity:
+- Airline operations team registers new airlines by providing the IATA code, airline name, and base airport.
+- Airline management assigns airline_id to each registered airline.
+- Airline management updates airline details as needed, modifying airlinename or base_airport.
+
+## 2. Airplane Management
+
+Performed By: Maintenance Team, Airline Operations Team
+
+Activity:
+- Maintenance team records the capacity and type of each airplane.
+- Airline operations team assigns airplane_id to each registered airplane.
+- Airline operations team updates airplane details as needed, modifying capacity or type.
+
+## 3. Airplane Type Management
+
+Performed By: Airline Operations Team
+
+Activity:
+- Airline operations team adds new airplane types by providing the identifier and description.
+- Airline operations team assigns type_id to each registered airplane type.
+- Airline operations team updates airplane type details as needed, modifying the description.
+
+## 4. Airport Management
+
+Performed By: Airport Operations Team
+
+Activity:
+- Airport operations team registers new airports by providing the IATA and ICAO codes, name, city, country, latitude, longitude, and geolocation.
+- Airport operations team assigns airport_id to each registered airport.
+- Airport operations team updates airport details as needed, modifying any attribute.
+
+## 5. Flight Scheduling
+
+Performed By: Airline Operations Team, Airport Operations Team
+
+Activity:
+- Airline operations team creates new flights by specifying flightno, from, to, departure, arrival, airline_id, and airplane_id.
+- Airport operations team schedules flights for each day of the week (monday through sunday) using the provided flight information.
+
+## 6. Passenger Registration
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives register new passengers by recording passportno, firstname, lastname, and other personal details.
+
+## 7. Booking Management
+
+Performed By: Customer Service Representatives, Online Booking System
+
+Activity:
+- Customer service representatives or the online booking system assigns booking_id to each booking.
+- Customer service representatives or the online booking system records flight_id, seat, passenger_id, and price for each booking.
+
+## 8. Weather Data Collection
+
+Performed By: Weather Stations
+
+Activity:
+- Weather stations record temperature, humidity, air pressure, wind speed, direction, and weather conditions at specific times and locations.
+- Weather data is sent to the database for storage and analysis.

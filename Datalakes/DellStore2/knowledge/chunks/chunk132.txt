@@ -1,0 +1,44 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints by accessing customer details from the customers table.
+- Sales representatives register new customers by entering their personal information, contact details, and credit card information into the customers table.
+- Sales representatives update customer information when necessary, such as changes to address or credit card details.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the product catalog by entering product code, name, category, list price, and other relevant information into the products table.
+- Inventory specialists track inventory levels by monitoring quan_in_stock in the inventory table for each product.
+- Inventory specialists update sales data in the inventory table when a sale is made.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives place orders on behalf of customers by entering order details (customerid, orderdate, netamount, tax, totalamount) into the orders table.
+- Warehouse staff prepare orders for shipment by checking inventory levels in the inventory table and updating quan_in_stock as necessary.
+- Finance department records financial transactions related to each order, such as payments and refunds.
+
+## 4. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders for products that are running low on stock by checking the date_low and quan_low in the reorder table.
+- Warehouse staff receive and store incoming inventory, updating quan_in_stock in the inventory table accordingly.
+
+## 5. Reporting and Analytics
+
+Performed By: Business Intelligence Analysts, Management
+
+Activity:
+- Business intelligence analysts generate reports on sales performance, customer behavior, and inventory levels by querying data from multiple tables (orders, customers, products, inventory).
+- Management reviews these reports to make informed decisions about business strategy.

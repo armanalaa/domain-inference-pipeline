@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on staffing needs and skill sets (cc_employees).
+- HR managers update employee information in the system, including personal details, qualifications, and performance records.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, IT Support
+
+Activity:
+- Facility managers allocate space for call centers, providing necessary square footage (cc_sq_ft) and equipment.
+- IT support configures the call center's infrastructure, setting up systems, networks, and hardware.
+
+## 3. Market Segmentation
+
+Performed By: Marketing Managers, Data Analysts
+
+Activity:
+- Marketing managers categorize markets based on demographic, geographical, or behavioral factors (cc_mkt_class).
+- Data analysts analyze market trends and customer preferences to determine the best products for each segment.
+
+## 4. Call Center Classification
+
+Performed By: Call Center Managers, IT Support
+
+Activity:
+- Call center managers classify call centers based on their specific functions or services (cc_class).
+- IT support updates the system with the new classifications and associated details.
+
+## 5. Market Description Update
+
+Performed By: Marketing Managers, Data Analysts
+
+Activity:
+- Marketing managers update market descriptions to reflect changes in market conditions or customer preferences (cc_mkt_desc).
+- Data analysts verify the accuracy of the updated descriptions and make any necessary adjustments.
+
+## 6. Product Catalog Management
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers add new items to the product catalog, providing details such as product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- IT support updates the system with the new product information.
+
+## 7. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns, recording return details such as returned date and reason (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff update the inventory system to reflect the returned items (cr_warehouse_sk).

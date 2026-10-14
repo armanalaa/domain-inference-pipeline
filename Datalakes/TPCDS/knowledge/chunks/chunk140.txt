@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on the number of employees and sq ft available (call_center).
+- HR managers update employee details in the call_center table for newly hired staff.
+
+## 2. Market Division Allocation
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers determine market class and division for each call center (call_center).
+- Call center managers update the division name and company name in the call_center table according to the assigned market division.
+
+## 3. Call Center Setup
+
+Performed By: Warehouse Staff, IT Technicians
+
+Activity:
+- Warehouse staff set up physical space for new call centers by providing the required sq ft (call_center).
+- IT technicians configure call center systems and equipment, updating the hours and gmt_offset in the call_center table.
+
+## 4. Call Center Operations Management
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers monitor call center operations to ensure adherence to hours (call_center).
+- Sales representatives handle customer calls and update call records in the call_center table.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (catalog_page).
+- IT staff update the catalog_page table with the newly added items.
+
+## 6. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording returned date, time, and reason (catalog_returns).
+- Warehouse staff update warehouse stock levels based on returned items (catalog_returns).
+
+## 7. Report Generation
+
+Performed By: IT Staff, Call Center Managers
+
+Activity:
+- IT staff generate Full Disclosure reports according to the TPC specifications (not specified tables/columns).
+- Call center managers review and verify the accuracy of the generated reports.

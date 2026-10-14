@@ -1,0 +1,1062 @@
+{
+  "0": {
+    "_meta": {
+      "domain_id": 0,
+      "domain_name": "Flight Management",
+      "definition": "The process of managing flights, including scheduling, airline assignment, and airplane allocation.",
+      "tables": [
+        "airplane",
+        "flight",
+        "flightschedule"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "airplane": {
+        "_description": "Tracks aircraft details, including unique identifiers, capacity, type, and associated airline.",
+        "columns": [
+          {
+            "name": "airplane_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in airplane",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "capacity",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the maximum number of passengers an airplane can carry.",
+            "samples": [
+              150,
+              200,
+              380,
+              50,
+              335
+            ]
+          },
+          {
+            "name": "type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the type_ entity",
+            "samples": [
+              228,
+              38,
+              60,
+              232,
+              21
+            ]
+          },
+          {
+            "name": "airline_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the airline_ entity",
+            "samples": [
+              89,
+              32,
+              57,
+              23,
+              47
+            ]
+          }
+        ]
+      },
+      "flight": {
+        "_description": "Tracks scheduled flights between airports, including airline and aircraft details.",
+        "columns": [
+          {
+            "name": "flight_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in flight",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "flightno",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores up to 10 alphanumeric flight identifiers for aircraft journeys, typically in Air France format.",
+            "samples": [
+              "AF1078",
+              "AF1377",
+              "AF1518",
+              "AF1593",
+              "AF1632"
+            ]
+          },
+          {
+            "name": "from",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores airport identification codes for flight origin.",
+            "samples": [
+              9084,
+              4478,
+              1667,
+              602,
+              12907
+            ]
+          },
+          {
+            "name": "to",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores airport IDs of destinations for flights.",
+            "samples": [
+              2658,
+              12595,
+              11740,
+              64,
+              3249
+            ]
+          },
+          {
+            "name": "departure",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores departure times for flights in a format of YYYY-MM-DD HH:MI:SS.",
+            "samples": [
+              "2015-06-01 10:15:00",
+              "2015-06-01 23:41:00",
+              "2015-06-01 03:39:00",
+              "2015-06-01 00:02:00",
+              "2015-06-01 19:44:00"
+            ]
+          },
+          {
+            "name": "arrival",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores scheduled arrival times for flights in a format of YYYY-MM-DD HH:MI:SS.",
+            "samples": [
+              "2015-06-01 20:46:00",
+              "2015-06-02 10:05:00",
+              "2015-06-01 11:13:00",
+              "2015-06-01 16:48:00",
+              "2015-06-02 09:22:00"
+            ]
+          },
+          {
+            "name": "airline_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the airline_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "airplane_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the airplane_ entity",
+            "samples": [
+              2635,
+              2607,
+              2566,
+              2565,
+              2595
+            ]
+          }
+        ]
+      },
+      "flightschedule": {
+        "_description": "Captures scheduled flights' details including flight number, origin, destination, departure and arrival times, airline ID, and daily operation status.",
+        "columns": [
+          {
+            "name": "flightno",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores up to 10 alphanumeric flight identifiers for scheduled flights.",
+            "samples": [
+              "AF1078",
+              "AF1289",
+              "AF1294",
+              "AF1363",
+              "AF1377"
+            ]
+          },
+          {
+            "name": "from",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores airport identification numbers for flight departures.",
+            "samples": [
+              9084,
+              3574,
+              3663,
+              5037,
+              4478
+            ]
+          },
+          {
+            "name": "to",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores flight destination identifiers as integer codes.",
+            "samples": [
+              2658,
+              260,
+              8341,
+              8335,
+              12595
+            ]
+          },
+          {
+            "name": "departure",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores departure times in a 10-character format (HH:MM:SS).",
+            "samples": [
+              "10:15:00",
+              "02:52:00",
+              "19:26:00",
+              "21:32:00",
+              "23:41:00"
+            ]
+          },
+          {
+            "name": "arrival",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores arrival times in 24-hour format (HH:MM:SS).",
+            "samples": [
+              "20:46:00",
+              "11:31:00",
+              "07:29:00",
+              "23:32:00",
+              "10:05:00"
+            ]
+          },
+          {
+            "name": "airline_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the airline_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "monday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Stores whether a flight is scheduled on Mondays (true for 1, false for 0)",
+            "samples": [
+              "1",
+              "0",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "tuesday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Indicates whether a flight is scheduled on Tuesdays (true for 1, false for 0).",
+            "samples": [
+              "1",
+              "0",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "wednesday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Stores whether a flight is scheduled on Wednesdays (true for 1, false for 0)",
+            "samples": [
+              "1",
+              "0",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "thursday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Indicates whether a flight is scheduled on Thursdays (true for 1, false for 0).",
+            "samples": [
+              "1",
+              "0",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "friday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Stores whether a flight is scheduled on Fridays (true for 1, false for 0)",
+            "samples": [
+              "0",
+              "1",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "saturday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "The boolean column indicates if a flight is scheduled on Saturdays.",
+            "samples": [
+              "1",
+              "0",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "sunday",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Stores whether a flight is scheduled on Sundays (true=1, false=0)",
+            "samples": [
+              "0",
+              "1",
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "1": {
+    "_meta": {
+      "domain_id": 1,
+      "domain_name": "ClimateDataManagement",
+      "definition": "The process of managing and maintaining climate data collected from various weather stations.",
+      "tables": [
+        "weatherdata"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "weatherdata": {
+        "_description": "Records daily weather data at various airport stations.",
+        "columns": [
+          {
+            "name": "log_date",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores date strings in YYYY-MM-DD format for weather data records.",
+            "samples": [
+              "2005-01-01",
+              "2005-01-02",
+              "2005-01-03",
+              "2005-01-04",
+              "2005-01-05"
+            ]
+          },
+          {
+            "name": "time",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores time data in a 10-character format representing hours, minutes, and seconds (HH:mm:ss).",
+            "samples": [
+              "00:00:00",
+              "00:05:00",
+              "00:10:00",
+              "00:15:00",
+              "00:20:00"
+            ]
+          },
+          {
+            "name": "station",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for weather stations.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              null
+            ]
+          },
+          {
+            "name": "temp",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores air temperature values in degrees Celsius or Fahrenheit.",
+            "samples": [
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4
+            ]
+          },
+          {
+            "name": "humidity",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores air humidity levels as floating point values, typically between 0.0 and 100.0.",
+            "samples": [
+              99.0,
+              100.0,
+              98.0,
+              97.0,
+              96.0
+            ]
+          },
+          {
+            "name": "airpressure",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores atmospheric air pressure readings in millibars.",
+            "samples": [
+              1024.0,
+              1023.0,
+              1027.0,
+              1013.0,
+              1017.0
+            ]
+          },
+          {
+            "name": "wind",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores average wind speed (in mph) for each weather data record.",
+            "samples": [
+              4.0,
+              6.0,
+              8.0,
+              5.0,
+              2.0
+            ]
+          },
+          {
+            "name": "weather",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores weather conditions described as \"Schneefall\" (snowfall) in this database.",
+            "samples": [
+              "Schneefall",
+              "N",
+              "Regen-Schneefall",
+              "Regen",
+              "Nebel"
+            ]
+          },
+          {
+            "name": "winddirection",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores wind direction values in degrees (e.g., 254 represents 167 degrees).",
+            "samples": [
+              254,
+              252,
+              258,
+              250,
+              257
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+    "_meta": {
+      "domain_id": 2,
+      "domain_name": "AircraftTypeManagement",
+      "definition": "The process of managing the types and details of airplanes",
+      "tables": [
+        "airplane_type"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "airplane_type": {
+        "_description": "Tracks various airplane types with unique identifiers and descriptions in aviation operations.",
+        "columns": [
+          {
+            "name": "type_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in airplane_type",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "identifier",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique identifiers for various airplane types, such as Concorde, Tupolew Tu-144, Ultraleichtflugzeug, Flugboot, Dornier Do X.",
+            "samples": [
+              "Concorde",
+              "Tupolew Tu-144",
+              "Ultraleichtflugzeug",
+              "Flugboot",
+              "Dornier Do X"
+            ]
+          },
+          {
+            "name": "description",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "The airplane_type.description column stores detailed descriptions of various aircraft models, including their original names, nicknames, and historical contexts.",
+            "samples": [
+              " Die \"Aérospatiale-BAC Concorde 101/102\", kurz Concorde (französisch „Eintracht, Einigkeit“), ist ein Überschall-Passagierflugzeug, das von 1976 bis 2003 betrieben wurde. Sie wurde in der Presse vielfach als die „Königin der Lüfte“ bezeichnet. Die Flugzeit auf ihren wichtigsten Strecken über den Atlantik zwischen Paris beziehungsweise London und New York betrug mit etwa 3 bis 3,5 Stunden etwa die Hälfte moderner Unterschallflugzeuge, die Flughöhe lag bei bis zu 18 km. Die Betreiber waren von Indienststellung bis zuletzt British Airways und Air France. Die Concorde wurde von der französischen und britischen Luftfahrtindustrie auf Basis eines Regierungsabkommens vom 29. November 1962 gemeinsam entwickelt und erreichte maximal Mach 2,23 (2.405 km/h). Sie war eine Parallelentwicklung zu der sowjetischen Tupolew Tu-144. Die Zelle wurde von Aérospatiale (heute EADS) und der British Aircraft Corporation (heute BAE Systems) entwickelt und gebaut, das Triebwerk Olympus 593 von Rolls-Royce (Bristol Siddeley) und SNECMA. Bis zum Absturz einer Concorde am 25. Juli 2000 kam es in ihrer 27-jährigen Dienstzeit zu keinen größeren Unfällen oder Problemen. Die Concorde wurde in den 1960er Jahren entwickelt und weckte großes Interesse bei den Airlines dieser Zeit. 1967 bestellte auch die Deutsche Lufthansa drei Maschinen. Nicht zuletzt wegen einer erheblichen Anzahl von Bestellungen namhafter Fluggesellschaften wurde die Entwicklung der Concorde von den beiden beteiligten Staaten Großbritannien und Frankreich freigegeben. Lediglich Air France und British Airways übernahmen ihre Concorde. Vor der Katastrophe im Juli 2000 erzielten sie auf den zuletzt ausschließlich geflogenen Routen Paris/ London – New York deutliche Gewinne. Ende der 1970er Jahre flog die Concorde in Zusammenarbeit mit British Airways auch auf den Strecken von zwei weiteren Fluggesellschaften, nämlich Singapore Airlines (geleased von British Airways) und Braniff International Airways (geleased von Air France). Eine Maschine trug auf ihrer Backbordseite die Bemalung von Singapore Airlines. 1979 wurde der Bau der Concorde nach zwei Prototypen, zwei Vorserienmodellen und 16 Serienflugzeugen eingestellt. Zu Beginn ihrer Einsatzzeit flog die Concorde auch nach Rio de Janeiro und Singapur, letztendlich blieb aber nur der Linienbetrieb zwischen Paris bzw. London und New York übrig: Zum einen war die Reichweite der Concorde mit rund 6000 Kilometern für längere Non-Stop-Flüge zu gering, zum anderen bekam die Maschine auf vielen Flughäfen keine Landegenehmigung, weil sie zu laut war. Im Charterbetrieb flog die Concorde (meist aus Prestigegründen) auch andere Flughäfen an. Diverse weltweite Ziele hatte die Concorde nur in den 1970er und frühen 1980er Jahren. Später gab es nur noch die zweimal täglich durchgeführten Linienflüge zwischen London bzw. Paris und New York sowie den immer samstags stattfindenden Flug zwischen London und Barbados (letztmalig am 13. August 2003). Im Sommer 2000 wurden darüber hinaus auch Concorde-Flüge zwischen New York und Barbados angeboten, die ebenfalls immer samstags stattfanden. Jedoch wurden diese Flüge nach dem Absturz in Paris und der späteren Wiedererteilung der Flugtauglichkeit nicht wieder aufgenommen. Die Tupolew Tu-144 ähnelte in Auslegung und Leistung der Concorde und wies ein ähnliches Tragwerk mit hinten gruppierten Triebwerken sowie eine absenkbare Nase auf, welche die Sicht der Piloten im Landeanflug verbesserte. Diese Ähnlichkeiten veranlassten westliche Medien zu Gerüchten über mögliche Industriespionage und verpassten der Tupolew Tu-144 den Spitznamen \"Konkordski\". Diese Vorwürfe konnten allerdings nie bestätigt werden, zumal der Jungfernflug des aerodynamisch allerdings nicht ausgereiften Tu-144 Prototyps (Kennung 68001) am 31. Dezember 1968 noch vor dem der Concorde (März 1969) stattfand. Außerdem können die Ähnlichkeiten daher kommen, dass die Erbauer vor denselben technischen und aerodynamischen Problemen standen. Spätere Versionen der Tu-144 wiesen allerdings wie die Concorde zwei getrennte Triebwerksgondeln mit je zwei Triebwerken auf. Auch von sowjetischer Seite wurden ähnliche Vorwürfe gegenüber dem Westen gemacht. Die Concorde in Deutschland. Am 22. April 1972 landete erstmals eine Concorde auf deutschem Boden. Anlässlich der Internationalen Luft- und Raumfahrtausstellung auf dem Flughafen Hannover präsentierte die British Aircraft Corporation dem Publikum den britischen Prototyp. Am 22. und 23. April war die Concorde dort sowohl am Boden als auch bei mehreren Präsentationsflügen in der Luft zu sehen. In den frühen 80ern begann British Airways, gefolgt von Air France, regelmäßig Charterflüge von Deutschland aus anzubieten. Ausgangspunkt waren anfangs die Flughäfen Hannover und Bonn, später auch Berlin-Tegel, Hamburg, Frankfurt und München. Am 19. Juli 1986 landete die Concorde in Nürnberg. Zusätzlich gab es bis in die späten 90er regelmäßige Sonderflüge zu Großveranstaltungen wie der Hannover Messe. Zu einem besonderen Zweck war eine Concorde der Air France mit Kapitän Yves Pecresse 1999 in Berlin. Vom Flughafen Schönefeld aus waren am 19., 20., und 21. März 1999 insgesamt vier Benefizflüge zum Polarkreis und zurück geplant. Bei einem Ticketpreis von 2222 Mark ließen sich jedoch nur genug Tickets für drei Flüge verkaufen, so dass der vierte ausfiel. Die Aktion wurde von einem großen Menschenauflauf am Flughafen begleitet. Sie führte allerdings wegen der ungewöhnlich hohen Lärmbelästigung auch zu Protesten in der Region. Aufgrund der spektakulären Ansicht der Concorde in Abflug- und Landekonfiguration kam der Autoverkehr auf Zubringerstraßen punktuell zum Erliegen. Am 18. März 1986 landete erstmals eine Concorde in der DDR. Anlässlich des an diesem Tage auf der Leipziger Messe stattfindenden Frankreich-Tages flog eine Concorde der Air France (F-BVFF) den Flughafen Leipzig-Schkeuditz an. Einen Tag später landete auch eine Concorde der British Airways in Leipzig. Dabei flogen die Maschinen einen Umweg über Nord- und Ostsee, einerseits um den Passagieren einen Überschallflug zu ermöglichen, andererseits weil der Überflug der innerdeutschen Grenze aus politischen Gründen nicht möglich war. Normalerweise war der Flug mit Überschallgeschwindigkeit über dem europäischen Festland nicht gestattet, doch beim ersten Einflug in die DDR durfte die Concorde der Air France über dem nördlichen Teil der DDR mit Mach 1,5 fliegen. Dieser Bereich wurde auch sonst durch Militärflugzeuge regelmäßig im Überschallbereich durchflogen. Die Concorde war in den folgenden Jahren ein regelmäßiger Gast im Leipziger Messeflugverkehr. Am 1. Mai 1998 war die Concorde F-BVFA anlässlich des 35. Jahrestages der Unterzeichnung der Elysée-Verträge auf dem Stuttgarter Flughafen zu bewundern. Nur etwa einen Monat vor ihrem Absturz gastierte die Concorde F-BTSC anlässlich der Flugshow \"Hahn in Motion\" unter dem Kommando von Christian Marty, dem Kapitän des Unglücksflugs AF 4590, auf dem Flughafen Hahn im rheinland-pfälzischen Lautzenhausen. Ende der Concorde. Heckansicht einer startenden Concorde in British-Airways-Lackierung Das Ende der Concorde nahte mit dem Absturz der Maschine F-BTSC am 25. Juli 2000: Offiziell wurde beim Start des Air-France-Fluges 4590 auf dem Flughafen Paris-Charles de Gaulle ein Reifen von einem auf der Startbahn liegenden Metallteil zerfetzt, das vom Triebwerk einer kurz vorher gestarteten DC-10 der Continental Airlines abgefallen war. Die Air France stellte daraufhin den Flugbetrieb der Concorde ein, die britische Flugaufsicht entzog der Concorde die Flugtauglichkeitsbescheinigung, die sie erst nach zahlreichen Konstruktionsänderungen wieder erlangte. Insbesondere entwickelten die Briten eine Verstärkung der Tanks aus eingelegten Matten, bestehend aus Kevlar, während der französische Reifenhersteller Michelin einen stabileren Reifen entwarf, der nun auch beim Airbus A380 zum Einsatz kommt. Durch diese Veränderungen, die rund hundert Millionen Euro gekostet haben sollen, wurde die Concorde kaum schwerer (BA entwickelte neue, leichtere Passagiersitze, zudem wurde die maximale Passagierkapazität geringfügig verringert). Am 7. November 2001 wurde der Linienbetrieb zwischen Paris bzw. London und New York wieder aufgenommen. Aufgrund ausbleibender Passagiere und neuer Sicherheitsmängel erklärten Air France und British Airways jedoch am 10. April 2003, dass der Linienflugbetrieb mit der Concorde im Laufe des Jahres 2003 eingestellt werde. Als weiterer Grund für diese Entscheidung ist allerdings anzunehmen, dass der Ersatzteilehersteller EADS die Preise für die Ersatzteile den tatsächlichen Kosten anpassen wollte. Der letzte Flug einer Air-France-Concorde fand am 27. Juni 2003 statt. British Airways beendete die Concorde-Flüge am 24. Oktober 2003. Der allerletzte Concorde-Flug, mit der Maschine der Kennung G-BOAF, fand am 26. November 2003 unter Leitung von Chefpilot Mike Bannister von London-Heathrow zum Luftfahrtmuseum in Filton statt. Die meisten Maschinen sind durch Demontage von Teilen derzeit nicht mehr flugfähig. Es gibt aber keine Aussagen, ob eine Wiederzulassung für alle Zeit wirklich ausgeschlossen ist. Im Mai 2010 teilte die britische Gruppe \"Rettet die Concorde\" (SCG) mit, dass sieben Jahre nach dem Dienstende der Concorde französische Luftfahrtexperten Triebwerktests auf dem Flughafen Paris-Le Bourget durchführen. Neue Flüge sind laut SCG jedoch nur für kulturelle Zwecke geplant. Die Gruppe hofft, dass die Concorde zur Eröffnungszeremonie der Olympischen Spiele 2012 in London fliegt. Am 17. Juni 1974 startete eine Concorde der Air France in Boston zum Flug nach Paris-Orly, gleichzeitig mit einer Boeing 747, die von Paris nach Boston abhob. In Orly verbrachte die Concorde 68 Minuten zum Auftanken am Boden. Anschließend flog sie zurück nach Boston – und landete dort zehn Minuten früher als die 747. Am 22. August 1978 hatte der einstige Air-France-Flugkapitän Fernand Andreani in einer Concorde die Strecke Paris – New York mit einer Durchschnittsgeschwindigkeit von 1669 km/h in drei Stunden, 30 Minuten und 11 Sekunden geschafft. Der bis heute bestehende Streckenrekord mit einer Durchschnittsgeschwindigkeit von 1763 km/h wurde am 1. April 1981 von Pierre Chanoine aufgestellt. Vom 15. bis 17. August 1995 gelang einer Concorde der Air France, Flugnummer AF1995, mit 31 Stunden, 27 Minuten und 49 Sekunden der schnellste Flug um die Welt. Der Flug wurde vom US-amerikanischen Rechtsanwalt Donald Pevsner organisiert und im Rahmen einer Werbeaktion zusammen mit einer Brauerei durchgeführt. Gemessen wurde hierbei die gesamte Zeit, die vom Start in Paris bis zur Landung auf dem Ausgangsflughafen vergangen war, inklusive sämtlicher Zwischenstopps in Toulouse, Dubai, Bangkok, Guam, Honolulu und Acapulco. Auf der 36.784 Kilometer langen Flugreise konnten die Passagiere je zwei Sonnenauf- und Untergänge miterleben. Am 7. Februar 1996 legte eine Concorde der British Airways die Strecke New York – London in 2 Stunden, 52 Minuten und 59 Sekunden zurück. Dies ist bis heute Rekord für die schnellste Atlantiküberquerung in der zivilen Luftfahrtgeschichte. Am 11. August 1999 flogen zwei British-Airways- und eine Air-France-Concorde während der totalen Sonnenfinsternis mit zweifacher Schallgeschwindigkeit mit dem Mondschatten über den Nordatlantik. So konnten die rund 300 Passagiere eine 3 bis 4 Mal längere totale Sonnenfinsternis sehen als die Betrachter am Boden (siehe auch: Werner Raffetseder - \"Festival de la Concorde\"). Ein ähnliches Unternehmen gab es zuvor bereits während einer Sonnenfinsternis 1973. Auch wurden Flüge zum Jahreswechsel angeboten, bei denen man zweimal Silvesterabend feiern konnte: Einmal in Paris und wenige Stunden später nochmals in New York. Phil Collins konnte mit Hilfe der Concorde bei dem ursprünglichen Live-Aid-Konzert am 13. Juli 1985 beiderseits des Atlantiks auftreten. Zuerst im Londoner Wembley-Stadion und anschließend im John-F.-Kennedy-Stadion in Philadelphia. Die Entwicklung der Concorde wurde ausschließlich durch die staatliche Finanzierung der hohen Entwicklungskosten ermöglicht. Im laufenden Betrieb flog die Concorde nur teilweise Gewinne ein. Neben den Rekordleistungen, die durch Überschallflüge erzielt wurden, ist vor allem der Fortschritt, der in der Luftfahrttechnologie durch die Entwicklung der Concorde und auch der Tu-144 erzielt wurde, so bedeutend, dass bis heute alle Flugzeughersteller hiervon profitieren. Auch im industriell-wirtschaftlichen Sektor war das Concorde-Projekt wegbereitend für die Zusammenarbeit etwa im Airbus-Bereich. Technik der Concorde. Die Concorde hatte im Vergleich zu anderen Verkehrsflugzeugen aufgrund ihrer hohen Geschwindigkeit und der damit einhergehenden Konstruktion einige Besonderheiten aufzuweisen. RumpfDie Concorde ist zum großen Teil aus einer Aluminiumlegierung konstruiert und im geringeren Teil aus einer hitzebeständigen Nickellegierung sowie Edelstahl und Titan in kritischen Bereichen. Die Tragflächen bestehen aus einem Torsionskasten, in dem sich viele Holme befinden, während der Rumpf in einer konventionellen Halbschalenbauweise ausgeführt ist. Die Concorde besitzt drei Hydrauliksysteme (green, blue, yellow). Eines davon ist für die Klimaanlage und die Drucksysteme zuständig. Da die Concorde über kein Höhenleitwerk verfügt, befinden sich die Steuerflächen ausschließlich an den Abrisskanten der Tragflächen. Das konventionelle Ruder wurde dabei durch kombinierte Höhen- und Querruder (Elevons) unterstützt. Diese können im Parallelbetrieb zur Höhensteuerung eingesetzt werden. Im Differentialbetrieb steuern die Elevons die Querlage der Maschine; diese wirken sich wie die üblichen Querruder aus. Die kombinierten Höhen- und Querruder können gleichzeitig für Bewegungen um die Quer- und um die Längsachse eingesetzt werden. Das gesamte System ist gegen mögliche Ausfälle mehrfach abgesichert. Die Concorde wurde für die Aufnahme von maximal 128 Passagieren zertifiziert, nach dem Unglück im Jahr 2000 und den folgenden Modifikationen betrug die maximale Passagierzahl 100 (British Airways) bzw. 92 (Air France). Die Sitze können unterschiedlich in Viererreihen angeordnet werden. Die Kabine ist mit Toiletten und zwei Küchen ausgestattet. Unter dem vorderen und hinteren Kabinenboden gibt es Stauräume für Gepäck. Die Passagierkabinentüren befinden sich auf der Backbordseite, die Versorgungskabinentüren auf der Steuerbordseite. British Airways hat die Concorde mit einer 40-sitzigen Vorderkabine und einer 60-sitzigen Hinterkabine betrieben, die von einer sechsköpfigen Besatzung betreut wurde. Es gab nur eine Klasse; die Tickets waren etwa 20 % teurer als Tickets für die erste Klasse in Unterschallflugzeugen. Den naturgemäß engeren Platzverhältnissen standen bequeme Sessel mit Lederpolstern, eine ausgezeichnete Küche mit erlesenem Porzellan und Champagner gegenüber. Allerdings bezeichneten in den letzten Jahren viele Passagiere das Geräusch- und Schwingungsverhalten als besonders unangenehm; die Concorde war in dieser Hinsicht nicht mehr zeitgemäß und erlaubte auch nur wenig konstruktive Verbesserungen. Auf dem Flug von London nach New York flog die Concorde bis zu einer Höhe von 8.400 m mit Unterschallgeschwindigkeit, bevor sie südlich von Bristol die Nachbrenner einschaltete und weiter stieg, um auf Überschallgeschwindigkeit zu beschleunigen, die etwa über der Insel Lundy erreicht wurde. So konnten die Schallwellen und der Überschallknall vom Boden ferngehalten werden. Die Concorde beschleunigte weiter auf Mach 1,7, schaltete den Nachbrenner ab und erreichte auf einer Höhe von 15.000 Metern Mach 2. Während des Reisefluges stieg sie langsam weiter bis auf etwa 17.700 Meter (cruise climb), die kurz vor Beginn des Sinkfluges zur Landung erreicht wurden. Dabei variiert diese Höhe jedoch abhängig von der Außentemperatur und der Zuladung. Konventionelle strahlgetriebene Flugzeuge fliegen im Vergleich hierzu auf einer Flughöhe von etwa 12.000 bis maximal 13.500 Metern. Aufgrund der enormen Reibungshitze verlängert sich die Concorde beim Mach-Flug um zirka 14 Zentimeter. Im Cockpit, zwischen den Instrumententafeln des Flugingenieurs, gab es zum Beispiel während eines Mach-Fluges einen fingerbreiten Spalt, der nach der Landung nicht mehr vorhanden war. Die Spitze der Concorde bildet eine hydraulisch absenkbare Nase mit versenkbarem, transparentem Visier. Bei Geschwindigkeiten von über 460 km/h wurden die Nase und der Schutzschild aus Gründen der Aerodynamik vollständig hochgezogen. In dieser Position hatten die Piloten während des regulären Fluges eine eingeschränkte Sicht nach vorne. In Höhen unter 3.000 Metern bei einer Geschwindigkeit von etwa 460 km/h wurde die Nase um 5 ° abgesenkt, was eine gute Sicht nach vorne gewährleistete. Beim Landeanflug wurde die Nase auf 12 ° abgesenkt und ermöglichte dem Piloten eine optimale Sicht auf die Landebahn. Die Sitzposition der Piloten der Concorde liegt 11,4 m vor dem Bugrad, so dass beim Einlenken auf die Start- und Landebahn die Pilotenkanzel weit über den angrenzenden Rasen hineinragt. Kapitän und Copilot sitzen nebeneinander im Cockpit, während der Flugingenieur auf einem Drehstuhl hinter dem Copiloten sitzt. Die beengten Platzverhältnisse im Cockpit erforderten eine ungewöhnliche Gestaltung der Steuerhörner, um zu vermeiden, dass eine Drehbewegung am Horn durch die Beine des Piloten behindert wird. Eine Concorde der Air France im September 1977 Begehbare Concorde F-BVFB im Auto- und Technikmuseum Sinsheim",
+              " Die Tupolew Tu-144 (NATO-Codename: \"Charger\", engl. „Schlachtross“) war das erste Überschallverkehrsflugzeug der Welt. Entwickelt wurde sie vom Konstruktionsbüro Tupolew des sowjetischen Flugzeugkonstrukteurs Alexei Andrejewitsch Tupolew. Die Tu-144 ähnelte in Auslegung und Leistung der Concorde und wies ein ähnliches Tragwerk mit hinten gruppierten Triebwerken sowie eine absenkbare Nase auf, welche die Sicht der Piloten im Landeanflug verbesserte. Diese Ähnlichkeiten ergaben sich aus analogen aerodynamischen und technischen Überlegungen (ähnlich einer konvergenten Evolution). Kritische Stimmen sprechen allerdings auch von umfassender Industriespionage auf beiden Seiten. Der hochentwickelten Flügelgeometrie (Form und Profil) der Concorde stellte Tupolew eine andere, recht effektive Lösung gegenüber, die aber zusätzliche Masse bedeutete. In der Serienausführung Tu-144S wurden bei Start und Landung ausfahrbare Canards benutzt. Diese gaben der Tu-144 ein mit der Concorde vergleichbares Handling im Langsamflug. Es gelang damit, die (minimale) Landegeschwindigkeit auf etwa 260 km/h zu reduzieren. Die Concorde erreichte durch ihr insgesamt besseres Flügeldesign ohne Canards eine (minimale) Landegeschwindigkeit von etwa 240 km/h. Als Antrieb verwendete Tupolew Zweistromstrahltriebwerke (ZTL) vom Typ Kusnezow NK-144 (Tu-144, Tu-144S) bzw. Kolesow RD-36-51A (Tu-144D), die Concorde dagegen Turbojets Olympus 593 von Rolls-Royce (Bristol Siddeley) und SNECMA. Bei dem damaligen Stand der Entwicklung waren die Turbojets der Concorde gerade im Überschallflug effizienter als die ZTL der Tupolew Tu-144. Erst die Ausrüstung mit den wesentlich verbesserten Kusnezow NK-321 einer in den 1990er Jahren gemeinsam mit der NASA für Forschungszwecke reaktivierten Tu-144LL ergab insgesamt etwas bessere Flugleistungen und Reichweiten im Vergleich zur Serienausführung der Concorde.",
+              " Unter Ultraleichtflugzeugen (ULs) versteht man in Europa kleine, sehr leichte motorgetriebene Flugzeuge für maximal zwei Personen. Was genau unter einem Ultraleichtflugzeug zu verstehen ist, wird von Land zu Land noch sehr unterschiedlich geregelt. International gibt es unterschiedliche Ultraleicht-Flugzeugklassen mit national variierenden Zulassungsvorschriften. Demgemäß wird der Begriff \"Ultraleichtflugzeug\" mehr oder weniger umfassend für Leichtflugzeuge verwendet. In den USA werden unter \"ultralight\" ausschließlich sehr leichte einsitzige Fluggeräte verstanden. Zahlreiche europäische Ultraleichtflugzeuge fallen in den USA unter den Begriff Light Sport Aircraft (LSA). „Ultraleicht“ beschreibt zumindest im europäischen Kontext keineswegs ein extrem geringes Gewicht, sondern die Rückkehr zu alten Vorstellungen davon, was ein einfacher Zweisitzer wiegen solle. Das Gewicht der Piper Cub, eines von 1938 bis 1947 mehr als vierzehntausendmal gebauten, normal zertifizierten Flugzeugs, lag zwischen dem eines europäischen Ultraleichtflugzeuges und dem eines „Light Sport Aircraft“. Als Ultraleichtflugzeuge werden im Sprachgebrauch und in den nationalen Gesetzgebungen viele Arten von Luftsportgeräten und Leichtflugzeugen zusammengefasst. Fast alle leichten, fliegenden Objekte können als \"Ultraleichtflugzeug\" zugelassen werden: Leichtflugzeuge, Drehflügler wie Hubschrauber und Tragschrauber, motorisierte Hängegleiter, Segelflugzeuge und Motorsegler, motorisierte Gleitschirme, Wasserflugzeuge, Kunstflugzeuge, zweimotorige Kleinstflugzeuge und vieles andere mehr. Die maximale Abflugmasse (engl. \"maximum take off weight\", MTOW) der \"Ultraleichtflugzeuge\" darf in Europa bei Einsitzern 300 Kilogramm, bei Zweisitzern 450 Kilogramm, bzw. in Deutschland, Österreich und der Schweiz 472,5 Kilogramm inklusive Gesamtrettungssystem nicht überschreiten. Eine europäische Harmonisierung ist vorerst nicht in Sicht. Zwar erarbeitet seit Januar 2005 die Europäische Flugsicherheits-Agentur (EASA) eine Vereinheitlichung der verschiedenen nationalen Gesetzgebungen und Definitionen mit dem Zweck, die maximale Abflugmasse von Ultraleichtflugzeugen einheitlich auf 560 kg oder, wie der europäische Microlight Verband fordert, auf 600 kg zu begrenzen. Die Regelung soll auch ultraleichte Drehflügler wie Tragschrauber und Hubschrauber beinhalten. Kontrollierte Sichtflüge CVFR sollen europaweit ermöglicht werden. In \"Frankreich\" darf die Motordauerleistung bei zweisitzigen UL-Flugzeugen 60 kW (82 PS), bei einsitzigen 45 kW (60 PS) nicht überschreiten (Tragschrauber: 74 kW, 100 PS). Als Startleistung werden 74 kW (100 PS) (Tragschrauber: 88 kW, 120 PS) akzeptiert, dafür können dort auch zweimotorige Flugzeuge wie die CriCri als Ultraleichtflugzeuge zugelassen werden. In Italien dürfen sogar ultraleichte Hubschrauber mit der Ultraleichtfluglizenz geflogen werden. In der Schweiz sind nur aerodynamisch gesteuerte Ultraleichtflugzeuge mit 472,5 kg MTOW und Gesamtrettungssystem zugelassen. Sowohl zulassungs- und kennzeichnungspflichtigen als auch nur auf Antrag freiwillig eingetragenen Ultraleichtflugzeugen wird ein Kennzeichen zugewiesen. Deutsche Ultraleichtflugzeuge erhalten den nationalen Buchstaben D und vier weitere Buchstaben als Eintragungszeichen (Bsp: D-MABC). Als erster Buchstabe des Eintragungszeichens ist in Deutschland bei motorgetriebenen Luftsportgeräten nach LuftVZO Anl. 1 (zu § 14 und § 19) ein M zu verwenden. In den USA vermeidet die Federal Aviation Administration (FAA) in den Vorschriften strikt den Begriff „Ultraleichtflugzeug“, und schreibt konsequent „Ultralight Vehicle“, dieweil es ausdrücklich keine Vorschriften für die Ausgestaltung dieser auf jeden Fall einsitzigen Geräte gibt, die ohne Pilotenschein geflogen werden dürfen. Sie können nicht schneller als 55 kt (102 km/h) fliegen, müssen bei 25 kt (46 km/h) noch flugfähig sein, dürfen nicht mehr als 5 Gallonen (18,9 l) Kraftstoff mitführen und ihr Leergewicht ist strikt auf 254 lbs (115 kg) zuzüglich Gesamtrettungssystem und Schwimmer begrenzt. Zweisitzige Ultraleichtflugzeuge fallen in den USA in die neue Klasse der \"LSA\" (Light Sport Aircraft) bis 599 kg MTOW. Der Pilot eines LSA benötigt mindestens eine LSA-Pilotenlizenz [FAR 61.301ff], die zwar deutlich einfacher zu erwerben ist als eine PPL, allerdings auch erhebliche Einschränkungen hat, z.B. nur national anerkannt wird [FAR61.315(c)(8)]. Anstelle eines \"Medical\" reicht zum Erwerb dieser eingeschränkten Lizenz der Besitz eines Führerscheines, sofern das \"Medical\" nicht explizit aberkannt worden ist. Für Flüge nach Kanada oder Mexico ist mindestens eine PPL erforderlich. Anders als in Europa sind in der dortigen LSA-Klasse Einziehfahrwerk und Verstellpropeller verboten und die maximale erreichbare Geschwindigkeit auf 223 km/h begrenzt. Ultraleichtflugzeuge nach US-Verständnis dürfen hingegen mit Verstellpropeller und Einziehfahrwerk ausgestattet sein – sofern es einem Erbauer gelingen sollte, all dies in 115 kg unterzubringen. Man unterscheidet grundsätzlich zwischen \"aerodynamisch gesteuerten\" und \"gewichtskraftgesteuerten\" Ultraleichtflugzeugen. Aerodynamisch gesteuerte Ultraleichtflugzeuge. Aerodynamisch gesteuerte Ultraleichtflugzeuge werden zur Steuerung durch Ruderausschläge um Längs-, Quer- oder Hochachse gedreht, man spricht daher auch von \"Drei-Achs-Steuerung\". Außer bei Doppeldecker-Bauformen ist die Sitzanordnung in der Regel nebeneinander (Ausnahme: Sky Arrow). Diese „Dreiachser“ haben einen enormen Entwicklungsschub durchgemacht und sind inzwischen teilweise leistungsfähiger als kleine Leichtflugzeuge. Reisegeschwindigkeiten von 250 km/h sind keine Seltenheit mehr. Die Höchstgeschwindigkeit kann bei bis zu 330 km/h liegen und wird bei einigen Ultraleichtflugzeugen je nach Land nur durch die maximale Auslösegeschwindigkeit des Gesamtrettungssystems begrenzt. Als ebenfalls 3-achsig-aerodynamisch gesteuerte Sonderformen können ultraleichte Segelflugzeuge sowie Motorsegler betrachtet werden. Erstere zählen in Deutschland rechtlich allerdings nicht zu den Ultraleichtflugzeugen, sondern bilden als Gleitflugzeuge eine eigene Kategorie bei den Luftsportgeräten. Segelflugzeuge mit Klappmotor und Motorsegler bis 472,5 kg MTOW gelten als Ultraleicht-Motorsegler. In Deutschland können seit Mai 2004 darüber hinaus auch Tragschrauber als Ultraleichtflugzeug zugelassen werden, diese dürfen sogar mehr als 500 kg zulässiges Gesamtgewicht haben und sind von der Pflicht, ein Gesamtrettungssystem zu haben, ausgenommen. Gewichtskraftgesteuerte Ultraleichtflugzeuge. Gewichtskraftgesteuerte Ultraleichtflugzeuge besitzen keine Ruder, die Steuerung erfolgt durch Gewichtsverlagerung bzw. Schwenkung der gesamten Flügelfläche. Zu dieser Klasse gehören Trikes und \"fußstartfähige Ultraleichtflugzeuge\". Flugtechnische Basis für diese Ultraleichtflugzeug-Typen stellen im Prinzip in irgendeiner Form motorisierte Hängegleiter und Gleitschirme dar. Außer auf Basis dieser beiden Grundtypen oder der Startart kann eine Einteilung auch danach erfolgen, ob es sich grundsätzlich um ein \"kompaktes Fluggerät\" mit festem Motoreinbau handelt oder ob Motor und/oder das Trike alternativ nicht fest mit dem eigentlichen Luftfahrzeug verbundenen sind und dieses bei Bedarf auch ohne Motor als Hängegleiter oder Gleitschirm betrieben werden könnte. Aufgrund dieser unterschiedlichen, sich teilweise überlagernden Einteilungskriterien und der Modellvielfalt ist eine klare Systematik letztlich nicht möglich. Bei fußstartfähigen Ultraleichtflugzeugen liegt die Reisegeschwindigkeit im Allgemeinen nicht höher als 50 km/h. International finden sich Definitionen zu den verschieden Arten von Ultraleichts bei der Fédération Aéronautique Internationale (FAI). Europaweit sind weder von der internationalen Zivilluftfahrtorganisation ICAO noch von den Joint Aviation Authorities zum Thema Ultraleichtflugzeuglizenzen Bestimmungen festgelegt worden. Die Anerkennung der Lizenzen ist national sehr unterschiedlich geregelt, weshalb man nicht in jedes Land mit einem Ultraleichtflugzeug einfliegen darf. Um Ultraleichtflugzeuge fliegen zu dürfen, benötigt man in Deutschland einen SPL-F (Sportpilotenlizenz mit Beiblatt F), wobei zwischen Motorschirmen, gewichtskraftgesteuerten Ultraleichtflugzeugen (Trikes), aerodynamisch gesteuerten Ultraleichtflugzeugen und Tragschraubern auch in der Lizenz unterschieden wird. So benötigen moderne Dreiachs-Ultraleichtflugzeuge bei 200 km/h Reisegeschwindigkeit mit zwei Personen ca. 12 l/h bleifreies Superbenzin, und liegen damit beim Verbrauch pro km im Bereich moderner Diesel-PKW. In den letzten Jahren ist es zu einem Boom der Ultraleichtfliegerei gekommen. Dies liegt zum einen an der rasanten technischen Entwicklung, die Ultraleichtflugzeuge auch für viele Piloten mit Privatpilotenlizenz (PPL-A und PPL nach JAR-FCL) zu einer interessanten Alternative gemacht haben. Zum anderen ist das Ultraleichtfliegen deutlich kostengünstiger als das Fliegen mit den größeren Leichtflugzeugen. Darauf haben bereits auch viele Flugplatzbetreiber reagiert, denn ein Flugplatz muss in Deutschland für Ultraleichtflugzeuge ausdrücklich zugelassen sein. Auch auf vielen größeren Verkehrslandeplätzen mit kontrolliertem Luftraum (z. B. Mannheim City und Westerland auf Sylt) sowie einigen internationalen Verkehrsflughäfen (z. B. Flughafen Friedrichshafen, Osnabrück, Flughafen Hannover) sind inzwischen Ultraleichtflugzeuge zugelassen.",
+              " \"Martin Chinaclipper\" Typ 130 Flugboot der 1930er Jahre Ein Flugboot, gelegentlich auch Flugschiff genannt, ist ein wasserlandungsfähiges Flugzeug (Seeflugzeug), dessen Rumpf schwimmfähig ist. Dadurch unterscheidet es sich von anderen Seeflugzeugen oder Wasserflugzeugen mit meist starr montierten Landegestellen (Schwimmwerk). Flugboote, die zusätzlich ein Fahrwerk haben, nennt man auch Amphibienflugzeuge. In Deutschland ist der Betrieb von Flugbooten durch die Flugplatzpflicht nur eingeschränkt möglich. Es gibt nur wenige Gelände für Wasserflugzeuge und Flugboote. Ein Flugboot hat gegenüber einem Schwimmerflugzeug den Vorteil des geringeren Gewichts, konstruktiven Aufwands und Luftwiderstands, da nicht neben dem Rumpf auch noch voluminöse Schwimmer vorhanden sind. Kleine Seeflugzeuge werden jedoch gerne als Schwimmerflugzeuge ausgeführt, weil dadurch bei Start und Landung Triebwerk und Cockpit weniger dem Spritzwasser ausgesetzt sind. In den Anfangsjahren des kommerziellen Flugverkehrs, nach dem Ersten Weltkrieg, wurden Flugboote eingesetzt, da sie auch Orte ohne Flugplatz anfliegen konnten. Auch Langstrecken, die mit den damaligen Flugzeugen nicht non-stop geflogen werden konnten, ließen sich mit einem Flugboot etappenweise überwinden, ohne dass an jeder Zwischenlandestation extra ein Flugplatz angelegt werden musste. Flugboote werden seit den 1940er Jahren im kommerziellen Linienverkehr nur noch selten eingesetzt. In den 1930er Jahren war bei der deutschen Lufthansa neben einer Pilotenlizenz auch ein Kapitänspatent für die Seefahrt zum Führen der Flugboote üblich. Mit dem Einsetzen des Passagierverkehrs machte man sich Gedanken, wie die zukünftigen großen Passagierflugzeuge starten und landen sollten. Da zu der Zeit Auftriebshilfen, Lande- und Fowlerklappen noch Zukunftsmusik waren, errechneten die Konstrukteure für diese Flugzeuge immens lange Start- und Landestrecken; Landestrecken, die damals auf Land nicht realisierbar erschienen. Da lag es nahe, auf das Wasser auszuweichen. Sikorsky und die PanAm taten es sehr erfolgreich auf den pazifischen Strecken (San Francisco – Honolulu – Wake – Manila – Hongkong); die Deutschen, Franzosen und Italiener auf den Südamerika-Routen. Die Briten verwendeten neben Landflugzeugen auch Flugboote um das Empire luftverkehrstechnisch zu erschließen. Im Ersten Weltkrieg kamen Flugboote bereits 1915 zum Einsatz, etwa die Lohner-Flugboote oder die Grigorowitsch M-5. Das führte sogar dazu, dass zu dem renommiertesten Geschwindigkeitsrennen der 1920er und 1930er Jahre, dem Schneider-Cup, nur Schwimmerflugzeuge und Flugboote zugelassen waren, die eine (relativ strenge) maritime Tauglichkeitsprüfung bestehen mussten. Ein Curtiss NC Flugboot überquerte 1919 als erstes Flugzeug den Atlantik. Während des Zweiten Weltkrieges wurden Flugboote zur Küsten- und Seeüberwachung, U-Boot-Bekämpfung und vor allem zur Seenotrettung eingesetzt. In vielerlei Hinsicht konnte man diese Zeit als den Höhepunkt der Flugbootentwicklung bezeichnen – Dornier, Blohm & Voss, Short und die Glenn L. Martin Company bauten bis dato die größten und leistungsfähigsten Flugboote. Sogar Howard Hughes versuchte sich an einer Konstruktion (Hughes H-4). Noch nach dem Zweiten Weltkrieg bauten einige britische Flugzeugkonstrukteure extrem große Flugboote wie die Saunders-Roe Saro Princess, die über zehn Turboprop-Triebwerke verfügte und ein Fluggewicht von 156 t besaß – eines der größten Wasserflugzeuge, das je gebaut wurde. Mehr als doppelt so groß wäre die P.192 mit 24 Strahltriebwerken und Platz für 1.000 Passagiere auf fünf Flugdecks gewesen. Sie war fertig konstruiert, ist jedoch nie realisiert worden. Die große Zeit der Flugboote waren die 1920er und 1930er Jahre, vor allem geprägt durch die Konstruktionen von Claude Dornier mit dem berühmten Dornier-Wal. Während der Berliner Luftbrücke landeten britische Catalina- und Sunderland-Flugboote auf der Havel und versorgten die Stadt mit Lebensmitteln. Auch heute gibt es noch die großen Flugboote – die riesige Martin Mars löscht in Kanada Waldbrände und die Catalina dient vielen maritimen Forschungseinrichtungen. Die Canadair CL-415 ist ein erfolgreiches, weltweit eingesetztes Wasserlöschflugzeug, das speziell für diesen Zweck entwickelt wurde. Aktuell werden Flugboote von Shin Meiwa in Japan und von Berijew in Russland entwickelt oder gefertigt.",
+              " Zur Besatzung während des USA-Fluges gehörten Navigationsoffizier Wilhelm Niemann als Erster Offizier und erster Flugschiffspostmeister. Er war zuständig für das Hilfspostamt Dornier Do X an Bord des Flugschiffes und die dort bearbeitete DO-X-Post. Der Kommandant der Do X war Friedrich Christiansen. Auf dem Rückflug der Do X von New York nach Berlin ab dem 20. Mai 1932 gehörte die Fliegerin Antonie Straßmann zur Besatzung. Als Schlussfolgerung muss man auch sehen, dass das Projekt Dornier Do X eine erstmalige, andere und neue Dimension im damaligen Flugzeugbau eröffnet hat, deren technische und wirtschaftliche Unzulänglichkeiten mit Sicherheit beim Nachfolgeprojekt, sofern es politisch möglich geworden wäre, beseitigt worden wären. Als Prototyp ohne Vorbilder konnte die Do X naturgemäß noch keine Wirtschaftlichkeit vorweisen und \"Kinderkrankheiten\" waren relativ wenig vorhanden. Der Hauptgrund für die Einstellung des Programmes war politisch. Das geheime Aufrüstungsprogramm der Weimarer Republik, aus dem die Do X finanziert wurde, war durch die Lohmann-Affäre bekannt geworden und das aufkommende Dritte Reich sah in dem Flugzeug keine militärische Nutzung, sodass die oben genannten Gründe hauptsächlich vorgeschoben wurden."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "3": {
+    "_meta": {
+      "domain_id": 3,
+      "domain_name": "AirportGeolocationManagement",
+      "definition": "The process of managing geolocation data and airport information",
+      "tables": [
+        "airport",
+        "airport_geo"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "airport": {
+        "_description": "Captures unique identifiers and codes for global airports along with their respective names.",
+        "columns": [
+          {
+            "name": "airport_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in airport",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "iata",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores three-letter IATA codes for airports.",
+            "samples": [
+              "LCG",
+              "N",
+              "TID",
+              "DIR",
+              "QUN"
+            ]
+          },
+          {
+            "name": "icao",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores 4-character ICAO codes identifying airports worldwide.",
+            "samples": [
+              "LECO",
+              "7Y7",
+              "DAOB",
+              "HADR",
+              "RKNC"
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of airport names, including spaces and special characters.",
+            "samples": [
+              "A CORUNA",
+              "A R S SPORT STRIP",
+              "A. BOUSSOUF AIN BOUCHEKIF",
+              "A.T.D. YILMA INTL",
+              "A-306"
+            ]
+          }
+        ]
+      },
+      "airport_geo": {
+        "_description": "Captures geographical details of airports, including airport ID, name, city, country, latitude, longitude, and geolocation.",
+        "columns": [
+          {
+            "name": "airport_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in airport_geo",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of airport names, often including location identifiers.",
+            "samples": [
+              "A CORUNA",
+              "A R S SPORT STRIP",
+              "A. BOUSSOUF AIN BOUCHEKIF",
+              "A.T.D. YILMA INTL",
+              "A-306"
+            ]
+          },
+          {
+            "name": "city",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of airport city names, such as A CORUNA, BELLE PLAINE, TIARET, DIRE DAWA, CHUNCHON.",
+            "samples": [
+              "A CORUNA",
+              "BELLE PLAINE",
+              "TIARET",
+              "DIRE DAWA",
+              "CHUNCHON"
+            ]
+          },
+          {
+            "name": "country",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of country names for airports.",
+            "samples": [
+              "SPAIN",
+              "UNITED STATES",
+              "ALGERIA",
+              "ETHIOPIA",
+              "KOREA"
+            ]
+          },
+          {
+            "name": "latitude",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores geographical latitude coordinates for airport locations.",
+            "samples": [
+              43.301944,
+              44.666667,
+              35.341389,
+              9.614167,
+              37.885
+            ]
+          },
+          {
+            "name": "longitude",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores geographical longitudes of airports in decimal degrees.",
+            "samples": [
+              -8.377222,
+              -93.783611,
+              1.466944,
+              41.86,
+              127.715
+            ]
+          },
+          {
+            "name": "geolocation",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores Base64-encoded WKB geometries representing airport locations.",
+            "samples": [
+              "AAAAAAEBAAAAmZzaGaamRUDWqfI9I8EgwA==",
+              "AAAAAAEBAAAARSkhWFVVRkBLcsCuJnJXwA==",
+              "AAAAAAEBAAAAaRt/orKrQUDJA5FFmnj3Pw==",
+              "AAAAAAEBAAAAm5DWGHQ6I0CuR+F6FO5EQA==",
+              "AAAAAAEBAAAA4XoUrkfxQkD2KFyPwu1fQA=="
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "4": {
+    "_meta": {
+      "domain_id": 4,
+      "domain_name": "AirlineInfrastructureManagement",
+      "definition": "The process of managing the infrastructure related to airlines, including airline registration, updates, and base airport management.",
+      "tables": [
+        "airline"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "airline": {
+        "_description": "Tracks airline details, including unique identifiers, IATA codes, names, and their base airports.",
+        "columns": [
+          {
+            "name": "airline_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in airline",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "iata",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores the 2-letter IATA codes for airlines.",
+            "samples": [
+              "AF",
+              "AL",
+              "AM",
+              "AN",
+              "AR"
+            ]
+          },
+          {
+            "name": "airlinename",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of airline names from various countries.",
+            "samples": [
+              "Afghanistan Airlines",
+              "Albania Airlines",
+              "American Samoa Airli",
+              "Angola Airlines",
+              "Argentina Airlines"
+            ]
+          },
+          {
+            "name": "base_airport",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores airport identification codes for airline base locations.",
+            "samples": [
+              850,
+              10274,
+              9210,
+              190,
+              285
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "5": {
+    "_meta": {
+      "domain_id": 5,
+      "domain_name": "Passenger Data Management",
+      "definition": "The process of managing passenger data, including registration, updates, and personal details.",
+      "tables": [
+        "passenger",
+        "passengerdetails"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "passenger": {
+        "_description": "Tracks individual passengers and their identifying details at the airport.",
+        "columns": [
+          {
+            "name": "passenger_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in passenger",
+            "samples": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "passportno",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores unique 10-character alphanumeric passport numbers of passengers.",
+            "samples": [
+              "P103014",
+              "P103015",
+              "P103016",
+              "P103017",
+              "P103018"
+            ]
+          },
+          {
+            "name": "firstname",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of passengers' first names, including some with middle initials.",
+            "samples": [
+              "Buzz",
+              "Bobby \"Blue\"",
+              "Don",
+              "Michael",
+              "Mara"
+            ]
+          },
+          {
+            "name": "lastname",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of the surname for passengers.",
+            "samples": [
+              "Aldrin",
+              "Bland",
+              "Brockett",
+              "Browne",
+              "Corday"
+            ]
+          }
+        ]
+      },
+      "passengerdetails": {
+        "_description": "Captures personal details of individual passengers for air travel management.",
+        "columns": [
+          {
+            "name": "passenger_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in passengerdetails",
+            "samples": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "birthdate",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores passenger birthdates in YYYY-MM-DD format.",
+            "samples": [
+              "1930-01-12",
+              "1930-01-03",
+              "1930-01-07",
+              "1930-01-30",
+              "1930-01-25"
+            ]
+          },
+          {
+            "name": "sex",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores passenger gender (male or female) as a character string.",
+            "samples": [
+              "m",
+              "w",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "street",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores street addresses of passengers, up to 50 characters long.",
+            "samples": [
+              "Andechsstraße 45",
+              "Archenweg 82",
+              "Bichlweg 77",
+              "Bleichenweg 38",
+              "Domanigweg 59"
+            ]
+          },
+          {
+            "name": "city",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores names of cities where passengers reside.",
+            "samples": [
+              "Bad Wimsbach-Neydharting",
+              "Behamberg",
+              "Bad Blumau",
+              "Buch-Geiseldorf",
+              "Dienten am Hochkönig"
+            ]
+          },
+          {
+            "name": "zip",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores 5-digit postal codes for passengers.",
+            "samples": [
+              4654,
+              4441,
+              8283,
+              8272,
+              8274
+            ]
+          },
+          {
+            "name": "country",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores passenger's country of origin (Ethiopia, Korea, Denmark, United States).",
+            "samples": [
+              "Ethiopia",
+              "Korea",
+              "Denmark",
+              "United States",
+              "Greenland"
+            ]
+          },
+          {
+            "name": "emailaddress",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores email addresses of passengers in a format compatible with standard internet email services.",
+            "samples": [
+              "Michael.Browne@airtelkol.com",
+              "Mara.Corday@cvcpaging.com",
+              "Jack.Greene@my2way.com",
+              "Alfred.Herrhausen@bplmobile.com",
+              "Dean.Jones@page.metrocall.com"
+            ]
+          },
+          {
+            "name": "telephoneno",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores international phone numbers up to 15 digits.",
+            "samples": [
+              "03022 807190",
+              "01335 64343532",
+              "08165 15262423",
+              "03133 10894292",
+              "06046 69629766"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "6": {
+    "_meta": {
+      "domain_id": 6,
+      "domain_name": "Reservation Management",
+      "definition": "The process of managing airline reservations, including booking, seat allocation, passenger information, and pricing.",
+      "tables": [
+        "booking"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "booking": {
+        "_description": "Tracks reservations for specific flights, including seat assignments, passenger information, and pricing details.",
+        "columns": [
+          {
+            "name": "booking_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in booking",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "flight_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the flight_ entity",
+            "samples": [
+              3863,
+              12143,
+              12153,
+              12157,
+              28412
+            ]
+          },
+          {
+            "name": "seat",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores aircraft seat identifiers in a format of alphabetical row (e.g., F, E) and numerical column (e.g., 25, 24).",
+            "samples": [
+              "N",
+              "25F",
+              "25E",
+              "24D",
+              "24G"
+            ]
+          },
+          {
+            "name": "passenger_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the passenger_ entity",
+            "samples": [
+              2947,
+              20814,
+              33340,
+              21401,
+              24581
+            ]
+          },
+          {
+            "name": "price",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores booking prices in floating point format.",
+            "samples": [
+              110.1,
+              173.1,
+              323.15,
+              445.85,
+              198.32
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

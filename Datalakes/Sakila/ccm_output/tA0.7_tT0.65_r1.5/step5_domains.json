@@ -1,0 +1,85 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Customer and Staff Management",
+    "definition": "The set of activities related to managing customer and staff accounts and their associated data.",
+    "tables": [
+      "actor",
+      "customer",
+      "staff"
+    ],
+    "phi_scores": {
+      "C1": 0.2471,
+      "C4": 0.1146,
+      "C2": 0.1069,
+      "C5": 0.1015,
+      "C3": 0.0847
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Film Rental and Inventory Management",
+    "definition": "The set of activities related to managing film rentals, inventory levels, and associated transactions.",
+    "tables": [
+      "inventory",
+      "payment",
+      "rental",
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2049,
+      "C4": 0.2027,
+      "C5": 0.2013,
+      "C2": 0.1718,
+      "C3": 0.1468
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Film Category Management",
+    "definition": "The set of activities related to managing film categories and their associated data.",
+    "tables": [
+      "category"
+    ],
+    "phi_scores": {
+      "C3": 0.3259,
+      "C2": 0.256,
+      "C4": 0.1747,
+      "C1": 0.1516,
+      "C5": 0.1485
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Film Catalog and Language Management",
+    "definition": "The set of activities related to managing the film catalog, including registration, updates, and language information.",
+    "tables": [
+      "film",
+      "language"
+    ],
+    "phi_scores": {
+      "C2": 0.2827,
+      "C4": 0.2201,
+      "C3": 0.1956,
+      "C5": 0.1833,
+      "C1": 0.1386
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing the locations, their associated addresses, and categorizing films for easy browsing and organization.",
+    "tables": [
+      "address",
+      "city",
+      "film_category"
+    ],
+    "phi_scores": {
+      "C1": 0.1686,
+      "C3": 0.1452,
+      "C2": 0.1436,
+      "C5": 0.1214,
+      "C4": 0.1148
+    }
+  }
+]

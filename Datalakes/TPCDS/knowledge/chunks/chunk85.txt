@@ -1,0 +1,53 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the company's division and market (cc_division, cc_company).
+- HR managers recruit and hire new employees for call center positions, recording their personal details (cc_employees).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives handle customer inquiries and sales calls during the call center's operating hours (cc_hours).
+- They record call start and end dates, as well as the reason for the call (cc_rec_start_date, cc_rec_end_date, cc_class).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers oversee multiple call centers within a specific market and class (cc_mkt_id, cc_mkt_class).
+- They assign market managers to each call center (cc_market_manager).
+
+## 4. Call Center Expansion
+
+Performed By: Call Center Managers, HR Managers, Market Managers
+
+Activity:
+- Call center managers, HR managers, and market managers collaborate to expand the call center by adding more square footage (cc_sq_ft) or hiring additional employees (cc_employees).
+
+## 5. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog, providing details such as product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process returns by recording the returned date and time, item SKU, and refunded customer details (cr_returned_date_sk, cr_refunded_customer_sk).
+
+## 7. Warehouse Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff track inventory levels and ship modes for returned items (cr_ship_mode_sk, cr_warehouse_sk).

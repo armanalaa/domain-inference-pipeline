@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set quan_low for each item to trigger reordering when stock reaches a certain level.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details into the customers table during onboarding.
+- Customers place orders by specifying products, quantities, and shipping information.
+- Customer service agents update customer records with new contact information or address changes.
+
+## 3. Order Processing
+
+Performed By: Order Processing Team
+
+Activity:
+- Order processing team creates orderlines for each item in an order and calculates the netamount, tax, and totalamount.
+- Order processing team assigns a unique orderid to each customer order.
+
+## 4. Inventory Tracking
+
+Performed By: Warehouse Staff, Inventory Staff
+
+Activity:
+- Warehouse staff update inventory when products are shipped out or received from orders.
+- Inventory staff monitor sales and adjust quan_in_stock accordingly.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Team
+
+Activity:
+- Warehouse staff pick and pack ordered items for shipment.
+- Shipping team labels packages with the correct orderid and shipping information.
+
+## 6. Reordering Management
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff track reorder levels and place orders when quan_reordered is reached.
+- Purchasing teams negotiate prices with suppliers for the ordered items.
+
+## 7. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- Finance records transactions related to orders, such as netamount, tax, and totalamount, in the orders table.
+- Finance generates reports on sales performance, inventory levels, and customer behavior using data from multiple tables.

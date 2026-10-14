@@ -1,0 +1,81 @@
+ # TPC-DS — Business Workflows
+
+## 1. District Management
+
+Performed By: District Managers, City Planners
+
+Activity:
+- District managers assign unique IDs (D_ID) to each district based on geographical boundaries.
+- City planners update the street information (D_STREET_1, D_STREET_2) for each district.
+- District managers record the city, state, and zip code (D_CITY, D_STATE, D_ZIP) for each district.
+- District managers calculate and set the sales tax rate (D_TAX) based on local regulations.
+
+## 2. Warehouse Management
+
+Performed By: Warehouse Managers, Inventory Specialists
+
+Activity:
+- Warehouse managers assign unique IDs (W_ID) to each warehouse.
+- Inventory specialists track the quantity of items in stock (S_QUANTITY) for each warehouse.
+- Warehouse managers determine the distribution information (S_DIST_01, S_DIST_02, ..., S_DIST_10) based on demand and location.
+
+## 3. Customer Registration
+
+Performed By: Customer Service Representatives, Sales Associates
+
+Activity:
+- Customer service representatives register new customers by recording their unique ID (C_ID), name, address, phone number (C_FIRST, C_LAST, C_STREET_1, C_STREET_2, C_CITY, C_STATE, C_ZIP, C_PHONE).
+- Sales associates assign credit status (C_CREDIT) and set credit limit (C_CREDIT_LIM) for each customer.
+
+## 4. Order Placement
+
+Performed By: Customers, Sales Associates
+
+Activity:
+- Customers place orders by selecting items from the catalog (I_ID), specifying quantities, and choosing shipping options.
+- Sales associates enter order details into the ORDER table (O_ID, O_D_ID, O_W_ID, O_C_ID, O_ENTRY_D) and generate unique order numbers (NO_O_ID).
+
+## 5. Order Line Management
+
+Performed By: Sales Associates, Warehouse Staff
+
+Activity:
+- Sales associates create order lines by linking items to orders (OL_I_ID, OL_O_ID) and specifying quantities (OL_QUANTITY).
+- Warehouse staff update the stock levels (S_QUANTITY) as items are sold.
+
+## 6. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Managers
+
+Activity:
+- Purchasing teams issue purchase orders for new inventory based on demand forecasts and supplier availability.
+- Warehouse managers receive and update the stock levels (S_QUANTITY) as new items arrive.
+
+## 7. Delivery Management
+
+Performed By: Carriers, Warehouse Staff
+
+Activity:
+- Carriers pick up orders from warehouses and deliver them to customers based on shipping options (O_CARRIER_ID).
+- Warehouse staff update the delivery status (OL_DELIVERY_D) for each order line.
+
+## 8. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return dates and times (cr_returned_date_sk, cr_returned_time_sk), reasons for returns (cr_DIST_INFO), and updating the stock levels (S_QUANTITY) as items are returned.
+
+## 9. Sales Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract sales data from the ORDER table (O_ID, O_D_ID, O_W_ID, O_C_ID) and analyze trends to inform business decisions.
+
+## 10. Inventory Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract inventory data from the STOCK table (S_I_ID, S_W_ID, S_QUANTITY) and analyze trends to optimize stock levels and distribution.

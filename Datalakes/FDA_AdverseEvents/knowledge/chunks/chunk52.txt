@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Manufacturers
+
+Activity:
+- Healthcare professionals document adverse events observed in patients during treatment.
+- Patients report adverse events they experience after using a medical product.
+- Manufacturers enter adverse event reports received from healthcare providers or patients.
+
+## 2. Adverse Event Categorization
+
+Performed By: Safety Officers, Medical Experts
+
+Activity:
+- Safety officers classify adverse events based on their severity and relationship to the product.
+- Medical experts review and validate categorizations made by safety officers.
+
+## 3. Data Verification and Validation
+
+Performed By: Data Entry Clerks, Quality Assurance Specialists
+
+Activity:
+- Data entry clerks input adverse event data into the system following verification checks.
+- Quality assurance specialists review entered data for accuracy and completeness.
+
+## 4. Adverse Event Analysis
+
+Performed By: Research Analysts, Statisticians
+
+Activity:
+- Research analysts analyze patterns and trends in reported adverse events.
+- Statisticians perform statistical analysis on the collected data to identify potential risks or concerns.
+
+## 5. Case Report Writing
+
+Performed By: Medical Writers
+
+Activity:
+- Medical writers compile all relevant information about an adverse event into a comprehensive case report.
+
+## 6. Case Report Review and Approval
+
+Performed By: Medical Experts, Regulatory Affairs Officers
+
+Activity:
+- Medical experts review the accuracy and completeness of case reports.
+- Regulatory affairs officers approve or request revisions to case reports before submission to regulatory bodies.
+
+## 7. Case Report Submission
+
+Performed By: Regulatory Affairs Officers, Data Managers
+
+Activity:
+- Regulatory affairs officers submit approved case reports to the appropriate regulatory agencies.
+- Data managers ensure that all submitted case reports are properly recorded and archived for future reference.

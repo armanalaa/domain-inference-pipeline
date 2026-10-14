@@ -1,0 +1,56 @@
+ # Northwind — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by providing company name, contact details, and address.
+- Sales representatives update customer information as needed.
+- Customer service agents handle customer inquiries and update contact details accordingly.
+
+## 2. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping details.
+- Sales representatives confirm order details and process the transaction.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory based on order ID.
+- Shipping department packages orders for shipment and records shipping details.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Managers, Purchasing Teams
+
+Activity:
+- Warehouse managers monitor stock levels and update the database when items are added or removed from inventory.
+- Purchasing teams order new products when inventory reaches reorder level.
+
+## 5. Employee Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- HR managers hire new employees by recording personal and professional details, assigning territories, and setting up employee profiles.
+- Employees update their own contact information and report to their supervisors.
+
+## 6. Supplier Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams maintain relationships with suppliers by recording supplier details and negotiating prices.
+
+## 7. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records financial transactions, including order totals, payments, and freight costs.

@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products are received, referencing the quan_in_stock column.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product recommendations and order details.
+- HR managers create new customer accounts, entering personal information such as name, address, email, phone, credit card details, and age.
+- Customers browse the catalog using various search methods (by actor, category, or title) to find desired products.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives finalize orders by confirming customer details, order items, and shipping information.
+- Warehouse staff pick and pack ordered products, ensuring the correct quantity is included for each orderline.
+- Purchasing teams issue purchase orders to suppliers when inventory levels fall below a certain threshold.
+
+## 4. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record sales transactions by entering net amount, tax, and total amount for each order.
+- Finance teams update customer accounts with payment history, including credit card type, expiration date, and transaction details.
+
+## 5. Reorder Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels and mark products as low stock when the quantity in stock falls below a specified threshold.
+- Purchasing teams review reorder requests and issue purchase orders to replenish stock.
+
+## 6. Inventory Analysis
+
+Performed By: Data Analysts
+
+Activity:
+- Data analysts analyze sales data to identify trends, best-selling products, and opportunities for improvement in inventory management.
+
+## 7. Security Management
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators manage user accounts by creating, updating, and deleting customer and employee accounts, as well as handling password resets.

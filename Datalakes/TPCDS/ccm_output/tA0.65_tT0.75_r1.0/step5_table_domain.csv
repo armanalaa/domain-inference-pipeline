@@ -1,0 +1,20 @@
+table,domain_id,domain_name
+catalog_sales,0,Sales and Inventory Management
+inventory,0,Sales and Inventory Management
+store_sales,0,Sales and Inventory Management
+web_sales,0,Sales and Inventory Management
+item,1,Inventory and Product Management
+catalog_page,2,Catalog and Product Information Management
+catalog_returns,3,Return and Inventory Management
+store_returns,3,Return and Inventory Management
+web_returns,3,Return and Inventory Management
+web_page,4,Web Content Management
+reason,5,Customer Interaction Management
+call_center,6,CallCenterInfrastructureManagement
+customer_address,6,CallCenterInfrastructureManagement
+store,6,CallCenterInfrastructureManagement
+warehouse,6,CallCenterInfrastructureManagement
+web_site,6,CallCenterInfrastructureManagement
+ship_mode,7,CallCenterOperationsInventoryManagement
+promotion,8,Marketing Campaign Management
+customer,9,Customer Relationship Management

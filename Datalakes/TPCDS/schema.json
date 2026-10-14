@@ -1,0 +1,4915 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Supports data warehousing for a large-scale call center and retail operation, including customer interactions, sales, returns, inventory, promotions, and web analytics.",
+    "database": "TPC-DS",
+    "created": "2026-05-30"
+  },
+  "tables": {
+    "call_center": {
+      "_description": "Tracks call center details, including location, management, and employee count, for a market within a company.",
+      "columns": [
+        {
+          "name": "cc_call_center_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for call centers.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cc_call_center_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the cc_call_center_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center record start dates as YYYY-MM-DD formatted strings.",
+          "samples": [
+            "1998-01-01",
+            "2001-01-01",
+            "2000-01-02",
+            "2002-01-01",
+            null
+          ]
+        },
+        {
+          "name": "cc_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center record end dates in YYYY-MM-DD format.",
+          "samples": [
+            "2000-12-31",
+            "2000-01-01",
+            "2001-12-31",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_closed_date_sk",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores unique identifiers for closed call center dates as text.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_open_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential unique identifiers for call center open dates.",
+          "samples": [
+            2450952,
+            2451136,
+            2451039,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of call center names, often representing geographical regions.",
+          "samples": [
+            "NY Metro",
+            "Mid Atlantic",
+            "North Midwest",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center agent classifications: large, medium.",
+          "samples": [
+            "large",
+            "medium",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_employees",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of employees working at each call center.",
+          "samples": [
+            2,
+            6,
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "name": "cc_sq_ft",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square footage of call centers.",
+          "samples": [
+            1138,
+            2268,
+            4134,
+            649,
+            795
+          ]
+        },
+        {
+          "name": "cc_hours",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores call center operating hours in a 24-hour format (e.g., \"8AM-4PM\").",
+          "samples": [
+            "8AM-4PM",
+            "8AM-8AM",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of call center managers.",
+          "samples": [
+            "Bob Belcher",
+            "Felipe Perkins",
+            "Mark Hightower",
+            "Larry Mccray",
+            null
+          ]
+        },
+        {
+          "name": "cc_mkt_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the cc_mkt_ entity",
+          "samples": [
+            6,
+            2,
+            5,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_mkt_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores marketing classifications for call center customers.",
+          "samples": [
+            "More than other authori",
+            "Lips know to a units. Open members ought to beat ",
+            "Nights may arrange below somewhat interest",
+            "Rational ways will cultivate significant a",
+            "Instead male prospects would make old images. M"
+          ]
+        },
+        {
+          "name": "cc_mkt_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores marketing descriptions for call center customers, varying from product promotions to service offerings.",
+          "samples": [
+            "Shared others could not count fully dollars. New members ca",
+            "Wrong members must get compatibl",
+            "Nowhere certain tourists cannot help only. Retail terms wake at a panels; largely blank years put s",
+            "Studies may not influence multiple coins. Consumers may raise",
+            null
+          ]
+        },
+        {
+          "name": "cc_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of market managers within the call center, often named Julius, Matthew, or Gary.",
+          "samples": [
+            "Julius Tran",
+            "Julius Durham",
+            "Matthew Clifton",
+            "Gary Colburn",
+            null
+          ]
+        },
+        {
+          "name": "cc_division",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores division identifiers for call centers, ranging from 1 to 5.",
+          "samples": [
+            3,
+            5,
+            1,
+            4,
+            null
+          ]
+        },
+        {
+          "name": "cc_division_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores names of up to 10 characters for call center divisions, such as 'pri', 'anti', 'ought', 'ese'.",
+          "samples": [
+            "pri",
+            "anti",
+            "ought",
+            "ese",
+            null
+          ]
+        },
+        {
+          "name": "cc_company",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the companies operating call centers.",
+          "samples": [
+            6,
+            1,
+            2,
+            3,
+            null
+          ]
+        },
+        {
+          "name": "cc_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of call center company names, such as 'cally', 'ought', 'able', 'pri', 'pri'.",
+          "samples": [
+            "cally",
+            "ought",
+            "able",
+            "pri",
+            null
+          ]
+        },
+        {
+          "name": "cc_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores individual street numbers for call centers.",
+          "samples": [
+            730,
+            306,
+            121,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_street_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of street names for call centers.",
+          "samples": [
+            "Ash Hill",
+            "14th ",
+            "Franklin ",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type names, such as Boulevard, Wy, Court.",
+          "samples": [
+            "Boulevard",
+            "Wy",
+            "Court",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores identifiers for call center suites (e.g., Suite 0, Suite 60).",
+          "samples": [
+            "Suite 0",
+            "Suite 60",
+            "Suite 150",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of city names for call centers.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores county names for call center locations, consistently being Williamson County.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for call center locations within Tennessee.",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit zip codes for call centers.",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country names for call centers.",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores call center's Greenwich Mean Time offset in hours (negative for west of GMT).",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cc_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores call center tax rates as decimal percentages.",
+          "samples": [
+            0.11,
+            0.12,
+            0.01,
+            0.05,
+            null
+          ]
+        }
+      ]
+    },
+    "catalog_page": {
+      "_description": "Tracks catalog page information for specific products within designated departments over a given time period.",
+      "columns": [
+        {
+          "name": "cp_catalog_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_catalog_page_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the cp_catalog_page_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "cp_start_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for starting dates of catalog pages.",
+          "samples": [
+            2450815,
+            2450997,
+            2450906,
+            2451088,
+            2450845
+          ]
+        },
+        {
+          "name": "cp_end_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for end dates in catalog_page table.",
+          "samples": [
+            2450996,
+            2451178,
+            2450905,
+            2451087,
+            2450844
+          ]
+        },
+        {
+          "name": "cp_department",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores department names from the catalog_page table.",
+          "samples": [
+            "DEPARTMENT",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cp_catalog_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_catalog_page_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for catalog pages, often containing general phrases, instructions, or introductions.",
+          "samples": [
+            "In general basic characters welcome. Clearly lively friends conv",
+            "Even democratic stairs would know happy investigations. Histo",
+            "Earlier different differences get just to a methods; masses includ",
+            "Narrowly great dogs carry only by the events. Successful, able legs would not",
+            "Legislative origins precede bold stations. Tiny sports should resume all pupils. Forces launch to"
+          ]
+        },
+        {
+          "name": "cp_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores type of catalog pages, consistently bi-annual.",
+          "samples": [
+            "bi-annual",
+            "quarterly",
+            "monthly",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "catalog_returns": {
+      "_description": "Tracks customer returns data for catalog items, including details on dates, quantities, and reasons.",
+      "columns": [
+        {
+          "name": "cr_returned_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for returned dates in the catalog_returns table.",
+          "samples": [
+            2450861,
+            2450985,
+            2450901,
+            2450939,
+            2451043
+          ]
+        },
+        {
+          "name": "cr_returned_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for returned times in catalog returns.",
+          "samples": [
+            58939,
+            79214,
+            22932,
+            36548,
+            65563
+          ]
+        },
+        {
+          "name": "cr_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items associated with catalog returns.",
+          "samples": [
+            15668,
+            8770,
+            7906,
+            2476,
+            12055
+          ]
+        },
+        {
+          "name": "cr_refunded_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers of customers who have had refunded returns.",
+          "samples": [
+            14601,
+            67572,
+            31351,
+            77674,
+            89276
+          ]
+        },
+        {
+          "name": "cr_refunded_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customer demographic records associated with refunded items.",
+          "samples": [
+            797995,
+            437897,
+            528859,
+            804458,
+            23666
+          ]
+        },
+        {
+          "name": "cr_refunded_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique demo-day identifiers for refunded catalog return transactions.",
+          "samples": [
+            6189,
+            6622,
+            5567,
+            4395,
+            1703
+          ]
+        },
+        {
+          "name": "cr_refunded_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique SK identifiers for refunded customer addresses.",
+          "samples": [
+            9583,
+            46147,
+            23122,
+            23579,
+            9340
+          ]
+        },
+        {
+          "name": "cr_returning_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers of customers who have previously made returns.",
+          "samples": [
+            14601,
+            95704,
+            9141,
+            51838,
+            4637
+          ]
+        },
+        {
+          "name": "cr_returning_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer demo keys associated with returned items.",
+          "samples": [
+            797995,
+            205372,
+            379678,
+            1210802,
+            329983
+          ]
+        },
+        {
+          "name": "cr_returning_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for home demographics associated with catalog returns.",
+          "samples": [
+            4547,
+            5692,
+            6097,
+            4450,
+            1900
+          ]
+        },
+        {
+          "name": "cr_returning_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for returning addresses in the catalog_returns table.",
+          "samples": [
+            9583,
+            8022,
+            9175,
+            11398,
+            36246
+          ]
+        },
+        {
+          "name": "cr_call_center_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for call centers associated with catalog returns.",
+          "samples": [
+            1,
+            4,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "name": "cr_catalog_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential page identifiers for catalog return items.",
+          "samples": [
+            9,
+            36,
+            39,
+            49,
+            31
+          ]
+        },
+        {
+          "name": "cr_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various shipping modes used in catalog returns.",
+          "samples": [
+            11,
+            8,
+            17,
+            4,
+            12
+          ]
+        },
+        {
+          "name": "cr_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the unique identifier for the warehouse associated with each catalog return.",
+          "samples": [
+            2,
+            1,
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "name": "cr_reason_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various return reasons in the catalog_returns table.",
+          "samples": [
+            28,
+            26,
+            27,
+            16,
+            33
+          ]
+        },
+        {
+          "name": "cr_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique order numbers for return transactions.",
+          "samples": [
+            2,
+            3,
+            6,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "cr_return_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of returned items in catalog sales.",
+          "samples": [
+            16,
+            9,
+            28,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "cr_return_amount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of items returned by customers.",
+          "samples": [
+            270.08,
+            400.59,
+            2316.44,
+            254.1,
+            21.44
+          ]
+        },
+        {
+          "name": "cr_return_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the tax amount for catalog return transactions.",
+          "samples": [
+            2.7,
+            16.02,
+            138.98,
+            10.16,
+            1.5
+          ]
+        },
+        {
+          "name": "cr_return_amt_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total return amount including tax, in floating point format.",
+          "samples": [
+            272.78,
+            416.61,
+            2455.42,
+            264.26,
+            22.94
+          ]
+        },
+        {
+          "name": "cr_fee",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores monetary fees associated with catalog returns.",
+          "samples": [
+            70.77,
+            98.83,
+            32.46,
+            38.97,
+            66.64
+          ]
+        },
+        {
+          "name": "cr_return_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the cost of shipping returns for catalog items.",
+          "samples": [
+            295.52,
+            136.62,
+            165.2,
+            68.8,
+            85.76
+          ]
+        },
+        {
+          "name": "cr_refunded_cash",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores refunded cash amounts (in dollars) for catalog returns.",
+          "samples": [
+            113.43,
+            356.52,
+            602.27,
+            38.11,
+            3.64
+          ]
+        },
+        {
+          "name": "cr_reversed_charge",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of reversed charges for catalog returns.",
+          "samples": [
+            65.79,
+            14.1,
+            582.81,
+            125.27,
+            9.07
+          ]
+        },
+        {
+          "name": "cr_store_credit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores store credit amounts for individual return transactions.",
+          "samples": [
+            90.86,
+            29.97,
+            1131.36,
+            90.72,
+            8.73
+          ]
+        },
+        {
+          "name": "cr_net_loss",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the net loss amount (in dollars) for each catalog return transaction.",
+          "samples": [
+            368.99,
+            251.47,
+            336.64,
+            117.93,
+            153.9
+          ]
+        }
+      ]
+    },
+    "catalog_sales": {
+      "_description": "Tracks detailed sales transactions, including customer and order information, item details, shipping methods, and promotions.",
+      "columns": [
+        {
+          "name": "cs_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential unique identifiers for sales transaction dates in catalog.",
+          "samples": [
+            2450815,
+            2450816,
+            2450817,
+            2450818,
+            2450819
+          ]
+        },
+        {
+          "name": "cs_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential time skips for catalog sales transactions.",
+          "samples": [
+            38212,
+            29485,
+            10687,
+            74512,
+            53201
+          ]
+        },
+        {
+          "name": "cs_ship_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for ship dates in catalog sales data.",
+          "samples": [
+            2450886,
+            2450846,
+            2450868,
+            2450851,
+            2450863
+          ]
+        },
+        {
+          "name": "cs_bill_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer IDs for bill sales transactions.",
+          "samples": [
+            62153,
+            14601,
+            67572,
+            25383,
+            76801
+          ]
+        },
+        {
+          "name": "cs_bill_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customer demographic groups within catalog sales records.",
+          "samples": [
+            1822764,
+            797995,
+            437897,
+            3755,
+            90299
+          ]
+        },
+        {
+          "name": "cs_bill_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential billing demo key identifiers for catalog sales transactions.",
+          "samples": [
+            5775,
+            6189,
+            6622,
+            2480,
+            3797
+          ]
+        },
+        {
+          "name": "cs_bill_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique billing address identifiers across catalog sales transactions.",
+          "samples": [
+            19986,
+            9583,
+            46147,
+            5652,
+            42495
+          ]
+        },
+        {
+          "name": "cs_ship_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the shipping customers involved in catalog sales transactions.",
+          "samples": [
+            62153,
+            14601,
+            67572,
+            25383,
+            76801
+          ]
+        },
+        {
+          "name": "cs_ship_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique shipping demographic keys for catalog sales records.",
+          "samples": [
+            1822764,
+            797995,
+            437897,
+            3755,
+            90299
+          ]
+        },
+        {
+          "name": "cs_ship_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential home delivery demonstration identifiers for catalog sales.",
+          "samples": [
+            5775,
+            6189,
+            6622,
+            2480,
+            3797
+          ]
+        },
+        {
+          "name": "cs_ship_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique shipping address identifiers across multiple catalog sales records.",
+          "samples": [
+            19986,
+            9583,
+            46147,
+            5652,
+            42495
+          ]
+        },
+        {
+          "name": "cs_call_center_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for call centers associated with catalog sales transactions.",
+          "samples": [
+            4,
+            1,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "name": "cs_catalog_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages in the sales data.",
+          "samples": [
+            62,
+            31,
+            76,
+            89,
+            19
+          ]
+        },
+        {
+          "name": "cs_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various shipping modes used in catalog sales transactions.",
+          "samples": [
+            3,
+            8,
+            2,
+            15,
+            1
+          ]
+        },
+        {
+          "name": "cs_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses associated with sales transactions.",
+          "samples": [
+            4,
+            2,
+            5,
+            3,
+            1
+          ]
+        },
+        {
+          "name": "cs_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items in catalog sales data.",
+          "samples": [
+            16930,
+            6020,
+            16198,
+            6200,
+            13831
+          ]
+        },
+        {
+          "name": "cs_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for promotional sales events in the catalog_sales table.",
+          "samples": [
+            196,
+            270,
+            97,
+            284,
+            275
+          ]
+        },
+        {
+          "name": "cs_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique order identifiers across catalog sales transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cs_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of items sold per transaction in the catalog sales database.",
+          "samples": [
+            47,
+            20,
+            19,
+            50,
+            62
+          ]
+        },
+        {
+          "name": "cs_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items in catalog sales.",
+          "samples": [
+            27.7,
+            87.55,
+            69.86,
+            70.0,
+            54.92
+          ]
+        },
+        {
+          "name": "cs_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores catalog item list prices in floating point format.",
+          "samples": [
+            44.32,
+            260.89,
+            88.72,
+            205.1,
+            127.96
+          ]
+        },
+        {
+          "name": "cs_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual sale prices for items in the catalog.",
+          "samples": [
+            42.99,
+            153.92,
+            29.27,
+            188.69,
+            29.43
+          ]
+        },
+        {
+          "name": "cs_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the external discount amounts for individual sales transactions.",
+          "samples": [
+            62.51,
+            2139.4,
+            1129.55,
+            820.5,
+            6108.86
+          ]
+        },
+        {
+          "name": "cs_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in floating point format.",
+          "samples": [
+            2020.53,
+            3078.4,
+            556.13,
+            9434.5,
+            1824.66
+          ]
+        },
+        {
+          "name": "cs_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for catalog items in floating point format.",
+          "samples": [
+            1301.9,
+            1751.0,
+            1327.34,
+            3500.0,
+            3405.04
+          ]
+        },
+        {
+          "name": "cs_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for catalog sales items.",
+          "samples": [
+            2083.04,
+            5217.8,
+            1685.68,
+            10255.0,
+            7933.52
+          ]
+        },
+        {
+          "name": "cs_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores additional sales tax amounts as floating point figures.",
+          "samples": [
+            101.02,
+            71.41,
+            33.36,
+            377.38,
+            164.21
+          ]
+        },
+        {
+          "name": "cs_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to sales transactions.",
+          "samples": [
+            0.0,
+            1292.92,
+            1598.51,
+            176.96,
+            725.62
+          ]
+        },
+        {
+          "name": "cs_ext_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external shipping costs for catalog sales transactions.",
+          "samples": [
+            1041.52,
+            1356.6,
+            168.53,
+            4307.0,
+            3173.16
+          ]
+        },
+        {
+          "name": "cs_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the cs_net_pa entity",
+          "samples": [
+            2020.53,
+            1785.48,
+            556.13,
+            9434.5,
+            1824.66
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales revenue including taxes, in float format.",
+          "samples": [
+            2121.55,
+            1856.89,
+            589.49,
+            9811.88,
+            1988.87
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_ship",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total net sales revenue including shipping costs in U.S. dollars.",
+          "samples": [
+            3062.05,
+            3142.08,
+            724.66,
+            13741.5,
+            4997.82
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_ship_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales including shipping taxes, in floating point format.",
+          "samples": [
+            3163.07,
+            3213.49,
+            758.02,
+            14118.88,
+            5162.03
+          ]
+        },
+        {
+          "name": "cs_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net profit (positive for revenue, negative for expenses) in dollars for catalog sales transactions.",
+          "samples": [
+            718.63,
+            34.48,
+            -771.21,
+            5934.5,
+            -1580.38
+          ]
+        }
+      ]
+    },
+    "customer": {
+      "_description": "Captures customer demographic and transactional data, including personal details, preferences, and historical interactions.",
+      "columns": [
+        {
+          "name": "c_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for each customer record.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "c_customer_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the c_customer_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "c_current_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential surrogate keys for current demographic groups of customers.",
+          "samples": [
+            980124,
+            819667,
+            1473522,
+            1703214,
+            953372
+          ]
+        },
+        {
+          "name": "c_current_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for active customers in the current hierarchy demo.",
+          "samples": [
+            7135,
+            1461,
+            6247,
+            3986,
+            4470
+          ]
+        },
+        {
+          "name": "c_current_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for current customer addresses.",
+          "samples": [
+            32946,
+            31655,
+            48572,
+            39558,
+            36368
+          ]
+        },
+        {
+          "name": "c_first_shipto_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique integer keys for the first ship-to date of each customer.",
+          "samples": [
+            2452238,
+            2452318,
+            2449130,
+            2450030,
+            2449438
+          ]
+        },
+        {
+          "name": "c_first_sales_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for the first sales dates of customers.",
+          "samples": [
+            2452208,
+            2452288,
+            2449100,
+            2450000,
+            2449408
+          ]
+        },
+        {
+          "name": "c_salutation",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer's formal title (e.g., Mr., Dr., Miss) up to 10 characters.",
+          "samples": [
+            "Mr.",
+            "Dr.",
+            "Miss",
+            "Sir",
+            "Ms."
+          ]
+        },
+        {
+          "name": "c_first_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of a customer's first name.",
+          "samples": [
+            "Javier",
+            "Amy",
+            "Latisha",
+            "Michael",
+            "Robert"
+          ]
+        },
+        {
+          "name": "c_last_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of the last names for customers.",
+          "samples": [
+            "Lewis",
+            "Moses",
+            "Hamilton",
+            "White",
+            "Moran"
+          ]
+        },
+        {
+          "name": "c_preferred_cust_flag",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Indicates whether a customer is preferred (Y) or not (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "c_birth_day",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer birthdays as integers (e.g., day of month).",
+          "samples": [
+            9,
+            18,
+            7,
+            8,
+            4
+          ]
+        },
+        {
+          "name": "c_birth_month",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the month of birth for customers (12, 4, 9, 6, 5 represent December, April, September, June, and May respectively).",
+          "samples": [
+            12,
+            4,
+            9,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "c_birth_year",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the birth year of customers as integers.",
+          "samples": [
+            1936,
+            1966,
+            1979,
+            1983,
+            1956
+          ]
+        },
+        {
+          "name": "c_birth_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the birth country of customers (up to 50 characters), represented by CHILE, TOGO, NIUE, MEXICO, FIJI.",
+          "samples": [
+            "CHILE",
+            "TOGO",
+            "NIUE",
+            "MEXICO",
+            "FIJI"
+          ]
+        },
+        {
+          "name": "c_login",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer login credentials as text (assuming from context).",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "c_email_address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer email addresses up to 50 characters, including domain names.",
+          "samples": [
+            "Javier.Lewis@VFAxlnZEvOx.org",
+            "Amy.Moses@Ovk9KjHH.com",
+            "Latisha.Hamilton@V.com",
+            "Michael.White@i.org",
+            "Robert.Moran@Hh.edu"
+          ]
+        },
+        {
+          "name": "c_last_review_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers of customer's last review dates.",
+          "samples": [
+            2452508,
+            2452318,
+            2452313,
+            2452361,
+            2452469
+          ]
+        }
+      ]
+    },
+    "customer_address": {
+      "_description": "Captures customer residential and business addresses along with related geographical details.",
+      "columns": [
+        {
+          "name": "ca_address_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for customer addresses.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ca_address_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the ca_address_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "ca_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores individual house numbers within customer street addresses.",
+          "samples": [
+            18,
+            362,
+            585,
+            111,
+            31
+          ]
+        },
+        {
+          "name": "ca_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of street names for customer addresses.",
+          "samples": [
+            "Jackson ",
+            "Washington 6th",
+            "Dogwood Washington",
+            "Smith ",
+            "College "
+          ]
+        },
+        {
+          "name": "ca_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type designations such as Parkway, RD, Circle, Wy, Blvd.",
+          "samples": [
+            "Parkway",
+            "RD",
+            "Circle",
+            "Wy",
+            "Blvd"
+          ]
+        },
+        {
+          "name": "ca_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores suite numbers for customer addresses, up to 10 characters long.",
+          "samples": [
+            "Suite 280",
+            "Suite 80",
+            "Suite Q",
+            "Suite A",
+            "Suite 180"
+          ]
+        },
+        {
+          "name": "ca_city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for customer addresses, as shown by Fairfield, Fairview, Pleasant Valley, Oak Ridge, and Glendale.",
+          "samples": [
+            "Fairfield",
+            "Fairview",
+            "Pleasant Valley",
+            "Oak Ridge",
+            "Glendale"
+          ]
+        },
+        {
+          "name": "ca_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores county names for customer addresses.",
+          "samples": [
+            "Maricopa County",
+            "Taos County",
+            "York County",
+            "Kit Carson County",
+            "Barry County"
+          ]
+        },
+        {
+          "name": "ca_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations of U.S. states for customer addresses.",
+          "samples": [
+            "AZ",
+            "NM",
+            "PA",
+            "CO",
+            "MO"
+          ]
+        },
+        {
+          "name": "ca_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit zip codes for customer addresses.",
+          "samples": [
+            86192,
+            85709,
+            12477,
+            88371,
+            63951
+          ]
+        },
+        {
+          "name": "ca_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country names for customer addresses, consistently US in these samples.",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ca_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores Greenwich Mean Time offsets (in hours) for customer addresses.",
+          "samples": [
+            -7.0,
+            -5.0,
+            -6.0,
+            -8.0,
+            -9.0
+          ]
+        },
+        {
+          "name": "ca_location_type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores type of residential location for customers (condo or single family)",
+          "samples": [
+            "condo",
+            "single family",
+            "apartment",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "inventory": {
+      "_description": "Tracks inventory levels for specific items across various warehouses and time periods.",
+      "columns": [
+        {
+          "name": "inv_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for inventory date records.",
+          "samples": [
+            2450815,
+            2450822,
+            2450829,
+            2450836,
+            2450843
+          ]
+        },
+        {
+          "name": "inv_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual items in inventory.",
+          "samples": [
+            1,
+            2,
+            4,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "inv_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses across inventory records.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "inv_quantity_on_hand",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the current count of items available in inventory.",
+          "samples": [
+            211,
+            235,
+            859,
+            704,
+            891
+          ]
+        }
+      ]
+    },
+    "item": {
+      "_description": "Tracks detailed information about various items and their attributes in a retail business.",
+      "columns": [
+        {
+          "name": "i_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual items.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "i_item_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the i_item_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "i_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the initial sales record date for each item.",
+          "samples": [
+            "1997-10-27",
+            "2000-10-27",
+            "1999-10-28",
+            "2001-10-27",
+            null
+          ]
+        },
+        {
+          "name": "i_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores end date (format: YYYY-MM-DD) for item records.",
+          "samples": [
+            "2000-10-26",
+            "1999-10-27",
+            "2001-10-26",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "i_item_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for various items, often including product names or characteristics.",
+          "samples": [
+            "Powers will not get influences. Electoral ports should show low, annual chains. Now young visitors may pose now however final pages. Bitterly right children suit increasing, leading el",
+            "Costs could prove. Industrial, new ",
+            "Passengers want etc in a walls. Important years must benefit clear by a ideas; hot children must avoid. Major, bad pounds rise on the needs. Farms may not see bright lines. Differ",
+            "New",
+            "Other, soviet subjects seem properly times. Only sources will not escape; keys will not know only children. Recent, f"
+          ]
+        },
+        {
+          "name": "i_current_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores current prices for individual items as floating point numbers.",
+          "samples": [
+            27.02,
+            1.12,
+            7.11,
+            1.35,
+            4.0
+          ]
+        },
+        {
+          "name": "i_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items, represented as floating point numbers.",
+          "samples": [
+            23.23,
+            0.38,
+            0.85,
+            1.76,
+            6.75
+          ]
+        },
+        {
+          "name": "i_brand_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_brand_ entity",
+          "samples": [
+            5003002,
+            1001001,
+            3002001,
+            2002002,
+            3001002
+          ]
+        },
+        {
+          "name": "i_brand",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of brand names for items, as exemplified by exportischolar #2, amalgamalg #1, etc.",
+          "samples": [
+            "exportischolar #2",
+            "amalgamalg #1",
+            "brandbrand #4",
+            "importoexporti #1",
+            "importoimporto #2"
+          ]
+        },
+        {
+          "name": "i_class_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_class_ entity",
+          "samples": [
+            3,
+            1,
+            7,
+            2,
+            8
+          ]
+        },
+        {
+          "name": "i_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive categories for items, such as pop, dresses, decor, infants, shirts.",
+          "samples": [
+            "pop",
+            "dresses",
+            "decor",
+            "infants",
+            "shirts"
+          ]
+        },
+        {
+          "name": "i_category_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_category_ entity",
+          "samples": [
+            5,
+            1,
+            7,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "i_category",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive labels for product categories such as Music, Women, Home, Children, Men.",
+          "samples": [
+            "Music",
+            "Women",
+            "Home",
+            "Children",
+            "Men"
+          ]
+        },
+        {
+          "name": "i_manufact_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_manufact_ entity",
+          "samples": [
+            52,
+            294,
+            479,
+            220,
+            212
+          ]
+        },
+        {
+          "name": "i_manufact",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores brand names for items, such as 'ableanti', 'esen stable', etc. (up to 50 characters)",
+          "samples": [
+            "ableanti",
+            "esen stable",
+            "n stationese",
+            "barableable",
+            "eseoughtable"
+          ]
+        },
+        {
+          "name": "i_size",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores item size descriptions, such as petite or extra large.",
+          "samples": [
+            "N/A",
+            "petite",
+            "extra large",
+            "large",
+            "medium"
+          ]
+        },
+        {
+          "name": "i_formulation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique formulation identifiers for items, often including a manufacturer code and product details.",
+          "samples": [
+            "3663peru009490160959",
+            "peru3235638235244700",
+            "648935peach259354618",
+            "979763908640salmon70",
+            "674897slate961015715"
+          ]
+        },
+        {
+          "name": "i_color",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores item color names up to 10 characters long, such as spring, rosy, sienna, red, pink.",
+          "samples": [
+            "spring",
+            "rosy",
+            "sienna",
+            "red",
+            "pink"
+          ]
+        },
+        {
+          "name": "i_units",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores descriptive units for items (e.g., Tsp, Bunch, Cup, Tbl, Cup).",
+          "samples": [
+            "Tsp",
+            "Bunch",
+            "Cup",
+            "Tbl",
+            "Bundle"
+          ]
+        },
+        {
+          "name": "i_container",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores container type information for items (e.g., box, bottle, can).",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "i_manager_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_manager_ entity",
+          "samples": [
+            6,
+            98,
+            18,
+            26,
+            27
+          ]
+        },
+        {
+          "name": "i_product_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of product names, such as 'ought', 'able', 'pri', 'ese', and 'anti'.",
+          "samples": [
+            "ought",
+            "able",
+            "pri",
+            "ese",
+            "anti"
+          ]
+        }
+      ]
+    },
+    "promotion": {
+      "_description": "Tracks marketing promotions for various sales campaigns across multiple channels.",
+      "columns": [
+        {
+          "name": "p_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for individual promotions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "p_promo_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the p_promo_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "p_start_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for promotion start dates.",
+          "samples": [
+            2450164,
+            2450118,
+            2450675,
+            2450633,
+            2450347
+          ]
+        },
+        {
+          "name": "p_end_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for the end dates of promotions.",
+          "samples": [
+            2450185,
+            2450150,
+            2450712,
+            2450646,
+            2450357
+          ]
+        },
+        {
+          "name": "p_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items associated with promotions.",
+          "samples": [
+            10022,
+            2410,
+            10843,
+            9794,
+            6655
+          ]
+        },
+        {
+          "name": "p_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the fixed cost for each promotion event.",
+          "samples": [
+            1000.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_response_target",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores a binary indicator for promotion response targets consistently meeting their goals (1 = met).",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_promo_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores short, alphabetic names for promotions, such as 'ought', 'able', 'pri', 'ese', and 'anti'.",
+          "samples": [
+            "ought",
+            "able",
+            "pri",
+            "ese",
+            "anti"
+          ]
+        },
+        {
+          "name": "p_channel_dmail",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores whether a promotion was distributed via direct email marketing (Y) or not (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_email",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores email addresses for promotions distributed via email channels.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_catalog",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a channel identifier for catalog promotion offers.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_tv",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the promotion medium as 'N', indicating television channel.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_radio",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotion channel type, consistently set to 'N' for non-internet sales.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_press",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotion channel type for press media.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_event",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotional event type for each occurrence, consistently set to 'N' in these samples.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_demo",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotional channel demonstration codes, all samples are 'N'.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_details",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for various promotional channels in a diplomatic and often metaphorical manner.",
+          "samples": [
+            "Men will not say merely. Old, available ",
+            "Keen ways speak measurements. Futur",
+            "At all rich attempts achieve possible, certain mat",
+            "Royal, available groups might lose ",
+            "Clothes channel diplomatic, other women. Selecti"
+          ]
+        },
+        {
+          "name": "p_purpose",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores purpose type for promotions (e.g., Unknown).",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_discount_active",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Indicates whether a promotion is currently active (N denotes inactive).",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "reason": {
+      "_description": "Captures descriptions of reasons for customer returns in retail transactions.",
+      "columns": [
+        {
+          "name": "r_reason_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for reasons in the database.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "r_reason_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the r_reason_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "r_reason_desc",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptions of reasons for customer complaints (e.g., package damage, product mismatch).",
+          "samples": [
+            "Package was damaged",
+            "Stopped working",
+            "Did not get it on time",
+            "Not the product that was ordred",
+            "Parts missing"
+          ]
+        }
+      ]
+    },
+    "ship_mode": {
+      "_description": "Tracks various shipping modes (e.g., air, sea) and their associated details for order deliveries in the TPC-DS database.",
+      "columns": [
+        {
+          "name": "sm_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for shipment modes (1, 2, 3, 4, 5).",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "sm_ship_mode_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the sm_ship_mode_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "sm_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores transportation mode types such as EXPRESS, NEXT DAY, OVERNIGHT, TWO DAY, LIBRARY.",
+          "samples": [
+            "EXPRESS",
+            "NEXT DAY",
+            "OVERNIGHT",
+            "TWO DAY",
+            "LIBRARY"
+          ]
+        },
+        {
+          "name": "sm_code",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a 10-character alphabetic code representing air transport modes.",
+          "samples": [
+            "AIR",
+            "SURFACE",
+            "SEA",
+            "BIKE",
+            null
+          ]
+        },
+        {
+          "name": "sm_carrier",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of carriers for shipments (e.g., UPS, FEDEX, USPS, DHL).",
+          "samples": [
+            "UPS",
+            "FEDEX",
+            "AIRBORNE",
+            "USPS",
+            "DHL"
+          ]
+        },
+        {
+          "name": "sm_contract",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique alphanumeric identifiers for ship mode contracts.",
+          "samples": [
+            "YvxVaJI10",
+            "ldhM8IvpzHgdbBgDfI",
+            "6Hzzp4JkzjqD8MGXLCDa",
+            "UaAJjKDnL4gTOqbpj",
+            "HVDFCcQ"
+          ]
+        }
+      ]
+    },
+    "store": {
+      "_description": "Captures detailed information about individual retail stores within a market.",
+      "columns": [
+        {
+          "name": "s_store_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual stores.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "s_store_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the s_store_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "s_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the initial sales transaction date for each store.",
+          "samples": [
+            "1997-03-13",
+            "2000-03-13",
+            "1999-03-14",
+            "2001-03-13",
+            null
+          ]
+        },
+        {
+          "name": "s_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the end date of store records (format: YYYY-MM-DD).",
+          "samples": [
+            "2000-03-12",
+            "1999-03-13",
+            "2001-03-12",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_closed_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores store identification numbers for their closure dates.",
+          "samples": [
+            2451189,
+            2451044,
+            2450910,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_store_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the names of up to 10 characters for various stores (e.g., 'ought', 'able', 'ese', 'anti').",
+          "samples": [
+            "ought",
+            "able",
+            "ese",
+            "anti",
+            "cally"
+          ]
+        },
+        {
+          "name": "s_number_employees",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the count of employees in each store.",
+          "samples": [
+            245,
+            236,
+            218,
+            288,
+            229
+          ]
+        },
+        {
+          "name": "s_floor_space",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square feet of retail floor space for each store.",
+          "samples": [
+            5250760,
+            5285950,
+            7557959,
+            9341467,
+            9078805
+          ]
+        },
+        {
+          "name": "s_hours",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores store operating hours in a 12-hour format (e.g., \"8AM-4PM\").",
+          "samples": [
+            "8AM-4PM",
+            "8AM-12AM",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The store table's s_manager column stores names of individual store managers.",
+          "samples": [
+            "William Ward",
+            "Scott Smith",
+            "Edwin Adams",
+            "David Thomas",
+            "Brett Yates"
+          ]
+        },
+        {
+          "name": "s_market_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the s_market_ entity",
+          "samples": [
+            2,
+            8,
+            7,
+            4,
+            10
+          ]
+        },
+        {
+          "name": "s_geography_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the geographical classification (Unknown) for each store.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_market_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptions of market locations, often geographical or demographic, as indicated by the diverse and seemingly descriptive sample values.",
+          "samples": [
+            "Enough high areas stop expectations. Elaborate, local is",
+            "Fingers will access spots. Even local pieces used to come perhaps back ",
+            "Results would face m",
+            "Economic shadows may pay over; federal, stupid dru",
+            "Now electoral duties fit never o"
+          ]
+        },
+        {
+          "name": "s_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of market managers for individual stores.",
+          "samples": [
+            "Charles Bartley",
+            "David Lamontagne",
+            "Thomas Pollack",
+            "Thomas Benton",
+            "Dean Morrison"
+          ]
+        },
+        {
+          "name": "s_division_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the s_division_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_division_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the division names within each store, limited to 10 characters.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_company_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the s_company_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the short company names (up to 10 characters) for each store in the database.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores integer values representing individual street numbers for stores.",
+          "samples": [
+            767,
+            255,
+            877,
+            27,
+            220
+          ]
+        },
+        {
+          "name": "s_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of streets associated with stores.",
+          "samples": [
+            "Spring ",
+            "Sycamore ",
+            "Park Laurel",
+            "Lake ",
+            "Lee 6th"
+          ]
+        },
+        {
+          "name": "s_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the type of street (e.g., Wy, Dr., Road, Ln, Court) for store locations.",
+          "samples": [
+            "Wy",
+            "Dr.",
+            "Road",
+            "Ln",
+            "Court"
+          ]
+        },
+        {
+          "name": "s_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the label for individual office suites within stores.",
+          "samples": [
+            "Suite 250",
+            "Suite 410",
+            "Suite T",
+            "Suite 260",
+            "Suite 80"
+          ]
+        },
+        {
+          "name": "s_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each store location, all stores are located in either Midway or Fairview.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the county names for each store location.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the two-letter abbreviation for the state where each store is located (e.g., TN for Tennessee).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit ZIP codes for store locations.",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each store is located (all stores are in United States).",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the store's Greenwich Mean Time offset in hours (negative for west of GMT).",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "s_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant tax percentage rate of 3% for all stores.",
+          "samples": [
+            0.03,
+            0.01,
+            0.08,
+            0.06,
+            0.11
+          ]
+        }
+      ]
+    },
+    "store_returns": {
+      "_description": "Tracks customer returns data for individual items at specific stores, including reasons, quantities, and associated costs.",
+      "columns": [
+        {
+          "name": "sr_returned_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for returned dates in store_returns.",
+          "samples": [
+            2451984,
+            2451822,
+            2451621,
+            2452659,
+            2452671
+          ]
+        },
+        {
+          "name": "sr_return_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential store return time identifiers, incremented for each new return.",
+          "samples": [
+            46418,
+            47480,
+            41562,
+            60999,
+            36227
+          ]
+        },
+        {
+          "name": "sr_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items associated with store returns.",
+          "samples": [
+            4553,
+            10993,
+            15085,
+            14100,
+            4698
+          ]
+        },
+        {
+          "name": "sr_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customers associated with store returns.",
+          "samples": [
+            67006,
+            68284,
+            44047,
+            38814,
+            13246
+          ]
+        },
+        {
+          "name": "sr_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique store return demographic keys.",
+          "samples": [
+            793022,
+            1082163,
+            74422,
+            823778,
+            178941
+          ]
+        },
+        {
+          "name": "sr_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for store return demo scenarios.",
+          "samples": [
+            4033,
+            7157,
+            7147,
+            6150,
+            2839
+          ]
+        },
+        {
+          "name": "sr_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for store return addresses.",
+          "samples": [
+            17397,
+            49751,
+            13072,
+            2875,
+            13537
+          ]
+        },
+        {
+          "name": "sr_store_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for stores associated with return transactions.",
+          "samples": [
+            7,
+            1,
+            4,
+            10,
+            8
+          ]
+        },
+        {
+          "name": "sr_reason_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various return reasons in the store_returns table.",
+          "samples": [
+            19,
+            29,
+            32,
+            2,
+            28
+          ]
+        },
+        {
+          "name": "sr_ticket_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique return ticket numbers for store transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "sr_return_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of returned items by each store.",
+          "samples": [
+            51,
+            43,
+            15,
+            7,
+            21
+          ]
+        },
+        {
+          "name": "sr_return_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary amount of returns made by customers at individual stores.",
+          "samples": [
+            37.23,
+            4009.32,
+            534.6,
+            530.53,
+            1162.35
+          ]
+        },
+        {
+          "name": "sr_return_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the tax amount for individual store return transactions.",
+          "samples": [
+            3.35,
+            120.27,
+            5.34,
+            15.91,
+            23.24
+          ]
+        },
+        {
+          "name": "sr_return_amt_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total return amount (including tax) for each store transaction.",
+          "samples": [
+            40.58,
+            4129.59,
+            539.94,
+            546.44,
+            1185.59
+          ]
+        },
+        {
+          "name": "sr_fee",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores store-specific return fees, as indicated by sample values.",
+          "samples": [
+            55.28,
+            28.23,
+            85.02,
+            5.67,
+            25.86
+          ]
+        },
+        {
+          "name": "sr_return_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the shipping cost for store returns.",
+          "samples": [
+            714.0,
+            0.0,
+            454.35,
+            257.46,
+            432.81
+          ]
+        },
+        {
+          "name": "sr_refunded_cash",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the refunded cash amounts for individual store return transactions.",
+          "samples": [
+            0.74,
+            3448.01,
+            235.22,
+            74.27,
+            104.61
+          ]
+        },
+        {
+          "name": "sr_reversed_charge",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total amount (in dollars) of reversed charges for store returns.",
+          "samples": [
+            17.51,
+            5.61,
+            206.57,
+            136.87,
+            750.99
+          ]
+        },
+        {
+          "name": "sr_store_credit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of store credits for individual return transactions.",
+          "samples": [
+            18.98,
+            555.7,
+            92.81,
+            319.39,
+            306.75
+          ]
+        },
+        {
+          "name": "sr_net_loss",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total net loss amount for individual store return transactions.",
+          "samples": [
+            772.63,
+            148.5,
+            544.71,
+            279.04,
+            481.91
+          ]
+        }
+      ]
+    },
+    "store_sales": {
+      "_description": "Records daily sales transactions for items at various stores, including customer details, promotions, and pricing information.",
+      "columns": [
+        {
+          "name": "ss_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential store sales dates as integers.",
+          "samples": [
+            2451813,
+            2451524,
+            2452638,
+            2451438,
+            2451465
+          ]
+        },
+        {
+          "name": "ss_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale time segment identifiers (e.g., 65495 represents the same time segment).",
+          "samples": [
+            65495,
+            75316,
+            50412,
+            38195,
+            53976
+          ]
+        },
+        {
+          "name": "ss_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items in store sales transactions.",
+          "samples": [
+            3617,
+            13283,
+            13631,
+            5981,
+            4553
+          ]
+        },
+        {
+          "name": "ss_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer identifiers for each sale record in the store_sales table.",
+          "samples": [
+            67006,
+            68284,
+            44047,
+            38814,
+            13246
+          ]
+        },
+        {
+          "name": "ss_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique demo customer identifier across store sales facts.",
+          "samples": [
+            591617,
+            1712478,
+            586372,
+            874786,
+            963544
+          ]
+        },
+        {
+          "name": "ss_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique identifier for each historical demo day in store sales data.",
+          "samples": [
+            3428,
+            4672,
+            697,
+            1511,
+            5042
+          ]
+        },
+        {
+          "name": "ss_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique store address identifiers across multiple sales records.",
+          "samples": [
+            24839,
+            13266,
+            22622,
+            19083,
+            28940
+          ]
+        },
+        {
+          "name": "ss_store_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for sales records.",
+          "samples": [
+            10,
+            1,
+            2,
+            4,
+            8
+          ]
+        },
+        {
+          "name": "ss_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique promotion identifiers for store sales records.",
+          "samples": [
+            161,
+            154,
+            172,
+            280,
+            236
+          ]
+        },
+        {
+          "name": "ss_ticket_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential ticket numbers for each sale transaction.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ss_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of units sold for each store sale transaction.",
+          "samples": [
+            79,
+            37,
+            99,
+            14,
+            100
+          ]
+        },
+        {
+          "name": "ss_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs of individual items in store sales.",
+          "samples": [
+            11.41,
+            63.63,
+            80.52,
+            57.37,
+            25.08
+          ]
+        },
+        {
+          "name": "ss_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual list prices for items sold in store transactions.",
+          "samples": [
+            18.71,
+            101.17,
+            137.68,
+            76.3,
+            36.86
+          ]
+        },
+        {
+          "name": "ss_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual sale prices for items in various transactions.",
+          "samples": [
+            2.8,
+            41.47,
+            83.98,
+            6.1,
+            0.73
+          ]
+        },
+        {
+          "name": "ss_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the amount of external discounts applied to individual store sales.",
+          "samples": [
+            99.54,
+            46.03,
+            0.0,
+            4549.9,
+            341.74
+          ]
+        },
+        {
+          "name": "ss_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in float format, ranging from cents to thousands of dollars.",
+          "samples": [
+            221.2,
+            1534.39,
+            8314.02,
+            85.4,
+            73.0
+          ]
+        },
+        {
+          "name": "ss_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual store sales transactions.",
+          "samples": [
+            901.39,
+            2354.31,
+            7971.48,
+            803.18,
+            2508.0
+          ]
+        },
+        {
+          "name": "ss_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for individual items in store sales.",
+          "samples": [
+            1478.09,
+            3743.29,
+            13630.32,
+            1068.2,
+            3686.0
+          ]
+        },
+        {
+          "name": "ss_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores extended sales tax amounts for individual transactions.",
+          "samples": [
+            6.08,
+            59.53,
+            0.0,
+            6.57,
+            254.54
+          ]
+        },
+        {
+          "name": "ss_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to individual store sales.",
+          "samples": [
+            99.54,
+            46.03,
+            0.0,
+            4549.9,
+            341.74
+          ]
+        },
+        {
+          "name": "ss_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the ss_net_pa entity",
+          "samples": [
+            121.66,
+            1488.36,
+            8314.02,
+            85.4,
+            73.0
+          ]
+        },
+        {
+          "name": "ss_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales revenue including taxes, in floating point format.",
+          "samples": [
+            127.74,
+            1547.89,
+            8314.02,
+            85.4,
+            79.57
+          ]
+        },
+        {
+          "name": "ss_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the net profit (positive for revenue, negative for expenses) in floating point format.",
+          "samples": [
+            -779.73,
+            -865.95,
+            342.54,
+            -717.78,
+            -2435.0
+          ]
+        }
+      ]
+    },
+    "warehouse": {
+      "_description": "Tracks information about physical storehouses in the retail supply chain.",
+      "columns": [
+        {
+          "name": "w_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouse locations.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "w_warehouse_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the w_warehouse_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "w_warehouse_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of warehouse names, such as Conventional childr, Of course ot, Social, royal laws m, Terms overcome instr.",
+          "samples": [
+            "Conventional childr",
+            "Of course ot",
+            "Social, royal laws m",
+            "Terms overcome instr",
+            null
+          ]
+        },
+        {
+          "name": "w_warehouse_sq_ft",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the square footage of warehouses.",
+          "samples": [
+            977787,
+            138504,
+            294242,
+            621234,
+            null
+          ]
+        },
+        {
+          "name": "w_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores numerical identifiers for individual houses along a warehouse street.",
+          "samples": [
+            651,
+            600,
+            534,
+            368,
+            null
+          ]
+        },
+        {
+          "name": "w_street_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street names for warehouses, up to 10 characters long.",
+          "samples": [
+            "6th ",
+            "View First",
+            "Ash Laurel",
+            "Wilson Elm",
+            null
+          ]
+        },
+        {
+          "name": "w_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type names, such as Parkway, Avenue, Dr., Drive.",
+          "samples": [
+            "Parkway",
+            "Avenue",
+            "Dr.",
+            "Drive",
+            null
+          ]
+        },
+        {
+          "name": "w_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores suite numbers for various warehouse locations, up to 10 characters long.",
+          "samples": [
+            "Suite 470",
+            "Suite P",
+            "Suite 0",
+            "Suite 80",
+            null
+          ]
+        },
+        {
+          "name": "w_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each warehouse location, all being Fairview.",
+          "samples": [
+            "Fairview",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of counties associated with each warehouse.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for the state where each warehouse is located (e.g., TN for Tennessee).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the 5-digit zip code for each warehouse location.",
+          "samples": [
+            35709,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each warehouse is located (all examples are from United States).",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "w_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the Greenwich Mean Time offset (in hours) for each warehouse location.",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "web_page": {
+      "_description": "Tracks web page data, including URL, type, character count, links, images, ad counts, and associated customer information over time.",
+      "columns": [
+        {
+          "name": "wp_web_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "wp_web_page_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the wp_web_page_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "wp_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores web page record start dates in YYYY-MM-DD format.",
+          "samples": [
+            "1997-09-03",
+            "2000-09-03",
+            "1999-09-04",
+            "2001-09-03",
+            null
+          ]
+        },
+        {
+          "name": "wp_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores end dates of web pages, formatted as YYYY-MM-DD.",
+          "samples": [
+            "2000-09-02",
+            "1999-09-03",
+            "2001-09-02",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_creation_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer values representing timestamps of web page creation dates.",
+          "samples": [
+            2450810,
+            2450814,
+            2450812,
+            2450815,
+            2450807
+          ]
+        },
+        {
+          "name": "wp_access_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys representing web page access dates.",
+          "samples": [
+            2452620,
+            2452580,
+            2452611,
+            2452579,
+            2452597
+          ]
+        },
+        {
+          "name": "wp_autogen_flag",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Web_page autogen_flag indicates whether a page was automatically generated (Y) or manually created (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customers associated with web pages.",
+          "samples": [
+            98539,
+            1898,
+            84146,
+            33463,
+            57610
+          ]
+        },
+        {
+          "name": "wp_url",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of web page URLs for the given domain.",
+          "samples": [
+            "http://www.foo.com",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Web_page type stores categorization of pages (welcome, protected, feedback, general).",
+          "samples": [
+            "welcome",
+            "protected",
+            "feedback",
+            "general",
+            "ad"
+          ]
+        },
+        {
+          "name": "wp_char_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of characters in web pages.",
+          "samples": [
+            2531,
+            1564,
+            3732,
+            3034,
+            3128
+          ]
+        },
+        {
+          "name": "wp_link_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of hyperlinks within each web page.",
+          "samples": [
+            8,
+            4,
+            18,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "wp_image_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of images per web page.",
+          "samples": [
+            3,
+            7,
+            2,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "wp_max_ad_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the maximum number of advertisements allowed per web page.",
+          "samples": [
+            4,
+            1,
+            3,
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "web_returns": {
+      "_description": "Tracks web-based return transactions, including details on returned items, customers, demographics, addresses, reasons, and associated costs.",
+      "columns": [
+        {
+          "name": "wr_returned_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for return dates in web_returns table.",
+          "samples": [
+            2451653,
+            2451627,
+            2452719,
+            2451785,
+            2452169
+          ]
+        },
+        {
+          "name": "wr_returned_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integers representing timestamps for returned items in web sales.",
+          "samples": [
+            7022,
+            64915,
+            11945,
+            62343,
+            79965
+          ]
+        },
+        {
+          "name": "wr_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items associated with web returns.",
+          "samples": [
+            10402,
+            15464,
+            8925,
+            151,
+            3273
+          ]
+        },
+        {
+          "name": "wr_refunded_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers of customers who have had refunded returns.",
+          "samples": [
+            46224,
+            3811,
+            17625,
+            34060,
+            41502
+          ]
+        },
+        {
+          "name": "wr_refunded_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customer demographics associated with refunded web returns.",
+          "samples": [
+            1011635,
+            18405,
+            1813550,
+            542385,
+            1383000
+          ]
+        },
+        {
+          "name": "wr_refunded_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential demo-specific identifiers for refunded web returns.",
+          "samples": [
+            3446,
+            199,
+            5475,
+            6357,
+            6898
+          ]
+        },
+        {
+          "name": "wr_refunded_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for refunded shipping addresses in web return transactions.",
+          "samples": [
+            4057,
+            48793,
+            46200,
+            14329,
+            7196
+          ]
+        },
+        {
+          "name": "wr_returning_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for returning customers in web return transactions.",
+          "samples": [
+            46224,
+            3811,
+            17625,
+            34060,
+            41502
+          ]
+        },
+        {
+          "name": "wr_returning_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customer demographics associated with web returns.",
+          "samples": [
+            1011635,
+            18405,
+            1813550,
+            542385,
+            1383000
+          ]
+        },
+        {
+          "name": "wr_returning_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for home demographics associated with web returns.",
+          "samples": [
+            3446,
+            199,
+            5475,
+            6357,
+            6898
+          ]
+        },
+        {
+          "name": "wr_returning_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for returning addresses in web_returns table.",
+          "samples": [
+            4057,
+            48793,
+            46200,
+            14329,
+            7196
+          ]
+        },
+        {
+          "name": "wr_web_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web pages associated with return transactions.",
+          "samples": [
+            56,
+            13,
+            12,
+            5,
+            49
+          ]
+        },
+        {
+          "name": "wr_reason_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for reasons behind customer returns in web_returns table.",
+          "samples": [
+            23,
+            9,
+            30,
+            15,
+            24
+          ]
+        },
+        {
+          "name": "wr_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for orders associated with web returns.",
+          "samples": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "wr_return_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of items returned by customers in web sales.",
+          "samples": [
+            10,
+            47,
+            8,
+            14,
+            38
+          ]
+        },
+        {
+          "name": "wr_return_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of items returned by customers in web sales.",
+          "samples": [
+            698.2,
+            1248.79,
+            298.48,
+            406.0,
+            637.64
+          ]
+        },
+        {
+          "name": "wr_return_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the tax amount for web return transactions.",
+          "samples": [
+            13.96,
+            49.95,
+            26.86,
+            32.48,
+            6.37
+          ]
+        },
+        {
+          "name": "wr_return_amt_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total return amount including tax, in floating point format.",
+          "samples": [
+            712.16,
+            1298.74,
+            325.34,
+            438.48,
+            644.01
+          ]
+        },
+        {
+          "name": "wr_fee",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores fees associated with web returns.",
+          "samples": [
+            18.63,
+            61.81,
+            40.26,
+            92.32,
+            43.95
+          ]
+        },
+        {
+          "name": "wr_return_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores float values representing costs for shipping web returns.",
+          "samples": [
+            820.3,
+            709.23,
+            192.24,
+            256.34,
+            392.16
+          ]
+        },
+        {
+          "name": "wr_refunded_cash",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the refunded cash amounts (in dollars) for web returns.",
+          "samples": [
+            300.22,
+            262.24,
+            5.96,
+            406.0,
+            76.51
+          ]
+        },
+        {
+          "name": "wr_reversed_charge",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of reversed charges for web returns.",
+          "samples": [
+            382.06,
+            128.25,
+            187.21,
+            0.0,
+            448.9
+          ]
+        },
+        {
+          "name": "wr_account_credit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores account credit amounts for web returns transactions.",
+          "samples": [
+            15.92,
+            858.3,
+            105.31,
+            0.0,
+            112.23
+          ]
+        },
+        {
+          "name": "wr_net_loss",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total net loss (in dollars) for each web return transaction.",
+          "samples": [
+            852.89,
+            820.99,
+            259.36,
+            381.14,
+            442.48
+          ]
+        }
+      ]
+    },
+    "web_sales": {
+      "_description": "Tracks online sales data, including customer details, item information, shipping details, and associated promotions.",
+      "columns": [
+        {
+          "name": "ws_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale dates as integer surrogate keys.",
+          "samples": [
+            2451383,
+            2452625,
+            2451754,
+            2451483,
+            2451945
+          ]
+        },
+        {
+          "name": "ws_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale time identifiers for a single day (73313).",
+          "samples": [
+            73313,
+            34964,
+            1529,
+            77832,
+            25492
+          ]
+        },
+        {
+          "name": "ws_ship_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for ship dates in web sales transactions.",
+          "samples": [
+            2451482,
+            2451411,
+            2451413,
+            2451393,
+            2451502
+          ]
+        },
+        {
+          "name": "ws_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items involved in web sales transactions.",
+          "samples": [
+            4591,
+            3566,
+            7286,
+            2755,
+            2516
+          ]
+        },
+        {
+          "name": "ws_bill_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer IDs for web sales transactions.",
+          "samples": [
+            83074,
+            42296,
+            74800,
+            89187,
+            66395
+          ]
+        },
+        {
+          "name": "ws_bill_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique identifier for customer demographic groups within web sales.",
+          "samples": [
+            596485,
+            436090,
+            1219525,
+            512359,
+            1553493
+          ]
+        },
+        {
+          "name": "ws_bill_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential demo bill identifiers for web sales transactions.",
+          "samples": [
+            1096,
+            2684,
+            3450,
+            4331,
+            1391
+          ]
+        },
+        {
+          "name": "ws_bill_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique billing address identifiers for web sales, repeated for multiple transactions with the same billing address.",
+          "samples": [
+            40907,
+            37278,
+            3375,
+            19456,
+            32089
+          ]
+        },
+        {
+          "name": "ws_ship_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the customers to whom web sales are shipped.",
+          "samples": [
+            85919,
+            57428,
+            84180,
+            87757,
+            22505
+          ]
+        },
+        {
+          "name": "ws_ship_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the shipping demo sequence number for each web sales record (41329 repeated).",
+          "samples": [
+            41329,
+            1447713,
+            1487225,
+            1204153,
+            293885
+          ]
+        },
+        {
+          "name": "ws_ship_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the home demonstration shipment ID for each web sales record, consistently set to 1140 in these samples.",
+          "samples": [
+            1140,
+            3907,
+            5550,
+            2525,
+            983
+          ]
+        },
+        {
+          "name": "ws_ship_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for shipping addresses associated with web sales.",
+          "samples": [
+            1351,
+            30901,
+            41475,
+            37697,
+            19681
+          ]
+        },
+        {
+          "name": "ws_web_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web pages associated with sales transactions.",
+          "samples": [
+            43,
+            28,
+            58,
+            2,
+            56
+          ]
+        },
+        {
+          "name": "ws_web_site_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the websites associated with web sales transactions.",
+          "samples": [
+            4,
+            7,
+            28,
+            16,
+            19
+          ]
+        },
+        {
+          "name": "ws_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various shipping modes used in web sales transactions.",
+          "samples": [
+            4,
+            3,
+            10,
+            6,
+            2
+          ]
+        },
+        {
+          "name": "ws_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses associated with web sales transactions.",
+          "samples": [
+            5,
+            2,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "ws_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for promotional events associated with web sales.",
+          "samples": [
+            6,
+            271,
+            300,
+            63,
+            18
+          ]
+        },
+        {
+          "name": "ws_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique order identifiers for web sales transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ws_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of units sold per web sales transaction.",
+          "samples": [
+            57,
+            38,
+            32,
+            65,
+            58
+          ]
+        },
+        {
+          "name": "ws_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items in web sales transactions.",
+          "samples": [
+            33.59,
+            29.83,
+            49.72,
+            69.18,
+            36.62
+          ]
+        },
+        {
+          "name": "ws_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales list prices, represented as floating point numbers.",
+          "samples": [
+            59.45,
+            48.92,
+            107.89,
+            112.07,
+            41.38
+          ]
+        },
+        {
+          "name": "ws_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual sale prices for web transactions (e.g., 38.04, 26.41, etc.).",
+          "samples": [
+            38.04,
+            26.41,
+            97.1,
+            22.41,
+            16.13
+          ]
+        },
+        {
+          "name": "ws_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external discount amounts for individual web sales transactions.",
+          "samples": [
+            1220.37,
+            855.38,
+            345.28,
+            5827.9,
+            1464.5
+          ]
+        },
+        {
+          "name": "ws_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in floating point format.",
+          "samples": [
+            2168.28,
+            1003.58,
+            3107.2,
+            1456.65,
+            935.54
+          ]
+        },
+        {
+          "name": "ws_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs (in dollars) for individual web sales.",
+          "samples": [
+            1914.63,
+            1133.54,
+            1591.04,
+            4496.7,
+            2123.96
+          ]
+        },
+        {
+          "name": "ws_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for individual web sales transactions.",
+          "samples": [
+            3388.65,
+            1858.96,
+            3452.48,
+            7284.55,
+            2400.04
+          ]
+        },
+        {
+          "name": "ws_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external taxes applied to individual web sales transactions.",
+          "samples": [
+            50.95,
+            30.1,
+            124.28,
+            29.13,
+            84.19
+          ]
+        },
+        {
+          "name": "ws_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to web sales.",
+          "samples": [
+            1149.18,
+            0.0,
+            215.21,
+            9.37,
+            2381.43
+          ]
+        },
+        {
+          "name": "ws_ext_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external shipping costs for web sales transactions.",
+          "samples": [
+            575.7,
+            910.86,
+            828.48,
+            2476.5,
+            167.62
+          ]
+        },
+        {
+          "name": "ws_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the ws_net_pa entity",
+          "samples": [
+            1019.1,
+            1003.58,
+            3107.2,
+            1456.65,
+            935.54
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales amounts including taxes, in floating point format.",
+          "samples": [
+            1070.05,
+            1033.68,
+            3231.48,
+            1485.78,
+            1019.73
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_ship",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total net sales revenue including shipping costs.",
+          "samples": [
+            1594.8,
+            1914.44,
+            3935.68,
+            3933.15,
+            1103.16
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_ship_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales including shipping taxes, in floating point format.",
+          "samples": [
+            1645.75,
+            1944.54,
+            4059.96,
+            3962.28,
+            1187.35
+          ]
+        },
+        {
+          "name": "ws_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales transaction net profits as floating point numbers.",
+          "samples": [
+            -895.53,
+            -129.96,
+            1516.16,
+            -3040.05,
+            -1188.42
+          ]
+        }
+      ]
+    },
+    "web_site": {
+      "_description": "Captures detailed information about various websites, including their attributes, management, marketing, and physical location.",
+      "columns": [
+        {
+          "name": "web_site_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web sites.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "web_site_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in web_site",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "web_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the starting date (in YYYY-MM-DD format) for each web site record.",
+          "samples": [
+            "1997-08-16",
+            "2000-08-16",
+            "1999-08-17",
+            "2001-08-16",
+            null
+          ]
+        },
+        {
+          "name": "web_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the end date (format: YYYY-MM-DD) of individual website records.",
+          "samples": [
+            "2000-08-15",
+            "1999-08-16",
+            "2001-08-15",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores fixed 10-character identifiers for web sites (e.g., site_0).",
+          "samples": [
+            "site_0",
+            "site_1",
+            "site_2",
+            "site_3",
+            "site_4"
+          ]
+        },
+        {
+          "name": "web_open_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for web site open dates.",
+          "samples": [
+            2450807,
+            2450798,
+            2450781,
+            2450756,
+            2450747
+          ]
+        },
+        {
+          "name": "web_close_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique integer identifiers for the closing dates of web sites.",
+          "samples": [
+            2447148,
+            2448956,
+            2448922,
+            2447080,
+            2447046
+          ]
+        },
+        {
+          "name": "web_class",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores web site classification as 'Unknown'.",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of web site managers.",
+          "samples": [
+            "Ronald Shaffer",
+            "Tommy Jones",
+            "Harold Wilson",
+            "Michael Shade",
+            "Moses Hicks"
+          ]
+        },
+        {
+          "name": "web_mkt_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the web_mkt_ entity",
+          "samples": [
+            4,
+            6,
+            3,
+            5,
+            1
+          ]
+        },
+        {
+          "name": "web_mkt_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The web_mkt_class column stores marketing classifications for various websites.",
+          "samples": [
+            "Grey lines ought to result indeed centres. Tod",
+            "Otherwise simple years account as senior ",
+            "Open arms shall make sports. Dates ",
+            "Reports protect more northern, wide other",
+            "Years arrest quite different contexts; ani"
+          ]
+        },
+        {
+          "name": "web_mkt_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive marketing text for various websites.",
+          "samples": [
+            "Well similar decisions used to keep hardly democratic, personal priorities.",
+            "Results shall not encourage interesting colours",
+            "Old, secure files drive external rats; large, recent years might not look really angry ch",
+            "Never chief police must consider therefor",
+            "Sincerely secondary events could pump famous projects. Successes"
+          ]
+        },
+        {
+          "name": "web_market_manager",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of web market managers.",
+          "samples": [
+            "Joe George",
+            "David Myers",
+            "Robert Ly",
+            "James Harris",
+            "Edward George"
+          ]
+        },
+        {
+          "name": "web_company_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the web_company_ entity",
+          "samples": [
+            6,
+            4,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "name": "web_company_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores short names of up to 10 characters for web companies associated with websites.",
+          "samples": [
+            "cally",
+            "ese",
+            "anti",
+            "ought",
+            "able"
+          ]
+        },
+        {
+          "name": "web_street_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores numerical identifiers for individual houses within a street in web sites.",
+          "samples": [
+            51,
+            358,
+            805,
+            784,
+            835
+          ]
+        },
+        {
+          "name": "web_street_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of street names for web sites.",
+          "samples": [
+            "Dogwood Sunset",
+            "Ridge Wilson",
+            "7th ",
+            "Hill Hill",
+            "2nd 3rd"
+          ]
+        },
+        {
+          "name": "web_street_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores street type abbreviations such as Ln, Cir., Pkwy, Dr., Road.",
+          "samples": [
+            "Ln",
+            "Cir.",
+            "Pkwy",
+            "Dr.",
+            "Road"
+          ]
+        },
+        {
+          "name": "web_suite_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores identifiers for various web suites (e.g., Suite 330, Suite 150, etc.), including some labeled as 'Suite R'.",
+          "samples": [
+            "Suite 330",
+            "Suite 150",
+            "Suite 210",
+            "Suite R",
+            "Suite 130"
+          ]
+        },
+        {
+          "name": "web_city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the city names for each web site location.",
+          "samples": [
+            "Midway",
+            "Fairview",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_county",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of counties associated with web sites.",
+          "samples": [
+            "Williamson County",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for the state of a website's location (e.g., TN).",
+          "samples": [
+            "TN",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the 5-digit ZIP code for a web site's location (all sites share the same ZIP code).",
+          "samples": [
+            31904,
+            35709,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where each web site is located (all examples are from United States)",
+          "samples": [
+            "United States",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_gmt_offset",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the Greenwich Mean Time offset (in hours) for each web site.",
+          "samples": [
+            -5.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "web_tax_percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores floating-point values representing tax percentages for various web sites.",
+          "samples": [
+            0.1,
+            0.0,
+            0.02,
+            0.08,
+            0.12
+          ]
+        }
+      ]
+    }
+  }
+}

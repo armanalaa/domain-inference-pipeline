@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details, contact information, and account credentials.
+- Sales managers update customer accounts with their credit card details, income level, and gender for targeted marketing campaigns.
+- Customer service representatives verify customer identities using email or phone numbers during account recovery processes.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory specialists update product details with actual prices based on sales data.
+- Product managers assign common product IDs to similar products for easier categorization and search.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives place orders by selecting products, specifying quantities, and providing customer details.
+- Warehouse staff track order statuses and update them in the system when items are picked, packed, and shipped.
+
+## 4. Inventory Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists monitor stock levels and reorder low-stock products based on predefined thresholds.
+- Purchasing teams issue purchase orders to suppliers for replenishing inventory.
+
+## 5. Financial Transactions
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance department records net amounts, taxes, and total amounts for each order in the system.
+- Accounting staff generate invoices based on order details and send them to customers.
+
+## 6. Customer History Tracking
+
+Performed By: Customer Service Representatives, Marketing Managers
+
+Activity:
+- Customer service representatives access customer histories to assist with queries or complaints.
+- Marketing managers analyze customer purchase patterns to develop targeted marketing strategies.
+
+## 7. Performance Monitoring
+
+Performed By: IT Administrators, System Analysts
+
+Activity:
+- IT administrators monitor system performance using tools like plink and mpstat to ensure smooth operation.
+- System analysts troubleshoot issues and implement solutions to maintain system efficiency.

@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their personal details and job roles (cc_employees).
+- HR managers update employee information in the database (cc_company_name, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives handle customer calls within specified hours (cc_hours).
+- They record call details such as start and end dates, closed date, and manager information (cc_rec_start_date, cc_closed_date_sk, cc_manager).
+
+## 3. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers assign call centers to specific markets (cc_mkt_id).
+- Call center managers update the assigned market and its class in the database (cc_mkt_class, cc_market_manager).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, etc.).
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives log returns from customers (cr_returned_date_sk).
+- Warehouse staff update the warehouse location where the returned item is stored (cr_warehouse_sk).
+
+## 6. Interpretation Request Processing
+
+Performed By: TAB Members, TAB Chairperson
+
+Activity:
+- The TAB chairperson receives interpretation requests and distributes them to members (3.3.4.1).
+- TAB members discuss and provide a ruling on the request, which is posted on the Private Web Site (3.3.4.4).
+
+## 7. Clarification or Conflict Resolution Requests
+
+Performed By: TAB Members
+
+Activity:
+- TAB members review Pre-Publication Board requests for clarifications and conflict resolution (3.3.5.2, 3.3.5.4).

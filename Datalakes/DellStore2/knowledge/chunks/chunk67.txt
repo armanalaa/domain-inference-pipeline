@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product details and processing payments.
+- Customers browse the catalog, add items to their cart, and confirm purchases using their account information.
+
+## 3. Order Processing
+
+Performed By: Order Processing Team
+
+Activity:
+- The order processing team generates order IDs, calculates net amount, tax, and total amount based on customer orders.
+- They update the orders table with the new order details and create corresponding entries in the cust_hist and orderlines tables.
+
+## 4. Inventory Control
+
+Performed By: Inventory Management Team
+
+Activity:
+- The inventory management team monitors sales data to determine when products are running low on stock.
+- They update the reorder table with the date_low, quan_low, and expected restocking information.
+
+## 5. Reordering and Restocking
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams place orders for new inventory based on the reorder table's recommendations.
+- Warehouse staff receive and record incoming shipments, updating the inventory table accordingly.
+
+## 6. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- The finance team records transactions related to customer orders, including payments and taxes, in the orders table.
+- They generate financial reports based on this data for analysis and auditing purposes.
+
+## 7. Customer Service
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints regarding orders, returns, or product issues.
+- They update the customers table with any relevant information gathered during interactions with customers.

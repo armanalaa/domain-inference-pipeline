@@ -1,0 +1,45 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers define the call center's structure by assigning roles, divisions, and responsibilities.
+- HR managers recruit and hire new employees for various positions within the call center.
+- Call center managers determine the number of employees needed based on the call center's size and workload.
+- HR managers train new hires on call center policies, procedures, and systems.
+- Call center managers assign employees to specific shifts based on their skills and availability.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Manager
+
+Activity:
+- Call center employees answer incoming calls from customers during their assigned shifts.
+- Call center employees assist customers with inquiries about products or services.
+- Call center employees record customer interactions, including call duration, reason for call, and resolution provided.
+- Call center managers monitor employee performance to ensure adherence to service level agreements.
+- Call center employees escalate complex issues to their supervisors when necessary.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by providing product details such as name, category, and list price.
+- Marketing managers create and update catalog pages to showcase products and services.
+- Product managers ensure that all product information is accurate and up-to-date.
+- Marketing managers organize catalog pages into departments for easy navigation.
+- Product managers collaborate with marketing teams to promote new or popular items.
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details and reasons.
+- Warehouse staff receive returned items from customers and update their status in the system.
+- Customer service representatives issue refunds to customers based on the return reason and item condition.
+- Warehouse staff inspect returned items for damage or defects before processing the refund.
+- Warehouse staff restock acceptable returns into inventory when applicable.

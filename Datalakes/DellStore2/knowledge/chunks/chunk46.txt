@@ -1,0 +1,68 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+- When inventory reaches a predefined low level, warehouse staff initiate reordering process using the prod_id.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives engage with customers to understand their needs and place orders accordingly.
+- HR managers maintain customer records including personal details, credit card information, and contact information.
+- Customers view their order history, update their profile, and make payments using the provided username and password.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate orders based on customer requests and record them in the orders table.
+- Warehouse staff pick and pack items according to orderlines and update inventory accordingly.
+- Purchasing teams issue purchase orders for products not available in stock.
+
+## 4. Invoice Generation
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on the netamount from the orders table.
+- Finance records the invoice details including tax and total amount.
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance
+
+Activity:
+- Customers make payments using their credit card information stored in customers table.
+- Finance updates the payment status for each order.
+
+## 6. Inventory Replenishment
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- When inventory reaches a predefined low level, warehouse staff initiate reordering process using the prod_id.
+- Purchasing teams issue purchase orders for products not available in stock.
+- Upon receipt of new stock, warehouse staff update the quan_in_stock column.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer queries and complaints related to orders, payments, or products.
+
+## 8. Analytics and Reporting
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on sales, inventory levels, and customer behavior using data from the various tables.
+- Management uses these reports for decision making and strategic planning.

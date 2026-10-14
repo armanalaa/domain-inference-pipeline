@@ -1,0 +1,9 @@
+table,domain_id,domain_name
+cust_hist,0,Order Processing and Management
+orderlines,0,Order Processing and Management
+orders,0,Order Processing and Management
+categories,1,Product Information Management
+products,1,Product Information Management
+inventory,2,Inventory and Reorder Management
+reorder,2,Inventory and Reorder Management
+customers,3,Customer Profile Management

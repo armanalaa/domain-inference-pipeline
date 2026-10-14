@@ -1,0 +1,50 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific call centers based on capacity and demand (cc_division).
+- Warehouse staff update the square footage of each call center (cc_sq_ft).
+
+## 2. Call Center Operation
+
+Performed By: Sales Representatives, Purchasing Teams, Customers
+
+Activity:
+- Sales representatives handle customer inquiries and process orders over the phone or through remote presence (cc_call_center_id).
+- Purchasing teams issue purchase orders for new call center equipment or supplies (not specified in provided materials).
+- Customers place orders for call center services, which are recorded in the call center database (not specified in provided materials).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (not specified in provided columns).
+- Marketing managers update the description and type of each catalog page (cp_description, cp_type).
+
+## 4. Return Processing
+
+Performed By: Warehouse Staff, Customer Service Representatives
+
+Activity:
+- Warehouse staff receive returned items from customers and record them in the returns database (cr_item_sk).
+- Customer service representatives process customer refunds based on return reasons (cr_reason_sk).
+
+## 5. Meeting Organization
+
+Performed By: TPC Staff, Council Members
+
+Activity:
+- TPC staff schedule meetings and determine their location (cc_open_date_sk, cc_city, cc_county, cc_state, cc_country).
+- Council members vote on changes to meeting locations or forms when necessary (not specified in provided materials).
+
+## 6. Meeting Conduct
+
+Performed By: Council Members, TPC Staff
+
+Activity:
+- Council members and TPC staff follow documented bylaws and policies during meetings (not specified in provided materials).
+- In case of uncovered situations, Robert's Rules of Order are applied (not specified in provided materials).

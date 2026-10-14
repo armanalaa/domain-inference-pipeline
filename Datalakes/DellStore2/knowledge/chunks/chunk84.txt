@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+- Product managers monitor sales data to identify best-selling products and adjust pricing strategies accordingly.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers, capturing their contact information and preferences.
+- Customers place orders by specifying the desired products, quantities, and delivery addresses.
+- HR managers process new customer accounts, verifying identity and creditworthiness based on provided details.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives confirm order details with customers and generate corresponding order IDs.
+- Warehouse staff pick and pack ordered items based on the orderlines table.
+- Purchasing teams issue purchase orders to suppliers for any necessary components or materials.
+
+## 4. Invoice Generation
+
+Performed By: Finance, Accounting Teams
+
+Activity:
+- Finance teams calculate the net amount, tax, and total amount for each order based on product prices, quantities, and taxes.
+- Accounting teams generate invoices for customers, including order details, payment terms, and due dates.
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance Teams
+
+Activity:
+- Customers make payments using their preferred credit card or other payment methods.
+- Finance teams record customer payments, update account balances, and mark orders as paid in the orders table.
+
+## 6. Reordering Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Warehouse staff monitor inventory levels and trigger reorder requests when stock reaches a predefined threshold.
+- Purchasing teams review reorder requests, determine appropriate quantities, and issue purchase orders to suppliers.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Business Analysts, Management Teams
+
+Activity:
+- Business analysts extract data from the database for analysis, focusing on sales trends, customer behavior, and inventory performance.
+- Management teams use insights gained from data analysis to make informed decisions about pricing strategies, marketing efforts, and operational improvements.

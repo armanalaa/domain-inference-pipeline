@@ -1,0 +1,69 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record new employee details such as NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign employees to departments by updating the HumanResources EmployeeDepartmentHistory table with DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate.
+- Record employee pay history by adding entries to HumanResources EmployeePayHistory with RateChangeDate, Rate, PayFrequency, and ModifiedDate.
+
+## 2. Employee Address Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- Register employee addresses in the Person Address table using AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation.
+- Assign address types to employee addresses through the Person BusinessEntityAddress table with AddressTypeID.
+
+## 3. Employee Contact Information Update
+
+Performed By: HR Managers
+
+Activity:
+- Update employee contact information in the Person BusinessEntityContact table with relevant details like phone numbers, emails, etc.
+
+## 4. Sales Territory Assignment
+
+Performed By: Sales Managers
+
+Activity:
+- Assign sales territories to employees based on their geographic area of operation using TerritoryID and Group from the Sales.SalesTerritory table.
+
+## 5. Customer Purchase Reason Tracking
+
+Performed By: Sales Representatives
+
+Activity:
+- Record customer purchase reasons in the Sales.SalesReason table with relevant details like Name, ReasonType, and ModifiedDate.
+
+## 6. Sales Tax Rate Management
+
+Performed By: Finance Team
+
+Activity:
+- Manage sales tax rates by updating the Sales.SalesTaxRate table with StateProvinceID, TaxType, TaxRate, Name, and ModifiedDate.
+
+## 7. Invoice Processing
+
+Performed By: Accounting Team
+
+Activity:
+- Generate invoices based on sales orders and tax rates using data from the SalesOrderHeader and SalesTaxRate tables.
+
+## 8. Sales Order Management
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Register new sales orders with details like product information, customer information, shipping details, etc., in the SalesOrderHeader table.
+- Update SalesPersonQuotaHistory with BusinessEntityID and QuotaDate to track sales quotas.
+
+## 9. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Track inventory levels by updating the inventory tables with relevant details like product code, quantity, location, etc.
+- Issue purchase orders for replenishing inventory based on current stock levels and demand forecasts.

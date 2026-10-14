@@ -1,0 +1,42 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Market Managers, Division Managers
+
+Activity:
+- Assign call centers to specific divisions based on their location and size (cc_division).
+- Determine the market class and description for each call center (cc_mkt_class, cc_mkt_desc).
+- Set up the operational hours, employees count, and square footage for each call center (cc_hours, cc_employees, cc_sq_ft).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Answer incoming calls from customers during business hours (cc_rec_start_date, cc_rec_end_date).
+- Record call details such as start and end dates, closed date, and manager's name (cc_closed_date_sk, cc_open_date_sk, cc_closed_date_sk, cc_manager).
+- Classify calls according to their type or category (cc_class).
+
+## 3. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by providing product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 4. Customer Returns
+
+Performed By: Customers, Warehouse Staff, Call Center Staff
+
+Activity:
+- Initiate a return by contacting the call center (cr_call_center_sk).
+- Provide necessary details like returned date and time, item SKU, and reason for return (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk).
+- Package the returned items and ship them back to the warehouse (cr_ship_mode_sk, cr_warehouse_sk).
+
+## 5. Pre-Publication Board
+
+Performed By: Pre-Publication Board Members
+
+Activity:
+- Review and approve new benchmark specifications before they are published (TPC-Enterprise Class Benchmarks).

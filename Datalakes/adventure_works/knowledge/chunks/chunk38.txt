@@ -1,0 +1,58 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their national ID number, login ID, job title, birth date, marital status, gender, hire date, salaried flag, vacation hours, sick leave hours, current flag, and rowguid.
+- HR managers update employee information by modifying the relevant fields such as marital status, job title, or address.
+- HR managers track employee department history by recording the department ID, shift ID, start date, end date, and modified date for each transition.
+- HR managers manage employee pay history by recording rate change date, rate, pay frequency, and modified date for each salary adjustment.
+
+## 2. Address Management
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks record address details like address line 1, address line 2, city, state province ID, postal code, country region name, and spatial location for each business entity.
+- Data entry clerks assign an address type to each address based on its purpose (e.g., home, work).
+- Data entry clerks update addresses by modifying the relevant fields such as address line 1, city, or postal code.
+
+## 3. Contact Management
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives record contact details like name, phone number, email address, and email promotion preference for each business entity.
+- Customer service representatives update contact information by modifying the relevant fields such as phone number or email address.
+
+## 4. Sales Management
+
+Performed By: Sales Representatives
+
+Activity:
+- Sales representatives register sales by recording the sales amount for each fiscal year.
+- Sales representatives track their sales territory and sales quota.
+
+## 5. Store Management
+
+Performed By: Store Managers
+
+Activity:
+- Store managers record store details like name, address type, address line 1, address line 2, city, state province name, postal code, country region name, and annual sales for each store.
+- Store managers update store information by modifying the relevant fields such as address line 1 or annual sales.
+
+## 6. Error Logging
+
+Performed By: Database Administrators (DBAs)
+
+Activity:
+- DBAs log errors that occur in the database by inserting them into the error log table using stored procedure dbo.uspLogError.
+
+## 7. Database Version Tracking
+
+Performed By: DBAs
+
+Activity:
+- DBAs record the current version number of the AdventureWorks database in the AWBuildVersion table.

@@ -1,0 +1,71 @@
+ # Mondial — Business Workflows
+
+## 1. City Management
+
+Performed By: City Managers, Data Entry Clerks
+
+Activity:
+- City managers register new cities by recording the name, country, province, population, longitude, and latitude.
+- Data entry clerks update city details when changes occur, such as population or administrative boundaries.
+- City managers assign cities to provinces and countries based on geographical and political considerations.
+
+## 2. Continent Management
+
+Performed By: Geographers, Research Analysts
+
+Activity:
+- Geographers add new continents by specifying the name and area.
+- Research analysts update continent details when necessary, such as changes in borders or population distribution.
+- Geographers categorize continents based on geographical features, historical events, and cultural characteristics.
+
+## 3. Country Management
+
+Performed By: Diplomats, Economists, Data Entry Clerks
+
+Activity:
+- Diplomats register new countries by providing the name, code, capital, province, area, population, and GDP.
+- Economists update country details related to economic indicators like agriculture, service, industry, and inflation.
+- Data entry clerks maintain accurate records of each country's ethnic groups and languages.
+
+## 4. Geographical Feature Management
+
+Performed By: Cartographers, Geologists, Research Analysts
+
+Activity:
+- Cartographers add new geographical features like deserts, rivers, lakes, mountains, seas, and islands to the database.
+- Geologists provide details about each feature's area, longitude, latitude, depth, altitude, type, and associated bodies of water.
+- Research analysts update geographical features when changes occur, such as borders or names.
+
+## 5. Organization Management
+
+Performed By: Diplomats, Business Representatives, Data Entry Clerks
+
+Activity:
+- Diplomats register new international organizations and their members.
+- Business representatives add corporate entities to the database.
+- Data entry clerks maintain accurate records of each organization's type, location, and establishment details.
+
+## 6. Language Management
+
+Performed By: Linguists, Research Analysts
+
+Activity:
+- Linguists add new languages to the database by specifying the country, name, and percentage of speakers.
+- Research analysts update language details when necessary, such as changes in distribution or official status.
+
+## 7. Economic Analysis
+
+Performed By: Economists, Financial Analysts
+
+Activity:
+- Economists analyze economic trends by examining GDP, agriculture, service, industry, and inflation data for each country.
+- Financial analysts forecast future economic conditions based on historical and current data.
+
+## 8. Geopolitical Analysis
+
+Performed By: Diplomats, Political Scientists, Research Analysts
+
+Activity:
+- Diplomats assess geopolitical risks and opportunities by examining relationships between countries, organizations, and territories.
+- Political scientists analyze political structures, power dynamics, and conflicts within and between nations.
+- Research analysts update geopolitical data when changes occur, such as border disputes or diplomatic agreements.

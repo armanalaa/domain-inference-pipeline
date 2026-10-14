@@ -1,0 +1,59 @@
+ # TPC-DS — Business Workflows
+
+## 1. Member Management
+
+Performed By: Corporation Administrator, Board of Directors
+
+Activity:
+- Review membership applications and make decisions on admission based on eligibility criteria.
+- Approve or deny membership requests in accordance with the bylaws and board resolutions.
+- Maintain a membership book containing the name, address, and status of each member.
+
+## 2. Membership Fee Management
+
+Performed By: Corporation Administrator, Members
+
+Activity:
+- Set annual dues for all classes of members as determined by the Board of Directors.
+- Collect dues from new members within 90 days of admission and annually thereafter.
+- Process resignations to avoid liability for unpaid dues.
+
+## 3. Membership Voting Rights
+
+Performed By: Members, Corporation Administrator
+
+Activity:
+- Determine eligibility of subsidiaries to vote in designated TPC committees or sub-groups.
+- Cast votes on matters presented by the Board of Directors or Standing Committees.
+
+## 4. Board of Directors Appointment
+
+Performed By: Members, Corporation Administrator
+
+Activity:
+- Appoint one member to the Corporation's Board of Directors upon admission to membership.
+
+## 5. Call Center Management
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Establish and manage call centers for handling customer inquiries or complaints.
+- Assign employees and allocate resources to call centers based on market needs.
+
+## 6. Catalog Page Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, and list price.
+- Update or modify existing catalog pages as needed.
+
+## 7. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Handle customer returns by recording returned date, time, item SKU, and reason for return.
+- Refund customers and update their records accordingly.
+- Coordinate with warehouse staff to process and track returned items.

@@ -1,0 +1,141 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Inventory and Reorder Management",
+    "definition": "The process of managing inventory levels, reordering products, and tracking order-related data.",
+    "tables": [
+      "inventory",
+      "reorder"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "inventory": {
+      "_description": "Tracks inventory levels of products in stock and sales transactions.",
+      "columns": [
+        {
+          "name": "prod_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the prod_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "quan_in_stock",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of items currently in stock.",
+          "samples": [
+            138,
+            118,
+            228,
+            279,
+            382
+          ]
+        },
+        {
+          "name": "sales",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of sales transactions for each inventory item.",
+          "samples": [
+            9,
+            19,
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    "reorder": {
+      "_description": "Tracks product reordering details, including ID, low stock date, minimum quantity, reorder date, and expected delivery date.",
+      "columns": [
+        {
+          "name": "prod_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the prod_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "date_low",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores formatted dates for low reorder points.",
+          "samples": [
+            "2004-01-05",
+            "2004-01-07",
+            "2004-01-10",
+            "2004-01-12",
+            "2004-01-14"
+          ]
+        },
+        {
+          "name": "quan_low",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stocks to reorder when quantity drops below a certain level (e.g., 12, 8, 15, 10, 6).",
+          "samples": [
+            12,
+            8,
+            15,
+            10,
+            6
+          ]
+        },
+        {
+          "name": "date_reordered",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores formatted date of product reorders as YYYY-MM-DD strings.",
+          "samples": [
+            "2004-01-06",
+            "2004-01-08",
+            "2004-01-11",
+            "2004-01-13",
+            "2004-01-15"
+          ]
+        },
+        {
+          "name": "quan_reordered",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of items reordered in individual transactions.",
+          "samples": [
+            50,
+            40,
+            60,
+            45,
+            35
+          ]
+        },
+        {
+          "name": "date_expected",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores expected reorder dates in YYYY-MM-DD format.",
+          "samples": [
+            "2004-01-13",
+            "2004-01-15",
+            "2004-01-18",
+            "2004-01-20",
+            "2004-01-22"
+          ]
+        }
+      ]
+    }
+  }
+}

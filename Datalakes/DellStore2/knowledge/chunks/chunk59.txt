@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact information and demographic details.
+- Customer service agents update customer records with changes to contact information or account status.
+- Sales representatives assign customers to specific regions based on their location.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product codes, names, categories, and list prices.
+- Warehouse staff update inventory levels when products are received or sold.
+- Product managers mark common products as such for easier identification and management.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff
+
+Activity:
+- Sales representatives create new orders by associating customers with specific products and quantities.
+- Customers place orders through the online store or over the phone.
+- Warehouse staff prepare orders for shipping once they are ready.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and sales to ensure accurate stock counts.
+- Purchasing teams issue purchase orders when inventory levels fall below a certain threshold.
+- Warehouse staff receive and record new shipments of products.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders based on the items requested and their current inventory levels.
+- Shipping teams prepare orders for delivery by printing shipping labels and arranging for courier pickup.
+- Warehouse staff update order statuses to reflect that they have been shipped.
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on the products ordered and their prices.
+- Accounting staff record financial transactions related to orders, including payments from customers and expenses related to shipping and inventory management.
+- Finance teams generate reports on sales, expenses, and profitability for analysis and decision-making purposes.
+
+## 7. Reordering Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers monitor inventory levels and reorder products when they fall below a certain threshold.
+- Purchasing teams issue purchase orders for the necessary quantities of each product to be reordered.
+- Inventory managers update expected delivery dates for reordered products.

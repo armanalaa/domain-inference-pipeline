@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set special or common_prod_id for promotional offers or similar items.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details like firstname, lastname, address, email, phone, creditcardtype, and age into the customers table during registration.
+- Customer service agents update contact information when customers request changes.
+- HR managers record income, gender, and region for employee profiles in the customers table.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products from the catalog, specifying quantities, and providing order details.
+- Sales representatives confirm orders and record netamount, tax, and totalamount in the orders table.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory based on orderlines.
+- Shipping agents pack and label orders for delivery, updating orderdate in the orders table.
+
+## 5. Inventory Tracking
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff update quan_in_stock when products are sold or returned.
+- Purchasing teams issue purchase orders to replenish low stock levels based on reorder data.
+
+## 6. Financial Management
+
+Performed By: Finance Staff, Accountants
+
+Activity:
+- Finance staff record sales transactions in the inventory and orders tables.
+- Accountants calculate tax and totalamount for each order.
+
+## 7. Audit & Compliance
+
+Performed By: Data Governance Team, IT Security Personnel
+
+Activity:
+- Data governance team documents sensitive data using custom fields and classification tags in the customers, orders, inventory, and products tables.
+- IT security personnel ensure compliance with regulations like GDPR, CCPA, HIPAA by monitoring data movement across systems.

@@ -1,0 +1,59 @@
+ # adventure_works — Business Workflows
+
+## 1. Sales Personnel Management
+
+Performed By: Human Resources Managers, Sales Managers
+
+Activity:
+- Human Resources managers assign territories to sales representatives based on the TerritoryID and SalesTerritory.SalesTerritoryID.
+- Sales managers set sales quotas for each sales representative by recording the SalesQuota and SalesLastYear in the SalesPerson table.
+- Sales managers update salesperson's commissions and bonuses based on their performance, modifying the CommissionPct and Bonus columns accordingly.
+
+## 2. Sales Performance Tracking
+
+Performed By: Sales Managers, Data Analysts
+
+Activity:
+- Sales managers record salesperson's year-to-date and previous year's sales in the SalesYTD and SalesLastYear columns respectively.
+- Data analysts track sales performance over time by monitoring changes to the SalesPerson table's ModifiedDate column.
+- Data analysts generate reports on sales performance using data from the SalesPersonQuotaHistory table, including quota dates (QuotaDate) and actual sales (SalesQuota).
+
+## 3. Sales Territory Management
+
+Performed By: Sales Managers, Geographic Information Specialists
+
+Activity:
+- Sales managers define and assign territories to sales representatives using the SalesTerritory.SalesTerritoryID column.
+- Geographic information specialists maintain up-to-date spatial data for each territory by updating the SpatialLocation column in the Person Address table.
+
+## 4. Employee Onboarding
+
+Performed By: Human Resources Managers, HR Assistants
+
+Activity:
+- Human resources managers hire new employees and record their information (BusinessEntityID, NationalIDNumber, LoginID, etc.) in the HumanResources Employee table.
+- HR assistants assign new hires to departments and update their employment history using the HumanResources EmployeeDepartmentHistory table.
+
+## 5. Employee Information Updates
+
+Performed By: Employees, HR Managers
+
+Activity:
+- Employees update their personal information (e.g., address, marital status) by modifying relevant columns in the Person Address and HumanResources Employee tables.
+- HR managers review and approve employee updates as needed.
+
+## 6. Payroll Processing
+
+Performed By: Finance Managers, Payroll Specialists
+
+Activity:
+- Finance managers set salaries for employees based on their job titles (JobTitle) and salaried status (SalariedFlag).
+- Payroll specialists calculate and record employee vacation and sick leave hours (VacationHours, SickLeaveHours) in the HumanResources Employee table.
+
+## 7. Address Management
+
+Performed By: Employees, Data Entry Clerks
+
+Activity:
+- Employees update their home addresses by modifying the Person Address table's columns (AddressLine1, City, StateProvinceID, etc.).
+- Data entry clerks maintain accurate address information for all employees in the Person BusinessEntityAddress table.

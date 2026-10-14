@@ -1,0 +1,77 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the number of available positions (cc_employees).
+- HR managers update employee information in the system, including personal details and employment history (cc_name, cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers collaborate with market managers to assign call centers to specific markets based on geographical coverage and market needs (cc_mkt_id, cc_division).
+
+## 3. Call Center Operations Management
+
+Performed By: Call Center Managers, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Call center managers oversee daily operations, ensuring adequate staffing levels and operational efficiency (cc_hours, cc_sq_ft).
+- Warehouse staff track inventory levels and update them in the system when changes occur (not specified in provided schema).
+- Purchasing teams order new equipment or supplies as needed to maintain call center operations (not specified in provided schema).
+
+## 4. Customer Service
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives handle customer inquiries and complaints, providing information about products and services (not specified in provided schema).
+
+## 5. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers add new items to the product catalog by recording the product code, name, category, and list price (not specified in provided schema).
+
+## 6. Online Catalog Navigation
+
+Performed By: Customers
+
+Activity:
+- Customers navigate through the online catalog, browsing products based on department or category (cp_department, cp_catalog_number, cp_catalog_page_number).
+
+## 7. Return Process Initiation
+
+Performed By: Customers
+
+Activity:
+- Customers initiate a return by contacting the call center and providing their order number (not specified in provided schema).
+
+## 8. Return Processing
+
+Performed By: Call Center Representatives, Warehouse Staff
+
+Activity:
+- Call center representatives process returns by recording customer information, reason for return, and shipping mode (cr_returned_date_sk, cr_ship_mode_sk).
+- Warehouse staff update inventory levels when returned items are received (not specified in provided schema).
+
+## 9. Result Evaluation and Compliance
+
+Performed By: Council Members, Administrator
+
+Activity:
+- Council members evaluate the compliance of benchmark results with the established standards and vote on whether a result is compliant or not (not specified in provided schema).
+- If a result is deemed non-compliant, the administrator withdraws it from the TPC Results List (6.13.2, 6.14.2.3) or requests its update if it has insignificant deviations (6.13.3).
+
+## 10. Result Withdrawal and Update Management
+
+Performed By: Test Sponsors, Administrator
+
+Activity:
+- Test sponsors withdraw results voluntarily or due to compliance challenges (6.14.2.1, 6.14.2.2) or update them if they have insignificant deviations (6.13.3).
+- The administrator manages the withdrawal and update process according to the policies (6.14.2.3, 6.14.2.4).

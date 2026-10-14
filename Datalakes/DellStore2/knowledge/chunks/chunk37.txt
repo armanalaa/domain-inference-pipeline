@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording the product code, name, category, and list price.
+- Update product details when necessary, including title, actor, price, special, and common_prod_id.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Register new customers by providing firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcard.
+- Update customer details such as username, password, age, income, gender, creditcardexpiration.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Track the quantity of products in stock (quan_in_stock) and sales for each product.
+- Update inventory levels when products are sold or received.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Place orders by specifying orderid, orderdate, customerid, netamount, tax, totalamount, and related orderlines (orderlineid, orderid, prod_id, quantity).
+- Update the orders table with date_reordered, quan_reordered, and date_expected when necessary.
+
+## 5. Reordering Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Monitor product inventory levels to determine when products need to be reordered (date_low, quan_low).
+- Update the reorder table with date_reordered and quan_reordered for each product.
+
+## 6. Data Governance
+
+Performed By: Finance Teams
+
+Activity:
+- Record financial transactions related to orders in the orders table (netamount, tax, totalamount).
+- Maintain accurate data lineage and quality through regular audits and updates.
+
+## 7. Business Glossary Management
+
+Performed By: Business Users
+
+Activity:
+- Agree on vocabulary before discussing data by maintaining a business glossary with definitions and mapping to the data.
+- Link definitions to their actual technical data and meaning for easy understanding.

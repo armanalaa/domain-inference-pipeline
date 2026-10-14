@@ -1,0 +1,74 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 11
+Edges in G_T         : 4
+θ_T applied in Step 4: 0.75
+Domains discovered   : 7
+Modularity Q         : 0.6214
+
+──────────────────────────────────────────────────────────────────────
+D0  Flight Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing flights, including scheduling, airline assignment, and airplane allocation.
+  Tables     : airplane, flight, flightschedule
+  Phi top-3  : C1=0.349  C2=0.311  C3=0.288
+
+──────────────────────────────────────────────────────────────────────
+D1  ClimateDataManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining climate data collected from various weather stations.
+  Tables     : weatherdata
+  Phi top-3  : C5=0.135  C4=0.115  C3=0.106
+
+──────────────────────────────────────────────────────────────────────
+D2  AircraftTypeManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing the types and details of airplanes
+  Tables     : airplane_type
+  Phi top-3  : C3=0.387  C2=0.347  C1=0.313
+
+──────────────────────────────────────────────────────────────────────
+D3  AirportGeolocationManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing geolocation data and airport information
+  Tables     : airport, airport_geo
+  Phi top-3  : C5=0.401  C4=0.389  C1=0.251
+
+──────────────────────────────────────────────────────────────────────
+D4  AirlineInfrastructureManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing the infrastructure related to airlines, including airline registration, updates, and base airport management.
+  Tables     : airline
+  Phi top-3  : C1=0.418  C2=0.353  C4=0.350
+
+──────────────────────────────────────────────────────────────────────
+D5  Passenger Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing passenger data, including registration, updates, and personal details.
+  Tables     : passenger, passengerdetails
+  Phi top-3  : C1=0.224  C5=0.187  C2=0.170
+
+──────────────────────────────────────────────────────────────────────
+D6  Reservation Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing airline reservations, including booking, seat allocation, passenger information, and pricing.
+  Tables     : booking
+  Phi top-3  : C1=0.314  C2=0.273  C3=0.256
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  airplane                             D       0  Flight Management
+  flight                               D       0  Flight Management
+  flightschedule                       D       0  Flight Management
+  weatherdata                          D       1  ClimateDataManagement
+  airplane_type                        D       2  AircraftTypeManagement
+  airport                              D       3  AirportGeolocationManagement
+  airport_geo                          D       3  AirportGeolocationManagement
+  airline                              D       4  AirlineInfrastructureManagement
+  passenger                            D       5  Passenger Data Management
+  passengerdetails                     D       5  Passenger Data Management
+  booking                              D       6  Reservation Management
+======================================================================

@@ -1,0 +1,90 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Customer Service Representative
+
+Activity:
+- Registers new customers by entering their first name, last name, email, phone number, username, password, address details, region, credit card type, credit card identification number, credit card expiration date, age, and income.
+
+Performed By: Database Administrator
+
+Activity:
+- Validates the entered data for integrity and uniqueness before inserting it into the customers table.
+
+## 2. Login Authentication
+
+Performed By: Customer
+
+Activity:
+- Enters their username and password to access their account.
+
+Performed By: System
+
+Activity:
+- Verifies the entered credentials against the stored data in the customers table, returning a refcursor containing customer information and related purchases if valid, or 0 if invalid.
+
+## 3. Purchase Processing
+
+Performed By: Customer
+
+Activity:
+- Selects DVD products to purchase and specifies the quantity for each.
+
+Performed By: Sales Representative (or Automated System)
+
+Activity:
+- Calculates the net amount, tax amount, and total amount based on the selected products and quantities.
+
+Performed By: Order Management Team
+
+Activity:
+- Creates a new order with the calculated amounts, customer ID, and order date.
+
+Performed By: Inventory Management Team
+
+Activity:
+- Checks the inventory for availability of the selected products and updates the quan_in_stock column accordingly.
+
+Performed By: Order Management Team
+
+Activity:
+- Adds the purchased products and their quantities to the orderlines table.
+
+## 4. Inventory Replenishment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieves DVD products from storage when the quan_in_stock column for a product falls below the specified quantity_low.
+
+Performed By: Purchasing Team
+
+Activity:
+- Issues purchase orders for replenishing the depleted inventory.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Picks and packages the ordered DVD products.
+
+Performed By: Shipping Department
+
+Activity:
+- Labels and ships the packaged orders to the customer's address.
+
+## 6. Customer Support
+
+Performed By: Customer Service Representative
+
+Activity:
+- Addresses customer inquiries, complaints, or issues related to their orders or accounts.
+
+## 7. Sales Reporting
+
+Performed By: Data Analyst
+
+Activity:
+- Generates sales reports based on data from the orders and inventory tables.

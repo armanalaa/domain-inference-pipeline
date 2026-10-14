@@ -1,0 +1,50 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Data Management and Integration
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators create and maintain the IMDBJoinOrderBenchmark database structure.
+- Data analysts import and clean data from various sources, ensuring consistency and accuracy.
+- Database administrators optimize database performance by creating appropriate indexes on foreign keys.
+
+## 2. Actor and Title Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers add new actors and titles to the respective catalogs, providing necessary details like names, roles, and production years.
+- Data entry clerks input actor and title information into the aka_name, aka_title, char_name tables.
+
+## 3. Company Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers register movie companies, specifying their names, countries, and types.
+- Data entry clerks input company information into the company_name table.
+
+## 4. Cast Information Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers assign roles to actors in specific movies and record related notes.
+- Data entry clerks input cast information into the cast_info table.
+
+## 5. Keyword and Link Association
+
+Performed By: Content Taggers
+
+Activity:
+- Content taggers associate relevant keywords with movies based on their content.
+- Content taggers establish links between related movies using appropriate link types.
+
+## 6. Query Optimization and Analysis
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators develop and optimize queries to extract specific data from the IMDBJoinOrderBenchmark database.
+- Data analysts analyze query performance, identifying areas for improvement in cardinality estimation and join ordering.

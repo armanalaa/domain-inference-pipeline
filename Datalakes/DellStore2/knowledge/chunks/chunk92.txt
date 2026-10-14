@@ -1,0 +1,73 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Stewards
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data stewards maintain product information accuracy by updating common_prod_id, actor, price, special when necessary.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers, Finance
+
+Activity:
+- Sales representatives create customer accounts with firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, creditcard, creditcardexpiration, username, and password.
+- HR managers update customer details such as age, income, gender.
+- Customers place orders by providing orderdate, netamount, tax, totalamount.
+- Finance records payments for each order.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels (quan_in_stock) and process orders by updating sales.
+- Purchasing teams issue purchase orders to replenish low stock based on date_low and quan_low.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Data Stewards
+
+Activity:
+- Warehouse staff record the quantity of each product in stock (quan_in_stock).
+- Data stewards update reorder levels (date_reordered, quan_reordered, date_expected) when necessary.
+
+## 5. Order Line Management
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives create order lines for each customer order with orderlineid, orderid, prod_id, quantity, and orderdate.
+- Warehouse staff update the quantity of each product sold (sales) when an order is fulfilled.
+
+## 6. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff pick and pack customer orders based on orderid.
+
+## 7. Invoice Generation
+
+Performed By: Finance
+
+Activity:
+- Finance generates invoices for each order with netamount, tax, totalamount.
+
+## 8. Customer History Tracking
+
+Performed By: Data Stewards, Sales Representatives
+
+Activity:
+- Data stewards record customer purchase history in cust_hist with customerid, orderid, and prod_id.
+- Sales representatives use this data to analyze customer behavior and preferences.
+
+## 9. Category Management
+
+Performed By: Product Managers, Data Stewards
+
+Activity:
+- Product managers create and manage product categories (category, categoryname).
+- Data stewards update category information when necessary.

@@ -1,0 +1,65 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received or shipped out.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and income during new account creation.
+- Customer service agents update customer information when customers contact them for changes or inquiries.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products and quantities from the catalog.
+- Sales representatives confirm orders and generate orderids.
+- Warehouse staff track orderlines as they prepare and ship orders.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff pick and pack ordered items based on the orderlines.
+- Shipping agents assign carrier services and generate shipping labels for orders.
+
+## 5. Financial Management
+
+Performed By: Finance Team
+
+Activity:
+- Finance records netamount, tax, and totalamount for each order in the orders table.
+
+## 6. Inventory Monitoring
+
+Performed By: Purchasing Teams, Inventory Staff
+
+Activity:
+- Purchasing teams issue purchase orders to replenish products when quan_in_stock falls below a certain level.
+- Inventory staff update sales and quan_in_stock as products are sold or received.
+
+## 7. Reordering Management
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor reorder to determine when to restock low-quantity items.
+- Purchasing teams place orders for the reordered products based on date_reordered and quan_reordered.
+
+## 8. Data Governance
+
+Performed By: Data Analysts, IT Administrators
+
+Activity:
+- Data analysts use Dataedo to catalog tables, views, dashboards, and reports in the centralized data catalog for easier discovery and validation.
+- IT administrators ensure that all business definitions, calculation rules, and metrics are published to the Dataedo Portal for transparency and understanding across teams.

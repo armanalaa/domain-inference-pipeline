@@ -1,0 +1,60 @@
+ # Northwind — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the UnitsInStock when receiving shipments of products.
+- Product managers modify product details as needed, including description, picture, QuantityPerUnit, and Discontinued status.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer information such as CompanyName, ContactName, Address, City, Region, PostalCode, Country, Phone, and Fax during account creation.
+- Customer service agents update customer details when changes occur.
+- Sales representatives assign territories to employees for sales coverage.
+
+## 3. Employee Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- HR managers hire new employees by recording their personal and professional information (LastName, FirstName, Title, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo).
+- Employees update their own contact information as needed.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Teams
+
+Activity:
+- Sales representatives create new orders by specifying the CustomerID, EmployeeID, OrderDate, RequiredDate, and ShipVia.
+- Warehouse staff update order details (OrderID, ProductID, UnitPrice, Quantity) as products are picked from inventory.
+- Shipping teams record the ShippedDate and Freight cost for each order.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update UnitsOnOrder when new products are ordered from suppliers.
+- Purchasing teams issue purchase orders to suppliers based on ReorderLevel and track their progress.
+
+## 6. Supplier Management
+
+Performed By: Purchasing Teams, Finance Department
+
+Activity:
+- Purchasing teams add new suppliers by recording the SupplierID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, and Fax.
+- Finance department records payments to suppliers for invoices received.
+
+## 7. Shipping Management
+
+Performed By: Shipping Teams, Customers
+
+Activity:
+- Shipping teams record the ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, and ShipCountry for each order.
+- Customers confirm receipt of orders by updating the ShippedDate in their records.

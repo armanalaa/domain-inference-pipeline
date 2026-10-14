@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+actor,actor_id,0,Customer and Staff Management
+actor,first_name,0,Customer and Staff Management
+actor,last_name,0,Customer and Staff Management
+actor,last_update,0,Customer and Staff Management
+customer,active,0,Customer and Staff Management
+customer,address_id,0,Customer and Staff Management
+customer,create_date,0,Customer and Staff Management
+customer,customer_id,0,Customer and Staff Management
+customer,email,0,Customer and Staff Management
+customer,first_name,0,Customer and Staff Management
+customer,last_name,0,Customer and Staff Management
+customer,last_update,0,Customer and Staff Management
+customer,store_id,0,Customer and Staff Management
+staff,active,0,Customer and Staff Management
+staff,address_id,0,Customer and Staff Management
+staff,email,0,Customer and Staff Management
+staff,first_name,0,Customer and Staff Management
+staff,last_name,0,Customer and Staff Management
+staff,last_update,0,Customer and Staff Management
+staff,password,0,Customer and Staff Management
+staff,picture,0,Customer and Staff Management
+staff,staff_id,0,Customer and Staff Management
+staff,store_id,0,Customer and Staff Management
+staff,username,0,Customer and Staff Management
+inventory,film_id,1,Film Rental and Inventory Management
+inventory,inventory_id,1,Film Rental and Inventory Management
+inventory,last_update,1,Film Rental and Inventory Management
+inventory,store_id,1,Film Rental and Inventory Management
+payment,amount,1,Film Rental and Inventory Management
+payment,customer_id,1,Film Rental and Inventory Management
+payment,last_update,1,Film Rental and Inventory Management
+payment,payment_date,1,Film Rental and Inventory Management
+payment,payment_id,1,Film Rental and Inventory Management
+payment,rental_id,1,Film Rental and Inventory Management
+payment,staff_id,1,Film Rental and Inventory Management
+rental,customer_id,1,Film Rental and Inventory Management
+rental,inventory_id,1,Film Rental and Inventory Management
+rental,last_update,1,Film Rental and Inventory Management
+rental,rental_date,1,Film Rental and Inventory Management
+rental,rental_id,1,Film Rental and Inventory Management
+rental,return_date,1,Film Rental and Inventory Management
+rental,staff_id,1,Film Rental and Inventory Management
+store,address_id,1,Film Rental and Inventory Management
+store,last_update,1,Film Rental and Inventory Management
+store,manager_staff_id,1,Film Rental and Inventory Management
+store,store_id,1,Film Rental and Inventory Management
+category,category_id,2,Film Category Management
+category,last_update,2,Film Category Management
+category,name,2,Film Category Management
+film,description,3,Film Catalog and Language Management
+film,film_id,3,Film Catalog and Language Management
+film,language_id,3,Film Catalog and Language Management
+film,last_update,3,Film Catalog and Language Management
+film,length,3,Film Catalog and Language Management
+film,original_language_id,3,Film Catalog and Language Management
+film,rating,3,Film Catalog and Language Management
+film,release_year,3,Film Catalog and Language Management
+film,rental_duration,3,Film Catalog and Language Management
+film,rental_rate,3,Film Catalog and Language Management
+film,replacement_cost,3,Film Catalog and Language Management
+film,special_features,3,Film Catalog and Language Management
+film,title,3,Film Catalog and Language Management
+language,language_id,3,Film Catalog and Language Management
+language,last_update,3,Film Catalog and Language Management
+language,name,3,Film Catalog and Language Management
+address,address,4,Location and Category Management
+address,address2,4,Location and Category Management
+address,address_id,4,Location and Category Management
+address,city_id,4,Location and Category Management
+address,district,4,Location and Category Management
+address,last_update,4,Location and Category Management
+address,phone,4,Location and Category Management
+address,postal_code,4,Location and Category Management
+city,city,4,Location and Category Management
+city,city_id,4,Location and Category Management
+city,country_id,4,Location and Category Management
+city,last_update,4,Location and Category Management
+film_category,category_id,4,Location and Category Management
+film_category,film_id,4,Location and Category Management
+film_category,last_update,4,Location and Category Management

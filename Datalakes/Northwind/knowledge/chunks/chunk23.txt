@@ -1,0 +1,60 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the UnitsInStock when receiving shipments of products.
+- Product managers set the ReorderLevel to trigger restocks before inventory depletion.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives add new customers by entering their details such as CompanyName, ContactName, and Address.
+- Customer service agents update customer information like Phone or PostalCode when changes occur.
+- Sales representatives assign territories to employees using the employee_territories table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives create orders for customers by specifying the CustomerID, OrderDate, and required delivery date.
+- Warehouse staff retrieve products from inventory based on order details (OrderID, ProductID).
+- Shipping clerks record the ShipVia, ShipName, ShipAddress, and other shipping details before dispatching orders.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update UnitsOnOrder when placing orders with suppliers.
+- Purchasing teams issue purchase orders to suppliers for products that are low on stock (UnitsInStock).
+
+## 5. Financial Management
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance records transactions like sales and purchases in the orders and order_details tables.
+- Accounting staff calculates and updates the total Freight for each order based on ShipVia.
+
+## 6. Employee Management
+
+Performed By: HR Managers, Supervisors
+
+Activity:
+- HR managers hire new employees by entering their details like FirstName, LastName, Title, and HireDate.
+- Supervisors assign employees to report to a specific manager (ReportsTo).
+
+## 7. Shipper Management
+
+Performed By: Shipping Clerks, Purchasing Teams
+
+Activity:
+- Shipping clerks select the most appropriate shipper for an order based on ShipVia.
+- Purchasing teams negotiate shipping rates with suppliers (Shippers).

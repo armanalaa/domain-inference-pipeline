@@ -1,0 +1,55 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Statistics Tracking
+
+Performed By: Data Entry Clerks, Statisticians
+
+Activity:
+- Data entry clerks record player details such as ID, yearID, teamID, lgID, GP, startingPos from AllstarFull into the database.
+- Statisticians calculate and update batting statistics like G, AB, R, H, 2B, HR, RBI, SB, BB, SO, IBB, HBP, SH, SF, GIDP from Batting for each player.
+- Statisticians track fielding statistics such as POS, G, GS, InnOuts, PO, A, E, DP, PB, WP, SB, CS, ZR from Fielding for each player.
+
+## 2. Team Roster Management
+
+Performed By: Team Managers, HR Managers
+
+Activity:
+- Team managers assign players to their teams based on performance and roster needs using teamID and playerID from AllstarFull.
+- HR managers update player information like schoolID for college playing history from CollegePlaying.
+
+## 3. Game Tracking
+
+Performed By: Game Scorers, Data Entry Clerks
+
+Activity:
+- Game scorers record game details such as yearID, teamID, lgID, G_all, GS, G_batting, G_defense, G_p, G_c, G_1b, G_2b, G_3b, G_ss, G_lf, G_cf, G_rf, G_of, G_dh, G_ph, G_pr from Appearances.
+- Data entry clerks verify and input game details into the database.
+
+## 4. Award Allocation
+
+Performed By: Awards Committee, Statisticians
+
+Activity:
+- The awards committee decides on award winners based on performance statistics and assigns awardID to each winner from AwardsManagers and AwardsPlayers.
+- Statisticians calculate pointsWon and pointsMax for share awards from AwardsShareManagers and AwardsSharePlayers.
+
+## 5. Hall of Fame Induction
+
+Performed By: Hall of Fame Committee, Historians
+
+Activity:
+- The Hall of Fame committee selects players to be inducted based on their career achievements and records their playerID in the HallOfFame table.
+
+## 6. Salary Tracking
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers record salary details for each player using playerID from People and Salaries tables.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Analysts, Researchers
+
+Activity:
+- Analysts and researchers perform statistical analysis on the collected data to generate reports and insights about players, teams, and leagues.

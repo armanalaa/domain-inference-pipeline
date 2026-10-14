@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required hours and available positions (cc_employees).
+- HR managers update employee information such as names, addresses, and employment details (cc_name, cc_street_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, IT Support
+
+Activity:
+- Facility managers determine the size and layout of call centers (cc_sq_ft, cc_hours).
+- IT support configures call center systems, including phone lines and software applications (not specified in schema summary).
+
+## 3. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign each call center to a specific market division based on geographical location or market focus (cc_division).
+
+## 4. Call Center Classification
+
+Performed By: Call Center Managers
+
+Activity:
+- Call center managers categorize call centers according to their primary function or service level (cc_class).
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (not specified in schema summary).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (not specified in schema summary).
+
+## 6. Catalog Page Management
+
+Performed By: Web Developers, Marketing Managers
+
+Activity:
+- Web developers create and maintain the structure of catalog pages (cp_catalog_page_sk, cp_catalog_number, cp_catalog_page_number).
+- Marketing managers update product descriptions, categories, and promotions on catalog pages (cp_description, cp_type).
+
+## 7. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date, time, item SKU, and reason for return (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk).
+- Warehouse staff update inventory levels when processing customer returns (not specified in schema summary).

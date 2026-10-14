@@ -1,0 +1,48 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Representatives
+
+Activity:
+- Customer service representatives update customer contact information by modifying the firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcardexpiration columns in the customers table.
+- Sales representatives register new customers by entering their details into the customers table, including customerid, age, income, gender, and creating a username and password for them.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Managers
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price in the products table.
+- Inventory managers update the quan_in_stock column for a specific product in the inventory table when stock levels change.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives create new orders by entering customerid, orderdate, netamount, tax, and totalamount into the orders table.
+- Warehouse staff update the quan_in_stock column in the inventory table when an order is shipped, reducing the quantity available for that product.
+
+## 4. Order Line Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff record each product included in an order by adding a new row to the orderlines table with orderlineid, orderid, prod_id, quantity, and orderdate.
+
+## 5. Inventory Replenishment
+
+Performed By: Purchasing Teams, Inventory Managers
+
+Activity:
+- Purchasing teams issue purchase orders for products that are running low by checking the date_low and quan_low columns in the reorder table and placing orders accordingly.
+- Inventory managers update the quan_reordered column in the reorder table when a new order is placed, indicating the quantity to be replenished.
+
+## 6. Reporting and Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate sales reports by querying the orders and inventory tables for total sales, best-selling products, and average order value.
+- Management reviews the sales reports to make informed decisions about pricing strategies, marketing efforts, and inventory management.

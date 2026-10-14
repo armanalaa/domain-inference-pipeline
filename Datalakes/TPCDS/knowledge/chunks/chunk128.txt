@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on the number of employees and square footage available (cc_employees, cc_sq_ft).
+- HR managers update employee information in the system when a new employee joins or leaves (cc_name, cc_manager).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers determine which market division each call center belongs to based on the market class and description (cc_mkt_class, cc_mkt_desc).
+- Market managers assign specific markets to each call center for handling customer inquiries and transactions (cc_market_manager).
+
+## 3. Call Center Operations Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers schedule operating hours for each call center (cc_hours).
+- Warehouse staff update the warehouse location associated with a call center when there is a change in stock levels or delivery status (cr_warehouse_sk).
+
+## 4. Transaction Mix Regulation
+
+Performed By: Test Sponsors, Call Center Managers
+
+Activity:
+- Test sponsors set the weights for each transaction type to ensure the required minimum percentage of mix over the measurement interval (not applicable columns/tables provided).
+- Call center managers adjust the weight associated with each transaction type during the measurement interval to maintain the required transaction mix within 5% of their respective initial value.
+
+## 5. Transaction Selection and Processing
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives select a new transaction uniformly at random from a weighted distribution or deck of cards, ensuring the required transaction mix (not applicable columns/tables provided).
+- Call center representatives process each selected transaction according to its type (New-Order, Payment, Order-Status, Delivery, Stock-Level) within the specified response time constraints.
+
+## 6. Wait Times and Response Time Monitoring
+
+Performed By: System Administrators
+
+Activity:
+- System administrators monitor the Menu RT and Transaction RT for each transaction type to ensure they meet the required response time constraints (not applicable columns/tables provided).

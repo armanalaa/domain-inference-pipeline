@@ -1,0 +1,65 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Management
+
+Performed By: Database Administrators, Baseball Statisticians
+
+Activity:
+- Database administrators maintain the integrity of the database by regularly updating it with new seasons' data.
+- Baseball statisticians input historical player statistics into the Batting, Fielding, and Appearances tables.
+
+## 2. Team Management
+
+Performed By: Team Owners, General Managers
+
+Activity:
+- Team owners hire or fire managers based on team performance.
+- General managers make strategic decisions about player acquisitions and trades.
+
+## 3. Game Tracking
+
+Performed By: Game Scorers, Statisticians
+
+Activity:
+- Game scorers record game events such as hits, runs, errors, and outs during live games.
+- Statisticians verify and update the data in the AllstarFull, Batting, Fielding, and Appearances tables.
+
+## 4. Award Determination
+
+Performed By: Awards Committee, Voters
+
+Activity:
+- The awards committee determines the criteria for various baseball awards.
+- Voters cast their votes for the most deserving players in each award category.
+
+## 5. Award Allocation
+
+Performed By: Awards Administrators
+
+Activity:
+- Awards administrators calculate and allocate points based on voters' choices.
+- They update the AwardsShareManagers and AwardsSharePlayers tables with the results.
+
+## 6. Hall of Fame Induction
+
+Performed By: Hall of Fame Voters, Historians
+
+Activity:
+- Hall of Fame voters consider candidates based on their career statistics and contributions to baseball.
+- Historians research and document the careers of players inducted into the Hall of Fame.
+
+## 7. College Player Data Collection
+
+Performed By: Researchers, College Baseball Committee Members
+
+Activity:
+- Researchers gather data about college baseball players' performances and careers.
+- College Baseball committee members input this data into the CollegePlaying table.
+
+## 8. Salary Data Management
+
+Performed By: SABR Business of Baseball Committee, Database Administrators
+
+Activity:
+- The SABR Business of Baseball committee gathers salary data for baseball players.
+- Database administrators input this data into the appropriate tables in the database.

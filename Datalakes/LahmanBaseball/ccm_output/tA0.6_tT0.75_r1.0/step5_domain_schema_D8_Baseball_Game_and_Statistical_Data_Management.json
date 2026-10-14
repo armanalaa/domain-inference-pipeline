@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 8,
+    "domain_name": "Baseball Game and Statistical Data Management",
+    "definition": "The process of managing game details, player statistics, fielding statistics, and team analysis for baseball games.",
+    "tables": [
+      "HomeGames"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "HomeGames": {
+      "_description": "Records home baseball games played by each team in a specific year and park, including details such as game span, opening status, and attendance.",
+      "columns": [
+        {
+          "name": "yearkey",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique year identifier for home games.",
+          "samples": [
+            1871,
+            1872,
+            1873,
+            1874,
+            1875
+          ]
+        },
+        {
+          "name": "leaguekey",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stored are initials of baseball leagues for home games (e.g., NA denotes no league specified).",
+          "samples": [
+            "NA",
+            "NL",
+            "AA",
+            "UA",
+            "PL"
+          ]
+        },
+        {
+          "name": "teamkey",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for home team in baseball games (e.g., BS1, CH1, CL1).",
+          "samples": [
+            "BS1",
+            "CH1",
+            "CL1",
+            "FW1",
+            "NY2"
+          ]
+        },
+        {
+          "name": "parkkey",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for baseball parks where home games are played.",
+          "samples": [
+            "BOS01",
+            "NYC01",
+            "CHI01",
+            "CIN01",
+            "CLE01"
+          ]
+        },
+        {
+          "name": "spanfirst",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores dates of the first home games played in each season.",
+          "samples": [
+            "1871-05-16",
+            "1871-05-27",
+            "1871-05-08",
+            "1871-10-30",
+            "1871-05-13"
+          ]
+        },
+        {
+          "name": "spanlast",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores dates of home games played in the 1871 baseball season.",
+          "samples": [
+            "1871-10-07",
+            "1871-05-27",
+            "1871-09-29",
+            "1871-10-30",
+            "1871-07-22"
+          ]
+        },
+        {
+          "name": "games",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores count of home games played by each team in a season.",
+          "samples": [
+            16,
+            1,
+            2,
+            11,
+            9
+          ]
+        },
+        {
+          "name": "openings",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the order of home team's first at-bat innings in games.",
+          "samples": [
+            16,
+            1,
+            15,
+            2,
+            6
+          ]
+        },
+        {
+          "name": "attendance",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of spectators attending home baseball games.",
+          "samples": [
+            32600,
+            3000,
+            85500,
+            600,
+            2200
+          ]
+        }
+      ]
+    }
+  }
+}

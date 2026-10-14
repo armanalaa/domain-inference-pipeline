@@ -1,0 +1,66 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators configure and optimize the PostgreSQL cost model to ensure efficient query performance.
+- Content managers input movie information such as title, production year, and cast details into the relevant tables.
+- Database administrators set parameters for CPU costs and I/O costs based on expected workload.
+
+## 2. Actor Data Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers input actor information like name, gender, and roles into the 'name' and 'char_name' tables.
+- Data entry clerks record additional details such as IMDB index, IMDb ID, and phonetic code for each actor.
+
+## 3. Movie Company Data Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers input company information like name, country, and type into the 'company_name' and 'company_type' tables.
+- Data entry clerks record additional details such as IMDB ID, phonetic code, and MD5 sum for each company.
+
+## 4. Movie Keyword Association
+
+Performed By: Content Managers, Data Analysts
+
+Activity:
+- Content managers associate relevant keywords with movies based on genre, theme, or cast members.
+- Data analysts input these keywords into the 'keyword' table along with their phonetic codes.
+
+## 5. Movie Linking
+
+Performed By: Data Analysts, Content Managers
+
+Activity:
+- Data analysts establish links between movies based on shared actors, companies, or themes.
+- Content managers input these links into the 'movie_link' table along with link type ID.
+
+## 6. Complete Cast Creation
+
+Performed By: Data Analysts, Content Managers
+
+Activity:
+- Data analysts assign roles and order to actors in a movie from the 'cast_info' table.
+- Content managers input this information into the 'complete_cast' table along with status ID.
+
+## 7. Movie Information Management
+
+Performed By: Content Managers, Data Analysts
+
+Activity:
+- Content managers input various types of movie information such as synopsis, production notes, and trivia into the 'movie_info' table.
+- Data analysts categorize this information based on type and input it into the 'info_type' table.
+
+## 8. Query Execution and Analysis
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators execute queries to retrieve data for analysis or reporting purposes.
+- Data analysts analyze query results, identify trends, and make recommendations based on the findings.

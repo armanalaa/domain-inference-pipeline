@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "ClimateDataManagement",
+    "definition": "The process of managing and maintaining climate data collected from various weather stations.",
+    "tables": [
+      "weatherdata"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "weatherdata": {
+      "_description": "Records daily weather data at various airport stations.",
+      "columns": [
+        {
+          "name": "log_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores date strings in YYYY-MM-DD format for weather data records.",
+          "samples": [
+            "2005-01-01",
+            "2005-01-02",
+            "2005-01-03",
+            "2005-01-04",
+            "2005-01-05"
+          ]
+        },
+        {
+          "name": "time",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores time data in a 10-character format representing hours, minutes, and seconds (HH:mm:ss).",
+          "samples": [
+            "00:00:00",
+            "00:05:00",
+            "00:10:00",
+            "00:15:00",
+            "00:20:00"
+          ]
+        },
+        {
+          "name": "station",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for weather stations.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            null
+          ]
+        },
+        {
+          "name": "temp",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores air temperature values in degrees Celsius or Fahrenheit.",
+          "samples": [
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "name": "humidity",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores air humidity levels as floating point values, typically between 0.0 and 100.0.",
+          "samples": [
+            99.0,
+            100.0,
+            98.0,
+            97.0,
+            96.0
+          ]
+        },
+        {
+          "name": "airpressure",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores atmospheric air pressure readings in millibars.",
+          "samples": [
+            1024.0,
+            1023.0,
+            1027.0,
+            1013.0,
+            1017.0
+          ]
+        },
+        {
+          "name": "wind",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores average wind speed (in mph) for each weather data record.",
+          "samples": [
+            4.0,
+            6.0,
+            8.0,
+            5.0,
+            2.0
+          ]
+        },
+        {
+          "name": "weather",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores weather conditions described as \"Schneefall\" (snowfall) in this database.",
+          "samples": [
+            "Schneefall",
+            "N",
+            "Regen-Schneefall",
+            "Regen",
+            "Nebel"
+          ]
+        },
+        {
+          "name": "winddirection",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores wind direction values in degrees (e.g., 254 represents 167 degrees).",
+          "samples": [
+            254,
+            252,
+            258,
+            250,
+            257
+          ]
+        }
+      ]
+    }
+  }
+}

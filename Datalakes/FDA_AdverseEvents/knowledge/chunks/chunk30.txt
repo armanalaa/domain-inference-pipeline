@@ -1,0 +1,55 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Healthcare Professionals, Pharmaceutical Companies' Representatives
+
+Activity:
+- Healthcare professionals record patient details and adverse event information (patientid, productcode, reaction) upon observation.
+- Pharmaceutical companies' representatives input the received reports into the system (reportdate, reportsource, reporterdetails).
+- Reports are reviewed for completeness and seriousness criteria (serious, seriousnessdeath, seriousnesslifethreatening, seriousnesshospitalization, seriousnessdisabling, seriousnesscongenitalanomali, seriousnessotherimportantcondition).
+
+## 2. Adverse Event Report Aggregation
+
+Performed By: Data Analysts
+
+Activity:
+- Duplicate reports are identified and consolidated (reportduplicate, duplicatesource, linkedreportnumb).
+- Reports are grouped by product for analysis (productcode).
+
+## 3. Adverse Event Report Analysis
+
+Performed By: Data Analysts, Regulatory Affairs Specialists
+
+Activity:
+- Trends and patterns in adverse events are analyzed (receiptdate, fulfillexpeditecriteria).
+- Reports requiring expedited review are flagged (fulfillexpeditecriteria).
+
+## 4. Adverse Event Report Confirmation
+
+Performed By: Medical Professionals, Regulatory Affairs Specialists
+
+Activity:
+- Reports without initial medical confirmation from health professionals are verified (medicallyconfirm).
+- Confirmations are recorded in the system (confirmerid, confirmdate).
+
+## 5. Adverse Event Report Archiving
+
+Performed By: Data Management Personnel
+
+Activity:
+- Archived reports are stored with relevant documentation (additionaldocument, documentlist, authoritynumb, companynumb).
+
+## 6. Adverse Event Report Retrieval
+
+Performed By: Regulatory Affairs Specialists, Medical Professionals
+
+Activity:
+- Reports are retrieved for further analysis or review (linkreportnumb).
+
+## 7. Adverse Event Report Nullification
+
+Performed By: Data Management Personnel
+
+Activity:
+- Reports are nullified when no longer needed (casenullification, nullificationreason).

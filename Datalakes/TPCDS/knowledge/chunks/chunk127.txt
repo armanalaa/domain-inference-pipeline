@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on staffing needs (cc_employees).
+- HR managers update employee records with personal and professional details (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers define market classifications for each call center (cc_mkt_class).
+- Call center managers update their division and company information accordingly (cc_division, cc_company).
+
+## 3. Call Center Setup
+
+Performed By: Warehouse Staff, IT Technicians
+
+Activity:
+- Warehouse staff measure and record the square footage of call centers (cc_sq_ft).
+- IT technicians configure call center systems to operate within specified hours (cc_hours).
+
+## 4. Call Center Operations
+
+Performed By: Call Center Representatives, Customers
+
+Activity:
+- Call center representatives select a transaction type from the menu based on weighted distribution (not applicable columns/tables).
+- Customers place orders or inquire about order status through call centers.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price (not applicable columns/tables).
+- Warehouse staff update stock levels as orders are processed (not applicable columns/tables).
+
+## 6. Return Processing
+
+Performed By: Customers, Call Center Representatives
+
+Activity:
+- Customers initiate returns of purchased items and provide reason for return (cr_reason_sk).
+- Call center representatives record the returned item details in the database (cr_item_sk, cr_call_center_sk, etc.).
+
+## 7. Reporting and Analysis
+
+Performed By: Finance Teams, Analysts
+
+Activity:
+- Finance teams record transactional data for tax calculation purposes (cc_tax_percentage).
+- Analysts generate performance metrics reports based on completed transactions and response times (not applicable columns/tables).

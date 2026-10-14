@@ -1,0 +1,55 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Management
+
+Performed By: Baseball Operations Team, Data Entry Clerks
+
+Activity:
+- Baseball operations team assigns player ID codes to new players joining the league.
+- Data entry clerks input player details such as name, school, and salary into the Players table.
+- Data entry clerks record player statistics from games in the Batting, Fielding, and Appearances tables.
+- Baseball operations team updates player records with awards information from the AwardsPlayers and AwardsManagers tables.
+- Data entry clerks mark players who have been inducted into the Hall of Fame in the HallOfFame table.
+
+## 2. League Management
+
+Performed By: League Administrators, Data Entry Clerks
+
+Activity:
+- League administrators assign league ID codes to each baseball team.
+- Data entry clerks input league details such as name and location into the Schools table.
+- Data entry clerks record college playing history for players in the CollegePlaying table.
+
+## 3. Negro League Data Management
+
+Performed By: Negro League Data Specialists, Data Entry Clerks
+
+Activity:
+- Negro League data specialists verify and assign major league status to Negro League games and teams.
+- Data entry clerks input Negro League game and team details into the AllstarFull, Batting, Fielding, and Appearances tables.
+
+## 4. Award Voting and Tabulation
+
+Performed By: Award Voters, Award Committee Members
+
+Activity:
+- Award voters cast their votes for players in each award category.
+- Award committee members tabulate the votes to determine the winners of each award.
+- Award committee members update the AwardsPlayers and AwardsManagers tables with the voting results.
+
+## 5. Salary Management
+
+Performed By: Finance Department, Data Entry Clerks
+
+Activity:
+- The finance department determines player salaries for each season.
+- Data entry clerks input player salaries into the Salaries table.
+
+## 6. Database Maintenance and Updates
+
+Performed By: Database Administrators, Data Entry Clerks
+
+Activity:
+- Database administrators ensure the database is running smoothly and securely.
+- Data entry clerks update player records with new statistics as they become available.
+- Database administrators make necessary changes to the database schema when needed.

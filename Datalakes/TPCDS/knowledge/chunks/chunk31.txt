@@ -1,0 +1,62 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the required skills and qualifications.
+- HR managers onboard new hires by providing necessary training and equipment.
+- Call center managers assign employees to specific call centers based on their skills and availability.
+
+## 2. Call Center Operations
+Performed By: Call Center Employees, Sales Representatives
+
+Activity:
+- Call center employees answer incoming calls from customers.
+- Sales representatives assist customers with inquiries about products or services.
+- Call center employees record customer interactions, including call duration and outcome.
+
+## 3. Catalog Management
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by providing product details such as name, category, and list price.
+- Marketing managers create and update catalog pages to display products in various categories.
+
+## 4. Customer Returns
+Performed By: Customers, Call Center Employees, Warehouse Staff
+
+Activity:
+- Customers initiate returns by contacting the call center.
+- Call center employees process return requests by recording customer information and reason for return.
+- Warehouse staff receive returned items, verify their condition, and update the inventory accordingly.
+
+## 5. Policy Compliance and Violation Handling
+Performed By: Test Sponsor, TAB (Technical Advisory Board), Council
+
+Activity:
+- The Test Sponsor conducts tests to ensure compliance with TPC policies.
+- If the Test Sponsor fails to meet deadlines or if the TAB is dissatisfied with corrections, the TAB recommends a Level 3 policy violation.
+- The Council votes on the TAB's recommendation regarding non-compliance and policy violation.
+
+## 6. Immediate Withdrawal of Results
+Performed By: TAB, SC (Steering Committee), Administrator
+
+Activity:
+- If a result is found to be non-compliant, the TAB may recommend immediate withdrawal of the result.
+- The TAB's recommendation for immediate withdrawal is forwarded to the SC for approval.
+- If both the TAB and SC approve the immediate withdrawal, the Administrator implements the withdrawal.
+
+## 7. Public Relations Committee Operations
+Performed By: PRC (Public Relations Committee) Members, TPC Administrator
+
+Activity:
+- The PRC promotes the TPC, its charter, and activities in the public arena.
+- The PRC encourages use of TPC Benchmark Standards.
+- The PRC works with the press for the advancement of the TPC and its public image.
+
+## 8. Technical Subcommittee Operations
+Performed By: Benchmark Subcommittee Members, Administrator, Spokesperson
+
+Activity:
+- A Benchmark Subcommittee develops and maintains Benchmark Standards, Umbrella Specifications, or TPC Policies.

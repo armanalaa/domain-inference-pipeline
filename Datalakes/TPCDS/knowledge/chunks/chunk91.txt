@@ -1,0 +1,60 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Operations
+
+Performed By: Call Center Representatives, Customer Service Managers
+
+Activity:
+- Handle customer inquiries about order status by accessing the call history (cc_call_center_sk).
+- Register new orders by recording customer details, order items, and payment information.
+- Update order status when an order is shipped or cancelled, using the call center table.
+
+## 2. Order Processing
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Verify stock availability for each order line item in the warehouse district (W_ID).
+- If an item is out of stock, locate it in another warehouse and update its status accordingly.
+- Pack and prepare orders for shipping based on the order details (order_number) and shipment mode (ship_mode_sk).
+
+## 3. Payment Processing
+
+Performed By: Customer Service Representatives, Finance Department
+
+Activity:
+- Record customer payments and update their account balances (C_BALANCE).
+- Issue credit to customers for returned items, updating the refunded customer's balance and the return details (cr_returned_date_sk, cr_refunded_customer_sk).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Managers, Inventory Analysts
+
+Activity:
+- Monitor stock levels for each item in the warehouse district (W_ID).
+- Update stock quantities when items are received or shipped, using the stock table.
+- Identify potential supply shortages and initiate reordering processes based on low inventory thresholds.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Marketing Team
+
+Activity:
+- Maintain product information in the catalog (cp_catalog_page_sk), including product code, name, category, and list price.
+- Update product descriptions and categorization as needed to ensure accurate representation of products.
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Process returns by recording the return reason (cr_reason_sk) and updating the returned item's status in the catalog.
+- Replace returned items with new stock or update them as necessary based on their condition.
+
+## 7. Market Analysis
+
+Performed By: Marketing Managers, Data Analysts
+
+Activity:
+- Analyze market data (cc_market_manager, cc_division_name) to identify trends and opportunities for growth.
+- Adjust marketing strategies based on the analysis results, including targeting specific customer demographics or product categories.

@@ -1,0 +1,59 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers, Patients
+
+Activity:
+- Pharmaceutical companies submit adverse event reports to the FDA by providing details such as patient demographics, product information, and event description.
+- Healthcare providers report adverse events they've observed, including patient symptoms, product involved, and outcome.
+- Patients or their representatives can also report adverse events directly to the FDA, detailing the product, symptoms experienced, and any relevant medical history.
+
+## 2. Case Processing
+
+Performed By: FDA Case Processors
+
+Activity:
+- FDA case processors verify the authenticity of received reports, ensuring they meet the required standards for completeness and accuracy.
+- They assign each report a unique identifier and route it to the appropriate review team based on the product involved.
+- Case processors also update the status of each report in the system, indicating whether it is still under review or has been closed.
+
+## 3. Initial Review
+
+Performed By: FDA Medical Reviewers
+
+Activity:
+- FDA medical reviewers assess the initial reports to determine if they warrant further investigation.
+- They evaluate the severity of the adverse event, the relationship between the product and the event, and any missing information that needs to be requested from the reporting party.
+
+## 4. Follow-up Investigation
+
+Performed By: FDA Medical Reviewers, Case Processors
+
+Activity:
+- If an initial report requires further investigation, FDA medical reviewers request additional information from the reporting party or other relevant sources.
+- Case processors update the status of the report to reflect that it is under investigation and track its progress until a conclusion is reached.
+
+## 5. Risk Assessment
+
+Performed By: FDA Risk Assessors
+
+Activity:
+- FDA risk assessors evaluate the potential risks associated with the adverse event, considering factors such as the severity of the event, the number of affected individuals, and any known patterns or trends.
+- They determine whether the event represents a new safety concern for the product or is consistent with existing knowledge about its risks.
+
+## 6. Regulatory Action
+
+Performed By: FDA Regulatory Affairs
+
+Activity:
+- Based on the results of the risk assessment, FDA regulatory affairs may take various actions, such as issuing warnings to healthcare providers, modifying product labeling, or even withdrawing a product from the market if necessary.
+- They also communicate their findings and any required actions to the reporting party and the public.
+
+## 7. Report Archiving
+
+Performed By: FDA Case Processors
+
+Activity:
+- Once an adverse event report has been fully processed, case processors archive it in the system for future reference and analysis.
+- They ensure that all relevant information is properly indexed and searchable, allowing for easy retrieval when needed.

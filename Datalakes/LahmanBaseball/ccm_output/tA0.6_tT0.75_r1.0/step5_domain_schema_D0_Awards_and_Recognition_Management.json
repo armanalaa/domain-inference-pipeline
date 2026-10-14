@@ -1,0 +1,419 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Awards and Recognition Management",
+    "definition": "Unifies the tables related to determining, managing, and recording awards for players.",
+    "tables": [
+      "AwardsManagers",
+      "AwardsPlayers",
+      "AwardsShareManagers",
+      "AwardsSharePlayers",
+      "CollegePlaying"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "AwardsManagers": {
+      "_description": "Records manager awards for baseball players across different leagues and years.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "aloufe01",
+            "alstowa01",
+            "andersp01",
+            "bakerdu01",
+            "baldero01"
+          ]
+        },
+        {
+          "name": "awardID",
+          "sql_type": "VARCHAR(50)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsManagers",
+          "samples": [
+            "BBWAA Manager of the Year",
+            "TSN Manager of the Year",
+            "This Year in Baseball Manager of the Year",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1994,
+            1955,
+            1959,
+            1963,
+            1984
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "ML",
+            "AL",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "tie",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores whether multiple managers shared an award.",
+          "samples": [
+            "Y",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "notes",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores notes about MLB.com GIBBY awards for managers.",
+          "samples": [
+            "MLB.com GIBBY",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "AwardsPlayers": {
+      "_description": "Records baseball players who received specific awards in a given league and year.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsPlayers",
+          "samples": [
+            "aaronha01",
+            "aasedo01",
+            "abbotji01",
+            "abernte02",
+            "abramcj01"
+          ]
+        },
+        {
+          "name": "awardID",
+          "sql_type": "VARCHAR(255)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsPlayers",
+          "samples": [
+            "Gold Glove",
+            "Lou Gehrig Memorial Award",
+            "Most Valuable Player",
+            "Player of the Week",
+            "TSN All-Star"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1958,
+            1959,
+            1960,
+            1970,
+            1957
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "ML",
+            "AL",
+            "AA",
+            null
+          ]
+        },
+        {
+          "name": "tie",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores indication of tied awards for multiple players in a given season.",
+          "samples": [
+            "Y",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "notes",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores additional notes about awards, such as award type or date.",
+          "samples": [
+            "RF",
+            "Week of 1973-07-20",
+            "Week of 1973-08-17",
+            "Week of 1973-09-07",
+            "Week of 1974-04-12"
+          ]
+        }
+      ]
+    },
+    "AwardsShareManagers": {
+      "_description": "Captures baseball managers who received awards shares and their corresponding award details.",
+      "columns": [
+        {
+          "name": "awardID",
+          "sql_type": "VARCHAR(50)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsShareManagers",
+          "samples": [
+            "BBWAA Manager of the Year",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1983,
+            1984,
+            1985,
+            1986,
+            1987
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "AL",
+            "NL",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "altobjo01",
+            "coxbo01",
+            "larusto01",
+            "lasorto01",
+            "lillibo01"
+          ]
+        },
+        {
+          "name": "pointsWon",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of championships won by managers.",
+          "samples": [
+            7,
+            4,
+            17,
+            10,
+            9
+          ]
+        },
+        {
+          "name": "pointsMax",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the maximum number of points awarded to a manager in a single season.",
+          "samples": [
+            28,
+            24,
+            140,
+            120,
+            160
+          ]
+        },
+        {
+          "name": "votesFirst",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores count of first-place votes for managers in baseball awards.",
+          "samples": [
+            7,
+            4,
+            17,
+            10,
+            9
+          ]
+        }
+      ]
+    },
+    "AwardsSharePlayers": {
+      "_description": "Captures baseball players who received awards shares and their corresponding award details for a specific year and league.",
+      "columns": [
+        {
+          "name": "awardID",
+          "sql_type": "VARCHAR(50)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsSharePlayers",
+          "samples": [
+            "Cy Young Award",
+            "Most Valuable Player",
+            "Rookie of the Year",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1956,
+            1957,
+            1958,
+            1959,
+            1960
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "ML",
+            "NL",
+            "AL",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in AwardsSharePlayers",
+          "samples": [
+            "fordwh01",
+            "maglisa01",
+            "newcodo01",
+            "spahnwa01",
+            "donovdi01"
+          ]
+        },
+        {
+          "name": "pointsWon",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of points won by players for various baseball awards.",
+          "samples": [
+            1,
+            4,
+            10,
+            15,
+            3
+          ]
+        },
+        {
+          "name": "pointsMax",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the maximum number of points awarded to players in a single season.",
+          "samples": [
+            16,
+            18,
+            20,
+            24,
+            120
+          ]
+        },
+        {
+          "name": "votesFirst",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of first place votes received by players for awards.",
+          "samples": [
+            1,
+            4,
+            10,
+            15,
+            3
+          ]
+        }
+      ]
+    },
+    "CollegePlaying": {
+      "_description": "Tracks college baseball players and their affiliations with specific schools during particular seasons.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "birkbmi01",
+            "dilauja01",
+            "malasma01",
+            "nealejo01",
+            "avilaal01"
+          ]
+        },
+        {
+          "name": "schoolID",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the school entity",
+          "samples": [
+            "akron",
+            "alabama",
+            "alabamaam",
+            "alabamast1929",
+            "albertsnid"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1980,
+            1981,
+            1982,
+            1983,
+            1962
+          ]
+        }
+      ]
+    }
+  }
+}

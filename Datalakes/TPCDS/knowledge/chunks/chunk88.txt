@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee information such as names, addresses, and employment status (cc_name, cc_street_number, cc_city, cc_county, cc_state, cc_zip).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Call center employees answer incoming calls and assist customers with inquiries or issues (cc_call_center_id).
+- Market managers oversee call center operations within their designated market segments (cc_mkt_id, cc_market_manager).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog with details like product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (not specified in provided schema).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting appropriate items from the catalog and determining shipping methods (cr_item_sk, cr_ship_mode_sk).
+- Warehouse staff prepare orders for shipment and update inventory levels accordingly (not specified in provided schema).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process returns by recording return dates, times, reasons, and customer information (cr_returned_date_sk, cr_returned_time_sk, cr_reason_sk, cr_refunded_customer_sk).
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records tax percentages for each call center location (cc_tax_percentage).
+- Finance department generates financial reports based on the data collected from various business processes (not specified in provided schema).

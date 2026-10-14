@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category managers assign products to appropriate categories based on their genre or type.
+- Product managers update product details such as price, special offers, and common product IDs when necessary.
+
+## 2. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives help new customers create accounts by capturing their personal information (name, address, email, phone number), credit card details, and setting up a username and password.
+- HR managers verify customer identities and approve or deny account creation based on age, income, and other eligibility criteria.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog, select desired products, and add them to their shopping carts.
+- Sales representatives assist customers with any issues or questions during the ordering process.
+- Customers confirm their orders by providing shipping information and completing the checkout process.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory shelves based on order details.
+- Inventory managers update product quantities in stock after fulfilling orders.
+
+## 5. Order Fulfillment and Shipping
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff package the ordered items securely for shipping.
+- Shippers determine the most efficient method of delivery (e.g., standard mail, expedited shipping) based on customer preferences and order details.
+
+## 6. Inventory Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers monitor stock levels and reorder products when quantities drop below a predetermined threshold.
+- Purchasing teams negotiate with suppliers for the best prices and delivery times for new inventory.
+
+## 7. Customer Support and Complaints Handling
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives address customer inquiries or complaints regarding orders, products, or account issues.
+- HR managers investigate and resolve any disputes or fraudulent activities that may arise during the customer interaction process.

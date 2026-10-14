@@ -1,0 +1,69 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- Update employee information as needed, modifying the relevant fields such as MaritalStatus, Gender, or HireDate.
+- Assign employees to departments by recording their BusinessEntityID, DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate in the EmployeeDepartmentHistory table.
+- Record any changes in employee pay history by updating the Rate, PayFrequency, and ModifiedDate in the EmployeePayHistory table.
+
+## 2. Address Management
+
+Performed By: IT Administrators, Employees
+
+Activity:
+- Register personal addresses by recording AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, SpatialLocation, rowguid, and ModifiedDate in the PersonAddress table.
+- Associate an address with a specific employee by linking their BusinessEntityID to the AddressID, AddressTypeID, and ModifiedDate in the PersonBusinessEntityAddress table.
+
+## 3. Contact Information Management
+
+Performed By: Employees
+
+Activity:
+- Register personal contact information by recording it in the PersonBusinessEntityContact table.
+
+## 4. Currency Management
+
+Performed By: Finance Department
+
+Activity:
+- Maintain a list of standard ISO currencies by recording their CurrencyCode and Name, as well as the ModifiedDate, in the Sales.Currency table.
+
+## 5. Exchange Rate Management
+
+Performed By: Finance Department
+
+Activity:
+- Obtain exchange rates for various currencies on specific dates and record them as FromCurrencyCode, ToCurrencyCode, AverageRate, EndOfDayRate, CurrencyRateDate, and ModifiedDate in the Sales.CurrencyRate table.
+
+## 6. Customer Management
+
+Performed By: Sales Representatives
+
+Activity:
+- Register new customers by recording their CustomerID, CreditCardID (if applicable), and other relevant details.
+
+## 7. Credit Card Management
+
+Performed By: IT Administrators
+
+Activity:
+- Store credit card information for customers by recording the CardType, CardNumber, ExpMonth, ExpYear, and ModifiedDate in the Sales.CreditCard table.
+
+## 8. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Place new orders on behalf of customers by recording relevant details such as order items, shipping information, and payment methods.
+- Track inventory levels to ensure timely fulfillment of orders.
+
+## 9. Invoice Processing
+
+Performed By: Accounting Department
+
+Activity:
+- Generate invoices based on completed orders and record any necessary financial details.

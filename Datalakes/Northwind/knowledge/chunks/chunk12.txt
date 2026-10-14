@@ -1,0 +1,74 @@
+ # Northwind — Business Workflows
+
+## 1. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse product categories and select desired items.
+- Sales representatives assist customers with their orders and provide recommendations.
+- Sales representatives enter customer details, selected products, quantities, and shipping information.
+
+## 2. Order Confirmation
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives confirm the order details and check product availability.
+- Warehouse staff update inventory levels to reflect ordered items.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff receive and store incoming shipments of products.
+- Warehouse staff update the database with new product quantities on hand.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack ordered items for shipping.
+- Shipping department employees prepare shipments for delivery by selecting appropriate carriers.
+
+## 5. Invoice Generation
+
+Performed By: Accounting Department
+
+Activity:
+- Accounting department generates invoices based on confirmed orders.
+- Invoices are sent to customers along with shipping information.
+
+## 6. Payment Processing
+
+Performed By: Customers, Accounting Department
+
+Activity:
+- Customers pay for their orders using various payment methods.
+- Accounting department records payments and updates customer accounts accordingly.
+
+## 7. Order Tracking
+
+Performed By: Shipping Department, Customers
+
+Activity:
+- Shipping department tracks the status of shipments and updates the database with shipping information.
+- Customers can track their orders using provided tracking numbers.
+
+## 8. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries related to orders, returns, or other issues.
+- Customer service representatives update the database with relevant information and assist customers in resolving their concerns.
+
+## 9. Reporting and Analysis
+
+Performed By: Management, Analytics Team
+
+Activity:
+- Management reviews sales reports and identifies trends or areas for improvement.
+- Analytics team performs data analysis to optimize operations and make informed decisions.

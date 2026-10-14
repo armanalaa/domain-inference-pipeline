@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee records with personal details, employment history, and performance evaluations (cc_name, cc_hours, cc_manager).
+
+## 2. Market Division Allocation
+
+Performed By: Call Center Managers, Marketing Managers
+
+Activity:
+- Call center managers determine the appropriate market division for each call center based on factors such as location and customer demographics (cc_mkt_id, cc_division).
+- Marketing managers create marketing strategies tailored to specific market divisions, considering factors like target audience, product offerings, and competition (cc_mkt_class, cc_mkt_desc).
+
+## 3. Call Center Setup
+
+Performed By: Facilities Staff, IT Support
+
+Activity:
+- Facilities staff arrange for the setup of call centers, including acquiring necessary space, furniture, and equipment (cc_sq_ft, cc_street_number, cc_street_name, cc_suite_number).
+- IT support configures call center systems, ensuring they are compatible with the company's infrastructure and equipped to handle call volume efficiently (not specified in provided schema).
+
+## 4. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls from customers, addressing their queries or concerns regarding products, services, or orders (not specified in provided schema).
+- Call center representatives record call details, including the customer's contact information and the nature of the call, for future reference (cc_call_center_id, cc_rec_start_date, cc_closed_date_sk).
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by providing product details such as code, name, category, and list price (not specified in provided schema).
+- Warehouse staff update inventory levels when new items are added or existing ones are sold, ensuring accurate records of available stock (not specified in provided schema).
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns initiated by customers, recording return details such as the reason for return and the returned item's SKU (cr_returned_date_sk, cr_item_sk).
+- Warehouse staff update inventory levels to reflect the returned items and prepare them for restocking or disposal (not specified in provided schema).
+
+## 7. Result Submission and Upgrading
+
+Performed By: Test Sponsors, TPC Council
+
+Activity:
+- Test sponsors submit new results for benchmark tests, indicating the version of the Benchmark Standard with which the result complies (not specified in provided schema).
+- The TPC Council reviews submitted results and determines whether they meet the requirements of the specified Benchmark Standard (not specified in provided schema).

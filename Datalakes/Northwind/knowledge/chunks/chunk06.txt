@@ -1,0 +1,62 @@
+ # Northwind — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers, IT Staff
+
+Activity:
+- HR managers register new employees by recording their personal details, employment history, and qualifications.
+- IT staff configure employee accounts with access permissions based on job roles and privileges.
+- HR managers assign employees to specific territories, ensuring no overlap or conflicts.
+
+## 2. Employee Onboarding
+
+Performed By: New Hires, Supervisors, HR Managers
+
+Activity:
+- New hires complete employment forms, including personal information and agreements.
+- Supervisors review and approve new hire applications, setting up initial job assignments and training plans.
+- HR managers process paperwork, ensuring compliance with legal requirements and company policies.
+
+## 3. Employee Performance Tracking
+
+Performed By: Supervisors, Employees, Finance Department
+
+Activity:
+- Supervisors monitor employee performance, providing feedback and setting goals for improvement.
+- Employees update their timesheets with hours worked and tasks completed.
+- Finance department calculates payroll based on hours worked, overtime, bonuses, and deductions.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Department
+
+Activity:
+- Sales representatives receive customer orders, confirm availability of products, and process payments.
+- Warehouse staff pick, pack, and prepare orders for shipment.
+- Shipping department coordinates with carriers to schedule deliveries and updates order statuses.
+
+## 5. Inventory Management
+
+Performed By: Purchasing Teams, Warehouse Staff, Finance Department
+
+Activity:
+- Purchasing teams negotiate contracts with suppliers for product purchases.
+- Warehouse staff receive shipments, update inventory levels, and manage storage.
+- Finance department tracks costs associated with inventory, including purchasing and storage expenses.
+
+## 6. Customer Service
+
+Performed By: Customer Service Representatives, Sales Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries, complaints, and returns.
+- Sales representatives provide product information, answer questions, and assist with order placement.
+
+## 7. Financial Reporting
+
+Performed By: Finance Department, Management
+
+Activity:
+- Finance department generates financial reports, including sales, expenses, and profitability analyses.
+- Management reviews reports to make informed decisions about business strategy and resource allocation.

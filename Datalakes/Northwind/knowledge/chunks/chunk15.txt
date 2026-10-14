@@ -1,0 +1,57 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers for restocking discontinued products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives maintain customer relationships by updating contact information and order history.
+- Customer service agents assist customers with inquiries about orders, shipments, or returns.
+
+## 3. Employee Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers hire new employees by filling out employment forms and assigning territories.
+- Warehouse staff track inventory levels and update the database when stock is depleted or restocked.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives place orders for customers by selecting products, quantities, and shipping details.
+- Warehouse staff pick and pack ordered items before they are shipped to the customer.
+- Shipping clerks update order statuses when shipments are sent out.
+
+## 5. Shipment Tracking
+
+Performed By: Shipping Clerks, Customers
+
+Activity:
+- Shipping clerks record shipment details such as carrier, tracking number, and delivery date.
+- Customers track their orders using the provided tracking numbers.
+
+## 6. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices based on order details and send them to customers.
+
+## 7. Payment Processing
+
+Performed By: Accounting Staff, Customers
+
+Activity:
+- Accounting staff receive payments from customers via various methods (e.g., credit card, check) and update the database accordingly.
+- Customers make payments on their outstanding invoices through the provided payment options.

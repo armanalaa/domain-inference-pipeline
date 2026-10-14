@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Catalog and Product Information Management",
+    "definition": "The process of creating, updating, and managing the structure and details of the online catalog, including product information and inventory levels.",
+    "tables": [
+      "catalog_page"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "catalog_page": {
+      "_description": "Tracks catalog page information for specific products within designated departments over a given time period.",
+      "columns": [
+        {
+          "name": "cp_catalog_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_catalog_page_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the cp_catalog_page_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "cp_start_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for starting dates of catalog pages.",
+          "samples": [
+            2450815,
+            2450997,
+            2450906,
+            2451088,
+            2450845
+          ]
+        },
+        {
+          "name": "cp_end_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for end dates in catalog_page table.",
+          "samples": [
+            2450996,
+            2451178,
+            2450905,
+            2451087,
+            2450844
+          ]
+        },
+        {
+          "name": "cp_department",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores department names from the catalog_page table.",
+          "samples": [
+            "DEPARTMENT",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "cp_catalog_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_catalog_page_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cp_description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for catalog pages, often containing general phrases, instructions, or introductions.",
+          "samples": [
+            "In general basic characters welcome. Clearly lively friends conv",
+            "Even democratic stairs would know happy investigations. Histo",
+            "Earlier different differences get just to a methods; masses includ",
+            "Narrowly great dogs carry only by the events. Successful, able legs would not",
+            "Legislative origins precede bold stations. Tiny sports should resume all pupils. Forces launch to"
+          ]
+        },
+        {
+          "name": "cp_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores type of catalog pages, consistently bi-annual.",
+          "samples": [
+            "bi-annual",
+            "quarterly",
+            "monthly",
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

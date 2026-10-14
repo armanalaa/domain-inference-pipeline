@@ -1,0 +1,64 @@
+ # adventure_works — Business Workflows
+
+## 1. Location Management
+
+Performed By: Facilities Manager, Inventory Planner
+
+Activity:
+- Facilities managers register new manufacturing locations by recording the location description, cost rate, and availability. (HumanResources Department)
+- Inventory planners assign inventory locations to specific products based on storage requirements. (Production.Location)
+
+## 2. Product Inventory Management
+
+Performed By: Warehouse Staff, Inventory Planner
+
+Activity:
+- Warehouse staff update product inventory levels by recording the quantity of products in each inventory location. (Production.ProductInventory)
+- Inventory planners adjust inventory levels when products are sold or returned. (Production.ProductInventory)
+
+## 3. Employee Onboarding
+
+Performed By: HR Manager, Employee
+
+Activity:
+- HR managers register new employees by recording their personal information, job title, and hire date. (HumanResources Employee)
+- Employees update their personal information as needed throughout their employment. (HumanResources Employee)
+
+## 4. Employee Department Assignment
+
+Performed By: HR Manager, Employee
+
+Activity:
+- HR managers assign employees to specific departments and record the start date. (HumanResources EmployeeDepartmentHistory)
+- Employees update their department assignments when they transfer or are promoted. (HumanResources EmployeeDepartmentHistory)
+
+## 5. Employee Pay History Management
+
+Performed By: HR Manager, Payroll Officer
+
+Activity:
+- HR managers record employee salary changes and pay frequencies. (HumanResources EmployeePayHistory)
+- Payroll officers calculate and distribute employee salaries based on the recorded pay history.
+
+## 6. Address Management
+
+Performed By: Employee, Data Administrator
+
+Activity:
+- Employees update their personal addresses by recording the address line, city, state, postal code, and address type. (Person Address)
+- Data administrators manage employee addresses for accuracy and completeness.
+
+## 7. Sales Order Processing
+
+Performed By: Sales Representative, Customer Service Representative
+
+Activity:
+- Sales representatives process customer orders by recording the product ID, inventory location, and shipping address. (Sales.SalesOrderHeader)
+- Customer service representatives handle order inquiries and updates. (Sales.SalesOrderDetail)
+
+## 8. Currency Mapping
+
+Performed By: Data Administrator
+
+Activity:
+- Data administrators map ISO currency codes to specific countries or regions. (Sales.CountryRegionCurrency)

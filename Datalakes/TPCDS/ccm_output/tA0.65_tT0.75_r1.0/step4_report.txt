@@ -1,0 +1,55 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 171
+Threshold θ_T           : 0.75
+Edges in G_T            : 18
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.4957
+  max    : 0.9242
+  mean   : 0.6118
+  median : 0.5848
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  catalog_sales                   web_sales                       0.9242     34  1.000  0.9242
+  catalog_returns                 web_returns                     0.9165     24  1.000  0.9165
+  catalog_sales                   store_sales                     0.8902     23  1.000  0.8902
+  store_sales                     web_sales                       0.8901     23  1.000  0.8901
+  catalog_returns                 store_returns                   0.8562     20  1.000  0.8562
+  store_returns                   web_returns                     0.8456     20  1.000  0.8456
+  call_center                     customer_address                0.8267     13  1.000  0.8267
+  store                           warehouse                       0.8223     14  1.000  0.8223
+  call_center                     web_site                        0.7922     26  1.000  0.7922
+  customer_address                store                           0.7873     13  1.000  0.7873
+  warehouse                       web_site                        0.7842     14  1.000  0.7842
+  call_center                     warehouse                       0.7720     14  1.000  0.7720
+  call_center                     store                           0.7677     29  1.000  0.7677
+  customer_address                warehouse                       0.7618     13  1.000  0.7618
+  catalog_sales                   inventory                       0.7602      4  1.000  0.7602
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  catalog_sales                   web_sales                       0.9242
+  catalog_returns                 web_returns                     0.9165
+  catalog_sales                   store_sales                     0.8902
+  store_sales                     web_sales                       0.8901
+  catalog_returns                 store_returns                   0.8562
+  store_returns                   web_returns                     0.8456
+  call_center                     customer_address                0.8267
+  store                           warehouse                       0.8223
+  call_center                     web_site                        0.7922
+  customer_address                store                           0.7873
+  warehouse                       web_site                        0.7842
+  call_center                     warehouse                       0.7720
+  call_center                     store                           0.7677
+  customer_address                warehouse                       0.7618
+  catalog_sales                   inventory                       0.7602
+  inventory                       web_sales                       0.7596
+  store_returns                   store_sales                     0.7559
+  store                           web_site                        0.7556
+======================================================================

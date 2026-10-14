@@ -1,0 +1,75 @@
+ # Mondial — Business Workflows
+
+## 1. City Management
+
+Performed By: City Managers, Data Entry Clerks
+
+Activity:
+- City managers register new cities by recording the name, country, province, population, longitude, and latitude.
+- City managers update city details when necessary, such as changes in population or administrative division.
+- Data entry clerks verify and input geographical coordinates provided by various sources.
+
+## 2. Country Management
+
+Performed By: Country Managers, Data Entry Clerks
+
+Activity:
+- Country managers register new countries by recording the name, code, capital, area, population, and relevant provinces.
+- Country managers update country details when necessary, such as changes in government or administrative division.
+- Data entry clerks verify and input geographical coordinates provided by various sources.
+
+## 3. Continent Management
+
+Performed By: Geographers, Data Entry Clerks
+
+Activity:
+- Geographers categorize countries under their respective continents based on geographical and political criteria.
+- Data entry clerks record the name and area of each continent.
+
+## 4. Desert Management
+
+Performed By: Geographers, Data Entry Clerks
+
+Activity:
+- Geographers identify and register new deserts by recording their names, areas, longitudes, and latitudes.
+- Data entry clerks verify and input geographical coordinates provided by various sources.
+
+## 5. Economic Analysis
+
+Performed By: Economists, Data Analysts
+
+Activity:
+- Economists calculate and record the GDP, agriculture, service, industry, and inflation rates for each country.
+- Data analysts update economic data as new information becomes available.
+
+## 6. Ethnic Group Management
+
+Performed By: Sociologists, Data Entry Clerks
+
+Activity:
+- Sociologists identify and register ethnic groups in each country along with their names, percentages, and other relevant demographic details.
+- Data entry clerks verify and input the data provided by various sources.
+
+## 7. Geographical Feature Association
+
+Performed By: Geographers, Data Entry Clerks
+
+Activity:
+- Geographers associate deserts, rivers, lakes, seas, mountains, islands, and other geographical features with their respective countries and provinces.
+- Data entry clerks verify and input the associations provided by various sources.
+
+## 8. Language Management
+
+Performed By: Linguists, Data Entry Clerks
+
+Activity:
+- Linguists identify and register languages spoken in each country along with their names, percentages, and other relevant linguistic details.
+- Data entry clerks verify and input the data provided by various sources.
+
+## 9. Organization Membership
+
+Performed By: Diplomats, Data Entry Clerks
+
+Activity:
+- Diplomats record the membership of countries in international organizations, along with their types and roles.
+- Data entry clerks verify and input the data provided by various sources.

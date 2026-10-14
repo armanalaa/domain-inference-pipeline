@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on the current staffing levels and open positions (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_manager, etc.).
+
+## 2. Call Center Setup
+
+Performed By: Call Center Managers, IT Support
+
+Activity:
+- Call center managers collaborate with IT support to configure call center settings such as operating hours, market class, division, and company details (cc_hours, cc_mkt_class, cc_division, cc_company).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers categorize call centers into specific markets based on geographical location and market class (cc_market_manager, cc_mkt_desc).
+
+## 4. Catalog Maintenance
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- IT support updates the catalog with any changes or additions to ensure accurate information is available for customers.
+
+## 5. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog and specifying quantities (ol_I_ID, ol_QUANTITY).
+- Sales representatives process orders, confirm availability, and update order status in the system (cc_call_center_sk, cr_order_number).
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels for each item at both home and remote warehouses (ol_SUPPLY_W_ID) to ensure sufficient stock is available for orders (ol_QUANTITY).
+- Purchasing teams order additional items when inventory levels fall below a certain threshold to maintain optimal stock levels.
+
+## 7. Return Processing
+
+Performed By: Customers, Call Center Staff
+
+Activity:
+- Customers initiate returns by contacting the call center and providing details about the returned item (cr_item_sk).
+- Call center staff record return information, update inventory levels, and process refunds if necessary (cr_returned_date_sk, cr_refunded_customer_sk, etc.).

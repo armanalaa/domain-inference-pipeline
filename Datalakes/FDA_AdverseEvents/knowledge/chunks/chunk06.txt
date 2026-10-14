@@ -1,0 +1,67 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: External Stakeholders (e.g., healthcare providers, patients), Internal FDA Staff
+
+Activity:
+- Healthcare providers and patients submit adverse event reports using the FAERS Electronic Submissions system.
+- Internal FDA staff review and validate incoming reports for completeness and accuracy.
+- FDA staff assign MedDRA terms to describe adverse events and medication errors.
+
+## 2. Case Processing
+
+Performed By: Internal FDA Staff (Case Processors)
+
+Activity:
+- Case processors analyze adverse event reports, assessing their potential impact on public health.
+- They determine whether the reported event requires further investigation or action.
+- Case processors document their findings and decisions in the case processing workflow.
+
+## 3. Data Integration
+
+Performed By: Internal FDA IT Staff
+
+Activity:
+- IT staff integrate adverse event data from various sources into the AEMS database.
+- They ensure data consistency across different product categories (e.g., medical products, vaccines, devices).
+
+## 4. Data Analysis and Trend Identification
+
+Performed By: Internal FDA Analysts
+
+Activity:
+- Analysts use advanced analytics tools to identify trends and patterns in adverse event data.
+- They produce reports that highlight potential safety concerns or areas for further investigation.
+
+## 5. Regulatory Decision Making
+
+Performed By: FDA Regulatory Bodies (e.g., Center for Drug Evaluation and Research)
+
+Activity:
+- Regulatory bodies review the findings and recommendations from analysts.
+- They make decisions regarding regulatory actions, such as product recalls or label changes.
+
+## 6. Cross-Product Surveillance
+
+Performed By: Internal FDA Staff (e.g., Safety Surveillance Officers)
+
+Activity:
+- Safety surveillance officers monitor adverse event data across diverse product categories.
+- They identify and address potential safety issues that may affect multiple products or product types.
+
+## 7. Consumer Complaints Management
+
+Performed By: Internal FDA Staff (e.g., Consumer Complaint Coordinators)
+
+Activity:
+- Consumer complaint coordinators receive, review, and respond to consumer complaints related to FDA-regulated products.
+- They document the complaints in the AEMS database for future analysis and trend identification.
+
+## 8. Regulatory Misconduct Reporting and Whistleblower Submissions
+
+Performed By: Internal FDA Staff (e.g., Investigators)
+
+Activity:
+- Investigators receive and process regulatory misconduct reports and whistleblower submissions.
+- They investigate allegations of illegal or unethical activities within the FDA or by regulated entities.

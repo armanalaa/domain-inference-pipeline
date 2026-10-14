@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers assign common_prod_id to similar products for easier categorization.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and income during account creation.
+- Customer service agents update contact information when customers report changes.
+- Sales representatives assign username and password for customer login.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products, quantities, and providing order details.
+- Sales representatives confirm orders and generate orderids.
+- Warehouse staff pick and pack ordered items for shipping.
+
+## 4. Inventory Tracking
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update quan_in_stock when products are shipped out or received.
+- Purchasing teams issue purchase orders to replenish low inventory levels based on reorder data.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff prepare shipments by packaging ordered items and printing shipping labels.
+- Shipping agents send orders to the appropriate carriers for delivery.
+
+## 6. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record netamount, tax, and totalamount for each order in the orders table.
+- Finance teams update creditcard, creditcardexpiration, and other financial details as needed.
+
+## 7. Data Analysis
+
+Performed By: Data Analysts, Business Intelligence Teams
+
+Activity:
+- Data analysts analyze sales data to identify trends and patterns in customer behavior.
+- Business intelligence teams create reports and dashboards for decision-makers based on the analyzed data.

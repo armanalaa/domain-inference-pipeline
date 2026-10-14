@@ -1,0 +1,85 @@
+ # Mondial — Business Workflows
+
+## 1. City Management
+
+Performed By: City Planners, Data Entry Clerks
+
+Activity:
+- City planners determine the name and location of a city based on its longitude and latitude.
+- City planners assign a country to a city by providing the corresponding country code.
+- City planners record the population, province, and area of a city.
+- Data entry clerks verify and update city information as needed.
+
+## 2. Country Management
+
+Performed By: Government Officials, Data Entry Clerks
+
+Activity:
+- Government officials determine the name, code, capital, province, area, and population of a country.
+- Government officials assign ethnic groups to countries based on their percentage distribution.
+- Government officials record the GDP, agriculture, service, industry, and inflation rates for each country.
+- Data entry clerks verify and update country information as needed.
+
+## 3. Continent Management
+
+Performed By: Geographers, Data Entry Clerks
+
+Activity:
+- Geographers determine the name and area of a continent.
+- Data entry clerks record the continents in the database.
+
+## 4. Desert Management
+
+Performed By: Geologists, Data Entry Clerks
+
+Activity:
+- Geologists determine the name, area, longitude, and latitude of deserts.
+- Data entry clerks record the deserts in the database.
+
+## 5. Lake Management
+
+Performed By: Hydrologists, Data Entry Clerks
+
+Activity:
+- Hydrologists determine the name, area, depth, altitude, type, river (if connected), longitude, and latitude of lakes.
+- Data entry clerks record the lakes in the database.
+
+## 6. River Management
+
+Performed By: Hydrologists, Data Entry Clerks
+
+Activity:
+- Hydrologists determine the name, country, province, and connection points (sea, lake, or river) of rivers.
+- Data entry clerks record the rivers in the database.
+
+## 7. Sea Management
+
+Performed By: Oceanographers, Data Entry Clerks
+
+Activity:
+- Oceanographers determine the name, country, province, and connection points (merging seas or other water bodies) of seas.
+- Data entry clerks record the seas in the database.
+
+## 8. Island Management
+
+Performed By: Geographers, Data Entry Clerks
+
+Activity:
+- Geographers determine the name, country, province, and location (sea, lake, or river) of islands.
+- Data entry clerks record the islands in the database.
+
+## 9. Organization Management
+
+Performed By: HR Managers, Data Entry Clerks
+
+Activity:
+- HR managers determine the abbreviation, name, city, country, province, and establishment date of organizations.
+- Data entry clerks record the organizations in the database.
+
+## 10. Geographical Relationship Management
+
+Performed By: GIS Specialists, Data Entry Clerks
+
+Activity:
+- GIS specialists establish relationships between cities, provinces, countries, rivers, lakes, seas, islands, and geographical features (mountains, deserts).
+- Data entry clerks record the relationships in the database.

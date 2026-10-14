@@ -1,0 +1,53 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers, Patients
+
+Activity:
+- Pharmaceutical companies register new drug indications (B.4.k.11a).
+- Healthcare providers report adverse events related to specific drugs (B.4.k.11b).
+- Patients or their representatives submit individual case safety reports (ICSRs) detailing the adverse event, drug indication, and route of administration (B.4.k.9).
+- ICSRs include information about the patient's demographics, reaction gestation period, and drug start and end dates (B.4.k.12b, B.4.k.14b, B.4.k.10a, B.4.k.10b).
+- ICSRs also provide details about the time interval between drug administration and the start of the reaction/event (B.4.k.13).
+
+## 2. Data Validation and Standardization
+
+Performed By: FDA Data Analysts, Quality Assurance Specialists
+
+Activity:
+- FDA data analysts validate the accuracy and completeness of ICSR submissions (B.4.k.9 - B.4.k.14b).
+- Quality assurance specialists ensure that the MedDRA version for drug indications matches the case (B.4.k.11a).
+- FDA data analysts standardize the date formats of start and end dates to CCYYMMDD, CCYYMM, or CCYY (B.4.k.12b, B.4.k.14b, B.4.k.10a, B.4.k.10b).
+
+## 3. Data Integration and Storage
+
+Performed By: FDA Database Administrators
+
+Activity:
+- FDA database administrators integrate ICSR data from various sources into the FDA_AdverseEvents database.
+- They store the integrated data in appropriate tables, maintaining the relationship between related columns (e.g., linking drug indications to adverse events).
+
+## 4. Data Analysis and Investigation
+
+Performed By: FDA Safety Analysts, Epidemiologists
+
+Activity:
+- FDA safety analysts investigate adverse events associated with specific drugs or drug classes (B.4.k.9 - B.4.k.14b).
+- Epidemiologists analyze the data to identify patterns and trends related to drug safety (e.g., frequency of adverse events, severity, and potential risk factors).
+
+## 5. Risk Assessment and Communication
+
+Performed By: FDA Risk Management Team, Regulatory Affairs Specialists
+
+Activity:
+- The FDA risk management team assesses the risk associated with identified adverse events (B.4.k.9 - B.4.k.14b).
+- Regulatory affairs specialists communicate the findings and any necessary actions to pharmaceutical companies, healthcare providers, and the public.
+
+## 6. Regulatory Action and Compliance Monitoring
+
+Performed By: FDA Enforcement Officers, Compliance Specialists
+
+Activity:
+- FDA enforcement officers take regulatory action against non-compliant pharmaceutical companies (e.g., issuing warnings or fines).
+- Compliance specialists monitor the actions taken by pharmaceutical companies in response to regulatory findings and ensure ongoing compliance with safety regulations.

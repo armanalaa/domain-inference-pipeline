@@ -1,0 +1,45 @@
+ # TPC-DS — Business Workflows
+
+## 1. Technical Advisory Board (TAB) Operations
+
+Performed By: TAB Members, Council
+
+Activity:
+- TAB members analyze and define interpretations or compliance questions related to Benchmark Standards (TAB Charter).
+- TAB members hear arguments from both sides of an interpretation or compliance issue and make recommendations in the form of motions to the Council.
+- The Council makes binding decisions based on TAB's recommendations.
+- TAB responds to requests from Pre-Publication Boards to address conflicts within the Pre-Publication Board reviewing a Result.
+- TAB provides the Council with a statement of issues brought to their attention, along with recommendation(s) for resolution and rationale for the recommendations.
+
+## 2. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign employees and allocate square footage based on operational needs (cc_employees, cc_sq_ft).
+- Warehouse staff track inventory levels to ensure sufficient stock for call centers (warehouse_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (catalog_page).
+- Sales representatives access catalog pages to find products for customers (cp_catalog_page_id).
+
+## 4. Customer Returns Processing
+
+Performed By: Customers, Call Center Representatives, Warehouse Staff
+
+Activity:
+- Customers initiate returns by contacting call centers (cc_call_center_sk).
+- Call center representatives record return details such as returned date and time, item SKU, and customer information (cr_returned_date_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff process returns by updating inventory levels and shipping the returned items back to the warehouse (warehouse_sk).
+
+## 5. Market Analysis and Strategy Development
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers analyze market data to identify trends and opportunities (cc_mkt_id, cc_market_manager).
+- Sales representatives develop strategies based on market analysis to optimize sales performance.

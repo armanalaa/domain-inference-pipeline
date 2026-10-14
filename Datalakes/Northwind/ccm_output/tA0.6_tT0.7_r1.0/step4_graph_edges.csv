@@ -1,0 +1,10 @@
+table_i,table_j,Sim_T
+customers,suppliers,0.957982
+regions,territories,0.899663
+shippers,suppliers,0.884634
+customers,shippers,0.833596
+customers,employees,0.789295
+employees,suppliers,0.780997
+order_details,products,0.768758
+categories,regions,0.707006
+employee_territories,territories,0.706708

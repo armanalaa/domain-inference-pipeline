@@ -1,0 +1,54 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the current staffing levels and skill requirements (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_division, cc_company).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls and assist with inquiries or troubleshoot issues (cc_call_center_id, cc_rec_start_date, cc_open_date_sk).
+- They record call details such as the customer's name, contact information, and issue description (cc_name, cc_city, cc_county, cc_state, cc_zip).
+
+## 3. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers update the catalog with new items by providing product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by entering order details such as item selection and shipping information (O_ALL_LOCAL, S_YTD).
+- Warehouse staff track inventory levels to ensure sufficient stock for order fulfillment (cr_item_sk, cr_warehouse_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time, reason for return, and refund details (cr_returned_date_sk, cr_reason_sk).
+
+## 6. Payment Processing
+
+Performed By: Finance Department
+
+Activity:
+- The finance department records customer payments according to a non-uniform random distribution (C_PAYMENT_CNT).
+
+## 7. Performance Monitoring and Reporting
+
+Performed By: IT Administrators, Auditors
+
+Activity:
+- IT administrators monitor system performance and response times during benchmark runs (9.2.6.1, 9.2.6.2, 9.2.6.3).
+- Auditors verify compliance with the TPC Benchmark™ C standards by querying various attributes (O_ALL_LOCAL, C_PAYMENT_CNT, S_YTD, S_ORDER_CNT, S_REMOTE_CNT).

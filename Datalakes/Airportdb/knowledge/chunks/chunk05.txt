@@ -1,0 +1,57 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Administrators, Airline Managers
+
+Activity:
+- Airline administrators register new airlines by entering the IATA code, airline name, and base airport.
+- Airline managers update airline details as needed, including changing the airline name or base airport.
+- Airline administrators assign airplanes to their respective airlines.
+
+## 2. Airplane Management
+
+Performed By: Airplane Administrators, Maintenance Staff
+
+Activity:
+- Airplane administrators register new airplanes by entering the capacity, type, and airline association.
+- Maintenance staff track airplane maintenance records, including repairs and inspections.
+- Airplane administrators update airplane details as needed, such as changing the airplane type or capacity.
+
+## 3. Airplane Type Management
+
+Performed By: Airplane Administrators
+
+Activity:
+- Airplane administrators register new airplane types by entering the identifier and description.
+
+## 4. Airport Management
+
+Performed By: Airport Managers, Ground Staff
+
+Activity:
+- Airport managers register new airports by entering the IATA, ICAO, name, city, country, latitude, longitude, and geolocation.
+- Ground staff update airport details as needed, such as changing the airport name or geolocation.
+
+## 5. Flight Scheduling
+
+Performed By: Flight Schedulers, Airline Managers
+
+Activity:
+- Flight schedulers create new flight schedules by entering the flight number, from and to airports, departure and arrival times, days of operation, and associated airline.
+- Airline managers update flight schedules as needed, such as changing the departure or arrival time.
+
+## 6. Flight Booking
+
+Performed By: Passengers, Travel Agents, Airlines Staff
+
+Activity:
+- Passengers or travel agents book flights by selecting a flight, choosing a seat, and providing passenger information.
+- Airlines staff confirm the booking and record the booking details, including the flight ID, seat, passenger ID, price, and associated flight.
+
+## 7. Weather Data Collection
+
+Performed By: Weather Stations Staff
+
+Activity:
+- Weather stations staff collect weather data by recording temperature, humidity, air pressure, wind speed, direction, and weather conditions at specific stations.

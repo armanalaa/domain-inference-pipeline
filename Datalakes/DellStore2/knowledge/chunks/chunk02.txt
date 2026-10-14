@@ -1,0 +1,70 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Customer Service Representative
+
+Activity:
+- Registers new customers by entering their first name, last name, address details, email, phone number, credit card type, and password.
+
+Performed By: IT Administrator
+
+Activity:
+- Assigns a unique customer ID to each new customer upon registration.
+
+## 2. Customer Profile Management
+
+Performed By: Customers (self-service)
+
+Activity:
+- Updates personal information such as address, email, phone number, and password.
+
+Performed By: Customer Service Representative
+
+Activity:
+- Modifies customer details when requested by the customer or upon verification of identity.
+
+## 3. Order Placement
+
+Performed By: Customers (self-service)
+
+Activity:
+- Selects products, specifies quantities, and provides shipping information to place an order.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieves the selected products from inventory based on the order details.
+
+Performed By: Order Fulfillment Team
+
+Activity:
+- Packages the ordered items and prepares them for shipping.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Updates the inventory levels when products are removed due to order fulfillment or returns.
+
+Performed By: Purchasing Team
+
+Activity:
+- Orders new stock for products that have reached their reorder point.
+
+## 6. Financial Transactions
+
+Performed By: Finance Department
+
+Activity:
+- Records the net amount, tax, and total amount for each order.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representative
+
+Activity:
+- Responds to customer inquiries regarding orders, products, or account issues.

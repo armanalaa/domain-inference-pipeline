@@ -1,0 +1,50 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 8
+Edges in G_T         : 4
+θ_T applied in Step 4: 0.75
+Domains discovered   : 4
+Modularity Q         : 0.6114
+
+──────────────────────────────────────────────────────────────────────
+D0  Order Processing and Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of orders, including customer history tracking, order line item management, and order processing.
+  Tables     : cust_hist, orderlines, orders
+  Phi top-3  : C4=0.337  C9=0.332  C10=0.317
+
+──────────────────────────────────────────────────────────────────────
+D1  Product Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining product information, including categories and details, across the enterprise system.
+  Tables     : categories, products
+  Phi top-3  : C5=0.263  C1=0.248  C15=0.213
+
+──────────────────────────────────────────────────────────────────────
+D2  Inventory and Reorder Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing inventory levels, reordering products, and tracking order-related data.
+  Tables     : inventory, reorder
+  Phi top-3  : C12=0.378  C6=0.355  C4=0.295
+
+──────────────────────────────────────────────────────────────────────
+D3  Customer Profile Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining customer profiles, including personal information, account details, and purchasing history.
+  Tables     : customers
+  Phi top-3  : C10=0.307  C11=0.297  C2=0.296
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  cust_hist                            D       0  Order Processing and Management
+  orderlines                           D       0  Order Processing and Management
+  orders                               D       0  Order Processing and Management
+  categories                           D       1  Product Information Management
+  products                             D       1  Product Information Management
+  inventory                            D       2  Inventory and Reorder Management
+  reorder                              D       2  Inventory and Reorder Management
+  customers                            D       3  Customer Profile Management
+======================================================================

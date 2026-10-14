@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Administrator, Market Manager
+
+Activity:
+- Assign call centers to specific markets based on market class and description (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- Allocate square footage to each call center according to its employees count (cc_employees, cc_sq_ft).
+- Determine the operating hours for each call center (cc_hours).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Manager, Sales Representatives
+
+Activity:
+- Oversee day-to-day operations of the call center (cc_manager).
+- Answer incoming calls from customers and direct them to appropriate representatives.
+- Register new items in the catalog by recording product code, name, category, and list price (product managers).
+
+## 3. Catalog Maintenance
+
+Performed By: Product Managers, Catalog Administrator
+
+Activity:
+- Maintain the catalog structure by managing catalog pages and their associated details (cp_catalog_page_sk, cp_catalog_number, cp_catalog_page_number).
+- Update product information on specific catalog pages as needed.
+
+## 4. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Record returned items with their relevant details (cr_returned_date_sk, cr_item_sk).
+- Track the location of returned items within the warehouse (cr_warehouse_sk).
+
+## 5. Result Management
+
+Performed By: Administrator, Council
+
+Activity:
+- Mark accepted results as historical after three years unless requested otherwise by the Test Sponsor (cr_returned_date_sk).
+- Remove historical results only by specific action of the Council.
+
+## 6. Benchmark Standard Obsolescence
+
+Performed By: Administrator
+
+Activity:
+- Change status of results based on an obsolete version of the Specification to Historical Result (cr_returned_date_sk).
+
+## 7. Result Documentation Disclosure
+
+Performed By: Test Sponsor, TPC Members
+
+Activity:
+- Prepare and submit Executive Summary, FDR, Supporting Files, and Result Log Files for each benchmark result (cp_catalog_page_sk).

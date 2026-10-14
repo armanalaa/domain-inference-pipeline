@@ -1,0 +1,53 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set special and common_prod_id for newly introduced or related products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details like firstname, lastname, address, email, phone, creditcardtype, and age during account creation.
+- HR managers update income, gender, and region in the customers table upon employment changes.
+- Customer service agents record customerid when handling support requests or complaints.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance Department
+
+Activity:
+- Sales representatives place orders for customers by specifying orderid, netamount, tax, and totalamount.
+- Warehouse staff track quan_in_stock to ensure sufficient stock for order fulfillment.
+- Purchasing teams issue purchase orders when inventory levels fall below a certain threshold.
+- Finance records orderdate, sales, and tax in the orders table upon order confirmation.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff update quan_in_stock when products are shipped to customers or returned.
+- Inventory managers monitor sales and adjust quan_in_stock accordingly.
+
+## 5. Reordering
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers set date_low and quan_low for each product to trigger reorders when stock falls below a certain level.
+- Purchasing teams issue purchase orders based on the date_reordered and quan_reordered in the reorder table.
+
+## 6. Data Management
+
+Performed By: IT Administrators, Database Administrators
+
+Activity:
+- IT administrators ensure data integrity by backing up the DellStore2 database regularly.
+- Database administrators optimize database performance and implement security measures to protect sensitive customer information.

@@ -1,0 +1,53 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Staff (Safety Officers, Medical Writers)
+
+Activity:
+- Safety officers gather information about adverse events from various sources.
+- Medical writers review and analyze the gathered data to determine if it meets the criteria for an Individual Case Safety Report (ICSR).
+- If an ICSR is deemed necessary, medical writers prepare and submit the report to the FDA.
+
+## 2. Patient Death Reporting
+
+Performed By: Pharmaceutical Company Staff (Safety Officers)
+
+Activity:
+- Safety officers record the reported cause(s) of on death for each patient death case.
+- They determine whether an autopsy was performed and document the results.
+
+## 3. Parent Information Recording
+
+Performed By: Pharmaceutical Company Staff (Data Entry Clerks)
+
+Activity:
+- Data entry clerks input parent identification, age, date of birth, weight, height, sex, and relevant medical history into the database.
+
+## 4. Parent Medical History Documentation
+
+Performed By: Pharmaceutical Company Staff (Medical Writers)
+
+Activity:
+- Medical writers document the parent's medical history and concurrent conditions in a repeatable block within the database.
+
+## 5. Parent Past Drug Therapy Recording
+
+Performed By: Pharmaceutical Company Staff (Data Entry Clerks)
+
+Activity:
+- Data entry clerks record the name of drugs, start date, end date, and indication for each drug therapy in a repeatable block within the database.
+
+## 6. Adverse Event Investigation
+
+Performed By: Pharmaceutical Company Staff (Safety Officers)
+
+Activity:
+- Safety officers investigate adverse events to determine if they are related to the product and document their findings in the database.
+
+## 7. Regulatory Compliance Monitoring
+
+Performed By: Pharmaceutical Company Staff (Compliance Officers)
+
+Activity:
+- Compliance officers ensure that all adverse event reports are submitted to the FDA in compliance with regulatory requirements.

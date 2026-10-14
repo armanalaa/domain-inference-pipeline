@@ -1,0 +1,56 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Sponsor/Manufacturer's Safety Department, Healthcare Professional
+
+Activity:
+- Safety departments record adverse event details such as patient initials, date of birth format, and onset age.
+- Healthcare professionals register the adverse event report by providing patient medical record numbers, sources, and investigation numbers.
+- Safety departments enter the receiver's email address to submit the report electronically.
+
+## 2. Receiver Identification
+
+Performed By: Sponsor/Manufacturer's Safety Department
+
+Activity:
+- Safety department staff fill in the receiver type, organization, title, given name, middle name, family name, street address, city, state, postcode, country code, telephone number, fax number, and email address of the recipient.
+
+## 3. Adverse Event Forwarding
+
+Performed By: Sponsor/Manufacturer's Safety Department
+
+Activity:
+- Safety department staff forward a copy of the adverse event report to relevant internal departments or external regulatory bodies as required.
+
+## 4. Case Review and Assessment
+
+Performed By: Regulatory Affairs, Medical Safety Officer
+
+Activity:
+- Regulatory affairs review the adverse event report for completeness and accuracy.
+- Medical safety officers assess the severity of the adverse event and determine if further investigation is necessary.
+
+## 5. Adverse Event Investigation
+
+Performed By: Medical Safety Officer, Clinical Research Associate
+
+Activity:
+- Medical safety officers and clinical research associates investigate the adverse event by gathering additional information from relevant sources.
+- They document their findings and recommendations in a report.
+
+## 6. Adverse Event Reporting to Regulatory Bodies
+
+Performed By: Regulatory Affairs, Legal Department
+
+Activity:
+- Regulatory affairs prepare and submit adverse event reports to regulatory bodies as required by law.
+- The legal department reviews the reports for compliance with regulations before submission.
+
+## 7. Adverse Event Response Management
+
+Performed By: Product Manager, Marketing Department
+
+Activity:
+- Product managers and marketing staff develop a response strategy in case of a serious adverse event that may impact product safety or reputation.
+- They implement the response strategy and monitor its effectiveness.

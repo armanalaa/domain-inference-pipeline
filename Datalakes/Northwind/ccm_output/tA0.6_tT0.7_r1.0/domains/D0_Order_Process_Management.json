@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Order Process Management",
+    "definition": "The unifying capability across all tables is the management of order-related details, including customer, employee, shipper, and financial aspects.",
+    "tables": [
+      "orders"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 14,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "orders": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "OrderID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in orders",
+          "samples": [
+            "\"OrderID\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "CustomerID",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Customer entity",
+          "samples": [
+            "\"CustomerID\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "EmployeeID",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Employee entity",
+          "samples": [
+            "\"EmployeeID\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "OrderDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted text strings representing the date when orders were placed.",
+          "samples": [
+            "\"OrderDate\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "RequiredDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores order's intended delivery date (repeatedly entered as \"RequiredDate\").",
+          "samples": [
+            "\"RequiredDate\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShippedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted string representations of order shipment dates.",
+          "samples": [
+            "\"ShippedDate\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipVia",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the method of transport used for order delivery (e.g., \"ShipVia\").",
+          "samples": [
+            "\"ShipVia\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Freight",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores fixed string value for freight charge in orders.",
+          "samples": [
+            "\"Freight\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipName",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the names of shipping companies handling orders.",
+          "samples": [
+            "\"ShipName\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipAddress",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores detailed street addresses for order shipment locations.",
+          "samples": [
+            "\"ShipAddress\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipCity",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the destination city for order shipments.",
+          "samples": [
+            "\"ShipCity\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipRegion",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the region where orders are shipped.",
+          "samples": [
+            "\"ShipRegion\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipPostalCode",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores postal codes for order shipment locations.",
+          "samples": [
+            "\"ShipPostalCode\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShipCountry",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country of destination for order shipments.",
+          "samples": [
+            "\"ShipCountry\"",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

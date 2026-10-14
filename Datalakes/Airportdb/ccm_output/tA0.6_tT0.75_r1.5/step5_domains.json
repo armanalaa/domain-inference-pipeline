@@ -1,0 +1,111 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Flight Management",
+    "definition": "The process of managing flights, including scheduling, airline assignment, and airplane allocation.",
+    "tables": [
+      "airplane",
+      "flight",
+      "flightschedule"
+    ],
+    "phi_scores": {
+      "C1": 0.3491,
+      "C2": 0.3112,
+      "C3": 0.2878,
+      "C4": 0.2563,
+      "C5": 0.2088
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "ClimateDataManagement",
+    "definition": "The process of managing and maintaining climate data collected from various weather stations.",
+    "tables": [
+      "weatherdata"
+    ],
+    "phi_scores": {
+      "C5": 0.1351,
+      "C4": 0.1146,
+      "C3": 0.1064,
+      "C1": 0.1062,
+      "C2": 0.0952
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "AircraftTypeManagement",
+    "definition": "The process of managing the types and details of airplanes",
+    "tables": [
+      "airplane_type"
+    ],
+    "phi_scores": {
+      "C3": 0.3871,
+      "C2": 0.3469,
+      "C1": 0.3133,
+      "C4": 0.2178,
+      "C5": 0.1548
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "AirportGeolocationManagement",
+    "definition": "The process of managing geolocation data and airport information",
+    "tables": [
+      "airport",
+      "airport_geo"
+    ],
+    "phi_scores": {
+      "C5": 0.4009,
+      "C4": 0.3892,
+      "C1": 0.2505,
+      "C2": 0.2253,
+      "C3": 0.2069
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "AirlineInfrastructureManagement",
+    "definition": "The process of managing the infrastructure related to airlines, including airline registration, updates, and base airport management.",
+    "tables": [
+      "airline"
+    ],
+    "phi_scores": {
+      "C1": 0.4178,
+      "C2": 0.3533,
+      "C4": 0.3496,
+      "C3": 0.34,
+      "C5": 0.2882
+    }
+  },
+  {
+    "domain_id": 5,
+    "domain_name": "Passenger Data Management",
+    "definition": "The process of managing passenger data, including registration, updates, and personal details.",
+    "tables": [
+      "passenger",
+      "passengerdetails"
+    ],
+    "phi_scores": {
+      "C1": 0.2236,
+      "C5": 0.1869,
+      "C2": 0.1699,
+      "C4": 0.1686,
+      "C3": 0.158
+    }
+  },
+  {
+    "domain_id": 6,
+    "domain_name": "Reservation Management",
+    "definition": "The process of managing airline reservations, including booking, seat allocation, passenger information, and pricing.",
+    "tables": [
+      "booking"
+    ],
+    "phi_scores": {
+      "C1": 0.3136,
+      "C2": 0.2727,
+      "C3": 0.2564,
+      "C4": 0.213,
+      "C5": 0.1734
+    }
+  }
+]

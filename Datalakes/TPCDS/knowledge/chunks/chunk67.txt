@@ -1,0 +1,71 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Proposal Submission
+
+Performed By: TPC Member Companies, TPC Council
+
+Activity:
+- TPC member companies submit draft benchmark proposals to the TPC Council for consideration (Specification).
+- The Council reviews the contents, applicability, and potential of the proposal and presents a recommendation back to the Council.
+
+## 2. Benchmark Subcommittee Establishment
+
+Performed By: TPC Council
+
+Activity:
+- If the proposal is accepted for future work, the Council establishes a Benchmark Subcommittee to develop a formal benchmark Specification.
+
+## 3. Benchmark Development
+
+Performed By: Benchmark Subcommittee
+
+Activity:
+- The subcommittee develops a formal benchmark Specification based on the accepted proposal.
+- The subcommittee may brief non-members for timely feedback to speed up the benchmark development cycle.
+
+## 4. Status Updates and Council Feedback
+
+Performed By: Benchmark Subcommittee, TPC Council
+
+Activity:
+- At each General Meeting, the Benchmark Subcommittee provides a status update on its work, including a working draft of the Specification.
+- The Council may provide direction and feedback to the subcommittee to further their work.
+
+## 5. Draft Specification Release Authorization
+
+Performed By: TPC Council
+
+Activity:
+- If deemed advisable, the Council may authorize the release of a draft Specification to the public for experimental data gathering and speeding up the approval process.
+
+## 6. Benchmark Standard Approval
+
+Performed By: TPC Council
+
+Activity:
+- The Council votes to formally accept the proposal for future work, leading to the creation of a new TPC-Enterprise Class Benchmark.
+
+## 7. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff, Sales Representatives
+
+Activity:
+- Call center managers assign call centers to specific markets based on market class and description (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- Sales representatives handle customer calls from the assigned call centers (cc_call_center_sk).
+- Warehouse staff track inventory levels and ship orders accordingly (cr_warehouse_sk).
+
+## 8. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when items are sold or returned (cr_item_sk).
+
+## 9. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time, reason for return, and order number (cr_returned_date_sk, cr_reason_sk, cr_order_number).
+- Warehouse staff update inventory levels when items are returned (cr_item_sk).

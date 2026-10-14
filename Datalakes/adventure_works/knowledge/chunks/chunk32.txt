@@ -1,0 +1,70 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- Update employee information as needed, modifying the relevant columns.
+- Assign employees to departments by recording their BusinessEntityID, DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate in the EmployeeDepartmentHistory table.
+- Record changes in employee pay history, including RateChangeDate, Rate, PayFrequency, and ModifiedDate.
+
+## 2. Address Management
+
+Performed By: Person Administrators
+
+Activity:
+- Register new addresses by recording their AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, SpatialLocation, rowguid, and ModifiedDate.
+- Assign address types to each address by recording the AddressTypeID.
+- Link addresses to business entities by recording the BusinessEntityID, AddressID, AddressTypeID, rowguid, and ModifiedDate.
+
+## 3. Employee Department History Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record employee department history changes by updating the StartDate, EndDate, and ModifiedDate in the EmployeeDepartmentHistory table.
+
+## 4. Employee Pay History Management
+
+Performed By: Finance Department
+
+Activity:
+- Update employee pay history by recording the RateChangeDate, Rate, PayFrequency, and ModifiedDate in the EmployeePayHistory table.
+
+## 5. Shift Management
+
+Performed By: Operations Managers
+
+Activity:
+- Define shifts by recording their ShiftID, Name, StartTime, EndTime, and ModifiedDate.
+
+## 6. Sales Order Creation
+
+Performed By: Sales Representatives
+
+Activity:
+- Create sales orders by recording the customer details, billing and shipping addresses, credit card information, currency rate, salesperson ID, territory ID, ship method ID, and sales order number.
+
+## 7. Sales Reason Coding
+
+Performed By: Sales Managers
+
+Activity:
+- Code sales orders with appropriate reason codes by recording the sales order ID and sales reason ID in the SalesOrderHeaderSalesReason table.
+
+## 8. Invoice Processing
+
+Performed By: Accounts Receivable Clerks
+
+Activity:
+- Generate invoices based on sales orders, using the relevant information from the SalesOrderHeader table.
+
+## 9. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieve products for shipment by looking up their product codes in the HumanResources Employee catalog.
+- Track inventory levels and update them as needed.

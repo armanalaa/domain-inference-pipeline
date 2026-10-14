@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category specialists update product categories based on market trends and customer preferences.
+- Product managers assign common product IDs to similar products for easier tracking and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter new customer details such as first name, last name, address, email, phone, credit card information, and age.
+- Customer service agents update customer contact information when necessary.
+- HR managers maintain customer demographic data like income and gender for marketing analysis.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track the quantity in stock for each product and update sales when items are sold.
+- Purchasing teams order new products based on inventory levels and expected demand.
+- Warehouse staff record the reordered quantity and expected delivery date in the reorder table.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents, Warehouse Staff
+
+Activity:
+- Sales representatives create new orders for customers by selecting products, quantities, and order dates.
+- Customer service agents process customer requests for order changes or cancellations.
+- Warehouse staff prepare orders for shipping once they are ready to be dispatched.
+
+## 5. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate the net amount, tax, and total amount for each order based on product prices and quantities.
+- They record these values in the orders table along with the order date.
+
+## 6. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards ensure data accuracy, completeness, and consistency across all tables.
+- IT administrators manage database backups, security, and access controls.
+
+## 7. Analytics & Reporting
+
+Performed By: Business Analysts, Marketing Managers
+
+Activity:
+- Business analysts extract and analyze data from the various tables to generate reports on sales performance, inventory levels, customer demographics, etc.
+- Marketing managers use these reports to identify trends, make data-driven decisions, and optimize marketing strategies.

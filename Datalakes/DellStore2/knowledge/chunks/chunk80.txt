@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording the product code, name, category, and list price.
+- Update product details when necessary, such as changing the title, actor, or common_prod_id.
+- Monitor sales data for each product to assess performance and adjust pricing strategies accordingly.
+
+## 2. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Track the quantity in stock for each product and update it as items are sold or received.
+- Issue purchase orders when inventory levels fall below a specified threshold.
+- Reorder products that have reached their minimum stock level by recording the date_reordered, quan_reordered, and date_expected.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Place orders by selecting desired products, specifying quantities, and providing customer details.
+- Review order details before submitting them for processing.
+- Record the netamount, tax, and totalamount for each order in the system.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieve ordered items from inventory when they are ready to be shipped.
+- Package and label orders for efficient shipping and delivery.
+- Update the quan_in_stock column as items are fulfilled and shipped to customers.
+
+## 5. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Maintain customer records by updating contact information, credit card details, and account history.
+- Respond to customer inquiries regarding orders, returns, or product information.
+- Track customer interactions and preferences for personalized service and targeted marketing efforts.
+
+## 6. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Record financial transactions related to orders, such as netamount, tax, and totalamount.
+- Generate invoices based on order details and send them to customers.
+- Monitor sales revenue and expenses to ensure accurate financial reporting.
+
+## 7. Data Governance
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- Maintain the integrity of data by ensuring proper data lineage, quality, and cataloging.
+- Implement security measures to protect sensitive customer information.
+- Use trusted reporting tools to identify and resolve inconsistencies in KPIs across different reports.

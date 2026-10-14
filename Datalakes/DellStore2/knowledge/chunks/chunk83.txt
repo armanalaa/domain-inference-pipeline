@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category managers update the product categories to ensure accurate organization of the product offerings.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details such as name, address, and contact information during registration.
+- Customer service agents update customer profiles with any changes to personal or billing information.
+- HR managers maintain records of customer age, income, gender, and credit card details for internal analysis.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives create orders by linking customer profiles with order details like order date, net amount, tax, and total amount.
+- Warehouse staff track inventory levels to ensure sufficient stock for each order.
+- Purchasing teams issue purchase orders when the quantity of a product falls below the reorder point.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory with the number of units in stock and sales data for each product.
+- Purchasing teams monitor low inventory levels and initiate reorders when necessary.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff pick and pack orders based on the orderlines and available inventory.
+- Shipping agents prepare and dispatch orders to customers according to their specified shipping address.
+
+## 6. Reorder Management
+
+Performed By: Purchasing Teams, Inventory Managers
+
+Activity:
+- Purchasing teams update the reorder table with the product ID, date low, quantity low, date reordered, and quantity reordered.
+- Inventory managers monitor the expected delivery date for each reordered product.
+
+## 7. Financial Reporting
+
+Performed By: Finance Teams, Auditors
+
+Activity:
+- Finance teams generate reports on net amount, tax, total amount, and other financial metrics for each order.
+- Auditors review the financial reports to ensure accuracy and compliance with regulations.

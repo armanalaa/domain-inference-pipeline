@@ -1,0 +1,52 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies record new adverse events related to their products by providing details such as event description, date of occurrence, and patient information.
+- Healthcare providers document adverse events experienced by patients, including symptoms, severity, and duration.
+- Both parties assign unique identifiers to each reported adverse event.
+
+## 2. MedDRA Term Assignment
+
+Performed By: Pharmacovigilance Teams
+
+Activity:
+- Pharmacovigilance teams classify adverse events using Medical Dictionary for Regulatory Activities (MedDRA) terms, ensuring accurate and consistent coding.
+
+## 3. Active Substance and Product Association
+
+Performed By: Pharmaceutical Companies
+
+Activity:
+- Pharmaceutical companies associate each reported adverse event with the appropriate active substance and product.
+
+## 4. Result Tests Procedures Documentation
+
+Performed By: Investigators, Laboratory Technicians
+
+Activity:
+- Investigators or laboratory technicians document any tests and procedures relevant to the investigation of the patient. (Optional)
+
+## 5. Safety Report Versioning
+
+Performed By: Data Managers
+
+Activity:
+- Data managers assign version numbers to safety reports for tracking different versions of an adverse event report.
+
+## 6. MedDRA Version Recording
+
+Performed By: Pharmacovigilance Teams
+
+Activity:
+- Pharmacovigilance teams record the MedDRA version number used for each term in the adverse event report.
+
+## 7. Report Identification and Sender Identification
+
+Performed By: Data Managers, Pharmaceutical Companies
+
+Activity:
+- Data managers ensure unique identifiers are assigned to each safety report, while pharmaceutical companies provide their own identification details.

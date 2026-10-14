@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to warehouse staff based on their capacity (cc_employees).
+- Warehouse staff update the square footage of each call center (cc_sq_ft).
+- Call center managers determine the operating hours for each call center (cc_hours).
+
+## 2. Market Division Management
+
+Performed By: Market Managers, HR Managers
+
+Activity:
+- Market managers assign call centers to specific markets based on market class and description (cc_mkt_class, cc_mkt_desc).
+- HR managers hire new employees for the assigned call centers (cc_employees).
+
+## 3. Call Center Location Setup
+
+Performed By: Administrative Staff, Warehouse Staff
+
+Activity:
+- Administrative staff register new call center locations with their respective details (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Warehouse staff set up the physical infrastructure for each call center.
+
+## 4. Call Center Classification
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers classify each call center based on its type (cc_class).
+- HR managers determine the number of employees required for each call center class.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog with their respective codes, names, categories, and list prices (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing teams create and update catalog pages to display the products.
+
+## 6. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record customer returns with their respective dates and times (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse location for returned items (cr_warehouse_sk).
+
+## 7. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives process customer orders and record order numbers (cr_order_number).
+- Customer service representatives update the status of each order in the system.

@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and credit card information.
+- Customer service agents update customer records with changes in contact or billing information.
+- Sales representatives assign each customer a unique username and password for account access.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording their product code, name, category, list price, and special features.
+- Inventory specialists update product information when stock levels change or products go on sale.
+- Product managers assign common product IDs to similar items for easier categorization and tracking.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+- Sales representatives process orders by confirming availability, calculating totals, and recording order dates.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory and package them for shipping.
+- Shipping agents generate shipping labels and arrange for delivery to the customer's specified address.
+
+## 5. Inventory Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists track stock levels by updating quantities in real time as items are sold or received.
+- Purchasing teams issue purchase orders for reordering low-stock products based on predefined thresholds.
+
+## 6. Financial Transactions
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance department records net amounts, taxes, and total amounts for each order in the financial system.
+- Accounting staff generates invoices based on recorded transactions and sends them to customers.
+
+## 7. License Agreement Management
+
+Performed By: Legal Department, Sales Representatives
+
+Activity:
+- Legal department reviews and approves license agreements for new customers.
+- Sales representatives distribute signed agreements to customers and update customer records accordingly.
+
+## 8. Technical Support
+
+Performed By: Customer Service Agents, IT Staff
+
+Activity:
+- Customer service agents assist customers with technical issues related to the Products.
+- IT staff troubleshoot and resolve any system-related problems that may arise.

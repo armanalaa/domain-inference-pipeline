@@ -1,0 +1,55 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers, Consumers
+
+Activity:
+- Pharmaceutical companies record adverse event details for their products, including the product name, event description, and date of occurrence.
+- Healthcare providers submit reports on patient adverse events related to FDA-regulated products, including patient demographics and event severity.
+- Consumers report personal experiences with adverse events caused by FDA-regulated products, providing their contact information for follow-up.
+
+## 2. Adverse Event Review
+
+Performed By: FDA Staff (Medical Officers, Safety Evaluators)
+
+Activity:
+- Medical officers review adverse event reports to assess potential safety concerns and determine if further investigation is necessary.
+- Safety evaluators analyze the reported events to identify patterns or trends across multiple products or product categories.
+
+## 3. Case Processing
+
+Performed By: FDA Staff (Case Managers, Regulatory Affairs Specialists)
+
+Activity:
+- Case managers assign adverse event reports to appropriate regulatory affairs specialists for further investigation and follow-up.
+- Regulatory affairs specialists gather additional information from various sources, such as medical literature or manufacturer data, to evaluate the potential causality between the reported event and the FDA-regulated product.
+
+## 4. Data Verification and Confirmation
+
+Performed By: FDA Staff (Medical Reviewers)
+
+Activity:
+- Medical reviewers verify the accuracy of adverse event reports, ensuring that all necessary information is present and that the report meets established criteria for validity.
+
+## 5. Adverse Event Classification
+
+Performed By: FDA Staff (Classification Specialists)
+
+Activity:
+- Classification specialists categorize adverse events based on their nature, severity, and potential impact on public health.
+
+## 6. Regulatory Action
+
+Performed By: FDA Staff (Regulatory Affairs Managers, Legal Counsel)
+
+Activity:
+- Regulatory affairs managers determine appropriate regulatory actions in response to adverse event reports, such as issuing warnings or mandating label changes for affected products.
+- Legal counsel reviews and approves regulatory actions to ensure compliance with relevant laws and regulations.
+
+## 7. Public Data Access and Analysis
+
+Performed By: General Public (Researchers, Healthcare Professionals)
+
+Activity:
+- The general public accesses and analyzes adverse event data through the FDA AEMS Public Dashboard to identify trends, patterns, or potential safety concerns related to FDA-regulated products.

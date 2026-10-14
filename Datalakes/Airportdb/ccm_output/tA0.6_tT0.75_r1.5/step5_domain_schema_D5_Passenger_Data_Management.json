@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "Passenger Data Management",
+    "definition": "The process of managing passenger data, including registration, updates, and personal details.",
+    "tables": [
+      "passenger",
+      "passengerdetails"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "passenger": {
+      "_description": "Tracks individual passengers and their identifying details at the airport.",
+      "columns": [
+        {
+          "name": "passenger_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in passenger",
+          "samples": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "passportno",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique 10-character alphanumeric passport numbers of passengers.",
+          "samples": [
+            "P103014",
+            "P103015",
+            "P103016",
+            "P103017",
+            "P103018"
+          ]
+        },
+        {
+          "name": "firstname",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of passengers' first names, including some with middle initials.",
+          "samples": [
+            "Buzz",
+            "Bobby \"Blue\"",
+            "Don",
+            "Michael",
+            "Mara"
+          ]
+        },
+        {
+          "name": "lastname",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of the surname for passengers.",
+          "samples": [
+            "Aldrin",
+            "Bland",
+            "Brockett",
+            "Browne",
+            "Corday"
+          ]
+        }
+      ]
+    },
+    "passengerdetails": {
+      "_description": "Captures personal details of individual passengers for air travel management.",
+      "columns": [
+        {
+          "name": "passenger_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in passengerdetails",
+          "samples": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "birthdate",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores passenger birthdates in YYYY-MM-DD format.",
+          "samples": [
+            "1930-01-12",
+            "1930-01-03",
+            "1930-01-07",
+            "1930-01-30",
+            "1930-01-25"
+          ]
+        },
+        {
+          "name": "sex",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores passenger gender (male or female) as a character string.",
+          "samples": [
+            "m",
+            "w",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "street",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses of passengers, up to 50 characters long.",
+          "samples": [
+            "Andechsstraße 45",
+            "Archenweg 82",
+            "Bichlweg 77",
+            "Bleichenweg 38",
+            "Domanigweg 59"
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of cities where passengers reside.",
+          "samples": [
+            "Bad Wimsbach-Neydharting",
+            "Behamberg",
+            "Bad Blumau",
+            "Buch-Geiseldorf",
+            "Dienten am Hochkönig"
+          ]
+        },
+        {
+          "name": "zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit postal codes for passengers.",
+          "samples": [
+            4654,
+            4441,
+            8283,
+            8272,
+            8274
+          ]
+        },
+        {
+          "name": "country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores passenger's country of origin (Ethiopia, Korea, Denmark, United States).",
+          "samples": [
+            "Ethiopia",
+            "Korea",
+            "Denmark",
+            "United States",
+            "Greenland"
+          ]
+        },
+        {
+          "name": "emailaddress",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores email addresses of passengers in a format compatible with standard internet email services.",
+          "samples": [
+            "Michael.Browne@airtelkol.com",
+            "Mara.Corday@cvcpaging.com",
+            "Jack.Greene@my2way.com",
+            "Alfred.Herrhausen@bplmobile.com",
+            "Dean.Jones@page.metrocall.com"
+          ]
+        },
+        {
+          "name": "telephoneno",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores international phone numbers up to 15 digits.",
+          "samples": [
+            "03022 807190",
+            "01335 64343532",
+            "08165 15262423",
+            "03133 10894292",
+            "06046 69629766"
+          ]
+        }
+      ]
+    }
+  }
+}

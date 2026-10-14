@@ -1,0 +1,66 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Data Acquisition and Preparation
+
+Performed By: Data Analysts, Database Administrators
+
+Activity:
+- Data analysts download and extract data from the Internet Movie Database (IMDB) text files.
+- Database administrators transform the extracted data into a relational database using the imdbpy package.
+- Database administrators create tables for each entity in the IMDB dataset, such as movies, actors, directors, and production companies.
+
+## 2. Data Quality Assurance
+
+Performed By: Data Analysts, Quality Assurance Engineers
+
+Activity:
+- Data analysts verify the accuracy and completeness of the imported data by comparing it with reference sources or conducting spot checks.
+- Quality assurance engineers develop and execute test cases to ensure that the data meets quality standards and is ready for analysis.
+
+## 3. Query Formulation
+
+Performed By: Business Analysts, Data Scientists
+
+Activity:
+- Business analysts collaborate with stakeholders to identify key questions or insights they want to extract from the IMDB dataset.
+- Data scientists formulate SQL queries that can answer these questions using the available tables and columns in the database.
+
+## 4. Query Optimization
+
+Performed By: Database Administrators, Query Optimization Engineers
+
+Activity:
+- Database administrators analyze the performance of the SQL queries to identify bottlenecks or inefficiencies.
+- Query optimization engineers develop strategies to improve query performance, such as indexing, partitioning, or rewriting suboptimal queries.
+
+## 5. Query Execution and Analysis
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators execute the optimized SQL queries against the IMDB database to retrieve the desired data.
+- Data analysts analyze the results of the queries, visualize the data using charts or graphs, and interpret the findings for stakeholders.
+
+## 6. Query Result Validation
+
+Performed By: Business Analysts, Data Analysts
+
+Activity:
+- Business analysts review the query results to ensure they answer the original questions accurately and provide meaningful insights.
+- Data analysts validate the results by comparing them with reference data or performing additional analyses if necessary.
+
+## 7. Report Generation
+
+Performed By: Data Analysts, Business Analysts
+
+Activity:
+- Data analysts compile the query results into a report that is easy to understand and visually appealing for stakeholders.
+- Business analysts interpret the findings in the context of the business problem or opportunity being addressed.
+
+## 8. Query Result Presentation
+
+Performed By: Business Analysts, Stakeholders
+
+Activity:
+- Business analysts present the query results and their interpretation to stakeholders in meetings or reports.
+- Stakeholders review the findings, ask questions, and make decisions based on the insights provided by the analysis.

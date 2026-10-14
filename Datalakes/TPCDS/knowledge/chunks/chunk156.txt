@@ -1,0 +1,56 @@
+ TPC-DS — Business Workflows
+
+## 1. Warehouse Management
+
+Performed By: Warehouse Managers, Inventory Analysts
+
+Activity:
+- Warehouse managers assign unique identifiers to each stock item.
+- Inventory analysts record the quantity of each item in the warehouse.
+- Warehouse managers store distribution center details for each item.
+- Inventory analysts categorize items based on their distribution centers.
+- Warehouse managers update the total number of orders for each item.
+
+## 2. District Management
+
+Performed By: District Managers, Geographic Information Specialists
+
+Activity:
+- District managers register new districts within a warehouse's jurisdiction.
+- Geographic information specialists provide street addresses and city details for each district.
+- District managers determine the applicable tax rate for each district.
+- Geographic information specialists assign unique identifiers to each district.
+- District managers maintain the next order identifier for each district.
+
+## 3. Customer Registration
+
+Performed By: Customer Service Representatives, Data Entry Clerks
+
+Activity:
+- Customer service representatives register new customers in the system.
+- Data entry clerks record customer identification details.
+- Customer service representatives assign districts to customers based on their location.
+- Data entry clerks link customers to their corresponding warehouse.
+- Customer service representatives generate unique identifiers for each customer history record.
+
+## 4. Call Center Operations
+
+Performed By: Call Center Agents, Customer Service Managers
+
+Activity:
+- Call center agents answer incoming calls from customers.
+- Customer service managers assign calls to available call center agents.
+- Call center agents provide information about products and services.
+- Customer service managers monitor call center agent performance.
+- Call center agents record call details, including date, time, and reason for the call.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Marketing teams create and manage product descriptions on the catalog pages.
+- Product managers categorize products based on their department.
+- Marketing teams assign unique identifiers to each catalog page.
+- Product managers track the number of orders for each catalog page.

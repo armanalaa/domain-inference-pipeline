@@ -1,0 +1,66 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies submit adverse event reports to regulatory bodies.
+- Healthcare providers document and report adverse events related to specific drugs.
+- Adverse event details are recorded, including patient information, drug details, and event description.
+- Reports are reviewed by pharmacovigilance teams for validation and assessment.
+- Validated reports are forwarded to regulatory authorities for further action.
+
+## 2. Acknowledgement of Report Receipt
+
+Performed By: Regulatory Authorities
+
+Activity:
+- Regulatory authorities acknowledge receipt of adverse event reports.
+- Acknowledgements include report identification numbers and timestamps.
+- Acknowledged reports are stored for future reference and analysis.
+
+## 3. Adverse Event Investigation
+
+Performed By: Pharmacovigilance Teams, Regulatory Authorities
+
+Activity:
+- Pharmacovigilance teams investigate adverse events to determine causality.
+- Data from multiple sources is analyzed to support investigation findings.
+- Findings are documented and shared with relevant parties for further action.
+
+## 4. Risk Assessment and Management
+
+Performed By: Regulatory Authorities, Pharmaceutical Companies
+
+Activity:
+- Regulatory authorities assess the risk posed by adverse events to public health.
+- Pharmaceutical companies review their product safety profiles based on adverse event data.
+- Risk management plans are developed and implemented to mitigate identified risks.
+
+## 5. Adverse Event Updates and Follow-ups
+
+Performed By: Healthcare Providers, Regulatory Authorities
+
+Activity:
+- Healthcare providers provide updates on adverse events as they become available.
+- Regulatory authorities follow up on reported adverse events for additional information.
+- Updated information is incorporated into the adverse event records.
+
+## 6. Adverse Event Database Maintenance
+
+Performed By: Data Management Teams, IT Staff
+
+Activity:
+- Adverse event databases are maintained to ensure data integrity and accuracy.
+- Duplicate entries are removed and inconsistencies are resolved.
+- Database backups are performed regularly for disaster recovery purposes.
+
+## 7. Adverse Event Analysis and Reporting
+
+Performed By: Data Analysts, Regulatory Authorities
+
+Activity:
+- Adverse event data is analyzed to identify trends and patterns.
+- Findings are reported to regulatory authorities and pharmaceutical companies.
+- Reports inform risk management decisions and guide further investigation.

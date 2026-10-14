@@ -1,0 +1,51 @@
+ # TPC-DS — Business Workflows
+
+## 1. Customer Selection for Order Status Query
+
+Performed By: Terminal Operator
+
+Activity:
+- The terminal operator enters the customer last name to initiate a query.
+- The terminal operator retrieves the customer ID from the sorted set of selected rows from the CUSTOMER table.
+- The terminal operator selects the most recent order placed by that customer from the ORDER table.
+- The terminal operator retrieves the order number, entry date, and carrier number from the selected row in the ORDER table.
+- The terminal operator retrieves the details of each item in the order from the ORDER-LINE table.
+
+## 2. Order Status Display
+
+Performed By: Terminal Operator
+
+Activity:
+- The terminal operator displays the input/output screen with all fields cleared except for the Warehouse field.
+- The terminal operator displays the customer name, balance, and order details on the Order-Status screen.
+- The terminal operator displays the repeating group of fields (OL_SUPPLY_W_ID, OL_I_ID, OL_QUANTITY, OL_AMOUNT, and OL_DELIVERY_D) for each item in the order.
+
+## 3. Customer Input for Order Status Query
+
+Performed By: Terminal Operator
+
+Activity:
+- The terminal operator enters the required input data which is organized as the distinct fields: D_ID and either C_ID or C_LAST.
+
+## 4. Call Center Management
+
+Performed By: Call Center Manager, HR Manager
+
+Activity:
+- Call center managers assign employees to specific call centers based on their skills and qualifications.
+- HR managers recruit and onboard new employees for the call center.
+
+## 5. Market Division Management
+
+Performed By: Market Manager, Call Center Manager
+
+Activity:
+- Market managers define market divisions and assign call centers to these divisions.
+- Call center managers manage call centers within their assigned division.
+
+## 6. Catalog Management
+
+Performed By: Product Manager
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price in the catalog_page table.

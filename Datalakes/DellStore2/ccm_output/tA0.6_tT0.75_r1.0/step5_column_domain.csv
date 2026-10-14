@@ -1,0 +1,53 @@
+table,column,domain_id,domain_name
+cust_hist,customerid,0,Order Processing and Management
+cust_hist,orderid,0,Order Processing and Management
+cust_hist,prod_id,0,Order Processing and Management
+orderlines,orderdate,0,Order Processing and Management
+orderlines,orderid,0,Order Processing and Management
+orderlines,orderlineid,0,Order Processing and Management
+orderlines,prod_id,0,Order Processing and Management
+orderlines,quantity,0,Order Processing and Management
+orders,customerid,0,Order Processing and Management
+orders,netamount,0,Order Processing and Management
+orders,orderdate,0,Order Processing and Management
+orders,orderid,0,Order Processing and Management
+orders,tax,0,Order Processing and Management
+orders,totalamount,0,Order Processing and Management
+categories,category,1,Product Information Management
+categories,categoryname,1,Product Information Management
+products,actor,1,Product Information Management
+products,category,1,Product Information Management
+products,common_prod_id,1,Product Information Management
+products,price,1,Product Information Management
+products,prod_id,1,Product Information Management
+products,special,1,Product Information Management
+products,title,1,Product Information Management
+inventory,prod_id,2,Inventory and Reorder Management
+inventory,quan_in_stock,2,Inventory and Reorder Management
+inventory,sales,2,Inventory and Reorder Management
+reorder,date_expected,2,Inventory and Reorder Management
+reorder,date_low,2,Inventory and Reorder Management
+reorder,date_reordered,2,Inventory and Reorder Management
+reorder,prod_id,2,Inventory and Reorder Management
+reorder,quan_low,2,Inventory and Reorder Management
+reorder,quan_reordered,2,Inventory and Reorder Management
+customers,"""password""",3,Customer Profile Management
+customers,address1,3,Customer Profile Management
+customers,address2,3,Customer Profile Management
+customers,age,3,Customer Profile Management
+customers,city,3,Customer Profile Management
+customers,country,3,Customer Profile Management
+customers,creditcard,3,Customer Profile Management
+customers,creditcardexpiration,3,Customer Profile Management
+customers,creditcardtype,3,Customer Profile Management
+customers,customerid,3,Customer Profile Management
+customers,email,3,Customer Profile Management
+customers,firstname,3,Customer Profile Management
+customers,gender,3,Customer Profile Management
+customers,income,3,Customer Profile Management
+customers,lastname,3,Customer Profile Management
+customers,phone,3,Customer Profile Management
+customers,region,3,Customer Profile Management
+customers,state,3,Customer Profile Management
+customers,username,3,Customer Profile Management
+customers,zip,3,Customer Profile Management

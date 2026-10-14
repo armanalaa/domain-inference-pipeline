@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "EmployeeCompensationManagement",
+    "definition": "The process of managing employee compensation data, including payroll processing and salary history.",
+    "tables": [
+      "HumanResources EmployeePayHistory"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "HumanResources EmployeePayHistory": {
+      "_description": "Tracks historical changes in employee salaries, rates, and pay frequencies over time.",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "RateChangeDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores historical dates of employee pay rate changes.",
+          "samples": [
+            "2009-01-14 00:00:00.000",
+            "2008-01-31 00:00:00.000",
+            "2007-11-11 00:00:00.000",
+            "2008-01-06 00:00:00.000",
+            "2008-01-24 00:00:00.000"
+          ]
+        },
+        {
+          "name": "Rate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical hourly wages for employees.",
+          "samples": [
+            125.5,
+            63.4615,
+            43.2692,
+            32.6923,
+            50.4808
+          ]
+        },
+        {
+          "name": "PayFrequency",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the frequency of employee pay periods (e.g., biweekly represented as 2).",
+          "samples": [
+            2,
+            1,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores a series of identical date strings (YYYY-MM-DD HH:mm:ss.fff) for multiple pay history modifications on June 30, 2014.",
+          "samples": [
+            "2014-06-30 00:00:00.000",
+            "2007-11-21 00:00:00.000",
+            "2010-05-16 00:00:00.000",
+            "2011-12-01 00:00:00.000",
+            "2007-12-06 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

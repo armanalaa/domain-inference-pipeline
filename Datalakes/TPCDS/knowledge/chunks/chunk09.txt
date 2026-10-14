@@ -1,0 +1,56 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on the available space (cc_sq_ft).
+- HR managers update employee information in the system, including name, position, and start date (cc_rec_start_date).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees handle customer calls during operational hours (cc_hours).
+- Call center managers monitor call center performance and adjust staffing levels as needed.
+
+## 3. Market Division Management
+
+Performed By: Market Managers, HR Managers
+
+Activity:
+- Market managers assign call centers to specific markets based on market class and description (cc_mkt_class, cc_mkt_desc).
+- HR managers update employee information for employees working in a particular market.
+
+## 4. Call Center Expansion
+
+Performed By: Call Center Managers, Facility Management
+
+Activity:
+- Call center managers request additional space from facility management when the current call center is at capacity (cc_sq_ft).
+
+## 5. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers update product information in the catalog, including product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- IT staff maintain the integrity of the catalog data and ensure its accessibility to call center employees.
+
+## 6. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and record the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update inventory levels when a return is processed.
+
+## 7. Inventory Tracking
+
+Performed By: Warehouse Staff, IT Staff
+
+Activity:
+- Warehouse staff track inventory levels and update them in the system (cr_warehouse_sk).
+- IT staff ensure accurate inventory data and handle any discrepancies that arise.

@@ -1,0 +1,68 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the UnitsInStock when products are received from suppliers.
+- Product managers set the ReorderLevel for each product to ensure timely restocking.
+- Warehouse staff mark a product as Discontinued when it is no longer available.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives add new customers to the database with their contact and address details.
+- Customer service agents update customer information as needed.
+- Sales representatives assign territories to employees for sales coverage.
+
+## 3. Order Placement
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives create new purchase orders for customers based on their needs and product availability.
+- Customers place orders by selecting products, quantities, and shipping details in the Purchase Order List or through the Reorder Product button on the Products form.
+
+## 4. Order Approval
+
+Performed By: Purchasing Teams, Management (with Purchase Approval privilege)
+
+Activity:
+- Purchasing teams review and approve purchase orders based on budget constraints and product availability.
+- Management with Purchase Approval privilege can also approve orders as needed.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff locate and pick the ordered products from inventory.
+- Warehouse staff update the UnitsOnOrder when products are allocated for an order.
+- Shipping department packages and labels the orders for shipment.
+
+## 6. Order Tracking
+
+Performed By: Shipping Department, Customers
+
+Activity:
+- Shipping department records the ShipVia, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry, and ShippedDate when an order is shipped.
+- Customers can track their orders using the hyperlinks in the Purchase Order List.
+
+## 7. Invoice Processing
+
+Performed By: Accounting Department
+
+Activity:
+- Accounting department generates invoices based on approved purchase orders and sends them to suppliers.
+
+## 8. Supplier Management
+
+Performed By: Purchasing Teams, HR Managers
+
+Activity:
+- Purchasing teams add new suppliers to the database with their contact and address details.
+- HR managers assign employees to specific territories for supplier relationships management.

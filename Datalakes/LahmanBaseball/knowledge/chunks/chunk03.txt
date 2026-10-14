@@ -1,0 +1,73 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Data Management
+
+Performed By: Baseball Statistician, Database Administrator
+
+Activity:
+- Baseball statisticians collect and verify player data from various sources.
+- Database administrators input the verified data into the AllstarFull table.
+
+## 2. College Playing Record Update
+
+Performed By: College Sports Data Collectors, Database Administrator
+
+Activity:
+- College sports data collectors gather information about players' college careers.
+- Database administrators update the CollegePlaying table with the collected data.
+
+## 3. Player Appearances Tracking
+
+Performed By: Game Scorers, Statisticians
+
+Activity:
+- Game scorers record player appearances during games.
+- Statisticians categorize and input these appearances into the Appearances table.
+
+## 4. Award Allocation
+
+Performed By: Sports Journalists, Award Committees
+
+Activity:
+- Sports journalists nominate players for awards based on performance.
+- Award committees decide winners and update the AwardsManagers and AwardsPlayers tables accordingly.
+
+## 5. Award Share Calculation
+
+Performed By: Statisticians, Award Committee Members
+
+Activity:
+- Statisticians calculate points for each award nominee based on voting results.
+- Award committee members update the AwardsShareManagers and AwardsSharePlayers tables with these points.
+
+## 6. Batting Performance Recording
+
+Performed By: Game Scorers, Statisticians
+
+Activity:
+- Game scorers record batting statistics for each player during games.
+- Statisticians input these statistics into the Batting table.
+
+## 7. Post-Game Batting Statistics Analysis
+
+Performed By: Statisticians, Data Analysts
+
+Activity:
+- Statisticians analyze post-game batting statistics to identify trends and patterns.
+- Data analysts use this analysis to make informed decisions about player performance.
+
+## 8. Fielding Performance Recording
+
+Performed By: Game Scorers, Statisticians
+
+Activity:
+- Game scorers record fielding statistics for each player during games.
+- Statisticians input these statistics into the Fielding table.
+
+## 9. Fielding Outfield Splits Calculation
+
+Performed By: Statisticians, Data Analysts
+
+Activity:
+- Statisticians calculate outfield splits (Grf, Gcf, Glf) for each player based on fielding statistics.
+- Data analysts use these splits to analyze player performance in the outfield.

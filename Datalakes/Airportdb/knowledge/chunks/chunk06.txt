@@ -1,0 +1,64 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Administrators, Airline Managers
+
+Activity:
+- Airline administrators register new airlines by entering airline ID, IATA code, airline name, and base airport.
+- Airline managers update airline details as needed, modifying the airline name or base airport.
+- Airline administrators assign airplanes to specific airlines by linking them through the airline_id column in the airplane table.
+
+## 2. Airplane Management
+
+Performed By: Airplane Managers, Maintenance Staff
+
+Activity:
+- Airplane managers register new airplanes by entering airplane ID, capacity, type ID, and airline ID.
+- Maintenance staff track airplane maintenance history, recording details such as service dates, repairs, and maintenance costs.
+- Airplane managers update airplane information, including capacity or type, when necessary.
+
+## 3. Airplane Type Management
+
+Performed By: Airplane Administrators
+
+Activity:
+- Airplane administrators register new airplane types by entering type ID, identifier, and description.
+
+## 4. Airport Management
+
+Performed By: Airport Managers, Ground Staff
+
+Activity:
+- Airport managers register new airports by entering airport ID, IATA code, ICAO code, and name.
+- Ground staff update airport information, including city, country, or geolocation details.
+
+## 5. Flight Scheduling
+
+Performed By: Flight Planners, Airline Managers
+
+Activity:
+- Flight planners create flight schedules by entering flight number, departure and arrival airports, departure and arrival times, and days of operation for each flight.
+- Airline managers modify flight schedules as needed, adjusting departure or arrival times, or changing the days of operation.
+
+## 6. Flight Registration
+
+Performed By: Flight Operations Staff
+
+Activity:
+- Flight operations staff register new flights by linking them to their corresponding airplanes and flight schedules.
+
+## 7. Booking Management
+
+Performed By: Reservation Agents, Passengers
+
+Activity:
+- Reservation agents create bookings for passengers by entering booking ID, flight ID, seat number, passenger ID, and price.
+- Passengers confirm or modify their bookings as needed, updating personal details or selecting different seats.
+
+## 8. Weather Data Collection
+
+Performed By: Meteorologists, Ground Staff
+
+Activity:
+- Meteorologists collect weather data by entering log date, time, station, temperature, humidity, air pressure, wind speed, wind direction, and weather conditions.

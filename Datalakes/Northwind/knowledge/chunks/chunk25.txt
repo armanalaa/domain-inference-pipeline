@@ -1,0 +1,62 @@
+ # Northwind — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives register new customers by recording their company name, contact information, and address details.
+- Customer service representatives update customer records with changes in contact information or address.
+- Sales representatives assign customers to specific territories based on geographical location.
+
+## 2. Employee Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- HR managers hire new employees by recording their personal and professional details, including birthdate, job title, and reporting structure.
+- Employees update their own contact information and address within the employee database.
+- HR managers assign employees to specific territories based on geographical location.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update product details such as quantity per unit, units in stock, and reorder level when necessary.
+- Product managers mark discontinued products as such.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives place orders for customers by selecting products, quantities, and shipping details.
+- Warehouse staff track inventory levels to ensure availability of ordered items.
+- Purchasing teams issue purchase orders to suppliers for out-of-stock items.
+
+## 5. Shipping and Delivery
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff prepare orders for shipping by packing products and printing shipping labels.
+- Shippers track shipments and update order status with the shipped date and shipping carrier.
+
+## 6. Invoice Generation and Payment
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices based on orders and send them to customers.
+- Customers pay their invoices by providing payment details such as credit card information or bank transfer details.
+- Finance department records payments and updates customer accounts accordingly.
+
+## 7. Supplier Management
+
+Performed By: Purchasing Teams, HR Managers
+
+Activity:
+- Purchasing teams register new suppliers by recording their company name, contact information, and address details.
+- HR managers update supplier records with changes in contact information or address.

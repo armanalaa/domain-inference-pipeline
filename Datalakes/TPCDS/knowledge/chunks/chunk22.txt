@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to warehouse staff based on available space (cc_sq_ft).
+- Warehouse staff allocate designated square footage for each call center (cc_sq_ft).
+- Call center managers update the hours of operation for each call center (cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign call centers to specific markets based on market needs (cc_mkt_id).
+- HR managers recruit and hire employees for each call center according to the assigned market (cc_employees).
+
+## 3. Market Classification
+
+Performed By: Call Center Managers, Marketing Managers
+
+Activity:
+- Call center managers classify markets based on their type and description (cc_mkt_class, cc_mkt_desc).
+- Marketing managers update the market classification for each call center (cc_mkt_id).
+
+## 4. Call Center Location Setup
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers provide the physical address details of each call center (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Warehouse staff set up the physical location for each call center according to its address (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+
+## 5. Call Center Operations Management
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers monitor call center operations and performance (cc_hours, cc_manager).
+- Sales representatives handle customer inquiries and sales calls within the call centers (cc_call_center_id).
+
+## 6. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing managers update the catalog with new products or changes to existing ones (cp_catalog_page_sk).
+
+## 7. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and refunds (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff update the inventory with returned items and prepare them for restocking (cr_warehouse_sk).

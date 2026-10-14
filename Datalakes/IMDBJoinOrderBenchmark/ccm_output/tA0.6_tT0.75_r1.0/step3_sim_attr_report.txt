@@ -1,0 +1,23 @@
+==================================================================
+CCM Step 3.4 — Sim_attr Report
+==================================================================
+
+Step 3.4.2 formula (replaces RF — Running Example deviation):
+  Sim_attr(Ai,Aj) = w1*(1-P_stat_norm) + w2*P_name + w3*P_sem
+  P_stat_norm     = P_stat / 2.6458  (global max)
+  Weights         : w1=0.3016  w2=0.6906  w3=0.0078  (sum=1.0)
+
+Running Example verification:
+  x_ij = [P_stat=0.20, P_name=0.43, P_sem=0.83]
+  Sim_attr = 0.3016*(1-0.20/2.6458) + 0.6906*0.43 + 0.0078*0.83
+           = 0.5822  (< theta → pruned)
+
+Pairs total    : 5778
+Sim_attr range : [0.0339, 0.9936]
+Sim_attr mean  : 0.4154
+Sim_attr std   : 0.1674
+
+Step 3.5  theta_A = 0.6
+Edges in G_A     = 500
+Pruned pairs     = 5278  (91.3%)
+==================================================================

@@ -1,0 +1,213 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 1596
+Threshold θ_T           : 0.75
+Edges in G_T            : 176
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.3542
+  max    : 0.9806
+  mean   : 0.5727
+  median : 0.5482
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  Sales SalesOrderDetail          Sales SpecialOfferProduct       0.9806      4  1.000  0.9806
+  Person BusinessEntity           Person Person                   0.9803      3  1.000  0.9803
+  Person BusinessEntity           Person BusinessEntityAddress    0.9801      3  1.000  0.9801
+  Person BusinessEntity           Sales SalesPersonQuotaHistory   0.9799      3  1.000  0.9799
+  Person BusinessEntity           Person EmailAddress             0.9799      3  1.000  0.9799
+  Person BusinessEntity           Sales SalesTerritoryHistory     0.9798      3  1.000  0.9798
+  Person BusinessEntity           Person BusinessEntityContact    0.9798      3  1.000  0.9798
+  Person BusinessEntity           Sales SalesPerson               0.9797      3  1.000  0.9797
+  Production TransactionHistory   Production TransactionHistoryArchive  0.9797      9  1.000  0.9797
+  Person CountryRegion            Sales SalesTerritory            0.9795      3  1.000  0.9795
+  Production ProductCategory      Production ProductSubcategory   0.9781      4  1.000  0.9781
+  HumanResources Employee         Person BusinessEntity           0.9780      3  1.000  0.9780
+  Person CountryRegion            Person StateProvince            0.9769      3  1.000  0.9769
+  Person BusinessEntity           Sales Store                     0.9742      3  1.000  0.9742
+  Production Product              Production ProductCategory      0.9329      4  1.000  0.9329
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  Sales SalesOrderDetail          Sales SpecialOfferProduct       0.9806
+  Person BusinessEntity           Person Person                   0.9803
+  Person BusinessEntity           Person BusinessEntityAddress    0.9801
+  Person BusinessEntity           Sales SalesPersonQuotaHistory   0.9799
+  Person BusinessEntity           Person EmailAddress             0.9799
+  Person BusinessEntity           Sales SalesTerritoryHistory     0.9798
+  Person BusinessEntity           Person BusinessEntityContact    0.9798
+  Person BusinessEntity           Sales SalesPerson               0.9797
+  Production TransactionHistory   Production TransactionHistoryArchive  0.9797
+  Person CountryRegion            Sales SalesTerritory            0.9795
+  Production ProductCategory      Production ProductSubcategory   0.9781
+  HumanResources Employee         Person BusinessEntity           0.9780
+  Person CountryRegion            Person StateProvince            0.9769
+  Person BusinessEntity           Sales Store                     0.9742
+  Production Product              Production ProductCategory      0.9329
+  Production Product              Production UnitMeasure          0.9112
+  Production Product              Production ProductSubcategory   0.9069
+  Production ScrapReason          Sales SalesReason               0.8918
+  Production ProductCategory      Production ProductModel         0.8858
+  Purchasing PurchaseOrderHeader  Sales SalesOrderHeader          0.8830
+  Production Product              Production ProductListPriceHistory  0.8632
+  Production Product              Production ProductCostHistory   0.8629
+  Sales Customer                  Sales SalesOrderHeader          0.8593
+  Production ScrapReason          Sales Store                     0.8478
+  Production ProductCostHistory   Production WorkOrder            0.8470
+  Sales SalesPerson               Sales SalesPersonQuotaHistory   0.8467
+  Production ProductCategory      Sales SalesTerritory            0.8395
+  Person StateProvince            Production ProductCategory      0.8375
+  Person AddressType              Sales Store                     0.8326
+  Person AddressType              Sales SalesTerritory            0.8315
+  Person AddressType              Sales SalesTaxRate              0.8302
+  Sales Currency                  Sales SalesTerritory            0.8300
+  Person CountryRegion            Sales Currency                  0.8298
+  Person AddressType              Person StateProvince            0.8297
+  Production ProductInventory     Sales SpecialOfferProduct       0.8278
+  Person ContactType              Person PhoneNumberType          0.8271
+  Person AddressType              Person ContactType              0.8269
+  Person StateProvince            Sales Currency                  0.8264
+  Production ScrapReason          Purchasing ShipMethod           0.8260
+  Production ProductListPriceHistory  Production WorkOrder            0.8233
+  Production ProductCostHistory   Production ProductListPriceHistory  0.8231
+  Production Product              Sales SpecialOfferProduct       0.8174
+  Production ProductCategory      Purchasing ShipMethod           0.8144
+  Sales SpecialOffer              Sales SpecialOfferProduct       0.8143
+  Production ProductCategory      Sales SalesTaxRate              0.8141
+  Sales PersonCreditCard          Sales SalesTerritoryHistory     0.8137
+  Sales PersonCreditCard          Sales SalesPerson               0.8136
+  Person AddressType              Production Product              0.8128
+  Person StateProvince            Sales CountryRegionCurrency     0.8122
+  Person AddressType              Person PhoneNumberType          0.8095
+  Person AddressType              Production ProductSubcategory   0.8084
+  Person AddressType              Production ProductModel         0.8073
+  Person Person                   Sales Store                     0.8068
+  Production ProductDescription   Sales SpecialOffer              0.8067
+  Person ContactType              Production Location             0.8048
+  Production Location             Production ScrapReason          0.8042
+  Person ContactType              Production Culture              0.8040
+  Production ScrapReason          Sales SalesTerritory            0.8036
+  Person ContactType              Sales SalesTaxRate              0.8028
+  HumanResources Shift            Person ContactType              0.8022
+  Person AddressType              Production ProductCategory      0.8018
+  Production ProductCategory      Sales Store                     0.8016
+  Person BusinessEntity           Production ProductInventory     0.8012
+  Person ContactType              Sales SalesTerritory            0.7989
+  Person AddressType              Purchasing ShipMethod           0.7986
+  Production Culture              Sales SalesTerritory            0.7974
+  Person StateProvince            Production Culture              0.7949
+  Person ContactType              Production Product              0.7938
+  Production Culture              Production Product              0.7926
+  Person StateProvince            Production UnitMeasure          0.7925
+  Person ContactType              Production ProductModel         0.7910
+  Production UnitMeasure          Sales Currency                  0.7907
+  Person BusinessEntity           Production ProductDescription   0.7906
+  Production Culture              Production ProductModel         0.7898
+  Purchasing ProductVendor        Sales PersonCreditCard          0.7895
+  Production ScrapReason          Sales SalesTaxRate              0.7888
+  Person PhoneNumberType          Production Product              0.7885
+  Production Culture              Sales SalesTaxRate              0.7881
+  HumanResources Employee         Sales SalesPersonQuotaHistory   0.7873
+  Person StateProvince            Production ScrapReason          0.7865
+  Sales SalesReason               Sales Store                     0.7858
+  HumanResources Department       Person ContactType              0.7842
+  Person Address                  Person BusinessEntity           0.7840
+  Person BusinessEntity           Sales SalesOrderHeader          0.7840
+  Sales PersonCreditCard          Sales SalesOrderHeader          0.7836
+  Person Address                  Person BusinessEntityAddress    0.7835
+  Person AddressType              Person BusinessEntityAddress    0.7831
+  Person BusinessEntityContact    Sales PersonCreditCard          0.7825
+  Production Culture              Sales SalesReason               0.7816
+  Production Culture              Sales Store                     0.7813
+  Person ContactType              Sales SalesReason               0.7813
+  Person BusinessEntity           Person StateProvince            0.7810
+  Person ContactType              Production ProductSubcategory   0.7803
+  Production Culture              Production Location             0.7794
+  Person BusinessEntityContact    Person Person                   0.7792
+  Production Culture              Production ProductSubcategory   0.7791
+  Person CountryRegion            Production UnitMeasure          0.7785
+  Person BusinessEntity           Sales Customer                  0.7785
+  Production UnitMeasure          Sales SalesTerritory            0.7784
+  Person AddressType              Person BusinessEntity           0.7784
+  Person BusinessEntity           Sales SalesTerritory            0.7782
+  Person BusinessEntity           Sales SalesTaxRate              0.7780
+  Person CountryRegion            Production Location             0.7776
+  Person ContactType              Production ProductCategory      0.7773
+  Person CountryRegion            Sales SalesReason               0.7768
+  Person PhoneNumberType          Sales SalesReason               0.7765
+  Production Culture              Production ProductCategory      0.7760
+  Person PhoneNumberType          Sales Store                     0.7756
+  Person PhoneNumberType          Sales SalesTerritory            0.7755
+  Person PhoneNumberType          Production Culture              0.7750
+  Person PhoneNumberType          Person StateProvince            0.7731
+  Production Product              Sales Currency                  0.7725
+  Person BusinessEntityAddress    Person BusinessEntityContact    0.7722
+  Person BusinessEntityAddress    Person EmailAddress             0.7719
+  Production Culture              Production UnitMeasure          0.7708
+  Production ProductDescription   Production ProductModel         0.7704
+  Person CountryRegion            Production Product              0.7702
+  Production ScrapReason          Production WorkOrder            0.7700
+  Person PhoneNumberType          Production ProductModel         0.7699
+  Production UnitMeasure          Purchasing ShipMethod           0.7698
+  Production ProductModel         Sales Currency                  0.7694
+  Production UnitMeasure          Sales SalesReason               0.7689
+  Production BillOfMaterials      Production UnitMeasure          0.7686
+  Production BillOfMaterials      Production ProductCostHistory   0.7683
+  Person ContactType              Person StateProvince            0.7681
+  HumanResources Shift            Production UnitMeasure          0.7677
+  Person BusinessEntityContact    Sales SalesTerritoryHistory     0.7677
+  Production ProductModel         Production ProductSubcategory   0.7676
+  Sales SalesTerritoryHistory     Sales SpecialOffer              0.7674
+  Purchasing ShipMethod           Sales SalesOrderHeader          0.7673
+  HumanResources EmployeeDepartmentHistory  Sales PersonCreditCard          0.7673
+  HumanResources Department       Production Culture              0.7662
+  Sales SalesReason               Sales SalesTaxRate              0.7661
+  Person BusinessEntityContact    Sales Store                     0.7658
+  Person PersonPhone              Person PhoneNumberType          0.7657
+  Person BusinessEntity           Sales SalesOrderDetail          0.7656
+  Production ProductSubcategory   Production ScrapReason          0.7656
+  Person BusinessEntity           Sales SpecialOffer              0.7655
+  Production Culture              Purchasing ShipMethod           0.7650
+  Person BusinessEntityAddress    Sales PersonCreditCard          0.7649
+  Sales Currency                  Sales SalesReason               0.7648
+  Production BillOfMaterials      Production ProductListPriceHistory  0.7639
+  HumanResources Employee         Sales PersonCreditCard          0.7634
+  Person PhoneNumberType          Production ProductSubcategory   0.7629
+  Production Product              Production ScrapReason          0.7628
+  Person CountryRegion            Production Culture              0.7619
+  Person ContactType              Person CountryRegion            0.7613
+  HumanResources Department       Production ScrapReason          0.7612
+  Person PersonPhone              Sales PersonCreditCard          0.7608
+  Person ContactType              Purchasing ShipMethod           0.7607
+  Person CountryRegion            Production ScrapReason          0.7606
+  Person BusinessEntity           Purchasing ShipMethod           0.7605
+  Person PhoneNumberType          Production ProductCategory      0.7601
+  HumanResources Department       Person PhoneNumberType          0.7601
+  Production Product              Production ProductModel         0.7600
+  Production ProductCategory      Production ScrapReason          0.7600
+  Person CountryRegion            Production ProductSubcategory   0.7599
+  Person AddressType              Production Culture              0.7597
+  Person PhoneNumberType          Sales SalesTaxRate              0.7595
+  Production Culture              Production ScrapReason          0.7595
+  Person CountryRegion            Production ProductCategory      0.7592
+  Person AddressType              Sales Currency                  0.7591
+  Person PhoneNumberType          Purchasing ShipMethod           0.7588
+  Person Person                   Sales PersonCreditCard          0.7582
+  HumanResources Shift            Production ScrapReason          0.7580
+  Person CountryRegion            Production ProductModel         0.7572
+  Sales SalesOrderHeader          Sales SalesTerritoryHistory     0.7567
+  Person BusinessEntity           Purchasing ProductVendor        0.7566
+  Production ProductCostHistory   Production WorkOrderRouting     0.7565
+  Person EmailAddress             Sales PersonCreditCard          0.7558
+  HumanResources Shift            Production Culture              0.7550
+  Sales PersonCreditCard          Sales Store                     0.7550
+  Person BusinessEntityAddress    Person Person                   0.7527
+  Sales SalesPerson               Sales SalesTerritoryHistory     0.7523
+  Sales SalesPersonQuotaHistory   Sales Store                     0.7512
+  Production Location             Production UnitMeasure          0.7507
+======================================================================

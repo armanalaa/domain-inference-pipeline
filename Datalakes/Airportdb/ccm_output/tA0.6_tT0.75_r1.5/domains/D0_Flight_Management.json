@@ -1,0 +1,357 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Flight Management",
+    "definition": "The process of managing flights, including scheduling, airline assignment, and airplane allocation.",
+    "tables": [
+      "airplane",
+      "flight",
+      "flightschedule"
+    ],
+    "n_tables": 3,
+    "n_columns_total": 25,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "airplane": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "airplane_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in airplane",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "capacity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the maximum number of passengers an airplane can carry.",
+          "samples": [
+            150,
+            200,
+            380,
+            50,
+            335
+          ]
+        },
+        {
+          "name": "type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the type_ entity",
+          "samples": [
+            228,
+            38,
+            60,
+            232,
+            21
+          ]
+        },
+        {
+          "name": "airline_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the airline_ entity",
+          "samples": [
+            89,
+            32,
+            57,
+            23,
+            47
+          ]
+        }
+      ]
+    },
+    "flight": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "flight_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in flight",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "flightno",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 alphanumeric flight identifiers for aircraft journeys, typically in Air France format.",
+          "samples": [
+            "AF1078",
+            "AF1377",
+            "AF1518",
+            "AF1593",
+            "AF1632"
+          ]
+        },
+        {
+          "name": "from",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores airport identification codes for flight origin.",
+          "samples": [
+            9084,
+            4478,
+            1667,
+            602,
+            12907
+          ]
+        },
+        {
+          "name": "to",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores airport IDs of destinations for flights.",
+          "samples": [
+            2658,
+            12595,
+            11740,
+            64,
+            3249
+          ]
+        },
+        {
+          "name": "departure",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores departure times for flights in a format of YYYY-MM-DD HH:MI:SS.",
+          "samples": [
+            "2015-06-01 10:15:00",
+            "2015-06-01 23:41:00",
+            "2015-06-01 03:39:00",
+            "2015-06-01 00:02:00",
+            "2015-06-01 19:44:00"
+          ]
+        },
+        {
+          "name": "arrival",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores scheduled arrival times for flights in a format of YYYY-MM-DD HH:MI:SS.",
+          "samples": [
+            "2015-06-01 20:46:00",
+            "2015-06-02 10:05:00",
+            "2015-06-01 11:13:00",
+            "2015-06-01 16:48:00",
+            "2015-06-02 09:22:00"
+          ]
+        },
+        {
+          "name": "airline_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the airline_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "airplane_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the airplane_ entity",
+          "samples": [
+            2635,
+            2607,
+            2566,
+            2565,
+            2595
+          ]
+        }
+      ]
+    },
+    "flightschedule": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "flightno",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 alphanumeric flight identifiers for scheduled flights.",
+          "samples": [
+            "AF1078",
+            "AF1289",
+            "AF1294",
+            "AF1363",
+            "AF1377"
+          ]
+        },
+        {
+          "name": "from",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores airport identification numbers for flight departures.",
+          "samples": [
+            9084,
+            3574,
+            3663,
+            5037,
+            4478
+          ]
+        },
+        {
+          "name": "to",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores flight destination identifiers as integer codes.",
+          "samples": [
+            2658,
+            260,
+            8341,
+            8335,
+            12595
+          ]
+        },
+        {
+          "name": "departure",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores departure times in a 10-character format (HH:MM:SS).",
+          "samples": [
+            "10:15:00",
+            "02:52:00",
+            "19:26:00",
+            "21:32:00",
+            "23:41:00"
+          ]
+        },
+        {
+          "name": "arrival",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores arrival times in 24-hour format (HH:MM:SS).",
+          "samples": [
+            "20:46:00",
+            "11:31:00",
+            "07:29:00",
+            "23:32:00",
+            "10:05:00"
+          ]
+        },
+        {
+          "name": "airline_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the airline_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "monday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a flight is scheduled on Mondays (true for 1, false for 0)",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "tuesday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates whether a flight is scheduled on Tuesdays (true for 1, false for 0).",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wednesday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a flight is scheduled on Wednesdays (true for 1, false for 0)",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "thursday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates whether a flight is scheduled on Thursdays (true for 1, false for 0).",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "friday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a flight is scheduled on Fridays (true for 1, false for 0)",
+          "samples": [
+            "0",
+            "1",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "saturday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "The boolean column indicates if a flight is scheduled on Saturdays.",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "sunday",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a flight is scheduled on Sundays (true=1, false=0)",
+          "samples": [
+            "0",
+            "1",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

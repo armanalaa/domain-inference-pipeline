@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers define the call center's structure by assigning roles, divisions, and responsibilities.
+- HR managers recruit and hire new employees for various positions within the call center.
+- Call center managers allocate appropriate workspace (sq ft) to each employee based on their role.
+- HR managers establish working hours for each employee according to the call center's schedule.
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers determine market segments and classes for the call center operations.
+- Market managers are assigned specific markets based on their expertise and the call center's strategy.
+
+## 3. Call Center Setup
+
+Performed By: Warehouse Staff, IT Technicians
+
+Activity:
+- Warehouse staff equip call centers with necessary equipment such as phones and headsets.
+- IT technicians configure and set up the call center's technology infrastructure.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Marketing teams create and manage catalog pages to showcase products and services.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives take customer orders over the phone or through the call center.
+- Warehouse staff prepare and ship ordered items to customers based on their location.
+
+## 6. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns by recording return details and reasons.
+- Warehouse staff process returned items and update inventory accordingly.
+
+## 7. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records all financial transactions, including tax percentages, to maintain accurate financial reports.

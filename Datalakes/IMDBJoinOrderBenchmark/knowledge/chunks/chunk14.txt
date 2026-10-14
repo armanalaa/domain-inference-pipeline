@@ -1,0 +1,65 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the integrity and performance of the IMDBJoinOrderBenchmark database.
+- Content managers input new movies by recording their titles, production years, and associated companies.
+- Content managers assign unique identifiers to each movie and associated table entries.
+
+## 2. Actor/Actress Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Content managers input actor and actress information, including names, genders, and associated movies.
+- Database administrators ensure consistent data formatting across the database.
+
+## 3. Alias Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Content managers record alternative names for people and movies in the 'aka_name' and 'aka_title' tables respectively.
+- Database administrators ensure aliases are unique within their respective tables.
+
+## 4. Company Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Content managers input company information, including names, countries, and associated movies.
+- Database administrators categorize companies based on type for easier querying.
+
+## 5. Character Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Content managers input character names and their associated movies.
+- Database administrators ensure consistency in character name formatting across the database.
+
+## 6. Keyword Tagging
+
+Performed By: Content Managers, Data Analysts
+
+Activity:
+- Content managers assign relevant keywords to movies for easier search and categorization.
+- Data analysts review and update keywords as needed to improve search functionality.
+
+## 7. Linking Movies and Related Entities
+
+Performed By: Database Administrators
+
+Activity:
+- Database administrators establish relationships between movies, actors/actresses, characters, companies, and keywords.
+
+## 8. Query Optimization and Analysis
+
+Performed By: Data Analysts, Database Administrators
+
+Activity:
+- Data analysts analyze query performance to identify areas for improvement.
+- Database administrators implement optimizations to enhance the efficiency of queries on the IMDBJoinOrderBenchmark database.

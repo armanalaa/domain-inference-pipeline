@@ -1,0 +1,59 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, IT Support
+
+Activity:
+- Call center managers assign specific call centers to market divisions (cc_mkt_id).
+- IT support configures call center devices to handle the specified number of connections (cc_employees).
+- Call center managers set operating hours for each call center (cc_hours).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls and direct them to appropriate departments (cc_call_center_id).
+- Call center managers monitor call center performance and adjust staffing levels as needed (cc_employees).
+- Call center employees record call details such as start date, end date, and closure details (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers update the catalog with new items by providing product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- IT support maintains the catalog page structure and ensures it is accessible via terminals (cp_catalog_page_sk).
+
+## 4. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return date, time, item SKU, and customer details (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff retrieve the returned items from inventory and prepare them for shipment back to customers (cr_warehouse_sk).
+
+## 5. Order Fulfillment
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process new orders by selecting appropriate items from the catalog, determining shipping mode, and recording order details (cr_order_number, cr_ship_mode_sk).
+- Warehouse staff pick and pack the ordered items for shipment to customers (cr_warehouse_sk).
+
+## 6. Inventory Tracking
+
+Performed By: Warehouse Staff, IT Support
+
+Activity:
+- Warehouse staff update inventory levels by recording the quantity of each item received or shipped (cr_return_quan).
+- IT support maintains the inventory database to ensure accurate tracking of all items in stock (not specified table/column).
+
+## 7. Performance Monitoring and Reporting
+
+Performed By: Call Center Managers, IT Analysts
+
+Activity:
+- Call center managers monitor call center performance metrics such as average handling time and service level (not specified column/table).
+- IT analysts generate reports based on call center data for analysis and decision making (not specified table/column).

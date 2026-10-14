@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams negotiate prices with suppliers for common products and update the price column accordingly.
+- Product managers assign actors to each product and update the actor column as needed.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create new customer accounts by entering first name, last name, address details, email, phone, credit card type, and other relevant information.
+- HR managers update customer details such as age, income, gender, and region when necessary.
+- Customers manage their own account information through the self-service portal.
+
+## 3. Order Placement
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives place orders on behalf of customers by selecting products, quantities, and order dates from the inventory.
+- Customers browse the catalog, add items to their cart, and submit orders through the self-service portal.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff retrieve ordered products from stock and update the quan_in_stock column accordingly.
+- Sales representatives generate orderlines by associating each product with its respective quantity, order date, and customer ID.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff package ordered products for shipment and update the sales column to reflect the fulfilled orders.
+- Shipping teams prepare shipping labels, track packages, and update orderlines with tracking numbers.
+
+## 6. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team calculates net amount, tax, and total amount for each order based on product prices, quantities, and taxes.
+- Finance team generates invoices and sends them to customers via email or other communication channels.
+
+## 7. Reordering
+
+Performed By: Purchasing Teams, Inventory Managers
+
+Activity:
+- Inventory managers monitor stock levels and update the quan_in_stock column when necessary.
+- Purchasing teams reorder low-stock products by setting date_low, quan_low, and initiating the reordering process.
+
+## 8. Reporting and Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract data from various tables to create reports on sales, inventory levels, customer behavior, and other key performance indicators.
+- Management reviews these reports to make informed decisions about product offerings, pricing strategies, and operational improvements.

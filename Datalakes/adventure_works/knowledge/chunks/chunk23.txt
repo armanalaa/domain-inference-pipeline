@@ -1,0 +1,57 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- HR managers assign employees to departments by specifying the DepartmentID, ShiftID, StartDate, and EndDate for each employee-department history record.
+- HR managers update employee records with rate changes by recording the RateChangeDate, Rate, PayFrequency, and ModifiedDate for each employee pay history record.
+
+## 2. Employee Information Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers update employee information such as address, contact details, or marital status by recording the relevant details in the appropriate BusinessEntityAddress and BusinessEntityContact records.
+- Warehouse staff track employee shifts by updating the EndDate for each employee-department history record when an employee changes departments.
+
+## 3. Address Management
+
+Performed By: Person Address Staff
+
+Activity:
+- Person Address staff register new addresses by recording the AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation for each address record.
+- Person Address staff update address details by modifying the relevant columns in an existing address record.
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price for each item.
+- Product managers update product information such as cost or list price over time by creating records in the Production.ProductCostHistory and Production.ProductListPriceHistory tables respectively.
+
+## 5. Assembly Management
+
+Performed By: Production Managers
+
+Activity:
+- Production managers create new assembly items by recording the BillOfMaterialsID, ProductAssemblyID, ComponentID, AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate, Quantity, UnitMeasureCode, BOMLevel, and ModifiedDate for each component in the Production.BillOfMaterials table.
+- Production managers update assembly information such as cost or quantity over time by modifying the relevant columns in an existing assembly record.
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff track inventory levels by updating the EndDate for each component in the Production.BillOfMaterials table when an item is used or added to the inventory.
+
+## 7. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives place orders by specifying the required products and quantities for each order.
+- Customer service agents update order statuses by modifying the relevant columns in an existing order record.

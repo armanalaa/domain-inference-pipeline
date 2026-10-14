@@ -1,0 +1,44 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee information in the system, including personal details, employment history, and performance records (cc_name, cc_company, cc_street_number, cc_street_name, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Call center managers determine the operating hours for each call center (cc_hours).
+- HR managers set the manager for each call center (cc_manager).
+
+## 2. Market Division and Classification
+
+Performed By: Market Managers, Data Analysts
+
+Activity:
+- Market managers categorize call centers into different divisions based on geographical location or market segment (cc_division, cc_division_name).
+- Market managers classify call centers according to their specific function or service offered (cc_class).
+- Data analysts update the marketing description for each division (cc_mkt_desc).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels for each item (not specified in provided schema).
+
+## 4. Customer Interaction and Support
+
+Performed By: Sales Representatives, Call Center Staff
+
+Activity:
+- Sales representatives assist customers with product inquiries and process orders (not specified in provided schema).
+- Call center staff handle customer complaints or returns by recording return details (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk, cr_call_center_sk).
+
+## 5. Transaction Processing and Isolation Testing
+
+Performed By: Data Managers, Transaction Handlers
+
+Activity:
+- Data managers initiate transactions to test the system's isolation properties (not specified in provided schema).
+- Transaction handlers execute the steps outlined in Isolation Tests 7 and 8 to verify the system's ability to maintain data integrity during concurrent transactions.

@@ -1,0 +1,50 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Staff, Healthcare Providers
+
+Activity:
+- Pharmaceutical company staff register adverse events by recording event details, product information, and reporter contact.
+- Healthcare providers document patient symptoms, medication history, and treatment outcomes related to the reported adverse event.
+- Pharmaceutical company staff assign MedDRA version for assessing the adverse event.
+- Staff evaluate the relatedness of the drug to the adverse event using specified methods.
+- They record additional information on the drug, such as dosage and duration of administration.
+
+## 2. Case Narrative Creation
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Staff compile a comprehensive narrative case summary that includes clinical course, therapeutic measures, outcome, and additional relevant information.
+- They include the reporter's comments in the narrative.
+
+## 3. Diagnosis Recording
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Staff record the sender's diagnosis using MedDRA version.
+- They document any reclassification of the reaction/event based on additional information.
+
+## 4. Assessment and Result Documentation
+
+Performed By: External Assessors (e.g., Medical Experts)
+
+Activity:
+- External assessors evaluate the adverse event, determining its relatedness to the drug, assessment method, and result.
+- They document their findings and conclusions in the database.
+
+## 5. Additional Information Collection
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Staff collect any additional information on the drug that may be relevant to the adverse event investigation.
+
+## 6. Case Submission
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Staff submit the complete case report, including narrative, diagnosis, assessment, and additional information, for further analysis and action.

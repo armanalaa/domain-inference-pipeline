@@ -1,0 +1,60 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Department Transfers Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Assign employees to departments based on job requirements and department needs (DepartmentID).
+- Record the start date for an employee's transfer to a new department (StartDate).
+- Update employee department transfers when an employee leaves a department or moves to a current department (EndDate).
+- Document any changes made to employee department history records (ModifiedDate).
+
+## 2. Employee Shift Allocation
+
+Performed By: Human Resources Managers, Warehouse Staff
+
+Activity:
+- Determine the shift that each employee works based on their job responsibilities and business needs (ShiftID).
+- Update employee shift allocation when an employee changes shifts or starts a new position (ModifiedDate).
+
+## 3. Employee Payroll Management
+
+Performed By: Human Resources Managers, Finance Team
+
+Activity:
+- Record the hourly rate for each employee (Rate).
+- Set the pay frequency for employees (PayFrequency).
+- Update employee pay history when there is a change in pay or salary (ModifiedDate).
+
+## 4. Job Candidate Resume Submission
+
+Performed By: Job Applicants, Human Resources Managers
+
+Activity:
+- Submit resumes to the Human Resources department in XML format (Resume).
+- Update job candidate records with the date and time of submission (ModifiedDate).
+
+## 5. Shift Management
+
+Performed By: Human Resources Managers, Warehouse Staff
+
+Activity:
+- Define work shifts with descriptions, start times, and end times (Name, StartTime, EndTime).
+- Update shift information when necessary (ModifiedDate).
+
+## 6. Employee Onboarding
+
+Performed By: Human Resources Managers, HR Assistants
+
+Activity:
+- Register new employees in the system by recording their identification numbers, personal details, and employment details (BusinessEntityID, NationalIDNumber, LoginID, OrganizationNode, OrganizationLevel, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag).
+- Assign employees to departments and shifts upon hire (DepartmentID, ShiftID).
+
+## 7. Employee Department History Tracking
+
+Performed By: Human Resources Managers, HR Assistants
+
+Activity:
+- Maintain a history of an employee's department transfers, including start and end dates for each transfer (StartDate, EndDate).
+- Record any changes made to the employee department history records (ModifiedDate).

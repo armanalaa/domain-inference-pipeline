@@ -1,0 +1,111 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 27
+Edges in G_T         : 52
+θ_T applied in Step 4: 0.75
+Domains discovered   : 10
+Modularity Q         : 0.3144
+
+──────────────────────────────────────────────────────────────────────
+D0  Awards and Recognition Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifies the tables related to determining, managing, and recording awards for players.
+  Tables     : AwardsManagers, AwardsPlayers, AwardsShareManagers, AwardsSharePlayers, CollegePlaying
+  Phi top-3  : C12=0.409  C4=0.399  C15=0.370
+
+──────────────────────────────────────────────────────────────────────
+D1  Player and Statistical Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of maintaining, updating, collecting, and analyzing player data and statistics.
+  Tables     : People
+  Phi top-3  : C1=0.326  C3=0.299  C5=0.295
+
+──────────────────────────────────────────────────────────────────────
+D2  Player Awards and Recognition Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing awards, nominations, and recognitions for players based on their performance.
+  Tables     : HallOfFame
+  Phi top-3  : C12=0.363  C1=0.360  C4=0.324
+
+──────────────────────────────────────────────────────────────────────
+D3  Baseball Performance and Team Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of recording, analyzing, and managing baseball player performance statistics, team statistics, and team management details.
+  Tables     : Batting, BattingPost, Managers, ManagersHalf, Pitching, PitchingPost, Teams, TeamsHalf
+  Phi top-3  : C15=0.441  C3=0.439  C5=0.404
+
+──────────────────────────────────────────────────────────────────────
+D4  Baseball Player Performance and Statistical Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of recording, analyzing, and managing baseball player performance statistics, fielding data, and salaries.
+  Tables     : AllstarFull, Appearances, Fielding, FieldingOF, FieldingOFsplit, FieldingPost, Salaries
+  Phi top-3  : C3=0.486  C15=0.418  C1=0.417
+
+──────────────────────────────────────────────────────────────────────
+D5  Baseball Team and Player Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing data related to schools, players, games, awards, and team statistics.
+  Tables     : Schools
+  Phi top-3  : C1=0.352  C14=0.338  C5=0.286
+
+──────────────────────────────────────────────────────────────────────
+D6  Baseball Team and Player Data Governance
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing, maintaining, and governing data related to teams, players, awards, statistics, and other baseball-related information.
+  Tables     : TeamsFranchises
+  Phi top-3  : C15=0.482  C1=0.479  C10=0.404
+
+──────────────────────────────────────────────────────────────────────
+D7  Baseball Performance and Team Analysis
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of recording, analyzing, and comparing team and player statistics in baseball.
+  Tables     : SeriesPost
+  Phi top-3  : C15=0.421  C3=0.378  C5=0.378
+
+──────────────────────────────────────────────────────────────────────
+D8  Baseball Game and Statistical Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing game details, player statistics, fielding statistics, and team analysis for baseball games.
+  Tables     : HomeGames
+  Phi top-3  : C1=0.411  C15=0.392  C3=0.383
+
+──────────────────────────────────────────────────────────────────────
+D9  Stadium and Park Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing stadiums and parks information, including their details, locations, and updates.
+  Tables     : Parks
+  Phi top-3  : C7=0.445  C1=0.393  C3=0.333
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  AwardsManagers                       D       0  Awards and Recognition Management
+  AwardsPlayers                        D       0  Awards and Recognition Management
+  AwardsShareManagers                  D       0  Awards and Recognition Management
+  AwardsSharePlayers                   D       0  Awards and Recognition Management
+  CollegePlaying                       D       0  Awards and Recognition Management
+  People                               D       1  Player and Statistical Data Management
+  HallOfFame                           D       2  Player Awards and Recognition Management
+  Batting                              D       3  Baseball Performance and Team Management
+  BattingPost                          D       3  Baseball Performance and Team Management
+  Managers                             D       3  Baseball Performance and Team Management
+  ManagersHalf                         D       3  Baseball Performance and Team Management
+  Pitching                             D       3  Baseball Performance and Team Management
+  PitchingPost                         D       3  Baseball Performance and Team Management
+  Teams                                D       3  Baseball Performance and Team Management
+  TeamsHalf                            D       3  Baseball Performance and Team Management
+  AllstarFull                          D       4  Baseball Player Performance and Statistical Data Management
+  Appearances                          D       4  Baseball Player Performance and Statistical Data Management
+  Fielding                             D       4  Baseball Player Performance and Statistical Data Management
+  FieldingOF                           D       4  Baseball Player Performance and Statistical Data Management
+  FieldingOFsplit                      D       4  Baseball Player Performance and Statistical Data Management
+  FieldingPost                         D       4  Baseball Player Performance and Statistical Data Management
+  Salaries                             D       4  Baseball Player Performance and Statistical Data Management
+  Schools                              D       5  Baseball Team and Player Data Management
+  TeamsFranchises                      D       6  Baseball Team and Player Data Governance
+  SeriesPost                           D       7  Baseball Performance and Team Analysis
+  HomeGames                            D       8  Baseball Game and Statistical Data Management
+  Parks                                D       9  Stadium and Park Management
+======================================================================

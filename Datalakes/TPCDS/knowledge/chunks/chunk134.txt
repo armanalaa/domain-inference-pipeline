@@ -1,0 +1,51 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers define the call center's structure by assigning roles, divisions, and market segments (cc_division, cc_division_name, cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- HR managers recruit and hire new employees for the call center (cc_employees).
+- Call center managers allocate workspace to each employee (cc_sq_ft).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Managers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Call center managers set operational hours for the call center (cc_hours).
+- Sales representatives handle customer inquiries and process orders over the phone (cr_order_number).
+- Warehouse staff track inventory levels and prepare items for shipping when an order is placed (cr_warehouse_sk).
+
+## 3. Customer Service
+
+Performed By: Call Center Employees, Customers
+
+Activity:
+- Call center employees answer customer calls during the call center's operational hours (cc_hours).
+- Customers place orders or inquire about products through the call center (cr_order_number).
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the product catalog by providing details such as product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing managers categorize products based on market segments and classify them according to their marketing strategy (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+
+## 5. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns from customers by recording the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update inventory levels when a return is processed (cr_warehouse_sk).
+
+## 6. Performance Monitoring
+
+Performed By: Call Center Managers, IT Administrators
+
+Activity:
+- Call center managers monitor call center performance by tracking key metrics such as open and closed dates, hours of operation, and employee count (cc_rec_start_date, cc_closed_date_sk, cc_open_date_sk, cc_employees).
+- IT administrators ensure the system's availability and performance to support call center operations (not specified in provided schema).

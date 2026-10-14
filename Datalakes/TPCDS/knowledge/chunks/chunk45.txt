@@ -1,0 +1,47 @@
+ # TPC-DS — Business Workflows
+
+## 1. Result Submission and Alerting
+
+Performed By: Test Sponsors, TPC Administrator, Steering Committee
+
+Activity:
+- Test sponsors register new results by recording the result details and submitting them to the TPC within specified deadlines (6.5.4.1, 6.5.4.2).
+- Test sponsors send Alert Messages via email to notify all members about new results, changes in status or pricing (6.6).
+- The TPC Administrator receives and processes the Alert Messages, registering the FDR as an official Result or withdrawing an existing one (6.6.1).
+- If necessary, the Steering Committee is notified if Result Log Files are not received within five business days (6.5.4.2).
+
+## 2. Copyright Permission Management
+
+Performed By: Test Sponsors
+
+Activity:
+- Upon submitting Result Documentation to the TPC, test sponsors grant permission for the TPC to copy, post, and distribute the submitted documentation (6.5.5).
+
+## 3. Executive Summary and FDR Submission
+
+Performed By: Test Sponsors
+
+Activity:
+- Test sponsors attach an Adobe Acrobat PDF file of the Result’s Executive Summary to the Alert Message (6.6).
+- If a replacement FDR is submitted, test sponsors state whether it requires review or not (6.6.2).
+
+## 4. Withdrawal of Results
+
+Performed By: Test Sponsors
+
+Activity:
+- Test sponsors withdraw results by explicitly stating the withdrawal category (1 or 2) and providing a rationale, if necessary (6.6.3).
+
+## 5. Result Documentation Management
+
+Performed By: TPC Administrator
+
+Activity:
+- The TPC Administrator manages the submitted Result Documentation, including copying, posting, and distributing it as permitted by the Test Sponsor (6.5.5).
+
+## 6. Result List Maintenance
+
+Performed By: TPC Administrator
+
+Activity:
+- The TPC Administrator maintains the TPC Result List, ensuring that only compliant results are registered and official (6.6.1).

@@ -1,0 +1,62 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received or shipped.
+- Product managers set special and common_prod_id for promotional offers or similar products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details like firstname, lastname, address, email, phone, creditcardtype, and age during account creation.
+- Customer service agents update contact information as needed.
+- HR managers assign username, "password", creditcardexpiration, and other personal data when onboarding new employees.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff, Purchasing Teams, Finance
+
+Activity:
+- Customers place orders by selecting products, quantities, and order dates from the catalog.
+- Sales representatives confirm orders and generate orderids.
+- Warehouse staff track quan_in_stock to prepare items for shipment.
+- Purchasing teams issue purchase orders based on expected sales.
+- Finance records netamount, tax, and totalamount for each order.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams, Inventory Staff
+
+Activity:
+- Warehouse staff update quan_in_stock when products are received or shipped.
+- Purchasing teams monitor date_low and quan_low to initiate reorders.
+- Inventory staff record date_reordered, quan_reordered, and date_expected for each reorder.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack items based on orderlines.
+- Shipping teams generate shipping labels and track orders until delivery.
+
+## 6. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards assign ownership to specific people or teams for each table, column, and dataset.
+- IT administrators ensure proper documentation and accountability across the organization.
+
+## 7. Impact Analysis
+
+Performed By: Database Administrators, Developers
+
+Activity:
+- Before making database changes, database administrators use impact analysis to see every report, dashboard, and ETL job that uses affected columns or tables.

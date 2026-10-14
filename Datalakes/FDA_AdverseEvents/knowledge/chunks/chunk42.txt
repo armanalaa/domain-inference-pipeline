@@ -1,0 +1,62 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Case Report Submission
+
+Performed By: Adverse Event Reporter (External)
+
+Activity:
+- Adverse event reporters register new cases by providing the safety report unique identifier.
+- Reporters specify the primary source country where the reaction/event occurred.
+- They record the date of this transmission format and the actual date of transmission.
+- Reporters also indicate the type of report, seriousness criteria, and additional documents available.
+
+Performed By: FDA System Administrator
+
+Activity:
+- The system administrator verifies the received date format and the actual received date.
+
+## 2. Case Data Validation
+
+Performed By: FDA Data Validators
+
+Activity:
+- Data validators check the report type, seriousness criteria, and additional document availability.
+- They ensure the received date matches the received date format.
+
+## 3. Case Information Processing
+
+Performed By: FDA Case Processors
+
+Activity:
+- Case processors record the most recent information for this report in the database.
+- They update the date of receipt of the most recent information for this report.
+
+## 4. Case Review and Assessment
+
+Performed By: FDA Medical Officers
+
+Activity:
+- Medical officers review the narrative case summary and further information.
+- They assess the drug reaction relatedness using specific criteria.
+
+## 5. Case Classification and Coding
+
+Performed By: FDA Coders
+
+Activity:
+- Coders classify and code the adverse event based on MedDRA version.
+
+## 6. Case Archiving and Retrieval
+
+Performed By: FDA System Administrator
+
+Activity:
+- The system administrator archives the case report for future reference and retrieval.
+
+## 7. Case Report Follow-up
+
+Performed By: FDA Case Managers
+
+Activity:
+- Case managers follow up on additional documents held by the sender, if any.
+- They determine whether the case fulfills local criteria for an expedited report.

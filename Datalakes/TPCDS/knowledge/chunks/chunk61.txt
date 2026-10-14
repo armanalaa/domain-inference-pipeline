@@ -1,0 +1,60 @@
+ # TPC-DS — Business Workflows
+
+## 1. Auditor Candidate Examination Management
+
+Performed By: TPC Administrator, Benchmark Subcommittee
+
+Activity:
+- The TPC Administrator selects questions for the auditor candidate exam from the set maintained by the Benchmark Subcommittee (Policies § 4.1.8.1).
+- The SC reviews the exam results and determines if a re-test is necessary (9.3.2.2).
+- The TPC Administrator notifies candidates of their exam results and next steps (9.3.2.2, 9.3.3.2).
+
+## 2. Apprenticeship Management
+
+Performed By: SC, Auditors
+
+Activity:
+- The SC determines if an audit internship is necessary for the apprentice auditor (9.3.3.1).
+- An Auditor provides hands-on experience to the apprentice auditor (9.3.3.1).
+- The Auditor submits a written endorsement of the apprentice auditor to the SC (9.3.3.2).
+
+## 3. Certification Process
+
+Performed By: Auditor Certification Board, SC
+
+Activity:
+- The ACB reviews the candidate’s credentials and makes a recommendation to the SC (9.3.4.1).
+- The ACB schedules an individual interview with each candidate (9.3.4.1).
+- The ACB notifies the candidate and the SC of its recommendation within three days of the interview (9.3.4.1).
+
+## 4. Call Center Management
+
+Performed By: TPC Administrator, CC_market_manager, CC_division
+
+Activity:
+- The TPC Administrator designates a time and place for in-person exams (Policies § 9.3.2.2).
+- Under extenuating circumstances, the TPC Administrator administers the exam remotely (Policies § 9.3.2.2).
+- CC_market_manager and CC_division manage call centers for the benchmark (call_center table).
+
+## 5. Exam Question Management
+
+Performed By: Benchmark Subcommittee, TPC Administrator
+
+Activity:
+- The Benchmark Subcommittee maintains a set of questions for auditor candidate exams (Policies § 4.1.8.1).
+- The TPC Administrator selects questions from the set for each exam (Policies § 4.1.8.1).
+
+## 6. Catalog Management
+
+Performed By: Product managers, catalog_page, catalog_returns
+
+Activity:
+- Product managers register new items in the catalog (catalog_page table).
+- Customers return items and initiate refunds (catalog_returns table).
+
+## 7. Exam Grading
+
+Performed By: TPC Administrator
+
+Activity:
+- The TPC Administrator grades the auditor candidate exam based on the maximum score and passing threshold (Policies § 9.3.2.2).

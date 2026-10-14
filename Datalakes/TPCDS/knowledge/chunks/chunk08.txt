@@ -1,0 +1,66 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Customer Service Representatives (CSRs), Supervisors
+
+Activity:
+- CSRs answer customer inquiries about products and services using call logs and customer information from the `call_center` table.
+- CSRs update call logs with call duration, outcome, and resolution details after each interaction.
+- Supervisors monitor CSR performance by reviewing call logs and quality assurance metrics from the `call_center` and `employee_performance` tables.
+- Supervisors provide coaching and feedback to CSRs based on their performance evaluations.
+
+## 2. Product Management
+
+Performed By: Product Managers, Marketing Analysts
+
+Activity:
+- Product Managers define product specifications, pricing, and promotions using product information from the `product` table.
+- Marketing Analysts analyze sales data from the `sales_fact` table to identify trends and customer preferences for each product.
+- Based on analysis results, Product Managers adjust product offerings, pricing strategies, and marketing campaigns accordingly.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Workers
+
+Activity:
+- Sales Representatives process orders from customers using order details from the `orders` table.
+- Sales Representatives update order statuses in the `orders` table and notify customers about their orders.
+- Warehouse Workers pick, pack, and ship ordered items based on order details and inventory levels from the `inventory` table.
+- Warehouse Workers update inventory levels in the `inventory` table after each shipment.
+
+## 4. Inventory Management
+
+Performed By: Inventory Managers, Purchasing Agents
+
+Activity:
+- Inventory Managers monitor and adjust inventory levels based on sales data from the `sales_fact` table and stock alerts from the `inventory` table.
+- Purchasing Agents place orders for new inventory items when stock levels fall below minimum thresholds, using vendor information from the `vendor` table.
+- Inventory Managers update inventory levels in the `inventory` table after receiving new shipments.
+
+## 5. Financial Management
+
+Performed By: Accountants, Finance Analysts
+
+Activity:
+- Accountants process invoices and payments using transaction data from the `transactions` table.
+- Finance Analysts analyze financial reports generated from the `financial_fact` table to track revenue, expenses, and profitability.
+- Based on analysis results, Accountants make adjustments to accounting entries as needed.
+
+## 6. Customer Relationship Management (CRM)
+
+Performed By: Sales Representatives, Marketing Analysts
+
+Activity:
+- Sales Representatives use customer information from the `customer` table to identify potential leads and upselling opportunities.
+- Marketing Analysts segment customers based on demographic and behavioral data from the `customer_demographics` and `web_logs` tables for targeted marketing campaigns.
+- Sales Representatives update customer profiles with interaction history and contact information in the `customer` table.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business Analysts extract data from various tables (e.g., `call_center`, `orders`, `sales_fact`) to create reports and dashboards for different departments.
+- Management reviews reports and dashboards to make informed decisions about business strategy and operations.
+- Based on insights gained, Management sets goals and objectives for each department.

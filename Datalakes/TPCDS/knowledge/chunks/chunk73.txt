@@ -1,0 +1,51 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Subcommittee Management
+
+Performed By: Benchmark Subcommittee Members
+
+Activity:
+- Collaborate on the development of a new benchmark standard by discussing and providing feedback during General Meetings.
+- Prepare a working draft of the Specification for presentation at General Meetings.
+- Submit the Specification to the Council for approval to advance into formal review.
+
+## 2. Benchmark Standard Approval Process
+
+Performed By: Benchmark Subcommittee, Council Members
+
+Activity:
+- Review the submitted Specification during a formal review period of 60 days.
+- Consider and resolve comments generated from the review.
+- Propose resolution of comments as an updated Benchmark Standard to the Council for approval.
+
+## 3. TPC-Provided Kit Release
+
+Performed By: Council Members
+
+Activity:
+- Authorize the release of a draft TPC-Provided Kit to the public when deemed advisable.
+- Encourage companies to run the draft kit, document results, and discuss findings with All Members and customers.
+
+## 4. Results Publication and Discussion
+
+Performed By: Companies, All Members, Customers
+
+Activity:
+- Run the TPC-Provided Kit and publish technical articles or make presentations discussing results.
+- Adhere to the conditions in Policies § 8.1 (Use of TPC Materials) and Policies § 8.3 (Fair Use of TPC Specifications).
+
+## 5. Benchmark Standard Publication
+
+Performed By: Council Members
+
+Activity:
+- Approve the updated Benchmark Standard proposed by the Benchmark Subcommittee.
+- Publish the approved Benchmark Standard as a TPC Result that can be publicized.
+
+## 6. Benchmark Development Work
+
+Performed By: Benchmark Subcommittee, Council Members
+
+Activity:
+- Continue work on developing a new benchmark standard if authorized by the Council.
+- Disband the subcommittee at the conclusion of the General Meeting if the Council does not authorize continued work.

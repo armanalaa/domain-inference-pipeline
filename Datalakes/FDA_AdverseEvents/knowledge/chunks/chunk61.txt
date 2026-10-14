@@ -1,0 +1,54 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Pharmaceutical Company Staff, Healthcare Professionals, Consumers
+
+Activity:
+- Pharmaceutical company staff compile adverse event details and generate an Individual Case Safety Report (ICSR).
+- Healthcare professionals or consumers submit the ICSR to the FDA through the openFDA API.
+- FDA staff receive the report and record its unique identifier, sender, receiver, date, and acknowledgment code.
+
+## 2. Adverse Event Acknowledgement
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff acknowledge receipt of the ICSR by sending an acknowledgement message containing the report's unique identifier, sender, receiver, date, and acknowledgment code.
+- If errors are detected in the report, FDA staff record error messages for correction before re-submission.
+
+## 3. Adverse Event Error Resolution
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Pharmaceutical company staff review and correct errors identified by FDA in the ICSR, ensuring field lengths and ISO codes comply with specifications.
+- Once corrected, the updated ICSR is re-submitted to the FDA for processing.
+
+## 4. Adverse Event Data Processing
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff process the corrected ICSR, extracting relevant data such as safety report ID, safety report version, local report number, company number, receipt date, and report acknowledgment code.
+
+## 5. Adverse Event Data Storage
+
+Performed By: Database Administrators
+
+Activity:
+- Database administrators store the extracted adverse event data in the FDA_AdverseEvents database for future analysis and reporting.
+
+## 6. Adverse Event Report Analysis
+
+Performed By: Researchers, Analysts
+
+Activity:
+- Researchers and analysts access and analyze the stored adverse event data to identify trends, patterns, and potential risks associated with specific drugs or indications.
+
+## 7. Adverse Event Report Retrieval
+
+Performed By: Users (Researchers, Analysts, Public)
+
+Activity:
+- Users retrieve adverse event reports from the FDA_AdverseEvents database for various purposes such as research, analysis, or public inquiry.

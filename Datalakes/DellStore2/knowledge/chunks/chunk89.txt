@@ -1,0 +1,62 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update quan_in_stock when items are received or shipped.
+- Product managers set reorder points for each item based on date_low and quan_low.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and username into the customers table.
+- Customer service agents update customer information when changes occur.
+- Sales representatives create orders for customers by specifying orderdate, netamount, tax, and totalamount in the orders table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives add products to customer orders by referencing prod_id, quantity, and orderdate in the orderlines table.
+- Warehouse staff remove items from inventory when they are shipped to customers.
+- Finance department records invoices for each order, including orderid, netamount, tax, and totalamount.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update sales when items are sold to customers.
+- Purchasing teams place orders for new inventory based on quan_in_stock and reorder points.
+- Warehouse staff receive and record new inventory, updating quan_in_stock accordingly.
+
+## 5. Reordering and Forecasting
+
+Performed By: Purchasing Teams, Finance Department
+
+Activity:
+- Purchasing teams update date_reordered, quan_reordered, and date_expected when new inventory is ordered.
+- Finance department forecasts future sales based on historical data from the orders table.
+
+## 6. Compliance and Data Governance
+
+Performed By: HR Managers, IT Department
+
+Activity:
+- HR managers ensure customer information complies with privacy regulations such as FERPA and GDPR.
+- IT department maintains visibility into where sensitive data resides and how it moves across campus systems.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Researchers, Administrators, Compliance Teams
+
+Activity:
+- Researchers analyze customer behavior patterns using data from the orders table.
+- Administrators generate reports on student outcomes, financial aid, and accreditation data.
+- Compliance teams respond to audits by validating metrics and providing stakeholders with confidence in every report.

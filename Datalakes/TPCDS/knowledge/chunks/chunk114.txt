@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse locations to new call centers based on the call center's division and company information.
+- Warehouse staff update the square footage of a call center when it expands or contracts.
+- Warehouse staff track the hours each call center operates daily.
+
+## 2. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize and describe call centers based on market class and division.
+- Call center managers associate a specific market manager with each call center.
+
+## 3. Customer Service Operations
+
+Performed By: Sales Representatives, Call Center Employees
+
+Activity:
+- Sales representatives handle customer inquiries and process orders for customers over the phone.
+- Call center employees record the product code, name, category, and list price of items ordered by customers.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Call Center Employees
+
+Activity:
+- Product managers register new items in the catalog by recording their product code, name, category, and list price.
+- Call center employees update the catalog page with the item's details when it is sold out or discontinued.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives confirm the availability of items in stock before processing customer orders.
+- Warehouse staff update the warehouse's inventory when an order is shipped out or returned.
+
+## 6. Return Management
+
+Performed By: Call Center Employees, Customers
+
+Activity:
+- Call center employees record return details, including the reason for the return and the customer's information.
+- Customers submit returns of purchased items through call centers.
+
+## 7. Financial Record Keeping
+
+Performed By: Finance Department
+
+Activity:
+- Finance records the tax percentage associated with each warehouse location.

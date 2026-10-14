@@ -1,0 +1,54 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Team
+
+Activity:
+- HR managers register new employees by recording their personal details, job title, and department. (HumanResources Employee)
+- HR updates employee information when necessary, such as changes in address or job title. (HumanResources Employee)
+- HR tracks employee history across departments and shifts. (HumanResources EmployeeDepartmentHistory, HumanResources Shift)
+- HR records employee pay history, including rate changes and pay frequencies. (HumanResources EmployeePayHistory)
+
+## 2. Employee Contact Management
+
+Performed By: HR Team, Warehouse Staff
+
+Activity:
+- HR managers maintain employee contact information, including phone numbers, email addresses, and mailing addresses. (Person Address, Person BusinessEntityContact)
+- Warehouse staff use contact details to communicate with employees about shipments or deliveries.
+
+## 3. Employee Address Management
+
+Performed By: HR Team
+
+Activity:
+- HR managers record employee addresses, specifying their types and locations. (Person AddressType, Person BusinessEntityAddress)
+
+## 4. Job Candidate Management
+
+Performed By: HR Team, Recruiters
+
+Activity:
+- HR managers store job candidate resumes, including personal details, skills, education history, and employment history. (HumanResources.JobCandidate)
+
+## 5. Employee Department Reporting
+
+Performed By: HR Managers, Management
+
+Activity:
+- HR generates reports on employee department assignments for management review. (HumanResources.vEmployeeDepartment)
+
+## 6. Job Candidate Education Reporting
+
+Performed By: HR Managers
+
+Activity:
+- HR generates reports on job candidate education history from the xml column in the HumanResources.JobCandidate table. (HumanResources.vJobCandidateEducation)
+
+## 7. Job Candidate Employment History Reporting
+
+Performed By: HR Managers
+
+Activity:
+- HR generates reports on job candidate employment history from the xml column in the HumanResources.JobCandidate table. (HumanResources.vJobCandidateEmployment)

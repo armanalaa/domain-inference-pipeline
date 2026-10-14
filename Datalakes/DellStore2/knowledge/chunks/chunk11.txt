@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives engage with potential customers and register new accounts by recording customer details such as name, address, contact information, and credit card details.
+- Customer support agents assist existing customers in managing their accounts, updating personal information, and resolving any issues related to orders or payments.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product details like title, category, actor, price, special features, and common product ID.
+- Inventory specialists track inventory levels and update the system when stock quantities change.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives (if assisting)
+
+Activity:
+- Customers browse the catalog, select items, and place orders by specifying quantity for each item and providing order details such as shipping address and payment information.
+- Sales representatives may help customers with their orders, ensuring accurate product selection and smooth checkout process.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Order Processing Team
+
+Activity:
+- Upon receiving an order, warehouse staff pick the items from inventory and prepare them for shipping.
+- The order processing team reviews each order, calculates net amount, tax, and total amount, and updates the system with the new order details.
+
+## 5. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams monitor inventory levels and place orders for restocking when quantities reach a predefined threshold.
+- Warehouse staff receive new shipments, count the items, and update the system with the updated stock quantities.
+
+## 6. Shipping and Delivery
+
+Performed By: Warehouse Staff, Courier Services
+
+Activity:
+- Once an order is ready for shipping, warehouse staff package the items and hand them over to courier services for delivery.
+- Courier services transport the packages to the specified addresses and update the system with tracking information and delivery status.
+
+## 7. Customer Support
+
+Performed By: Customer Support Agents
+
+Activity:
+- Customer support agents handle customer inquiries related to orders, returns, refunds, or any other issues that may arise during the purchasing process.
+
+## 8. Reordering and Inventory Forecasting
+
+Performed By: Inventory Specialists, Data Analysts
+
+Activity:
+- Inventory specialists monitor sales data and reorder items when they reach a predefined low quantity threshold.
+- Data analysts forecast future inventory needs based on historical sales data and market trends to ensure optimal stock levels.

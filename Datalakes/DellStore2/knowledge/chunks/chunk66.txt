@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set sales targets for each item based on historical data and market trends.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customers place orders by providing necessary details such as address, payment information, and shipping preferences.
+- HR managers create customer profiles containing personal and demographic data for future reference.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance Department
+
+Activity:
+- Sales representatives confirm order details with customers and generate order IDs.
+- Warehouse staff pick and pack ordered items according to the orderlines.
+- Purchasing teams issue purchase orders for products that are out of stock or need to be replenished.
+- Finance records invoices and calculates netamount, tax, and totalamount for each order.
+
+## 4. Inventory Replenishment
+
+Performed By: Warehouse Staff, Purchasing Teams, Inventory Managers
+
+Activity:
+- Warehouse staff track quan_in_stock levels to identify products that need replenishment.
+- Purchasing teams issue purchase orders for the required quantity of each product.
+- Inventory managers review reorder information and adjust date_low and quan_low accordingly.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff prepare shipments by packing ordered items and affixing shipping labels.
+- Shipping department schedules deliveries based on customer preferences and estimated delivery times.
+
+## 6. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer inquiries related to orders, returns, or product information.
+
+## 7. Compliance and Regulatory Reporting
+
+Performed By: Finance Department, Legal Team
+
+Activity:
+- Finance records creditcardtype, creditcard, creditcardexpiration, and other sensitive data securely in accordance with regulatory requirements.
+- The legal team ensures that all data handling practices comply with relevant laws and industry standards.

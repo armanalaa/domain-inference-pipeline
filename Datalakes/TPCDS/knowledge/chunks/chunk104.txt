@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new call centers to specific districts and set their associated details like name, class, size, hours of operation, and location.
+- HR managers recruit and hire employees for the call centers, recording their personal and professional information.
+
+## 2. District Management
+
+Performed By: District Managers, Call Center Managers
+
+Activity:
+- District managers oversee multiple call centers within a district, ensuring efficient operations and effective customer service.
+- Call center managers report to district managers regarding call center performance metrics such as employee count, square footage, and operational hours.
+
+## 3. Customer Interaction
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives initiate new orders with customers by displaying the input/output screen for order placement.
+- Customers enter their required data, including district ID, customer ID, and item details, as prompted by the sales representative.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process new orders by determining the order ID, calculating the total amount, and displaying the execution status message.
+- Warehouse staff track inventory levels and fulfill orders by shipping items to customers based on the provided order details.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update stock levels for each item in the warehouse, ensuring accurate records of available inventory.
+- Purchasing teams issue purchase orders to replenish depleted inventory, considering factors such as supplier, item ID, quantity, and price.
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns by recording the returned date and time, item SKU, refunded customer details, and reason for return.
+- Warehouse staff process returns by updating inventory levels, marking items as returned, and preparing them for restocking or disposal.
+
+## 7. Performance Monitoring
+
+Performed By: Call Center Managers, District Managers
+
+Activity:
+- Call center managers monitor call center performance metrics such as average handling time, service level, and abandonment rate to identify areas for improvement.
+- District managers analyze the performance of multiple call centers within their district and implement strategies to optimize overall efficiency.

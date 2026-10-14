@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Standard Approval Process
+
+Performed By: TPC Executive Committee (TPC EC)
+
+Activity:
+- TPC EC members review and discuss proposed TPC-Express Benchmark Standards or revisions.
+- TPC EC votes on approval of a TPC-Express Benchmark Standard or Major Revision.
+- TPC EC votes on approval of TPC-Express Benchmark Standard Minor Revision.
+- TPC EC votes on approval of TPC-Express Benchmark Standard Third Tier Revision.
+- TPC EC declares obsolescence of TPC-Express Benchmark Standards when necessary.
+
+## 2. TPC-Provided Software Approval Process
+
+Performed By: TPC EC, Benchmark Subcommittee
+
+Activity:
+- Software proposals are submitted to the TPC EC for review.
+- Proposals are assigned to a Benchmark Subcommittee for evaluation.
+- The status and direction of the software proposal are determined by the Benchmark Subcommittee.
+- Authorization is granted for the public release of draft TPC-Provided Software.
+- Formal review of the TPC-Provided Software takes place.
+- Final approval of the TPC-Provided Software is given by the TPC EC.
+
+## 3. Benchmark Submission Process
+
+Performed By: Benchmark Participants
+
+Activity:
+- Benchmark participants submit their results for a TPC-Express benchmark.
+- Full disclosure reports are prepared and submitted according to TPC-Express rules.
+- Pre-publication certification is obtained before the results are published.
+- Alert messages are sent to notify about the availability of new TPC-Express Results.
+
+## 4. Benchmark Review Period Management
+
+Performed By: TPC EC, Benchmark Subcommittee
+
+Activity:
+- The TPC EC and Benchmark Subcommittee oversee the review period for each TPC-Express benchmark.
+- They ensure compliance with TPC-Express Benchmark Fair Use Rules during this period.
+
+## 5. TPC-Provided Software Development Process
+
+Performed By: TPC-DS Developers
+
+Activity:
+- General guidelines are followed for the development of TPC-Provided Software.

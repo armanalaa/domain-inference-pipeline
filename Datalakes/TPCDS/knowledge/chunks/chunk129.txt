@@ -1,0 +1,50 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on the company's division and market (cc_division, cc_mkt_id).
+- HR managers update employee information for current employees, including their roles, hours, and salaries (cc_employees, cc_hours, cc_manager).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls from customers and guide them through various transaction types (cc_call_center_id).
+- Representatives record customer details, such as their names, addresses, and contact information (cc_name, cc_street_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+
+## 3. Transaction Processing
+
+Performed By: Call Center Representatives
+
+Activity:
+- During New-Order transactions, representatives input customer details and product information (cp_catalog_number, cp_catalog_page_number) to create new orders.
+- In Payment transactions, representatives process payments using the provided credit card information (not specified in the database schema).
+- For Order-Status transactions, representatives provide customers with order status updates based on the order numbers (cr_order_number).
+
+## 4. Stock Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update them when products are added or removed from stock (not specified in the database schema).
+- Purchasing teams issue purchase orders for restocking items with low quantities (not specified in the database schema).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return details and updating the product's status (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff receive returned products, update their inventory levels accordingly, and prepare them for reshipment or disposal (not specified in the database schema).
+
+## 6. Reporting and Analytics
+
+Performed By: Finance Teams, Management
+
+Activity:
+- Finance teams record transaction data, including tax percentages, to generate financial reports (cc_tax_percentage).
+- Management reviews reports to monitor call center performance, inventory levels, and sales trends (not specified in the database schema).

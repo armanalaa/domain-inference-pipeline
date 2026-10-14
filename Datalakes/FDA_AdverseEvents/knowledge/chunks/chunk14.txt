@@ -1,0 +1,58 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Safety Officers, Data Entry Clerks
+
+Activity:
+- Safety officers collect and document adverse event details according to the ICH ICSR specifications. (A.1, A.2, A.3.1, A.3.2)
+- Data entry clerks input the collected data into the FDA_AdverseEvents database. (All relevant columns)
+- Safety officers verify and confirm the accuracy of entered data. (A.1, A.2, A.3.1, A.3.2)
+
+## 2. Case Identification and Duplicate Checking
+
+Performed By: Data Analysts, Safety Officers
+
+Activity:
+- Data analysts cross-reference new reports with existing cases to identify duplicates. (A.1.11.1, A.1.11.2)
+- Safety officers review and confirm the identification of duplicate cases. (A.1.11.1, A.1.11.2)
+
+## 3. Patient Characteristics Documentation
+
+Performed By: Data Entry Clerks, Safety Officers
+
+Activity:
+- Data entry clerks input patient characteristics into the FDA_AdverseEvents database. (B.1.10, B.1.10.7.1)
+- Safety officers verify and confirm the accuracy of entered patient data. (B.1.10, B.1.10.7.1)
+
+## 4. Event/Reaction Documentation
+
+Performed By: Data Entry Clerks, Safety Officers
+
+Activity:
+- Data entry clerks input event/reaction details into the FDA_AdverseEvents database. (B.2)
+- Safety officers verify and confirm the accuracy of entered event data. (B.2)
+
+## 5. Drug Information Documentation
+
+Performed By: Data Entry Clerks, Safety Officers
+
+Activity:
+- Data entry clerks input drug information into the FDA_AdverseEvents database. (B.4, B.4.k.17.2, B.4.k.18)
+- Safety officers verify and confirm the accuracy of entered drug data. (B.4, B.4.k.17.2, B.4.k.18)
+
+## 6. Case Report Analysis
+
+Performed By: Safety Officers, Data Analysts
+
+Activity:
+- Safety officers analyze adverse event reports to assess potential risks. (B.5)
+- Data analysts support safety officers by providing relevant data and insights. (B.5)
+
+## 7. Case Report Review and Approval
+
+Performed By: Safety Officers, Supervisors
+
+Activity:
+- Safety officers review and evaluate completed case reports. (All sections)
+- Supervisors approve or request revisions for the submitted case reports. (All sections)

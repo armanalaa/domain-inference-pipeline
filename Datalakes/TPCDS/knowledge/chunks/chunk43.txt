@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Test Sponsor Document Submission
+
+Performed By: Test Sponsor
+
+Activity:
+- The Test Sponsor submits required documentation for a new Result according to Policies § 6.5 and § 6.6. (Submitted for Review column in TPC Results List)
+
+## 2. Administrator Result Addition
+
+Performed By: Administrator
+
+Activity:
+- The Administrator adds the submitted Result to the TPC Results List upon receiving the required documentation from the Test Sponsor. (TPC Results List)
+
+## 3. Result Review
+
+Performed By: Council, Steering Committee
+
+Activity:
+- The Council or Steering Committee reviews the accepted Result based on compliance with technical specifications of the benchmark. (Status column in TPC Results List)
+
+## 4. Withdrawal of a Result
+
+Performed By: Test Sponsor, Administrator, Council, Steering Committee
+
+Activity:
+- The Test Sponsor withdraws a Result or it is withdrawn by the Council, Steering Committee, or Administrator in accordance with TPC Policies. (Withdrawal Category column in TPC Results List)
+
+## 5. Historical Result Designation
+
+Performed By: Test Sponsor
+
+Activity:
+- The Test Sponsor designates an accepted Result as a Historical Result if it has been posted on the TPC Results List for at least 185 days past the submission date and at least 60 days past the availability date. (Status column in TPC Results List)
+
+## 6. Call Center Management
+
+Performed By: Call Center Manager, Sales Representatives
+
+Activity:
+- The call center manager assigns sales representatives to specific markets based on market class and description. (cc_mkt_class, cc_mkt_desc columns in call_center)
+
+## 7. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (ProductID, Name, Category, List Price columns in catalog_page)
+
+## 8. Return Processing
+
+Performed By: Warehouse Staff, Customer Service Representatives
+
+Activity:
+- Customers place returns and warehouse staff track the returned items, recording relevant details such as reason for return and ship mode. (cr_returned_date_sk, cr_ship_mode_sk columns in catalog_returns)

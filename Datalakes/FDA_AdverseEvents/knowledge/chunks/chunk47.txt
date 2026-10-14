@@ -1,0 +1,49 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Parent Information Registration
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Data entry clerks record parent identification details such as name and contact information.
+- They input the date of birth of the parent, along with the format used for recording it.
+- The clerk records the age of the parent at the time of the event, specifying the unit of measurement.
+- Height and weight of the parent are also recorded in centimeters and kilograms respectively.
+- The sex of the parent is noted down as well.
+
+## 2. Parent Medical History Documentation
+
+Performed By: Healthcare Professional
+
+Activity:
+- Healthcare professionals document any relevant medical history and concurrent conditions of the parent, excluding the reaction/event.
+- They provide structured information about past medical episodes, including the name of the episode, start and end dates, and comments if necessary.
+- The professional records any text related to the relevant medical history and concurrent conditions of the parent.
+
+## 3. Drug Information Recording
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Data entry clerks record the name of the drug as administered to the parent.
+- They input the start date of the drug administration, along with the format used for recording it.
+- The end date of the drug administration is also recorded, if applicable.
+- The clerk records any indication for which the drug was administered and any known reactions experienced by the parent.
+
+## 4. Reaction/Event Reporting
+
+Performed By: Reporter (Primary Source)
+
+Activity:
+- The reporter provides a description of the reaction or event as reported by the primary source.
+- They highlight any term in the report that they consider significant.
+- The date of start of the reaction or event is recorded, along with the format used for recording it.
+
+## 5. Data Validation and Quality Assurance
+
+Performed By: Quality Assurance Officer
+
+Activity:
+- Quality assurance officers verify the accuracy and completeness of the data entered in the FDA_AdverseEvents database.
+- They ensure that all required fields are filled out and that the data conforms to the specified formats.
+- Any discrepancies or errors are corrected before the data is accepted into the system.

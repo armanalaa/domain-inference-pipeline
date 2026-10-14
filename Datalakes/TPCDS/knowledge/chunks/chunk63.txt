@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific call centers based on the required square footage and number of employees (cc_employees).
+- Warehouse staff set up the physical space for the call center according to the specified square footage (cc_sq_ft).
+
+## 2. Market Division Allocation
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign market classes and divisions to each call center based on market descriptions (cc_mkt_class, cc_division).
+- HR managers hire employees for the call centers within their assigned divisions (cc_company).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Employees
+
+Activity:
+- Call center employees answer customer calls during the specified hours (cc_hours) and provide assistance as needed.
+- Call center employees record call details such as start date, end date, and closed date (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Customer Returns Processing
+
+Performed By: Warehouse Staff, Customers
+
+Activity:
+- Customers return items by contacting call centers (cr_call_center_sk) and requesting a refund.
+- Warehouse staff process the returned items and record the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+
+## 6. Audit Process
+
+Performed By: Auditors, Test Sponsors
+
+Activity:
+- Auditors review the methodology used for reaching compliance to ensure it produces documented results demonstrating compliance (cr_reason_sk).
+- Test sponsors attest to the veracity of all information disclosed to the auditor and in the FDR (not directly related to database columns).

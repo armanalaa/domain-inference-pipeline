@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for new products based on inventory levels and sales forecasts.
+- Product managers update product information when changes occur, such as price adjustments or discontinuation.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives enter customer details into the system during account creation, including name, address, contact information, and credit card data.
+- HR managers maintain customer records, updating personal information, income, gender, age, and region as needed.
+- Customers access their accounts to view order history, update profile information, or make payments.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity in stock for each product.
+- Purchasing teams monitor low stock levels and issue purchase orders to replenish items when necessary.
+- Warehouse staff update sales data as products are sold or returned.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customers
+
+Activity:
+- Sales representatives create new orders for customers by specifying the product, quantity, and order date.
+- Customers place orders through the online store or over the phone.
+- Warehouse staff pick, pack, and ship ordered items to the customer's specified address.
+
+## 5. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate net amount, tax, and total amount for each order based on product price, quantity, and applicable taxes.
+- Finance teams record financial transactions in the system, including revenue, expenses, and payments.
+
+## 6. Reordering Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers set reorder points for each product based on historical sales data and inventory levels.
+- The system automatically generates reorder recommendations when inventory falls below the reorder point.
+- Purchasing teams review and approve reorder requests to ensure accurate forecasting and efficient supply chain management.
+
+## 7. Data Classification and Compliance
+
+Performed By: Data Management Teams
+
+Activity:
+- Data management teams use automated tools to discover sensitive data across the entire data catalog, such as personal, financial, or health-related information.
+- Data management teams review and refine classifications for maximum accuracy, ensuring compliance with major regulations like GDPR, CCPA, HIPAA, FERPA, and PCI.
+- Data management teams apply consistent sensitivity labels to data sources and monitor classification levels automatically.

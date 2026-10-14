@@ -1,0 +1,70 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying their roles, qualifications, and salaries. (cc_employees)
+- HR managers onboard new hires by providing them with necessary training materials and equipment. (not specified)
+- Call center managers assign employees to specific call centers based on their skills and availability. (cc_call_center_id)
+
+## 2. Call Center Setup
+
+Performed By: Facilities Managers, IT Staff
+
+Activity:
+- Facilities managers allocate space for new call centers by providing square footage, hours of operation, and necessary amenities. (cc_sq_ft, cc_hours)
+- IT staff configure call center systems by setting up hardware, software, and network connections. (not specified)
+
+## 3. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign each call center to a specific market division based on geographical location or market segment. (cc_division)
+
+## 4. Market Classification
+
+Performed By: Market Managers
+
+Activity:
+- Market managers classify markets according to their size, competition, and potential for growth. (cc_mkt_class, cc_market_manager)
+
+## 5. Call Center Description
+
+Performed By: Call Center Managers
+
+Activity:
+- Call center managers provide detailed descriptions of each call center, including its purpose, services offered, and unique selling points. (cc_name, cc_description)
+
+## 6. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (not specified)
+- IT staff update the catalog database with the new item information. (cp_catalog_page_sk, cp_catalog_number, cp_catalog_page_number, cp_description, cp_type)
+
+## 7. Catalog Page Maintenance
+
+Performed By: IT Staff
+
+Activity:
+- IT staff maintain catalog pages by updating product descriptions, images, and pricing information as needed. (not specified)
+
+## 8. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording the returned date and time, item SKU, customer details, and reason for return. (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk)
+- Warehouse staff receive returned items, inspect them for damage or defects, and update the database with their condition. (not specified)
+
+## 9. Audit Preparation
+
+Performed By: Test Sponsors, IT Staff
+
+Activity:
+- Test sponsors prepare for audits by automating test environments and developing audit protocols. (not specified)
+- IT staff generate audit trails of actions and system configurations to facilitate compliance with audit requirements. (cr_call_center_sk, cr_catalog_page_sk, cr_ship_mode_sk, cr_warehouse_sk)

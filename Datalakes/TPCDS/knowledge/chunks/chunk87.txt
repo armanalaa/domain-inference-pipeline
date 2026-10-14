@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers with details like name, class, employees, square footage, hours, and manager.
+- Warehouse staff track the available space in each call center for future expansions.
+
+## 2. Market Division Assignment
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize and describe markets, then assign them to specific call centers.
+- Call center managers update their division names based on the assigned market.
+
+## 3. Call Center Operations Management
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers open and close call centers as needed, recording start and end dates, closed date keys, and open date keys.
+- Sales representatives handle customer calls within the operational hours of their assigned call center.
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+
+## 5. Catalog Page Creation
+
+Performed By: Content Creators
+
+Activity:
+- Content creators create and update catalog pages with department, catalog number, catalog page number, description, and type.
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record returned items along with the customer details, reason for return, and order number.
+- Warehouse staff update stock levels upon receiving returned items.
+
+## 7. Report Generation
+
+Performed By: Finance Team, Auditors
+
+Activity:
+- Finance team generates required reports based on pricing methodology and full disclosure report requirements.
+- Auditors check the generated reports against the auditor's checklist for accuracy.

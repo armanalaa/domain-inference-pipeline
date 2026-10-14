@@ -1,0 +1,111 @@
+{
+  "_meta": {
+    "domain_id": 9,
+    "domain_name": "Currency Exchange Rate Management",
+    "definition": "The process of managing and maintaining currency exchange rates for various transactions within the enterprise system.",
+    "tables": [
+      "Sales CurrencyRate"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 7,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Sales CurrencyRate": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "CurrencyRateID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales CurrencyRate",
+          "samples": [
+            12436,
+            12437,
+            12438,
+            12439,
+            12440
+          ]
+        },
+        {
+          "name": "CurrencyRateDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores date of currency exchange rates recorded.",
+          "samples": [
+            "2011-05-31 00:00:00.000",
+            "2011-06-01 00:00:00.000",
+            "2011-06-02 00:00:00.000",
+            "2011-06-03 00:00:00.000",
+            "2011-06-04 00:00:00.000"
+          ]
+        },
+        {
+          "name": "FromCurrencyCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 10-letter currency codes for the base currencies of exchange rates in Sales CurrencyRate.",
+          "samples": [
+            "USD",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ToCurrencyCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166 currency codes for currencies to which sales rates are converted.",
+          "samples": [
+            "USD",
+            "ARS",
+            "SAR",
+            "FRF",
+            "DEM"
+          ]
+        },
+        {
+          "name": "AverageRate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores average exchange rates for the sales currency.",
+          "samples": [
+            1.0,
+            0.9996,
+            0.9999,
+            0.9995,
+            0.9998
+          ]
+        },
+        {
+          "name": "EndOfDayRate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "EndOfDayRate stores daily exchange rates for the sales currency.",
+          "samples": [
+            1.0,
+            3.7416,
+            3.7517,
+            3.7464,
+            3.7549
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the last modification for each record in Sales CurrencyRate table (2014-01-02 17:39:45.260).",
+          "samples": [
+            "2014-01-02 17:39:45.260",
+            "2011-06-03 00:00:00.000",
+            "2011-06-24 00:00:00.000",
+            "2011-07-08 00:00:00.000",
+            "2011-07-22 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

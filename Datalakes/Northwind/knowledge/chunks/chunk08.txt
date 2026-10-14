@@ -1,0 +1,56 @@
+ # Northwind — Business Workflows
+
+## 1. Employee Management
+
+Performed By: HR Managers, IT Administrators
+
+Activity:
+- HR managers register new employees by recording their personal details and employment information. (employees)
+- IT administrators assign system access and set up employee profiles. (employees)
+- HR managers define employee roles and reporting structure. (employees, employee_territories)
+- IT administrators configure email accounts and set up network permissions for each employee. (employees)
+- HR managers maintain employee records, including performance evaluations and training history. (employees, Notes)
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives identify potential customers and initiate contact. (customers)
+- Customer service agents respond to customer inquiries and handle complaints. (customers)
+- Sales representatives create new customer accounts, recording company details and contact information. (customers)
+- Sales representatives update customer account information as needed. (customers)
+- Customer service agents process returns and manage refunds or exchanges for existing customers. (customers)
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives receive orders from customers and confirm order details. (orders)
+- Warehouse staff retrieve ordered products from inventory. (products)
+- Warehouse staff pack orders for shipping, ensuring accurate quantities and correct items. (order_details)
+- Shipping clerks prepare shipments by labeling packages and arranging pickups with carriers. (orders, shippers)
+- Warehouse staff update inventory levels to reflect shipped orders. (products, order_details)
+
+## 4. Inventory Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams negotiate with suppliers for product purchases and manage purchase orders. (orders, products, suppliers)
+- Warehouse staff receive deliveries from suppliers and update inventory levels accordingly. (products)
+- Warehouse staff perform regular stock checks to ensure accurate inventory counts. (products)
+- Warehouse staff manage product storage and organization within the warehouse. (categories, products)
+- Warehouse staff process returns and restock returned items when applicable. (orders, products)
+
+## 5. Financial Management
+
+Performed By: Accountants, Finance Managers
+
+Activity:
+- Accountants record financial transactions, including sales, purchases, and payments. (orders, order_details, suppliers)
+- Finance managers generate invoices for customers based on completed orders. (orders, customers)
+- Accountants process payments from customers and update account balances accordingly. (customers)
+- Finance managers prepare financial reports for management review and analysis. (regions, employees, orders, order_details, suppliers)
+- Accountants maintain accurate records of expenses and manage budgets for various departments. (employees, regions)

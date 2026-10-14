@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and available positions (cc_employees).
+- HR managers update employee information, including personal details and employment history (cc_name, cc_company, cc_street_number, cc_street_name, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls and provide assistance (cc_call_center_id).
+- Representatives record call details, such as start and end dates, closed date, and the reason for the call (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers categorize call centers based on class and market description (cc_mkt_class, cc_mkt_desc).
+- They assign call centers to specific divisions and companies (cc_division, cc_company).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse location for the returned item (warehouse_sk).
+
+## 6. Audit Process
+
+Performed By: Independent Auditors
+
+Activity:
+- Independent auditors verify that the specified attributes and rows exist in the database, ensuring they conform to the specifications (9.2.1.1).
+- Auditors review the Full Disclosure Report to ensure it matches the original sponsor's report (9.4.1.4.2).

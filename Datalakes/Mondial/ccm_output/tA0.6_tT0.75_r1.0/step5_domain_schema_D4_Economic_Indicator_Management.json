@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Economic Indicator Management",
+    "definition": "The process of managing and analyzing economic indicators for countries",
+    "tables": [
+      "economy"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "economy": {
+      "_description": "Tracks economic data of countries, including GDP, agriculture, service, industry, and inflation rates.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries in economy sector.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "GDP",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the Gross Domestic Product (GDP) of various countries as floating point numbers.",
+          "samples": [
+            4100.0,
+            101700.0,
+            1900.0,
+            52180.0,
+            4515.0
+          ]
+        },
+        {
+          "name": "Agriculture",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores percentage of a country's GDP derived from agriculture.",
+          "samples": [
+            55.0,
+            11.8,
+            24.0,
+            12.3,
+            20.0
+          ]
+        },
+        {
+          "name": "Service",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores average cost of services provided by each company.",
+          "samples": [
+            22.2,
+            44.0,
+            24.2,
+            20.0,
+            26.5
+          ]
+        },
+        {
+          "name": "Industry",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "The economy table's Industry column stores proportions of the national economy represented by various industries.",
+          "samples": [
+            66.0,
+            32.0,
+            63.5,
+            60.0,
+            71.1
+          ]
+        },
+        {
+          "name": "Inflation",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores annual inflation rates as floating point numbers.",
+          "samples": [
+            16.0,
+            8.1,
+            14.8,
+            6.8,
+            3.4
+          ]
+        }
+      ]
+    }
+  }
+}

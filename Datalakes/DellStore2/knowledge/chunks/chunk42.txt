@@ -1,0 +1,55 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products arrive or existing ones sell out, referencing the quan_in_stock column.
+
+## 2. Customer Onboarding
+
+Performed By: Sales Representatives, HR Managers
+
+Activity:
+- Sales representatives create customer accounts by entering contact details such as firstname, lastname, address, email, phone, and creditcard information.
+- HR managers assign unique customerids to each account for internal tracking purposes.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details like orderdate and netamount.
+- Sales representatives confirm orders and update the cust_hist table with the corresponding customerid, orderid, and prod_id.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory based on the prod_id and quantity specified in the orderlines table.
+- Shipping teams package and ship orders to customers, updating the orderdate column as they do so.
+
+## 5. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records totalamount for each order by calculating netamount plus tax from the orders table.
+
+## 6. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders to replenish low inventory levels based on the date_low and quan_low columns in the reorder table.
+- Warehouse staff receive new stock and update the inventory table with the updated quan_in_stock for each product.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives respond to customer inquiries, accessing relevant information from the customers table as needed.

@@ -1,0 +1,52 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Steering Committee, Call Center Manager
+
+Activity:
+- The Steering Committee elects new call center managers during the Annual Meeting.
+- The call center manager assigns employees to specific call centers based on their skills and expertise.
+- The call center manager determines the number of employees needed for each call center.
+- The call center manager sets the operating hours for each call center.
+- The call center manager hires additional staff when necessary to meet demand.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff, Customers
+
+Activity:
+- Call center staff answer incoming calls from customers during operational hours.
+- Customers place orders or inquire about products over the phone.
+- Call center staff record product details (name, category, list price) for new items in the catalog.
+- Call center staff update customer information (address, contact details) when necessary.
+- Call center staff handle returns and refunds according to the reason provided by customers.
+
+## 3. Financial Reporting
+
+Performed By: Chief Financial Officer, Administrator
+
+Activity:
+- The Chief Financial Officer prepares annual financial reports for the Corporation.
+- The annual report includes a balance sheet, income statement, and statement of changes in financial position.
+- The annual report is sent to each member upon request within 120 days after the close of the fiscal year.
+- The Administrator sets reasonable reproduction costs for providing copies of reports or documents to members.
+
+## 4. Record Keeping
+
+Performed By: Corporation Staff, Members
+
+Activity:
+- The Corporation keeps adequate and correct records of accounts and minutes of Board meetings.
+- The Corporation maintains a record of its members with their names and addresses.
+- Minutes are kept in written form, while other books and records can be kept in any form capable of being converted into written form.
+- Members have the right to receive a financial report yearly as per Corporations Code Section 8321(a).
+
+## 5. Document Distribution
+
+Performed By: Administrator, Members
+
+Activity:
+- Upon written request from any member, the Corporation provides copies of reports, studies, or other documents made available to members upon payment of reasonable reproduction costs.
+- The Administrator affixes the annual statement of certain transactions and indemnifications to the annual report as required by Corporations Code Section 8322.
+- The Corporation furnishes annually to its members a statement of any transaction or indemnification described in Corporations Code Section 8322(d) and (e).

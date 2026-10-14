@@ -1,0 +1,53 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign employees to departments by selecting a DepartmentID and ShiftID.
+- Record employee's address information including AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and primary contact details such as EmailAddressID and ContactTypeID.
+
+## 2. Employee Departure Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Update employee's end date in the EmployeeDepartmentHistory table when an employee leaves a department.
+- Record any changes to an employee's pay history, including RateChangeDate and Rate, as well as PayFrequency updates.
+
+## 3. Contact Type Management
+
+Performed By: Data Administrators
+
+Activity:
+- Maintain the list of contact types by adding or updating ContactTypeID and Name.
+
+## 4. Country/Region Code Management
+
+Performed By: Data Administrators
+
+Activity:
+- Add or update country and region codes in the CountryRegion table, including CountryRegionCode and Name.
+
+## 5. Email Address Management
+
+Performed By: Data Administrators
+
+Activity:
+- Assign email addresses to employees by recording BusinessEntityID, EmailAddress, and ModifiedDate.
+
+## 6. Password Management
+
+Performed By: IT Administrators
+
+Activity:
+- Store hashed passwords for employee email accounts by recording BusinessEntityID, PasswordHash, PasswordSalt, and ModifiedDate.
+
+## 7. Person Data Management
+
+Performed By: Data Administrators
+
+Activity:
+- Record primary person data including BusinessEntityID, rowguid, and ModifiedDate.

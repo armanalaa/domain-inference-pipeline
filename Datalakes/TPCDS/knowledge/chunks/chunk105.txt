@@ -1,0 +1,62 @@
+ # TPC-DS — Business Workflows
+
+## 1. Customer Selection for Payment Transaction
+
+Performed By: Call Center Representative
+
+Activity:
+- Selects a district number (D_ID) within the home warehouse's range.
+- Determines whether to select a customer by last name or ID based on a random number generation.
+- If selecting by last name, generates a non-uniform random value for customer last name (C_LAST).
+- If selecting by ID, generates a non-uniform random customer number (C_ID).
+
+## 2. Customer Identification Verification
+
+Performed By: Call Center Representative
+
+Activity:
+- Verifies the selected customer's home warehouse number (C_W_ID) matches the payment transaction's home warehouse number (W_ID).
+
+## 3. Payment Transaction Processing
+
+Performed By: Call Center Representative
+
+Activity:
+- Records the payment amount (H_AMOUNT) for the customer.
+- Generates the payment date (H_DATE).
+- Determines whether the transaction is home or remote based on the customer's warehouse and the payment transaction's warehouse.
+
+## 4. Customer Balance Update
+
+Performed By: Call Center Representative
+
+Activity:
+- Updates the customer's balance with the recorded payment amount (H_AMOUNT).
+
+## 5. Sales Statistics Recording
+
+Performed By: Call Center Representative, Warehouse Staff
+
+Activity:
+- Reflects the payment on the district and warehouse sales statistics.
+
+## 6. Call Center Information Recording
+
+Performed By: Call Center Manager
+
+Activity:
+- Records call center details such as name (cc_name), class, employees, square footage, hours, manager, market ID, market class, market description, market manager, division, division name, company, company name, street number, street name, street type, suite number, city, county, state, zip, country, GMT offset, and tax percentage (cc_*).
+
+## 7. Catalog Page Registration
+
+Performed By: Product Manager
+
+Activity:
+- Registers new items in the catalog by recording product code, name, category, and list price (cp_*).
+
+## 8. Return Processing
+
+Performed By: Customer Service Representative
+
+Activity:
+- Records return details such as returned date and time, item SKU, refunded customer SKU, reason for return, order number, and ship mode (cr_*).

@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "AdverseEventDataManagementSystem",
+    "definition": "A system for managing and organizing adverse event data collected from various sources, including reporting, formatting, processing, analysis, and storage.",
+    "tables": [
+      "report_duplicates"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "report_duplicates": {
+      "_description": "Tracks reported adverse events where duplicates have been identified across different safety reports and potential sources.",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631173,
+            23639474,
+            23586275,
+            23253247
+          ]
+        },
+        {
+          "name": "duplicate_safetyreportid",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the duplicate_safetyreport entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "duplicate_source",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the origin of duplicate reports, such as MC Brazil, BFARM, CADRBFARM, LSMI, SANOFI.",
+          "samples": [
+            "MC Brazil",
+            "BFARM",
+            "CADRBFARM",
+            "LSMI",
+            "SANOFI"
+          ]
+        }
+      ]
+    }
+  }
+}

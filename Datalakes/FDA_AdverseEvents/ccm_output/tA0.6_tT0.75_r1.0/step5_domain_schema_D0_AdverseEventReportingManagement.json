@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "AdverseEventReportingManagement",
+    "definition": "The unifying capability across all tables is the management of adverse event reports, encompassing data collection, formatting, organization, processing, analysis, and communication.",
+    "tables": [
+      "receivers",
+      "senders"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "receivers": {
+      "_description": "Captures details of recipients and their types/organizations involved in receiving adverse event safety reports.",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "receiver_receivertype",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the repeated receiver type ID (6) for multiple receivers in the database.",
+          "samples": [
+            6,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "receiver_receiverorganization",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated names of up to 10 characters for organizations receiving adverse event reports, frequently being the FDA.",
+          "samples": [
+            "FDA",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "senders": {
+      "_description": "Records adverse event report senders, including their type and organization.",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "sender_sendertype",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the type of sender (likely 2 represents a manufacturer or distributor).",
+          "samples": [
+            2,
+            6,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "sender_senderorganization",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the organization name for the sender, typically FDA-Public Use.",
+          "samples": [
+            "FDA-Public Use",
+            "Public",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

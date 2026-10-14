@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Governance Team
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update product details as needed, such as title, actor, or common_prod_id.
+- The data governance team ensures all product information is accurate and up-to-date.
+
+## 2. Inventory Management
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff track the quantity in stock for each product and update it accordingly when items are received or sold.
+- Inventory managers set reorder points and dates based on quan_low and date_low columns.
+- Inventory managers process reorders, updating quan_reordered and date_expected as needed.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives assist customers in placing orders by selecting products, quantities, and providing order dates.
+- Customer service agents confirm order details with customers and create new orders in the system.
+- Customer service agents update order statuses as needed throughout the order lifecycle.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack customer orders based on orderlines data.
+- Shipping department prepares shipments for delivery by recording tracking numbers and estimated delivery dates.
+
+## 5. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Finance Team
+
+Activity:
+- Sales representatives maintain customer relationships by updating contact information, credit card details, and communication preferences.
+- HR managers onboard new customers by creating accounts and assigning usernames and passwords.
+- The finance team records customer income and age to help with targeted marketing efforts.
+
+## 6. Financial Management
+
+Performed By: Finance Team, Accounting Department
+
+Activity:
+- The finance team calculates net amounts for each order based on product prices and quantities.
+- The accounting department records tax and total amounts for each order.
+- The finance team generates financial reports to track sales performance and make data-driven decisions.
+
+## 7. Data Governance
+
+Performed By: Data Governance Team, IT Department
+
+Activity:
+- The data governance team ensures all data in the DellStore2 database is accurate, complete, and up-to-date.
+- The IT department implements security measures to protect customer and company data.
+- The data governance team maintains a public roadmap for continuous improvement and supports community voting on new features.

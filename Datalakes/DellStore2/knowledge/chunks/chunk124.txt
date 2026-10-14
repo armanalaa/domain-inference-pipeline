@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams negotiate prices with suppliers for common products based on sales data.
+- Product managers update product information when a supplier discontinues or introduces a new item.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering contact details and credit card information.
+- HR managers assign usernames and passwords to new employees for accessing the system.
+- Customers update their personal information, such as address or email, in their account settings.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customers
+
+Activity:
+- Sales representatives place orders on behalf of customers by selecting products, quantities, and shipping addresses.
+- Warehouse staff track inventory levels to ensure sufficient stock for order fulfillment.
+- Customers confirm their orders and make payments through the online store.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the quantity in stock when products are received or shipped.
+- Purchasing teams reorder low-stock items based on sales data and expected delivery times.
+- Warehouse staff record the date expected for restocked items in the reorder table.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders based on the orderlines table.
+- Shipping teams prepare shipments by printing labels and arranging packages for delivery.
+- Warehouse staff update the inventory when products are shipped out to customers.
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Sales Representatives
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on product prices and quantities.
+- Sales representatives issue invoices to customers with the calculated totals and payment due dates.
+- Finance teams record payments received from customers in the customers table.
+
+## 7. Reporting and Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate sales reports based on order data for product performance analysis.
+- Management reviews sales reports to identify trends, opportunities, and areas for improvement.
+- Data analysts create category reports to monitor the performance of different product categories.

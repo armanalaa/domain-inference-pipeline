@@ -1,0 +1,587 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Geographical Information Management",
+    "definition": "The process of managing and maintaining information related to geographical features such as cities, countries, continents, deserts, islands, lakes, rivers, seas, and mountains.",
+    "tables": [
+      "geo_desert",
+      "geo_estuary",
+      "geo_island",
+      "geo_lake",
+      "geo_river",
+      "geo_sea",
+      "geo_source",
+      "located",
+      "locatedOn",
+      "mountainOnIsland",
+      "organization"
+    ],
+    "n_tables": 11,
+    "n_columns_total": 39,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "geo_desert": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Desert",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of Kalahari Deserts in multiple locations.",
+          "samples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter country codes for countries associated with deserts in Angola, Namibia, and Zaire (Z).",
+          "samples": [
+            "ANG",
+            "NAM",
+            "Z",
+            "RB",
+            "RSA"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical provinces associated with deserts.",
+          "samples": [
+            "Moxico",
+            "Cuando Cubango",
+            "Namibia",
+            "Southern",
+            "Western"
+          ]
+        }
+      ]
+    },
+    "geo_estuary": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for major rivers in various geographical locations.",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-1 alpha-2 country code for estuaries.",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "R",
+            "SF"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of provinces or counties for estuaries located in Iceland and Scandinavian countries.",
+          "samples": [
+            "Iceland",
+            "Oestfold",
+            "Akershus",
+            "Goteborg och Bohus",
+            "Varmland"
+          ]
+        }
+      ]
+    },
+    "geo_island": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of various islands, such as Svalbard, Greenland, Iceland, Aust-Vagoey, Streymoy.",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Aust-Vagoey",
+            "Streymoy"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated names of countries associated with geographical islands.",
+          "samples": [
+            "SVAX",
+            "GROX",
+            "IS",
+            "N",
+            "FARX"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical names of provinces or regions associated with islands.",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Nordland",
+            "Faroe Islands"
+          ]
+        }
+      ]
+    },
+    "geo_lake": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for freshwater lakes in Finland.",
+          "samples": [
+            "Inari",
+            "Oulujaervi",
+            "Kallavesi",
+            "Saimaa",
+            "Paeijaenne"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-1 alpha-2 code for the country where the lake is located.",
+          "samples": [
+            "SF",
+            "N",
+            "S",
+            "DK",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores Finnish provincial names for geographical lakes.",
+          "samples": [
+            "Lappia",
+            "Oulu",
+            "Kuopio",
+            "Kymi",
+            "Mikkeli"
+          ]
+        }
+      ]
+    },
+    "geo_river": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for various rivers.",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-1 alpha-2 country code for rivers.",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "R",
+            "SF"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of provinces or counties along rivers in Iceland and Norway.",
+          "samples": [
+            "Iceland",
+            "Akershus",
+            "Oestfold",
+            "Hedmark",
+            "Soer Trondelag"
+          ]
+        }
+      ]
+    },
+    "geo_sea": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas bordering multiple countries in the Mondial database.",
+          "samples": [
+            "Skagerrak",
+            "Kattegat",
+            "North Sea",
+            "The Channel",
+            "Black Sea"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries bordering the sea.",
+          "samples": [
+            "DK",
+            "N",
+            "S",
+            "F",
+            "D"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical entities within Denmark or possibly Norwegian provinces.",
+          "samples": [
+            "Denmark",
+            "Oslo",
+            "Akershus",
+            "Oestfold",
+            "Buskerud"
+          ]
+        }
+      ]
+    },
+    "geo_source": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for various rivers worldwide.",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 country codes for geographical data sources.",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "SF",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical regions (e.g., Iceland, Soer Trondelag, Oppland) within countries for geo_source table.",
+          "samples": [
+            "Iceland",
+            "Soer Trondelag",
+            "Oppland",
+            "Alvsborg",
+            "Hedmark"
+          ]
+        }
+      ]
+    },
+    "located": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of cities in Albania and Greece.",
+          "samples": [
+            "Shkoder",
+            "Durres",
+            "Vlore",
+            "Kavalla",
+            "Athens"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical regions for locations, with examples including Albania, Attiki, Anatoliki Makedhonia kai Thraki.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Ionioi Nisoi"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries where vehicles are located.",
+          "samples": [
+            "AL",
+            "GR",
+            "SRB",
+            "F",
+            "E"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The River column stores names of major European rivers.",
+          "samples": [
+            "Donau",
+            "Save",
+            "Rhein",
+            "Garonne",
+            "Loire"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of lakes from various countries.",
+          "samples": [
+            "Lake Skutari",
+            "Bodensee",
+            "Lac Leman",
+            "Vierwaldstattersee",
+            "Zurichsee"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas within the Mediterranean region.",
+          "samples": [
+            "Mediterranean Sea",
+            "Atlantic Ocean",
+            "The Channel",
+            "North Sea",
+            "Baltic Sea"
+          ]
+        }
+      ]
+    },
+    "locatedOn": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names of locations where Mondial companies are based.",
+          "samples": [
+            "Iraklion",
+            "Mytilini",
+            "Ajaccio",
+            "Palma de Mallorca",
+            "Santa Cruz de Tenerife"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical regions where Mondial companies are located, such as islands or provinces.",
+          "samples": [
+            "Kriti",
+            "Voreion Aiyaion",
+            "Corse",
+            "Balearic Islands",
+            "Canary Islands"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-1 alpha-2 country code for the location of a company.",
+          "samples": [
+            "GR",
+            "F",
+            "E",
+            "I",
+            "R"
+          ]
+        },
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands where Mondial companies are located.",
+          "samples": [
+            "Kreta",
+            "Lesbos",
+            "Corse",
+            "Mallorca",
+            "Teneriffa"
+          ]
+        }
+      ]
+    },
+    "mountainOnIsland": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Mountain",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for mountains located on islands.",
+          "samples": [
+            "Oeraefajoekull",
+            "Snoefell",
+            "Ben Nevis",
+            "Monte Cinto",
+            "Etna"
+          ]
+        },
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands where mountains are located.",
+          "samples": [
+            "Iceland",
+            "Great Britain",
+            "Corse",
+            "Sicilia",
+            "Kreta"
+          ]
+        }
+      ]
+    },
+    "organization": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Abbreviation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of abbreviated names for international organizations such as ACP, AfDB, ACCT, OPANAL, AG.",
+          "samples": [
+            "ACP",
+            "AfDB",
+            "ACCT",
+            "OPANAL",
+            "AG"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores names of international organizations, such as regional groups and development banks.",
+          "samples": [
+            "African, Caribbean, and Pacific Countries",
+            "African Development Bank",
+            "Agency for Cultural and Technical Cooperation",
+            "Agency for the Prohibition of Nuclear Weapons in Latin America and the Caribbean",
+            "Andean Group"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for various global organizations.",
+          "samples": [
+            "Brussels",
+            "Abidjan",
+            "Paris",
+            "Mexico City",
+            "Lima"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 country codes for organizations.",
+          "samples": [
+            "B",
+            "CI",
+            "F",
+            "MEX",
+            "PE"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical regions for organizations, represented by provinces, districts, or states.",
+          "samples": [
+            "Brabant",
+            "Cote dIvoire",
+            "Ile de France",
+            "Distrito Federal",
+            "Lima"
+          ]
+        },
+        {
+          "name": "Established",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores organization establishment dates as formatted strings (YYYY-MM-DD).",
+          "samples": [
+            "1976-04-01",
+            "1963-08-04",
+            "1970-03-21",
+            "1967-02-14",
+            "1969-05-26"
+          ]
+        }
+      ]
+    }
+  }
+}

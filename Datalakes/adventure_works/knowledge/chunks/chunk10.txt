@@ -1,0 +1,55 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- HR managers update employee information by modifying the relevant fields in the HumanResources Employee table.
+- HR managers assign employees to departments through the HumanResources EmployeeDepartmentHistory table.
+- HR managers manage employee pay history using the HumanResources EmployeePayHistory table.
+
+## 2. Shift Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff and sales representatives view available shifts by checking the names, start times, and end times listed in the HumanResources Shift table.
+- Warehouse staff and sales representatives select their preferred shift by recording the ShiftID in their respective tables (HumanResources Employee or Sales).
+
+## 3. Address Management
+
+Performed By: Customers, Employees
+
+Activity:
+- Customers and employees provide their addresses by entering AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation in the Person Address table.
+- Employees update their personal address information by modifying the relevant fields in the Person BusinessEntityAddress table.
+
+## 4. Phone Number Type Management
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators create new phone number types by recording the name and default ModifiedDate in the PhoneNumberType table.
+
+## 5. State/Province Management
+
+Performed By: Geographical Data Managers
+
+Activity:
+- Geographical data managers add or update state/province records by entering the StateProvinceID, StateProvinceCode, ISO standard country or region code, Name, ID of the territory in which the state or province is located, and default ModifiedDate in the Person.StateProvince table.
+
+## 6. Contact Information Management
+
+Performed By: Employees
+
+Activity:
+- Employees provide their additional contact information by entering FirstName, MiddleName, LastName, TelephoneNumber, TelephoneSpecialInstructions, Street, City, StateProvince, PostalCode, CountryRegion, HomeAddressSpecialInstructions, EMailAddress, EMailSpecialInstructions, EMailTelephoneNumber, rowguid, and ModifiedDate in the Person.vAdditionalContactInfo view.
+
+## 7. Sales Territory Management
+
+Performed By: Sales Managers
+
+Activity:
+- Sales managers assign sales territories to state/provinces by recording the TerritoryID in the Sales.SalesTerritory table, referencing the StateProvinceID in the Person.StateProvince table.

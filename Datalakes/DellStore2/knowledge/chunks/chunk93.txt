@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or shipped.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer profiles with firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcard details.
+- HR managers update the username, "password", age, income, gender fields when a new employee is onboarded or existing information needs to be updated.
+- Customers place orders by providing orderdate, customerid, netamount, tax, totalamount, and shipping information.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate orders based on customer requests and update the orderlines table with orderlineid, orderid, prod_id, quantity, and orderdate.
+- Warehouse staff pick and pack items for shipment once an order is ready.
+- Purchasing teams issue purchase orders to suppliers when inventory levels fall below a certain threshold.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the sales column in the inventory table whenever products are sold or returned.
+- Purchasing teams monitor the reorder table to determine when to place orders for restocking based on date_low, quan_low, and quan_reordered.
+
+## 5. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance records financial transactions related to orders, such as netamount, tax, and totalamount in the orders table.
+
+## 6. Customer History Tracking
+
+Performed By: Sales Representatives, Marketing Teams
+
+Activity:
+- Sales representatives update the cust_hist table with customerid, orderid, and prod_id to track customer purchasing behavior.
+- Marketing teams analyze the data in the cust_hist table to identify trends and opportunities for targeted promotions.
+
+## 7. Product Information Maintenance
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers update product details like title, actor, price, special, and common_prod_id in the products table as needed.
+- Marketing teams use the actor column to associate products with specific actors or brands for marketing purposes.

@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal details, qualifications, and performance metrics (cc_name, cc_sq_ft, cc_hours).
+
+## 2. Market Division Management
+
+Performed By: Market Managers, Division Managers
+
+Activity:
+- Market managers categorize call centers into market classes and assign them to specific divisions (cc_mkt_id, cc_division).
+- Division managers oversee the operations of multiple call centers within their division and ensure compliance with company policies (cc_division_name, cc_company).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls from customers and provide assistance or information (cc_call_center_id, cc_rec_start_date).
+- Call center representatives record customer interactions, issues, and resolutions in the call center database (cc_closed_date_sk, cc_open_date_sk).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when products are added or removed from the catalog (cr_item_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details and updating the database (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff verify returned items, update inventory levels, and prepare them for restocking or disposal (cr_warehouse_sk).
+
+## 6. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record financial transactions related to call centers, such as operating costs, taxes, and revenue (cc_tax_percentage).
+- Finance teams generate reports on the financial performance of individual call centers and the overall organization (not specified in provided materials).

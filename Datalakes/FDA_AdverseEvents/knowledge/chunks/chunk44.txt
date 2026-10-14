@@ -1,0 +1,73 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Report Submission
+
+Performed By: Adverse Event Reporter (AER)
+
+Activity:
+- AER enters the reporter department, street, city, state, postcode, and country details.
+- AER records the qualification of the reporter.
+- AER provides literature reference(s) related to the adverse event report.
+- AER specifies the study name, type in which the reactions/events were observed, and sponsor study number.
+- AER enters the sender type, organization, department, title, given name, middle name, family name, street address, city, state, postcode, country code, telephone, telextension, tel country code, fax, faxextension, and fax country code.
+
+## 2. Report Verification
+
+Performed By: FDA Reviewer
+
+Activity:
+- FDA Reviewer checks the adverse event report for completeness and accuracy.
+- FDA Reviewer verifies the reporter's address and qualification details.
+- FDA Reviewer reviews the literature reference(s) provided by the AER.
+- FDA Reviewer ensures that the study name, type, and sponsor study number are correctly recorded.
+- FDA Reviewer validates the sender information, including the organization, department, title, and contact details.
+
+## 3. Event Categorization
+
+Performed By: Adverse Event Categorizer
+
+Activity:
+- Adverse Event Categorizer classifies the adverse event based on its nature and severity.
+- Adverse Event Categorizer assigns a category to the event according to the ICH guidelines.
+- Adverse Event Categorizer identifies any potential safety concerns related to the event.
+- Adverse Event Categorizer records the categorization details in the database.
+
+## 4. Data Entry and Validation
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Data Entry Clerk enters the adverse event details into the FDA_AdverseEvents database.
+- Data Entry Clerk validates the entered data for accuracy and consistency.
+- Data Entry Clerk ensures that all required fields are filled out correctly.
+- Data Entry Clerk saves the adverse event report in the database.
+
+## 5. Event Analysis
+
+Performed By: Adverse Event Analyst
+
+Activity:
+- Adverse Event Analyst reviews the adverse event report and associated data.
+- Adverse Event Analyst identifies any patterns or trends related to the event.
+- Adverse Event Analyst assesses the potential impact of the event on public health.
+- Adverse Event Analyst prepares a report summarizing the findings and recommendations.
+
+## 6. Report Review and Approval
+
+Performed By: FDA Manager
+
+Activity:
+- FDA Manager reviews the adverse event analysis report prepared by the Adverse Event Analyst.
+- FDA Manager ensures that the report is complete, accurate, and actionable.
+- FDA Manager approves or requests revisions to the report as necessary.
+- FDA Manager communicates the decision to the Adverse Event Analyst.
+
+## 7. Report Distribution
+
+Performed By: FDA Communication Officer
+
+Activity:
+- FDA Communication Officer distributes the approved adverse event analysis report to relevant stakeholders.
+- FDA Communication Officer ensures that the report is disseminated in a timely and secure manner.
+- FDA Communication Officer follows up on any questions or concerns raised by the recipients.
+- FDA Communication Officer maintains records of the distributed reports for future reference.

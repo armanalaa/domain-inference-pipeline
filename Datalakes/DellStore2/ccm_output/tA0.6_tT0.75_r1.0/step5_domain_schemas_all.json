@@ -1,0 +1,774 @@
+{
+  "0": {
+    "_meta": {
+      "domain_id": 0,
+      "domain_name": "Order Processing and Management",
+      "definition": "The unifying capability across all tables is the management of orders, including customer history tracking, order line item management, and order processing.",
+      "tables": [
+        "cust_hist",
+        "orderlines",
+        "orders"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "cust_hist": {
+        "_description": "Tracks historical customer purchases, linking each transaction to a specific customer and product.",
+        "columns": [
+          {
+            "name": "customerid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the customer entity",
+            "samples": [
+              7888,
+              4858,
+              15399,
+              17019,
+              14771
+            ]
+          },
+          {
+            "name": "orderid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the order entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "prod_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the prod_ entity",
+            "samples": [
+              9117,
+              3353,
+              2778,
+              4774,
+              3648
+            ]
+          }
+        ]
+      },
+      "orderlines": {
+        "_description": "Tracks individual product quantities and associated orders in the DellStore2 sales process.",
+        "columns": [
+          {
+            "name": "orderlineid",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in orderlines",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "orderid",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in orderlines",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "prod_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the prod_ entity",
+            "samples": [
+              9117,
+              3353,
+              2778,
+              4774,
+              3648
+            ]
+          },
+          {
+            "name": "quantity",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the number of items for each product line in an order.",
+            "samples": [
+              1,
+              3,
+              2,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "orderdate",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores the date format of order placement (YYYY-MM-DD) in a consistent manner.",
+            "samples": [
+              "2004-01-27",
+              "2004-01-01",
+              "2004-01-17",
+              "2004-01-28",
+              "2004-01-09"
+            ]
+          }
+        ]
+      },
+      "orders": {
+        "_description": "Tracks details of individual customer orders and their associated financial information in DellStore2.",
+        "columns": [
+          {
+            "name": "orderid",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in orders",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "orderdate",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores formatted date strings for order placement in YYYY-MM-DD format.",
+            "samples": [
+              "2004-01-27",
+              "2004-01-01",
+              "2004-01-17",
+              "2004-01-28",
+              "2004-01-09"
+            ]
+          },
+          {
+            "name": "customerid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the customer entity",
+            "samples": [
+              7888,
+              4858,
+              15399,
+              17019,
+              14771
+            ]
+          },
+          {
+            "name": "netamount",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores the total floating-point value of items ordered in each transaction.",
+            "samples": [
+              313.24,
+              54.9,
+              160.1,
+              106.67,
+              256.0
+            ]
+          },
+          {
+            "name": "tax",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores floating-point values representing taxes for individual orders.",
+            "samples": [
+              25.84,
+              4.53,
+              13.21,
+              8.8,
+              21.12
+            ]
+          },
+          {
+            "name": "totalamount",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores the total monetary value (in decimal format) for each order.",
+            "samples": [
+              339.08,
+              59.43,
+              173.31,
+              115.47,
+              277.12
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "1": {
+    "_meta": {
+      "domain_id": 1,
+      "domain_name": "Product Information Management",
+      "definition": "The process of managing and maintaining product information, including categories and details, across the enterprise system.",
+      "tables": [
+        "categories",
+        "products"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "categories": {
+        "_description": "Categorizes product offerings in DellStore2 for user-friendly navigation.",
+        "columns": [
+          {
+            "name": "category",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores category identifiers (1, 2, 3, 4, 5) for various product categories in DellStore2 database.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "categoryname",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of movie genre names such as Action, Animation, Children, Classics, and Comedy.",
+            "samples": [
+              "Action",
+              "Animation",
+              "Children",
+              "Classics",
+              "Comedy"
+            ]
+          }
+        ]
+      },
+      "products": {
+        "_description": "Captures details of various products offered in DellStore2, including their categories, titles, actors, prices, special offers, and common identifiers.",
+        "columns": [
+          {
+            "name": "prod_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in products",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "category",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores product category identifiers, such as 14 for computers, 6 for monitors, and 3 for printers.",
+            "samples": [
+              14,
+              6,
+              3,
+              9,
+              8
+            ]
+          },
+          {
+            "name": "title",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores up to 50 characters of product titles for the Academy series.",
+            "samples": [
+              "ACADEMY ACADEMY",
+              "ACADEMY ACE",
+              "ACADEMY ADAPTATION",
+              "ACADEMY AFFAIR",
+              "ACADEMY AFRICAN"
+            ]
+          },
+          {
+            "name": "actor",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores actor names for products.",
+            "samples": [
+              "PENELOPE GUINESS",
+              "EWAN RICKMAN",
+              "VIVIEN KAHN",
+              "ALAN MARX",
+              "CARRIE HANNAH"
+            ]
+          },
+          {
+            "name": "price",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores product prices as decimal amounts.",
+            "samples": [
+              25.99,
+              20.99,
+              28.99,
+              14.99,
+              11.99
+            ]
+          },
+          {
+            "name": "special",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "Stores a boolean value indicating if a product has special offers.",
+            "samples": [
+              "0",
+              "1",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "common_prod_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the common_prod_ entity",
+            "samples": [
+              1976,
+              6289,
+              7173,
+              8042,
+              2183
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+    "_meta": {
+      "domain_id": 2,
+      "domain_name": "Inventory and Reorder Management",
+      "definition": "The process of managing inventory levels, reordering products, and tracking order-related data.",
+      "tables": [
+        "inventory",
+        "reorder"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "inventory": {
+        "_description": "Tracks inventory levels of products in stock and sales transactions.",
+        "columns": [
+          {
+            "name": "prod_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the prod_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "quan_in_stock",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the quantity of items currently in stock.",
+            "samples": [
+              138,
+              118,
+              228,
+              279,
+              382
+            ]
+          },
+          {
+            "name": "sales",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the number of sales transactions for each inventory item.",
+            "samples": [
+              9,
+              19,
+              11,
+              12,
+              13
+            ]
+          }
+        ]
+      },
+      "reorder": {
+        "_description": "Tracks product reordering details, including ID, low stock date, minimum quantity, reorder date, and expected delivery date.",
+        "columns": [
+          {
+            "name": "prod_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the prod_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "date_low",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores formatted dates for low reorder points.",
+            "samples": [
+              "2004-01-05",
+              "2004-01-07",
+              "2004-01-10",
+              "2004-01-12",
+              "2004-01-14"
+            ]
+          },
+          {
+            "name": "quan_low",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stocks to reorder when quantity drops below a certain level (e.g., 12, 8, 15, 10, 6).",
+            "samples": [
+              12,
+              8,
+              15,
+              10,
+              6
+            ]
+          },
+          {
+            "name": "date_reordered",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores formatted date of product reorders as YYYY-MM-DD strings.",
+            "samples": [
+              "2004-01-06",
+              "2004-01-08",
+              "2004-01-11",
+              "2004-01-13",
+              "2004-01-15"
+            ]
+          },
+          {
+            "name": "quan_reordered",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the quantity of items reordered in individual transactions.",
+            "samples": [
+              50,
+              40,
+              60,
+              45,
+              35
+            ]
+          },
+          {
+            "name": "date_expected",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores expected reorder dates in YYYY-MM-DD format.",
+            "samples": [
+              "2004-01-13",
+              "2004-01-15",
+              "2004-01-18",
+              "2004-01-20",
+              "2004-01-22"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "3": {
+    "_meta": {
+      "domain_id": 3,
+      "domain_name": "Customer Profile Management",
+      "definition": "The process of managing and maintaining customer profiles, including personal information, account details, and purchasing history.",
+      "tables": [
+        "customers"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "customers": {
+        "_description": "Captures customer details including personal information, contact data, and financial information for managing online sales at DellStore2.",
+        "columns": [
+          {
+            "name": "customerid",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in customers",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "firstname",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores customer names, represented as alphanumeric strings of up to 10 characters.",
+            "samples": [
+              "VKUUXF",
+              "HQNMZH",
+              "JTNRNB",
+              "XMFYXD",
+              "PGDTDU"
+            ]
+          },
+          {
+            "name": "lastname",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores customer surnames up to 10 characters long.",
+            "samples": [
+              "ITHOMQJNYX",
+              "UNUKXHJVXB",
+              "LYYSHTQJRE",
+              "WQLQHUHLFE",
+              "ETBYBNEGUT"
+            ]
+          },
+          {
+            "name": "address1",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores detailed street addresses of customers at Dell Way.",
+            "samples": [
+              "4608499546 Dell Way",
+              "5119315633 Dell Way",
+              "6297761196 Dell Way",
+              "9862764981 Dell Way",
+              "2841895775 Dell Way"
+            ]
+          },
+          {
+            "name": "address2",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores additional customer address information (if provided).",
+            "samples": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "city",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores city names up to 10 characters long, possibly abbreviated.",
+            "samples": [
+              "QSDPAGD",
+              "YNCERXJ",
+              "LWVIFXJ",
+              "HOKEXCD",
+              "RZQTCDN"
+            ]
+          },
+          {
+            "name": "state",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores two-letter abbreviations for U.S. states of customers.",
+            "samples": [
+              "SD",
+              "AZ",
+              "OH",
+              "MS",
+              "IN"
+            ]
+          },
+          {
+            "name": "zip",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores 5-digit postal codes for customers.",
+            "samples": [
+              24101,
+              11802,
+              96082,
+              78442,
+              16291
+            ]
+          },
+          {
+            "name": "country",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores customer countries as 50 character VARCHARs, with all provided examples being American (USA).",
+            "samples": [
+              "US",
+              "UK",
+              "Germany",
+              "France",
+              "South Africa"
+            ]
+          },
+          {
+            "name": "region",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores customer region IDs, all set to 1 in these samples.",
+            "samples": [
+              1,
+              2,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "email",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique email addresses of Dell customers.",
+            "samples": [
+              "ITHOMQJNYX@dell.com",
+              "UNUKXHJVXB@dell.com",
+              "LYYSHTQJRE@dell.com",
+              "WQLQHUHLFE@dell.com",
+              "ETBYBNEGUT@dell.com"
+            ]
+          },
+          {
+            "name": "phone",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores customer phone numbers as 10-digit integers.",
+            "samples": [
+              4608499546,
+              5119315633,
+              6297761196,
+              9862764981,
+              2841895775
+            ]
+          },
+          {
+            "name": "creditcardtype",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores customer credit card type identifiers (1: Visa, 4: Mastercard, 5: Amex, 3: Discover)",
+            "samples": [
+              1,
+              4,
+              5,
+              3,
+              2
+            ]
+          },
+          {
+            "name": "creditcard",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores 15-digit customer credit card numbers.",
+            "samples": [
+              1979279217775911,
+              3144519586581737,
+              8728086929768325,
+              7160005148965866,
+              8377095518168063
+            ]
+          },
+          {
+            "name": "creditcardexpiration",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores credit card expiration dates in YYYY/MM format.",
+            "samples": [
+              "2012/03",
+              "2012/11",
+              "2010/12",
+              "2009/09",
+              "2010/10"
+            ]
+          },
+          {
+            "name": "username",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores usernames up to 10 characters for customer accounts.",
+            "samples": [
+              "user1",
+              "user2",
+              "user3",
+              "user4",
+              "user5"
+            ]
+          },
+          {
+            "name": "\"password\"",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores encrypted customer passwords of maximum 10 characters.",
+            "samples": [
+              "password",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "age",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores customer ages as integers, ranging from 21 to 80 years.",
+            "samples": [
+              55,
+              80,
+              47,
+              44,
+              21
+            ]
+          },
+          {
+            "name": "income",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores customer's annual income as integer values, typically in thousands of dollars.",
+            "samples": [
+              100000,
+              40000,
+              20000,
+              60000,
+              80000
+            ]
+          },
+          {
+            "name": "gender",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores customer gender data as either 'M' for male or 'F' for female (up to 10 characters).",
+            "samples": [
+              "M",
+              "F",
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

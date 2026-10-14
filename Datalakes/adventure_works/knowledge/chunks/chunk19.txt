@@ -1,0 +1,58 @@
+ # adventure_works — Business Workflows
+
+## 1. Product Model Management
+
+Performed By: Product Managers, Technical Illustrators, Translators
+
+Activity:
+- Product managers register new product models by recording the name and detailed catalog information in xml format. (ProductModelID, Name, CatalogDescription)
+- Technical illustrators upload visual representations of the product model. (IllustrationID)
+- Translators provide product descriptions in various languages for each product model. (CultureID, ProductDescriptionID)
+
+## 2. Product Model Illustration Management
+
+Performed By: Graphic Designers, IT Administrators
+
+Activity:
+- Graphic designers create and update illustrations for the product models. (IllustrationID)
+- IT administrators link each illustration to its corresponding product model. (ProductModelID, IllustrationID)
+
+## 3. Production Model Product Description Management
+
+Performed By: Translators, Content Managers
+
+Activity:
+- Translators provide product descriptions in various languages for each product model. (CultureID, ProductDescriptionID)
+- Content managers link the translated descriptions to their corresponding product models and product descriptions. (ProductModelID, ProductDescriptionID, CultureID)
+
+## 4. Employee Management
+
+Performed By: HR Managers, Payroll Specialists
+
+Activity:
+- HR managers hire new employees by recording their personal information, job title, and employment details. (BusinessEntityID, NationalIDNumber, LoginID, OrganizationNode, OrganizationLevel, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag)
+- Payroll specialists update employee pay history with rate changes and frequency. (BusinessEntityID, RateChangeDate, Rate, PayFrequency)
+
+## 5. Employee Department Assignment
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers assign employees to departments and shifts. (DepartmentID, ShiftID, StartDate, EndDate)
+- Warehouse staff track employee department changes. (BusinessEntityID, DepartmentID, ShiftID, ModifiedDate)
+
+## 6. Address Management
+
+Performed By: Employees, IT Administrators
+
+Activity:
+- Employees provide their personal addresses for business purposes. (AddressLine1, AddressLine2, City, StateProvinceID, PostalCode)
+- IT administrators store and manage employee addresses. (AddressID, rowguid, ModifiedDate)
+
+## 7. Product Model Inventory Management
+
+Performed By: Inventory Managers, Warehouse Staff
+
+Activity:
+- Inventory managers update the quantity of each product model in stock. (ProductModelID)
+- Warehouse staff track product model inventory levels and changes. (BusinessEntityID, DepartmentID, ProductModelID, ModifiedDate)

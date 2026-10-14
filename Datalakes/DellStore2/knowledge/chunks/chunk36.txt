@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when receiving shipments for newly registered products.
+- Product managers assign common_prod_id to similar products for easier categorization and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and username during account creation.
+- Customer service agents update customer information when customers contact them for changes or inquiries.
+- HR managers verify and approve new customer accounts based on age, income, gender, and region criteria.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customers
+
+Activity:
+- Sales representatives create orders by linking customerid, orderdate, and netamount for each order.
+- Customers place orders by specifying productid and quantity from the catalog.
+- Warehouse staff update quan_in_stock when shipping ordered products to customers.
+
+## 4. Inventory Control
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor sales by tracking sales for each productid in the inventory table.
+- Purchasing teams reorder products when quan_low is reached for a given prod_id.
+- Inventory staff update quan_reordered and date_expected when receiving new shipments.
+
+## 5. Financial Management
+
+Performed By: Finance Staff, Accountants
+
+Activity:
+- Finance staff calculate totalamount by adding netamount and tax for each order.
+- Accountants record financial transactions related to orders in the orders table.
+
+## 6. Data Quality Assurance
+
+Performed By: Data Quality Analysts
+
+Activity:
+- Data quality analysts use data profiling to understand the quality of data stored in the database.
+- They ensure high data quality and increase trust in data by implementing appropriate data governance practices.
+
+## 7. Compliance and Security
+
+Performed By: IT Administrators, Legal Teams
+
+Activity:
+- IT administrators deploy Dataedo on-premises or in private clouds to maintain full control over the data and meet security requirements.
+- Legal teams ensure that data privacy and security are prioritized at every step, with no raw data ever sent outside the systems.

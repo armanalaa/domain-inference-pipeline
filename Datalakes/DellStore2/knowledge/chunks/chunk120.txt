@@ -1,0 +1,53 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for new products based on supplier agreements and inventory levels.
+- Product managers update product details when necessary, such as changing prices or categories.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customers place orders by providing required information like shipping address, payment details, and product preferences.
+- Customer service agents handle inquiries related to order status, returns, or refunds using customer contact information stored in the database.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Finance Department
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory and prepare them for shipping based on order details.
+- Finance department records each order's net amount, tax, and total amount in the orders table.
+- Orderlines are created to track individual product quantities within an order.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update quan_in_stock when products are received or shipped out.
+- Purchasing teams monitor inventory levels and place reorders when the quantity falls below a specified threshold.
+- The reorder table is updated with expected delivery dates and quantities.
+
+## 5. Sales Reporting
+
+Performed By: Finance Department, Management
+
+Activity:
+- Finance department calculates sales for each product by summing up the sales column in the inventory table.
+- Management analyzes sales reports to identify trends, best-selling products, and areas for improvement.
+
+## 6. Customer History Tracking
+
+Performed By: Sales Representatives, Marketing Team
+
+Activity:
+- Sales representatives access customer history to understand a customer's purchasing behavior and tailor recommendations accordingly.
+- Marketing team uses customer data to segment the audience for targeted promotions and campaigns.

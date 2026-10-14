@@ -1,0 +1,48 @@
+ TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Manager, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to specific warehouses based on the warehouse's capacity and location (cc_division, cc_company).
+- Warehouse staff update call center details such as name, class, employees count, square footage, operating hours, and manager assignment (cc_name, cc_class, cc_employees, cc_sq_ft, cc_hours, cc_manager).
+
+## 2. Market Management
+
+Performed By: Market Manager, Call Center Manager
+
+Activity:
+- Market managers define market classes and descriptions for each call center (cc_mkt_class, cc_mkt_desc).
+- Call center managers associate their call centers with specific markets based on the market class and description (cc_mkt_id).
+
+## 3. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting items from the catalog and specifying quantities (ol_i_id, ol_quantity).
+- Warehouse staff update stock levels as orders are processed (s_i_id, s_quantity).
+
+## 5. Delivery Processing
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff determine the delivery date for each order based on the next available delivery transaction for the district (d_next_o_id).
+- Warehouse staff update the delivery date for each order line in the order_line table (ol_delivery_d).
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned item, refunded customer details, and reason for return (cr_item_sk, cr_refunded_customer_sk, cr_reason_sk).
+- Warehouse staff update stock levels as returns are processed (s_i_id, s_quantity).

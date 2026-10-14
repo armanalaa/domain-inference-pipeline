@@ -1,0 +1,141 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 57
+Edges in G_T         : 176
+θ_T applied in Step 4: 0.75
+Domains discovered   : 10
+Modularity Q         : 0.3919
+
+──────────────────────────────────────────────────────────────────────
+D0  E-commerce Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing all aspects related to e-commerce transactions, including shopping cart management and sales transaction recording.
+  Tables     : Sales ShoppingCartItem
+  Phi top-3  : C15=0.395  C12=0.303  C5=0.268
+
+──────────────────────────────────────────────────────────────────────
+D1  EmployeeCompensationManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing employee compensation data, including payroll processing and salary history.
+  Tables     : HumanResources EmployeePayHistory
+  Phi top-3  : C1=0.385  C3=0.285  C6=0.267
+
+──────────────────────────────────────────────────────────────────────
+D2  Sales Transaction Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing sales transactions and associated data, including recording, tracking, and archiving.
+  Tables     : Production TransactionHistory, Production TransactionHistoryArchive
+  Phi top-3  : C16=0.332  C12=0.304  C9=0.298
+
+──────────────────────────────────────────────────────────────────────
+D3  Core Business Operations Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and coordinating various aspects of the enterprise's core business operations, including human resources, production, purchasing, and sales.
+  Tables     : HumanResources Department, HumanResources Shift, Person AddressType, Person ContactType, Person CountryRegion, Person PersonPhone, Person PhoneNumberType, Person StateProvince, Production Culture, Production Location, Production Product, Production ProductCategory, Production ProductModel, Production ProductSubcategory, Production ScrapReason, Production UnitMeasure, Purchasing ShipMethod, Sales CountryRegionCurrency, Sales Currency, Sales SalesReason, Sales SalesTaxRate, Sales SalesTerritory
+  Phi top-3  : C1=0.235  C18=0.185  C12=0.182
+
+──────────────────────────────────────────────────────────────────────
+D4  Purchase Order Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing purchase orders, including tracking, modification, and fulfillment.
+  Tables     : Purchasing PurchaseOrderDetail
+  Phi top-3  : C12=0.373  C9=0.358  C10=0.305
+
+──────────────────────────────────────────────────────────────────────
+D5  Product Review and Customer Feedback Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing product reviews, customer feedback, and associated data
+  Tables     : Production ProductReview
+  Phi top-3  : C9=0.211  C12=0.184  C14=0.153
+
+──────────────────────────────────────────────────────────────────────
+D6  Operational Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining the operational data across various business entities, including employees, vendors, stores, products, and sales transactions.
+  Tables     : HumanResources Employee, HumanResources EmployeeDepartmentHistory, Person Address, Person BusinessEntity, Person BusinessEntityAddress, Person BusinessEntityContact, Person EmailAddress, Person Person, Production ProductDescription, Production ProductInventory, Purchasing ProductVendor, Purchasing PurchaseOrderHeader, Sales Customer, Sales PersonCreditCard, Sales SalesOrderDetail, Sales SalesOrderHeader, Sales SalesPerson, Sales SalesPersonQuotaHistory, Sales SalesTerritoryHistory, Sales SpecialOffer, Sales SpecialOfferProduct, Sales Store
+  Phi top-3  : C1=0.267  C12=0.224  C18=0.218
+
+──────────────────────────────────────────────────────────────────────
+D7  Production Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing the production lifecycle, including bill of materials, product cost history, list price history, work orders, and work order routing.
+  Tables     : Production BillOfMaterials, Production ProductCostHistory, Production ProductListPriceHistory, Production WorkOrder, Production WorkOrderRouting
+  Phi top-3  : C12=0.235  C1=0.222  C8=0.218
+
+──────────────────────────────────────────────────────────────────────
+D8  Payment and Transaction Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing credit card information, purchase orders, shopping carts, sales transactions, and financial records related to payments and transactions.
+  Tables     : Sales CreditCard
+  Phi top-3  : C1=0.215  C15=0.212  C12=0.205
+
+──────────────────────────────────────────────────────────────────────
+D9  Currency Exchange Rate Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining currency exchange rates for various transactions within the enterprise system.
+  Tables     : Sales CurrencyRate
+  Phi top-3  : C13=0.448  C16=0.210  C18=0.184
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  Sales ShoppingCartItem               D       0  E-commerce Management
+  HumanResources EmployeePayHistory    D       1  EmployeeCompensationManagement
+  Production TransactionHistory        D       2  Sales Transaction Management
+  Production TransactionHistoryArchive  D       2  Sales Transaction Management
+  HumanResources Department            D       3  Core Business Operations Management
+  HumanResources Shift                 D       3  Core Business Operations Management
+  Person AddressType                   D       3  Core Business Operations Management
+  Person ContactType                   D       3  Core Business Operations Management
+  Person CountryRegion                 D       3  Core Business Operations Management
+  Person PersonPhone                   D       3  Core Business Operations Management
+  Person PhoneNumberType               D       3  Core Business Operations Management
+  Person StateProvince                 D       3  Core Business Operations Management
+  Production Culture                   D       3  Core Business Operations Management
+  Production Location                  D       3  Core Business Operations Management
+  Production Product                   D       3  Core Business Operations Management
+  Production ProductCategory           D       3  Core Business Operations Management
+  Production ProductModel              D       3  Core Business Operations Management
+  Production ProductSubcategory        D       3  Core Business Operations Management
+  Production ScrapReason               D       3  Core Business Operations Management
+  Production UnitMeasure               D       3  Core Business Operations Management
+  Purchasing ShipMethod                D       3  Core Business Operations Management
+  Sales CountryRegionCurrency          D       3  Core Business Operations Management
+  Sales Currency                       D       3  Core Business Operations Management
+  Sales SalesReason                    D       3  Core Business Operations Management
+  Sales SalesTaxRate                   D       3  Core Business Operations Management
+  Sales SalesTerritory                 D       3  Core Business Operations Management
+  Purchasing PurchaseOrderDetail       D       4  Purchase Order Management
+  Production ProductReview             D       5  Product Review and Customer Feedback Management
+  HumanResources Employee              D       6  Operational Data Management
+  HumanResources EmployeeDepartmentHistory  D       6  Operational Data Management
+  Person Address                       D       6  Operational Data Management
+  Person BusinessEntity                D       6  Operational Data Management
+  Person BusinessEntityAddress         D       6  Operational Data Management
+  Person BusinessEntityContact         D       6  Operational Data Management
+  Person EmailAddress                  D       6  Operational Data Management
+  Person Person                        D       6  Operational Data Management
+  Production ProductDescription        D       6  Operational Data Management
+  Production ProductInventory          D       6  Operational Data Management
+  Purchasing ProductVendor             D       6  Operational Data Management
+  Purchasing PurchaseOrderHeader       D       6  Operational Data Management
+  Sales Customer                       D       6  Operational Data Management
+  Sales PersonCreditCard               D       6  Operational Data Management
+  Sales SalesOrderDetail               D       6  Operational Data Management
+  Sales SalesOrderHeader               D       6  Operational Data Management
+  Sales SalesPerson                    D       6  Operational Data Management
+  Sales SalesPersonQuotaHistory        D       6  Operational Data Management
+  Sales SalesTerritoryHistory          D       6  Operational Data Management
+  Sales SpecialOffer                   D       6  Operational Data Management
+  Sales SpecialOfferProduct            D       6  Operational Data Management
+  Sales Store                          D       6  Operational Data Management
+  Production BillOfMaterials           D       7  Production Management
+  Production ProductCostHistory        D       7  Production Management
+  Production ProductListPriceHistory   D       7  Production Management
+  Production WorkOrder                 D       7  Production Management
+  Production WorkOrderRouting          D       7  Production Management
+  Sales CreditCard                     D       8  Payment and Transaction Management
+  Sales CurrencyRate                   D       9  Currency Exchange Rate Management
+======================================================================

@@ -1,0 +1,72 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Regulatory Affairs Specialists, Data Analysts
+
+Activity:
+- Regulatory affairs specialists monitor drug safety reports and identify adverse events.
+- Data analysts extract relevant data from the FDA_AdverseEvents database for further analysis.
+- Regulatory affairs specialists categorize adverse events based on their severity and potential impact on public health.
+- Data analysts use API queries to search for specific adverse events within a given date range.
+- Regulatory affairs specialists review the search results and select relevant reports for further investigation.
+
+## 2. Drug Classification
+
+Performed By: Pharmacologists, Data Analysts
+
+Activity:
+- Pharmacologists classify drugs based on their pharmacologic properties and potential side effects.
+- Data analysts assign the appropriate pharmacologic class to each drug in the FDA_AdverseEvents database.
+- Pharmacologists consult with regulatory affairs specialists to ensure accurate classification of adverse events.
+- Data analysts update the pharmacologic class information for drugs in the FDA_AdverseEvents database as needed.
+
+## 3. Patient Reaction Analysis
+
+Performed By: Data Analysts, Regulatory Affairs Specialists
+
+Activity:
+- Data analysts count the frequency of patient reactions associated with specific drugs using API queries.
+- Regulatory affairs specialists review the most frequently reported patient reactions for each drug.
+- Data analysts use this information to identify trends and potential risks associated with certain drugs or pharmacologic classes.
+- Regulatory affairs specialists collaborate with pharmaceutical companies to address any identified issues.
+
+## 4. API Query Development
+
+Performed By: Data Analysts, IT Developers
+
+Activity:
+- Data analysts and IT developers design custom API queries to extract specific data from the FDA_AdverseEvents database.
+- IT developers implement these queries in the API for use by regulatory affairs specialists and other stakeholders.
+- Data analysts test the implemented queries to ensure they return accurate results.
+- IT developers make any necessary adjustments to the queries based on feedback from data analysts and regulatory affairs specialists.
+
+## 5. Database Maintenance
+
+Performed By: Database Administrators, IT Developers
+
+Activity:
+- Database administrators maintain the integrity and security of the FDA_AdverseEvents database.
+- IT developers update the database schema as needed to accommodate new data or changes in reporting requirements.
+- Database administrators ensure that the database is backed up regularly and can be restored in case of any issues.
+- IT developers troubleshoot and resolve any technical problems that may arise with the FDA_AdverseEvents database.
+
+## 6. Report Generation
+
+Performed By: Regulatory Affairs Specialists, Data Analysts
+
+Activity:
+- Regulatory affairs specialists compile adverse event reports based on data extracted from the FDA_AdverseEvents database.
+- Data analysts generate charts and graphs to visualize trends in patient reactions and adverse events.
+- Regulatory affairs specialists review these reports and use them to make informed decisions about drug safety and public health.
+- Reports are shared with relevant stakeholders, including pharmaceutical companies, healthcare providers, and the general public.
+
+## 7. Compliance Monitoring
+
+Performed By: Compliance Officers, Regulatory Affairs Specialists
+
+Activity:
+- Compliance officers monitor drug manufacturers for compliance with reporting requirements.
+- Regulatory affairs specialists review adverse event reports submitted by drug manufacturers to ensure they are complete and accurate.
+- Compliance officers take enforcement action against noncompliant manufacturers as necessary.
+- Regulatory affairs specialists collaborate with pharmaceutical companies to address any identified compliance issues.

@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Web Content Management",
+    "definition": "The process of creating, updating, and managing web content, including pages, URLs, types, and associated metadata.",
+    "tables": [
+      "web_page"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 14,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "web_page": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "wp_web_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web pages.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "wp_web_page_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the wp_web_page_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "wp_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores web page record start dates in YYYY-MM-DD format.",
+          "samples": [
+            "1997-09-03",
+            "2000-09-03",
+            "1999-09-04",
+            "2001-09-03",
+            null
+          ]
+        },
+        {
+          "name": "wp_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores end dates of web pages, formatted as YYYY-MM-DD.",
+          "samples": [
+            "2000-09-02",
+            "1999-09-03",
+            "2001-09-02",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_creation_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer values representing timestamps of web page creation dates.",
+          "samples": [
+            2450810,
+            2450814,
+            2450812,
+            2450815,
+            2450807
+          ]
+        },
+        {
+          "name": "wp_access_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys representing web page access dates.",
+          "samples": [
+            2452620,
+            2452580,
+            2452611,
+            2452579,
+            2452597
+          ]
+        },
+        {
+          "name": "wp_autogen_flag",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Web_page autogen_flag indicates whether a page was automatically generated (Y) or manually created (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customers associated with web pages.",
+          "samples": [
+            98539,
+            1898,
+            84146,
+            33463,
+            57610
+          ]
+        },
+        {
+          "name": "wp_url",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of web page URLs for the given domain.",
+          "samples": [
+            "http://www.foo.com",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "wp_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Web_page type stores categorization of pages (welcome, protected, feedback, general).",
+          "samples": [
+            "welcome",
+            "protected",
+            "feedback",
+            "general",
+            "ad"
+          ]
+        },
+        {
+          "name": "wp_char_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of characters in web pages.",
+          "samples": [
+            2531,
+            1564,
+            3732,
+            3034,
+            3128
+          ]
+        },
+        {
+          "name": "wp_link_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of hyperlinks within each web page.",
+          "samples": [
+            8,
+            4,
+            18,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "wp_image_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of images per web page.",
+          "samples": [
+            3,
+            7,
+            2,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "wp_max_ad_count",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the maximum number of advertisements allowed per web page.",
+          "samples": [
+            4,
+            1,
+            3,
+            0,
+            2
+          ]
+        }
+      ]
+    }
+  }
+}

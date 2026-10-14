@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to specific warehouses based on geographical proximity (cc_division).
+- Warehouse staff update the square footage of a call center when it expands or contracts (cc_sq_ft).
+
+## 2. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize call centers based on market class and description (cc_mkt_class, cc_mkt_desc).
+- Call center managers update the market manager responsible for a specific call center (cc_market_manager).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls during business hours (cc_hours).
+- Call center managers record the start and end dates of a call center's operation (cc_rec_start_date, cc_rec_end_date).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update the warehouse where a specific item is stored when inventory levels change (not specified in provided schema).
+
+## 5. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record return requests from customers, including the returned date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse where a returned item is stored (not specified in provided schema).
+
+## 6. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- Finance team records the tax percentage for each call center (cc_tax_percentage).

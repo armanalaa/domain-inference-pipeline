@@ -1,0 +1,58 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Drug Reporting Initiation
+
+Performed By: Adverse Event Reporters (e.g., healthcare professionals, patients)
+
+Activity:
+- Record the drug's obtained country (B.4.k.2.3) after observing an adverse event.
+- Specify the batch/lot number (B.4.k.3) of the implicated drug.
+- Provide the authorization/application number (B.4.k.4.1) for the drug.
+- Identify the country of drug authorization (B.4.k.4.2).
+- Name the holder/applicant (B.4.k.4.3) who authorized the drug's use.
+
+## 2. Drug Dosage Recording
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Register the number of separate dosages (B.4.k.5.3) administered to the patient.
+- Specify the dose unit (B.4.k.5.2) used for each dosage.
+- Record the cumulative dose to first reaction (B.4.k.5.6) in the appropriate unit (B.4.k.5.7).
+- Document the dosage text (B.4.k.6) if available.
+- Specify the pharmaceutical form (B.4.k.7) of the drug.
+
+## 3. Route of Administration Recording
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Identify the route of administration (B.4.k.8) through which the drug was administered to the patient.
+
+## 4. Drug Administrative Details Documentation
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Record any additional details about the drug administration, such as dosage form (B.4.k.7), dose (number) (B.4.k.5.1), and dose (unit) (B.4.k.5.2).
+
+## 5. Adverse Event Description
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Describe the adverse event observed in the patient (B.4.k.9).
+
+## 6. Patient Information Recording
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Record the patient's demographic details, such as name, age, and gender (if applicable) (not specified in provided source materials).
+
+## 7. Case Report Submission
+
+Performed By: Adverse Event Reporters
+
+Activity:
+- Submit the completed case report to the appropriate regulatory authority for further analysis and processing.

@@ -1,0 +1,66 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new call centers with specific market identifiers (cc_mkt_id).
+- HR managers recruit and hire employees for the assigned call centers (cc_employees).
+- Call center managers determine the square footage (cc_sq_ft) and operating hours (cc_hours) for each call center.
+- HR managers set up the call center manager's details in the system (cc_manager).
+
+## 2. District Management
+
+Performed By: District Managers, Call Center Managers
+
+Activity:
+- District managers define tax percentages (d_tax) for each district.
+- Call center managers associate their call centers with specific districts (cc_d_id).
+
+## 3. Warehouse Management
+
+Performed By: Warehouse Managers, Purchasing Teams
+
+Activity:
+- Warehouse managers track inventory levels (stock) for each item in the warehouse.
+- Purchasing teams order new items from suppliers when stock levels fall below a certain threshold.
+
+## 4. Item Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog with unique identifiers (cp_catalog_page_id), categories (cp_department), and list prices.
+- Sales representatives update item details (i_name) and descriptions (i_data) for existing items in the catalog.
+
+## 5. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog (ol_i_id), specifying quantities (ol_quantity), and providing their contact information.
+- Sales representatives confirm the order details with customers and process the transactions in the system.
+
+## 6. Inventory Update
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff update stock levels (s_quantity) when items are sold or returned.
+- Sales representatives update order statuses (o_entry_d) and mark orders as shipped once inventory is available.
+
+## 7. Return Processing
+
+Performed By: Customers, Call Center Staff
+
+Activity:
+- Customers initiate returns by contacting the call center (cr_call_center_sk).
+- Call center staff record return reasons (cr_reason_sk) and update order statuses (o_entry_d) accordingly.
+
+## 8. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate total amounts for each order (total) and record them in the system (amt).

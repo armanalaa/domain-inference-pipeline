@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "domain_id": 7,
+    "domain_name": "Nation Membership Management",
+    "definition": "The process of managing the membership and affiliations of countries and organizations within a unified system.",
+    "tables": [
+      "isMember"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "isMember": {
+      "_description": "Tracks membership of organizations within specific countries across various types.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries of member nations.",
+          "samples": [
+            "TL",
+            "PNG",
+            "AG",
+            "BS",
+            "BDS"
+          ]
+        },
+        {
+          "name": "Organization",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of organizations that members belong to (e.g., ACP).",
+          "samples": [
+            "ACP",
+            "AfDB",
+            "ACCT",
+            "OPANAL",
+            "AG"
+          ]
+        },
+        {
+          "name": "Type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores membership status of individuals within the Mondial organization (member, member, etc.)",
+          "samples": [
+            "member",
+            "regional member",
+            "nonregional member",
+            "associate member",
+            "observer"
+          ]
+        }
+      ]
+    }
+  }
+}

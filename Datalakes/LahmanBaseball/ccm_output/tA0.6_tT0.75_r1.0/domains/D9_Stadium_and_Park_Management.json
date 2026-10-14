@@ -1,0 +1,111 @@
+{
+  "_meta": {
+    "domain_id": 9,
+    "domain_name": "Stadium and Park Management",
+    "definition": "The process of managing stadiums and parks information, including their details, locations, and updates.",
+    "tables": [
+      "Parks"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 7,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Parks": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "﻿ID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the ﻿ entity",
+          "samples": [
+            256,
+            257,
+            258,
+            259,
+            260
+          ]
+        },
+        {
+          "name": "parkalias",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores unique aliases for baseball parks.",
+          "samples": [
+            "Greenbush Grounds",
+            "Fourth Avenue Grounds",
+            "Edison Field; Anaheim Stadium",
+            "The Ballpark in Arlington; Ameriquest Field in Arlington; Rangers Ballpark in Arlington",
+            "Fulton County Stadium; Atlanta Stadium"
+          ]
+        },
+        {
+          "name": "parkkey",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for baseball parks (e.g., ALB01 for Atlanta Fulton County Stadium).",
+          "samples": [
+            "ALB01",
+            "ALT01",
+            "ANA01",
+            "ARL01",
+            "ARL02"
+          ]
+        },
+        {
+          "name": "parkname",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for baseball parks.",
+          "samples": [
+            "Riverside Park",
+            "Columbia Park",
+            "Angel Stadium of Anaheim",
+            "Arlington Stadium",
+            "Globe Life Park in Arlington"
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of cities where baseball parks are located.",
+          "samples": [
+            "Rensselaer",
+            "Altoona",
+            "Anaheim",
+            "Arlington",
+            "Atlanta"
+          ]
+        },
+        {
+          "name": "state",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the state where baseball parks are located (e.g., NY, PA, CA, TX).",
+          "samples": [
+            "NY",
+            "PA",
+            "CA",
+            "TX",
+            "GA"
+          ]
+        },
+        {
+          "name": "country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where baseball parks are located (based on sample values).",
+          "samples": [
+            "US",
+            "UK",
+            "MX",
+            "CA",
+            "PR"
+          ]
+        }
+      ]
+    }
+  }
+}

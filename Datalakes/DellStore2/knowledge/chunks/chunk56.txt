@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers for the procurement of new products based on inventory levels and sales forecasts.
+- Product managers update product details, such as price and special offers, when necessary.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customers place orders through the online store or by contacting sales representatives directly.
+- Customer service agents handle order inquiries, process returns, and address any customer complaints.
+- HR managers maintain employee records, including customer service agent details like personal information, employment history, and performance reviews.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives, Customer Service Agents
+
+Activity:
+- Warehouse staff track inventory levels and pick items for orders based on orderlines data.
+- Sales representatives or customer service agents confirm order details with customers before processing payment.
+- Orders are fulfilled by packaging and shipping the selected products to the customer's specified address.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels in real-time as items are received or shipped out.
+- Purchasing teams monitor inventory levels and reorder products when the quantity falls below a predefined threshold.
+- Inventory managers analyze sales data to forecast demand and adjust order quantities accordingly.
+
+## 5. Financial Management
+
+Performed By: Finance Department, Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives and customer service agents record customer payments in the system upon order fulfillment.
+- Finance department calculates net amounts, taxes, and total amounts for each order based on the recorded data.
+- Finance records financial transactions, generates invoices, and manages accounts receivable and payable.
+
+## 6. Data Management
+
+Performed By: IT Department, Data Analysts
+
+Activity:
+- IT department maintains the DellStore2 database and ensures its security and integrity.
+- Data analysts extract insights from the data stored in the database to support decision-making processes across various departments.
+- Business Glossary is used to define and manage business terms, policies, and rules consistently throughout the organization.

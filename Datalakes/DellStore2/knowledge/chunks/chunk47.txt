@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Team
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update product details as necessary, including actor, common_prod_id, and special.
+- Inventory team tracks quan_in_stock for each product to ensure availability.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Team
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product information and handling order details.
+- Customer service team updates customer records with contact information, credit card details, age, income, gender, and region.
+
+## 3. Order Processing
+
+Performed By: Order Processing Team
+
+Activity:
+- Order processing team creates new orders based on customer requests from the orderlines table.
+- They calculate netamount, tax, and totalamount for each order.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Inventory Team
+
+Activity:
+- Warehouse staff retrieve products as requested, updating quan_in_stock accordingly.
+- Inventory team monitors sales to forecast future product demand and reorder when necessary.
+
+## 5. Reordering
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams place orders for new inventory based on the date_low and quan_low from the reorder table.
+
+## 6. Customer History Tracking
+
+Performed By: Data Analysts, Sales Representatives
+
+Activity:
+- Data analysts analyze customer histories using the cust_hist table to identify trends and opportunities.
+- Sales representatives use this information to personalize customer interactions and improve sales.
+
+## 7. Data Documentation
+
+Performed By: Data Analysts, IT Department
+
+Activity:
+- Data analysts document all tables and columns in the DellStore2 database for easier understanding and querying.
+- The IT department ensures that this documentation is up-to-date and accessible to relevant personnel.

@@ -1,0 +1,46 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 55
+Threshold θ_T           : 0.7
+Edges in G_T            : 9
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.4436
+  max    : 0.9580
+  mean   : 0.6084
+  median : 0.5926
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  customers                       suppliers                       0.9580     11  1.000  0.9580
+  regions                         territories                     0.8997      2  1.000  0.8997
+  shippers                        suppliers                       0.8846      3  1.000  0.8846
+  customers                       shippers                        0.8336      3  1.000  0.8336
+  customers                       employees                       0.7893     11  1.000  0.7893
+  employees                       suppliers                       0.7810     12  1.000  0.7810
+  order_details                   products                        0.7688      5  1.000  0.7688
+  categories                      regions                         0.7070      2  1.000  0.7070
+  employee_territories            territories                     0.7067      2  1.000  0.7067
+  employee_territories            employees                       0.6701      2  1.000  0.6701
+  categories                      products                        0.6606      4  1.000  0.6606
+  employees                       shippers                        0.6540      3  1.000  0.6540
+  regions                         suppliers                       0.6423      2  1.000  0.6423
+  customers                       regions                         0.6417      2  1.000  0.6417
+  products                        shippers                        0.6347      3  1.000  0.6347
+
+G_T edges (Sim_T ≥ 0.7):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  customers                       suppliers                       0.9580
+  regions                         territories                     0.8997
+  shippers                        suppliers                       0.8846
+  customers                       shippers                        0.8336
+  customers                       employees                       0.7893
+  employees                       suppliers                       0.7810
+  order_details                   products                        0.7688
+  categories                      regions                         0.7070
+  employee_territories            territories                     0.7067
+======================================================================

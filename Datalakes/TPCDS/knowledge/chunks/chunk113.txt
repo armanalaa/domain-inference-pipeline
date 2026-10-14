@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and open positions.
+- HR managers update employee information in the database, including personal details, employment history, and performance reviews.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls, providing assistance with product inquiries or processing orders.
+- Representatives update call records with call duration, customer feedback, and resolution details.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price.
+- Marketing managers create and manage catalog pages, organizing products into departments and categories.
+
+## 4. Customer Service and Returns
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer complaints or returns by recording the reason for return, processing refunds, and updating inventory levels.
+
+## 5. Warehouse Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff receive shipments, update inventory levels, and prepare orders for shipping.
+- Staff track warehouse inventory, including stock levels, location, and expiration dates.
+
+## 6. Order Processing
+
+Performed By: Purchasing Teams, Finance Department
+
+Activity:
+- Purchasing teams issue purchase orders to suppliers based on customer orders and inventory levels.
+- Finance department records transactions, including order details, payment terms, and invoices.
+
+## 7. Performance Monitoring and Reporting
+
+Performed By: Call Center Managers, Marketing Managers, Finance Department
+
+Activity:
+- Call center managers monitor call center performance metrics, such as average handling time and customer satisfaction scores.
+- Marketing managers analyze sales data to identify trends and opportunities for marketing campaigns.
+- Finance department generates financial reports, including balance sheets, income statements, and cash flow statements.

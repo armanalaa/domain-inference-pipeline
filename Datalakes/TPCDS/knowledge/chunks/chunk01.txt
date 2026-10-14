@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers based on market requirements (cc_market_manager).
+- Warehouse staff allocate space for the newly established call centers (cc_sq_ft).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Sales Representatives
+
+Activity:
+- Call center employees answer incoming customer calls during operational hours (cc_hours).
+- Sales representatives assist customers with product inquiries and place orders (cr_order_number).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog with their respective details (cp_catalog_page_id, cp_description, cp_type).
+- Warehouse staff update inventory levels when a new item is added to the catalog.
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and record return details (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff update inventory levels and handle the returned items.
+
+## 5. Market Classification
+
+Performed By: Call Center Managers, Marketing Team
+
+Activity:
+- Call center managers categorize call centers based on their market class (cc_mkt_class).
+- The marketing team assigns appropriate marketing descriptions to each category (cc_mkt_desc).
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance records the tax percentage for each call center location (cc_tax_percentage).
+
+## 7. Membership Management
+
+Performed By: TPC Administration Team
+
+Activity:
+- The administration team manages membership applications, fees, and dues (2.4 Application Fee, 2.5 Dues).

@@ -1,0 +1,66 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Regulatory Affairs Specialists, Healthcare Professionals
+
+Activity:
+- Regulatory affairs specialists input adverse event reports into the system based on received ICSR messages. (safetyreport)
+- Healthcare professionals record details of patient's medical history related to the adverse event. (medicalhistoryepisode)
+- Regulatory affairs specialists link multiple reports for the same adverse event. (linkedreport)
+
+## 2. Case Review and Assessment
+
+Performed By: Adverse Event Analysts, Medical Officers
+
+Activity:
+- Adverse event analysts evaluate the severity of reported adverse events based on patient symptoms and outcomes.
+- Medical officers review the medical history of patients to determine if the adverse event is related to a specific drug or substance. (drugreactionrelatedness)
+
+## 3. Drug Information Management
+
+Performed By: Pharmacovigilance Specialists, Data Entry Clerks
+
+Activity:
+- Pharmacovigilance specialists maintain records of active substances and their associated adverse events. (activesubstance)
+- Data entry clerks input information about drug recurrences related to the reported adverse event. (drugrecurrence)
+
+## 4. Duplicate Report Detection
+
+Performed By: Adverse Event Analysts, System Administrators
+
+Activity:
+- Adverse event analysts check for duplicate reports within the system based on patient and event details. (reportduplicate)
+- System administrators configure the system to prevent duplicate report submissions.
+
+## 5. Data Validation and Quality Control
+
+Performed By: Quality Assurance Specialists, System Administrators
+
+Activity:
+- Quality assurance specialists verify the accuracy of data entered into the system. (safetyreport, medicalhistoryepisode, linkedreport)
+- System administrators implement data validation rules to ensure consistent and reliable data entry.
+
+## 6. Autopsy Report Processing
+
+Performed By: Medical Examiners, Data Entry Clerks
+
+Activity:
+- Medical examiners conduct autopsies on deceased patients and record their findings. (patientautopsy)
+- Data entry clerks input the results of autopsies into the system.
+
+## 7. Death Case Investigation
+
+Performed By: Adverse Event Analysts, Medical Officers
+
+Activity:
+- Adverse event analysts investigate deaths related to adverse events and determine their cause. (patientdeath)
+- Medical officers review medical history and autopsy reports to identify the contributing factors.
+
+## 8. Data Analysis and Reporting
+
+Performed By: Pharmacovigilance Specialists, Data Analysts
+
+Activity:
+- Pharmacovigilance specialists analyze adverse event data to identify trends and potential safety concerns. (summary)
+- Data analysts generate reports on adverse events for regulatory compliance and internal analysis.

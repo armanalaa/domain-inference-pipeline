@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and open positions (cc_employees).
+- HR managers update employee information in the database, including personal details, employment history, and performance records.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives, Warehouse Staff
+
+Activity:
+- Call center representatives answer customer queries, handle complaints, and provide product information (cc_call_center_id).
+- Warehouse staff track inventory levels and update them in the database when products are shipped or received.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by recording product details such as name, category, list price, and product code (cp_catalog_number, cp_catalog_page_number).
+- Marketing managers update catalog pages with promotional information or seasonal offers.
+
+## 4. Customer Interaction
+
+Performed By: Call Center Representatives, Customers
+
+Activity:
+- Customers place orders over the phone by providing their details and selecting products from the catalog (cc_call_center_id).
+- Call center representatives process orders, update order statuses, and handle any issues that arise during the transaction.
+
+## 5. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return reasons, customer details, and product information (cr_returned_date_sk, cr_item_sk).
+- Warehouse staff update inventory levels when returned products are received.
+
+## 6. Result Submission and Review
+
+Performed By: Test Sponsors, TPC Council
+
+Activity:
+- Test sponsors submit new benchmark results for review (cr_call_center_sk, cr_catalog_page_sk).
+- The TPC Council reviews the submitted results, approves or rejects them based on the policies, and updates the TPC Results List accordingly.
+
+## 7. Disclosure of Implementation
+
+Performed By: Test Sponsors, TPC Technical Subcommittees
+
+Activity:
+- Test sponsors disclose their implementation details in the FDR (cr_ship_mode_sk).
+- TPC technical subcommittees review and copy the disclosed implementations for benchmarking purposes.

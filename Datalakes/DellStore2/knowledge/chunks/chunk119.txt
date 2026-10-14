@@ -1,0 +1,41 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when receiving shipments of newly registered products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives generate customer profiles by entering customer details such as firstname, lastname, address, email, phone, creditcardtype, and income.
+- Customer service agents update the username and password for customers who request account access changes.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products from the catalog, specifying quantities, and providing order details.
+- Sales representatives confirm orders and record the netamount, tax, and totalamount for each order.
+- Warehouse staff track orderlines and update quan_in_stock when shipping an order.
+
+## 4. Inventory Control
+
+Performed By: Purchasing Teams, Inventory Staff
+
+Activity:
+- Purchasing teams issue purchase orders to replenish low stock levels based on the date_low and quan_low for each product.
+- Inventory staff update sales when products are sold, and reorder products when they reach the date_expected.
+
+## 5. Financial Reporting
+
+Performed By: Finance Staff
+
+Activity:
+- Finance records financial transactions related to orders, including netamount, tax, and totalamount.

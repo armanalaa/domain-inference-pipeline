@@ -1,0 +1,62 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Information Management
+
+Performed By: Data Administrators, Baseball Analysts
+
+Activity:
+- Data administrators update player information in the People table based on biographical data sources.
+- Baseball analysts record new players' details such as name, birthdate, position, and college in the CollegePlaying table.
+- Data administrators assign unique playerIDs to each registered player.
+- Analysts input player statistics for each season into the Batting, Fielding, and Appearances tables.
+- If a player receives an award, data administrators record the awardID, yearID, lgID, and notes in the AwardsPlayers or AwardsManagers table.
+
+## 2. Award Allocation and Tracking
+
+Performed By: Award Committees, Data Administrators
+
+Activity:
+- Award committees determine winners for various awards based on player performance.
+- Data administrators assign points to managers and players in the AwardsShareManagers and AwardsSharePlayers tables.
+- If a tie occurs, data administrators update the tie column in the AwardsManagers or AwardsPlayers table.
+- Award committees document notes about the award process in the notes column of relevant award tables.
+
+## 3. Game Tracking and Recording
+
+Performed By: Game Statisticians, Data Administrators
+
+Activity:
+- Game statisticians record game details such as teamID, lgID, gameNum, gameID, and startingPos for each player in the AllstarFull table.
+- Data administrators update the BattingPost table with post-season statistics for each round.
+
+## 4. Team Management and Tracking
+
+Performed By: Team Managers, Data Administrators
+
+Activity:
+- Team managers assign teamID to their respective teams in the AllstarFull and Appearances tables.
+- Data administrators track team statistics such as innings pitched, outs made, and errors committed by fielders in the Fielding table.
+
+## 5. Stadium and Park Information Management
+
+Performed By: Stadium Administrators, Data Administrators
+
+Activity:
+- Stadium administrators provide accurate stadium information for each team in the appropriate tables.
+- Data administrators update park data to reflect any changes in stadium names or locations.
+
+## 6. Place of Birth and Death Recording
+
+Performed By: Data Administrators, Researchers
+
+Activity:
+- Data administrators input players' places of birth and death into the People table.
+- Researchers fill in missing state/province data for all places of birth and death.
+
+## 7. Award Standardization and Maintenance
+
+Performed By: Database Administrators, Researchers
+
+Activity:
+- Database administrators standardize award names across award tables.
+- Researchers add historical data for new awards to the relevant tables.

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Analysts
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data analysts monitor product performance by analyzing sales data from the inventory table.
+- Product managers update product information when necessary, adjusting the price, special offers, or common_prod_id.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers and assist them in placing orders.
+- Customer service agents handle customer inquiries, update customer details in the customers table, and resolve any issues related to orders or products.
+- HR managers maintain employee records, including customer-related information such as contact details and credit card data stored securely in the customers table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create new orders by specifying order details like order date, customerid, and netamount.
+- Warehouse staff track inventory levels in the inventory table and fulfill orders by adjusting quan_in_stock accordingly.
+- Finance department records totalamount and tax for each order in the orders table.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels by recording quan_in_stock for each product in the inventory table.
+- Purchasing teams monitor low stock levels using the reorder table and place orders to replenish inventory when necessary.
+
+## 5. Order Line Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff create orderlines by associating each product with its corresponding quantity in an order.
+- Sales representatives update orderlines if a customer requests changes to their order, such as adding or removing items.
+
+## 6. Customer History Tracking
+
+Performed By: HR Managers, Data Analysts
+
+Activity:
+- HR managers maintain a record of each customer's order history in the cust_hist table for future reference and analysis.
+- Data analysts use the cust_hist table to generate reports on customer behavior and preferences.
+
+## 7. Account Management
+
+Performed By: Finance Department, IT Department
+
+Activity:
+- Finance department manages customer accounts by recording creditcardtype, creditcard, creditcardexpiration, username, and "password" securely in the customers table.
+- IT department ensures data security and privacy by implementing appropriate measures to protect sensitive customer information.

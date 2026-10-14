@@ -1,0 +1,64 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Operations Team, Airline Management
+
+Activity:
+- Airline operations team registers new airlines by recording the airline ID, IATA code, airline name, and base airport.
+- Airline management assigns airplane types to each airline based on capacity requirements.
+- Airline management updates airline details when changes occur, such as modifying the airline name or base airport.
+
+## 2. Airplane Management
+
+Performed By: Airline Operations Team, Maintenance Staff
+
+Activity:
+- Airline operations team registers new airplanes by recording the airplane ID, capacity, type, and associated airline.
+- Maintenance staff schedules routine maintenance checks for each airplane based on its type and usage.
+- Maintenance staff records airplane maintenance history, including repairs and inspections.
+
+## 3. Airplane Type Management
+
+Performed By: Airline Operations Team
+
+Activity:
+- Airline operations team registers new airplane types by recording the type ID, identifier, and description.
+- Airline operations team updates airplane type details when changes occur, such as modifying the description or adding a new type.
+
+## 4. Airport Management
+
+Performed By: Airport Operations Team
+
+Activity:
+- Airport operations team registers new airports by recording the airport ID, IATA code, ICAO code, and name.
+- Airport operations team updates airport details when changes occur, such as modifying the airport name or location.
+
+## 5. Geolocation Management
+
+Performed By: Airport Operations Team
+
+Activity:
+- Airport operations team records geolocation data for each airport, including city, country, latitude, and longitude.
+
+## 6. Flight Scheduling
+
+Performed By: Airline Operations Team, Flight Operations Staff
+
+Activity:
+- Airline operations team creates new flight schedules by recording the flight number, departure and arrival airports, and days of operation for each route.
+- Flight operations staff updates flight schedules when changes occur, such as modifying departure or arrival times.
+
+## 7. Booking Management
+
+Performed By: Passenger Services Representatives, Airline Reservation System
+
+Activity:
+- Passenger services representatives assist customers in booking flights by recording the booking ID, associated flight, seat, passenger ID, and price.
+
+## 8. Weather Data Collection
+
+Performed By: Weather Station Operators
+
+Activity:
+- Weather station operators record weather data at various stations, including temperature, humidity, air pressure, wind speed, direction, and weather conditions.

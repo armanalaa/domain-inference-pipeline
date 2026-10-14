@@ -1,0 +1,2551 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "Operational Data Management",
+    "definition": "The process of managing and maintaining the operational data across various business entities, including employees, vendors, stores, products, and sales transactions.",
+    "tables": [
+      "HumanResources Employee",
+      "HumanResources EmployeeDepartmentHistory",
+      "Person Address",
+      "Person BusinessEntity",
+      "Person BusinessEntityAddress",
+      "Person BusinessEntityContact",
+      "Person EmailAddress",
+      "Person Person",
+      "Production ProductDescription",
+      "Production ProductInventory",
+      "Purchasing ProductVendor",
+      "Purchasing PurchaseOrderHeader",
+      "Sales Customer",
+      "Sales PersonCreditCard",
+      "Sales SalesOrderDetail",
+      "Sales SalesOrderHeader",
+      "Sales SalesPerson",
+      "Sales SalesPersonQuotaHistory",
+      "Sales SalesTerritoryHistory",
+      "Sales SpecialOffer",
+      "Sales SpecialOfferProduct",
+      "Sales Store"
+    ],
+    "n_tables": 22,
+    "n_columns_total": 185,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "HumanResources Employee": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            29,
+            37,
+            39,
+            41,
+            44
+          ]
+        },
+        {
+          "name": "NationalIDNumber",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identification numbers for employees (national IDs) across various countries.",
+          "samples": [
+            948320468,
+            442121106,
+            461786517,
+            458159238,
+            276751903
+          ]
+        },
+        {
+          "name": "LoginID",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Login entity",
+          "samples": [
+            "adventure-works\\mark1",
+            "adventure-works\\chris2",
+            "adventure-works\\ed0",
+            "adventure-works\\bryan0",
+            "adventure-works\\simon0"
+          ]
+        },
+        {
+          "name": "OrganizationNode",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores organizational hierarchy paths for employees within the company.",
+          "samples": [
+            "/3/1/1/2/",
+            "/3/1/1/10/",
+            "/3/1/1/12/",
+            "/3/1/2/1/",
+            "/3/1/2/4/"
+          ]
+        },
+        {
+          "name": "OrganizationLevel",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the level of hierarchy within an employee's organizational structure.",
+          "samples": [
+            4,
+            3,
+            1,
+            2,
+            null
+          ]
+        },
+        {
+          "name": "JobTitle",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores job titles for production technicians within various work centers (WC60).",
+          "samples": [
+            "Production Technician - WC60",
+            "Production Technician - WC10",
+            "Production Technician - WC50",
+            "Production Technician - WC30",
+            "Production Technician - WC40"
+          ]
+        },
+        {
+          "name": "BirthDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores employee birth dates in a format of YYYY-MM-DD.",
+          "samples": [
+            "1979-09-25 00:00:00.000",
+            "1986-08-07 00:00:00.000",
+            "1971-09-11 00:00:00.000",
+            "1973-08-27 00:00:00.000",
+            "1990-05-17 00:00:00.000"
+          ]
+        },
+        {
+          "name": "MaritalStatus",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee marital statuses as single characters (S) in this database.",
+          "samples": [
+            "S",
+            "M",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Gender",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee gender as a single character (M for male) up to 10 characters.",
+          "samples": [
+            "M",
+            "F",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "HireDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores employee hire dates in a date format (YYYY-MM-DD).",
+          "samples": [
+            "2009-01-23 00:00:00.000",
+            "2009-03-07 00:00:00.000",
+            "2010-02-05 00:00:00.000",
+            "2009-01-21 00:00:00.000",
+            "2008-12-08 00:00:00.000"
+          ]
+        },
+        {
+          "name": "SalariedFlag",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates whether an employee is salaried (False) or not.",
+          "samples": [
+            "False",
+            "True",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "VacationHours",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of vacation hours allotted to each employee.",
+          "samples": [
+            19,
+            16,
+            25,
+            35,
+            38
+          ]
+        },
+        {
+          "name": "SickLeaveHours",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of accrued sick leave hours for employees.",
+          "samples": [
+            29,
+            28,
+            32,
+            37,
+            39
+          ]
+        },
+        {
+          "name": "CurrentFlag",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates the current employment status of employees (True = active).",
+          "samples": [
+            "True",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "CDB2C6DF-93E5-4558-91C8-424D5E7C658B",
+            "77B384C7-AFFB-4816-992B-F5B3034EE4FF",
+            "8EF22FB3-AF37-4B44-8862-D60A7CB09D82",
+            "4652D4E4-6A27-47ED-9F51-C377E293DA28",
+            "F734D38A-56B5-471E-8DED-A682E958A9B3"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of last modification for each employee record.",
+          "samples": [
+            "2014-06-30 00:00:00.000",
+            "2014-12-26 09:17:08.636",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "HumanResources EmployeeDepartmentHistory": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            25,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "name": "DepartmentID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in HumanResources EmployeeDepartmentHistory",
+          "samples": [
+            7,
+            15,
+            13,
+            12,
+            8
+          ]
+        },
+        {
+          "name": "ShiftID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Shift entity",
+          "samples": [
+            1,
+            3,
+            2,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date when an employee began working for a department.",
+          "samples": [
+            "2009-02-03 00:00:00.000",
+            "2008-02-27 00:00:00.000",
+            "2006-06-30 00:00:00.000",
+            "2009-01-23 00:00:00.000",
+            "2009-01-29 00:00:00.000"
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date when an employee's department history ended.",
+          "samples": [
+            "2010-05-30 00:00:00.000",
+            "2009-07-14 00:00:00.000",
+            "2011-08-31 00:00:00.000",
+            "2013-11-13 00:00:00.000",
+            "2011-07-30 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of department history modifications for each employee.",
+          "samples": [
+            "2009-02-02 00:00:00.000",
+            "2008-02-26 00:00:00.000",
+            "2006-06-29 00:00:00.000",
+            "2009-01-22 00:00:00.000",
+            "2009-01-28 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Person Address": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "AddressID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person Address",
+          "samples": [
+            333,
+            354,
+            11490,
+            11552,
+            11751
+          ]
+        },
+        {
+          "name": "AddressLine1",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores detailed street addresses for individuals.",
+          "samples": [
+            "50 Edward Ave",
+            "5 Madrid",
+            "6270 North Star Dr.",
+            "5805 Churchill Dr.",
+            "9466 Morning Glory Dr."
+          ]
+        },
+        {
+          "name": "AddressLine2",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores secondary address line, potentially containing apartment numbers, room numbers, floor numbers, or additional street addresses.",
+          "samples": [
+            "Space 55",
+            "# 103",
+            "# 4d",
+            "Room 99767c",
+            "19th Floor"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for all addresses in the Person table.",
+          "samples": [
+            "Concord",
+            "Chula Vista",
+            "Berkeley",
+            "Burlingame",
+            "Burbank"
+          ]
+        },
+        {
+          "name": "StateProvinceID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the State Province entity",
+          "samples": [
+            9,
+            79,
+            14,
+            50,
+            7
+          ]
+        },
+        {
+          "name": "PostalCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores five-digit numeric postal codes for multiple addresses.",
+          "samples": [
+            "94519",
+            "91910",
+            "94704",
+            "94010",
+            "91502"
+          ]
+        },
+        {
+          "name": "SpatialLocation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical coordinates in a point format for addresses of individuals.",
+          "samples": [
+            "POINT (-122.216700411757 37.9376019131263)",
+            "POINT (-122.02079890947 37.9549855061301)",
+            "POINT (-122.16720922713 38.0271721652509)",
+            "POINT (-121.830187834024 37.971674210714)",
+            "POINT (-121.902606600389 37.99351485254)"
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "EBE095F2-E14F-429D-829C-922E807B6D65",
+            "C13F0AB3-2847-4718-9DDD-0B1D73228C33",
+            "E7061DD0-1F9C-4B0D-8F31-3D5088CE7664",
+            "5B7A0606-DA07-43BB-89C4-B500D9018CC7",
+            "77D191AB-B53B-41E6-A061-2C3E148978F9"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of when Person Address records were last modified.",
+          "samples": [
+            "2012-01-17 00:00:00.000",
+            "2012-01-25 00:00:00.000",
+            "2013-12-17 00:00:00.000",
+            "2012-12-21 00:00:00.000",
+            "2012-02-25 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Person BusinessEntity": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person BusinessEntity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "0C7D8F81-D7B1-4CF0-9C0A-4CD8B6B50087",
+            "6648747F-7843-4002-B317-65389684C398",
+            "568204DA-93D7-42F4-8A7A-4446A144277D",
+            "0EFF57B9-4F4F-41A6-8867-658C199A5FC0",
+            "B82F88D1-FF79-4FD9-8C54-9D24C140F647"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of last modification for each record in Person BusinessEntity table.",
+          "samples": [
+            "2017-12-13 13:20:24.150",
+            "2017-12-13 13:20:24.430",
+            "2017-12-13 13:20:24.540",
+            "2017-12-13 13:20:24.570",
+            "2017-12-13 13:20:24.633"
+          ]
+        }
+      ]
+    },
+    "Person BusinessEntityAddress": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person BusinessEntityAddress",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "AddressID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person BusinessEntityAddress",
+          "samples": [
+            249,
+            293,
+            224,
+            11387,
+            190
+          ]
+        },
+        {
+          "name": "AddressTypeID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Address Type entity",
+          "samples": [
+            2,
+            3,
+            5,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "3A5D0A00-6739-4DFE-A8F7-844CD9DEE3DF",
+            "84AE7057-EDF4-4C51-8B8D-3AEAEFBFB4A1",
+            "3C915B31-7C05-4A05-9859-0DF663677240",
+            "3DC70CC4-3AE8-424F-8B1F-481C5478E941",
+            "C0ED2F68-937B-4594-9459-581AC53C98E3"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the last modification for each address associated with a business entity.",
+          "samples": [
+            "2014-09-12 11:15:06.966",
+            "2013-07-31 00:00:00.000",
+            "2014-05-05 00:00:00.000",
+            "2012-03-06 00:00:00.000",
+            "2011-09-26 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Person BusinessEntityContact": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person BusinessEntityContact",
+          "samples": [
+            292,
+            294,
+            296,
+            298,
+            300
+          ]
+        },
+        {
+          "name": "PersonID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person BusinessEntityContact",
+          "samples": [
+            291,
+            293,
+            295,
+            297,
+            299
+          ]
+        },
+        {
+          "name": "ContactTypeID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Contact Type entity",
+          "samples": [
+            11,
+            15,
+            14,
+            18,
+            19
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "7D4D2DBC-4A44-48F5-911D-A63ABAFD5120",
+            "3EA25B65-9579-4260-977D-D6F00D7D20EE",
+            "DADAC1FF-3351-4827-9AE0-95004885C193",
+            "B924F26F-6446-45D1-A92B-6F418374F075",
+            "5BA4E7BE-8D29-46A2-B68D-67B1615B124A"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of contact modification in YYYY-MM-DD HH:MI:SS.mmm format.",
+          "samples": [
+            "2017-12-13 13:21:02.243",
+            "2017-12-13 13:21:02.320",
+            "2017-12-13 13:21:02.383",
+            "2017-12-13 13:21:02.446",
+            "2017-12-13 13:21:02.510"
+          ]
+        }
+      ]
+    },
+    "Person EmailAddress": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            313,
+            337,
+            357,
+            359,
+            363
+          ]
+        },
+        {
+          "name": "EmailAddressID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Person EmailAddress",
+          "samples": [
+            302,
+            314,
+            324,
+            325,
+            327
+          ]
+        },
+        {
+          "name": "EmailAddress",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores email addresses of employees in the format \"firstnumber@adventure-works.com\".",
+          "samples": [
+            "james2@adventure-works.com",
+            "sean2@adventure-works.com",
+            "mae0@adventure-works.com",
+            "ramona0@adventure-works.com",
+            "hannah0@adventure-works.com"
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "32ED170B-1D61-46F6-B2E4-F7C7B8F83771",
+            "D65B2E5F-6567-47F7-AC21-4163D7AC1C7C",
+            "3A9B8251-A882-4392-B106-73530EACE591",
+            "76B080B5-9147-4073-8489-83DBC1FA5523",
+            "1494E1E1-65A0-4710-9A78-71DD94C6F918"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores a series of timestamp strings representing the last modification date for each record in the Person EmailAddress table.",
+          "samples": [
+            "2013-06-30 00:00:00.000",
+            "2013-07-31 00:00:00.000",
+            "2011-07-01 00:00:00.000",
+            "2012-06-30 00:00:00.000",
+            "2012-07-31 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Person Person": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            1722,
+            2389,
+            2391,
+            2397,
+            2401
+          ]
+        },
+        {
+          "name": "PersonType",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee classification (IN for internal) in the Person table.",
+          "samples": [
+            "IN",
+            "SC",
+            "EM",
+            "SP",
+            "VC"
+          ]
+        },
+        {
+          "name": "NameStyle",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a person's name follows a traditional (False) or non-traditional style.",
+          "samples": [
+            "False",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Title",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores formal titles for individuals, typically Mr. or Ms.",
+          "samples": [
+            "Mr.",
+            "Ms.",
+            "Sr.",
+            "Mrs.",
+            "Sra."
+          ]
+        },
+        {
+          "name": "FirstName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of a person's given name, often used for identification.",
+          "samples": [
+            "Mandar",
+            "Laura",
+            "Isabella",
+            "Francis",
+            "Lisa"
+          ]
+        },
+        {
+          "name": "MiddleName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores optional first names appearing between given names and family names for individuals.",
+          "samples": [
+            "R.",
+            "A.",
+            "B.",
+            "F.",
+            "M."
+          ]
+        },
+        {
+          "name": "LastName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores surnames of up to 50 characters for individuals, such as Samant, Liu, Wu, Cox, and Gao.",
+          "samples": [
+            "Samant",
+            "Liu",
+            "Wu",
+            "Cox",
+            "Gao"
+          ]
+        },
+        {
+          "name": "Suffix",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated titles indicating generations or honorifics for individuals.",
+          "samples": [
+            "III",
+            "Jr.",
+            "II",
+            "IV",
+            "Sr."
+          ]
+        },
+        {
+          "name": "EmailPromotion",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a customer's preference for email promotions (0 indicates no interest)",
+          "samples": [
+            0,
+            1,
+            2,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "AdditionalContactInfo",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores XML data for additional contact information (according to namespace).",
+          "samples": [
+            "<AdditionalContactInfo xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo\" xmlns:crm=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactRecord\" xmlns:act=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes\"><act:telephoneNumber><act:number>425-555-1112</act:number><act:SpecialInstructions>Call only after 5:00 p.m.</act:SpecialInstructions></act:telephoneNumber>Note that the customer has a secondary home address.<act:homePostalAddress><act:Street>123 Oak</act:Street><act:City>Seattle</act:City><act:StateProvince>WA</act:StateProvince><act:PostalCode>98001</act:PostalCode><act:CountryRegion>USA</act:CountryRegion><act:SpecialInstructions>If correspondence to the primary address fails, try this one.</act:SpecialInstructions></act:homePostalAddress>Customer provided additional email address.<act:eMail><act:eMailAddress>customer1@sample.com</act:eMailAddress><act:SpecialInstructions>For urgent issues, do not send e-mail. Instead use this emergency contact phone<act:telephoneNumber><act:number>425-555-1111</act:number></act:telephoneNumber>.</act:SpecialInstructions></act:eMail><crm:ContactRecord date=\"2001-06-02Z\">This customer is interested in purchasing high-end bicycles for his family. The customer contacted Michael in sales.</crm:ContactRecord></AdditionalContactInfo>",
+            "<AdditionalContactInfo xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo\" xmlns:crm=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactRecord\" xmlns:act=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes\">These are additional phone and pager numbers for the customer.<act:telephoneNumber><act:number>206-555-2222</act:number><act:SpecialInstructions>On weekends, contact the manager at this number.</act:SpecialInstructions></act:telephoneNumber><act:telephoneNumber><act:number>206-555-1234</act:number></act:telephoneNumber><act:pager><act:number>206-555-1244</act:number><act:SpecialInstructions>Do not page between 9:00 a.m. and 5:00 p.m.</act:SpecialInstructions></act:pager>Customer provided this additional home address.<act:homePostalAddress><act:Street>P.O Box 5</act:Street><act:City>Edmonds</act:City><act:StateProvince>WA</act:StateProvince><act:PostalCode>98431</act:PostalCode><act:CountryRegion>USA</act:CountryRegion><act:SpecialInstructions>This is an alternative address for billing only.</act:SpecialInstructions></act:homePostalAddress><act:eMail><act:eMailAddress>Joe@sample.com</act:eMailAddress><act:SpecialInstructions>Do not send e-mail for urgent issues. Use telephone instead.</act:SpecialInstructions></act:eMail><crm:ContactRecord date=\"2001-07-02Z\">Sales contacted this customer to explain new pricing.</crm:ContactRecord></AdditionalContactInfo>",
+            "<AdditionalContactInfo xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo\" xmlns:crm=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactRecord\" xmlns:act=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes\">Customer provided this telephone number for weekend access.<act:telephoneNumber><act:number>605-555-9877</act:number></act:telephoneNumber>secondary phone number.<act:pager><act:number>310-555-5432</act:number><act:SpecialInstructions>Page only if other contact attempts fail.</act:SpecialInstructions></act:pager>Additional home address.<act:homePostalAddress><act:Street>990 5th Avenue</act:Street><act:City>Redmond</act:City><act:StateProvince>WA</act:StateProvince><act:PostalCode>98052</act:PostalCode><act:CountryRegion>USA</act:CountryRegion><act:SpecialInstructions>Use this address for billing only.</act:SpecialInstructions></act:homePostalAddress><act:eMail><act:eMailAddress>Customer3@sample.com</act:eMailAddress><act:SpecialInstructions>Do not send e-mails for urgent issues. Use telephone instead.</act:SpecialInstructions></act:eMail><crm:ContactRecord date=\"2002-01-01Z\">Customer first contacted the sales department. This customer is interested in opening a new bicycle store.</crm:ContactRecord><crm:ContactRecord date=\"2002-01-05Z\">Linda in sales returned the call. Customer provided another telephone number for off-hour coverage.<act:telephoneNumber><act:number>302-555-7733</act:number></act:telephoneNumber>We are still negotiating possible long-term contract.</crm:ContactRecord></AdditionalContactInfo>",
+            "<AdditionalContactInfo xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo\" xmlns:crm=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactRecord\" xmlns:act=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes\">Additional phone numbers.<act:mobile><act:number>750-555-8888</act:number><act:SpecialInstructions>If customer is not at work, call<act:telephoneNumber><act:number>222-555-4444</act:number></act:telephoneNumber></act:SpecialInstructions></act:mobile>Customer uses these two additional email addresses.<act:eMail><act:eMailAddress>Customer4@sample.com</act:eMailAddress></act:eMail><act:eMail><act:eMailAddress>Customer4@contoso.com</act:eMailAddress><act:SpecialInstructions>This is secondary email address.</act:SpecialInstructions></act:eMail><crm:ContactRecord date=\"2002-01-01Z\">Customer is expanding his sports and recreation business. Sales is negotiating large sales order with this customer. We called Joe at<act:mobile><act:number>750-555-8888</act:number></act:mobile>We are still working on competitive pricing. Looks promising, but we need additional marketing support to wrap this up.</crm:ContactRecord></AdditionalContactInfo>",
+            "<AdditionalContactInfo xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo\" xmlns:crm=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactRecord\" xmlns:act=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes\"><crm:ContactRecord date=\"2002-01-01Z\">Sales contacted this customer for the first time at<act:telephoneNumber><act:number>432-4444</act:number></act:telephoneNumber>We talked about the Road bike price drop and the new spring models. Customer provided us new mobile number<act:mobile><act:number>432-555-7809</act:number></act:mobile></crm:ContactRecord></AdditionalContactInfo>"
+          ]
+        },
+        {
+          "name": "Demographics",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores XML data for individual surveys of persons.",
+          "samples": [
+            "<IndividualSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey\"><TotalPurchaseYTD>3499.8504</TotalPurchaseYTD><DateFirstPurchase>2003-05-10Z</DateFirstPurchase><BirthDate>1974-09-18Z</BirthDate><MaritalStatus>S</MaritalStatus><YearlyIncome>0-25000</YearlyIncome><Gender>F</Gender><TotalChildren>0</TotalChildren><NumberChildrenAtHome>0</NumberChildrenAtHome><Education>Partial High School</Education><Occupation>Manual</Occupation><HomeOwnerFlag>0</HomeOwnerFlag><NumberCarsOwned>2</NumberCarsOwned><CommuteDistance>0-1 Miles</CommuteDistance></IndividualSurvey>",
+            "<IndividualSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey\"><TotalPurchaseYTD>1085.5</TotalPurchaseYTD><DateFirstPurchase>2003-10-06Z</DateFirstPurchase><BirthDate>1967-10-05Z</BirthDate><MaritalStatus>S</MaritalStatus><YearlyIncome>25001-50000</YearlyIncome><Gender>F</Gender><TotalChildren>5</TotalChildren><NumberChildrenAtHome>5</NumberChildrenAtHome><Education>High School</Education><Occupation>Skilled Manual</Occupation><HomeOwnerFlag>1</HomeOwnerFlag><NumberCarsOwned>3</NumberCarsOwned><CommuteDistance>10+ Miles</CommuteDistance></IndividualSurvey>",
+            "<IndividualSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey\"><TotalPurchaseYTD>36.59</TotalPurchaseYTD><DateFirstPurchase>2002-05-22Z</DateFirstPurchase><BirthDate>1973-10-21Z</BirthDate><MaritalStatus>S</MaritalStatus><YearlyIncome>greater than 100000</YearlyIncome><Gender>F</Gender><TotalChildren>0</TotalChildren><NumberChildrenAtHome>5</NumberChildrenAtHome><Education>Partial College</Education><Occupation>Management</Occupation><HomeOwnerFlag>1</HomeOwnerFlag><NumberCarsOwned>3</NumberCarsOwned><CommuteDistance>10+ Miles</CommuteDistance></IndividualSurvey>",
+            "<IndividualSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey\"><TotalPurchaseYTD>-3.99</TotalPurchaseYTD><DateFirstPurchase>2003-11-07Z</DateFirstPurchase><BirthDate>1978-08-28Z</BirthDate><MaritalStatus>S</MaritalStatus><YearlyIncome>25001-50000</YearlyIncome><Gender>F</Gender><TotalChildren>0</TotalChildren><NumberChildrenAtHome>0</NumberChildrenAtHome><Education>Partial High School</Education><Occupation>Clerical</Occupation><HomeOwnerFlag>1</HomeOwnerFlag><NumberCarsOwned>2</NumberCarsOwned><CommuteDistance>5-10 Miles</CommuteDistance></IndividualSurvey>",
+            "<IndividualSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey\"><TotalPurchaseYTD>12.99</TotalPurchaseYTD><DateFirstPurchase>2004-06-15Z</DateFirstPurchase><BirthDate>1939-11-03Z</BirthDate><MaritalStatus>M</MaritalStatus><YearlyIncome>25001-50000</YearlyIncome><Gender>F</Gender><TotalChildren>2</TotalChildren><NumberChildrenAtHome>0</NumberChildrenAtHome><Education>Bachelors </Education><Occupation>Management</Occupation><HomeOwnerFlag>1</HomeOwnerFlag><NumberCarsOwned>2</NumberCarsOwned><CommuteDistance>5-10 Miles</CommuteDistance></IndividualSurvey>"
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "6F123B92-FF1E-4F18-A054-F1477D965B36",
+            "0BB7741C-53C5-4502-AABC-AA3E798EC6E7",
+            "D2535AEE-7780-4CAC-9737-5D23895FD5B5",
+            "09FB996B-2BD4-454F-A9D2-F0F307D13039",
+            "D319CB69-2139-4F0C-AEA6-541B3D5B0412"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of when each row in Person Person table was last modified.",
+          "samples": [
+            "2013-04-08 00:00:00.000",
+            "2013-09-04 00:00:00.000",
+            "2012-04-20 00:00:00.000",
+            "2013-10-06 00:00:00.000",
+            "2014-05-15 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Production ProductDescription": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ProductDescriptionID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production ProductDescription",
+          "samples": [
+            3,
+            4,
+            5,
+            8,
+            64
+          ]
+        },
+        {
+          "name": "Description",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores detailed descriptions of various production products, including materials, dimensions, and performance characteristics.",
+          "samples": [
+            "Chromoly steel.",
+            "Aluminum alloy cups; large diameter spindle.",
+            "Aluminum alloy cups and a hollow axle.",
+            "Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",
+            "This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road."
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "301EED3A-1A82-4855-99CB-2AFE8290D641",
+            "DFEBA528-DA11-4650-9D86-CAFDA7294EB0",
+            "F7178DA7-1A7E-4997-8470-06737181305E",
+            "8E6746E5-AD97-46E2-BD24-FCEA075C3B52",
+            "7B1C4E90-85E2-4792-B47B-E0C424E2EC94"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The Production ProductDescription table's ModifiedDate column stores timestamps for when product descriptions were last updated.",
+          "samples": [
+            "2013-04-30 00:00:00.000",
+            "2014-02-08 10:32:17.973",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "Production ProductInventory": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production ProductInventory",
+          "samples": [
+            864,
+            865,
+            866,
+            867,
+            868
+          ]
+        },
+        {
+          "name": "LocationID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Location entity",
+          "samples": [
+            7,
+            10,
+            20,
+            30,
+            45
+          ]
+        },
+        {
+          "name": "Shelf",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "The Production ProductInventory's Shelf column stores storage location identifiers (up to 10 characters).",
+          "samples": [
+            "N/A",
+            "D",
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "name": "Bin",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores inventory bin numbers, possibly indicating storage locations for products.",
+          "samples": [
+            0,
+            11,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "Quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stocks of individual production items.",
+          "samples": [
+            180,
+            216,
+            252,
+            288,
+            324
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "93EBCE66-E74B-4134-BCA6-33B4B1EAEAC8",
+            "8FF570BB-B9EE-4FE8-9ECE-20D33EE99F43",
+            "838E81A3-3B2A-4CCA-9FCB-5F0EC5186957",
+            "760E44D7-1E76-454F-8F5C-B7B77E33C775",
+            "674A3B97-695C-4655-89F0-5FB6AAF1A9F6"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of last modification for each product inventory record (YYYY-MM-DD HH:mm:ss.fff format).",
+          "samples": [
+            "2013-04-30 00:00:00.000",
+            "2011-05-01 00:00:00.000",
+            "2012-04-30 00:00:00.000",
+            "2014-07-19 00:00:00.000",
+            "2014-07-25 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Purchasing ProductVendor": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Purchasing ProductVendor",
+          "samples": [
+            375,
+            376,
+            377,
+            378,
+            379
+          ]
+        },
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            1562,
+            1656,
+            1666,
+            1618,
+            1650
+          ]
+        },
+        {
+          "name": "AverageLeadTime",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the average number of days for lead time in vendor-product relationships.",
+          "samples": [
+            16,
+            17,
+            19,
+            15,
+            18
+          ]
+        },
+        {
+          "name": "StandardPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores standard unit prices for products as reported by vendors (e.g., 41.21, 39.21).",
+          "samples": [
+            41.21,
+            39.21,
+            45.28,
+            43.28,
+            37.21
+          ]
+        },
+        {
+          "name": "LastReceiptCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the last received cost of a purchasing product from its vendor.",
+          "samples": [
+            43.2705,
+            41.1705,
+            47.544,
+            45.444,
+            39.0705
+          ]
+        },
+        {
+          "name": "LastReceiptDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores vendor's last receipt date in a YYYY-MM-DD format.",
+          "samples": [
+            "2011-08-10 00:00:00.000",
+            "2011-07-29 00:00:00.000",
+            "2011-08-17 00:00:00.000",
+            "2011-08-04 00:00:00.000",
+            "2011-08-22 00:00:00.000"
+          ]
+        },
+        {
+          "name": "MinOrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "MinOrderQty column stores the minimum quantity required for each vendor product order.",
+          "samples": [
+            1,
+            100,
+            20,
+            500,
+            4
+          ]
+        },
+        {
+          "name": "MaxOrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "MaxOrderQty stores the maximum quantity a vendor can supply for a product.",
+          "samples": [
+            5,
+            1000,
+            100,
+            2000,
+            200
+          ]
+        },
+        {
+          "name": "OnOrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of products currently on order from each vendor.",
+          "samples": [
+            3,
+            300,
+            60,
+            25,
+            150
+          ]
+        },
+        {
+          "name": "UnitMeasureCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores standardized unit measurement codes for products from vendors (e.g., CTN for cartons).",
+          "samples": [
+            "CTN",
+            "CAN",
+            "CS",
+            "DZ",
+            "EA"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of when purchase-related records for products were last modified.",
+          "samples": [
+            "2011-08-10 00:00:00.000",
+            "2011-07-29 00:00:00.000",
+            "2011-08-17 00:00:00.000",
+            "2011-08-04 00:00:00.000",
+            "2011-08-22 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Purchasing PurchaseOrderHeader": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "PurchaseOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Purchasing PurchaseOrderHeader",
+          "samples": [
+            28,
+            107,
+            117,
+            133,
+            186
+          ]
+        },
+        {
+          "name": "RevisionNumber",
+          "sql_type": "INT",
+          "key": "",
+          "description": "RevisionNumber stores the repeated version number for purchase orders.",
+          "samples": [
+            4,
+            5,
+            6,
+            9,
+            7
+          ]
+        },
+        {
+          "name": "Status",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores purchase order status, consistently set to 4 in these samples.",
+          "samples": [
+            4,
+            1,
+            3,
+            2,
+            null
+          ]
+        },
+        {
+          "name": "EmployeeID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Employee entity",
+          "samples": [
+            256,
+            255,
+            257,
+            253,
+            254
+          ]
+        },
+        {
+          "name": "VendorID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Vendor entity",
+          "samples": [
+            1658,
+            1506,
+            1586,
+            1680,
+            1628
+          ]
+        },
+        {
+          "name": "ShipMethodID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Ship Method entity",
+          "samples": [
+            5,
+            4,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "name": "OrderDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date strings of purchase order creation dates.",
+          "samples": [
+            "2011-12-15 00:00:00.000",
+            "2012-03-08 00:00:00.000",
+            "2012-03-09 00:00:00.000",
+            "2012-03-28 00:00:00.000",
+            "2012-06-22 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ShipDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date strings for the expected delivery of purchase orders.",
+          "samples": [
+            "2011-12-24 00:00:00.000",
+            "2012-03-17 00:00:00.000",
+            "2012-03-18 00:00:00.000",
+            "2012-04-06 00:00:00.000",
+            "2012-07-01 00:00:00.000"
+          ]
+        },
+        {
+          "name": "SubTotal",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total cost (in float) before taxes for each purchase order.",
+          "samples": [
+            43878.45,
+            34644.225,
+            150.7905,
+            1796.0355,
+            142.4115
+          ]
+        },
+        {
+          "name": "TaxAmt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total tax amount (in float) for each purchase order.",
+          "samples": [
+            3510.276,
+            2771.538,
+            12.0632,
+            143.6828,
+            11.3929
+          ]
+        },
+        {
+          "name": "Freight",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total freight cost for each purchase order.",
+          "samples": [
+            1096.9613,
+            866.1056,
+            3.7698,
+            44.9009,
+            3.5603
+          ]
+        },
+        {
+          "name": "TotalDue",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total amount due for each purchase order.",
+          "samples": [
+            48485.6873,
+            38281.8686,
+            166.6235,
+            1984.6192,
+            157.3647
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of when Purchase Order headers were last modified.",
+          "samples": [
+            "2011-12-24 00:00:00.000",
+            "2012-03-17 00:00:00.000",
+            "2012-03-18 00:00:00.000",
+            "2012-04-06 00:00:00.000",
+            "2012-07-01 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales Customer": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "CustomerID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales Customer",
+          "samples": [
+            11015,
+            11016,
+            11023,
+            11024,
+            11036
+          ]
+        },
+        {
+          "name": "PersonID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Person entity",
+          "samples": [
+            10963,
+            3800,
+            4373,
+            16843,
+            20539
+          ]
+        },
+        {
+          "name": "StoreID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Store entity",
+          "samples": [
+            296,
+            298,
+            300,
+            308,
+            314
+          ]
+        },
+        {
+          "name": "TerritoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Territory entity",
+          "samples": [
+            4,
+            9,
+            1,
+            10,
+            7
+          ]
+        },
+        {
+          "name": "AccountNumber",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Unique customer account identifiers within Adventure Works.",
+          "samples": [
+            "AW00011015",
+            "AW00011016",
+            "AW00011023",
+            "AW00011024",
+            "AW00011036"
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "F791BD74-EB82-4631-B9FC-F9FEE621FD13",
+            "023843CA-25FB-42BF-AC37-FAF6F4120DAC",
+            "A2833BD8-44A8-4665-808E-33E19ECD7F54",
+            "EE8EEBF8-117C-4027-873D-6113B0E97489",
+            "2E40BEAF-4A55-4E4D-A87D-009CC27D4378"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of last modification for each row in Sales Customer table.",
+          "samples": [
+            "2014-09-12 11:15:07.263",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "Sales PersonCreditCard": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            313,
+            337,
+            357,
+            359,
+            363
+          ]
+        },
+        {
+          "name": "CreditCardID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales PersonCreditCard",
+          "samples": [
+            1970,
+            11434,
+            11472,
+            10785,
+            2396
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores a string representation of the date when a salesperson's credit card was last modified.",
+          "samples": [
+            "2013-06-30 00:00:00.000",
+            "2013-07-31 00:00:00.000",
+            "2011-07-01 00:00:00.000",
+            "2012-06-30 00:00:00.000",
+            "2011-08-01 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SalesOrderDetail": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "SalesOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SalesOrderDetail",
+          "samples": [
+            51178,
+            51180,
+            51191,
+            51196,
+            51197
+          ]
+        },
+        {
+          "name": "SalesOrderDetailID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SalesOrderDetail",
+          "samples": [
+            37753,
+            37760,
+            37790,
+            37804,
+            37809
+          ]
+        },
+        {
+          "name": "CarrierTrackingNumber",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique carrier tracking numbers for individual sales order details.",
+          "samples": [
+            "CD9F-4322-BC",
+            "36CB-4A10-92",
+            "28F9-4101-A1",
+            "C39A-4835-99",
+            "9C57-4821-9B"
+          ]
+        },
+        {
+          "name": "OrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of each individual sales order item.",
+          "samples": [
+            1,
+            3,
+            2,
+            6,
+            4
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Product entity",
+          "samples": [
+            870,
+            921,
+            923,
+            708,
+            711
+          ]
+        },
+        {
+          "name": "SpecialOfferID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Special Offer entity",
+          "samples": [
+            1,
+            2,
+            14,
+            13,
+            16
+          ]
+        },
+        {
+          "name": "UnitPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual item prices in sales orders, consistently set at 4.99 in these samples.",
+          "samples": [
+            4.99,
+            34.99,
+            8.99,
+            2.29,
+            3.99
+          ]
+        },
+        {
+          "name": "UnitPriceDiscount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores discounted unit prices for individual line items in sales orders.",
+          "samples": [
+            0.0,
+            0.4,
+            0.1,
+            0.3,
+            0.15
+          ]
+        },
+        {
+          "name": "LineTotal",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual line item totals for each sale in decimal format.",
+          "samples": [
+            4.99,
+            34.99,
+            8.99,
+            2.29,
+            3.99
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "EA75710F-2568-42FF-B92B-1518FE295200",
+            "48A11063-A834-497E-B52B-82EE30589F4C",
+            "FC5AE823-6DB6-46F1-938C-C964060DBF0D",
+            "EC5E95F4-4410-4872-9166-364E2C60C878",
+            "6E7DDB1D-BAF3-4F44-9B1B-6BCFE86ECD22"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of when a sales order detail was last modified.",
+          "samples": [
+            "2013-05-30 00:00:00.000",
+            "2013-05-31 00:00:00.000",
+            "2013-06-01 00:00:00.000",
+            "2013-06-02 00:00:00.000",
+            "2013-06-03 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SalesOrderHeader": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "SalesOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SalesOrderHeader",
+          "samples": [
+            43702,
+            43706,
+            43707,
+            43713,
+            43719
+          ]
+        },
+        {
+          "name": "RevisionNumber",
+          "sql_type": "INT",
+          "key": "",
+          "description": "RevisionNumber stores the version number for each SalesOrderHeader record, as all provided samples are identical (8).",
+          "samples": [
+            8,
+            9,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "OrderDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date strings for the sales order creation dates.",
+          "samples": [
+            "2011-06-01 00:00:00.000",
+            "2011-06-02 00:00:00.000",
+            "2011-06-04 00:00:00.000",
+            "2011-06-05 00:00:00.000",
+            "2011-06-08 00:00:00.000"
+          ]
+        },
+        {
+          "name": "DueDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores scheduled delivery dates for sales orders.",
+          "samples": [
+            "2011-06-13 00:00:00.000",
+            "2011-06-14 00:00:00.000",
+            "2011-06-16 00:00:00.000",
+            "2011-06-17 00:00:00.000",
+            "2011-06-20 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ShipDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date strings for the shipment of sales orders.",
+          "samples": [
+            "2011-06-08 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-11 00:00:00.000",
+            "2011-06-12 00:00:00.000",
+            "2011-06-15 00:00:00.000"
+          ]
+        },
+        {
+          "name": "Status",
+          "sql_type": "INT",
+          "key": "",
+          "description": "The SalesOrderHeader Status column stores the order status, consistently set to 5 in these samples.",
+          "samples": [
+            5,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "OnlineOrderFlag",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates if a sales order was placed online.",
+          "samples": [
+            "True",
+            "False",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "SalesOrderNumber",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric identifiers for individual sales orders.",
+          "samples": [
+            "SO43702",
+            "SO43706",
+            "SO43707",
+            "SO43713",
+            "SO43719"
+          ]
+        },
+        {
+          "name": "PurchaseOrderNumber",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique purchase order numbers up to 50 characters long.",
+          "samples": [
+            "PO18444137892",
+            "PO18473177913",
+            "PO15312137226",
+            "PO14732122562",
+            "PO13862155069"
+          ]
+        },
+        {
+          "name": "AccountNumber",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "AccountNumber stores customer account identifiers in a format of 10-4030-XXXX.",
+          "samples": [
+            "10-4030-027645",
+            "10-4030-027621",
+            "10-4030-027616",
+            "10-4030-027601",
+            "10-4030-027612"
+          ]
+        },
+        {
+          "name": "CustomerID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Customer entity",
+          "samples": [
+            27645,
+            27621,
+            27616,
+            27601,
+            27612
+          ]
+        },
+        {
+          "name": "SalesPersonID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Sales Person entity",
+          "samples": [
+            289,
+            278,
+            282,
+            274,
+            290
+          ]
+        },
+        {
+          "name": "TerritoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Territory entity",
+          "samples": [
+            4,
+            1,
+            8,
+            7,
+            6
+          ]
+        },
+        {
+          "name": "BillToAddressID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Bill To Address entity",
+          "samples": [
+            22584,
+            13264,
+            20923,
+            11855,
+            13854
+          ]
+        },
+        {
+          "name": "ShipToAddressID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Ship To Address entity",
+          "samples": [
+            22584,
+            13264,
+            20923,
+            11855,
+            13854
+          ]
+        },
+        {
+          "name": "ShipMethodID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Ship Method entity",
+          "samples": [
+            1,
+            5,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "CreditCardID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Credit Card entity",
+          "samples": [
+            8087,
+            10912,
+            19069,
+            16570,
+            5998
+          ]
+        },
+        {
+          "name": "CreditCardApprovalCode",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique alphanumeric credit card approval codes for sales orders.",
+          "samples": [
+            "1230194Vi41919",
+            "230189Vi56258",
+            "230298Vi99064",
+            "830288Vi85808",
+            "1130295Vi31203"
+          ]
+        },
+        {
+          "name": "CurrencyRateID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Currency Rate entity",
+          "samples": [
+            8,
+            279,
+            294,
+            346,
+            385
+          ]
+        },
+        {
+          "name": "SubTotal",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total cost (excluding taxes and discounts) for each sales order line item.",
+          "samples": [
+            3578.27,
+            782.99,
+            4.99,
+            39.98,
+            2071.4196
+          ]
+        },
+        {
+          "name": "TaxAmt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total tax amount for each sales order line.",
+          "samples": [
+            286.2616,
+            62.6392,
+            0.3992,
+            3.1984,
+            165.7136
+          ]
+        },
+        {
+          "name": "Freight",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total freight cost for each sales order.",
+          "samples": [
+            89.4568,
+            19.5748,
+            0.1248,
+            0.9995,
+            51.7855
+          ]
+        },
+        {
+          "name": "TotalDue",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total amount due for each sales order.",
+          "samples": [
+            3953.9884,
+            865.204,
+            5.514,
+            44.1779,
+            2288.9187
+          ]
+        },
+        {
+          "name": "Comment",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores free-form text comments associated with a Sales Order.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "9310C7F0-9A84-4CE9-BE08-F700FB1AADF7",
+            "F02C4CB6-A5B5-4CE4-9473-CB084E383196",
+            "0DA77D6E-223E-4BC6-A2ED-43B387692C68",
+            "9DE30294-9066-4988-A3AD-09A0713348E5",
+            "BF5155EB-C5BE-4245-8FC4-F801DB5B052D"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of when a sales order was last modified.",
+          "samples": [
+            "2011-06-08 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-11 00:00:00.000",
+            "2011-06-12 00:00:00.000",
+            "2011-06-15 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SalesPerson": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            274,
+            275,
+            276,
+            277,
+            278
+          ]
+        },
+        {
+          "name": "TerritoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Territory entity",
+          "samples": [
+            2,
+            4,
+            3,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "SalesQuota",
+          "sql_type": "INT",
+          "key": "",
+          "description": "The SalesQuota column stores individual sales targets for each salesperson.",
+          "samples": [
+            300000,
+            250000,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Bonus",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores salesperson's quarterly performance bonuses in integer format.",
+          "samples": [
+            0,
+            4100,
+            2000,
+            2500,
+            500
+          ]
+        },
+        {
+          "name": "CommissionPct",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores salesperson's commission percentage as a decimal value.",
+          "samples": [
+            0.0,
+            0.012,
+            0.015,
+            0.01,
+            0.019
+          ]
+        },
+        {
+          "name": "SalesYTD",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores cumulative sales revenue for each salesperson year-to-date.",
+          "samples": [
+            559697.5639,
+            3763178.1787,
+            4251368.5497,
+            3189418.3662,
+            1453719.4653
+          ]
+        },
+        {
+          "name": "SalesLastYear",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sales revenue of each salesperson from the previous year (in float format).",
+          "samples": [
+            0.0,
+            1750406.4785,
+            1439156.0291,
+            1997186.2037,
+            1620276.8966
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "48754992-9EE0-4C0E-8C94-9451604E3E02",
+            "1E0A7274-3064-4F58-88EE-4C6586C87169",
+            "4DD9EEE4-8E81-4F8C-AF97-683394C1F7C0",
+            "39012928-BFEC-4242-874D-423162C3F567",
+            "7A0AE1AB-B283-40F9-91D1-167ABF06D720"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp strings of when Sales transactions were last modified.",
+          "samples": [
+            "2010-12-28 00:00:00.000",
+            "2011-05-24 00:00:00.000",
+            "2012-09-23 00:00:00.000",
+            "2013-03-07 00:00:00.000",
+            "2013-05-23 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SalesPersonQuotaHistory": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            274,
+            275,
+            276,
+            277,
+            278
+          ]
+        },
+        {
+          "name": "QuotaDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores historical salesperson quotas dates as formatted YYYY-MM-DD.",
+          "samples": [
+            "2011-05-31 00:00:00.000",
+            "2011-08-31 00:00:00.000",
+            "2011-12-01 00:00:00.000",
+            "2012-02-29 00:00:00.000",
+            "2012-05-30 00:00:00.000"
+          ]
+        },
+        {
+          "name": "SalesQuota",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores historical sales quotas for individual salespersons in integer format.",
+          "samples": [
+            28000,
+            7000,
+            91000,
+            140000,
+            70000
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "99109BBF-8693-4587-BC23-6036EC89E1BE",
+            "DFD01444-8900-461C-8D6F-04598DAE01D4",
+            "0A69F453-9689-4CCF-A08C-C644670F5668",
+            "DA8D1458-5FB9-4C3E-9EAD-8F5CE1393047",
+            "760CEF84-B980-417B-A667-7358C38857F0"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores historical dates when salesperson quotas were modified.",
+          "samples": [
+            "2011-04-16 00:00:00.000",
+            "2011-07-17 00:00:00.000",
+            "2011-10-17 00:00:00.000",
+            "2012-01-15 00:00:00.000",
+            "2012-04-15 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SalesTerritoryHistory": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            275,
+            276,
+            277,
+            278,
+            279
+          ]
+        },
+        {
+          "name": "TerritoryID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SalesTerritoryHistory",
+          "samples": [
+            2,
+            3,
+            4,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the specific dates marking the start of a sales territory history.",
+          "samples": [
+            "2011-05-31 00:00:00.000",
+            "2012-11-30 00:00:00.000",
+            "2012-05-30 00:00:00.000",
+            "2012-09-30 00:00:00.000",
+            "2013-05-30 00:00:00.000"
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The SalesTerritoryHistory table's EndDate column stores historical dates when a sales territory transition occurred.",
+          "samples": [
+            "2012-11-29 00:00:00.000",
+            "2012-09-29 00:00:00.000",
+            "2012-05-29 00:00:00.000",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "8563CE6A-00FF-47D7-BA4D-3C3E1CDEF531",
+            "2F44304C-EE87-4C72-813E-CA75C5F61F4C",
+            "64BCB1B3-A793-40BA-9859-D90F78C3F167",
+            "3E9F893D-5142-46C9-A76A-867D1E3D6F90",
+            "132E4721-32DD-4A73-B556-1837F3A2B9AE"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of when sales territory history records were last modified.",
+          "samples": [
+            "2012-11-22 00:00:00.000",
+            "2012-11-23 00:00:00.000",
+            "2011-05-24 00:00:00.000",
+            "2012-09-22 00:00:00.000",
+            "2012-05-22 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SpecialOffer": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "SpecialOfferID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SpecialOffer",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "Description",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores special offer descriptions such as \"No Discount\", \"Volume Discount 11 to 14\", etc., for sales items.",
+          "samples": [
+            "No Discount",
+            "Volume Discount 11 to 14",
+            "Volume Discount 15 to 24",
+            "Volume Discount 25 to 40",
+            "Volume Discount 41 to 60"
+          ]
+        },
+        {
+          "name": "DiscountPct",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores percentage discounts for special offers in sales transactions.",
+          "samples": [
+            0.0,
+            0.02,
+            0.05,
+            0.1,
+            0.15
+          ]
+        },
+        {
+          "name": "Type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores type of special offer (No Discount, Volume Discount).",
+          "samples": [
+            "No Discount",
+            "Volume Discount",
+            "Discontinued Product",
+            "Seasonal Discount",
+            "Excess Inventory"
+          ]
+        },
+        {
+          "name": "Category",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores sales offer categories, such as No Discount or Reseller.",
+          "samples": [
+            "No Discount",
+            "Reseller",
+            "Customer",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the initial date for each special offer in the Sales table (YYYY-MM-DD format).",
+          "samples": [
+            "2011-05-01 00:00:00.000",
+            "2011-05-31 00:00:00.000",
+            "2012-04-13 00:00:00.000",
+            "2012-05-30 00:00:00.000",
+            "2013-05-14 00:00:00.000"
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date when a special offer for sales ends (in YYYY-MM-DD format).",
+          "samples": [
+            "2014-11-30 00:00:00.000",
+            "2014-05-30 00:00:00.000",
+            "2012-05-29 00:00:00.000",
+            "2012-06-29 00:00:00.000",
+            "2012-07-30 00:00:00.000"
+          ]
+        },
+        {
+          "name": "MinQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores minimum quantity required for a special offer in the Sales table.",
+          "samples": [
+            0,
+            11,
+            15,
+            25,
+            41
+          ]
+        },
+        {
+          "name": "MaxQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores maximum quantity of a special offer for sales items.",
+          "samples": [
+            14,
+            24,
+            40,
+            60,
+            null
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "0290C4F5-191F-4337-AB6B-0A2DDE03CBF9",
+            "D7542EE7-15DB-4541-985C-5CC27AEF26D6",
+            "4BDBCC01-8CF7-40A9-B643-40EC5B717491",
+            "504B5E85-8F3F-4EBC-9E1D-C1BC5DEA9AA8",
+            "677E1D9D-944F-4E81-90E8-47EB0A82D48C"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores date strings for each modification of special offers.",
+          "samples": [
+            "2011-04-01 00:00:00.000",
+            "2011-05-01 00:00:00.000",
+            "2012-03-14 00:00:00.000",
+            "2012-04-30 00:00:00.000",
+            "2013-04-14 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales SpecialOfferProduct": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "SpecialOfferID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SpecialOfferProduct",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales SpecialOfferProduct",
+          "samples": [
+            680,
+            706,
+            707,
+            708,
+            709
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "BB30B868-D86C-4557-8DB2-4B2D0A83A0FB",
+            "B3C9A4B1-2AE6-4CBA-B552-1F206C9F4C1F",
+            "27B711FE-0B77-4EA4-AD1A-7C239956BEF4",
+            "46CBB78B-246E-4D69-9BD6-E521277C1078",
+            "CF102AA0-055F-4D2B-8B98-04B161758EA8"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps for when special offers on products were last modified.",
+          "samples": [
+            "2011-04-01 00:00:00.000",
+            "2011-05-01 00:00:00.000",
+            "2012-03-14 00:00:00.000",
+            "2012-04-30 00:00:00.000",
+            "2013-04-14 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Sales Store": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "BusinessEntityID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Business Entity entity",
+          "samples": [
+            292,
+            310,
+            326,
+            334,
+            340
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of sales outlets, such as bike stores and global plazas.",
+          "samples": [
+            "Next-Door Bike Store",
+            "New Bikes Company",
+            "Worthwhile Activity Store",
+            "Global Plaza",
+            "eCommerce Bikes"
+          ]
+        },
+        {
+          "name": "SalesPersonID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Sales Person entity",
+          "samples": [
+            279,
+            281,
+            275,
+            277,
+            282
+          ]
+        },
+        {
+          "name": "Demographics",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores XML data of customer demographics from store surveys.",
+          "samples": [
+            "<StoreSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey\"><AnnualSales>800000</AnnualSales><AnnualRevenue>80000</AnnualRevenue><BankName>United Security</BankName><BusinessType>BM</BusinessType><YearOpened>1996</YearOpened><Specialty>Mountain</Specialty><SquareFeet>21000</SquareFeet><Brands>2</Brands><Internet>ISDN</Internet><NumberEmployees>13</NumberEmployees></StoreSurvey>",
+            "<StoreSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey\"><AnnualSales>1500000</AnnualSales><AnnualRevenue>150000</AnnualRevenue><BankName>International Security</BankName><BusinessType>OS</BusinessType><YearOpened>1974</YearOpened><Specialty>Road</Specialty><SquareFeet>39000</SquareFeet><Brands>4+</Brands><Internet>T1</Internet><NumberEmployees>40</NumberEmployees></StoreSurvey>",
+            "<StoreSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey\"><AnnualSales>300000</AnnualSales><AnnualRevenue>30000</AnnualRevenue><BankName>United Security</BankName><BusinessType>BM</BusinessType><YearOpened>1987</YearOpened><Specialty>Mountain</Specialty><SquareFeet>8000</SquareFeet><Brands>2</Brands><Internet>DSL</Internet><NumberEmployees>7</NumberEmployees></StoreSurvey>",
+            "<StoreSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey\"><AnnualSales>800000</AnnualSales><AnnualRevenue>80000</AnnualRevenue><BankName>Reserve Security</BankName><BusinessType>BM</BusinessType><YearOpened>1975</YearOpened><Specialty>Mountain</Specialty><SquareFeet>19000</SquareFeet><Brands>3</Brands><Internet>DSL</Internet><NumberEmployees>19</NumberEmployees></StoreSurvey>",
+            "<StoreSurvey xmlns=\"http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey\"><AnnualSales>3000000</AnnualSales><AnnualRevenue>300000</AnnualRevenue><BankName>Guardian Bank</BankName><BusinessType>OS</BusinessType><YearOpened>1999</YearOpened><Specialty>Mountain</Specialty><SquareFeet>69000</SquareFeet><Brands>2</Brands><Internet>DSL</Internet><NumberEmployees>58</NumberEmployees></StoreSurvey>"
+          ]
+        },
+        {
+          "name": "rowguid",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the rowgu entity",
+          "samples": [
+            "A22517E3-848D-4EBE-B9D9-7437F3432304",
+            "47E4B6BD-5CD1-45A3-A231-79D930381C56",
+            "BAD63717-99BD-4581-8160-0F1723BE42CB",
+            "9A1E91D8-509B-4D96-BD77-7427C7F0C47B",
+            "1EC47823-4B39-4609-AAEC-6EE68CC74F81"
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the last modification for each row in Sales Store table.",
+          "samples": [
+            "2014-09-12 11:15:07.496",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

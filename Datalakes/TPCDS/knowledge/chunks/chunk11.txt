@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Manager, HR Manager
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee records with personal details, contact information, and employment history (cc_name, cc_sq_ft, cc_hours, cc_manager, cc_mkt_id, cc_division, cc_company).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls and provide customer support (cc_call_center_sk, cc_open_date_sk, cc_closed_date_sk).
+- They record call details such as product inquiries, complaints, or orders (cc_name, cc_class, cc_mkt_id, cr_item_sk, cr_order_number).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_page_id, cp_catalog_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (cr_item_sk, cr_quan).
+
+## 4. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return dates and reasons (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff update inventory levels when processing customer returns (cr_item_sk, cr_quan).
+
+## 5. Review and Approval Processes
+
+Performed By: Council Members, TPC Staff
+
+Activity:
+- Council members review and vote on TPC recommendations (6.12, 6.13).
+- TPC staff publish approved results and press releases (7.3, 7.4).
+
+## 6. Confidentiality and Compliance Management
+
+Performed By: TPC Staff, Auditors
+
+Activity:
+- TPC staff ensure confidentiality of TPC information and materials (7.1).
+- Auditors review compliance with TPC policies and issue certifications (Independent Audit).

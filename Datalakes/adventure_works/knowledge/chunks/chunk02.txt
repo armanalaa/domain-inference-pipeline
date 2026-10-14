@@ -1,0 +1,66 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: HR Managers, Recruiters
+
+Activity:
+- HR managers review job applications and select suitable candidates.
+- Recruiters contact selected candidates to schedule interviews.
+- HR managers conduct interviews and assess candidate qualifications.
+- If successful, HR managers offer the job to the candidate and discuss employment terms.
+- Once accepted, HR managers enter new employee details into the HumanResources Employee table.
+
+## 2. Employee Information Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- Employees update their personal information such as address, phone number, and email in the Person BusinessEntityContact and Person Address tables.
+- HR managers verify and approve employee personal information updates.
+
+## 3. Employee Department Assignment
+
+Performed By: HR Managers
+
+Activity:
+- HR managers assign new employees to specific departments based on job roles and department availability.
+- HR managers record the assignment details in the HumanResources EmployeeDepartmentHistory table.
+
+## 4. Employee Salary Management
+
+Performed By: HR Managers, Payroll Department
+
+Activity:
+- HR managers determine employee salaries and update them in the HumanResources EmployeePayHistory table.
+- Payroll department calculates paychecks based on salary information and pays employees accordingly.
+
+## 5. Employee Performance Evaluation
+
+Performed By: Managers, HR Managers
+
+Activity:
+- Managers evaluate employee performance and provide feedback.
+- HR managers compile performance evaluations and determine any necessary adjustments to salaries or job roles.
+
+## 6. Employee Offboarding
+
+Performed By: HR Managers
+
+Activity:
+- HR managers terminate employees' contracts and update their status in the HumanResources Employee table.
+- HR managers coordinate exit procedures such as returning company property and processing final paychecks.
+
+## 7. Address Management
+
+Performed By: Employees, Customers
+
+Activity:
+- Employees and customers add, update, or delete their addresses in the Person Address table.
+
+## 8. State/Province Management
+
+Performed By: HR Managers, Data Administrators
+
+Activity:
+- HR managers and data administrators manage state/province information for employees and customers in the Person StateProvince table.

@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and demographic information.
+- Customer service agents update customer records with changes to contact information or account status.
+- Sales representatives assign each customer a unique username and password for account access.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product codes, names, categories, list prices, and other relevant details.
+- Inventory specialists update product information when stock levels change or products go on sale.
+- Product managers assign common product IDs to similar items for easier tracking and management.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+- Sales representatives process orders by confirming availability, calculating totals, and finalizing transactions.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory and prepare them for shipping.
+- Shipping teams package orders and arrange for delivery to the customer's specified address.
+
+## 5. Inventory Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists track stock levels by updating quantities in real time as items are sold or received.
+- Purchasing teams order new inventory when stock levels fall below predetermined thresholds.
+
+## 6. Financial Management
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance department records net amounts, taxes, and total amounts for each order.
+- Accounting staff generates invoices based on order data and processes payments from customers.
+
+## 7. Reordering and Forecasting
+
+Performed By: Inventory Specialists, Data Analysts
+
+Activity:
+- Inventory specialists monitor stock levels and reorder items when quantities fall below minimum thresholds.
+- Data analysts forecast future demand based on historical sales data and adjust inventory orders accordingly.

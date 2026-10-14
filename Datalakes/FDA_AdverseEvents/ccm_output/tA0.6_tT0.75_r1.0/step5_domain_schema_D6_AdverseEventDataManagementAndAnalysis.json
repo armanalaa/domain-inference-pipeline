@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "AdverseEventDataManagementAndAnalysis",
+    "definition": "The process of managing and analyzing adverse event data associated with pharmaceuticals",
+    "tables": [
+      "reactions"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "reactions": {
+      "_description": "Records adverse events and their associated reactions reported in FDA safety reports.",
+      "columns": [
+        {
+          "name": "reaction_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in reactions",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "reactionmeddrapt",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores adverse event reactions as per MedDRA PT classification, including Arthropathy, Diabetes mellitus, Intervertebral disc protrusion, Weight decreased, and Off label use.",
+          "samples": [
+            "Arthropathy",
+            "Diabetes mellitus inadequate control",
+            "Intervertebral disc protrusion",
+            "Weight decreased",
+            "Off label use"
+          ]
+        },
+        {
+          "name": "reactionmeddraversionpt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the version number of the Medical Dictionary for Regulatory Activities (MedDRA) associated with each reaction.",
+          "samples": [
+            26.1,
+            27.0,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "reactionoutcome",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the final outcome of adverse reactions, where 1 indicates death and 6 indicates recovery or recovery pending.",
+          "samples": [
+            6,
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      ]
+    }
+  }
+}

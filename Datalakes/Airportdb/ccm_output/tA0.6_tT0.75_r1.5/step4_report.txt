@@ -1,0 +1,41 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 55
+Threshold θ_T           : 0.75
+Edges in G_T            : 4
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.5128
+  max    : 0.8208
+  mean   : 0.6303
+  median : 0.6210
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  flight                          flightschedule                  0.8208      8  1.000  0.8208
+  airport                         airport_geo                     0.8097      4  1.000  0.8097
+  airplane                        flight                          0.7867      4  1.000  0.7867
+  passenger                       passengerdetails                0.7548      4  1.000  0.7548
+  airline                         airport                         0.7460      4  1.000  0.7460
+  airline                         flightschedule                  0.7257      4  1.000  0.7257
+  airline                         flight                          0.7257      4  1.000  0.7257
+  airline                         airplane                        0.7003      4  1.000  0.7003
+  airport_geo                     passengerdetails                0.6972      7  1.000  0.6972
+  airline                         passenger                       0.6925      4  1.000  0.6925
+  airport                         flightschedule                  0.6792      4  1.000  0.6792
+  airport                         flight                          0.6787      4  1.000  0.6787
+  airport                         passenger                       0.6673      4  1.000  0.6673
+  airplane                        weatherdata                     0.6648      4  1.000  0.6648
+  airport_geo                     passenger                       0.6635      4  1.000  0.6635
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  flight                          flightschedule                  0.8208
+  airport                         airport_geo                     0.8097
+  airplane                        flight                          0.7867
+  passenger                       passengerdetails                0.7548
+======================================================================

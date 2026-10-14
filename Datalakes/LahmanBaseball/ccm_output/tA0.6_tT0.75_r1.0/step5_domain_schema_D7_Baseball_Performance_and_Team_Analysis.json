@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 7,
+    "domain_name": "Baseball Performance and Team Analysis",
+    "definition": "The process of recording, analyzing, and comparing team and player statistics in baseball.",
+    "tables": [
+      "SeriesPost"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "SeriesPost": {
+      "_description": "Records post-series outcomes for baseball games between teams within a league in a specific year.",
+      "columns": [
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1884,
+            1885,
+            1886,
+            1887,
+            1888
+          ]
+        },
+        {
+          "name": "round",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the round number of the World Series.",
+          "samples": [
+            "WS",
+            "CS",
+            "NWS",
+            "NNC",
+            "NSC"
+          ]
+        },
+        {
+          "name": "teamIDwinner",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the identifying code of the winning baseball team in a series post.",
+          "samples": [
+            "PRO",
+            "CHN",
+            "SL4",
+            "DTN",
+            "NY1"
+          ]
+        },
+        {
+          "name": "lgIDwinner",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the initials of the winning league (NL, AA) in baseball series postings.",
+          "samples": [
+            "NL",
+            "AA",
+            "AL",
+            "NNL",
+            "ECL"
+          ]
+        },
+        {
+          "name": "teamIDloser",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ID of the losing team in a baseball series (up to 10 characters, abbreviated).",
+          "samples": [
+            "NY4",
+            "SL4",
+            "CHN",
+            "BR3",
+            "LS2"
+          ]
+        },
+        {
+          "name": "lgIDloser",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the identifier of the losing league in a baseball series.",
+          "samples": [
+            "AA",
+            "NL",
+            "AL",
+            "ECL",
+            "NNL"
+          ]
+        },
+        {
+          "name": "wins",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of wins by teams in a baseball series.",
+          "samples": [
+            3,
+            4,
+            10,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "losses",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores count of losses for a series.",
+          "samples": [
+            0,
+            3,
+            2,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "ties",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores count of ties in baseball series.",
+          "samples": [
+            0,
+            1,
+            2,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

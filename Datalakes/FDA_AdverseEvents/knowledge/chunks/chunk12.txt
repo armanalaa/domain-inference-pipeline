@@ -1,0 +1,65 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting by Clinical Investigators
+
+Performed By: Clinical Investigators
+
+Activity:
+- Record adverse event details such as patient information, drug name, and symptoms.
+- Document the start and end date of the adverse event.
+- Describe the nature and severity of the adverse event.
+- Include any relevant medical history or concomitant medications.
+
+## 2. Adverse Event Transmission to Sponsors
+
+Performed By: Clinical Investigators, Sponsors
+
+Activity:
+- Package the adverse event reports for transmission to sponsors.
+- Ensure all necessary information is included in the report.
+- Submit the adverse event reports electronically to the sponsor.
+
+## 3. Adverse Event Review by Sponsors
+
+Performed By: Sponsors, Medical Safety Officers
+
+Activity:
+- Review the received adverse event reports for completeness and validity.
+- Assess the potential impact of the adverse event on product safety.
+- Determine if further investigation is required.
+
+## 4. Adverse Event Report Submission to Ethics Committees
+
+Performed By: Sponsors, Ethics Committees
+
+Activity:
+- Forward the approved adverse event reports to ethics committees.
+- Ensure all necessary information is included in the report.
+- Provide updates on the status of the adverse event investigation.
+
+## 5. Adverse Event Reporting to Regulatory Authorities
+
+Performed By: Sponsors, Regulatory Authorities
+
+Activity:
+- Submit the approved adverse event reports to regulatory authorities.
+- Include any relevant findings from the investigation.
+- Ensure timely and accurate reporting in compliance with regulations.
+
+## 6. Adverse Event Analysis by Regulatory Authorities
+
+Performed By: Regulatory Authorities, Safety Evaluators
+
+Activity:
+- Analyze the received adverse event reports for trends or patterns.
+- Assess the potential impact of the adverse events on public health.
+- Determine if regulatory action is required.
+
+## 7. Adverse Event Report Archiving
+
+Performed By: Regulatory Authorities, Data Managers
+
+Activity:
+- Store the archived adverse event reports securely for future reference.
+- Ensure all necessary information is included in the archive.
+- Maintain the integrity and accessibility of the archived data.

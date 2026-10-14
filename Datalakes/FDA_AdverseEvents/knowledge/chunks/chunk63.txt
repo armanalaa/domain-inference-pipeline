@@ -1,0 +1,61 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Drug Labeler Registration and Submission
+
+Performed By: Drug Manufacturers, Repackagers, Relabelers, Private Labelers
+
+Activity:
+- Register as a drug labeler with the FDA to obtain an establishment number.
+- Submit electronic listing files containing product information for each drug.
+- Assign unique three-segment National Drug Code (NDC) numbers to each drug.
+- Update the NDC Directory daily with new or modified drug listings.
+
+## 2. FDA Data Verification and Approval
+
+Performed By: FDA Staff
+
+Activity:
+- Review submitted electronic listing files for accuracy and completeness.
+- Verify that all required information is included in each NDC Directory entry.
+- Ensure that the content of each NDC Directory entry is the responsibility of the labeler submitting the SPL file.
+
+## 3. Drug Product Identification and Reporting
+
+Performed By: Healthcare Providers, Pharmacies, Distributors
+
+Activity:
+- Use the unique NDC number to identify and report on final marketed drugs.
+- Access the NDC Directory for up-to-date information on drug products.
+
+## 4. Adverse Event Reporting
+
+Performed By: Healthcare Providers, Patients, Manufacturers
+
+Activity:
+- Document any adverse events associated with a specific drug product.
+- Submit adverse event reports to the FDA through the MedWatch Safety Information and Adverse Event Reporting program.
+
+## 5. FDA Adverse Event Data Management
+
+Performed By: FDA Staff
+
+Activity:
+- Receive, review, and process adverse event reports submitted by various sources.
+- Investigate reported adverse events to determine if they are related to a specific drug product.
+- Update the FDA_AdverseEvents database with new or modified adverse event information.
+
+## 6. Adverse Event Analysis and Reporting
+
+Performed By: Data Analysts, Researchers, Public Health Officials
+
+Activity:
+- Analyze data from the FDA_AdverseEvents database to identify trends and patterns in adverse events.
+- Generate reports on adverse event findings for various stakeholders, including drug manufacturers, healthcare providers, and the general public.
+
+## 7. Compliance Monitoring and Enforcement
+
+Performed By: FDA Staff
+
+Activity:
+- Monitor compliance with regulations related to drug labeler registration, product listing, and adverse event reporting.
+- Take enforcement action against non-compliant entities, including issuing warnings, fines, or other penalties.

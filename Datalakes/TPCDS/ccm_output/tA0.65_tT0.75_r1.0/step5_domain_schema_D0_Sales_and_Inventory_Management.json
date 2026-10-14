@@ -1,0 +1,1271 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Sales and Inventory Management",
+    "definition": "Unifies the tables related to sales transactions, inventory levels, and associated customer and product details, enabling efficient management of sales operations and inventory control.",
+    "tables": [
+      "catalog_sales",
+      "inventory",
+      "store_sales",
+      "web_sales"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "catalog_sales": {
+      "_description": "Tracks detailed sales transactions, including customer and order information, item details, shipping methods, and promotions.",
+      "columns": [
+        {
+          "name": "cs_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential unique identifiers for sales transaction dates in catalog.",
+          "samples": [
+            2450815,
+            2450816,
+            2450817,
+            2450818,
+            2450819
+          ]
+        },
+        {
+          "name": "cs_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential time skips for catalog sales transactions.",
+          "samples": [
+            38212,
+            29485,
+            10687,
+            74512,
+            53201
+          ]
+        },
+        {
+          "name": "cs_ship_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for ship dates in catalog sales data.",
+          "samples": [
+            2450886,
+            2450846,
+            2450868,
+            2450851,
+            2450863
+          ]
+        },
+        {
+          "name": "cs_bill_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer IDs for bill sales transactions.",
+          "samples": [
+            62153,
+            14601,
+            67572,
+            25383,
+            76801
+          ]
+        },
+        {
+          "name": "cs_bill_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for customer demographic groups within catalog sales records.",
+          "samples": [
+            1822764,
+            797995,
+            437897,
+            3755,
+            90299
+          ]
+        },
+        {
+          "name": "cs_bill_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential billing demo key identifiers for catalog sales transactions.",
+          "samples": [
+            5775,
+            6189,
+            6622,
+            2480,
+            3797
+          ]
+        },
+        {
+          "name": "cs_bill_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique billing address identifiers across catalog sales transactions.",
+          "samples": [
+            19986,
+            9583,
+            46147,
+            5652,
+            42495
+          ]
+        },
+        {
+          "name": "cs_ship_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the shipping customers involved in catalog sales transactions.",
+          "samples": [
+            62153,
+            14601,
+            67572,
+            25383,
+            76801
+          ]
+        },
+        {
+          "name": "cs_ship_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique shipping demographic keys for catalog sales records.",
+          "samples": [
+            1822764,
+            797995,
+            437897,
+            3755,
+            90299
+          ]
+        },
+        {
+          "name": "cs_ship_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential home delivery demonstration identifiers for catalog sales.",
+          "samples": [
+            5775,
+            6189,
+            6622,
+            2480,
+            3797
+          ]
+        },
+        {
+          "name": "cs_ship_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique shipping address identifiers across multiple catalog sales records.",
+          "samples": [
+            19986,
+            9583,
+            46147,
+            5652,
+            42495
+          ]
+        },
+        {
+          "name": "cs_call_center_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for call centers associated with catalog sales transactions.",
+          "samples": [
+            4,
+            1,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "name": "cs_catalog_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for catalog pages in the sales data.",
+          "samples": [
+            62,
+            31,
+            76,
+            89,
+            19
+          ]
+        },
+        {
+          "name": "cs_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various shipping modes used in catalog sales transactions.",
+          "samples": [
+            3,
+            8,
+            2,
+            15,
+            1
+          ]
+        },
+        {
+          "name": "cs_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses associated with sales transactions.",
+          "samples": [
+            4,
+            2,
+            5,
+            3,
+            1
+          ]
+        },
+        {
+          "name": "cs_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items in catalog sales data.",
+          "samples": [
+            16930,
+            6020,
+            16198,
+            6200,
+            13831
+          ]
+        },
+        {
+          "name": "cs_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for promotional sales events in the catalog_sales table.",
+          "samples": [
+            196,
+            270,
+            97,
+            284,
+            275
+          ]
+        },
+        {
+          "name": "cs_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique order identifiers across catalog sales transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "cs_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of items sold per transaction in the catalog sales database.",
+          "samples": [
+            47,
+            20,
+            19,
+            50,
+            62
+          ]
+        },
+        {
+          "name": "cs_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items in catalog sales.",
+          "samples": [
+            27.7,
+            87.55,
+            69.86,
+            70.0,
+            54.92
+          ]
+        },
+        {
+          "name": "cs_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores catalog item list prices in floating point format.",
+          "samples": [
+            44.32,
+            260.89,
+            88.72,
+            205.1,
+            127.96
+          ]
+        },
+        {
+          "name": "cs_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual sale prices for items in the catalog.",
+          "samples": [
+            42.99,
+            153.92,
+            29.27,
+            188.69,
+            29.43
+          ]
+        },
+        {
+          "name": "cs_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the external discount amounts for individual sales transactions.",
+          "samples": [
+            62.51,
+            2139.4,
+            1129.55,
+            820.5,
+            6108.86
+          ]
+        },
+        {
+          "name": "cs_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in floating point format.",
+          "samples": [
+            2020.53,
+            3078.4,
+            556.13,
+            9434.5,
+            1824.66
+          ]
+        },
+        {
+          "name": "cs_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for catalog items in floating point format.",
+          "samples": [
+            1301.9,
+            1751.0,
+            1327.34,
+            3500.0,
+            3405.04
+          ]
+        },
+        {
+          "name": "cs_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for catalog sales items.",
+          "samples": [
+            2083.04,
+            5217.8,
+            1685.68,
+            10255.0,
+            7933.52
+          ]
+        },
+        {
+          "name": "cs_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores additional sales tax amounts as floating point figures.",
+          "samples": [
+            101.02,
+            71.41,
+            33.36,
+            377.38,
+            164.21
+          ]
+        },
+        {
+          "name": "cs_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to sales transactions.",
+          "samples": [
+            0.0,
+            1292.92,
+            1598.51,
+            176.96,
+            725.62
+          ]
+        },
+        {
+          "name": "cs_ext_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external shipping costs for catalog sales transactions.",
+          "samples": [
+            1041.52,
+            1356.6,
+            168.53,
+            4307.0,
+            3173.16
+          ]
+        },
+        {
+          "name": "cs_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the cs_net_pa entity",
+          "samples": [
+            2020.53,
+            1785.48,
+            556.13,
+            9434.5,
+            1824.66
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales revenue including taxes, in float format.",
+          "samples": [
+            2121.55,
+            1856.89,
+            589.49,
+            9811.88,
+            1988.87
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_ship",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total net sales revenue including shipping costs in U.S. dollars.",
+          "samples": [
+            3062.05,
+            3142.08,
+            724.66,
+            13741.5,
+            4997.82
+          ]
+        },
+        {
+          "name": "cs_net_paid_inc_ship_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales including shipping taxes, in floating point format.",
+          "samples": [
+            3163.07,
+            3213.49,
+            758.02,
+            14118.88,
+            5162.03
+          ]
+        },
+        {
+          "name": "cs_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net profit (positive for revenue, negative for expenses) in dollars for catalog sales transactions.",
+          "samples": [
+            718.63,
+            34.48,
+            -771.21,
+            5934.5,
+            -1580.38
+          ]
+        }
+      ]
+    },
+    "inventory": {
+      "_description": "Tracks inventory levels for specific items across various warehouses and time periods.",
+      "columns": [
+        {
+          "name": "inv_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for inventory date records.",
+          "samples": [
+            2450815,
+            2450822,
+            2450829,
+            2450836,
+            2450843
+          ]
+        },
+        {
+          "name": "inv_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual items in inventory.",
+          "samples": [
+            1,
+            2,
+            4,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "inv_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses across inventory records.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "inv_quantity_on_hand",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the current count of items available in inventory.",
+          "samples": [
+            211,
+            235,
+            859,
+            704,
+            891
+          ]
+        }
+      ]
+    },
+    "store_sales": {
+      "_description": "Records daily sales transactions for items at various stores, including customer details, promotions, and pricing information.",
+      "columns": [
+        {
+          "name": "ss_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential store sales dates as integers.",
+          "samples": [
+            2451813,
+            2451524,
+            2452638,
+            2451438,
+            2451465
+          ]
+        },
+        {
+          "name": "ss_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale time segment identifiers (e.g., 65495 represents the same time segment).",
+          "samples": [
+            65495,
+            75316,
+            50412,
+            38195,
+            53976
+          ]
+        },
+        {
+          "name": "ss_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items in store sales transactions.",
+          "samples": [
+            3617,
+            13283,
+            13631,
+            5981,
+            4553
+          ]
+        },
+        {
+          "name": "ss_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer identifiers for each sale record in the store_sales table.",
+          "samples": [
+            67006,
+            68284,
+            44047,
+            38814,
+            13246
+          ]
+        },
+        {
+          "name": "ss_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique demo customer identifier across store sales facts.",
+          "samples": [
+            591617,
+            1712478,
+            586372,
+            874786,
+            963544
+          ]
+        },
+        {
+          "name": "ss_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique identifier for each historical demo day in store sales data.",
+          "samples": [
+            3428,
+            4672,
+            697,
+            1511,
+            5042
+          ]
+        },
+        {
+          "name": "ss_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique store address identifiers across multiple sales records.",
+          "samples": [
+            24839,
+            13266,
+            22622,
+            19083,
+            28940
+          ]
+        },
+        {
+          "name": "ss_store_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for sales records.",
+          "samples": [
+            10,
+            1,
+            2,
+            4,
+            8
+          ]
+        },
+        {
+          "name": "ss_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique promotion identifiers for store sales records.",
+          "samples": [
+            161,
+            154,
+            172,
+            280,
+            236
+          ]
+        },
+        {
+          "name": "ss_ticket_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential ticket numbers for each sale transaction.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ss_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of units sold for each store sale transaction.",
+          "samples": [
+            79,
+            37,
+            99,
+            14,
+            100
+          ]
+        },
+        {
+          "name": "ss_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs of individual items in store sales.",
+          "samples": [
+            11.41,
+            63.63,
+            80.52,
+            57.37,
+            25.08
+          ]
+        },
+        {
+          "name": "ss_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual list prices for items sold in store transactions.",
+          "samples": [
+            18.71,
+            101.17,
+            137.68,
+            76.3,
+            36.86
+          ]
+        },
+        {
+          "name": "ss_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual sale prices for items in various transactions.",
+          "samples": [
+            2.8,
+            41.47,
+            83.98,
+            6.1,
+            0.73
+          ]
+        },
+        {
+          "name": "ss_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the amount of external discounts applied to individual store sales.",
+          "samples": [
+            99.54,
+            46.03,
+            0.0,
+            4549.9,
+            341.74
+          ]
+        },
+        {
+          "name": "ss_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in float format, ranging from cents to thousands of dollars.",
+          "samples": [
+            221.2,
+            1534.39,
+            8314.02,
+            85.4,
+            73.0
+          ]
+        },
+        {
+          "name": "ss_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual store sales transactions.",
+          "samples": [
+            901.39,
+            2354.31,
+            7971.48,
+            803.18,
+            2508.0
+          ]
+        },
+        {
+          "name": "ss_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for individual items in store sales.",
+          "samples": [
+            1478.09,
+            3743.29,
+            13630.32,
+            1068.2,
+            3686.0
+          ]
+        },
+        {
+          "name": "ss_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores extended sales tax amounts for individual transactions.",
+          "samples": [
+            6.08,
+            59.53,
+            0.0,
+            6.57,
+            254.54
+          ]
+        },
+        {
+          "name": "ss_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to individual store sales.",
+          "samples": [
+            99.54,
+            46.03,
+            0.0,
+            4549.9,
+            341.74
+          ]
+        },
+        {
+          "name": "ss_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the ss_net_pa entity",
+          "samples": [
+            121.66,
+            1488.36,
+            8314.02,
+            85.4,
+            73.0
+          ]
+        },
+        {
+          "name": "ss_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales revenue including taxes, in floating point format.",
+          "samples": [
+            127.74,
+            1547.89,
+            8314.02,
+            85.4,
+            79.57
+          ]
+        },
+        {
+          "name": "ss_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the net profit (positive for revenue, negative for expenses) in floating point format.",
+          "samples": [
+            -779.73,
+            -865.95,
+            342.54,
+            -717.78,
+            -2435.0
+          ]
+        }
+      ]
+    },
+    "web_sales": {
+      "_description": "Tracks online sales data, including customer details, item information, shipping details, and associated promotions.",
+      "columns": [
+        {
+          "name": "ws_sold_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale dates as integer surrogate keys.",
+          "samples": [
+            2451383,
+            2452625,
+            2451754,
+            2451483,
+            2451945
+          ]
+        },
+        {
+          "name": "ws_sold_time_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential sale time identifiers for a single day (73313).",
+          "samples": [
+            73313,
+            34964,
+            1529,
+            77832,
+            25492
+          ]
+        },
+        {
+          "name": "ws_ship_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for ship dates in web sales transactions.",
+          "samples": [
+            2451482,
+            2451411,
+            2451413,
+            2451393,
+            2451502
+          ]
+        },
+        {
+          "name": "ws_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items involved in web sales transactions.",
+          "samples": [
+            4591,
+            3566,
+            7286,
+            2755,
+            2516
+          ]
+        },
+        {
+          "name": "ws_bill_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique customer IDs for web sales transactions.",
+          "samples": [
+            83074,
+            42296,
+            74800,
+            89187,
+            66395
+          ]
+        },
+        {
+          "name": "ws_bill_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a unique identifier for customer demographic groups within web sales.",
+          "samples": [
+            596485,
+            436090,
+            1219525,
+            512359,
+            1553493
+          ]
+        },
+        {
+          "name": "ws_bill_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential demo bill identifiers for web sales transactions.",
+          "samples": [
+            1096,
+            2684,
+            3450,
+            4331,
+            1391
+          ]
+        },
+        {
+          "name": "ws_bill_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique billing address identifiers for web sales, repeated for multiple transactions with the same billing address.",
+          "samples": [
+            40907,
+            37278,
+            3375,
+            19456,
+            32089
+          ]
+        },
+        {
+          "name": "ws_ship_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the customers to whom web sales are shipped.",
+          "samples": [
+            85919,
+            57428,
+            84180,
+            87757,
+            22505
+          ]
+        },
+        {
+          "name": "ws_ship_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the shipping demo sequence number for each web sales record (41329 repeated).",
+          "samples": [
+            41329,
+            1447713,
+            1487225,
+            1204153,
+            293885
+          ]
+        },
+        {
+          "name": "ws_ship_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the home demonstration shipment ID for each web sales record, consistently set to 1140 in these samples.",
+          "samples": [
+            1140,
+            3907,
+            5550,
+            2525,
+            983
+          ]
+        },
+        {
+          "name": "ws_ship_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for shipping addresses associated with web sales.",
+          "samples": [
+            1351,
+            30901,
+            41475,
+            37697,
+            19681
+          ]
+        },
+        {
+          "name": "ws_web_page_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for web pages associated with sales transactions.",
+          "samples": [
+            43,
+            28,
+            58,
+            2,
+            56
+          ]
+        },
+        {
+          "name": "ws_web_site_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for the websites associated with web sales transactions.",
+          "samples": [
+            4,
+            7,
+            28,
+            16,
+            19
+          ]
+        },
+        {
+          "name": "ws_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various shipping modes used in web sales transactions.",
+          "samples": [
+            4,
+            3,
+            10,
+            6,
+            2
+          ]
+        },
+        {
+          "name": "ws_warehouse_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for warehouses associated with web sales transactions.",
+          "samples": [
+            5,
+            2,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "ws_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for promotional events associated with web sales.",
+          "samples": [
+            6,
+            271,
+            300,
+            63,
+            18
+          ]
+        },
+        {
+          "name": "ws_order_number",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Unique order identifiers for web sales transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ws_quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of units sold per web sales transaction.",
+          "samples": [
+            57,
+            38,
+            32,
+            65,
+            58
+          ]
+        },
+        {
+          "name": "ws_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items in web sales transactions.",
+          "samples": [
+            33.59,
+            29.83,
+            49.72,
+            69.18,
+            36.62
+          ]
+        },
+        {
+          "name": "ws_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales list prices, represented as floating point numbers.",
+          "samples": [
+            59.45,
+            48.92,
+            107.89,
+            112.07,
+            41.38
+          ]
+        },
+        {
+          "name": "ws_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual sale prices for web transactions (e.g., 38.04, 26.41, etc.).",
+          "samples": [
+            38.04,
+            26.41,
+            97.1,
+            22.41,
+            16.13
+          ]
+        },
+        {
+          "name": "ws_ext_discount_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external discount amounts for individual web sales transactions.",
+          "samples": [
+            1220.37,
+            855.38,
+            345.28,
+            5827.9,
+            1464.5
+          ]
+        },
+        {
+          "name": "ws_ext_sales_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external sales prices in floating point format.",
+          "samples": [
+            2168.28,
+            1003.58,
+            3107.2,
+            1456.65,
+            935.54
+          ]
+        },
+        {
+          "name": "ws_ext_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs (in dollars) for individual web sales.",
+          "samples": [
+            1914.63,
+            1133.54,
+            1591.04,
+            4496.7,
+            2123.96
+          ]
+        },
+        {
+          "name": "ws_ext_list_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external list prices for individual web sales transactions.",
+          "samples": [
+            3388.65,
+            1858.96,
+            3452.48,
+            7284.55,
+            2400.04
+          ]
+        },
+        {
+          "name": "ws_ext_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external taxes applied to individual web sales transactions.",
+          "samples": [
+            50.95,
+            30.1,
+            124.28,
+            29.13,
+            84.19
+          ]
+        },
+        {
+          "name": "ws_coupon_amt",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of coupon discounts applied to web sales.",
+          "samples": [
+            1149.18,
+            0.0,
+            215.21,
+            9.37,
+            2381.43
+          ]
+        },
+        {
+          "name": "ws_ext_ship_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores external shipping costs for web sales transactions.",
+          "samples": [
+            575.7,
+            910.86,
+            828.48,
+            2476.5,
+            167.62
+          ]
+        },
+        {
+          "name": "ws_net_paid",
+          "sql_type": "FLOAT",
+          "key": "FK",
+          "description": "Foreign key linking to the ws_net_pa entity",
+          "samples": [
+            1019.1,
+            1003.58,
+            3107.2,
+            1456.65,
+            935.54
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales amounts including taxes, in floating point format.",
+          "samples": [
+            1070.05,
+            1033.68,
+            3231.48,
+            1485.78,
+            1019.73
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_ship",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total net sales revenue including shipping costs.",
+          "samples": [
+            1594.8,
+            1914.44,
+            3935.68,
+            3933.15,
+            1103.16
+          ]
+        },
+        {
+          "name": "ws_net_paid_inc_ship_tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores net sales including shipping taxes, in floating point format.",
+          "samples": [
+            1645.75,
+            1944.54,
+            4059.96,
+            3962.28,
+            1187.35
+          ]
+        },
+        {
+          "name": "ws_net_profit",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores web sales transaction net profits as floating point numbers.",
+          "samples": [
+            -895.53,
+            -129.96,
+            1516.16,
+            -3040.05,
+            -1188.42
+          ]
+        }
+      ]
+    }
+  }
+}

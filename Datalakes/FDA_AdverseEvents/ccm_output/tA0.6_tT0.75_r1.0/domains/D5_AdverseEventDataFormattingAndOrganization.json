@@ -1,0 +1,260 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "AdverseEventDataFormattingAndOrganization",
+    "definition": "The process of formatting and organizing adverse event data using a standard format, including primary sources and reports",
+    "tables": [
+      "primary_sources",
+      "reports"
+    ],
+    "n_tables": 2,
+    "n_columns_total": 18,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "primary_sources": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "primarysource_qualification",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the qualification level of primary sources (1-5), where higher numbers indicate more reliable data.",
+          "samples": [
+            5,
+            3,
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "primarysource_reportercountry",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-1 alpha-2 code of the reporter's country from primary sources.",
+          "samples": [
+            "BR",
+            "US",
+            "DE",
+            "AU",
+            "TR"
+          ]
+        }
+      ]
+    },
+    "reports": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "safetyreportversion",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the version number of safety reports, consistently set to 1 in these samples.",
+          "samples": [
+            1,
+            3,
+            4,
+            2,
+            6
+          ]
+        },
+        {
+          "name": "receivedate",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores date of report reception as a 4-digit year and 6-digit day (YYYYMMDD format).",
+          "samples": [
+            20240329,
+            20240314,
+            20240316,
+            20240226,
+            20240227
+          ]
+        },
+        {
+          "name": "receivedateformat",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the repeated format value for the date received of adverse event reports.",
+          "samples": [
+            102,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "transmissiondate",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the date of report transmission as a 4-digit year and 6-digit day (YYYYMMDD) format.",
+          "samples": [
+            20240410,
+            20240409,
+            20240411,
+            20241016,
+            20240412
+          ]
+        },
+        {
+          "name": "transmissiondateformat",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores a repeated integer value representing a specific date format used for report transmissions.",
+          "samples": [
+            102,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "receiptdate",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores adverse event report receipt dates as 4-digit year and 6-digit day (YYYYMMDD) format.",
+          "samples": [
+            20240329,
+            20240314,
+            20240316,
+            20240226,
+            20240227
+          ]
+        },
+        {
+          "name": "receiptdateformat",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the repeated format code for receipt dates in reports.",
+          "samples": [
+            102,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "reporttype",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the type of adverse event report, as all samples indicate a single report type.",
+          "samples": [
+            1,
+            3,
+            2,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "serious",
+          "sql_type": "INT",
+          "key": "",
+          "description": "The \"serious\" column indicates the severity level (1 for serious, 2 for non-serious) of adverse events reported.",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "primarysourcecountry",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the 10-character ISO country code of the primary source for adverse event reports.",
+          "samples": [
+            "BR",
+            "US",
+            "DE",
+            "AU",
+            "TR"
+          ]
+        },
+        {
+          "name": "occurcountry",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the 10-character country code for locations where adverse events occurred.",
+          "samples": [
+            "US",
+            "DE",
+            "AU",
+            "TR",
+            "JP"
+          ]
+        },
+        {
+          "name": "companynumb",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores unique identifiers for pharmaceutical companies associated with adverse event reports.",
+          "samples": [
+            "2024A074849",
+            "US-MankindUS-000153",
+            "DE-CADRBFARM-2023324430",
+            "US-TEVA-VS-3140848",
+            "US-ELI_LILLY_AND_COMPANY-US202306006471"
+          ]
+        },
+        {
+          "name": "duplicate",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "The \"duplicate\" column indicates identical reports within the database.",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "fulfillexpeditecriteria",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Indicates whether a report meets expedited criteria for FDA review (1 - yes, 2 - no).",
+          "samples": [
+            1,
+            2,
+            3,
+            5,
+            4
+          ]
+        }
+      ]
+    }
+  }
+}

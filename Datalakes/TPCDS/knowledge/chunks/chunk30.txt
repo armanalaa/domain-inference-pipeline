@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the number of open positions and employee qualifications.
+- HR managers update employee records with personal details, employment history, and performance evaluations.
+
+## 2. Market Division Assignment
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers determine market class and division for each call center based on geographical location and customer demographics.
+- Call center managers update call center records with the assigned market class, division, and related details.
+
+## 3. Call Center Setup
+
+Performed By: Warehouse Staff, IT Support
+
+Activity:
+- Warehouse staff equip call centers with necessary equipment such as phones, computers, and furniture according to the specified square footage.
+- IT support configures call center systems, including phone lines, internet connections, and software applications.
+
+## 4. Call Center Operations
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives handle customer inquiries about products and services, providing information and processing orders.
+- Customer service agents assist customers with account management, billing issues, and technical support.
+
+## 5. Product Catalog Management
+
+Performed By: Product Managers, Marketing Team
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Marketing team updates catalog pages with descriptions and promotional content for each product.
+
+## 6. Return Processing
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents process returns by recording return date, time, reason, and customer information.
+- Warehouse staff receive returned items, inspect them for damage, and update inventory accordingly.
+
+## 7. Compliance Review
+
+Performed By: TAB Members, Council Members
+
+Activity:
+- TAB members review Results to ensure they meet Benchmark Standards and recommend compliance or non-compliance to the Council.
+- Council members discuss and vote on TAB recommendations during General Meetings.

@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Test Sponsor Call Center Management
+
+Performed By: Call Center Manager, Warehouse Staff, HR Manager
+
+Activity:
+- Call center managers assign employees to specific call centers based on their skills and availability (cc_employees).
+- Warehouse staff update the square footage of each call center (cc_sq_ft).
+- HR managers manage employee schedules, recording hours worked by each employee (cc_hours).
+
+## 2. Auditor Onboarding
+
+Performed By: Test Sponsor, Auditor
+
+Activity:
+- Test sponsors negotiate audit rates with auditors (not specified in provided database schema).
+- Test sponsors release auditors from non-disclosure agreements regarding compliance issues during the course of an audit (not specified in provided database schema).
+
+## 3. Audit Execution
+
+Performed By: Auditor
+
+Activity:
+- Auditors interpret specifications conservatively when ambiguity arises (not specified in provided database schema).
+- Auditors decide to waive requirements if certain conditions are met, and report these waivers in their attestation letters (not specified in provided database schema).
+
+## 4. Audit Reporting
+
+Performed By: Auditor
+
+Activity:
+- Auditors share new decisions made during the course of an audit with other auditors to increase consistency (not specified in provided database schema).
+
+## 5. FDR Submission
+
+Performed By: Test Sponsor, Auditor
+
+Activity:
+- Test sponsors submit FDRs (Fairness Documentation Reports) to the TPC after an audit is completed (not specified in provided database schema).
+
+## 6. Catalog Management
+
+Performed By: Product Manager, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff track inventory levels for each item (not specified in provided database schema).
+
+## 7. Return Processing
+
+Performed By: Customer, Warehouse Staff, Call Center Representative
+
+Activity:
+- Customers place returns by contacting the call center (cr_call_center_sk).
+- Warehouse staff update inventory levels when items are returned (not specified in provided database schema).
+- Call center representatives record return details such as returned date and time, item SKU, and reason for return (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk).

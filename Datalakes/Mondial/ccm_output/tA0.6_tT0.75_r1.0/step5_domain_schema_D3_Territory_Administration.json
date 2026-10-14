@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "Territory Administration",
+    "definition": "The process of managing geographical territories such as cities, countries, and continents.",
+    "tables": [
+      "mergesWith"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "mergesWith": {
+      "_description": "MergesWith table records historical sea mergers and acquisitions in the Mondial database.",
+      "columns": [
+        {
+          "name": "Sea1",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas involved in mergers.",
+          "samples": [
+            "Kattegat",
+            "North Sea",
+            "Black Sea",
+            "Baltic Sea",
+            "Atlantic Ocean"
+          ]
+        },
+        {
+          "name": "Sea2",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of bodies of water involved in mergers.",
+          "samples": [
+            "Skagerrak",
+            "The Channel",
+            "Norwegian Sea",
+            "Sea of Azov",
+            "Mediterranean Sea"
+          ]
+        }
+      ]
+    }
+  }
+}

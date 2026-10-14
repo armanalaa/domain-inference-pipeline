@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product details and processing payments.
+- Customers place orders by selecting items, specifying quantities, and entering their contact information.
+
+## 3. Order Processing
+
+Performed By: Order Processing Team
+
+Activity:
+- The order processing team verifies customer information and checks inventory availability before confirming orders.
+- Upon confirmation, the team generates an order ID and updates the cust_hist table with the new order details.
+
+## 4. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- After order confirmation, the finance department calculates the net amount, tax, and total amount for each order.
+- The calculated values are recorded in the orders table.
+
+## 5. Order Line Item Creation
+
+Performed By: Order Processing Team
+
+Activity:
+- For each order, the order processing team creates a corresponding orderlines record, including the orderlineid, orderid, prod_id, quantity, and orderdate.
+
+## 6. Inventory Adjustment
+
+Performed By: Warehouse Staff
+
+Activity:
+- When an order is shipped, warehouse staff update the inventory table by decreasing the quan_in_stock for the relevant product.
+
+## 7. Reordering Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams monitor inventory levels and reorder products when the quantity drops below a specified threshold (quan_low).
+- Upon reordering, the team updates the reorder table with the new date_reordered, quan_reordered, and expected delivery date.
+
+## 8. Data Management
+
+Performed By: Data Management Team
+
+Activity:
+- The data management team maintains the integrity of the database by ensuring accurate and up-to-date information across all tables.
+- They also use tools like Dataedo to document, analyze, and share data lineage diagrams for better understanding and compliance.

@@ -1,0 +1,63 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: HR Managers, Recruiters
+
+Activity:
+- HR managers review job applications and select suitable candidates.
+- Recruiters contact shortlisted candidates to schedule interviews.
+- HR managers conduct interviews and make hiring decisions based on candidate qualifications and fit.
+- Successful candidates receive job offers with details like job title, salary, benefits, and start date.
+- New hires provide necessary personal information such as national ID number, birthdate, marital status, gender, and address for employment records.
+
+## 2. Employee Information Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- Employees update their personal information (e.g., address, phone number) as needed.
+- HR managers maintain employee records, including job titles, hire dates, salaries, and benefits.
+- HR managers assign employees to specific departments and shifts based on department needs and employee preferences.
+- Shift assignments are recorded in the EmployeeDepartmentHistory table.
+
+## 3. Payroll Processing
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers update employee pay rates and pay frequencies when necessary.
+- Finance department calculates employees' salaries based on their pay rates and hours worked.
+- Employee pay history is recorded in the EmployeePayHistory table.
+
+## 4. Error Logging
+
+Performed By: Database Administrators, Developers
+
+Activity:
+- Database administrators and developers log errors that occur during database operations using the uspLogError stored procedure.
+- The error details are saved in the ErrorLog table for future reference and analysis.
+
+## 5. Address Management
+
+Performed By: Employees, HR Managers
+
+Activity:
+- Employees provide their addresses when they join the company or update them as needed.
+- HR managers maintain employee address records, including address lines, city, state, postal code, and country.
+
+## 6. Invoice Processing (Future Workflow)
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices for customers based on sales orders.
+- The finance department reviews and approves the invoices before they are sent to customers.
+
+## 7. Inventory Management (Future Workflow)
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update them as items are received or shipped.
+- Purchasing teams order new inventory when stock levels fall below a certain threshold.

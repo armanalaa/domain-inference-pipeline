@@ -1,0 +1,141 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Product Information Management",
+    "definition": "The process of managing and maintaining product information, including categories and details, across the enterprise system.",
+    "tables": [
+      "categories",
+      "products"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "categories": {
+      "_description": "Categorizes product offerings in DellStore2 for user-friendly navigation.",
+      "columns": [
+        {
+          "name": "category",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores category identifiers (1, 2, 3, 4, 5) for various product categories in DellStore2 database.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "categoryname",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of movie genre names such as Action, Animation, Children, Classics, and Comedy.",
+          "samples": [
+            "Action",
+            "Animation",
+            "Children",
+            "Classics",
+            "Comedy"
+          ]
+        }
+      ]
+    },
+    "products": {
+      "_description": "Captures details of various products offered in DellStore2, including their categories, titles, actors, prices, special offers, and common identifiers.",
+      "columns": [
+        {
+          "name": "prod_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in products",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "category",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores product category identifiers, such as 14 for computers, 6 for monitors, and 3 for printers.",
+          "samples": [
+            14,
+            6,
+            3,
+            9,
+            8
+          ]
+        },
+        {
+          "name": "title",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of product titles for the Academy series.",
+          "samples": [
+            "ACADEMY ACADEMY",
+            "ACADEMY ACE",
+            "ACADEMY ADAPTATION",
+            "ACADEMY AFFAIR",
+            "ACADEMY AFRICAN"
+          ]
+        },
+        {
+          "name": "actor",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores actor names for products.",
+          "samples": [
+            "PENELOPE GUINESS",
+            "EWAN RICKMAN",
+            "VIVIEN KAHN",
+            "ALAN MARX",
+            "CARRIE HANNAH"
+          ]
+        },
+        {
+          "name": "price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores product prices as decimal amounts.",
+          "samples": [
+            25.99,
+            20.99,
+            28.99,
+            14.99,
+            11.99
+          ]
+        },
+        {
+          "name": "special",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores a boolean value indicating if a product has special offers.",
+          "samples": [
+            "0",
+            "1",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "common_prod_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the common_prod_ entity",
+          "samples": [
+            1976,
+            6289,
+            7173,
+            8042,
+            2183
+          ]
+        }
+      ]
+    }
+  }
+}

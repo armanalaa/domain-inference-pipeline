@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (customers)
+- Customer service agents update customer profiles with changes in contact information or preferences. (customers)
+- Sales representatives assign customers to specific regions based on their location. (customers, region)
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product details and categorizing them. (categories, products)
+- Warehouse staff update inventory levels when new shipments arrive or products are sold. (inventory)
+- Product managers set special offers or promotions for selected products in the catalog. (products)
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog and specifying quantities. (orderlines)
+- Sales representatives process customer orders and confirm order details with customers. (orders)
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels to ensure sufficient stock for customer orders. (inventory)
+- Purchasing teams issue purchase orders when inventory levels fall below a certain threshold. (reorder)
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack customer orders from the warehouse shelves. (inventory, orderlines)
+- Shipping teams prepare shipments for delivery by labeling packages and arranging for transportation. (orders)
+
+## 6. Financial Processing
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each customer order. (orders)
+- Finance teams record financial transactions related to sales, expenses, and inventory costs. ("password")
+
+## 7. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer inquiries and complaints regarding orders, products, or account issues. (customers)
+- Customer service agents provide assistance with password resets or account recovery. ("password")

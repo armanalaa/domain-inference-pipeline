@@ -1,0 +1,65 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Regulatory Authorities
+
+Activity:
+- Pharmaceutical companies record product details and adverse event information for each report in the ICH ICSR message.
+- Companies assign unique identifiers to each adverse event report.
+- Regulatory authorities receive adverse event reports from pharmaceutical companies.
+- Authorities verify the authenticity of received adverse event reports.
+- Authorities store adverse event reports in their respective databases.
+
+## 2. Adverse Event Data Management
+
+Performed By: Data Managers, Compliance Officers
+
+Activity:
+- Data managers organize and maintain adverse event data in a structured format for easy retrieval.
+- Compliance officers ensure that all adverse event reports comply with regulatory standards.
+- Data managers update the database with new adverse event reports regularly.
+
+## 3. Adverse Event Analysis
+
+Performed By: Research Analysts, Safety Officers
+
+Activity:
+- Research analysts review adverse event reports to identify patterns and trends.
+- Safety officers assess the severity of adverse events and their potential impact on public health.
+- Research analysts categorize adverse events based on their nature and effects.
+
+## 4. Adverse Event Communication
+
+Performed By: Public Relations, Regulatory Affairs
+
+Activity:
+- Public relations teams prepare communications to inform the public about significant adverse events.
+- Regulatory affairs liaise with regulatory authorities to share adverse event data and updates.
+- Public relations teams distribute press releases and update websites with adverse event information.
+
+## 5. Adverse Event Response
+
+Performed By: Product Managers, Regulatory Affairs
+
+Activity:
+- Product managers evaluate the need for product modifications in response to adverse events.
+- Regulatory affairs coordinate with regulatory authorities to obtain necessary approvals for product changes.
+- Product managers implement changes to the product as required, ensuring compliance with regulations.
+
+## 6. Adverse Event Follow-up
+
+Performed By: Case Managers, Research Analysts
+
+Activity:
+- Case managers investigate adverse events further to gather additional information.
+- Research analysts analyze follow-up data to assess the effectiveness of any corrective actions taken.
+- Case managers document findings and recommendations for future action.
+
+## 7. Adverse Event Report Archiving
+
+Performed By: Data Managers, Compliance Officers
+
+Activity:
+- Data managers archive adverse event reports that are no longer actively monitored.
+- Compliance officers ensure that archived data is stored securely and can be retrieved when needed.

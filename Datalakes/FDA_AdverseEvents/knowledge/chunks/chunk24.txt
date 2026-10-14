@@ -1,0 +1,42 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. ICSR Submission
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Pharmaceutical company staff compile adverse event details and generate an Individual Case Safety Report (ICSR).
+- They assign a unique identifier to the ICSR for tracking purposes.
+- Staff record the date of receipt of the most recent information about the adverse event.
+
+## 2. ICSR Transmission
+
+Performed By: Pharmaceutical Company IT Staff, Regulatory Authority IT Staff
+
+Activity:
+- Pharmaceutical company IT staff encrypt and transmit the ICSR to the regulatory authority's EDI gateway.
+- Regulatory authority IT staff decrypt and parse the SGML data file upon receipt.
+
+## 3. ICSR Validation
+
+Performed By: Regulatory Authority IT Staff
+
+Activity:
+- If there are no SGML parsing errors, the regulatory authority's application processes the ICSR further.
+- If there is an SGML parsing error, the whole file is rejected and the sender must re-transmit the ICSR.
+
+## 4. ICSR Acknowledgment Generation
+
+Performed By: Regulatory Authority IT Staff
+
+Activity:
+- Upon successful validation, regulatory authority IT staff create an SGML message to comply with the ICSR Acknowledgement DTD.
+- The sender of the ICSR can then extract data from this ICSR Acknowledgement Message to determine the status of each ICSR.
+
+## 5. ICSR Status Tracking
+
+Performed By: Pharmaceutical Company Staff, Regulatory Authority Staff
+
+Activity:
+- The sender of the ICSR can track the status of each ICSR based on data extracted from the ICSR Acknowledgement Message.
+- Regulatory authority staff use this information for monitoring and managing adverse event reports.

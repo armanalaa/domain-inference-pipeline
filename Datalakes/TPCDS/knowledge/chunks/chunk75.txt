@@ -1,0 +1,54 @@
+ # TPC-DS — Business Workflows
+
+## 1. Test Submission Process Management
+
+Performed By: Test Sponsor Team, Administrator
+
+Activity:
+- Test Sponsor team prepares the Executive Summary and Result Log Files according to the Benchmark Standard (Policies § 12.4.1).
+- Test Sponsor team submits the Executive Summary, Result Log Files, and Alert Message to the Administrator (Policies § 12.4.3).
+- Administrator reviews the submitted documents for compliance with the Benchmark Standard and Policies (Policies § 12.4.2).
+- If necessary, the Pre-Publication Board or TPC certified Auditor certifies the Result for publication (Policies § 10.2, § 9.3).
+
+## 2. Result Certification
+
+Performed By: Pre-Publication Board, TPC certified Auditor
+
+Activity:
+- Pre-Publication Board or TPC certified Auditor reviews the submitted documents for compliance with the Benchmark Standard and Policies (Policies § 12.4.2).
+- If the entire Result is certified by a TPC Auditor, the Test Sponsor can publish the Result using TPC-Enterprise mechanisms (Policies § 12.4.2.1).
+
+## 3. Alert Message Creation
+
+Performed By: Test Sponsor Team
+
+Activity:
+- Test Sponsor team creates an Alert Message containing the required information (Policies § 12.4.3).
+
+## 4. Result Publication
+
+Performed By: Administrator, Test Sponsor Team
+
+Activity:
+- Administrator posts the certified Result after receiving the Alert Message from the Test Sponsor (Policies § 12.4.3).
+
+## 5. Review Period
+
+Performed By: TPC Community
+
+Activity:
+- The TPC community reviews the published Result during the 60-calendar day Review Period (Policies § 12.5.1).
+
+## 6. Historical Result Update
+
+Performed By: Test Sponsor Team
+
+Activity:
+- If components of the SUT become Generally Available after a Result is published, the Test Sponsor can update the Result and start a new Review Period (Policies § 12.4.4.3).
+
+## 7. Fair Use Rule Definition
+
+Performed By: Benchmark Standard Committee
+
+Activity:
+- The Benchmark Standard Committee defines additional benchmark Fair Use Rules that do not conflict with Policies § 8.2 (Policies § 12.6).

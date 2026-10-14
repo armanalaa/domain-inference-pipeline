@@ -1,0 +1,74 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their first name, last name, address details, email, phone number, credit card type, and password.
+- HR managers update customer information such as age, income, gender, and region when necessary.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, list price, and common product ID.
+- Inventory specialists update product details like quantity in stock and sales when necessary.
+
+## 3. Order Placement and Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details.
+- Sales representatives confirm orders and generate order IDs.
+- Warehouse staff track ordered items and prepare them for shipment based on the order ID.
+
+## 4. Inventory Replenishment and Tracking
+
+Performed By: Purchasing Teams, Inventory Specialists
+
+Activity:
+- Purchasing teams issue purchase orders to replenish low stock products.
+- Inventory specialists update product quantities in stock when new items arrive.
+
+## 5. Order Fulfillment and Shipping
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack ordered items based on the order ID.
+- Shipping teams prepare shipments and generate shipping labels for delivery.
+
+## 6. Order Tracking and Delivery Confirmation
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers track their orders using the tracking number provided in the shipping label.
+- Customer service representatives assist customers with order tracking inquiries.
+
+## 7. Invoice Generation and Payment Processing
+
+Performed By: Finance Teams, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on orders and send them to customers.
+- Finance teams record payments received from customers against the corresponding invoices.
+
+## 8. Reorder Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists monitor low stock products and update reorder information such as product ID, date low, quantity low, and expected delivery date.
+- Purchasing teams place reorders for items with low stock based on the reorder information.
+
+## 9. Security and Compliance
+
+Performed By: IT Administrators, Security Analysts
+
+Activity:
+- IT administrators implement security measures to protect customer data and prevent unauthorized access.
+- Security analysts monitor website activity for potential threats and take necessary actions to maintain security and integrity.

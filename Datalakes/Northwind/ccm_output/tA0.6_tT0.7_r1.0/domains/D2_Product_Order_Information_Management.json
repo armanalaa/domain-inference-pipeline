@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Product Order Information Management",
+    "definition": "The process of managing product details and order-related information",
+    "tables": [
+      "order_details",
+      "products"
+    ],
+    "n_tables": 2,
+    "n_columns_total": 15,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "order_details": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "OrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in order_details",
+          "samples": [
+            10248,
+            10249,
+            10250,
+            10251,
+            10252
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Product entity",
+          "samples": [
+            11,
+            42,
+            72,
+            14,
+            51
+          ]
+        },
+        {
+          "name": "UnitPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual unit prices for items in Northwind orders.",
+          "samples": [
+            14.0,
+            9.8,
+            34.8,
+            18.6,
+            42.4
+          ]
+        },
+        {
+          "name": "Quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of units for each individual product within an order.",
+          "samples": [
+            12,
+            10,
+            5,
+            9,
+            40
+          ]
+        },
+        {
+          "name": "Discount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores floating-point values representing discounts applied to individual order details.",
+          "samples": [
+            0.0,
+            0.15,
+            0.05,
+            0.2,
+            0.25
+          ]
+        }
+      ]
+    },
+    "products": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in products",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "ProductName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of various food products.",
+          "samples": [
+            "Chai",
+            "Chang",
+            "Aniseed Syrup",
+            "Chef Anton's Cajun Seasoning",
+            "Chef Anton's Gumbo Mix"
+          ]
+        },
+        {
+          "name": "SupplierID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Supplier entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "CategoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Category entity",
+          "samples": [
+            1,
+            2,
+            7,
+            6,
+            8
+          ]
+        },
+        {
+          "name": "QuantityPerUnit",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores product packaging units, such as boxes, bottles, and jars, along with their respective quantities and sizes.",
+          "samples": [
+            "10 boxes x 20 bags",
+            "24 - 12 oz bottles",
+            "12 - 550 ml bottles",
+            "48 - 6 oz jars",
+            "36 boxes"
+          ]
+        },
+        {
+          "name": "UnitPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual product prices in decimal format.",
+          "samples": [
+            18.0,
+            19.0,
+            10.0,
+            22.0,
+            21.35
+          ]
+        },
+        {
+          "name": "UnitsInStock",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stocks the quantity of each product currently available.",
+          "samples": [
+            39,
+            17,
+            13,
+            53,
+            0
+          ]
+        },
+        {
+          "name": "UnitsOnOrder",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of products currently ordered but not yet received.",
+          "samples": [
+            0,
+            40,
+            70,
+            30,
+            50
+          ]
+        },
+        {
+          "name": "ReorderLevel",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores minimum inventory level for each product to trigger a reorder.",
+          "samples": [
+            10,
+            25,
+            0,
+            30,
+            5
+          ]
+        },
+        {
+          "name": "Discontinued",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Indicates whether a product is currently discontinued (1) or still available (0).",
+          "samples": [
+            "0",
+            "1",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+ # Mondial — Business Workflows
+
+## 1. City Management
+
+Performed By: City Administrators, Data Analysts
+
+Activity:
+- City administrators register new cities by recording their name, country, province, population, longitude, and latitude.
+- Data analysts update city population data based on the latest census reports.
+- City administrators assign cities to provinces or regions as necessary.
+
+## 2. Country Management
+
+Performed By: Government Officials, Data Analysts
+
+Activity:
+- Government officials register new countries by recording their name, code, capital, province, area, and population.
+- Data analysts update country demographic data based on the latest reports from government agencies or international organizations.
+- Government officials establish diplomatic relations with other countries through joining international organizations.
+
+## 3. Continent Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new continents by recording their name and area.
+- Data analysts update continent data based on the latest geographical research.
+- Geographers categorize countries according to their continents.
+
+## 4. Desert Management
+
+Performed By: Geologists, Data Analysts
+
+Activity:
+- Geologists register new deserts by recording their name, area, longitude, and latitude.
+- Data analysts update desert data based on the latest geological surveys.
+- Geographers assign deserts to countries or regions.
+
+## 5. Economy Management
+
+Performed By: Economists, Government Officials
+
+Activity:
+- Economists calculate GDP, agriculture, service, industry, and inflation rates for each country.
+- Government officials use these economic indicators to make informed policy decisions.
+- Economists analyze the impact of various policies on the economy.
+
+## 6. Ethnic Group Management
+
+Performed By: Sociologists, Data Analysts
+
+Activity:
+- Sociologists register new ethnic groups by recording their name, country, and percentage of the population they represent.
+- Data analysts update ethnic group data based on the latest census reports or surveys.
+- Sociologists study the cultural, social, and economic aspects of different ethnic groups.
+
+## 7. Geographical Feature Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new geographical features like rivers, lakes, seas, mountains, and islands by recording their name, area, longitude, latitude, type, and associated country or region.
+- Data analysts update geographical feature data based on the latest surveys or satellite imagery.
+- Geographers analyze the spatial relationships between different geographical features.

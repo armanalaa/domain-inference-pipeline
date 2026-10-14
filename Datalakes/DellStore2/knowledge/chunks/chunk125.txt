@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their first name, last name, address details, contact information, credit card details, username, password, age, income, gender, and region.
+- HR managers update customer account details when necessary.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, list price, and any special offers or common product IDs.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity in stock for each product.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives process customer orders by recording order details such as order date, customer ID, net amount, tax, total amount, and orderlines (product ID, quantity).
+- Customer service representatives handle any issues or adjustments related to the order.
+
+## 5. Order Fulfillment and Shipping
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack orders based on orderlines (product ID, quantity).
+- Shipping department ships the orders by recording shipping details such as tracking number and delivery date.
+
+## 6. Reordering Inventory
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams reorder products when inventory levels reach a predefined low quantity threshold (quan_low).
+
+## 7. Customer Support and Complaints Handling
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer complaints, inquiries, and returns by updating the relevant order or customer details.
+
+## 8. Reporting and Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports based on data from the orders, customers, inventory, and sales tables for analysis and decision making.
+- Management reviews these reports to make informed decisions about business operations and strategy.

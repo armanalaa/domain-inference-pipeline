@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee information in the system when there are changes in employment status or contact details (cc_name, cc_county, cc_state, cc_zip, cc_country).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls and assist customers with their queries or issues (cc_call_center_id).
+- Representatives record call details such as start date, end date, closed date, and the customer's information (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk, cr_refunded_customer_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when items are sold or returned (cr_item_sk, cr_returned_quan).
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the return date and time, item details, and customer information (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff update inventory levels when items are returned (cr_returned_quan).
+
+## 5. Market Analysis and Strategy Development
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers analyze market data to identify trends and opportunities (cc_mkt_id, cc_mkt_class, cc_market_manager).
+- Sales representatives develop strategies based on the analysis to improve sales performance (cc_division, cc_division_name, cc_company, cc_company_name).
+
+## 6. Benchmark Standard Compliance and Review
+
+Performed By: TPC-Enterprise Benchmark Review Team
+
+Activity:
+- The team ensures that all benchmarks comply with the current Benchmark Standard (all columns related to benchmark standards).
+- They review and update or remove FDRs if any priced components are no longer available within 6 months (cr_reason_sk, cr_order_number).
+
+## 7. Result Submission and Review
+
+Performed By: Test Sponsors, TPC-Enterprise Benchmark Review Team
+
+Activity:
+- Test sponsors submit results on another vendor’s system/software for review (all columns related to result submission).
+- The TPC-Enterprise Benchmark Review Team reviews the results and handles any challenges that may arise during the 60-day internal review period (11.6.2.1, 11.6.2.2).

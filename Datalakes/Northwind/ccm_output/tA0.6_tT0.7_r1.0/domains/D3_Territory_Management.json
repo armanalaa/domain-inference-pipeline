@@ -1,0 +1,181 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "Territory Management",
+    "definition": "The process of managing territories and their associated regions, employees, and categories.",
+    "tables": [
+      "categories",
+      "employee_territories",
+      "regions",
+      "territories"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 11,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "categories": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "CategoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Category entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "CategoryName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive names for food categories such as Beverages, Condiments, Confections, Dairy Products, and Grains/Cereals.",
+          "samples": [
+            "Beverages",
+            "Condiments",
+            "Confections",
+            "Dairy Products",
+            "Grains/Cereals"
+          ]
+        },
+        {
+          "name": "Description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive names of various food categories such as beverages, sauces, desserts, cheeses, and food items.",
+          "samples": [
+            "Soft drinks, coffees, teas, beers, and ales",
+            "Sweet and savory sauces, relishes, spreads, and seasonings",
+            "Desserts, candies, and sweet breads",
+            "Cheeses",
+            "Breads, crackers, pasta, and cereal"
+          ]
+        },
+        {
+          "name": "Picture",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores category image data (as text), as no sample values are provided.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "employee_territories": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "employeeID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in employee_territories",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "territoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the territory entity",
+          "samples": [
+            6897,
+            19713,
+            1581,
+            1730,
+            1833
+          ]
+        }
+      ]
+    },
+    "regions": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "regionID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in regions",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            null
+          ]
+        },
+        {
+          "name": "regionDescription",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores brief descriptions of geographical regions (Eastern, Western, Northern, Southern).",
+          "samples": [
+            "Eastern",
+            "Western",
+            "Northern",
+            "Southern",
+            null
+          ]
+        }
+      ]
+    },
+    "territories": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "territoryID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the territory entity",
+          "samples": [
+            1581,
+            1730,
+            1833,
+            2116,
+            2139
+          ]
+        },
+        {
+          "name": "territoryDescription",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive names of territories, such as Westboro, Bedford, Georgetow, Boston, Cambridge.",
+          "samples": [
+            "Westboro",
+            "Bedford",
+            "Georgetow",
+            "Boston",
+            "Cambridge"
+          ]
+        },
+        {
+          "name": "regionID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the region entity",
+          "samples": [
+            1,
+            3,
+            4,
+            2,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

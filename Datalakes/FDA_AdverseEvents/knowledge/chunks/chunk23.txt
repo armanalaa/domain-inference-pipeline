@@ -1,0 +1,62 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Pharmaceutical Companies
+
+Activity:
+- Healthcare professionals document adverse events observed in patients (occurcountry).
+- Patients or their representatives report personal experiences of adverse events (additionaldocument).
+- Pharmaceutical companies collect and verify reports from various sources.
+- Adverse event details are recorded including date of occurrence (receivedate, receiptdate), type (reporttype), seriousness (serious, seriousnessdeath, seriousnesslifethreatening, seriousnesshospitalization, seriousnessdisabling, seriousnesscongenitalanomali, seriousnessother).
+- The transmission date of the report is recorded (transmissiondate).
+
+## 2. Transmission of Adverse Event Reports
+
+Performed By: Pharmaceutical Companies, EDI Systems
+
+Activity:
+- Pharmaceutical companies prepare and transmit adverse event reports in a standardized format (ICH ICSR Specifications).
+- EDI systems package the data for secure transmission via physical media or over the Internet.
+- A unique message number is assigned to each transmission (Message Number).
+- The sender's identification is included in the transmission (Message Sender Identifier).
+
+## 3. Receipt and Validation of Adverse Event Reports
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff receives adverse event reports via secure EDI or physical media.
+- The received reports are validated for syntactic correctness using an SGML parser (nsgmls).
+- Invalid reports are flagged and corrected as necessary.
+
+## 4. Tracking and Routing of Adverse Event Reports
+
+Performed By: FDA Systems, FDA Staff
+
+Activity:
+- FDA systems track the status of each adverse event report (Message Number).
+- Reports are routed to appropriate departments based on their severity and type (reporttype, serious).
+
+## 5. Analysis and Investigation of Adverse Event Reports
+
+Performed By: FDA Scientists, FDA Regulatory Staff
+
+Activity:
+- FDA scientists analyze adverse event reports for patterns and potential risks.
+- FDA regulatory staff investigate the reported events to determine if further action is needed (seriousnessdeath, seriousnesslifethreatening, seriousnesshospitalization).
+
+## 6. Response and Communication Regarding Adverse Event Reports
+
+Performed By: FDA Regulatory Staff, Pharmaceutical Companies
+
+Activity:
+- FDA regulatory staff determine appropriate responses to adverse event reports (seriousnessdeath, seriousnesslifethreatening, seriousnesshospitalization).
+- Communication is sent to the reporting party and the pharmaceutical company involved.
+
+## 7. Update of Adverse Event Database
+
+Performed By: FDA Data Entry Staff
+
+Activity:
+- FDA data entry staff update the FDA_AdverseEvents database with validated reports.

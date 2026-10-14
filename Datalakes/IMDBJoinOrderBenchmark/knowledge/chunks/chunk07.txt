@@ -1,0 +1,50 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Content Management and Cataloging
+
+Performed By: Data Entry Clerks, Content Managers
+
+Activity:
+- Data entry clerks register new movies by inputting title, production year, and associated companies. (aka_title, company_name)
+- Content managers assign appropriate categories to each movie based on genre and subject matter. (aka_title)
+- Data entry clerks record actor roles for each movie, including the person's name, role type, and order of appearance. (cast_info)
+
+## 2. Actor and Character Information Management
+
+Performed By: Data Entry Clerks, Content Managers
+
+Activity:
+- Data entry clerks input actor names, associated movies, and character roles for each film. (char_name, cast_info)
+- Content managers verify and update the aliases of actors to ensure consistency across the database. (aka_name)
+
+## 3. Keyword Assignment and Search Optimization
+
+Performed By: Content Managers, SEO Specialists
+
+Activity:
+- Content managers assign relevant keywords to movies for improved searchability. (keyword, movie_keyword)
+- SEO specialists optimize the database schema to enhance the discoverability of movies based on user queries. (info_type, keyword)
+
+## 4. Company and Production Information Management
+
+Performed By: Data Entry Clerks, Content Managers
+
+Activity:
+- Data entry clerks input company names, associated movies, and relevant types for each production house. (company_name, movie_companies)
+- Content managers verify and update the information related to companies, including their country of origin. (company_name)
+
+## 5. Linking Movies and Related Entities
+
+Performed By: Data Entry Clerks, Content Managers
+
+Activity:
+- Data entry clerks establish connections between movies, keywords, and other relevant entities. (movie_keyword, link_type)
+- Content managers review and approve the links to ensure accuracy and completeness. (link_type)
+
+## 6. Query Optimization and Performance Monitoring
+
+Performed By: Database Administrators, System Analysts
+
+Activity:
+- Database administrators monitor query performance and identify areas for optimization. (PostgreSQL DBMS, HyPer)
+- System analysts analyze the quality of cardinality estimates for base tables and joins to improve query efficiency. (Table1, Figure3)

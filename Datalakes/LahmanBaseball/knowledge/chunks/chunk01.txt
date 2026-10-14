@@ -1,0 +1,56 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Data Management
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators maintain the structure and integrity of the LahmanBaseball database.
+- Data analysts input new player data into the AllstarFull, Batting, Fielding, CollegePlaying, and AwardsManagers/AwardsPlayers tables.
+- Data analysts update existing player records in the Batting, Fielding, and AwardsManagers/AwardsPlayers tables as necessary.
+
+## 2. Game Logging and Player Statistics Collection
+
+Performed By: Game Statisticians, Scouts
+
+Activity:
+- Game statisticians record game details such as gameID, teamID, lgID, GP, startingPos in the AllstarFull table for each game.
+- Scouts track player performance during games, recording relevant statistics like AB, R, H, 2B, HR, RBI, SB, CS, BB, SO, IBB, HBP, SH, SF, GIDP in the Batting table.
+
+## 3. Fielding Statistics Collection
+
+Performed By: Game Statisticians, Scouts
+
+Activity:
+- Game statisticians and scouts record fielding statistics like POS, G, GS, InnOuts, PO, A, E, DP, PB, WP, SB, CS, ZR in the Fielding table for each player.
+
+## 4. Awards Management
+
+Performed By: Award Committees, Database Administrators
+
+Activity:
+- Award committees determine award winners based on performance statistics and other criteria.
+- Database administrators input award data into the AwardsManagers and AwardsPlayers tables, including playerID, awardID, yearID, lgID, tie, notes.
+
+## 5. Postseason Data Management
+
+Performed By: Database Administrators
+
+Activity:
+- Database administrators input postseason data into relevant tables based on game results and advancements.
+
+## 6. Negro Leagues Data Integration
+
+Performed By: Database Administrators, Researchers
+
+Activity:
+- Researchers gather and verify Negro Leagues data from Seamheads.com.
+- Database administrators integrate this data into the LahmanBaseball database.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Data Analysts, Researchers
+
+Activity:
+- Data analysts and researchers perform complex queries across the entire history of baseball to uncover insights and trends.
+- They generate reports and visualizations based on their findings for various purposes such as research, simulation games, or statistical analysis.

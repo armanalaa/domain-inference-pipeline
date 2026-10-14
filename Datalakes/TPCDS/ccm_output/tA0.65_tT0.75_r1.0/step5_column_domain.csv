@@ -1,0 +1,371 @@
+table,column,domain_id,domain_name
+catalog_sales,cs_bill_addr_sk,0,Sales and Inventory Management
+catalog_sales,cs_bill_cdemo_sk,0,Sales and Inventory Management
+catalog_sales,cs_bill_customer_sk,0,Sales and Inventory Management
+catalog_sales,cs_bill_hdemo_sk,0,Sales and Inventory Management
+catalog_sales,cs_call_center_sk,0,Sales and Inventory Management
+catalog_sales,cs_catalog_page_sk,0,Sales and Inventory Management
+catalog_sales,cs_coupon_amt,0,Sales and Inventory Management
+catalog_sales,cs_ext_discount_amt,0,Sales and Inventory Management
+catalog_sales,cs_ext_list_price,0,Sales and Inventory Management
+catalog_sales,cs_ext_sales_price,0,Sales and Inventory Management
+catalog_sales,cs_ext_ship_cost,0,Sales and Inventory Management
+catalog_sales,cs_ext_tax,0,Sales and Inventory Management
+catalog_sales,cs_ext_wholesale_cost,0,Sales and Inventory Management
+catalog_sales,cs_item_sk,0,Sales and Inventory Management
+catalog_sales,cs_list_price,0,Sales and Inventory Management
+catalog_sales,cs_net_paid,0,Sales and Inventory Management
+catalog_sales,cs_net_paid_inc_ship,0,Sales and Inventory Management
+catalog_sales,cs_net_paid_inc_ship_tax,0,Sales and Inventory Management
+catalog_sales,cs_net_paid_inc_tax,0,Sales and Inventory Management
+catalog_sales,cs_net_profit,0,Sales and Inventory Management
+catalog_sales,cs_order_number,0,Sales and Inventory Management
+catalog_sales,cs_promo_sk,0,Sales and Inventory Management
+catalog_sales,cs_quantity,0,Sales and Inventory Management
+catalog_sales,cs_sales_price,0,Sales and Inventory Management
+catalog_sales,cs_ship_addr_sk,0,Sales and Inventory Management
+catalog_sales,cs_ship_cdemo_sk,0,Sales and Inventory Management
+catalog_sales,cs_ship_customer_sk,0,Sales and Inventory Management
+catalog_sales,cs_ship_date_sk,0,Sales and Inventory Management
+catalog_sales,cs_ship_hdemo_sk,0,Sales and Inventory Management
+catalog_sales,cs_ship_mode_sk,0,Sales and Inventory Management
+catalog_sales,cs_sold_date_sk,0,Sales and Inventory Management
+catalog_sales,cs_sold_time_sk,0,Sales and Inventory Management
+catalog_sales,cs_warehouse_sk,0,Sales and Inventory Management
+catalog_sales,cs_wholesale_cost,0,Sales and Inventory Management
+inventory,inv_date_sk,0,Sales and Inventory Management
+inventory,inv_item_sk,0,Sales and Inventory Management
+inventory,inv_quantity_on_hand,0,Sales and Inventory Management
+inventory,inv_warehouse_sk,0,Sales and Inventory Management
+store_sales,ss_addr_sk,0,Sales and Inventory Management
+store_sales,ss_cdemo_sk,0,Sales and Inventory Management
+store_sales,ss_coupon_amt,0,Sales and Inventory Management
+store_sales,ss_customer_sk,0,Sales and Inventory Management
+store_sales,ss_ext_discount_amt,0,Sales and Inventory Management
+store_sales,ss_ext_list_price,0,Sales and Inventory Management
+store_sales,ss_ext_sales_price,0,Sales and Inventory Management
+store_sales,ss_ext_tax,0,Sales and Inventory Management
+store_sales,ss_ext_wholesale_cost,0,Sales and Inventory Management
+store_sales,ss_hdemo_sk,0,Sales and Inventory Management
+store_sales,ss_item_sk,0,Sales and Inventory Management
+store_sales,ss_list_price,0,Sales and Inventory Management
+store_sales,ss_net_paid,0,Sales and Inventory Management
+store_sales,ss_net_paid_inc_tax,0,Sales and Inventory Management
+store_sales,ss_net_profit,0,Sales and Inventory Management
+store_sales,ss_promo_sk,0,Sales and Inventory Management
+store_sales,ss_quantity,0,Sales and Inventory Management
+store_sales,ss_sales_price,0,Sales and Inventory Management
+store_sales,ss_sold_date_sk,0,Sales and Inventory Management
+store_sales,ss_sold_time_sk,0,Sales and Inventory Management
+store_sales,ss_store_sk,0,Sales and Inventory Management
+store_sales,ss_ticket_number,0,Sales and Inventory Management
+store_sales,ss_wholesale_cost,0,Sales and Inventory Management
+web_sales,ws_bill_addr_sk,0,Sales and Inventory Management
+web_sales,ws_bill_cdemo_sk,0,Sales and Inventory Management
+web_sales,ws_bill_customer_sk,0,Sales and Inventory Management
+web_sales,ws_bill_hdemo_sk,0,Sales and Inventory Management
+web_sales,ws_coupon_amt,0,Sales and Inventory Management
+web_sales,ws_ext_discount_amt,0,Sales and Inventory Management
+web_sales,ws_ext_list_price,0,Sales and Inventory Management
+web_sales,ws_ext_sales_price,0,Sales and Inventory Management
+web_sales,ws_ext_ship_cost,0,Sales and Inventory Management
+web_sales,ws_ext_tax,0,Sales and Inventory Management
+web_sales,ws_ext_wholesale_cost,0,Sales and Inventory Management
+web_sales,ws_item_sk,0,Sales and Inventory Management
+web_sales,ws_list_price,0,Sales and Inventory Management
+web_sales,ws_net_paid,0,Sales and Inventory Management
+web_sales,ws_net_paid_inc_ship,0,Sales and Inventory Management
+web_sales,ws_net_paid_inc_ship_tax,0,Sales and Inventory Management
+web_sales,ws_net_paid_inc_tax,0,Sales and Inventory Management
+web_sales,ws_net_profit,0,Sales and Inventory Management
+web_sales,ws_order_number,0,Sales and Inventory Management
+web_sales,ws_promo_sk,0,Sales and Inventory Management
+web_sales,ws_quantity,0,Sales and Inventory Management
+web_sales,ws_sales_price,0,Sales and Inventory Management
+web_sales,ws_ship_addr_sk,0,Sales and Inventory Management
+web_sales,ws_ship_cdemo_sk,0,Sales and Inventory Management
+web_sales,ws_ship_customer_sk,0,Sales and Inventory Management
+web_sales,ws_ship_date_sk,0,Sales and Inventory Management
+web_sales,ws_ship_hdemo_sk,0,Sales and Inventory Management
+web_sales,ws_ship_mode_sk,0,Sales and Inventory Management
+web_sales,ws_sold_date_sk,0,Sales and Inventory Management
+web_sales,ws_sold_time_sk,0,Sales and Inventory Management
+web_sales,ws_warehouse_sk,0,Sales and Inventory Management
+web_sales,ws_web_page_sk,0,Sales and Inventory Management
+web_sales,ws_web_site_sk,0,Sales and Inventory Management
+web_sales,ws_wholesale_cost,0,Sales and Inventory Management
+item,i_brand,1,Inventory and Product Management
+item,i_brand_id,1,Inventory and Product Management
+item,i_category,1,Inventory and Product Management
+item,i_category_id,1,Inventory and Product Management
+item,i_class,1,Inventory and Product Management
+item,i_class_id,1,Inventory and Product Management
+item,i_color,1,Inventory and Product Management
+item,i_container,1,Inventory and Product Management
+item,i_current_price,1,Inventory and Product Management
+item,i_formulation,1,Inventory and Product Management
+item,i_item_desc,1,Inventory and Product Management
+item,i_item_id,1,Inventory and Product Management
+item,i_item_sk,1,Inventory and Product Management
+item,i_manager_id,1,Inventory and Product Management
+item,i_manufact,1,Inventory and Product Management
+item,i_manufact_id,1,Inventory and Product Management
+item,i_product_name,1,Inventory and Product Management
+item,i_rec_end_date,1,Inventory and Product Management
+item,i_rec_start_date,1,Inventory and Product Management
+item,i_size,1,Inventory and Product Management
+item,i_units,1,Inventory and Product Management
+item,i_wholesale_cost,1,Inventory and Product Management
+catalog_page,cp_catalog_number,2,Catalog and Product Information Management
+catalog_page,cp_catalog_page_id,2,Catalog and Product Information Management
+catalog_page,cp_catalog_page_number,2,Catalog and Product Information Management
+catalog_page,cp_catalog_page_sk,2,Catalog and Product Information Management
+catalog_page,cp_department,2,Catalog and Product Information Management
+catalog_page,cp_description,2,Catalog and Product Information Management
+catalog_page,cp_end_date_sk,2,Catalog and Product Information Management
+catalog_page,cp_start_date_sk,2,Catalog and Product Information Management
+catalog_page,cp_type,2,Catalog and Product Information Management
+catalog_returns,cr_call_center_sk,3,Return and Inventory Management
+catalog_returns,cr_catalog_page_sk,3,Return and Inventory Management
+catalog_returns,cr_fee,3,Return and Inventory Management
+catalog_returns,cr_item_sk,3,Return and Inventory Management
+catalog_returns,cr_net_loss,3,Return and Inventory Management
+catalog_returns,cr_order_number,3,Return and Inventory Management
+catalog_returns,cr_reason_sk,3,Return and Inventory Management
+catalog_returns,cr_refunded_addr_sk,3,Return and Inventory Management
+catalog_returns,cr_refunded_cash,3,Return and Inventory Management
+catalog_returns,cr_refunded_cdemo_sk,3,Return and Inventory Management
+catalog_returns,cr_refunded_customer_sk,3,Return and Inventory Management
+catalog_returns,cr_refunded_hdemo_sk,3,Return and Inventory Management
+catalog_returns,cr_return_amount,3,Return and Inventory Management
+catalog_returns,cr_return_amt_inc_tax,3,Return and Inventory Management
+catalog_returns,cr_return_quantity,3,Return and Inventory Management
+catalog_returns,cr_return_ship_cost,3,Return and Inventory Management
+catalog_returns,cr_return_tax,3,Return and Inventory Management
+catalog_returns,cr_returned_date_sk,3,Return and Inventory Management
+catalog_returns,cr_returned_time_sk,3,Return and Inventory Management
+catalog_returns,cr_returning_addr_sk,3,Return and Inventory Management
+catalog_returns,cr_returning_cdemo_sk,3,Return and Inventory Management
+catalog_returns,cr_returning_customer_sk,3,Return and Inventory Management
+catalog_returns,cr_returning_hdemo_sk,3,Return and Inventory Management
+catalog_returns,cr_reversed_charge,3,Return and Inventory Management
+catalog_returns,cr_ship_mode_sk,3,Return and Inventory Management
+catalog_returns,cr_store_credit,3,Return and Inventory Management
+catalog_returns,cr_warehouse_sk,3,Return and Inventory Management
+store_returns,sr_addr_sk,3,Return and Inventory Management
+store_returns,sr_cdemo_sk,3,Return and Inventory Management
+store_returns,sr_customer_sk,3,Return and Inventory Management
+store_returns,sr_fee,3,Return and Inventory Management
+store_returns,sr_hdemo_sk,3,Return and Inventory Management
+store_returns,sr_item_sk,3,Return and Inventory Management
+store_returns,sr_net_loss,3,Return and Inventory Management
+store_returns,sr_reason_sk,3,Return and Inventory Management
+store_returns,sr_refunded_cash,3,Return and Inventory Management
+store_returns,sr_return_amt,3,Return and Inventory Management
+store_returns,sr_return_amt_inc_tax,3,Return and Inventory Management
+store_returns,sr_return_quantity,3,Return and Inventory Management
+store_returns,sr_return_ship_cost,3,Return and Inventory Management
+store_returns,sr_return_tax,3,Return and Inventory Management
+store_returns,sr_return_time_sk,3,Return and Inventory Management
+store_returns,sr_returned_date_sk,3,Return and Inventory Management
+store_returns,sr_reversed_charge,3,Return and Inventory Management
+store_returns,sr_store_credit,3,Return and Inventory Management
+store_returns,sr_store_sk,3,Return and Inventory Management
+store_returns,sr_ticket_number,3,Return and Inventory Management
+web_returns,wr_account_credit,3,Return and Inventory Management
+web_returns,wr_fee,3,Return and Inventory Management
+web_returns,wr_item_sk,3,Return and Inventory Management
+web_returns,wr_net_loss,3,Return and Inventory Management
+web_returns,wr_order_number,3,Return and Inventory Management
+web_returns,wr_reason_sk,3,Return and Inventory Management
+web_returns,wr_refunded_addr_sk,3,Return and Inventory Management
+web_returns,wr_refunded_cash,3,Return and Inventory Management
+web_returns,wr_refunded_cdemo_sk,3,Return and Inventory Management
+web_returns,wr_refunded_customer_sk,3,Return and Inventory Management
+web_returns,wr_refunded_hdemo_sk,3,Return and Inventory Management
+web_returns,wr_return_amt,3,Return and Inventory Management
+web_returns,wr_return_amt_inc_tax,3,Return and Inventory Management
+web_returns,wr_return_quantity,3,Return and Inventory Management
+web_returns,wr_return_ship_cost,3,Return and Inventory Management
+web_returns,wr_return_tax,3,Return and Inventory Management
+web_returns,wr_returned_date_sk,3,Return and Inventory Management
+web_returns,wr_returned_time_sk,3,Return and Inventory Management
+web_returns,wr_returning_addr_sk,3,Return and Inventory Management
+web_returns,wr_returning_cdemo_sk,3,Return and Inventory Management
+web_returns,wr_returning_customer_sk,3,Return and Inventory Management
+web_returns,wr_returning_hdemo_sk,3,Return and Inventory Management
+web_returns,wr_reversed_charge,3,Return and Inventory Management
+web_returns,wr_web_page_sk,3,Return and Inventory Management
+web_page,wp_access_date_sk,4,Web Content Management
+web_page,wp_autogen_flag,4,Web Content Management
+web_page,wp_char_count,4,Web Content Management
+web_page,wp_creation_date_sk,4,Web Content Management
+web_page,wp_customer_sk,4,Web Content Management
+web_page,wp_image_count,4,Web Content Management
+web_page,wp_link_count,4,Web Content Management
+web_page,wp_max_ad_count,4,Web Content Management
+web_page,wp_rec_end_date,4,Web Content Management
+web_page,wp_rec_start_date,4,Web Content Management
+web_page,wp_type,4,Web Content Management
+web_page,wp_url,4,Web Content Management
+web_page,wp_web_page_id,4,Web Content Management
+web_page,wp_web_page_sk,4,Web Content Management
+reason,r_reason_desc,5,Customer Interaction Management
+reason,r_reason_id,5,Customer Interaction Management
+reason,r_reason_sk,5,Customer Interaction Management
+call_center,cc_call_center_id,6,CallCenterInfrastructureManagement
+call_center,cc_call_center_sk,6,CallCenterInfrastructureManagement
+call_center,cc_city,6,CallCenterInfrastructureManagement
+call_center,cc_class,6,CallCenterInfrastructureManagement
+call_center,cc_closed_date_sk,6,CallCenterInfrastructureManagement
+call_center,cc_company,6,CallCenterInfrastructureManagement
+call_center,cc_company_name,6,CallCenterInfrastructureManagement
+call_center,cc_country,6,CallCenterInfrastructureManagement
+call_center,cc_county,6,CallCenterInfrastructureManagement
+call_center,cc_division,6,CallCenterInfrastructureManagement
+call_center,cc_division_name,6,CallCenterInfrastructureManagement
+call_center,cc_employees,6,CallCenterInfrastructureManagement
+call_center,cc_gmt_offset,6,CallCenterInfrastructureManagement
+call_center,cc_hours,6,CallCenterInfrastructureManagement
+call_center,cc_manager,6,CallCenterInfrastructureManagement
+call_center,cc_market_manager,6,CallCenterInfrastructureManagement
+call_center,cc_mkt_class,6,CallCenterInfrastructureManagement
+call_center,cc_mkt_desc,6,CallCenterInfrastructureManagement
+call_center,cc_mkt_id,6,CallCenterInfrastructureManagement
+call_center,cc_name,6,CallCenterInfrastructureManagement
+call_center,cc_open_date_sk,6,CallCenterInfrastructureManagement
+call_center,cc_rec_end_date,6,CallCenterInfrastructureManagement
+call_center,cc_rec_start_date,6,CallCenterInfrastructureManagement
+call_center,cc_sq_ft,6,CallCenterInfrastructureManagement
+call_center,cc_state,6,CallCenterInfrastructureManagement
+call_center,cc_street_name,6,CallCenterInfrastructureManagement
+call_center,cc_street_number,6,CallCenterInfrastructureManagement
+call_center,cc_street_type,6,CallCenterInfrastructureManagement
+call_center,cc_suite_number,6,CallCenterInfrastructureManagement
+call_center,cc_tax_percentage,6,CallCenterInfrastructureManagement
+call_center,cc_zip,6,CallCenterInfrastructureManagement
+customer_address,ca_address_id,6,CallCenterInfrastructureManagement
+customer_address,ca_address_sk,6,CallCenterInfrastructureManagement
+customer_address,ca_city,6,CallCenterInfrastructureManagement
+customer_address,ca_country,6,CallCenterInfrastructureManagement
+customer_address,ca_county,6,CallCenterInfrastructureManagement
+customer_address,ca_gmt_offset,6,CallCenterInfrastructureManagement
+customer_address,ca_location_type,6,CallCenterInfrastructureManagement
+customer_address,ca_state,6,CallCenterInfrastructureManagement
+customer_address,ca_street_name,6,CallCenterInfrastructureManagement
+customer_address,ca_street_number,6,CallCenterInfrastructureManagement
+customer_address,ca_street_type,6,CallCenterInfrastructureManagement
+customer_address,ca_suite_number,6,CallCenterInfrastructureManagement
+customer_address,ca_zip,6,CallCenterInfrastructureManagement
+store,s_city,6,CallCenterInfrastructureManagement
+store,s_closed_date_sk,6,CallCenterInfrastructureManagement
+store,s_company_id,6,CallCenterInfrastructureManagement
+store,s_company_name,6,CallCenterInfrastructureManagement
+store,s_country,6,CallCenterInfrastructureManagement
+store,s_county,6,CallCenterInfrastructureManagement
+store,s_division_id,6,CallCenterInfrastructureManagement
+store,s_division_name,6,CallCenterInfrastructureManagement
+store,s_floor_space,6,CallCenterInfrastructureManagement
+store,s_geography_class,6,CallCenterInfrastructureManagement
+store,s_gmt_offset,6,CallCenterInfrastructureManagement
+store,s_hours,6,CallCenterInfrastructureManagement
+store,s_manager,6,CallCenterInfrastructureManagement
+store,s_market_desc,6,CallCenterInfrastructureManagement
+store,s_market_id,6,CallCenterInfrastructureManagement
+store,s_market_manager,6,CallCenterInfrastructureManagement
+store,s_number_employees,6,CallCenterInfrastructureManagement
+store,s_rec_end_date,6,CallCenterInfrastructureManagement
+store,s_rec_start_date,6,CallCenterInfrastructureManagement
+store,s_state,6,CallCenterInfrastructureManagement
+store,s_store_id,6,CallCenterInfrastructureManagement
+store,s_store_name,6,CallCenterInfrastructureManagement
+store,s_store_sk,6,CallCenterInfrastructureManagement
+store,s_street_name,6,CallCenterInfrastructureManagement
+store,s_street_number,6,CallCenterInfrastructureManagement
+store,s_street_type,6,CallCenterInfrastructureManagement
+store,s_suite_number,6,CallCenterInfrastructureManagement
+store,s_tax_percentage,6,CallCenterInfrastructureManagement
+store,s_zip,6,CallCenterInfrastructureManagement
+warehouse,w_city,6,CallCenterInfrastructureManagement
+warehouse,w_country,6,CallCenterInfrastructureManagement
+warehouse,w_county,6,CallCenterInfrastructureManagement
+warehouse,w_gmt_offset,6,CallCenterInfrastructureManagement
+warehouse,w_state,6,CallCenterInfrastructureManagement
+warehouse,w_street_name,6,CallCenterInfrastructureManagement
+warehouse,w_street_number,6,CallCenterInfrastructureManagement
+warehouse,w_street_type,6,CallCenterInfrastructureManagement
+warehouse,w_suite_number,6,CallCenterInfrastructureManagement
+warehouse,w_warehouse_id,6,CallCenterInfrastructureManagement
+warehouse,w_warehouse_name,6,CallCenterInfrastructureManagement
+warehouse,w_warehouse_sk,6,CallCenterInfrastructureManagement
+warehouse,w_warehouse_sq_ft,6,CallCenterInfrastructureManagement
+warehouse,w_zip,6,CallCenterInfrastructureManagement
+web_site,web_city,6,CallCenterInfrastructureManagement
+web_site,web_class,6,CallCenterInfrastructureManagement
+web_site,web_close_date_sk,6,CallCenterInfrastructureManagement
+web_site,web_company_id,6,CallCenterInfrastructureManagement
+web_site,web_company_name,6,CallCenterInfrastructureManagement
+web_site,web_country,6,CallCenterInfrastructureManagement
+web_site,web_county,6,CallCenterInfrastructureManagement
+web_site,web_gmt_offset,6,CallCenterInfrastructureManagement
+web_site,web_manager,6,CallCenterInfrastructureManagement
+web_site,web_market_manager,6,CallCenterInfrastructureManagement
+web_site,web_mkt_class,6,CallCenterInfrastructureManagement
+web_site,web_mkt_desc,6,CallCenterInfrastructureManagement
+web_site,web_mkt_id,6,CallCenterInfrastructureManagement
+web_site,web_name,6,CallCenterInfrastructureManagement
+web_site,web_open_date_sk,6,CallCenterInfrastructureManagement
+web_site,web_rec_end_date,6,CallCenterInfrastructureManagement
+web_site,web_rec_start_date,6,CallCenterInfrastructureManagement
+web_site,web_site_id,6,CallCenterInfrastructureManagement
+web_site,web_site_sk,6,CallCenterInfrastructureManagement
+web_site,web_state,6,CallCenterInfrastructureManagement
+web_site,web_street_name,6,CallCenterInfrastructureManagement
+web_site,web_street_number,6,CallCenterInfrastructureManagement
+web_site,web_street_type,6,CallCenterInfrastructureManagement
+web_site,web_suite_number,6,CallCenterInfrastructureManagement
+web_site,web_tax_percentage,6,CallCenterInfrastructureManagement
+web_site,web_zip,6,CallCenterInfrastructureManagement
+ship_mode,sm_carrier,7,CallCenterOperationsInventoryManagement
+ship_mode,sm_code,7,CallCenterOperationsInventoryManagement
+ship_mode,sm_contract,7,CallCenterOperationsInventoryManagement
+ship_mode,sm_ship_mode_id,7,CallCenterOperationsInventoryManagement
+ship_mode,sm_ship_mode_sk,7,CallCenterOperationsInventoryManagement
+ship_mode,sm_type,7,CallCenterOperationsInventoryManagement
+promotion,p_channel_catalog,8,Marketing Campaign Management
+promotion,p_channel_demo,8,Marketing Campaign Management
+promotion,p_channel_details,8,Marketing Campaign Management
+promotion,p_channel_dmail,8,Marketing Campaign Management
+promotion,p_channel_email,8,Marketing Campaign Management
+promotion,p_channel_event,8,Marketing Campaign Management
+promotion,p_channel_press,8,Marketing Campaign Management
+promotion,p_channel_radio,8,Marketing Campaign Management
+promotion,p_channel_tv,8,Marketing Campaign Management
+promotion,p_cost,8,Marketing Campaign Management
+promotion,p_discount_active,8,Marketing Campaign Management
+promotion,p_end_date_sk,8,Marketing Campaign Management
+promotion,p_item_sk,8,Marketing Campaign Management
+promotion,p_promo_id,8,Marketing Campaign Management
+promotion,p_promo_name,8,Marketing Campaign Management
+promotion,p_promo_sk,8,Marketing Campaign Management
+promotion,p_purpose,8,Marketing Campaign Management
+promotion,p_response_target,8,Marketing Campaign Management
+promotion,p_start_date_sk,8,Marketing Campaign Management
+customer,c_birth_country,9,Customer Relationship Management
+customer,c_birth_day,9,Customer Relationship Management
+customer,c_birth_month,9,Customer Relationship Management
+customer,c_birth_year,9,Customer Relationship Management
+customer,c_current_addr_sk,9,Customer Relationship Management
+customer,c_current_cdemo_sk,9,Customer Relationship Management
+customer,c_current_hdemo_sk,9,Customer Relationship Management
+customer,c_customer_id,9,Customer Relationship Management
+customer,c_customer_sk,9,Customer Relationship Management
+customer,c_email_address,9,Customer Relationship Management
+customer,c_first_name,9,Customer Relationship Management
+customer,c_first_sales_date_sk,9,Customer Relationship Management
+customer,c_first_shipto_date_sk,9,Customer Relationship Management
+customer,c_last_name,9,Customer Relationship Management
+customer,c_last_review_date_sk,9,Customer Relationship Management
+customer,c_login,9,Customer Relationship Management
+customer,c_preferred_cust_flag,9,Customer Relationship Management
+customer,c_salutation,9,Customer Relationship Management

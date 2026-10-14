@@ -1,0 +1,67 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Drug Safety Officers, Data Analysts
+
+Activity:
+- Drug safety officers monitor adverse event reports submitted by various sources.
+- Data analysts extract and clean data from the FDA_AdverseEvents database for analysis.
+- Drug safety officers review adverse event reports to assess potential risks associated with specific drugs.
+- Data analysts update the FDA_AdverseEvents database with new reports, ensuring data accuracy and completeness.
+- Drug safety officers collaborate with pharmaceutical companies to address identified issues and implement corrective actions.
+
+## 2. Adverse Event Querying
+
+Performed By: Researchers, Data Analysts
+
+Activity:
+- Researchers formulate queries using the openFDA API to retrieve specific adverse event data from the FDA_AdverseEvents database.
+- Data analysts run queries on the FDA_AdverseEvents database to extract relevant information for analysis or reporting purposes.
+- Researchers analyze the retrieved data to identify trends, patterns, and potential risks associated with certain drugs or pharmacologic classes.
+- Data analysts generate reports based on the analyzed data, providing insights to drug safety officers and other stakeholders.
+
+## 3. Adverse Event Classification
+
+Performed By: Drug Safety Officers, Medical Experts
+
+Activity:
+- Drug safety officers review adverse event reports and classify them according to their severity and potential impact on public health.
+- Medical experts provide guidance on the classification of adverse events based on their medical knowledge and understanding of drug effects.
+- Drug safety officers update the FDA_AdverseEvents database with the classified adverse event information.
+
+## 4. Adverse Event Follow-up
+
+Performed By: Drug Safety Officers, Pharmaceutical Companies
+
+Activity:
+- Drug safety officers initiate follow-ups with pharmaceutical companies to gather additional information about reported adverse events.
+- Pharmaceutical companies provide the requested information and collaborate with drug safety officers to address identified issues.
+- Drug safety officers assess the effectiveness of corrective actions taken by pharmaceutical companies and monitor the ongoing safety of their products.
+
+## 5. Adverse Event Report Dissemination
+
+Performed By: Communication Specialists, Data Analysts
+
+Activity:
+- Data analysts generate reports summarizing adverse event data for various audiences, such as healthcare professionals, patients, and the general public.
+- Communication specialists review and edit the reports to ensure clarity and accessibility.
+- Communication specialists disseminate the reports through appropriate channels, such as websites, newsletters, or conferences.
+
+## 6. Adverse Event Database Maintenance
+
+Performed By: Data Administrators, IT Specialists
+
+Activity:
+- Data administrators ensure the FDA_AdverseEvents database is properly maintained and backed up to prevent data loss.
+- IT specialists troubleshoot any technical issues that may arise in the database or related systems.
+- Data administrators perform regular audits of the FDA_AdverseEvents database to identify and address any inconsistencies or errors.
+
+## 7. Adverse Event Analysis and Reporting (Advanced)
+
+Performed By: Researchers, Data Scientists
+
+Activity:
+- Researchers conduct advanced analysis on adverse event data to uncover hidden patterns, trends, and correlations.
+- Data scientists develop predictive models to forecast potential risks associated with specific drugs or pharmacologic classes.
+- Researchers publish their findings in scientific journals or present them at conferences to contribute to the broader understanding of drug safety.

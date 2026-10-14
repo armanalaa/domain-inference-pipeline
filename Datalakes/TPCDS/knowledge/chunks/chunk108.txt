@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Customer Selection for Order Status Inquiry
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives select a customer based on their last name or customer number for order status inquiry.
+- They use the non-uniform random value function to determine whether to select a customer by last name or customer number.
+
+## 2. Customer Data Retrieval
+
+Performed By: Database Query Execution
+
+Activity:
+- Upon selecting a customer, call center representatives retrieve the customer's balance, first name, middle name, and last name from the CUSTOMER table.
+
+## 3. Order Identification
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives identify the customer's last order based on the retrieved customer details.
+
+## 4. Item Status Checking
+
+Performed By: Call Center Representatives
+
+Activity:
+- For each item on the identified order, call center representatives check the delivery date.
+
+## 5. Order Status Inquiry
+
+Performed By: Call Center Representatives
+
+Activity:
+- Upon checking the status of all items on an order, call center representatives provide the customer with the order's status.
+
+## 6. Customer Service Escalation (if necessary)
+
+Performed By: Call Center Managers
+
+Activity:
+- If a customer inquiry cannot be resolved, call center managers escalate the issue to relevant departments for resolution.
+
+## 7. Order Processing and Fulfillment (not detailed in provided source materials)
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Upon receiving an order, warehouse staff pick and pack items, and shipping department prepares the shipment for delivery.
+
+## 8. Inventory Management (not detailed in provided source materials)
+
+Performed By: Inventory Managers
+
+Activity:
+- Inventory managers update inventory levels as orders are processed and shipped.
+
+## 9. Financial Transactions Processing (not detailed in provided source materials)
+
+Performed By: Finance Department
+
+Activity:
+- Upon order fulfillment, finance department processes the financial transactions related to the order.

@@ -1,0 +1,56 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 21
+Edges in G_T         : 53
+θ_T applied in Step 4: 0.75
+Domains discovered   : 3
+Modularity Q         : 0.4584
+
+──────────────────────────────────────────────────────────────────────
+D0  Content Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of various entities related to content such as movies, actors, companies, and keywords.
+  Tables     : cast_info, complete_cast, info_type, movie_companies, movie_info, movie_info_idx, movie_keyword, movie_link, person_info, role_type
+  Phi top-3  : C7=0.296  C10=0.257  C5=0.229
+
+──────────────────────────────────────────────────────────────────────
+D1  Alias and Name Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifying activities related to managing aliases, names, and associated data for actors, movies, and companies.
+  Tables     : aka_name, char_name, company_name, name
+  Phi top-3  : C7=0.360  C6=0.262  C10=0.245
+
+──────────────────────────────────────────────────────────────────────
+D2  Media Asset and Metadata Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Activities related to managing and registering various media assets such as movies, aliases, cast types, companies, keywords, and links.
+  Tables     : aka_title, comp_cast_type, company_type, keyword, kind_type, link_type, title
+  Phi top-3  : C7=0.325  C10=0.269  C8=0.249
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  cast_info                            D       0  Content Information Management
+  complete_cast                        D       0  Content Information Management
+  info_type                            D       0  Content Information Management
+  movie_companies                      D       0  Content Information Management
+  movie_info                           D       0  Content Information Management
+  movie_info_idx                       D       0  Content Information Management
+  movie_keyword                        D       0  Content Information Management
+  movie_link                           D       0  Content Information Management
+  person_info                          D       0  Content Information Management
+  role_type                            D       0  Content Information Management
+  aka_name                             D       1  Alias and Name Information Management
+  char_name                            D       1  Alias and Name Information Management
+  company_name                         D       1  Alias and Name Information Management
+  name                                 D       1  Alias and Name Information Management
+  aka_title                            D       2  Media Asset and Metadata Management
+  comp_cast_type                       D       2  Media Asset and Metadata Management
+  company_type                         D       2  Media Asset and Metadata Management
+  keyword                              D       2  Media Asset and Metadata Management
+  kind_type                            D       2  Media Asset and Metadata Management
+  link_type                            D       2  Media Asset and Metadata Management
+  title                                D       2  Media Asset and Metadata Management
+======================================================================

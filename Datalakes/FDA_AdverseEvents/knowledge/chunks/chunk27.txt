@@ -1,0 +1,51 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Representatives, Healthcare Providers
+
+Activity:
+- Pharmaceutical company representatives submit adverse event reports to the FDA using the ICH ICSR format in their native language.
+- Healthcare providers document and verify adverse events in the patient's native language.
+
+## 2. Adverse Event Translation
+
+Performed By: Translation Specialists
+
+Activity:
+- Translation specialists translate adverse event reports from various languages into English for processing by the FDA.
+
+## 3. Adverse Event Validation
+
+Performed By: FDA Reviewers
+
+Activity:
+- FDA reviewers validate the accuracy and completeness of translated adverse event reports.
+
+## 4. Adverse Event Categorization
+
+Performed By: FDA Analysts
+
+Activity:
+- FDA analysts categorize adverse events based on their nature, severity, and potential impact on public health.
+
+## 5. Adverse Event Investigation
+
+Performed By: FDA Investigators
+
+Activity:
+- FDA investigators investigate the root cause of adverse events to determine if they are related to the drug or medical device in question.
+
+## 6. Adverse Event Response Planning
+
+Performed By: FDA Management
+
+Activity:
+- FDA management plans responses to adverse events, including communication with stakeholders and potential recall or labeling changes for affected products.
+
+## 7. Adverse Event Report Archiving
+
+Performed By: FDA Data Managers
+
+Activity:
+- FDA data managers archive adverse event reports for future reference and analysis.

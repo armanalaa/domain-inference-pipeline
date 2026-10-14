@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Inventory and Product Management",
+    "definition": "The unifying capability across all tables is the management of inventory items, including their descriptions, prices, brands, classes, categories, manufacturers, sizes, formulations, colors, units, containers, and associated operations such as ordering and returns.",
+    "tables": [
+      "item"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "item": {
+      "_description": "Tracks detailed information about various items and their attributes in a retail business.",
+      "columns": [
+        {
+          "name": "i_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individual items.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "i_item_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the i_item_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAHAAAAAAA",
+            "AAAAAAAAIAAAAAAA"
+          ]
+        },
+        {
+          "name": "i_rec_start_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the initial sales record date for each item.",
+          "samples": [
+            "1997-10-27",
+            "2000-10-27",
+            "1999-10-28",
+            "2001-10-27",
+            null
+          ]
+        },
+        {
+          "name": "i_rec_end_date",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores end date (format: YYYY-MM-DD) for item records.",
+          "samples": [
+            "2000-10-26",
+            "1999-10-27",
+            "2001-10-26",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "i_item_desc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for various items, often including product names or characteristics.",
+          "samples": [
+            "Powers will not get influences. Electoral ports should show low, annual chains. Now young visitors may pose now however final pages. Bitterly right children suit increasing, leading el",
+            "Costs could prove. Industrial, new ",
+            "Passengers want etc in a walls. Important years must benefit clear by a ideas; hot children must avoid. Major, bad pounds rise on the needs. Farms may not see bright lines. Differ",
+            "New",
+            "Other, soviet subjects seem properly times. Only sources will not escape; keys will not know only children. Recent, f"
+          ]
+        },
+        {
+          "name": "i_current_price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores current prices for individual items as floating point numbers.",
+          "samples": [
+            27.02,
+            1.12,
+            7.11,
+            1.35,
+            4.0
+          ]
+        },
+        {
+          "name": "i_wholesale_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores wholesale costs for individual items, represented as floating point numbers.",
+          "samples": [
+            23.23,
+            0.38,
+            0.85,
+            1.76,
+            6.75
+          ]
+        },
+        {
+          "name": "i_brand_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_brand_ entity",
+          "samples": [
+            5003002,
+            1001001,
+            3002001,
+            2002002,
+            3001002
+          ]
+        },
+        {
+          "name": "i_brand",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of brand names for items, as exemplified by exportischolar #2, amalgamalg #1, etc.",
+          "samples": [
+            "exportischolar #2",
+            "amalgamalg #1",
+            "brandbrand #4",
+            "importoexporti #1",
+            "importoimporto #2"
+          ]
+        },
+        {
+          "name": "i_class_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_class_ entity",
+          "samples": [
+            3,
+            1,
+            7,
+            2,
+            8
+          ]
+        },
+        {
+          "name": "i_class",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive categories for items, such as pop, dresses, decor, infants, shirts.",
+          "samples": [
+            "pop",
+            "dresses",
+            "decor",
+            "infants",
+            "shirts"
+          ]
+        },
+        {
+          "name": "i_category_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_category_ entity",
+          "samples": [
+            5,
+            1,
+            7,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "i_category",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive labels for product categories such as Music, Women, Home, Children, Men.",
+          "samples": [
+            "Music",
+            "Women",
+            "Home",
+            "Children",
+            "Men"
+          ]
+        },
+        {
+          "name": "i_manufact_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_manufact_ entity",
+          "samples": [
+            52,
+            294,
+            479,
+            220,
+            212
+          ]
+        },
+        {
+          "name": "i_manufact",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores brand names for items, such as 'ableanti', 'esen stable', etc. (up to 50 characters)",
+          "samples": [
+            "ableanti",
+            "esen stable",
+            "n stationese",
+            "barableable",
+            "eseoughtable"
+          ]
+        },
+        {
+          "name": "i_size",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores item size descriptions, such as petite or extra large.",
+          "samples": [
+            "N/A",
+            "petite",
+            "extra large",
+            "large",
+            "medium"
+          ]
+        },
+        {
+          "name": "i_formulation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique formulation identifiers for items, often including a manufacturer code and product details.",
+          "samples": [
+            "3663peru009490160959",
+            "peru3235638235244700",
+            "648935peach259354618",
+            "979763908640salmon70",
+            "674897slate961015715"
+          ]
+        },
+        {
+          "name": "i_color",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores item color names up to 10 characters long, such as spring, rosy, sienna, red, pink.",
+          "samples": [
+            "spring",
+            "rosy",
+            "sienna",
+            "red",
+            "pink"
+          ]
+        },
+        {
+          "name": "i_units",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores descriptive units for items (e.g., Tsp, Bunch, Cup, Tbl, Cup).",
+          "samples": [
+            "Tsp",
+            "Bunch",
+            "Cup",
+            "Tbl",
+            "Bundle"
+          ]
+        },
+        {
+          "name": "i_container",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores container type information for items (e.g., box, bottle, can).",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "i_manager_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the i_manager_ entity",
+          "samples": [
+            6,
+            98,
+            18,
+            26,
+            27
+          ]
+        },
+        {
+          "name": "i_product_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of product names, such as 'ought', 'able', 'pri', 'ese', and 'anti'.",
+          "samples": [
+            "ought",
+            "able",
+            "pri",
+            "ese",
+            "anti"
+          ]
+        }
+      ]
+    }
+  }
+}

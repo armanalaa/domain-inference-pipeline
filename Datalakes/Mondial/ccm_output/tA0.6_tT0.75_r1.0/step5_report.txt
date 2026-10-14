@@ -1,0 +1,99 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 29
+Edges in G_T         : 71
+θ_T applied in Step 4: 0.75
+Domains discovered   : 8
+Modularity Q         : 0.3414
+
+──────────────────────────────────────────────────────────────────────
+D0  Geographical Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and maintaining information related to geographical features such as cities, countries, continents, deserts, islands, lakes, rivers, seas, and mountains.
+  Tables     : geo_desert, geo_estuary, geo_island, geo_lake, geo_river, geo_sea, geo_source, located, locatedOn, mountainOnIsland, organization
+  Phi top-3  : C2=0.257  C1=0.240  C3=0.216
+
+──────────────────────────────────────────────────────────────────────
+D1  Geospatial Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing geographical data related to cities, provinces, countries, mountains, languages, and religions.
+  Tables     : city, ethnicGroup, geo_mountain, language, province, religion
+  Phi top-3  : C1=0.225  C2=0.221  C3=0.187
+
+──────────────────────────────────────────────────────────────────────
+D2  Geographical Feature Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing various geographical features such as continents, countries, deserts, islands, lakes, rivers, and seas.
+  Tables     : continent, country, desert, islandIn, lake, river, sea
+  Phi top-3  : C3=0.187  C4=0.185  C2=0.171
+
+──────────────────────────────────────────────────────────────────────
+D3  Territory Administration
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing geographical territories such as cities, countries, and continents.
+  Tables     : mergesWith
+  Phi top-3  : C2=0.214  C3=0.198  C1=0.181
+
+──────────────────────────────────────────────────────────────────────
+D4  Economic Indicator Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and analyzing economic indicators for countries
+  Tables     : economy
+  Phi top-3  : C5=0.264  C2=0.235  C3=0.182
+
+──────────────────────────────────────────────────────────────────────
+D5  Demographic Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and analyzing demographic data related to population growth, infant mortality, and other relevant statistics for countries.
+  Tables     : population
+  Phi top-3  : C2=0.218  C3=0.167  C1=0.156
+
+──────────────────────────────────────────────────────────────────────
+D6  Nation Administration
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing nations, including registration, updates, and diplomatic relations.
+  Tables     : politics
+  Phi top-3  : C2=0.312  C3=0.197  C1=0.194
+
+──────────────────────────────────────────────────────────────────────
+D7  Nation Membership Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing the membership and affiliations of countries and organizations within a unified system.
+  Tables     : isMember
+  Phi top-3  : C2=0.252  C1=0.175  C3=0.156
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  geo_desert                           D       0  Geographical Information Management
+  geo_estuary                          D       0  Geographical Information Management
+  geo_island                           D       0  Geographical Information Management
+  geo_lake                             D       0  Geographical Information Management
+  geo_river                            D       0  Geographical Information Management
+  geo_sea                              D       0  Geographical Information Management
+  geo_source                           D       0  Geographical Information Management
+  located                              D       0  Geographical Information Management
+  locatedOn                            D       0  Geographical Information Management
+  mountainOnIsland                     D       0  Geographical Information Management
+  organization                         D       0  Geographical Information Management
+  city                                 D       1  Geospatial Data Management
+  ethnicGroup                          D       1  Geospatial Data Management
+  geo_mountain                         D       1  Geospatial Data Management
+  language                             D       1  Geospatial Data Management
+  province                             D       1  Geospatial Data Management
+  religion                             D       1  Geospatial Data Management
+  continent                            D       2  Geographical Feature Management
+  country                              D       2  Geographical Feature Management
+  desert                               D       2  Geographical Feature Management
+  islandIn                             D       2  Geographical Feature Management
+  lake                                 D       2  Geographical Feature Management
+  river                                D       2  Geographical Feature Management
+  sea                                  D       2  Geographical Feature Management
+  mergesWith                           D       3  Territory Administration
+  economy                              D       4  Economic Indicator Management
+  population                           D       5  Demographic Data Management
+  politics                             D       6  Nation Administration
+  isMember                             D       7  Nation Membership Management
+======================================================================

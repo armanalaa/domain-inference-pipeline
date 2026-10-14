@@ -1,0 +1,537 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Geographical Feature Management",
+    "definition": "The process of managing various geographical features such as continents, countries, deserts, islands, lakes, rivers, and seas.",
+    "tables": [
+      "continent",
+      "country",
+      "desert",
+      "islandIn",
+      "lake",
+      "river",
+      "sea"
+    ],
+    "n_tables": 7,
+    "n_columns_total": 37,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "continent": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of continents: Europe, Asia, Australia/Oceania, Africa, America.",
+          "samples": [
+            "Europe",
+            "Asia",
+            "Australia/Oceania",
+            "Africa",
+            "America"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the approximate square kilometers of each continent.",
+          "samples": [
+            9562488.0,
+            45095292.0,
+            8503474.0,
+            30254708.0,
+            39872000.0
+          ]
+        }
+      ]
+    },
+    "country": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of country names for Balkan nations.",
+          "samples": [
+            "Albania",
+            "Greece",
+            "Macedonia",
+            "Serbia",
+            "Montenegro"
+          ]
+        },
+        {
+          "name": "Code",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 country codes.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Capital",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names of respective countries' capitals.",
+          "samples": [
+            "Tirane",
+            "Athens",
+            "Skopje",
+            "Belgrade",
+            "Podgorica"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores administrative divisions within countries, as indicated by sample values.",
+          "samples": [
+            "Albania",
+            "Attiki",
+            "Macedonia",
+            "Serbia",
+            "Montenegro"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total area (in square kilometers) of each country.",
+          "samples": [
+            28750.0,
+            131940.0,
+            25333.0,
+            77474.0,
+            14026.0
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the total number of inhabitants for each country.",
+          "samples": [
+            3249136,
+            10538594,
+            2104035,
+            7379339,
+            672180
+          ]
+        }
+      ]
+    },
+    "desert": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of major deserts worldwide.",
+          "samples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the square kilometers of desert areas.",
+          "samples": [
+            1200000.0,
+            95000.0,
+            70000.0,
+            50000.0,
+            80000.0
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes for various desert locations.",
+          "samples": [
+            21.0,
+            15.0,
+            -14.0,
+            -15.0,
+            -11.0
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for various desert locations.",
+          "samples": [
+            -22.0,
+            -25.0,
+            15.0,
+            18.0,
+            21.0
+          ]
+        }
+      ]
+    },
+    "islandIn": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands in the Mondial database, primarily Svalbard and Greenland.",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Aust-Vagoey",
+            "Streymoy"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas surrounding the islands.",
+          "samples": [
+            "Norwegian Sea",
+            "Barents Sea",
+            "Arctic Ocean",
+            "Atlantic Ocean",
+            "Irish Sea"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of lakes associated with islands worldwide.",
+          "samples": [
+            "Ozero Baikal",
+            "Lake Toba",
+            "Lake Manicouagan",
+            "Lake Huron",
+            "Lake Nicaragua"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "The \"River\" column in the \"islandIn\" table stores names of rivers connecting islands.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "lake": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of names for Finnish lakes.",
+          "samples": [
+            "Inari",
+            "Oulujaervi",
+            "Kallavesi",
+            "Saimaa",
+            "Paeijaenne"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores surface area (in square kilometers) of various lakes.",
+          "samples": [
+            1040.0,
+            928.0,
+            472.0,
+            4370.0,
+            1118.0
+          ]
+        },
+        {
+          "name": "Depth",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the water depth (in float) for various lakes.",
+          "samples": [
+            92.0,
+            35.0,
+            85.0,
+            95.0,
+            449.0
+          ]
+        },
+        {
+          "name": "Altitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the elevation (in float) of various lakes.",
+          "samples": [
+            119.0,
+            123.0,
+            76.0,
+            78.0,
+            419.0
+          ]
+        },
+        {
+          "name": "Type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores geological type of lake (impact, caldera).",
+          "samples": [
+            "impact",
+            "caldera",
+            "salt",
+            "artificial",
+            "acid"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of rivers that flow into the lake.",
+          "samples": [
+            "Paatsjoki",
+            "Oulujoki",
+            "Vuoksi",
+            "Kymijoki",
+            "Lagen"
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes of lakes in decimal degrees.",
+          "samples": [
+            27.7,
+            27.25,
+            28.0,
+            25.4,
+            11.0
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for various lakes.",
+          "samples": [
+            68.95,
+            64.3,
+            62.9,
+            61.3,
+            61.5
+          ]
+        }
+      ]
+    },
+    "river": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of river names, primarily from Iceland and Scandinavia.",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for major rivers worldwide.",
+          "samples": [
+            "Glomma",
+            "Dalaelv",
+            "Kemijoki",
+            "Rhone",
+            "Saone"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of lakes connected to rivers.",
+          "samples": [
+            "Mjoesa-See",
+            "Vaenern",
+            "Storuman",
+            "Siljan",
+            "Ozero Ladoga"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas connected to rivers.",
+          "samples": [
+            "Atlantic Ocean",
+            "Norwegian Sea",
+            "Skagerrak",
+            "Kattegat",
+            "Baltic Sea"
+          ]
+        },
+        {
+          "name": "Length",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the length (in float) of various rivers.",
+          "samples": [
+            230.0,
+            206.0,
+            604.0,
+            322.0,
+            93.0
+          ]
+        },
+        {
+          "name": "SourceLongitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores longitude coordinates of river sources.",
+          "samples": [
+            -18.0,
+            -16.5,
+            12.0,
+            8.45,
+            12.34
+          ]
+        },
+        {
+          "name": "SourceLatitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores latitude coordinates of river sources.",
+          "samples": [
+            65.0,
+            64.8,
+            62.6,
+            62.19,
+            58.4
+          ]
+        },
+        {
+          "name": "Mountains",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of mountain ranges bordering rivers.",
+          "samples": [
+            "Cevennes",
+            "Pyrenees",
+            "Alps",
+            "Vogesen",
+            "Jura"
+          ]
+        },
+        {
+          "name": "SourceAltitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores elevation (in meters) at the source of each river.",
+          "samples": [
+            860.0,
+            611.0,
+            44.0,
+            662.0,
+            119.0
+          ]
+        },
+        {
+          "name": "EstuaryLongitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores longitude coordinates of estuaries where rivers flow into oceans.",
+          "samples": [
+            -20.8,
+            -16.6,
+            10.95,
+            11.45,
+            11.9
+          ]
+        },
+        {
+          "name": "EstuaryLatitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores latitude coordinates of estuaries where rivers flow into oceans.",
+          "samples": [
+            63.9,
+            66.2,
+            59.2,
+            61.1,
+            57.7
+          ]
+        }
+      ]
+    },
+    "sea": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical names of seas.",
+          "samples": [
+            "Skagerrak",
+            "Kattegat",
+            "North Sea",
+            "The Channel",
+            "Black Sea"
+          ]
+        },
+        {
+          "name": "Depth",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the water depths of various seas.",
+          "samples": [
+            725.0,
+            94.0,
+            200.0,
+            175.0,
+            2211.0
+          ]
+        }
+      ]
+    }
+  }
+}

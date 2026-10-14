@@ -1,0 +1,68 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by entering their details (firstname, lastname, address1, address2, city, state, zip, country, region, email, phone) into the customers table.
+- IT support assigns a unique customerid and username to each new customer.
+- Sales representatives provide customers with their login credentials (username, "password").
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price in the products table.
+- IT support updates the common_prod_id column when a new item is added or an existing one is modified.
+
+## 3. Trial and POC Management
+
+Performed By: Sales Representatives, Customer Service
+
+Activity:
+- Sales representatives offer customers free trials or paid POCs for product evaluation.
+- Customers consent to the terms and conditions outlined in the 092_license.pdf document.
+- Customer service manages trial and POC expiration and early termination as needed.
+
+## 4. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog, select products, and place orders by specifying orderlineid, orderdate, customerid, prod_id, quantity for each item in the orderlines table.
+- Sales representatives review and confirm orders before they are processed.
+
+## 5. Order Processing
+
+Performed By: Warehouse Staff, Customer Service
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory (quan_in_stock) based on the orderlines table.
+- Warehouse staff update the quan_in_stock column as items are shipped to customers.
+- Customer service communicates order status and estimated delivery dates to customers.
+
+## 6. Invoice Generation
+
+Performed By: Finance, Customer Service
+
+Activity:
+- Finance calculates netamount, tax, and totalamount for each order based on the products' prices and quantities.
+- Customer service generates invoices using the calculated amounts and customer details (customerid, firstname, lastname, email) from the customers table.
+
+## 7. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams monitor reorder (prod_id, date_low, quan_low) and issue purchase orders for necessary items.
+- Warehouse staff receive and update inventory (quan_in_stock) when new shipments arrive.
+
+## 8. Customer Support
+
+Performed By: Customer Service, IT Support
+
+Activity:
+- Customer service handles customer inquiries and complaints related to products, orders, or accounts.
+- IT support troubleshoots technical issues reported by customers.

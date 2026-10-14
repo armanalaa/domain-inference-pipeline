@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their details (firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, creditcard, creditcardexpiration, username, "password", age, income, gender) and credit card information.
+- Customer service agents update customer records with any changes in contact or billing details.
+- Sales representatives assign customers to specific categories (category) based on their preferences or purchasing history.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory specialists update product information (title, actor, price, special) when there are changes or promotions.
+- Inventory specialists track product inventory levels (quan_in_stock, sales) to ensure accurate stock availability.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products, quantities, and providing order details (orderdate).
+- Sales representatives confirm orders and generate invoices (netamount, tax, totalamount) for customers.
+- Warehouse staff pick and pack ordered items from inventory (prod_id, quan_in_stock) and prepare them for shipment.
+
+## 4. Order Line Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff record the details of each order line item (orderlineid, orderid, prod_id, quantity, orderdate) as they are prepared for shipment.
+- Sales representatives update the status of orders and order lines when they are shipped or delivered to customers.
+
+## 5. Inventory Replenishment
+
+Performed By: Purchasing Teams, Inventory Specialists
+
+Activity:
+- Purchasing teams issue purchase orders for products with low stock (quan_low) and monitor vendor deliveries.
+- Inventory specialists update inventory levels (quan_in_stock, sales) as new shipments arrive.
+
+## 6. Reorder Management
+
+Performed By: Inventory Specialists
+
+Activity:
+- Inventory specialists track product reorders (prod_id, date_low, quan_low, date_reordered, quan_reordered, date_expected) to ensure timely restocking of popular items.
+
+## 7. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record financial transactions (orders, sales) and generate reports on revenue, expenses, and profitability.

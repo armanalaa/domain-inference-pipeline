@@ -1,0 +1,42 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Patient Data Registration
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Records patient initials (B.1.1.1a) and email address (B.1.1.1b) for future communication.
+- Registers patient's medical record numbers from GP, specialist, hospital, and investigation sources (B.1.1.1c, B.1.1.1d).
+- Documents the patient's date of birth (B.1.2.1b) and age at time of onset (B.1.2.2a) in a standard format.
+
+## 2. Patient Demographic Information Collection
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Records patient's weight (B.1.3), height (B.1.5), and sex (B.1.6) for demographic analysis.
+- Documents the last menstrual period date (B.1.6b) if applicable.
+
+## 3. Medical History Documentation
+
+Performed By: Medical Historian
+
+Activity:
+- Compiles relevant medical history and concurrent conditions (B.1.7.2) for each patient episode.
+- Records the start and end dates of each medical episode (B.1.7.1b, B.1.7.1c, B.1.7.1e).
+- Documents any continuation or comments related to the medical history (B.1.7.1d, B.1.7.1g).
+
+## 4. Past Drug Therapy History Recording
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Records the name of reported drugs (B.1.8a) and their start and end dates (B.1.8c, B.1.8e).
+- Documents the indication for each drug (B.1.8f.2) and any associated reactions (B.1.8g.2).
+
+## 5. Death Reporting
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Records the date of death (B.1.9.1b) for deceased patients.

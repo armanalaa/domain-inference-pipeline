@@ -1,0 +1,65 @@
+ TPC-DS — Business Workflows
+
+## 1. Item Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track item availability by updating the quantity on hand for each item in the warehouse.
+
+## 2. Warehouse Management
+
+Performed By: Warehouse Managers, Warehouse Staff
+
+Activity:
+- Warehouse managers assign warehouses to districts based on geographical location and capacity needs.
+- Warehouse staff receive incoming shipments and update the quantity on hand for each item in the warehouse.
+
+## 3. Customer Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives identify potential customers and add their contact information to the customer database.
+- Customer service representatives handle customer inquiries and update customer records with any relevant information.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Representatives
+
+Activity:
+- Sales representatives process orders by selecting items from the catalog, determining shipping methods, and calculating total costs.
+- Warehouse staff pick and pack ordered items for shipment.
+- Customer service representatives confirm order details with customers and update order statuses in the system.
+
+## 5. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team generates invoices based on completed orders, including item details, quantities, prices, taxes, and total amounts due.
+
+## 6. Payment Processing
+
+Performed By: Customer Service Representatives, Finance Team
+
+Activity:
+- Customer service representatives process customer payments by recording payment methods, amounts, and dates.
+- Finance team updates customer accounts with paid invoices and reconciles payments against outstanding balances.
+
+## 7. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return reasons, item details, and customer information.
+- Warehouse staff receive returned items, update the quantity on hand, and prepare them for restocking or disposal.
+
+## 8. Analytics and Reporting
+
+Performed By: Data Analysts, Management Team
+
+Activity:
+- Data analysts generate reports on sales trends, customer behavior, inventory levels, and warehouse performance using data from various tables in the TPC-DS database.
+- Management team reviews reports to make informed decisions about marketing strategies, inventory management, and operational efficiency.

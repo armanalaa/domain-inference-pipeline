@@ -1,0 +1,68 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new call centers with unique identifiers (cc_call_center_sk).
+- HR managers recruit and hire employees for the assigned call centers (cc_employees).
+- Call center managers determine the size of each call center in square feet (cc_sq_ft).
+- HR managers set the working hours for each call center (cc_hours).
+- Call center managers assign a manager to oversee each call center (cc_manager).
+
+## 2. Market Assignment and Classification
+
+Performed By: Call Center Managers, Marketing Teams
+
+Activity:
+- Call center managers categorize each call center based on market class (cc_mkt_class).
+- Marketing teams describe the nature of each market for a given call center (cc_mkt_desc).
+- Call center managers assign market managers to oversee specific markets (cc_market_manager).
+
+## 3. Call Center Location Setup
+
+Performed By: Call Center Managers, Facilities Teams
+
+Activity:
+- Call center managers provide the street address details for each call center (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Facilities teams determine the time zone and tax percentage for each call center (cc_gmt_offset, cc_tax_percentage).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog with unique identifiers (cp_catalog_page_sk).
+- Marketing teams categorize each item based on department (cp_department).
+- Product managers assign a unique number to each catalog page (cp_catalog_number).
+- Marketing teams provide descriptions for each catalog page (cp_description).
+- Product managers determine the type of each catalog page (cp_type).
+
+## 5. Order Placement and Processing
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog (OL_I_ID).
+- Sales representatives verify the availability of selected items in stock (S_I_ID, S_W_ID).
+- Sales representatives determine the quantity of each item to be ordered (OL_QUANTITY).
+- Sales representatives compute the total amount for each order (OL_AMOUNT).
+- Sales representatives check if the brand-generic field for each item is "B" or "G".
+
+## 6. Inventory Management and Updates
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the quantity in stock for each item (S_QUANTITY).
+- Warehouse staff track remote orders by incrementing S_REMOTE_CNT.
+- Purchasing teams order new items to replenish inventory when necessary.
+
+## 7. Order Line Creation and Tracking
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives create a new row in the ORDER-LINE table for each item on an order (OL_DELIVERY_D, OL_NUMBER).
+- Warehouse staff update the order count and year-to-date quantity for each item (S_ORDER_CNT, S_YTD).

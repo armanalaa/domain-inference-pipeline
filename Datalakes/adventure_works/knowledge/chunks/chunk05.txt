@@ -1,0 +1,73 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- HR managers update employee information by modifying the relevant fields in the HumanResources Employee table.
+- HR managers assign employees to departments by recording DepartmentID, ShiftID, StartDate, EndDate in the HumanResources EmployeeDepartmentHistory table.
+- HR managers manage employee pay history by updating RateChangeDate, Rate, PayFrequency in the HumanResources EmployeePayHistory table.
+
+## 2. Address Management
+
+Performed By: Customer Service Representatives, Vendors, and Employees
+
+Activity:
+- Individuals provide their street address information by filling out the columns AddressLine1, AddressLine2, City, StateProvinceID, PostalCode in the Person.Address table.
+- Individuals update their street address information by modifying the relevant fields in the Person.Address table.
+
+## 3. Contact Management
+
+Performed By: Customer Service Representatives, Vendors, and Employees
+
+Activity:
+- Individuals provide their contact details by filling out the columns rowguid, ModifiedDate in the Person BusinessEntityContact table.
+
+## 4. Department Assignment
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers assign employees to departments based on job roles and department availability.
+- Warehouse staff manage department assignments for warehouse employees.
+
+## 5. Shift Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers define shifts by recording ShiftID, Name, StartTime, EndTime in the HumanResources Shift table.
+- Warehouse staff assign employees to shifts based on work schedules and shift availability.
+
+## 6. Invoice Processing
+
+Performed By: Sales Representatives, Accounting Staff
+
+Activity:
+- Sales representatives generate invoices for customers by recording relevant details in the database.
+- Accounting staff review and process customer invoices by updating their status and payment details.
+
+## 7. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by providing order details such as product code, quantity, and shipping address.
+- Sales representatives confirm orders and update the relevant information in the database.
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff manage inventory levels by updating stock quantities for each product.
+- Purchasing teams order new products based on inventory levels and demand forecasts.
+
+## 9. Error Logging
+
+Performed By: System Administrators
+
+Activity:
+- System administrators log errors that occur in the system by recording relevant details in the dbo.ErrorLog table.

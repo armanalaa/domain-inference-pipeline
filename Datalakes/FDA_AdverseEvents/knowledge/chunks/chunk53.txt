@@ -1,0 +1,63 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Manufacturers
+
+Activity:
+- Healthcare professionals document adverse events observed in patients using the event date, patient demographics, and event details.
+- Patients or their representatives report adverse events experienced with a specific product, providing personal information and event description.
+- Manufacturers receive reports from healthcare professionals and patients, reviewing them for accuracy and completeness before submission to regulatory bodies.
+
+## 2. Case Processing
+
+Performed By: FDA Reviewers
+
+Activity:
+- FDA reviewers assess the received adverse event reports for relevance to the product under investigation, verifying the report's authenticity and completeness.
+- Reviewers categorize adverse events based on their severity, nature, and potential impact on public health.
+- FDA reviewers identify any trends or patterns in the reported adverse events to determine if further investigation is necessary.
+
+## 3. Data Entry and Management
+
+Performed By: FDA Data Entry Staff
+
+Activity:
+- FDA data entry staff input the verified adverse event reports into the database, ensuring accurate recording of all relevant details such as report ID, product information, and event description.
+- Data entry staff maintain the integrity and consistency of the database by resolving any discrepancies or inconsistencies in the reported data.
+
+## 4. Case Follow-up
+
+Performed By: FDA Investigators
+
+Activity:
+- FDA investigators follow up on adverse event reports requiring further investigation, contacting healthcare professionals and patients for additional information.
+- Investigators analyze the collected data to determine the causality between the product and the reported adverse event.
+- If necessary, investigators recommend actions such as product recall or label changes based on their findings.
+
+## 5. Analysis and Reporting
+
+Performed By: FDA Analysts
+
+Activity:
+- FDA analysts analyze the data in the database to identify trends, patterns, and potential risks associated with specific products.
+- Analysts generate reports summarizing their findings for internal use by regulatory bodies or external dissemination to the public.
+- Reports may include recommendations for product safety improvements or updates on ongoing investigations.
+
+## 6. Compliance Monitoring
+
+Performed By: FDA Compliance Officers
+
+Activity:
+- Compliance officers monitor manufacturers' adherence to reporting requirements, reviewing their submissions for completeness and accuracy.
+- Officers take enforcement actions against non-compliant manufacturers, such as fines or product recalls.
+- Compliance officers collaborate with other departments to ensure consistent application of regulations across the industry.
+
+## 7. Stakeholder Communication
+
+Performed By: FDA Public Affairs Staff
+
+Activity:
+- Public affairs staff communicate adverse event information and regulatory updates to various stakeholders, including manufacturers, healthcare professionals, and the general public.
+- They maintain transparency by providing regular updates on ongoing investigations and product safety issues.
+- Public affairs staff also manage media inquiries related to adverse events and FDA actions.

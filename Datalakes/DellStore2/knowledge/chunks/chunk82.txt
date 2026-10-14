@@ -1,0 +1,55 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording the product code, name, category, and list price.
+- Update product details when necessary, including title, actor, common_prod_id, and special status.
+- Monitor product sales to track inventory levels and adjust quan_in_stock accordingly.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Onboard new customers by entering their personal details (firstname, lastname, address1, address2, city, state, zip, country, region, email, phone) and credit card information.
+- Update customer records with age, income, gender, and contact preferences.
+- Maintain a history of customer orders (cust_hist).
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Track inventory levels for each product based on quan_in_stock.
+- Replenish stock when quan_in_stock falls below a predetermined threshold.
+- Record sales to update the sales column in the inventory table.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customers, Purchasing Teams
+
+Activity:
+- Place orders by selecting products, specifying quantities, and providing order details (orderdate, customerid).
+- Record order information in the orders table, including netamount, tax, and totalamount.
+- Generate orderlines to detail each product included in an order.
+
+## 5. Reordering Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Monitor inventory levels to determine when products need to be reordered.
+- Set low quantity thresholds (quan_low) and expected delivery dates (date_expected).
+- Update the reorder table with relevant information when a reorder is initiated.
+
+## 6. Reporting and Analytics
+
+Performed By: Finance, Data Governance Teams
+
+Activity:
+- Generate reports based on data from various tables (customers, orders, orderlines, inventory, products).
+- Analyze sales trends to identify opportunities for growth and improvement.
+- Ensure compliance with regulations by maintaining accurate and traceable data lineage.

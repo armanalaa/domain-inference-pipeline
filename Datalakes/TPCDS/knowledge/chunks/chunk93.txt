@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers recruit new staff members and update their details in the system (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Customers
+
+Activity:
+- Call center employees answer incoming calls from customers (cc_rec_start_date).
+- Customers place orders over the phone, providing necessary details like product code and quantity (cr_item_sk, cr_order_number).
+
+## 3. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize call centers based on their class and market description (cc_mkt_class, cc_mkt_desc).
+- Call center managers update the operational details of their centers, such as hours and square footage (cc_hours, cc_sq_ft).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (not specified in the database schema).
+
+## 5. Returns Processing
+
+Performed By: Customers, Call Center Employees
+
+Activity:
+- Customers return items and request refunds, providing relevant details like returned date and reason (cr_returned_date_sk, cr_reason_sk).
+- Call center employees process returns by updating the database with the necessary information (cr_call_center_sk, cr_catalog_page_sk, etc.).
+
+## 6. Reporting and Analytics
+
+Performed By: Finance Teams, Data Analysts
+
+Activity:
+- Finance teams record tax percentages for each call center location (cc_tax_percentage).
+- Data analysts generate reports based on the collected data for analysis and decision making (not specified in the database schema).

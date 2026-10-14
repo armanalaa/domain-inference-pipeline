@@ -1,0 +1,54 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Individual Case Safety Report Registration
+
+Performed By: Safety Report Managers, Data Entry Clerks
+
+Activity:
+- Safety report managers review and verify the authenticity of incoming reports.
+- Data entry clerks input the safety report details into the database, including safety report ID, transmission date, report type, seriousness, received date, receipt date, additional documents, document list, fulfill expedite criteria, authority number, company number, duplicate status, nullification reason, medical confirmation, and linked reports.
+- Data entry clerks record primary source information such as reporter title, given name, family name, organization, department, street, city, state, postcode, country, qualification, literature reference, study name, sponsor study number, and observe study type.
+
+## 2. Sender Information Recording
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input sender information into the database, including sender type, organization, department, title, given name, family name, street address, city, state, postcode, country code, telephone, telextension, tel country code, fax, faxextension, fax country code, faxemailaddress.
+
+## 3. Receiver Information Recording
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input receiver information into the database, including receiver type, organization, department, title, given name, family name, street address, city, state, postcode, country code, telephone, telextension, tel country code, fax, faxextension, fax country code, faxemailaddress.
+
+## 4. Patient Characteristics Data Entry
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input patient characteristics into the database, including patient initial, GP medical record number, specialist record number, hospital record number, investigation number, birth date, onset age, onset age unit, gestation period, gestation period unit, patient age group, patient weight, patient height, patient sex, last menstrual date, medical history text, results and tests procedures, medical history episodes, past drug therapy, patient death, parent, reaction, test, drug, and summary.
+
+## 5. Adverse Event Reporting
+
+Performed By: Safety Officers, Data Entry Clerks
+
+Activity:
+- Safety officers review adverse event reports for potential safety concerns.
+- Data entry clerks input the adverse event details into the database, including reaction, test, drug, and summary.
+
+## 6. Duplicate Report Handling
+
+Performed By: Data Entry Clerks, Safety Officers
+
+Activity:
+- Data entry clerks identify duplicate reports based on duplicatesource and duplicatenumb.
+- Safety officers review and confirm the duplicate status of the reports.
+
+## 7. Linked Report Management
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input linked report details into the database, including linkreportnumb.

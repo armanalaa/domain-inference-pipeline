@@ -1,0 +1,55 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 26
+θ_T applied in Step 4: 0.7
+Domains discovered   : 4
+Modularity Q         : 0.2517
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer accounts, store information, and staff assignments.
+  Tables     : actor, customer, staff, store
+  Phi top-3  : C1=0.244  C4=0.122  C2=0.111
+
+──────────────────────────────────────────────────────────────────────
+D1  Film Rental Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film rentals, including inventory tracking, payment processing, and rental recording.
+  Tables     : inventory, payment, rental
+  Phi top-3  : C5=0.219  C4=0.210  C1=0.200
+
+──────────────────────────────────────────────────────────────────────
+D2  Location and Category Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing geographical locations, their associated cities, film categories, and the relationship between them.
+  Tables     : address, city, film_category
+  Phi top-3  : C1=0.169  C3=0.145  C2=0.144
+
+──────────────────────────────────────────────────────────────────────
+D3  Media Categorization and Inventory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to categorizing media items, managing their inventory levels, and maintaining associated metadata.
+  Tables     : category, film, language
+  Phi top-3  : C2=0.279  C3=0.216  C4=0.213
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  actor                                D       0  Customer and Store Management
+  customer                             D       0  Customer and Store Management
+  staff                                D       0  Customer and Store Management
+  store                                D       0  Customer and Store Management
+  inventory                            D       1  Film Rental Management
+  payment                              D       1  Film Rental Management
+  rental                               D       1  Film Rental Management
+  address                              D       2  Location and Category Management
+  city                                 D       2  Location and Category Management
+  film_category                        D       2  Location and Category Management
+  category                             D       3  Media Categorization and Inventory Management
+  film                                 D       3  Media Categorization and Inventory Management
+  language                             D       3  Media Categorization and Inventory Management
+======================================================================

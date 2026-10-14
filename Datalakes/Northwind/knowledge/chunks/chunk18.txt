@@ -1,0 +1,60 @@
+ # Northwind — Business Workflows
+
+## 1. Employee Management
+
+Performed By: HR Managers, IT Administrators
+
+Activity:
+- HR managers register new employees by recording their personal details and employment information. (employees table)
+- IT administrators assign territories to employees for sales tracking purposes. (employee_territories table)
+- HR managers update employee records with changes in contact information or job titles. (employees table)
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by entering their company details and contact information. (customers table)
+- Customer service agents update customer records with changes in address or contact details. (customers table)
+- Sales representatives track customer orders and shipments for follow-ups and sales analysis. (orders table)
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (products table)
+- Warehouse staff update stock levels as products are received or sold. (products table)
+- Product managers monitor discontinued products and adjust inventory accordingly. (products table)
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives place orders on behalf of customers by selecting products, quantities, and shipping details. (orders table)
+- Warehouse staff retrieve ordered items from stock and prepare them for shipment. (order_details table)
+- Shipping clerks package and label orders for delivery to the specified address. (orders table)
+
+## 5. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices based on order details, calculating total amounts due and applying any discounts. (order_details table)
+
+## 6. Shipping and Delivery Tracking
+
+Performed By: Shipping Clerks, Warehouse Staff
+
+Activity:
+- Shipping clerks update the shipped date and shipment details for each order. (orders table)
+- Warehouse staff track the location of shipped orders until they are delivered to customers. (orders table)
+
+## 7. Report Generation
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts create reports on sales performance, inventory levels, and customer behavior using data from various tables. (all tables)
+- Management reviews reports for strategic decision making and business improvement initiatives. (reports not explicitly mentioned in source materials)

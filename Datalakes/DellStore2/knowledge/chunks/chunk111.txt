@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category specialists update product categories to ensure accurate organization of products.
+- Product managers assign common product IDs to similar items for easier tracking and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, Data Stewards
+
+Activity:
+- Sales representatives enter customer details such as name, address, contact information, credit card data, and account credentials during onboarding.
+- Customer service agents update customer profiles with changes in personal or financial information.
+- Data stewards ensure the accuracy of customer data by validating and verifying entries.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams, Inventory Managers
+
+Activity:
+- Warehouse staff update inventory levels by recording the quantity of each product in stock.
+- Purchasing teams order new products based on sales data and low stock alerts.
+- Inventory managers reorder items when quantities drop below a specified threshold.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff
+
+Activity:
+- Sales representatives create orders for customers by selecting products, specifying quantities, and calculating prices.
+- Customers place orders through the online store or over the phone.
+- Warehouse staff prepare orders for shipment by picking items from inventory and packaging them.
+
+## 5. Order Fulfillment & Shipping
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff pick and pack ordered items according to shipping instructions.
+- Shipping agents label packages and arrange for delivery to the customer's specified address.
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Accountants
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on product prices and shipping costs.
+- Accountants record financial transactions related to orders in the company's accounting system.
+
+## 7. Data Governance & Compliance
+
+Performed By: Data Stewards, Compliance Officers
+
+Activity:
+- Data stewards maintain accurate, consistent data by monitoring and improving data quality.
+- Compliance officers ensure the organization meets regulatory requirements and maintains audit-ready records for internal audits and external regulators.

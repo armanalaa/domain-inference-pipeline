@@ -1,0 +1,52 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update them when new products are received or sold.
+- Product managers monitor sales data to identify best-selling products and adjust pricing strategies accordingly.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives interact with customers to understand their needs and recommend suitable products.
+- HR managers maintain customer records, including personal details, contact information, credit card data, and purchase history.
+- Customers place orders through the online store by selecting products, specifying quantities, and providing shipping details.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives, Purchasing Teams
+
+Activity:
+- Warehouse staff pick and pack ordered items based on orderlines data.
+- Sales representatives confirm order status to customers and handle any issues that arise during the process.
+- Purchasing teams issue purchase orders for products with low inventory levels according to reorder data.
+
+## 4. Financial Management
+
+Performed By: Finance Teams, Customers
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on orderlines data.
+- Customers make payments using their preferred credit card methods and provide billing information as needed.
+
+## 5. Data Governance
+
+Performed By: Data Managers, IT Staff
+
+Activity:
+- Data managers ensure that all customer data is securely stored and complies with relevant regulations such as GDPR or CCPA.
+- IT staff maintain the database schema and metadata repository, keeping documentation up to date automatically.
+
+## 6. Analytics and Reporting
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts analyze sales data to identify trends, customer preferences, and areas for improvement.
+- Management uses these insights to make informed decisions about product offerings, pricing strategies, and marketing campaigns.

@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "Baseball Team and Player Data Management",
+    "definition": "The process of managing data related to schools, players, games, awards, and team statistics.",
+    "tables": [
+      "Schools"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Schools": {
+      "_description": "Captures information about baseball schools, including their unique identifiers, full names, cities, states, and countries.",
+      "columns": [
+        {
+          "name": "﻿schoolID",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the ﻿school entity",
+          "samples": [
+            "abilchrist",
+            "adelphi",
+            "adrianmi",
+            "akron",
+            "alabama"
+          ]
+        },
+        {
+          "name": "name_full",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores full names of universities associated with baseball teams.",
+          "samples": [
+            "Abilene Christian University",
+            "Adelphi University",
+            "Adrian College",
+            "University of Akron",
+            "University of Alabama"
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of cities where baseball schools are located.",
+          "samples": [
+            "Abilene",
+            "Garden City",
+            "Adrian",
+            "Akron",
+            "Tuscaloosa"
+          ]
+        },
+        {
+          "name": "state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores abbreviated names of U.S. states where schools are located.",
+          "samples": [
+            "TX",
+            "NY",
+            "MI",
+            "OH",
+            "AL"
+          ]
+        },
+        {
+          "name": "country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the country of origin for schools in baseball database.",
+          "samples": [
+            "USA",
+            "Cuba",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

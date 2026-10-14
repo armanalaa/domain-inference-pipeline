@@ -1,0 +1,51 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Assign call centers to specific districts based on market class and division.
+- Determine the number of employees required for each call center.
+- Allocate square footage for each call center according to its employee count.
+- Set operating hours for each call center.
+- Appoint a manager for each call center.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff, Customers
+
+Activity:
+- Answer incoming customer calls during operational hours.
+- Route calls to appropriate departments based on customer inquiries or issues.
+- Record call start and end dates, as well as any relevant details about the call.
+- Close calls when they are no longer active or require further follow-up.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, and list price.
+- Assign each item to a specific department within the catalog.
+- Create unique catalog pages for each item.
+
+## 4. Catalog Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Record returned items from customers and their corresponding reasons.
+- Assign returned items to appropriate warehouses for processing.
+- Update the catalog with information about the returned item.
+- Refund customers upon successful processing of their returns.
+
+## 5. Delivery Transaction Processing
+
+Performed By: Delivery Drivers, Call Center Staff
+
+Activity:
+- Schedule deliveries for orders placed by customers.
+- Assign delivery drivers to specific routes and orders.
+- Track the status of deliveries in real-time.
+- Update order status when deliveries are completed or encounter issues.

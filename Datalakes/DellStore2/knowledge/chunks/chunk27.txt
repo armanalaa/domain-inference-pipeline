@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- IT staff maintain the product information by updating the title, actor, special, and common_prod_id as needed.
+- Product managers monitor inventory levels and update product details when stock becomes depleted or replenished (inventory).
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives enter customer information such as first name, last name, address, email, phone, credit card type, and password during account creation or updates.
+- HR managers update customer details like age, income, gender, and region when necessary.
+- Customers access their accounts to view order history, change personal information, or make payments (creditcard).
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details like shipping address and payment method.
+- Sales representatives review and confirm customer orders before they are processed (orders).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track the quantity in stock for each product and update it accordingly when items are received or shipped out (inventory).
+- Purchasing teams issue purchase orders to replenish low inventory levels based on sales data and reorder points (reorder).
+
+## 5. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff pick and pack ordered items, update the quan_in_stock for each product, and record the orderlines.
+- Sales representatives or customer service agents confirm shipment and provide tracking information to customers (orders).
+
+## 6. Financial Management
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff calculate the net amount, tax, and total amount for each order based on product prices, quantities, and taxes (orders).
+- Finance staff record financial transactions related to orders, such as payments and refunds.
+
+## 7. Data Governance & Analytics
+
+Performed By: IT Staff, Business Analysts
+
+Activity:
+- IT staff document the data ecosystem, including relationships and data flows, using a data catalog tool (metadata).
+- Business analysts use the documented data to gain insights, make data-driven decisions, and prepare data for AI & ML models (metadata).

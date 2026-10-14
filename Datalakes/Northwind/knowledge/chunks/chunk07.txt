@@ -1,0 +1,59 @@
+ # Northwind — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers, IT Support
+
+Activity:
+- HR managers register new employees by recording their first name, last name, job title, and other personal details.
+- HR managers update employee records with changes in contact information or job titles.
+- IT support ensures the system validates required fields for all employee records before saving.
+
+## 2. Employee Territory Assignment
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers assign employees to specific territories based on geographical coverage.
+- Warehouse staff track inventory levels and recommend territory assignments for new hires.
+
+## 3. Employee Performance Evaluation
+
+Performed By: Supervisors, HR Managers
+
+Activity:
+- Supervisors evaluate employee performance and provide feedback on a regular basis.
+- HR managers review evaluation results and make decisions about promotions or salary adjustments.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives place new orders for customers by specifying the required products, quantities, and shipping details.
+- Customer service representatives update order statuses and handle customer inquiries related to existing orders.
+- Warehouse staff pick, pack, and ship ordered items according to the specified shipping details.
+
+## 5. Product Catalog Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, list price, and other relevant details.
+- Purchasing teams manage supplier relationships and negotiate prices for products.
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update the system when stock changes occur.
+- Purchasing teams order new products to replenish depleted inventory.
+
+## 7. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records financial transactions related to orders, payments, and expenses.
+- Finance department generates reports on sales, profits, and other key performance indicators for analysis and decision making.

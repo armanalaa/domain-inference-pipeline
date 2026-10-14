@@ -1,0 +1,44 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 66
+Threshold θ_T           : 0.75
+Edges in G_T            : 7
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.5189
+  max    : 0.8949
+  mean   : 0.6632
+  median : 0.6548
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  drug_brand_names                drug_substances                 0.8949      3  1.000  0.8949
+  drug_openfda                    drug_substances                 0.8742      3  1.000  0.8742
+  drug_brand_names                drugs                           0.8615      3  1.000  0.8615
+  drug_brand_names                drug_openfda                    0.8610      3  1.000  0.8610
+  drug_substances                 drugs                           0.8441      3  1.000  0.8441
+  primary_sources                 reports                         0.7972      3  1.000  0.7972
+  receivers                       senders                         0.7824      3  1.000  0.7824
+  receivers                       reports                         0.7351      3  1.000  0.7351
+  senders                         seriousness                     0.7328      3  1.000  0.7328
+  drug_substances                 reactions                       0.7210      3  1.000  0.7210
+  drugs                           primary_sources                 0.7206      3  1.000  0.7206
+  reports                         senders                         0.7055      3  1.000  0.7055
+  drug_brand_names                reactions                       0.7053      3  1.000  0.7053
+  drug_substances                 reports                         0.7017      3  1.000  0.7017
+  drug_openfda                    report_duplicates               0.6931      3  1.000  0.6931
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  drug_brand_names                drug_substances                 0.8949
+  drug_openfda                    drug_substances                 0.8742
+  drug_brand_names                drugs                           0.8615
+  drug_brand_names                drug_openfda                    0.8610
+  drug_substances                 drugs                           0.8441
+  primary_sources                 reports                         0.7972
+  receivers                       senders                         0.7824
+======================================================================

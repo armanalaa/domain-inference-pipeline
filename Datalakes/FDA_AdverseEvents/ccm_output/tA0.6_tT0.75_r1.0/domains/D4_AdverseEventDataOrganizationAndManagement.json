@@ -1,0 +1,111 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "AdverseEventDataOrganizationAndManagement",
+    "definition": "This domain unifies the tables that organize and manage adverse event data for patients, including patient demographics, onset age, weight, sex, and death date.",
+    "tables": [
+      "patients"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 7,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "patients": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "patientonsetage",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the age at which patients experienced adverse events (e.g., 75, 8, 44, etc.)",
+          "samples": [
+            75,
+            8,
+            44,
+            56,
+            67
+          ]
+        },
+        {
+          "name": "patientonsetageunit",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores patient age units in integer format, possibly years.",
+          "samples": [
+            801,
+            800,
+            802,
+            804,
+            803
+          ]
+        },
+        {
+          "name": "patientagegroup",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores patient age groups, all represented as integers (6, 5) in this dataset.",
+          "samples": [
+            6,
+            5,
+            3,
+            4,
+            2
+          ]
+        },
+        {
+          "name": "patientweight",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores patient weights in kilograms, including decimal places.",
+          "samples": [
+            74.0,
+            82.1,
+            69.853,
+            17.23,
+            74.8
+          ]
+        },
+        {
+          "name": "patientsex",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores gender of patients (1=male, 2=female) based on sample values.",
+          "samples": [
+            2,
+            1,
+            0,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "patientdeath_date",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores the textual representation of the date when a patient passed away (if available).",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

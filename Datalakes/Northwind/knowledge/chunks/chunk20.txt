@@ -1,0 +1,58 @@
+ # Northwind — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the UnitsInStock column when products are received or shipped.
+- Product managers assign ReorderLevel to ensure timely restocking of popular items.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives add new customers by entering their details and assigning them a territory.
+- Customer service agents update customer information such as address or contact details when changes occur.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives create new orders for customers by selecting products, quantities, and shipping details.
+- Warehouse staff update the UnitsOnOrder column when orders are processed.
+- Purchasing teams issue purchase orders to suppliers based on order requirements.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the Discontinued column for products that are no longer available.
+- Purchasing teams monitor the SupplierID to maintain relationships with reliable suppliers.
+
+## 5. Shipping and Delivery
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff update the ShippedDate and ShipVia columns when orders are ready for shipment.
+- Shippers provide shipping rates based on the Freight column and selected ShipperID.
+
+## 6. Financial Management
+
+Performed By: Finance Department
+
+Activity:
+- Finance records transactions related to orders, such as payments received or made, in appropriate columns.
+
+## 7. Reporting and Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on sales performance, inventory levels, and customer behavior using data from the database.
+- Management reviews these reports to make informed decisions about business strategy.

@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their details (cc_employees) and assigning roles (cc_class).
+- HR managers update employee information (cc_name, cc_division, cc_company) and manage payroll records.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff answer incoming calls (cc_rec_start_date) and assist customers with queries or issues.
+- They record call details (cc_closed_date_sk, cc_open_date_sk) and categorize calls based on type (cc_class).
+
+## 3. Market Division Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers oversee multiple call centers within a division (cc_division), setting targets and strategies.
+- They allocate resources (cc_sq_ft, cc_hours) and monitor performance metrics (cc_mkt_id, cc_mkt_class).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details (cp_catalog_number, cp_description) and assigning categories (cp_department).
+
+## 5. Customer Interaction
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog online (cp_catalog_page_sk) and place orders through sales representatives or directly via the website.
+
+## 6. Return Management
+
+Performed By: Warehouse Staff, Customer Service Representatives
+
+Activity:
+- Warehouse staff process returned items (cr_item_sk) by updating inventory levels and tracking returns (cr_returned_date_sk).
+- Customer service representatives handle customer inquiries about returns (cr_refunded_customer_sk) and issue refunds.
+
+## 7. Reporting and Analytics
+
+Performed By: Finance, Data Analysts
+
+Activity:
+- Finance records financial transactions (cc_tax_percentage) and generates reports on call center performance.
+- Data analysts analyze sales data (cp_catalog_page_sk) to identify trends and make recommendations for improvement.

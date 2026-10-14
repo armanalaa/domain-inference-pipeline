@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to specific districts based on market and division information.
+- Warehouse staff update the square footage of each call center as needed.
+
+## 2. Customer Service Operations
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives handle customer inquiries about products and services.
+- Customer service agents assist customers with product orders, returns, and refunds.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording their codes, names, categories, and list prices.
+- Marketing managers update the product descriptions and categorization for better visibility on the catalog pages.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Agents
+
+Activity:
+- Sales representatives take orders from customers over the phone or online.
+- Warehouse staff track inventory levels and prepare items for shipping based on order details.
+- Customer service agents confirm order status and delivery dates with customers.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the stock levels of each product as items are received or shipped out.
+- Purchasing teams place orders for new inventory based on current stock levels and sales forecasts.
+
+## 6. Financial Reporting
+
+Performed By: Finance Team, Management
+
+Activity:
+- Finance team records financial transactions such as payments, refunds, and taxes.
+- Management reviews the financial reports to monitor revenue, expenses, and profitability.
+
+## 7. Performance Monitoring and Analysis
+
+Performed By: Management, IT Support
+
+Activity:
+- Management monitors call center performance metrics like average handling time and customer satisfaction scores.
+- IT support ensures database consistency and transaction isolation during peak usage periods.

@@ -1,0 +1,91 @@
+ # Northwind — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, and list price.
+- Update product information when necessary, including category assignment, description, and discontinuation status.
+- Monitor inventory levels and adjust reorder levels as needed to ensure timely restocking.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Add new customers by entering company name, contact details, address, and other relevant information.
+- Update customer records with any changes in contact information or account status.
+- Manage customer orders, including tracking order progress, addressing issues, and providing updates on order status.
+
+## 3. Order Placement
+
+Performed By: Sales Representatives
+
+Activity:
+- Select a product category and product for an order, entering the required quantity.
+- Verify that the selected products are in stock or on order before finalizing the order.
+- Advance the order status from New to Invoiced once the order is ready for invoicing.
+
+## 4. Invoice Processing
+
+Performed By: Accounting Staff
+
+Activity:
+- Generate and send invoices based on approved orders.
+- Update order status to Invoiced upon successful invoice generation.
+- Monitor outstanding invoices and follow up with customers as needed.
+
+## 5. Order Allocation
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Allocate products for orders when items are not in stock or on order.
+- Create purchase orders to acquire necessary products and update order status accordingly.
+- Ship allocated products to the warehouse once received.
+
+## 6. Order Shipping
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Prepare orders for shipping by selecting a shipper and calculating shipping fees.
+- Update order status to Shipped upon successful shipping.
+- Ensure accurate shipping information is provided for each order.
+
+## 7. Order Tracking and Closure
+
+Performed By: Warehouse Staff, Customer Service Agents
+
+Activity:
+- Monitor the progress of shipped orders until they are delivered to customers.
+- Update order status to Closed once an order has been delivered or cancelled.
+- Address any issues that arise during order tracking and ensure timely resolution.
+
+## 8. Employee Management
+
+Performed By: HR Managers, Supervisors
+
+Activity:
+- Hire new employees by recording their personal and professional details, including address, contact information, and employment history.
+- Assign territories to employees as needed for sales and distribution purposes.
+- Update employee records with any changes in personal or employment information.
+
+## 9. Supplier Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Add new suppliers by entering company name, contact details, and other relevant information.
+- Monitor supplier performance and update supplier records accordingly.
+- Negotiate pricing and terms with suppliers as needed to optimize inventory costs.
+
+## 10. Reporting and Analysis
+
+Performed By: Finance Staff, Management
+
+Activity:
+- Generate reports on sales, inventory, and financial performance using data from the Northwind database.
+- Analyze reports to identify trends, opportunities, and areas for improvement in business operations.
+- Use insights gained from analysis to inform strategic decision-making and drive business growth.

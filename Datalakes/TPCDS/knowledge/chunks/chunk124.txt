@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers recruit new staff members and update the call center employee count (cc_employees).
+- Call center managers determine the required square footage for each call center (cc_sq_ft).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign divisions to each call center based on market needs (cc_division).
+- Market managers define the division name for each market segment (cc_division_name).
+
+## 3. Company Information Management
+
+Performed By: HR Managers, Call Center Managers
+
+Activity:
+- HR managers register company details such as name, street address, and country (cc_company_name, cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Call center managers update company tax percentage for each location (cc_tax_percentage).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Sales representatives create new catalog pages for each department (cp_department).
+
+## 5. Customer Returns Processing
+
+Performed By: Warehouse Staff, Call Center Representatives
+
+Activity:
+- Warehouse staff track returned items and update the warehouse inventory (cr_item_sk).
+- Call center representatives record customer returns along with reasons for return (cr_reason_sk).
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders and assign them unique order numbers (cr_order_number).
+- Warehouse staff ship the ordered items to customers using specified shipping modes (cr_ship_mode_sk).
+
+## 7. Performance Monitoring and Analysis
+
+Performed By: IT Administrators, Call Center Managers
+
+Activity:
+- IT administrators monitor the database performance during the measurement interval to ensure it sustains the reported throughput (TpmC) (not specific to any table/column).
+- Call center managers analyze the 60-day space computation results to optimize storage allocation and database configuration (Daily-Growth, Daily-Spread, 60-Day-Space).

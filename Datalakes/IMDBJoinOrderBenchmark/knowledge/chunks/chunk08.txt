@@ -1,0 +1,48 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the integrity and performance of the database by monitoring system metrics and optimizing queries.
+- Content managers input new movies into the system by recording title, production year, kind, and associated companies.
+- Content managers assign roles to actors in movies and record their names, character names, and notes about their performances.
+
+## 2. Actor Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators ensure the accuracy of actor data by verifying MD5 sums and maintaining unique identifiers for each actor.
+- Content managers register new actors by recording their names, genders, and associated movies.
+
+## 3. Company Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the integrity of company data by verifying MD5 sums and ensuring unique identifiers for each company.
+- Content managers input new companies into the system by recording their names, countries, types, and associated movies.
+
+## 4. Keyword Assignment
+
+Performed By: Content Managers
+
+Activity:
+- Content managers assign relevant keywords to movies based on their titles, genres, or themes.
+
+## 5. Link Creation
+
+Performed By: Content Managers
+
+Activity:
+- Content managers establish relationships between movies by linking them based on shared actors, companies, or themes.
+
+## 6. Query Execution and Optimization
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators optimize query performance by adjusting join orders and estimating cardinalities to minimize errors.
+- Data analysts execute queries to extract insights from the database for various purposes such as trend analysis or performance evaluation.

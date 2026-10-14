@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set special offers or discounts for common_prod_id.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives create customer accounts by entering firstname, lastname, address details, and contact information.
+- Customer service agents update customer details when customers request changes.
+- Sales representatives assign creditcardtype, creditcard, and creditcardexpiration for each customer account.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products from the catalog, specifying quantities, and providing order details.
+- Sales representatives confirm orders and generate orderlines with prod_id, quantity, and orderdate.
+- Warehouse staff track quan_in_stock to ensure sufficient inventory for order fulfillment.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick products from the shelves based on orderlines and update quan_in_stock accordingly.
+- Shipping department packages orders for delivery and records orderid in the tracking system.
+
+## 5. Invoice Generation
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices by calculating netamount, tax, and totalamount based on orders.
+- Finance records these amounts in the orders table for each customer.
+
+## 6. Reordering
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor date_low and quan_low to determine when products need reordering.
+- Purchasing teams issue purchase orders for the required prod_id and update date_reordered and quan_reordered.
+
+## 7. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team documents data lineage, quality, and dependencies across the organization.
+- They ensure compliance with regulations and industry standards by maintaining a business glossary, ER diagrams, and reference data management.

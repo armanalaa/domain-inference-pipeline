@@ -1,0 +1,59 @@
+ # adventure_works — Business Workflows
+
+## 1. Vendor Management
+
+Performed By: Purchasing Team, HR Managers
+
+Activity:
+- Purchasing teams research and evaluate potential vendors based on credit rating and account number.
+- HR managers hire new employees to join the purchasing team, recording their personal details and employment history.
+- Purchasing teams add newly evaluated vendors to the vendor database, including company name, URL, and active status.
+- HR managers update employee records when a vendor employee changes roles or leaves the company.
+- Purchasing teams maintain vendor relationships, updating vendor records with any changes in account number, company name, or URL.
+
+## 2. Vendor Contact Management
+
+Performed By: Purchasing Team, HR Managers
+
+Activity:
+- Purchasing teams identify key contacts at each vendor for communication purposes.
+- HR managers record contact information for employees within the purchasing team.
+- Purchasing teams update vendor contact information as needed.
+
+## 3. Vendor Address Management
+
+Performed By: HR Managers, Purchasing Team
+
+Activity:
+- HR managers maintain employee addresses in the business entity address table.
+- Purchasing teams record and update vendor addresses in the vendor table.
+
+## 4. Shipping Method Configuration
+
+Performed By: IT Administrators, Purchasing Team
+
+Activity:
+- IT administrators create and manage shipping methods, including setting default charges and rates.
+- Purchasing team members assign shipping methods to purchase orders as needed.
+
+## 5. Purchase Order Creation
+
+Performed By: Purchasing Team
+
+Activity:
+- Purchasing team members create new purchase orders, specifying vendor, shipping method, and order details.
+
+## 6. Invoice Processing
+
+Performed By: Accounts Payable Team
+
+Activity:
+- Accounts payable team members review and approve incoming invoices from vendors.
+- Upon approval, the team records the invoice details in the system.
+
+## 7. Payment Processing
+
+Performed By: Accounts Payable Team
+
+Activity:
+- Accounts payable team members make payments to vendors based on approved invoices and payment terms.

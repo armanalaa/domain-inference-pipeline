@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category specialists update product categories to ensure accurate organization and searchability.
+- Product managers assign common product IDs to related products for easier tracking and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details such as first name, last name, address, email, phone, credit card information, and password during account creation.
+- HR managers maintain customer records including age, income, gender, and region for targeted marketing efforts.
+- Customer service agents update customer contact information when necessary.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details like shipping address and payment method.
+- Sales representatives process orders, confirming availability, calculating net amount, tax, and total amount before finalizing the transaction.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating quan_in_stock for each product.
+- Purchasing teams issue purchase orders when stock reaches a predetermined low level (quan_low) and reorder products accordingly.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack ordered items based on orderlines and customer details.
+- Shipping department prepares shipments for delivery by recording shipping information, such as tracking numbers and estimated delivery dates.
+
+## 6. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records invoices for each order, including net amount, tax, total amount, and customer details.
+
+## 7. Reordering Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Warehouse staff update reorder with date_low, quan_low, date_reordered, quan_reordered, and date_expected to facilitate timely restocking.
+- Purchasing teams monitor reorder data to plan and execute product replenishment.

@@ -1,0 +1,62 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign employees to departments by selecting a DepartmentID and recording the StartDate and EndDate in EmployeeDepartmentHistory.
+- Record employee pay history by specifying RateChangeDate, Rate, PayFrequency for each change.
+
+## 2. Employee Information Update
+
+Performed By: Human Resources Managers
+
+Activity:
+- Modify employee information by updating their details such as AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and ModifiedDate.
+- Record the changes in the ModifiedDate column for each table related to the employee.
+
+## 3. Department Management
+
+Performed By: Department Managers
+
+Activity:
+- Create new departments by registering a unique DepartmentID, Name, GroupName, and ModifiedDate.
+- Assign employees to departments by selecting a BusinessEntityID and recording the ShiftID, StartDate, EndDate, and ModifiedDate in EmployeeDepartmentHistory.
+
+## 4. Address Management
+
+Performed By: Employees or Administrative Staff
+
+Activity:
+- Register personal addresses by providing AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and ModifiedDate.
+- Specify the address type by selecting an AddressTypeID.
+
+## 5. Contact Information Update
+
+Performed By: Employees or Administrative Staff
+
+Activity:
+- Update contact information by modifying BusinessEntityAddress with new AddressID, AddressTypeID, and ModifiedDate.
+
+## 6. Shift Management
+
+Performed By: Warehouse Managers or Supervisors
+
+Activity:
+- Define shifts by recording ShiftID, Name, StartTime, EndTime, and ModifiedDate.
+
+## 7. Product Subcategory Creation
+
+Performed By: Product Managers
+
+Activity:
+- Create product subcategories by registering a unique ProductSubcategoryID, ProductCategoryID, Name, and ModifiedDate.
+
+## 8. Unit Measure Management
+
+Performed By: Inventory Managers or Purchasing Teams
+
+Activity:
+- Register unit measures by providing UnitMeasureCode and Name, and recording the ModifiedDate.

@@ -1,0 +1,68 @@
+ # adventure_works — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new products by recording the product code, name, category, and list price.
+- Update product details such as color, size, weight, and inventory levels.
+- Set safety stock level and reorder point for each product.
+
+## 2. Employee Onboarding
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- Hire new employees by recording their personal information, job title, hire date, and salary details.
+- Assign employees to specific departments and shifts based on organizational needs.
+- Update employee records when they change departments or shifts.
+
+## 3. Employee Payroll Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- Record employee pay history, including rate changes and pay frequencies.
+- Calculate vacation hours and sick leave hours for each employee.
+
+## 4. Address Management
+
+Performed By: Employees, Customers
+
+Activity:
+- Register and update personal or business addresses associated with employees or customers.
+- Specify the type of address (e.g., home, work) and its spatial location.
+
+## 5. Inventory Tracking
+
+Performed By: Warehouse Staff
+
+Activity:
+- Monitor inventory levels for each product and update them as items are sold or manufactured.
+- Generate purchase orders or work orders when inventory reaches the reorder point.
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Receive customer orders and verify their details.
+- Pick, pack, and ship ordered items to customers.
+- Update order status and track delivery progress.
+
+## 7. Invoice Generation
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Generate invoices for completed customer orders based on product list price and quantity sold.
+- Record invoice details in the system and send them to customers.
+
+## 8. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Record financial transactions, including sales, expenses, and payroll costs.
+- Generate reports and analyze financial data for decision making and compliance purposes.

@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee records with personal details, employment history, and performance metrics (cc_employees).
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, IT Support
+
+Activity:
+- Facility managers allocate square footage for call centers and set up necessary infrastructure (cc_sq_ft, cc_hours).
+- IT support configures call center systems, including phone lines, software applications, and security measures.
+
+## 3. Market Allocation
+
+Performed By: Marketing Managers, Division Heads
+
+Activity:
+- Marketing managers determine market segments to target based on demographic, geographical, and customer behavior data (cc_mkt_id, cc_division).
+- Division heads assign call centers to specific markets for optimal service coverage.
+
+## 4. Call Center Operations
+
+Performed By: Call Center Agents, Supervisors
+
+Activity:
+- Call center agents answer incoming calls from customers and assist with inquiries or issues (cc_call_center_id).
+- Supervisors monitor agent performance, provide coaching, and escalate complex customer concerns.
+
+## 5. Order Processing
+
+Performed By: Call Center Agents, Warehouse Staff
+
+Activity:
+- Call center agents record new orders from customers, including item details, shipping information, and payment methods (cr_item_sk, cr_ship_mode_sk).
+- Warehouse staff retrieve ordered items, pack them for shipment, and update order status accordingly.
+
+## 6. Return Processing
+
+Performed By: Call Center Agents, Warehouse Staff
+
+Activity:
+- Call center agents process customer returns by recording return reasons and item details (cr_reason_sk).
+- Warehouse staff receive returned items, inspect them for quality, and update inventory accordingly.
+
+## 7. Performance Monitoring
+
+Performed By: IT Administrators, Management
+
+Activity:
+- IT administrators monitor call center performance metrics, such as response times, throughput, and think time (cc_rec_start_date, cc_rec_end_date).
+- Management reviews these metrics to identify areas for improvement and adjust resource allocation.
+
+## 8. Reporting and Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on call center performance, including transaction mix, order volume, and customer demographics (cp_catalog_page_sk).
+- Management uses these reports to make informed decisions about staffing, marketing strategies, and operational efficiency.

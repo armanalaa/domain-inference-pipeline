@@ -1,0 +1,70 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Authentication
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives assist new customers in registering accounts by entering their personal details (firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, username).
+- IT support staff secure customer passwords during account creation.
+- Customer service representatives verify customer identities using provided credit card information and email addresses.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers categorize new items in the catalog (category) and assign them product codes, names, categories, and list prices (title, actor, price).
+- Inventory specialists track product availability by monitoring quan_in_stock for each item (inventory).
+- Product managers update common_prod_id when products are rebranded or discontinued.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog and select desired items (title), adding them to their shopping carts.
+- Sales representatives assist customers with order placement by confirming product availability and calculating netamount, tax, and totalamount based on selected items and shipping destination.
+- Customers finalize orders by providing payment information (creditcard, creditcardexpiration).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives generate order documents (orders) containing customer and product details, as well as netamount, tax, and totalamount.
+- Warehouse staff retrieve ordered items from inventory based on orderlineid and quantity.
+- Warehouse staff prepare orders for shipping by packing them into boxes and labeling them with orderid.
+
+## 5. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders to suppliers for restocking low inventory (quan_in_stock).
+- Warehouse staff receive shipments from suppliers and update quan_in_stock accordingly.
+- Inventory specialists monitor reorder levels (date_low, quan_low) and initiate reorders when necessary.
+
+## 6. Order Tracking and Delivery
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives update order statuses based on warehouse staff reports of shipping and delivery (orderlines).
+- Warehouse staff track orders as they move through the fulfillment process (orderid, orderdate) and notify customers of estimated delivery dates.
+
+## 7. Customer Service and Support
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives handle customer inquiries regarding orders, returns, and account issues.
+- IT support staff troubleshoot technical problems related to the DellStore2 platform (email, password).
+
+## 8. Performance Monitoring and Analysis
+
+Performed By: System Administrators, Data Analysts
+
+Activity:
+- System administrators configure and run driver programs to distribute workloads across multiple target machines (ds2webdriver.exe) based on specified parameters in configuration files.
+- Data analysts analyze performance data collected by the driver program, including opm, response times, CPU%, etc., to identify areas for optimization.

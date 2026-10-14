@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "Customer Interaction Management",
+    "definition": "The unifying capability across all tables is the management of customer interactions, including call center operations, order processing, returns processing, and customer relationship management.",
+    "tables": [
+      "reason"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 3,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "reason": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "r_reason_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for reasons in the database.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "r_reason_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the r_reason_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "r_reason_desc",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptions of reasons for customer complaints (e.g., package damage, product mismatch).",
+          "samples": [
+            "Package was damaged",
+            "Stopped working",
+            "Did not get it on time",
+            "Not the product that was ordred",
+            "Parts missing"
+          ]
+        }
+      ]
+    }
+  }
+}

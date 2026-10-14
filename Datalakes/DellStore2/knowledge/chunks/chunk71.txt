@@ -1,0 +1,54 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their details and credit card information.
+- Customer service agents update customer records with address changes or contact preferences.
+- Sales representatives assign customer IDs to newly registered clients.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product codes, names, categories, and list prices.
+- Inventory specialists update product information when stock levels change or special offers are introduced.
+- Product managers link common product IDs for variants of the same item.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create orders by selecting products, quantities, and customer details.
+- Warehouse staff track order fulfillment by marking items as shipped and updating inventory levels.
+- Finance department records the net amount, tax, and total amount for each order.
+
+## 4. Inventory Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists monitor stock levels by tracking quantities in stock and sales.
+- Purchasing teams issue purchase orders to replenish low inventory items.
+- Inventory specialists update reorder information for each product, including expected delivery dates.
+
+## 5. Order Tracking
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents respond to customer inquiries about order status.
+- Warehouse staff update order tracking details when items are shipped or delayed.
+
+## 6. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team assigns owners to every table and column for accountability.
+- They track data quality issues, improvements, and compliance updates.
+- Data governance team notifies owners when a question is asked or an issue flagged on their data assets.

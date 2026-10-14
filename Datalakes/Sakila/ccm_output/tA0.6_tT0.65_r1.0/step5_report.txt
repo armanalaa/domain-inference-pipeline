@@ -1,0 +1,48 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 44
+θ_T applied in Step 4: 0.65
+Domains discovered   : 3
+Modularity Q         : 0.1117
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Content Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of customer accounts and associated content such as films, categories, languages, and staff.
+  Tables     : actor, category, customer, language, staff
+  Phi top-3  : C1=0.227  C2=0.131  C4=0.123
+
+──────────────────────────────────────────────────────────────────────
+D1  Film Rental and Inventory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film rentals, inventory levels, and associated transactions.
+  Tables     : inventory, payment, rental, store
+  Phi top-3  : C1=0.205  C4=0.203  C5=0.201
+
+──────────────────────────────────────────────────────────────────────
+D2  Film Inventory and Categorization Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film inventory levels, categorizing films for easy browsing, and updating film-related information.
+  Tables     : address, city, film, film_category
+  Phi top-3  : C2=0.217  C3=0.173  C4=0.172
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  actor                                D       0  Customer and Content Management
+  category                             D       0  Customer and Content Management
+  customer                             D       0  Customer and Content Management
+  language                             D       0  Customer and Content Management
+  staff                                D       0  Customer and Content Management
+  inventory                            D       1  Film Rental and Inventory Management
+  payment                              D       1  Film Rental and Inventory Management
+  rental                               D       1  Film Rental and Inventory Management
+  store                                D       1  Film Rental and Inventory Management
+  address                              D       2  Film Inventory and Categorization Management
+  city                                 D       2  Film Inventory and Categorization Management
+  film                                 D       2  Film Inventory and Categorization Management
+  film_category                        D       2  Film Inventory and Categorization Management
+======================================================================

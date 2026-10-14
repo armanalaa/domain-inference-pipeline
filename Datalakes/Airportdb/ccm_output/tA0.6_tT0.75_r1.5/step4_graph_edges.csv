@@ -1,0 +1,5 @@
+table_i,table_j,Sim_T
+flight,flightschedule,0.820766
+airport,airport_geo,0.809709
+airplane,flight,0.786733
+passenger,passengerdetails,0.754841

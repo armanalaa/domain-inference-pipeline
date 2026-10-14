@@ -1,0 +1,258 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Sales Transaction Management",
+    "definition": "The process of managing sales transactions and associated data, including recording, tracking, and archiving.",
+    "tables": [
+      "Production TransactionHistory",
+      "Production TransactionHistoryArchive"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Production TransactionHistory": {
+      "_description": "Tracks production transaction details for individual products within specific orders, including quantity, cost, and timestamps.",
+      "columns": [
+        {
+          "name": "TransactionID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production TransactionHistory",
+          "samples": [
+            103907,
+            104087,
+            104091,
+            104096,
+            104099
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production TransactionHistory",
+          "samples": [
+            921,
+            870,
+            923,
+            977,
+            992
+          ]
+        },
+        {
+          "name": "ReferenceOrderID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Reference Order entity",
+          "samples": [
+            53644,
+            53684,
+            53685,
+            53688,
+            53689
+          ]
+        },
+        {
+          "name": "ReferenceOrderLineID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Reference Order Line entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "TransactionDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date-time strings for production transaction occurrences.",
+          "samples": [
+            "2013-07-31 00:00:00.000",
+            "2013-08-01 00:00:00.000",
+            "2013-08-02 00:00:00.000",
+            "2013-08-03 00:00:00.000",
+            "2013-08-04 00:00:00.000"
+          ]
+        },
+        {
+          "name": "TransactionType",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a character indicating the type of production transaction (all entries are 'S').",
+          "samples": [
+            "S",
+            "W",
+            "P",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of items transacted in production transactions.",
+          "samples": [
+            1,
+            3,
+            2,
+            550,
+            4
+          ]
+        },
+        {
+          "name": "ActualCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores per-unit production costs for items in transactions.",
+          "samples": [
+            4.99,
+            539.99,
+            2384.07,
+            2294.99,
+            2319.99
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp strings for each transaction modification in Production TransactionHistory.",
+          "samples": [
+            "2013-07-31 00:00:00.000",
+            "2013-08-01 00:00:00.000",
+            "2013-08-02 00:00:00.000",
+            "2013-08-03 00:00:00.000",
+            "2013-08-04 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Production TransactionHistoryArchive": {
+      "_description": "Tracks historical data of product transactions, including order details and costs.",
+      "columns": [
+        {
+          "name": "TransactionID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production TransactionHistoryArchive",
+          "samples": [
+            663,
+            700,
+            786,
+            829,
+            945
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production TransactionHistoryArchive",
+          "samples": [
+            719,
+            811,
+            517,
+            826,
+            802
+          ]
+        },
+        {
+          "name": "ReferenceOrderID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Reference Order entity",
+          "samples": [
+            265,
+            296,
+            375,
+            414,
+            517
+          ]
+        },
+        {
+          "name": "ReferenceOrderLineID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Reference Order Line entity",
+          "samples": [
+            0,
+            32,
+            10,
+            38,
+            9
+          ]
+        },
+        {
+          "name": "TransactionDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted timestamps of production transaction occurrences.",
+          "samples": [
+            "2011-06-08 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-11 00:00:00.000",
+            "2011-06-12 00:00:00.000",
+            "2011-06-15 00:00:00.000"
+          ]
+        },
+        {
+          "name": "TransactionType",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Records the type of production transactions (W for Work Order) in the archive.",
+          "samples": [
+            "W",
+            "S",
+            "P",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of items transacted in production transactions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "name": "ActualCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the actual production cost for each transaction in the archive.",
+          "samples": [
+            0.0,
+            24.6935,
+            2429.9928,
+            5.6187,
+            6.175
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of transaction modifications in YYYY-MM-DD HH:MM:SS format.",
+          "samples": [
+            "2011-06-08 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-11 00:00:00.000",
+            "2011-06-12 00:00:00.000",
+            "2011-06-15 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

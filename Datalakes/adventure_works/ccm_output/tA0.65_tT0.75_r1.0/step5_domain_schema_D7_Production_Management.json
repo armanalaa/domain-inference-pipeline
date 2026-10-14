@@ -1,0 +1,575 @@
+{
+  "_meta": {
+    "domain_id": 7,
+    "domain_name": "Production Management",
+    "definition": "The process of managing the production lifecycle, including bill of materials, product cost history, list price history, work orders, and work order routing.",
+    "tables": [
+      "Production BillOfMaterials",
+      "Production ProductCostHistory",
+      "Production ProductListPriceHistory",
+      "Production WorkOrder",
+      "Production WorkOrderRouting"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Production BillOfMaterials": {
+      "_description": "Tracks the components, quantities, and assembly relationships for manufacturing various products in the production line.",
+      "columns": [
+        {
+          "name": "BillOfMaterialsID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production BillOfMaterials",
+          "samples": [
+            30,
+            31,
+            47,
+            48,
+            69
+          ]
+        },
+        {
+          "name": "ProductAssemblyID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Product Assembly entity",
+          "samples": [
+            980,
+            779,
+            981,
+            780,
+            982
+          ]
+        },
+        {
+          "name": "ComponentID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Component entity",
+          "samples": [
+            907,
+            952,
+            948,
+            945,
+            894
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the initial production date for each bill of materials.",
+          "samples": [
+            "2010-03-04 00:00:00.000",
+            "2010-03-18 00:00:00.000",
+            "2010-05-18 00:00:00.000",
+            "2010-05-26 00:00:00.000",
+            "2010-07-26 00:00:00.000"
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores planned end dates for production items.",
+          "samples": [
+            "2010-05-03 00:00:00.000",
+            "2010-05-17 00:00:00.000",
+            "2010-07-25 00:00:00.000",
+            "2010-08-08 00:00:00.000",
+            "2010-08-18 00:00:00.000"
+          ]
+        },
+        {
+          "name": "UnitMeasureCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores standard units of measure for each item in the production bill of materials (e.g., EA for Each).",
+          "samples": [
+            "EA",
+            "IN",
+            "OZ",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "BOMLevel",
+          "sql_type": "INT",
+          "key": "",
+          "description": "The BOMLevel column in Production BillOfMaterials stores the quantity of each component in a single product assembly.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "name": "PerAssemblyQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of assemblies produced per unit for each product.",
+          "samples": [
+            1,
+            2,
+            10,
+            40,
+            3
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps for the last modification of each record in the Production BillOfMaterials table (2010-02-18 format).",
+          "samples": [
+            "2010-02-18 00:00:00.000",
+            "2010-03-04 00:00:00.000",
+            "2010-05-04 00:00:00.000",
+            "2010-05-12 00:00:00.000",
+            "2010-07-12 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Production ProductCostHistory": {
+      "_description": "Tracks historical changes in standard costs for specific products across defined time periods.",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production ProductCostHistory",
+          "samples": [
+            707,
+            708,
+            711,
+            712,
+            713
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the specific date when a product's cost history was initiated (e.g., 2013-05-30).",
+          "samples": [
+            "2013-05-30 00:00:00.000",
+            "2011-05-31 00:00:00.000",
+            "2012-05-30 00:00:00.000",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores historical dates marking the end of cost records for production products.",
+          "samples": [
+            "2012-05-29 00:00:00.000",
+            "2013-05-29 00:00:00.000",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "StandardCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical standard costs for individual production products.",
+          "samples": [
+            13.0863,
+            6.9223,
+            38.4923,
+            868.6342,
+            204.6251
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps for when product cost history records were last modified (YYYY-MM-DD HH:mm:ss.fff format).",
+          "samples": [
+            "2013-05-16 00:00:00.000",
+            "2012-05-29 00:00:00.000",
+            "2013-05-29 00:00:00.000",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "Production ProductListPriceHistory": {
+      "_description": "Tracks historical changes in product list prices and their corresponding date ranges for inventory management.",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production ProductListPriceHistory",
+          "samples": [
+            707,
+            708,
+            711,
+            712,
+            713
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the specific date when a product's list price history was initiated.",
+          "samples": [
+            "2013-05-30 00:00:00.000",
+            "2011-05-31 00:00:00.000",
+            "2012-05-30 00:00:00.000",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores historical dates when product list prices were discontinued.",
+          "samples": [
+            "2012-05-29 00:00:00.000",
+            "2013-05-29 00:00:00.000",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ListPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical unit prices for various products in the Production Product List Price History table.",
+          "samples": [
+            34.99,
+            8.99,
+            49.99,
+            1431.5,
+            337.22
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores date and time of product list price modifications.",
+          "samples": [
+            "2013-05-09 00:00:00.000",
+            "2012-05-29 00:00:00.000",
+            "2013-05-29 00:00:00.000",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "Production WorkOrder": {
+      "_description": "Tracks production work orders for manufacturing specific products, including quantities, timelines, and reasons for scraps.",
+      "columns": [
+        {
+          "name": "WorkOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production WorkOrder",
+          "samples": [
+            158,
+            229,
+            300,
+            338,
+            589
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production WorkOrder",
+          "samples": [
+            811,
+            739,
+            743,
+            517,
+            826
+          ]
+        },
+        {
+          "name": "OrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of work orders for each production instance.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "name": "StockedQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "StockedQty in Production WorkOrder stores the quantity of a product that is currently available.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "name": "ScrappedQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of work orders that have been scrapped.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "StartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted date and time for when a production work order was started.",
+          "samples": [
+            "2011-06-05 00:00:00.000",
+            "2011-06-07 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-10 00:00:00.000",
+            "2011-06-17 00:00:00.000"
+          ]
+        },
+        {
+          "name": "EndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The Production WorkOrder's EndDate column stores scheduled completion dates for work orders.",
+          "samples": [
+            "2011-06-23 00:00:00.000",
+            "2011-06-27 00:00:00.000",
+            "2011-07-01 00:00:00.000",
+            "2011-06-21 00:00:00.000",
+            "2011-07-17 00:00:00.000"
+          ]
+        },
+        {
+          "name": "DueDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores scheduled production work completion dates in a YYYY-MM-DD format.",
+          "samples": [
+            "2011-06-16 00:00:00.000",
+            "2011-06-18 00:00:00.000",
+            "2011-06-20 00:00:00.000",
+            "2011-06-21 00:00:00.000",
+            "2011-06-28 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ScrapReasonID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Scrap Reason entity",
+          "samples": [
+            7,
+            16,
+            4,
+            9,
+            1
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp strings of when each work order was last modified.",
+          "samples": [
+            "2011-06-23 00:00:00.000",
+            "2011-06-27 00:00:00.000",
+            "2011-07-01 00:00:00.000",
+            "2011-06-21 00:00:00.000",
+            "2011-07-17 00:00:00.000"
+          ]
+        }
+      ]
+    },
+    "Production WorkOrderRouting": {
+      "_description": "Tracks manufacturing work order routings, including product details, sequence of operations, locations, and associated resource hours & costs.",
+      "columns": [
+        {
+          "name": "WorkOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production WorkOrderRouting",
+          "samples": [
+            76,
+            122,
+            161,
+            195,
+            232
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Production WorkOrderRouting",
+          "samples": [
+            820,
+            996,
+            945,
+            894,
+            519
+          ]
+        },
+        {
+          "name": "OperationSequence",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the sequential order of operations within a single work order for production.",
+          "samples": [
+            6,
+            7,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "LocationID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Location entity",
+          "samples": [
+            50,
+            60,
+            10,
+            20,
+            30
+          ]
+        },
+        {
+          "name": "ScheduledStartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores scheduled start dates for production work orders, formatted as YYYY-MM-DD HH:MM:SS.",
+          "samples": [
+            "2011-06-03 00:00:00.000",
+            "2011-06-04 00:00:00.000",
+            "2011-06-05 00:00:00.000",
+            "2011-06-06 00:00:00.000",
+            "2011-06-07 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ScheduledEndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores planned completion dates for various work orders in a sequence.",
+          "samples": [
+            "2011-06-14 00:00:00.000",
+            "2011-06-15 00:00:00.000",
+            "2011-06-16 00:00:00.000",
+            "2011-06-17 00:00:00.000",
+            "2011-06-18 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ActualStartDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores actual start dates for individual work orders in production.",
+          "samples": [
+            "2011-06-03 00:00:00.000",
+            "2011-06-09 00:00:00.000",
+            "2011-06-05 00:00:00.000",
+            "2011-06-13 00:00:00.000",
+            "2011-06-07 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ActualEndDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the actual end dates for production work order routings as formatted timestamps (YYYY-MM-DD HH:MM:SS.fff).",
+          "samples": [
+            "2011-06-19 00:00:00.000",
+            "2011-06-15 00:00:00.000",
+            "2011-06-23 00:00:00.000",
+            "2011-06-17 00:00:00.000",
+            "2011-06-27 00:00:00.000"
+          ]
+        },
+        {
+          "name": "ActualResourceHrs",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores actual hours of resource allocation for each work order routing step.",
+          "samples": [
+            3.0,
+            4.0,
+            4.1,
+            3.5,
+            1.0
+          ]
+        },
+        {
+          "name": "PlannedCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores estimated production costs for each work order routing operation.",
+          "samples": [
+            36.75,
+            49.0,
+            92.25,
+            87.5,
+            14.5
+          ]
+        },
+        {
+          "name": "ActualCost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the actual cost per work order routing operation.",
+          "samples": [
+            36.75,
+            49.0,
+            92.25,
+            87.5,
+            14.5
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of work order routing modifications.",
+          "samples": [
+            "2011-06-19 00:00:00.000",
+            "2011-06-15 00:00:00.000",
+            "2011-06-23 00:00:00.000",
+            "2011-06-17 00:00:00.000",
+            "2011-06-27 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

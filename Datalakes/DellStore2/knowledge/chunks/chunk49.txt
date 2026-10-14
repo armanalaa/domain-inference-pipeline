@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and expected demand.
+- Product managers update product details when changes occur, such as price adjustments or discontinuation.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customers place orders through the online store using their personal information stored in the customers table.
+- Customer service agents handle order inquiries, address issues, and provide updates on order statuses.
+- HR managers maintain employee records, including customer service representatives' contact details and performance evaluations.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff receive and store incoming products according to the quan_in_stock column in the inventory table.
+- Warehouse staff track product quantities as they are sold or returned, updating the sales column in the inventory table.
+- Purchasing teams monitor inventory levels and reorder products when the quantity falls below the quan_low threshold.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Agents
+
+Activity:
+- Sales representatives process customer orders by generating order IDs and populating the cust_hist table with relevant details.
+- Warehouse staff pick and pack ordered products for shipment based on the orderlines table.
+- Customer service agents confirm order shipments to customers, updating the orders table with tracking information.
+
+## 5. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate net amounts due from customers based on order details and prices stored in the orders and products tables.
+- Finance teams apply taxes according to customer location and product category, updating the tax column in the orders table.
+- Finance teams record total amounts received from customers after taxes, updating the totalamount column in the orders table.
+
+## 6. Data Governance
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators maintain data integrity by ensuring accurate and consistent data across all tables.
+- Data analysts document key information about databases, tables, columns, relationships, and data models using tools like Data Dictionary & Data Catalog.
+- Data analysts publish this documentation to the analyst community for easy access and understanding of the DellStore2 database structure.

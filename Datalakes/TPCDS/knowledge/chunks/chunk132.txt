@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and the center's workload (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Call center employees answer incoming calls and assist customers with their inquiries or issues (cc_rec_start_date).
+- Market managers oversee the call center's operations, ensuring adherence to quality standards and service level agreements (cc_class, cc_market_manager).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog with product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (not specified in provided schema).
+
+## 4. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog and specifying quantities (cr_item_sk).
+- Sales representatives process orders, confirming availability, calculating totals, and scheduling delivery (not specified in provided schema).
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Delivery Personnel
+
+Activity:
+- Warehouse staff pick and pack ordered items for shipment (not specified in provided schema).
+- Delivery personnel transport the orders to their destinations, updating status as they progress (cr_ship_mode_sk).
+
+## 6. Returns Processing
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers initiate returns by contacting customer service and providing order details (cr_returned_date_sk, cr_refunded_customer_sk).
+- Customer service representatives process the return, updating inventory levels and issuing refunds (cr_reason_sk, cr_order_number).
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments for their orders using various methods (not specified in provided schema).
+- The finance department records the transactions, updates customer accounts, and issues invoices if necessary (cr_refunded_customer_sk, cr_call_center_sk).
+
+## 8. Performance Monitoring
+
+Performed By: System Administrators, Data Analysts
+
+Activity:
+- System administrators ensure the system is running smoothly and performs checkpoints as required (checkpoint interval, checkpoint duration).
+- Data analysts analyze performance data to identify trends, bottlenecks, and areas for improvement (response times, frequency distribution of response times).

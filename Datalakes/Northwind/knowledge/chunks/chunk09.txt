@@ -1,0 +1,71 @@
+ # Northwind — Business Workflows
+
+## 1. Product Registration
+
+Performed By: Product Managers
+
+Activity:
+- Record product details such as name, category, and list price in the products table.
+- Assign a unique product code to each item registered.
+- Set initial quantities on hand and reorder level for the new product.
+
+## 2. Order Placement
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Place orders by specifying customer details, selected products, and desired quantities.
+- Record order date, required delivery date, and shipment details in the orders table.
+
+## 3. Order Approval
+
+Performed By: Purchasing Teams
+
+Activity:
+- Review purchase orders for accuracy and approve them to initiate product procurement.
+- Update the status of approved purchase orders in the order_details table.
+
+## 4. Product Procurement
+
+Performed By: Warehouse Staff, Suppliers
+
+Activity:
+- Receive products from suppliers and update quantities on hand for each item in the products table.
+- Record shipment details such as ship name, address, and country in the orders table.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Track quantities of products on hand and on order in the products and order_details tables.
+- Update quantities when products are received or shipped out.
+
+## 6. Reorder Process
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Monitor inventory levels and generate purchase orders for items with low stock.
+- Set default quantity for each product in the purchase order.
+
+## 7. Invoice Generation
+
+Performed By: Finance
+
+Activity:
+- Generate invoices based on shipped orders and update their status accordingly in the orders table.
+
+## 8. Return Management
+
+Performed By: Customers, Warehouse Staff
+
+Activity:
+- Process returns of products by updating quantities on hand and marking them as discontinued in the products table.
+
+## 9. Reporting and Analysis
+
+Performed By: Finance, Management
+
+Activity:
+- Generate reports on sales, inventory levels, and financial performance using data from the customers, orders, order_details, and products tables.

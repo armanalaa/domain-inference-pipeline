@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "Baseball Team and Player Data Governance",
+    "definition": "The process of managing, maintaining, and governing data related to teams, players, awards, statistics, and other baseball-related information.",
+    "tables": [
+      "TeamsFranchises"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 4,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "TeamsFranchises": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "franchID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in TeamsFranchises",
+          "samples": [
+            "AB",
+            "AB2",
+            "ABC",
+            "AC1",
+            "AC2"
+          ]
+        },
+        {
+          "name": "franchName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the unique names of baseball franchises, often representing different iterations or relocations of a team.",
+          "samples": [
+            "Algona Brownies",
+            "Indianapolis ABCs",
+            "All Cubans",
+            "Akron Grays / Cleveland Giants",
+            "Altoona Mountain City"
+          ]
+        },
+        {
+          "name": "active",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Indicates the current active status of each franchise (N denotes inactive).",
+          "samples": [
+            "N",
+            "Y",
+            "NA",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "NAassoc",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "NAassoc column stores initials of National Association (NAL) or American League (AL) or National League (NL) or Continental League (CL) for baseball franchises.",
+          "samples": [
+            "PNA",
+            "BNA",
+            "ATL",
+            "CNA",
+            "CHC"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Player and Statistical Data Management",
+    "definition": "The process of maintaining, updating, collecting, and analyzing player data and statistics.",
+    "tables": [
+      "People"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 25,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "People": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "﻿ID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the ﻿ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "aardsda01",
+            "aaronha01",
+            "aaronto01",
+            "aasedo01",
+            "abadan01"
+          ]
+        },
+        {
+          "name": "birthYear",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the year a person was born.",
+          "samples": [
+            1981,
+            1934,
+            1939,
+            1954,
+            1972
+          ]
+        },
+        {
+          "name": "birthMonth",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the month of birth for individuals, ranging from 1 (January) to 12 (December).",
+          "samples": [
+            12,
+            2,
+            8,
+            9,
+            11
+          ]
+        },
+        {
+          "name": "birthDay",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores baseball players' birthdays as 4-digit year of birth.",
+          "samples": [
+            27,
+            5,
+            8,
+            25,
+            17
+          ]
+        },
+        {
+          "name": "birthCity",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the city of birth for individuals in the People table.",
+          "samples": [
+            "Denver",
+            "Mobile",
+            "Orange",
+            "Palm Beach",
+            "La Romana"
+          ]
+        },
+        {
+          "name": "birthCountry",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country of birth for individuals in the People table.",
+          "samples": [
+            "USA",
+            "D.R.",
+            "Venezuela",
+            "Cuba",
+            "México"
+          ]
+        },
+        {
+          "name": "birthState",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the state where players were born (e.g., CO, AL, CA, FL).",
+          "samples": [
+            "CO",
+            "AL",
+            "CA",
+            "FL",
+            "La Romana"
+          ]
+        },
+        {
+          "name": "deathYear",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the year a person in the LahmanBaseball database passed away.",
+          "samples": [
+            2021,
+            1984,
+            1905,
+            1957,
+            1962
+          ]
+        },
+        {
+          "name": "deathMonth",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the month (1-12) of a person's death in the People table.",
+          "samples": [
+            1,
+            8,
+            5,
+            6,
+            4
+          ]
+        },
+        {
+          "name": "deathDay",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the day of a person's death (1-31), as an integer.",
+          "samples": [
+            22,
+            16,
+            17,
+            6,
+            11
+          ]
+        },
+        {
+          "name": "deathCountry",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country where a person died (all instances are USA).",
+          "samples": [
+            "USA",
+            "Cuba",
+            "México",
+            "P.R.",
+            "D.R."
+          ]
+        },
+        {
+          "name": "deathState",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Records the state where individuals in the People table passed away (based on sample values).",
+          "samples": [
+            "GA",
+            "NJ",
+            "FL",
+            "VT",
+            "CA"
+          ]
+        },
+        {
+          "name": "deathCity",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores cities where people died.",
+          "samples": [
+            "Atlanta",
+            "Pemberton",
+            "Fort Lauderdale",
+            "Colchester",
+            "San Francisco"
+          ]
+        },
+        {
+          "name": "nameFirst",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores first names of individuals in the People table, as exemplified by David, Hank, Tommie, Don, and Andy.",
+          "samples": [
+            "David",
+            "Hank",
+            "Tommie",
+            "Don",
+            "Andy"
+          ]
+        },
+        {
+          "name": "nameLast",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the last names of people in baseball, as demonstrated by examples Aardsma, Aaron, Abad.",
+          "samples": [
+            "Aardsma",
+            "Aaron",
+            "Aase",
+            "Abad",
+            "Abadie"
+          ]
+        },
+        {
+          "name": "nameGiven",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores first names of individuals, as demonstrated by examples David, Henry, Tommie, Donald, and Fausto.",
+          "samples": [
+            "David Allan",
+            "Henry Louis",
+            "Tommie Lee",
+            "Donald William",
+            "Fausto Andres"
+          ]
+        },
+        {
+          "name": "weight",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the weight of baseball players, typically in pounds.",
+          "samples": [
+            215,
+            180,
+            190,
+            184,
+            235
+          ]
+        },
+        {
+          "name": "height",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores player heights in inches (rounded down) based on sample values.",
+          "samples": [
+            75,
+            72,
+            73,
+            74,
+            71
+          ]
+        },
+        {
+          "name": "bats",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Players' preferred batting hand (Right or Left)",
+          "samples": [
+            "R",
+            "L",
+            "B",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "throws",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a player's handedness (R for right-handed, L for left-handed) in baseball.",
+          "samples": [
+            "R",
+            "L",
+            "B",
+            "S",
+            null
+          ]
+        },
+        {
+          "name": "debut",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores baseball players' professional debut dates (format: YYYY-MM-DD).",
+          "samples": [
+            "2004-04-06",
+            "1954-04-13",
+            "1962-04-10",
+            "1977-07-26",
+            "2001-09-10"
+          ]
+        },
+        {
+          "name": "bbrefID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the bbref entity",
+          "samples": [
+            "aardsda01",
+            "aaronha01",
+            "aaronto01",
+            "aasedo01",
+            "abadan01"
+          ]
+        },
+        {
+          "name": "finalGame",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores dates of players' final Major League Baseball games.",
+          "samples": [
+            "2015-08-23",
+            "1976-10-03",
+            "1971-09-26",
+            "1990-10-03",
+            "2006-04-13"
+          ]
+        },
+        {
+          "name": "retroID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the retro entity",
+          "samples": [
+            "aardd001",
+            "aaroh101",
+            "aarot101",
+            "aased001",
+            "abada001"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal information and qualifications (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Call center employees answer incoming calls and assist customers according to the call center's class (cc_class).
+- Market managers oversee call center operations within their designated market (cc_mkt_id, cc_market_manager).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, etc.).
+- Warehouse staff update inventory levels when new items are added to the catalog.
+
+## 4. Customer Interaction
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders for specific products through the call center (cr_item_sk).
+- Sales representatives process customer orders and provide order details (cr_order_number).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents record returns from customers (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update inventory levels when processing customer returns (cr_warehouse_sk).
+
+## 6. Rebadging Results
+
+Performed By: Test Sponsors, Reviewers
+
+Activity:
+- Test sponsors rebadge existing results by publishing new ones using the same performance tests (cr_call_center_sk, cr_catalog_page_sk).
+- Reviewers ensure that the rebadged result complies with TPC policies and standards.
+
+## 7. Multiple Currency Results
+
+Performed By: Test Sponsors, Reviewers
+
+Activity:
+- Test sponsors publish results in multiple currencies by performing currency conversion (cr_ship_mode_sk).
+- Reviewers ensure that the results comply with TPC policies and standards.

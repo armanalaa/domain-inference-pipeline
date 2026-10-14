@@ -1,0 +1,56 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the current staffing needs and employee skills (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_class, ..., cc_zip).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls during business hours (cc_hours) and handle inquiries or complaints related to products or services.
+- Representatives record call details, such as the customer's name, contact information, and issue description (cc_call_center_id, cc_rec_start_date, ...).
+
+## 3. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers define marketing strategies for specific markets based on market analysis and customer demographics (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- Call center managers implement the marketing strategies by adjusting call center operations or staffing levels accordingly.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, ...).
+- IT staff update the catalog page with detailed product information, images, and descriptions (cp_description, cp_type).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details, such as the returned date, time, item SKU, and reason for return (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff receive the returned items, verify their condition, and update the inventory accordingly (cr_item_sk, ...).
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels for each product and notify purchasing teams when stock is low (cc_warehouse_sk).
+- Purchasing teams issue purchase orders to suppliers for necessary items (not specified in the provided schema).
+
+## 7. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records financial transactions, such as sales, returns, and expenses, and generates reports on revenue, costs, and profitability (not specified in the provided schema).

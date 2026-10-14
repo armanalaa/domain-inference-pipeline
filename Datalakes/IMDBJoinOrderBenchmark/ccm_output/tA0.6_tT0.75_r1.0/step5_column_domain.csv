@@ -1,0 +1,109 @@
+table,column,domain_id,domain_name
+cast_info,id,0,Content Information Management
+cast_info,movie_id,0,Content Information Management
+cast_info,note,0,Content Information Management
+cast_info,nr_order,0,Content Information Management
+cast_info,person_id,0,Content Information Management
+cast_info,person_role_id,0,Content Information Management
+cast_info,role_id,0,Content Information Management
+complete_cast,id,0,Content Information Management
+complete_cast,movie_id,0,Content Information Management
+complete_cast,status_id,0,Content Information Management
+complete_cast,subject_id,0,Content Information Management
+info_type,id,0,Content Information Management
+info_type,info,0,Content Information Management
+movie_companies,company_id,0,Content Information Management
+movie_companies,company_type_id,0,Content Information Management
+movie_companies,id,0,Content Information Management
+movie_companies,movie_id,0,Content Information Management
+movie_companies,note,0,Content Information Management
+movie_info,id,0,Content Information Management
+movie_info,info,0,Content Information Management
+movie_info,info_type_id,0,Content Information Management
+movie_info,movie_id,0,Content Information Management
+movie_info,note,0,Content Information Management
+movie_info_idx,id,0,Content Information Management
+movie_info_idx,info,0,Content Information Management
+movie_info_idx,info_type_id,0,Content Information Management
+movie_info_idx,movie_id,0,Content Information Management
+movie_info_idx,note,0,Content Information Management
+movie_keyword,id,0,Content Information Management
+movie_keyword,keyword_id,0,Content Information Management
+movie_keyword,movie_id,0,Content Information Management
+movie_link,id,0,Content Information Management
+movie_link,link_type_id,0,Content Information Management
+movie_link,linked_movie_id,0,Content Information Management
+movie_link,movie_id,0,Content Information Management
+person_info,id,0,Content Information Management
+person_info,info,0,Content Information Management
+person_info,info_type_id,0,Content Information Management
+person_info,note,0,Content Information Management
+person_info,person_id,0,Content Information Management
+role_type,id,0,Content Information Management
+role_type,role,0,Content Information Management
+aka_name,id,1,Alias and Name Information Management
+aka_name,imdb_index,1,Alias and Name Information Management
+aka_name,md5sum,1,Alias and Name Information Management
+aka_name,name,1,Alias and Name Information Management
+aka_name,name_pcode_cf,1,Alias and Name Information Management
+aka_name,name_pcode_nf,1,Alias and Name Information Management
+aka_name,person_id,1,Alias and Name Information Management
+aka_name,surname_pcode,1,Alias and Name Information Management
+char_name,id,1,Alias and Name Information Management
+char_name,imdb_id,1,Alias and Name Information Management
+char_name,imdb_index,1,Alias and Name Information Management
+char_name,md5sum,1,Alias and Name Information Management
+char_name,name,1,Alias and Name Information Management
+char_name,name_pcode_nf,1,Alias and Name Information Management
+char_name,surname_pcode,1,Alias and Name Information Management
+company_name,country_code,1,Alias and Name Information Management
+company_name,id,1,Alias and Name Information Management
+company_name,imdb_id,1,Alias and Name Information Management
+company_name,md5sum,1,Alias and Name Information Management
+company_name,name,1,Alias and Name Information Management
+company_name,name_pcode_nf,1,Alias and Name Information Management
+company_name,name_pcode_sf,1,Alias and Name Information Management
+name,gender,1,Alias and Name Information Management
+name,id,1,Alias and Name Information Management
+name,imdb_id,1,Alias and Name Information Management
+name,imdb_index,1,Alias and Name Information Management
+name,md5sum,1,Alias and Name Information Management
+name,name,1,Alias and Name Information Management
+name,name_pcode_cf,1,Alias and Name Information Management
+name,name_pcode_nf,1,Alias and Name Information Management
+name,surname_pcode,1,Alias and Name Information Management
+aka_title,episode_nr,2,Media Asset and Metadata Management
+aka_title,episode_of_id,2,Media Asset and Metadata Management
+aka_title,id,2,Media Asset and Metadata Management
+aka_title,imdb_index,2,Media Asset and Metadata Management
+aka_title,kind_id,2,Media Asset and Metadata Management
+aka_title,md5sum,2,Media Asset and Metadata Management
+aka_title,movie_id,2,Media Asset and Metadata Management
+aka_title,note,2,Media Asset and Metadata Management
+aka_title,phonetic_code,2,Media Asset and Metadata Management
+aka_title,production_year,2,Media Asset and Metadata Management
+aka_title,season_nr,2,Media Asset and Metadata Management
+aka_title,title,2,Media Asset and Metadata Management
+comp_cast_type,id,2,Media Asset and Metadata Management
+comp_cast_type,kind,2,Media Asset and Metadata Management
+company_type,id,2,Media Asset and Metadata Management
+company_type,kind,2,Media Asset and Metadata Management
+keyword,id,2,Media Asset and Metadata Management
+keyword,keyword,2,Media Asset and Metadata Management
+keyword,phonetic_code,2,Media Asset and Metadata Management
+kind_type,id,2,Media Asset and Metadata Management
+kind_type,kind,2,Media Asset and Metadata Management
+link_type,id,2,Media Asset and Metadata Management
+link_type,link,2,Media Asset and Metadata Management
+title,episode_nr,2,Media Asset and Metadata Management
+title,episode_of_id,2,Media Asset and Metadata Management
+title,id,2,Media Asset and Metadata Management
+title,imdb_id,2,Media Asset and Metadata Management
+title,imdb_index,2,Media Asset and Metadata Management
+title,kind_id,2,Media Asset and Metadata Management
+title,md5sum,2,Media Asset and Metadata Management
+title,phonetic_code,2,Media Asset and Metadata Management
+title,production_year,2,Media Asset and Metadata Management
+title,season_nr,2,Media Asset and Metadata Management
+title,series_years,2,Media Asset and Metadata Management
+title,title,2,Media Asset and Metadata Management

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+- Product managers set reorder points (date_low and quan_low) for each item to ensure timely restocking.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives engage with potential customers, capturing their contact information (email, phone, address).
+- HR managers create customer accounts in the system, assigning unique customerids and setting credit card details.
+- Customers browse the catalog, add items to their cart, and place orders by specifying quantities for each product.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives confirm order details with customers and generate orderids.
+- Warehouse staff pick and pack ordered items, updating the inventory accordingly.
+- Purchasing teams issue purchase orders to suppliers for any products not in stock.
+
+## 4. Invoice Generation
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate netamount, tax, and totalamount for each order based on product prices and quantities.
+- They generate invoices containing the order details and send them to customers via email.
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance Teams
+
+Activity:
+- Customers pay their invoices using credit cards, transferring the necessary information (creditcardtype, creditcard, creditcardexpiration) to the system.
+- Finance teams record these payments and update the customer accounts accordingly.
+
+## 6. Inventory Replenishment
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- When inventory levels drop below reorder points, warehouse staff initiate reordering by updating date_reordered and quan_reordered for the relevant products.
+- Purchasing teams process these reorders, placing them with suppliers and tracking their progress.
+
+## 7. Performance Analysis
+
+Performed By: Data Analysts
+
+Activity:
+- Data analysts analyze sales data (orderlines, orders, inventory) to identify trends, best-selling products, and areas for improvement.
+- They present their findings to management, who use this information to make strategic decisions about product offerings and marketing strategies.

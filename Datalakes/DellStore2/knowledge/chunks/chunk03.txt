@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price. (products)
+- Inventory staff update the quantity in stock for each product based on incoming shipments or sales. (inventory)
+- Product managers set reorder levels for each product, specifying the minimum quantity that triggers a reorder. (reorder)
+
+## 2. Category Management
+
+Performed By: Product Managers, Data Analysts
+
+Activity:
+- Product managers assign categories to products based on their content or genre. (categories)
+- Data analysts monitor sales trends across different product categories to identify popular and underperforming areas.
+
+## 3. Customer Registration
+
+Performed By: Customer Service Representatives, IT Staff
+
+Activity:
+- Customer service representatives assist new customers in creating accounts by capturing their personal information, credit card details, and setting up usernames and passwords. (customers)
+
+## 4. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog, select desired products, and add them to their shopping cart.
+- Sales representatives help customers with complex orders or special requests, adjusting quantities, product options, and delivery details as needed. (orderlines)
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives generate invoices based on the customer's order and send them to the customer for review.
+- Customer service representatives address any issues or concerns raised by customers during the order review process.
+- Warehouse staff pick and pack orders according to the details provided in the orderlines table, ensuring each item is correctly accounted for.
+
+## 6. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Staff
+
+Activity:
+- Warehouse staff prepare shipments by bundling products, applying shipping labels, and arranging them in appropriate packaging.
+- Shipping staff coordinate with carriers to schedule pickups and track the progress of orders en route to customers.
+
+## 7. Invoice Settlement
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record the net amount, tax, and total amount for each order in the orders table.
+- Finance staff reconcile payments received from customers with outstanding invoices, marking them as paid in the orders table.
+
+## 8. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints regarding orders, products, or account information. (customers)
+- Customer service representatives update customer records with any changes to contact details or preferences.

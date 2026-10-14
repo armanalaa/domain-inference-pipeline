@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Warehouse Management
+
+Performed By: Warehouse Managers, Warehouse Staff
+
+Activity:
+- Warehouse managers assign warehouses to specific districts (cc_division).
+- Warehouse staff track the square footage of each warehouse (cc_sq_ft).
+- Warehouse staff record the hours of operation for each warehouse (cc_hours).
+- Warehouse managers assign a manager to each warehouse (cc_manager).
+- Warehouse staff maintain the address and location details of each warehouse (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country, cc_gmt_offset).
+
+## 2. Call Center Management
+
+Performed By: Call Center Managers, Call Center Employees
+
+Activity:
+- Call center managers assign call centers to specific markets (cc_mkt_id).
+- Call center managers categorize each call center based on its class (cc_class).
+- Call center employees handle customer calls within the assigned call center (implied by cc_call_center_sk).
+- Call center managers determine the tax percentage for each call center (cc_tax_percentage).
+
+## 3. Market Management
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers oversee multiple markets (cc_division).
+- Sales representatives register new items in the catalog for their respective markets (implied by cp_catalog_page_sk).
+- Market managers categorize each market based on its class and description (cc_mkt_class, cc_mkt_desc).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (implied by cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Sales representatives update the catalog with new or discontinued items as needed.
+
+## 5. Order Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer orders by recording order details (implied by cr_order_number).
+- Warehouse staff retrieve the necessary items from stock for each order (STOCK, ITEM).
+- Warehouse staff update the inventory after an order is fulfilled.
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the inventory after a returned item is received.
+- Warehouse staff ship the returned items back to the warehouse.

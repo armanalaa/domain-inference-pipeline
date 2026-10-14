@@ -1,0 +1,85 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Order Process Management",
+    "definition": "The unifying capability across all tables is the management of order-related details, including customer, employee, shipper, and financial aspects.",
+    "tables": [
+      "orders"
+    ],
+    "phi_scores": {
+      "C7": 0.2896,
+      "C3": 0.2428,
+      "C2": 0.2073,
+      "C4": 0.1976,
+      "C8": 0.1469,
+      "C9": 0.1435,
+      "C1": 0.1294,
+      "C6": 0.1113,
+      "C5": 0.0762
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Customer-Employee-Shipper Management",
+    "definition": "The process of managing customer, employee, and shipper details and information.",
+    "tables": [
+      "customers",
+      "employees",
+      "shippers",
+      "suppliers"
+    ],
+    "phi_scores": {
+      "C2": 0.2329,
+      "C9": 0.2124,
+      "C1": 0.1932,
+      "C4": 0.1899,
+      "C7": 0.1741,
+      "C3": 0.1725,
+      "C8": 0.1419,
+      "C6": 0.1285,
+      "C5": 0.11
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Product Order Information Management",
+    "definition": "The process of managing product details and order-related information",
+    "tables": [
+      "order_details",
+      "products"
+    ],
+    "phi_scores": {
+      "C6": 0.2768,
+      "C5": 0.2749,
+      "C7": 0.2727,
+      "C4": 0.2191,
+      "C3": 0.1864,
+      "C8": 0.1686,
+      "C2": 0.1646,
+      "C1": 0.1389,
+      "C9": 0.1225
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Territory Management",
+    "definition": "The process of managing territories and their associated regions, employees, and categories.",
+    "tables": [
+      "categories",
+      "employee_territories",
+      "regions",
+      "territories"
+    ],
+    "phi_scores": {
+      "C9": 0.1844,
+      "C2": 0.174,
+      "C4": 0.1622,
+      "C5": 0.143,
+      "C1": 0.1421,
+      "C3": 0.1388,
+      "C6": 0.125,
+      "C7": 0.1229,
+      "C8": 0.0996
+    }
+  }
+]

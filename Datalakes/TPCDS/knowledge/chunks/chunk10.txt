@@ -1,0 +1,48 @@
+ # TPC-DS — Business Workflows
+
+## 1. Technical Subcommittee Formation and Management
+
+Performed By: Benchmark Subcommittees, Working Groups, Membership Committee
+
+Activity:
+- Benchmark Subcommittees and Working Groups are formed to address specific technical issues (membership requirements).
+- The Membership Committee manages the membership process, ensuring minimum membership requirements are met.
+
+## 2. Meeting Organization and Conduct
+
+Performed By: Technical Subcommittee Chairperson, Meeting Attendees
+
+Activity:
+- Technical Subcommittee meetings are scheduled according to the meeting schedule, with possible modifications if necessary.
+- The chairperson conducts meetings following established rules, including duties such as leading discussions and enforcing meeting etiquette.
+
+## 3. General Meetings Management
+
+Performed By: Meeting Attendees, Chairperson
+
+Activity:
+- General meetings are held according to the frequency defined in the calendar of recurring events.
+- Meeting minutes are recorded during general meetings for future reference.
+
+## 4. Voting and Decision Making
+
+Performed By: Meeting Attendees, Chairperson
+
+Activity:
+- Voting rules are applied during general meetings to make decisions on various matters.
+- Mail ballots may be conducted when necessary, following the established process for conducting a mail ballot.
+
+## 5. Benchmark Standard Development and Revision
+
+Performed By: Technical Subcommittees, Working Groups
+
+Activity:
+- Technical Subcommittees and Working Groups develop and revise benchmark standards according to the rules outlined in the Technical Subcommittee Operating Rules.
+
+## 6. Results Reporting and Publication
+
+Performed By: Test Sponsor, Reporting Processor
+
+Activity:
+- The test sponsor collects processor information for reporting purposes.
+- Pre-publication certification is conducted before TPC results are published on the TPC Results List.

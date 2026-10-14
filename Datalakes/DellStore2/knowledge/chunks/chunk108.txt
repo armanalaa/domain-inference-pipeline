@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and demand forecasts.
+- Product managers update product details when new versions or variations are released.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, providing product information and assisting with orders.
+- Customer service agents handle customer inquiries, address concerns, and process returns or refunds.
+- Marketing personnel create targeted campaigns to attract new customers and retain existing ones.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Teams
+
+Activity:
+- Sales representatives confirm orders with customers and update the order status in the system.
+- Warehouse staff pick and pack items for shipment based on order details.
+- Finance teams record the order details, calculate taxes, and generate invoices.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels as items are received or shipped.
+- Purchasing teams monitor stock levels and place reorders when quantities drop below the minimum threshold.
+- Inventory managers analyze sales data to forecast demand and optimize stock levels.
+
+## 5. Account Management
+
+Performed By: Account Managers, Finance Teams
+
+Activity:
+- Account managers handle account renewals or upgrades for existing customers.
+- Finance teams process payments from customers and update their accounts accordingly.
+- Customer service agents address billing inquiries and disputes.
+
+## 6. Technical Support
+
+Performed By: Technical Support Specialists
+
+Activity:
+- Technical support specialists assist customers with product-related issues or technical questions.
+- They troubleshoot problems, provide solutions, and escalate complex issues when necessary.
+
+## 7. Data Management
+
+Performed By: Data Analysts, IT Staff
+
+Activity:
+- Data analysts gather and analyze data from various sources to generate reports and insights.
+- IT staff maintain the database infrastructure, ensuring its security, performance, and scalability.
+- They also implement new features or improvements based on business needs.

@@ -1,0 +1,73 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Data Management
+
+Performed By: Data Management Team, HR Managers
+
+Activity:
+- Data Management Team maintains customer records by updating contact details and personal information from customers.
+- HR Managers verify and confirm the identity of new employees during onboarding process using customer data.
+
+## 2. Customer Registration
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers create accounts by providing necessary details such as name, address, email, phone number, and password.
+- Sales Representatives assist customers in setting up their accounts during product purchases or demos.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Inventory Team
+
+Activity:
+- Product Managers register new items in the catalog by recording product code, name, category, and list price.
+- Inventory Team updates inventory levels when a new product is added to the catalog.
+
+## 4. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+- Sales Representatives process orders for customers who require assistance or have complex requests.
+
+## 5. Inventory Tracking
+
+Performed By: Warehouse Staff, Inventory Team
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity of products in stock after order fulfillment.
+- Inventory Team monitors sales and adjusts inventory levels accordingly to maintain optimal stock.
+
+## 6. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack customer orders based on orderlines.
+- Shipping Department prepares shipments for delivery by labeling packages and arranging transportation.
+
+## 7. Order Processing
+
+Performed By: Finance Team, Sales Representatives
+
+Activity:
+- Finance Team calculates net amount, tax, and total amount for each order based on product prices and shipping costs.
+- Sales Representatives review orders to ensure accuracy before they are processed and sent to customers.
+
+## 8. Reorder Management
+
+Performed By: Inventory Team, Purchasing Teams
+
+Activity:
+- Inventory Team identifies products that need replenishment based on reorder data.
+- Purchasing Teams place orders for new inventory when product quantities reach the reorder point.
+
+## 9. Privacy Request Handling
+
+Performed By: Customer Support, Data Management Team
+
+Activity:
+- Customer Support assists customers in making privacy requests such as accessing, correcting, or deleting their personal information.
+- Data Management Team processes and fulfills customer privacy requests according to company policy and regulations.

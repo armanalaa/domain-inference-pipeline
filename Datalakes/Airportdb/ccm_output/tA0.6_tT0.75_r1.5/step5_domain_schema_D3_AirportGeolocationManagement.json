@@ -1,0 +1,167 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "AirportGeolocationManagement",
+    "definition": "The process of managing geolocation data and airport information",
+    "tables": [
+      "airport",
+      "airport_geo"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "airport": {
+      "_description": "Captures unique identifiers and codes for global airports along with their respective names.",
+      "columns": [
+        {
+          "name": "airport_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in airport",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "iata",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores three-letter IATA codes for airports.",
+          "samples": [
+            "LCG",
+            "N",
+            "TID",
+            "DIR",
+            "QUN"
+          ]
+        },
+        {
+          "name": "icao",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores 4-character ICAO codes identifying airports worldwide.",
+          "samples": [
+            "LECO",
+            "7Y7",
+            "DAOB",
+            "HADR",
+            "RKNC"
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of airport names, including spaces and special characters.",
+          "samples": [
+            "A CORUNA",
+            "A R S SPORT STRIP",
+            "A. BOUSSOUF AIN BOUCHEKIF",
+            "A.T.D. YILMA INTL",
+            "A-306"
+          ]
+        }
+      ]
+    },
+    "airport_geo": {
+      "_description": "Captures geographical details of airports, including airport ID, name, city, country, latitude, longitude, and geolocation.",
+      "columns": [
+        {
+          "name": "airport_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in airport_geo",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of airport names, often including location identifiers.",
+          "samples": [
+            "A CORUNA",
+            "A R S SPORT STRIP",
+            "A. BOUSSOUF AIN BOUCHEKIF",
+            "A.T.D. YILMA INTL",
+            "A-306"
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of airport city names, such as A CORUNA, BELLE PLAINE, TIARET, DIRE DAWA, CHUNCHON.",
+          "samples": [
+            "A CORUNA",
+            "BELLE PLAINE",
+            "TIARET",
+            "DIRE DAWA",
+            "CHUNCHON"
+          ]
+        },
+        {
+          "name": "country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of country names for airports.",
+          "samples": [
+            "SPAIN",
+            "UNITED STATES",
+            "ALGERIA",
+            "ETHIOPIA",
+            "KOREA"
+          ]
+        },
+        {
+          "name": "latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for airport locations.",
+          "samples": [
+            43.301944,
+            44.666667,
+            35.341389,
+            9.614167,
+            37.885
+          ]
+        },
+        {
+          "name": "longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes of airports in decimal degrees.",
+          "samples": [
+            -8.377222,
+            -93.783611,
+            1.466944,
+            41.86,
+            127.715
+          ]
+        },
+        {
+          "name": "geolocation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores Base64-encoded WKB geometries representing airport locations.",
+          "samples": [
+            "AAAAAAEBAAAAmZzaGaamRUDWqfI9I8EgwA==",
+            "AAAAAAEBAAAARSkhWFVVRkBLcsCuJnJXwA==",
+            "AAAAAAEBAAAAaRt/orKrQUDJA5FFmnj3Pw==",
+            "AAAAAAEBAAAAm5DWGHQ6I0CuR+F6FO5EQA==",
+            "AAAAAAEBAAAA4XoUrkfxQkD2KFyPwu1fQA=="
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+ # adventure_works — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Purchasing teams issue purchase orders for raw materials based on the required quantity for each item.
+
+## 2. Employee Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers update employee records with personal details, job titles, and salaries.
+- Warehouse staff track employee shifts to ensure proper workforce distribution.
+
+## 3. Employee Department Assignment
+
+Performed By: HR Managers
+
+Activity:
+- HR managers assign employees to departments based on their roles and organizational structure.
+
+## 4. Employee Department History Tracking
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers record employee department transitions, including start and end dates.
+- Warehouse staff update employee shift assignments accordingly when departments change.
+
+## 5. Employee Pay Management
+
+Performed By: Finance, HR Managers
+
+Activity:
+- HR managers update employee pay history with rate changes, pay frequencies, and vacation/sick leave hours.
+- Finance records the updated pay information for each employee.
+
+## 6. Address Management
+
+Performed By: Customers, Employees
+
+Activity:
+- Customers provide their addresses during order placement.
+- Employees update their personal contact information in the address book.
+
+## 7. Product Line Maintenance
+
+Performed By: Product Managers
+
+Activity:
+- Product managers maintain product line descriptions, including maintenance details and specifications.
+
+## 8. Manufacturing Instructions Management
+
+Performed By: Production Engineers
+
+Activity:
+- Production engineers document manufacturing instructions for each product model.
+
+## 9. Bill of Materials Generation
+
+Performed By: Production Engineers
+
+Activity:
+- Production engineers generate a multilevel bill of materials for each assembly, identifying components and their relationships.
+
+## 10. Product Usage Tracking
+
+Performed By: Production Engineers
+
+Activity:
+- Production engineers track which products are used in other assemblies to ensure efficient production planning.

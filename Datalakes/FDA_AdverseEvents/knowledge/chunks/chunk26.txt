@@ -1,0 +1,60 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Regulatory Affairs Specialists, Medical Writers
+
+Activity:
+- Regulatory affairs specialists receive adverse event reports from various sources.
+- Medical writers review and analyze the reported events for potential safety concerns.
+- Regulatory affairs specialists assign unique identifiers to each adverse event report.
+- Medical writers classify adverse events based on their nature, severity, and product involvement.
+
+## 2. Data Entry and Validation
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input the received adverse event reports into the FDA_AdverseEvents database.
+- They ensure all required fields are filled, including reporter details, event description, and product information.
+- Data entry clerks validate the entered data for accuracy and completeness before submission.
+
+## 3. Language Translation and Localization
+
+Performed By: Translators, Localization Specialists
+
+Activity:
+- Translators translate adverse event reports from various languages into English.
+- Localization specialists ensure that all translated reports maintain their original context and meaning.
+
+## 4. Case Review and Assessment
+
+Performed By: Safety Assessors
+
+Activity:
+- Safety assessors review the translated and validated adverse event reports.
+- They assess the potential risks associated with each reported event and determine if further investigation is needed.
+
+## 5. Investigation and Follow-up
+
+Performed By: Investigators, Medical Officers
+
+Activity:
+- Investigators conduct in-depth investigations on adverse events requiring further examination.
+- Medical officers provide medical expertise during the investigation process.
+
+## 6. Risk Communication and Management
+
+Performed By: Regulatory Affairs Managers, Product Safety Officers
+
+Activity:
+- Regulatory affairs managers communicate risk information to relevant stakeholders, such as product manufacturers.
+- Product safety officers develop and implement risk management strategies based on the assessment results.
+
+## 7. Report Generation and Archiving
+
+Performed By: Data Analysts, Database Administrators
+
+Activity:
+- Data analysts generate reports summarizing adverse event data for various purposes, such as trend analysis or regulatory reporting.
+- Database administrators archive the adverse event reports securely for future reference and auditing purposes.

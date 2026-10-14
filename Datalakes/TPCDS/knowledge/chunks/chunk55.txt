@@ -1,0 +1,45 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific call centers based on their expertise and workload (cc_division).
+- Warehouse staff update the square footage of each call center (cc_sq_ft).
+- Call center managers determine the operating hours for each call center (cc_hours).
+
+## 2. Market Management
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers categorize call centers based on market class and description (cc_mkt_class, cc_mkt_desc).
+- Sales representatives assign specific markets to each call center (cc_mkt_id).
+- Market managers appoint market managers for each division within the company (cc_market_manager).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Employees, Customers
+
+Activity:
+- Call center employees answer incoming calls from customers (cc_call_center_id).
+- Customers place orders for products through call centers (not specified in the schema).
+- Call center employees record product details such as code, name, category, and list price during order placement (not specified in the schema).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (not specified in the schema).
+- Warehouse staff update the catalog with new pages containing product details (cp_catalog_page_sk, cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns initiated by customers (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse with returned items (cr_warehouse_sk).
+- Customer service representatives record reasons for product returns (cr_reason_sk).

@@ -1,0 +1,69 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- New hires are assigned a unique ID by HR managers. (HumanResources Employee)
+- Personal details of the new employee are recorded, including name, birthdate, and marital status. (HumanResources Employee)
+- The employee's job title is specified, along with their department and level in the organizational hierarchy. (HumanResources Employee, HumanResources Department)
+- The hiring date is logged, and the new employee's salary status is determined. (HumanResources Employee)
+- The new hire's personal address is registered for future communication purposes. (Person Address)
+
+## 2. Employee Departure Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- HR managers mark the current employment status of an employee as inactive when they leave the company. (HumanResources Employee)
+- The end date of the employee's tenure is recorded, and their employment history is updated accordingly. (HumanResources EmployeeDepartmentHistory)
+
+## 3. Employee Address Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- Changes to an employee's address are logged by HR managers or warehouse staff. (Person BusinessEntityAddress)
+
+## 4. Employee Contact Information Update
+
+Performed By: HR Managers
+
+Activity:
+- HR managers update the contact information of employees, such as phone numbers and email addresses. (Person BusinessEntityContact)
+
+## 5. Employee Department Assignment & Transfer
+
+Performed By: HR Managers
+
+Activity:
+- HR managers assign new departments to employees or transfer them between departments. (HumanResources EmployeeDepartmentHistory)
+
+## 6. Employee Salary Adjustment
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers collaborate with the finance department to adjust an employee's salary based on performance or company policy changes. (HumanResources EmployeePayHistory)
+
+## 7. Document Management for Product Maintenance
+
+Performed By: Engineers, Technical Writers
+
+Activity:
+- Engineers and technical writers create and manage documents related to product maintenance. (Production.Document)
+
+## 8. Bicycle Assembly Diagram Creation
+
+Performed By: Designers, Illustrators
+
+Activity:
+- Designers and illustrators create diagrams for bicycle assembly instructions. (Production.Illustration)
+
+## 9. Product Management
+
+Performed By: Sales Representatives, Purchasing Teams, Warehouse Staff
+
+Activity:
+- Sales representatives manage the sale of products, while purchasing teams handle inventory replenishment and warehouse staff track product availability. (HumanResources Employee, Production.Product)

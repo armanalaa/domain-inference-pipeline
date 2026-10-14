@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their personal details and job roles.
+- HR managers update employee records with their qualifications, experience, and training history.
+
+## 2. Warehouse Operations
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff receive incoming shipments and record item details like SKU, quantity, and condition.
+- They track inventory levels and update the database when stock is low or out of stock.
+
+## 3. District Management
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers assign sales districts to warehouse locations based on demand and geographical coverage.
+- Sales representatives register new customers in their assigned districts by recording customer details and contact information.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives process customer orders by entering order details like item SKU, quantity, shipping address, and payment method.
+- Customer service representatives handle customer inquiries about order status, returns, or refunds.
+
+## 5. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory records when items are shipped to customers or returned.
+- Purchasing teams issue purchase orders for new stock based on current inventory levels and sales forecasts.
+
+## 6. Financial Management
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance department calculates taxes based on the customer's location and records them in the database.
+- Accounting staff records financial transactions like sales, returns, and expenses for reporting and analysis purposes.
+
+## 7. Marketing and Promotion
+
+Performed By: Marketing Managers, Web Developers
+
+Activity:
+- Marketing managers create promotional campaigns and update catalog pages with new products or offers.
+- Web developers maintain the company's website by ensuring it is user-friendly and up-to-date with current promotions.

@@ -1,0 +1,58 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators ensure the database schema is optimized for efficient data storage and retrieval.
+- Content managers input movie details such as title, production year, and cast information into the appropriate tables.
+- Database administrators create and maintain indexes to improve query performance.
+
+## 2. Actor Data Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers input actor details like name, gender, and biography into the relevant tables.
+- Data entry clerks record actor roles in various movies, associating them with specific movie IDs.
+
+## 3. Actor Aliases Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers identify and add aliases for actors to ensure consistent data representation across different sources.
+- Data entry clerks record the aliases along with their corresponding primary IDs in the aka_name table.
+
+## 4. Movie Keyword Association
+
+Performed By: Content Managers, Film Analysts
+
+Activity:
+- Film analysts categorize movies based on genre, theme, or other relevant keywords.
+- Content managers associate these keywords with their respective movie IDs in the movie_keyword table.
+
+## 5. Company and Production Information Management
+
+Performed By: Content Managers, Researchers
+
+Activity:
+- Researchers gather information about production companies involved in each movie.
+- Content managers input company details like name, country, and type into the appropriate tables.
+
+## 6. Movie Linking
+
+Performed By: Data Analysts, Content Managers
+
+Activity:
+- Data analysts identify relationships between movies (e.g., sequels, remakes).
+- Content managers create links between related movies using the movie_link table.
+
+## 7. Query Optimization and Execution
+
+Performed By: Database Administrators, System Analysts
+
+Activity:
+- System analysts analyze query performance and identify bottlenecks.
+- Database administrators optimize queries by adjusting indexes, rewriting SQL statements, or implementing other performance improvements.

@@ -1,0 +1,90 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 210
+Threshold θ_T           : 0.75
+Edges in G_T            : 53
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.5298
+  max    : 0.9891
+  mean   : 0.7086
+  median : 0.7075
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  info_type                       movie_info_idx                  0.9891      2  1.000  0.9891
+  comp_cast_type                  company_type                    0.9853      2  1.000  0.9853
+  char_name                       name                            0.9704      7  1.000  0.9704
+  comp_cast_type                  kind_type                       0.9671      2  1.000  0.9671
+  info_type                       person_info                     0.9656      2  1.000  0.9656
+  company_type                    kind_type                       0.9612      2  1.000  0.9612
+  movie_info                      movie_info_idx                  0.9279      5  1.000  0.9279
+  info_type                       movie_info                      0.9236      2  1.000  0.9236
+  aka_name                        char_name                       0.9114      7  1.000  0.9114
+  aka_name                        name                            0.9028      8  1.000  0.9028
+  company_name                    name                            0.9021      7  1.000  0.9021
+  aka_title                       title                           0.8887     12  1.000  0.8887
+  aka_name                        company_name                    0.8765      7  1.000  0.8765
+  aka_title                       movie_keyword                   0.8625      3  1.000  0.8625
+  cast_info                       movie_keyword                   0.8590      3  1.000  0.8590
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  info_type                       movie_info_idx                  0.9891
+  comp_cast_type                  company_type                    0.9853
+  char_name                       name                            0.9704
+  comp_cast_type                  kind_type                       0.9671
+  info_type                       person_info                     0.9656
+  company_type                    kind_type                       0.9612
+  movie_info                      movie_info_idx                  0.9279
+  info_type                       movie_info                      0.9236
+  aka_name                        char_name                       0.9114
+  aka_name                        name                            0.9028
+  company_name                    name                            0.9021
+  aka_title                       title                           0.8887
+  aka_name                        company_name                    0.8765
+  aka_title                       movie_keyword                   0.8625
+  cast_info                       movie_keyword                   0.8590
+  movie_keyword                   movie_link                      0.8423
+  cast_info                       role_type                       0.8385
+  kind_type                       title                           0.8369
+  char_name                       company_name                    0.8368
+  aka_title                       kind_type                       0.8337
+  movie_companies                 movie_keyword                   0.8318
+  keyword                         title                           0.8222
+  movie_info_idx                  person_info                     0.8205
+  aka_title                       keyword                         0.8189
+  kind_type                       link_type                       0.8184
+  movie_info_idx                  movie_keyword                   0.8178
+  movie_info                      person_info                     0.8167
+  comp_cast_type                  title                           0.8152
+  aka_title                       comp_cast_type                  0.8144
+  aka_title                       company_type                    0.8126
+  movie_companies                 role_type                       0.8095
+  company_type                    title                           0.8081
+  aka_title                       role_type                       0.8057
+  cast_info                       movie_companies                 0.8040
+  complete_cast                   movie_keyword                   0.8027
+  movie_info_idx                  movie_link                      0.7999
+  comp_cast_type                  link_type                       0.7929
+  company_type                    link_type                       0.7884
+  char_name                       title                           0.7873
+  aka_title                       movie_companies                 0.7799
+  role_type                       title                           0.7786
+  movie_companies                 movie_link                      0.7765
+  aka_title                       char_name                       0.7710
+  person_info                     role_type                       0.7645
+  movie_info                      movie_keyword                   0.7634
+  movie_companies                 movie_info_idx                  0.7603
+  movie_info                      movie_link                      0.7595
+  aka_title                       movie_link                      0.7551
+  movie_companies                 movie_info                      0.7547
+  movie_info_idx                  role_type                       0.7538
+  cast_info                       movie_info                      0.7538
+  cast_info                       movie_info_idx                  0.7524
+  aka_title                       cast_info                       0.7520
+======================================================================

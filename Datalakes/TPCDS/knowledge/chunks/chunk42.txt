@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee information in the system, including personal details, employment history, and performance records.
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers collaborate with market managers to assign each call center to a specific market division (cc_mkt_id).
+- Market managers ensure that call centers are strategically placed within their respective divisions to optimize service coverage.
+
+## 3. Call Center Setup
+
+Performed By: Facilities Management, Warehouse Staff
+
+Activity:
+- Facilities management teams set up the physical infrastructure of call centers, including office space, equipment, and furniture (cc_sq_ft).
+- Warehouse staff stock necessary supplies for call center operations, such as headsets, computers, and stationery.
+
+## 4. Call Center Operations Scheduling
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers create schedules for employees, defining their working hours and shifts (cc_hours).
+- Warehouse staff ensure that all necessary equipment is available during the scheduled operating hours.
+
+## 5. Customer Service Provision
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives answer incoming calls from customers, providing information about products and services (cp_catalog_number).
+- Customer service agents assist customers with queries or complaints, guiding them through the purchasing process or troubleshooting issues.
+
+## 6. Product Catalog Management
+
+Performed By: Product Managers, Marketing Team
+
+Activity:
+- Product managers update product information in the catalog, including product code, name, category, and list price (cp_catalog_page_number).
+- The marketing team creates and manages the overall structure of the catalog, organizing products into departments for easy navigation.
+
+## 7. Return Management
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents process product returns from customers, recording return reasons (cr_reason_sk).
+- Warehouse staff receive returned items, update their status in the system, and prepare them for restocking or disposal.

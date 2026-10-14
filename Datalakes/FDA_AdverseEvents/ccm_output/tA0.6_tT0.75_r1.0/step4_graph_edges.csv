@@ -1,0 +1,8 @@
+table_i,table_j,Sim_T
+drug_brand_names,drug_substances,0.894859
+drug_openfda,drug_substances,0.874177
+drug_brand_names,drugs,0.861528
+drug_brand_names,drug_openfda,0.861041
+drug_substances,drugs,0.844103
+primary_sources,reports,0.797232
+receivers,senders,0.782363

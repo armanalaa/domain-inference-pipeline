@@ -1,0 +1,1120 @@
+{
+  "0": {
+    "_meta": {
+      "domain_id": 0,
+      "domain_name": "AdverseEventReportingManagement",
+      "definition": "The unifying capability across all tables is the management of adverse event reports, encompassing data collection, formatting, organization, processing, analysis, and communication.",
+      "tables": [
+        "receivers",
+        "senders"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "receivers": {
+        "_description": "Captures details of recipients and their types/organizations involved in receiving adverse event safety reports.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "receiver_receivertype",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the repeated receiver type ID (6) for multiple receivers in the database.",
+            "samples": [
+              6,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "receiver_receiverorganization",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores abbreviated names of up to 10 characters for organizations receiving adverse event reports, frequently being the FDA.",
+            "samples": [
+              "FDA",
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "senders": {
+        "_description": "Records adverse event report senders, including their type and organization.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "sender_sendertype",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the type of sender (likely 2 represents a manufacturer or distributor).",
+            "samples": [
+              2,
+              6,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "sender_senderorganization",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores the organization name for the sender, typically FDA-Public Use.",
+            "samples": [
+              "FDA-Public Use",
+              "Public",
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "1": {
+    "_meta": {
+      "domain_id": 1,
+      "domain_name": "PharmaceuticalAdverseEventDataManagement",
+      "definition": "The unifying capability across all tables is the management of data related to adverse events associated with pharmaceuticals.",
+      "tables": [
+        "drug_brand_names",
+        "drug_openfda",
+        "drug_substances",
+        "drugs"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "drug_brand_names": {
+        "_description": "Records brand names associated with specific drugs and safety reports in adverse event cases.",
+        "columns": [
+          {
+            "name": "drug_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in drug_brand_names",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "brand_name",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores up to 255 characters of brand names for various pharmaceutical products.",
+            "samples": [
+              "XIGDUO XR",
+              "METHOTREXATE",
+              "JYLAMVO",
+              "TREXALL",
+              "RASUVO"
+            ]
+          }
+        ]
+      },
+      "drug_openfda": {
+        "_description": "Tracks adverse event reports for various drugs, including their identifiers, generic names, pharmacological classes, product types, and routes of administration.",
+        "columns": [
+          {
+            "name": "drug_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in drug_openfda",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "application_number",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores unique identification numbers for New Drug Applications (NDA) and Abbreviated New Drug Applications (ANDA).",
+            "samples": [
+              "NDA205649",
+              "ANDA210454",
+              "ANDA201693",
+              "ANDA078252",
+              "NDA214876"
+            ]
+          },
+          {
+            "name": "generic_name",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores the names of generic drugs in a text format.",
+            "samples": [
+              "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+              "METHOTREXATE",
+              "NITROFURANTOIN",
+              "CIPROFLOXACIN",
+              "NIRAPARIB"
+            ]
+          },
+          {
+            "name": "pharm_class_cs",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores pharmaceutical class names for drugs, such as Nitrofurans, Fluoroquinolones, Estradiol Congeners.",
+            "samples": [
+              "Nitrofurans [CS]",
+              "Fluoroquinolones [CS]",
+              "Estradiol Congeners [CS]",
+              "Human Growth Hormone [CS]",
+              "Catecholamines [CS]"
+            ]
+          },
+          {
+            "name": "pharm_class_epc",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores pharmaceutical class names for drugs, often followed by EPC (Electronic Access to Adverse Event Reporting System) codes.",
+            "samples": [
+              "Folate Analog Metabolic Inhibitor [EPC]",
+              "Nitrofuran Antibacterial [EPC]",
+              "Fluoroquinolone Antibacterial [EPC]",
+              "Estrogen [EPC]",
+              "Glucose-dependent Insulinotropic Polypeptide Receptor Agonist [EPC]"
+            ]
+          },
+          {
+            "name": "product_type",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores type of human prescription drugs in this database.",
+            "samples": [
+              "HUMAN PRESCRIPTION DRUG",
+              "HUMAN OTC DRUG",
+              "CELLULAR THERAPY",
+              null,
+              null
+            ]
+          },
+          {
+            "name": "route",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores the method of drug administration, such as oral or intravenous.",
+            "samples": [
+              "ORAL",
+              "INTRAVENOUS",
+              "TRANSDERMAL",
+              "SUBCUTANEOUS",
+              "TOPICAL"
+            ]
+          }
+        ]
+      },
+      "drug_substances": {
+        "_description": "Tracks specific drug components associated with adverse event reports in FDA database.",
+        "columns": [
+          {
+            "name": "drug_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in drug_substances",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "substance_name",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores up to 255 characters of drug substance names, such as DAPAGLIFLOZIN PROPANEDIOL, METFORMIN HYDROCHLORIDE, etc.",
+            "samples": [
+              "DAPAGLIFLOZIN PROPANEDIOL",
+              "METFORMIN HYDROCHLORIDE",
+              "METHOTREXATE SODIUM",
+              "METHOTREXATE",
+              "NITROFURANTOIN"
+            ]
+          }
+        ]
+      },
+      "drugs": {
+        "_description": "Tracks detailed information on various drugs, their characteristics, dosages, and usage in adverse event reports.",
+        "columns": [
+          {
+            "name": "drug_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in drugs",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "drugcharacterization",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores numerical codes representing drug characterizations such as small molecule (1) or biologic (2).",
+            "samples": [
+              1,
+              2,
+              3,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "medicinalproduct",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores brand names of pharmaceutical products, such as XIGDUO XR, METHOTREXATE, NITROFURANTOIN, CIPROFLOXACIN, and NIRAPARIB.",
+            "samples": [
+              "XIGDUO XR",
+              "METHOTREXATE",
+              "NITROFURANTOIN",
+              "CIPROFLOXACIN",
+              "NIRAPARIB"
+            ]
+          },
+          {
+            "name": "drugbatchnumb",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique batch numbers for drugs, as demonstrated by repeated occurrence of D592967C and D656783E.",
+            "samples": [
+              "D592967C",
+              "D656783E",
+              "D700467A",
+              "D676238E",
+              "D680517A"
+            ]
+          },
+          {
+            "name": "drugauthorizationnumb",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique identification numbers for authorized drugs.",
+            "samples": [
+              "205649",
+              "217272",
+              "76037",
+              "215866",
+              "215446"
+            ]
+          },
+          {
+            "name": "drugdosagetext",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores text descriptions of drug dosages, including form (e.g., 2 X 500 MG / DAY, INTRAVAGINAL) and sometimes unknown values.",
+            "samples": [
+              "2 X 500 MG / DAY",
+              "INTRAVAGINAL",
+              "5 MG, UNKNOWN",
+              "10 MG, UNKNOWN",
+              "UNK"
+            ]
+          },
+          {
+            "name": "drugdosageform",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores various dosage forms of drugs, such as Tablets, Solutions for injection in pre-filled pens.",
+            "samples": [
+              "Tablet",
+              "Solution for injection in pre-filled pen",
+              "Oral suspension",
+              "Injection",
+              "Film-coated tablet"
+            ]
+          },
+          {
+            "name": "drugstartdate",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the starting date of drug administration in YYYYMMDD format.",
+            "samples": [
+              202306,
+              202308,
+              20200914,
+              202205,
+              20230621
+            ]
+          },
+          {
+            "name": "drugenddate",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the date (YYYYMMDD format) when a drug event ended or was reported to end.",
+            "samples": [
+              20240113,
+              20230820,
+              20230709,
+              202312,
+              20240221
+            ]
+          },
+          {
+            "name": "drugindication",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores indications for which drugs are used, such as diabetes mellitus, rheumatic disorder, urinary tract infection, and ovarian cancer metastatic.",
+            "samples": [
+              "Diabetes mellitus",
+              "Rheumatic disorder",
+              "Urinary tract infection",
+              "Ovarian cancer metastatic",
+              "Prostatitis"
+            ]
+          },
+          {
+            "name": "actiondrug",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores integer values indicating the role of a drug as an active (1), control (4), or both (5) agent in adverse event reports.",
+            "samples": [
+              4,
+              1,
+              5,
+              6,
+              2
+            ]
+          },
+          {
+            "name": "drugadditional",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores additional drug identifiers (1, 3, or 2) for multiple drugs in the database.",
+            "samples": [
+              1,
+              3,
+              2,
+              4,
+              null
+            ]
+          },
+          {
+            "name": "drugadministrationroute",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the method of drug administration (e.g., 048: oral, 065: injection, 067: topical) for each drug record.",
+            "samples": [
+              48,
+              65,
+              67,
+              58,
+              42
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+    "_meta": {
+      "domain_id": 2,
+      "domain_name": "AdverseEventDataOrganization",
+      "definition": "The process of formatting, organizing, and maintaining adverse event data using a standard format.",
+      "tables": [
+        "seriousness"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "seriousness": {
+        "_description": "Records adverse event seriousness levels associated with individual safety reports.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "seriousnessdeath",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores an integer indicating the number of reported deaths associated with a serious adverse event.",
+            "samples": [
+              2,
+              1,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "seriousnesslifethreatening",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Indicates the degree of potential for death due to an adverse event.",
+            "samples": [
+              2,
+              1,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "seriousnesshospitalization",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores an integer value indicating the degree of hospitalization associated with a serious adverse event.",
+            "samples": [
+              2,
+              1,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "seriousnessdisabling",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores an integer value indicating the degree to which the adverse event resulted in temporary or permanent disabilities.",
+            "samples": [
+              2,
+              1,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "seriousnesscongenitalanomali",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores an integer value indicating the presence of congenital anomalies associated with a serious adverse event.",
+            "samples": [
+              2,
+              1,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "seriousnessother",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores an integer value indicating the level of seriousness for adverse events, where 1 represents non-serious and 2 represents serious.",
+            "samples": [
+              1,
+              2,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "3": {
+    "_meta": {
+      "domain_id": 3,
+      "domain_name": "AdverseEventDataManagementSystem",
+      "definition": "A system for managing and organizing adverse event data collected from various sources, including reporting, formatting, processing, analysis, and storage.",
+      "tables": [
+        "report_duplicates"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "report_duplicates": {
+        "_description": "Tracks reported adverse events where duplicates have been identified across different safety reports and potential sources.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631173,
+              23639474,
+              23586275,
+              23253247
+            ]
+          },
+          {
+            "name": "duplicate_safetyreportid",
+            "sql_type": "TEXT",
+            "key": "FK",
+            "description": "Foreign key linking to the duplicate_safetyreport entity",
+            "samples": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "duplicate_source",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores the origin of duplicate reports, such as MC Brazil, BFARM, CADRBFARM, LSMI, SANOFI.",
+            "samples": [
+              "MC Brazil",
+              "BFARM",
+              "CADRBFARM",
+              "LSMI",
+              "SANOFI"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "4": {
+    "_meta": {
+      "domain_id": 4,
+      "domain_name": "AdverseEventDataOrganizationAndManagement",
+      "definition": "This domain unifies the tables that organize and manage adverse event data for patients, including patient demographics, onset age, weight, sex, and death date.",
+      "tables": [
+        "patients"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "patients": {
+        "_description": "Captures patient demographic and outcome data associated with adverse event safety reports.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "patientonsetage",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the age at which patients experienced adverse events (e.g., 75, 8, 44, etc.)",
+            "samples": [
+              75,
+              8,
+              44,
+              56,
+              67
+            ]
+          },
+          {
+            "name": "patientonsetageunit",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores patient age units in integer format, possibly years.",
+            "samples": [
+              801,
+              800,
+              802,
+              804,
+              803
+            ]
+          },
+          {
+            "name": "patientagegroup",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores patient age groups, all represented as integers (6, 5) in this dataset.",
+            "samples": [
+              6,
+              5,
+              3,
+              4,
+              2
+            ]
+          },
+          {
+            "name": "patientweight",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores patient weights in kilograms, including decimal places.",
+            "samples": [
+              74.0,
+              82.1,
+              69.853,
+              17.23,
+              74.8
+            ]
+          },
+          {
+            "name": "patientsex",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores gender of patients (1=male, 2=female) based on sample values.",
+            "samples": [
+              2,
+              1,
+              0,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "patientdeath_date",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores the textual representation of the date when a patient passed away (if available).",
+            "samples": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "5": {
+    "_meta": {
+      "domain_id": 5,
+      "domain_name": "AdverseEventDataFormattingAndOrganization",
+      "definition": "The process of formatting and organizing adverse event data using a standard format, including primary sources and reports",
+      "tables": [
+        "primary_sources",
+        "reports"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "primary_sources": {
+        "_description": "Captures details of the original sources and their qualifications for adverse event reports, along with the reporter's country.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "primarysource_qualification",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the qualification level of primary sources (1-5), where higher numbers indicate more reliable data.",
+            "samples": [
+              5,
+              3,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "name": "primarysource_reportercountry",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores the ISO 3166-1 alpha-2 code of the reporter's country from primary sources.",
+            "samples": [
+              "BR",
+              "US",
+              "DE",
+              "AU",
+              "TR"
+            ]
+          }
+        ]
+      },
+      "reports": {
+        "_description": "Captures details of adverse event reports submitted to the FDA by various sources.",
+        "columns": [
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "safetyreportversion",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the version number of safety reports, consistently set to 1 in these samples.",
+            "samples": [
+              1,
+              3,
+              4,
+              2,
+              6
+            ]
+          },
+          {
+            "name": "receivedate",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores date of report reception as a 4-digit year and 6-digit day (YYYYMMDD format).",
+            "samples": [
+              20240329,
+              20240314,
+              20240316,
+              20240226,
+              20240227
+            ]
+          },
+          {
+            "name": "receivedateformat",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the repeated format value for the date received of adverse event reports.",
+            "samples": [
+              102,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "transmissiondate",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the date of report transmission as a 4-digit year and 6-digit day (YYYYMMDD) format.",
+            "samples": [
+              20240410,
+              20240409,
+              20240411,
+              20241016,
+              20240412
+            ]
+          },
+          {
+            "name": "transmissiondateformat",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores a repeated integer value representing a specific date format used for report transmissions.",
+            "samples": [
+              102,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "receiptdate",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores adverse event report receipt dates as 4-digit year and 6-digit day (YYYYMMDD) format.",
+            "samples": [
+              20240329,
+              20240314,
+              20240316,
+              20240226,
+              20240227
+            ]
+          },
+          {
+            "name": "receiptdateformat",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the repeated format code for receipt dates in reports.",
+            "samples": [
+              102,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "reporttype",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the type of adverse event report, as all samples indicate a single report type.",
+            "samples": [
+              1,
+              3,
+              2,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "serious",
+            "sql_type": "INT",
+            "key": "",
+            "description": "The \"serious\" column indicates the severity level (1 for serious, 2 for non-serious) of adverse events reported.",
+            "samples": [
+              1,
+              2,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "primarysourcecountry",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores the 10-character ISO country code of the primary source for adverse event reports.",
+            "samples": [
+              "BR",
+              "US",
+              "DE",
+              "AU",
+              "TR"
+            ]
+          },
+          {
+            "name": "occurcountry",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores the 10-character country code for locations where adverse events occurred.",
+            "samples": [
+              "US",
+              "DE",
+              "AU",
+              "TR",
+              "JP"
+            ]
+          },
+          {
+            "name": "companynumb",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores unique identifiers for pharmaceutical companies associated with adverse event reports.",
+            "samples": [
+              "2024A074849",
+              "US-MankindUS-000153",
+              "DE-CADRBFARM-2023324430",
+              "US-TEVA-VS-3140848",
+              "US-ELI_LILLY_AND_COMPANY-US202306006471"
+            ]
+          },
+          {
+            "name": "duplicate",
+            "sql_type": "BOOLEAN",
+            "key": "",
+            "description": "The \"duplicate\" column indicates identical reports within the database.",
+            "samples": [
+              "1",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "fulfillexpeditecriteria",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Indicates whether a report meets expedited criteria for FDA review (1 - yes, 2 - no).",
+            "samples": [
+              1,
+              2,
+              3,
+              5,
+              4
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "6": {
+    "_meta": {
+      "domain_id": 6,
+      "domain_name": "AdverseEventDataManagementAndAnalysis",
+      "definition": "The process of managing and analyzing adverse event data associated with pharmaceuticals",
+      "tables": [
+        "reactions"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "reactions": {
+        "_description": "Records adverse events and their associated reactions reported in FDA safety reports.",
+        "columns": [
+          {
+            "name": "reaction_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in reactions",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "safetyreportid",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the safetyreport entity",
+            "samples": [
+              23688462,
+              23631092,
+              23631173,
+              23639474,
+              23566754
+            ]
+          },
+          {
+            "name": "reactionmeddrapt",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores adverse event reactions as per MedDRA PT classification, including Arthropathy, Diabetes mellitus, Intervertebral disc protrusion, Weight decreased, and Off label use.",
+            "samples": [
+              "Arthropathy",
+              "Diabetes mellitus inadequate control",
+              "Intervertebral disc protrusion",
+              "Weight decreased",
+              "Off label use"
+            ]
+          },
+          {
+            "name": "reactionmeddraversionpt",
+            "sql_type": "FLOAT",
+            "key": "",
+            "description": "Stores the version number of the Medical Dictionary for Regulatory Activities (MedDRA) associated with each reaction.",
+            "samples": [
+              26.1,
+              27.0,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "reactionoutcome",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the final outcome of adverse reactions, where 1 indicates death and 6 indicates recovery or recovery pending.",
+            "samples": [
+              6,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

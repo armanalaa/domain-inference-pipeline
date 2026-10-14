@@ -1,0 +1,81 @@
+ # Northwind — Business Workflows
+
+## 1. Company Management
+
+Performed By: Administrator, Data Entry Clerk
+
+Activity:
+- Administrators manage company types by updating the type of a company in the Company table.
+- Data Entry Clers register new companies by recording the company name, contact information, and type in the Company table.
+- Administrators add multiple contacts for a company by entering their details in the Contact table associated with the corresponding company ID.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales Representatives register new customers by recording customer information and contact details in the Customers table.
+- Customer Service Agents update customer information as needed in the Customers table.
+
+## 3. Shipper Management
+
+Performed By: Logistics Coordinators, Data Entry Clerk
+
+Activity:
+- Logistics Coordinators register new shippers by recording shipper details in the Shippers table.
+- Data Entry Clerks update shipper information as needed in the Shippers table.
+
+## 4. Vendor Management
+
+Performed By: Purchasing Teams, Data Entry Clerk
+
+Activity:
+- Purchasing teams register new vendors by recording vendor details in the Suppliers table.
+- Data Entry Clerks update vendor information as needed in the Suppliers table.
+
+## 5. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product Managers register new products by recording product details and assigning them to categories in the Products table.
+- Inventory Specialists update product information as needed in the Products table, including stock levels and reorder quantities.
+
+## 6. Order Placement
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales Representatives place orders on behalf of customers by recording order details, customer ID, and employee ID in the Orders table.
+- Customers place orders directly through the system by entering their information and order details in the Orders table.
+
+## 7. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Clerks
+
+Activity:
+- Warehouse staff track inventory levels and pick items for orders from the warehouse based on order details in the Order_Details table.
+- Shipping clerks prepare shipments by recording shipping information, including shipper ID, in the Orders table.
+
+## 8. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices based on order details and customer information from the Orders and Customers tables.
+
+## 9. Payment Processing
+
+Performed By: Accounting Staff, Customer Service Agents
+
+Activity:
+- Accounting staff record payments received from customers in the Payments table.
+- Customer Service Agents assist customers with payment issues and update customer account information accordingly.
+
+## 10. Reporting and Analysis
+
+Performed By: Management, Data Analysts
+
+Activity:
+- Management reviews sales reports generated from the Orders and Customers tables to monitor business performance.
+- Data Analysts perform detailed analysis of sales trends, inventory levels, and other key performance indicators using data from various tables in the Northwind database.

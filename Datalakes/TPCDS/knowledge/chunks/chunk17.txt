@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their details such as name, qualifications, and employment history.
+- HR managers onboard new hires by providing training materials, work schedules, and company policies.
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign call centers to specific markets based on geographical location and market size.
+- Market managers oversee the performance of assigned call centers, providing guidance and resources as needed.
+
+## 3. Call Center Setup
+
+Performed By: Warehouse Staff, IT Technicians
+
+Activity:
+- Warehouse staff equip call centers with necessary equipment like phones, headsets, and furniture.
+- IT technicians configure and install the necessary software and hardware for efficient call center operations.
+
+## 4. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls from customers, addressing their queries or complaints.
+- Call center managers monitor employee performance, providing feedback and coaching to improve service quality.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, IT Technicians
+
+Activity:
+- Product managers update the catalog by adding new items, editing existing ones, and removing discontinued products.
+- IT technicians maintain the catalog database, ensuring data integrity and efficient access for call center employees.
+
+## 6. Customer Service Incident Tracking
+
+Performed By: Call Center Employees, Supervisors
+
+Activity:
+- Call center employees document customer service incidents, including details like incident type, resolution time, and customer feedback.
+- Supervisors review incident reports to identify trends, address recurring issues, and improve overall service quality.
+
+## 7. Performance Evaluation and Reward System
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers evaluate employee performance based on metrics like call handling time, customer satisfaction scores, and sales figures.
+- HR managers implement a reward system to motivate employees, offering incentives for exceptional performance and service quality.
+
+## 8. Financial Reporting and Analysis
+
+Performed By: Finance Managers, IT Analysts
+
+Activity:
+- Finance managers generate financial reports detailing call center revenue, expenses, and profitability.
+- IT analysts analyze the data to identify trends, make recommendations for cost reduction, and optimize resource allocation.

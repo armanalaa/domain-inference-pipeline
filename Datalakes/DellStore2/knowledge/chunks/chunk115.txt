@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set quan_low for each item to trigger reordering when stock reaches a minimum level.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, and creditcard information during account creation.
+- Customer service agents update the contact information of existing customers when necessary.
+- HR managers assign unique customerid for each registered user.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products from the catalog and specifying quantities.
+- Sales representatives confirm order details with customers before processing them in the system.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives generate orders with orderid, orderdate, customerid, netamount, tax, and totalamount based on confirmed customer orders.
+- Warehouse staff pick and pack the ordered items and update the quan_in_stock accordingly.
+
+## 5. Order Line Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff create orderlines with orderlineid, prod_id, quantity, and orderdate for each item in an order.
+- Sales representatives update the sales column when orders are shipped to customers.
+
+## 6. Inventory Control
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor the inventory level by tracking quan_in_stock and sales.
+- Purchasing teams order new products based on the current stock levels and reorder history.
+
+## 7. Reordering
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff update the date_low, quan_low, date_reordered, quan_reordered, and date_expected when products need to be replenished.
+- Purchasing teams place orders for the required quantity of items based on the reorder information.
+
+## 8. Data Privacy Compliance
+
+Performed By: IT Administrators, HR Managers
+
+Activity:
+- IT administrators ensure data privacy by deploying Dataedo on-premises or in a private cloud to keep sensitive information within the organization's environment.
+- HR managers implement role-based access control and user authentication protocols to secure data catalogs.

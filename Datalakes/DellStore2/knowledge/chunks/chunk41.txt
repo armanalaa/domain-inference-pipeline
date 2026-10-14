@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or sold.
+- When inventory reaches a low threshold, warehouse staff initiate a reorder request for the corresponding prod_id in the reorder table.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcard details.
+- HR managers update the username, "password", age, income, and gender fields as part of employee onboarding or account maintenance.
+- Customers place orders by specifying orderdate, customerid, netamount, tax, totalamount, and selecting products from the orderlines table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate invoices based on the totalamount column in the orders table.
+- Warehouse staff pick and pack ordered items according to the prod_id and quantity columns in the orderlines table.
+- Purchasing teams issue purchase orders for products with quan_in_stock less than quan_low, as recorded in the reorder table.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update sales columns in the inventory table when products are sold.
+- Purchasing teams update the date_reordered and quan_reordered columns in the reorder table upon receiving new shipments.
+
+## 5. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record financial transactions related to orders, such as netamount, tax, and totalamount, for analysis and reporting purposes.
+
+## 6. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team ensures sensitive information, like credit card details, is protected and classified according to PCI guidelines.
+
+## 7. Data Collaboration
+
+Performed By: Various Roles (Data Users)
+
+Activity:
+- Users collaborate on data assets and accumulate valuable knowledge about data in the Dataedo platform.

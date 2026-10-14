@@ -1,0 +1,71 @@
+table,column,domain_id,domain_name
+airplane,airline_id,0,Flight Management
+airplane,airplane_id,0,Flight Management
+airplane,capacity,0,Flight Management
+airplane,type_id,0,Flight Management
+flight,airline_id,0,Flight Management
+flight,airplane_id,0,Flight Management
+flight,arrival,0,Flight Management
+flight,departure,0,Flight Management
+flight,flight_id,0,Flight Management
+flight,flightno,0,Flight Management
+flight,from,0,Flight Management
+flight,to,0,Flight Management
+flightschedule,airline_id,0,Flight Management
+flightschedule,arrival,0,Flight Management
+flightschedule,departure,0,Flight Management
+flightschedule,flightno,0,Flight Management
+flightschedule,friday,0,Flight Management
+flightschedule,from,0,Flight Management
+flightschedule,monday,0,Flight Management
+flightschedule,saturday,0,Flight Management
+flightschedule,sunday,0,Flight Management
+flightschedule,thursday,0,Flight Management
+flightschedule,to,0,Flight Management
+flightschedule,tuesday,0,Flight Management
+flightschedule,wednesday,0,Flight Management
+weatherdata,airpressure,1,ClimateDataManagement
+weatherdata,humidity,1,ClimateDataManagement
+weatherdata,log_date,1,ClimateDataManagement
+weatherdata,station,1,ClimateDataManagement
+weatherdata,temp,1,ClimateDataManagement
+weatherdata,time,1,ClimateDataManagement
+weatherdata,weather,1,ClimateDataManagement
+weatherdata,wind,1,ClimateDataManagement
+weatherdata,winddirection,1,ClimateDataManagement
+airplane_type,description,2,AircraftTypeManagement
+airplane_type,identifier,2,AircraftTypeManagement
+airplane_type,type_id,2,AircraftTypeManagement
+airport,airport_id,3,AirportGeolocationManagement
+airport,iata,3,AirportGeolocationManagement
+airport,icao,3,AirportGeolocationManagement
+airport,name,3,AirportGeolocationManagement
+airport_geo,airport_id,3,AirportGeolocationManagement
+airport_geo,city,3,AirportGeolocationManagement
+airport_geo,country,3,AirportGeolocationManagement
+airport_geo,geolocation,3,AirportGeolocationManagement
+airport_geo,latitude,3,AirportGeolocationManagement
+airport_geo,longitude,3,AirportGeolocationManagement
+airport_geo,name,3,AirportGeolocationManagement
+airline,airline_id,4,AirlineInfrastructureManagement
+airline,airlinename,4,AirlineInfrastructureManagement
+airline,base_airport,4,AirlineInfrastructureManagement
+airline,iata,4,AirlineInfrastructureManagement
+passenger,firstname,5,Passenger Data Management
+passenger,lastname,5,Passenger Data Management
+passenger,passenger_id,5,Passenger Data Management
+passenger,passportno,5,Passenger Data Management
+passengerdetails,birthdate,5,Passenger Data Management
+passengerdetails,city,5,Passenger Data Management
+passengerdetails,country,5,Passenger Data Management
+passengerdetails,emailaddress,5,Passenger Data Management
+passengerdetails,passenger_id,5,Passenger Data Management
+passengerdetails,sex,5,Passenger Data Management
+passengerdetails,street,5,Passenger Data Management
+passengerdetails,telephoneno,5,Passenger Data Management
+passengerdetails,zip,5,Passenger Data Management
+booking,booking_id,6,Reservation Management
+booking,flight_id,6,Reservation Management
+booking,passenger_id,6,Reservation Management
+booking,price,6,Reservation Management
+booking,seat,6,Reservation Management

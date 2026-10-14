@@ -1,0 +1,77 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Data Management
+
+Performed By: Baseball Executives, Data Analysts
+
+Activity:
+- Baseball executives assign unique playerIDs to each athlete in the People table.
+- Data analysts record players' birthYear, birthMonth, birthDay, birthCity, birthCountry, birthState in the People table.
+- Data analysts document players' deathYear, deathMonth, deathDay, deathCountry in the People table.
+
+## 2. Player Registration
+
+Performed By: Baseball Executives, Data Analysts
+
+Activity:
+- Baseball executives register new players by entering their playerID, birthYear, birthMonth, birthDay, birthCity, birthCountry, birthState, and deathYear, deathMonth, deathDay, deathCountry into the People table.
+
+## 3. Player Information Updates
+
+Performed By: Data Analysts
+
+Activity:
+- Data analysts update player information in the People table as needed.
+
+## 4. Team and Franchise Data Management
+
+Performed By: Baseball Executives, Data Analysts
+
+Activity:
+- Baseball executives assign unique teamIDs to each team in the Teams table.
+- Data analysts record yearly stats and standings for each team in the Teams table.
+
+## 5. Ballpark Management
+
+Performed By: Baseball Executives, Data Analysts
+
+Activity:
+- Baseball executives assign unique parkIDs to each ballpark in the Parks table.
+
+## 6. Player Statistics Recording
+
+Performed By: Statisticians, Umpires
+
+Activity:
+- Statisticians record batting statistics for each player in the Batting table.
+- Umpires record pitching statistics for each player in the Pitching table.
+- Fielding statistics are recorded for each player in the Fielding table.
+
+## 7. Position Data Recording (Outfield)
+
+Performed By: Statisticians, Umpires
+
+Activity:
+- Statisticians record outfield position data for players in the FieldingOF table.
+
+## 8. Position Data Recording (Split)
+
+Performed By: Statisticians, Umpires
+
+Activity:
+- Statisticians record LF/CF/RF game played splits for all years in the FieldingOFsplit table.
+
+## 9. Appearance Tracking
+
+Performed By: Statisticians, Umpires
+
+Activity:
+- Statisticians track positions a player appeared during a season in the Appearances table.
+
+## 10. All-Star Game Recording
+
+Performed By: Baseball Executives, Statisticians
+
+Activity:
+- Baseball executives assign unique allstarID to each All-Star game.
+- Statisticians record player participation and team representation in the AllStarFull table.

@@ -1,0 +1,41 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 28
+Threshold θ_T           : 0.75
+Edges in G_T            : 4
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.5423
+  max    : 0.8465
+  mean   : 0.6745
+  median : 0.6568
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  cust_hist                       orderlines                      0.8465      3  1.000  0.8465
+  cust_hist                       orders                          0.8433      3  1.000  0.8433
+  categories                      products                        0.7759      2  1.000  0.7759
+  inventory                       reorder                         0.7512      3  1.000  0.7512
+  cust_hist                       reorder                         0.7491      3  1.000  0.7491
+  inventory                       orderlines                      0.7412      3  1.000  0.7412
+  cust_hist                       customers                       0.7325      3  1.000  0.7325
+  cust_hist                       products                        0.7293      3  1.000  0.7293
+  orderlines                      orders                          0.7266      5  1.000  0.7266
+  inventory                       products                        0.7112      3  1.000  0.7112
+  orderlines                      reorder                         0.7099      5  1.000  0.7099
+  cust_hist                       inventory                       0.6940      3  1.000  0.6940
+  categories                      customers                       0.6739      2  1.000  0.6739
+  customers                       orders                          0.6648      6  1.000  0.6648
+  orderlines                      products                        0.6487      5  1.000  0.6487
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  cust_hist                       orderlines                      0.8465
+  cust_hist                       orders                          0.8433
+  categories                      products                        0.7759
+  inventory                       reorder                         0.7512
+======================================================================

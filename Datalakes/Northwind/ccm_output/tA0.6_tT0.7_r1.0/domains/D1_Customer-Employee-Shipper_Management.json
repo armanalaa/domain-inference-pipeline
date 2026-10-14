@@ -1,0 +1,610 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Customer-Employee-Shipper Management",
+    "definition": "The process of managing customer, employee, and shipper details and information.",
+    "tables": [
+      "customers",
+      "employees",
+      "shippers",
+      "suppliers"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 44,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "customers": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "CustomerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in customers",
+          "samples": [
+            "ALFKI",
+            "ANATR",
+            "ANTON",
+            "AROUT",
+            "BERGS"
+          ]
+        },
+        {
+          "name": "CompanyName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of customer companies.",
+          "samples": [
+            "Alfreds Futterkiste",
+            "Ana Trujillo Emparedados y helados",
+            "Antonio Moreno Taquería",
+            "Around the Horn",
+            "Berglunds snabbköp"
+          ]
+        },
+        {
+          "name": "ContactName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of primary contacts for each customer in Northwind database.",
+          "samples": [
+            "Maria Anders",
+            "Ana Trujillo",
+            "Antonio Moreno",
+            "Thomas Hardy",
+            "Christina Berglund"
+          ]
+        },
+        {
+          "name": "ContactTitle",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores job titles of customer contacts, such as Sales Representative, Owner, Order Administrator.",
+          "samples": [
+            "Sales Representative",
+            "Owner",
+            "Order Administrator",
+            "Marketing Manager",
+            "Accounting Manager"
+          ]
+        },
+        {
+          "name": "Address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses for customers in various formats.",
+          "samples": [
+            "Obere Str. 57",
+            "Avda. de la Constitución 2222",
+            "Mataderos  2312",
+            "120 Hanover Sq.",
+            "Berguvsvägen  8"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for customers, as demonstrated by examples like Berlin, México D.F., London, and Luleå.",
+          "samples": [
+            "Berlin",
+            "México D.F.",
+            "London",
+            "Luleå",
+            "Mannheim"
+          ]
+        },
+        {
+          "name": "Region",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer locations as two-letter abbreviations for Canadian (BC) and Spanish-speaking (SP) provinces/regions, or Oregon (OR).",
+          "samples": [
+            "BC",
+            "SP",
+            "OR",
+            "DF",
+            "RJ"
+          ]
+        },
+        {
+          "name": "PostalCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores alphanumeric postal codes up to 10 characters, including international formats.",
+          "samples": [
+            "12209",
+            "05021",
+            "05023",
+            "WA1 1DP",
+            "S-958 22"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer countries as text up to 50 characters long, including Germany, Mexico, UK, and Sweden.",
+          "samples": [
+            "Germany",
+            "Mexico",
+            "UK",
+            "Sweden",
+            "France"
+          ]
+        },
+        {
+          "name": "Phone",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer phone numbers in various formats, including area code and local number.",
+          "samples": [
+            "030-0074321",
+            "(5) 555-4729",
+            "(5) 555-3932",
+            "(171) 555-7788",
+            "0921-12 34 65"
+          ]
+        },
+        {
+          "name": "Fax",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer fax numbers as international or domestic phone numbers in various formats.",
+          "samples": [
+            "030-0076545",
+            "(5) 555-3745",
+            "(171) 555-6750",
+            "0921-12 34 67",
+            "0621-08924"
+          ]
+        }
+      ]
+    },
+    "employees": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "EmployeeID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in employees",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "LastName",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores surnames of up to 10 characters for Northwind employees.",
+          "samples": [
+            "Davolio",
+            "Fuller",
+            "Leverling",
+            "Peacock",
+            "Buchanan"
+          ]
+        },
+        {
+          "name": "FirstName",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 characters of employees' first names.",
+          "samples": [
+            "Nancy",
+            "Andrew",
+            "Janet",
+            "Margaret",
+            "Steven"
+          ]
+        },
+        {
+          "name": "Title",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores job titles for employees within Northwind, such as Sales Representative, Vice President, Sales Manager, etc.",
+          "samples": [
+            "Sales Representative",
+            "Vice President, Sales",
+            "Sales Manager",
+            "Inside Sales Coordinator",
+            null
+          ]
+        },
+        {
+          "name": "TitleOfCourtesy",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores formal titles of courtesy for employees (e.g., Ms., Dr., Mrs., Mr.).",
+          "samples": [
+            "Ms.",
+            "Dr.",
+            "Mrs.",
+            "Mr.",
+            null
+          ]
+        },
+        {
+          "name": "BirthDate",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee birthdates in a format of month/day/year (MM/DD/YYYY).",
+          "samples": [
+            "12/08/1948",
+            "02/19/1952",
+            "08/30/1963",
+            "09/19/1937",
+            "03/04/1955"
+          ]
+        },
+        {
+          "name": "HireDate",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee hire dates in a format of month/day/year.",
+          "samples": [
+            "05/01/1992",
+            "08/14/1992",
+            "04/01/1992",
+            "05/03/1993",
+            "10/17/1993"
+          ]
+        },
+        {
+          "name": "Address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses for employees, including apartment numbers and city names.",
+          "samples": [
+            "507 - 20th Ave. E.Apt. 2A",
+            "908 W. Capital Way",
+            "722 Moss Bay Blvd.",
+            "4110 Old Redmond Rd.",
+            "14 Garrett Hill"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee location cities (Seattle, Tacoma, Kirkland, Redmond, London).",
+          "samples": [
+            "Seattle",
+            "Tacoma",
+            "Kirkland",
+            "Redmond",
+            "London"
+          ]
+        },
+        {
+          "name": "Region",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the state region for employees (e.g., WA).",
+          "samples": [
+            "WA",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "PostalCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores alphanumeric postal codes up to 10 characters, including international formats.",
+          "samples": [
+            "98122",
+            "98401",
+            "98033",
+            "98052",
+            "SW1 8JR"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores employee's nationality (USA or UK).",
+          "samples": [
+            "USA",
+            "UK",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "HomePhone",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores employee home phone numbers in North American format.",
+          "samples": [
+            "(206) 555-9857",
+            "(206) 555-9482",
+            "(206) 555-3412",
+            "(206) 555-8122",
+            "(71) 555-4848"
+          ]
+        },
+        {
+          "name": "Extension",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique four-digit extension numbers for employees.",
+          "samples": [
+            5467,
+            3457,
+            3355,
+            5176,
+            3453
+          ]
+        },
+        {
+          "name": "Photo",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "The employees table's Photo column stores employee images (as text), but no sample values are provided.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Notes",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores personal educational backgrounds of employees.",
+          "samples": [
+            "Education includes a BA in psychology from Colorado State University in 1970.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+            "Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.  He is fluent in French and Italian and reads German.  He joined the company as a sales representative, was promoted to sales manager in January 1992 and to vice president of sales in March 1993.  Andrew is a member of the Sales Management Roundtable, the Seattle Chamber of Commerce, and the Pacific Rim Importers Association.",
+            "Janet has a BS degree in chemistry from Boston College (1984).  She has also completed a certificate program in food retailing management.  Janet was hired as a sales associate in 1991 and promoted to sales representative in February 1992.",
+            "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).  She was assigned to the London office temporarily from July through November 1992.",
+            "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London.  He was promoted to sales manager in March 1993.  Mr. Buchanan has completed the courses \"Successful Telemarketing\" and \"International Sales Management.\"  He is fluent in French."
+          ]
+        },
+        {
+          "name": "ReportsTo",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Employee ID of immediate supervisor.",
+          "samples": [
+            2,
+            5,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "PhotoPath",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores URL paths for employee profile pictures.",
+          "samples": [
+            "http://accweb/emmployees/davolio.bmp",
+            "http://accweb/emmployees/fuller.bmp",
+            "http://accweb/emmployees/leverling.bmp",
+            "http://accweb/emmployees/peacock.bmp",
+            "http://accweb/emmployees/buchanan.bmp"
+          ]
+        }
+      ]
+    },
+    "shippers": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ShipperID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in shippers",
+          "samples": [
+            1,
+            2,
+            3,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "CompanyName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of shipping companies such as Speedy Express, United Package, and Federal Shipping.",
+          "samples": [
+            "Speedy Express",
+            "United Package",
+            "Federal Shipping",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Phone",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores phone numbers for shippers, formatted as area code followed by seven digits.",
+          "samples": [
+            "(503) 555-9831",
+            "(503) 555-3199",
+            "(503) 555-9931",
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "suppliers": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "SupplierID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in suppliers",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "CompanyName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of suppliers, ranging from food providers like Exotic Liquids to cheese cooperatives such as Las Cabras.",
+          "samples": [
+            "Exotic Liquids",
+            "New Orleans Cajun Delights",
+            "Grandma Kelly's Homestead",
+            "Tokyo Traders",
+            "Cooperativa de Quesos 'Las Cabras'"
+          ]
+        },
+        {
+          "name": "ContactName",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of primary contacts for each supplier.",
+          "samples": [
+            "Charlotte Cooper",
+            "Shelley Burke",
+            "Regina Murphy",
+            "Yoshi Nagase",
+            "Antonio del Valle Saavedra"
+          ]
+        },
+        {
+          "name": "ContactTitle",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores job titles of contacts for suppliers.",
+          "samples": [
+            "Purchasing Manager",
+            "Order Administrator",
+            "Sales Representative",
+            "Marketing Manager",
+            "Export Administrator"
+          ]
+        },
+        {
+          "name": "Address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses, postal boxes, roads, and city names for suppliers.",
+          "samples": [
+            "49 Gilbert St.",
+            "P.O. Box 78934",
+            "707 Oxford Rd.",
+            "9-8 Sekimai Musashino-shi",
+            "Calle del Rosal 4"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for suppliers.",
+          "samples": [
+            "London",
+            "New Orleans",
+            "Ann Arbor",
+            "Tokyo",
+            "Oviedo"
+          ]
+        },
+        {
+          "name": "Region",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores geographical regions for suppliers, represented by abbreviations such as LA, MI, Asturias, Victoria, OR.",
+          "samples": [
+            "LA",
+            "MI",
+            "Asturias",
+            "Victoria",
+            "OR"
+          ]
+        },
+        {
+          "name": "PostalCode",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores up to 10 alphanumeric characters representing postal codes for suppliers.",
+          "samples": [
+            "EC1 4SD",
+            "70117",
+            "48104",
+            "100",
+            "33007"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country of origin for suppliers.",
+          "samples": [
+            "UK",
+            "USA",
+            "Japan",
+            "Spain",
+            "Australia"
+          ]
+        },
+        {
+          "name": "Phone",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores international phone numbers in various formats.",
+          "samples": [
+            "(171) 555-2222",
+            "(100) 555-4822",
+            "(313) 555-5735",
+            "(03) 3555-5011",
+            "(98) 598 76 54"
+          ]
+        },
+        {
+          "name": "Fax",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores international fax numbers up to 50 characters long.",
+          "samples": [
+            "(313) 555-3349",
+            "(03) 444-6588",
+            "031-987 65 91",
+            "(04721) 8714",
+            "(0544) 60603"
+          ]
+        },
+        {
+          "name": "HomePage",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores URLs or HTML file names for suppliers' websites.",
+          "samples": [
+            "#CAJUN.HTM#",
+            "Mayumi's (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#",
+            "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#",
+            "#FORMAGGI.HTM#",
+            "G'day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#"
+          ]
+        }
+      ]
+    }
+  }
+}

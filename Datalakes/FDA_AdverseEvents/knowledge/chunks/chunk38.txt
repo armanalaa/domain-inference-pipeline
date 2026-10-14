@@ -1,0 +1,59 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Case Report Submission
+
+Performed By: Researchers, Sponsors, Investigators
+
+Activity:
+- Researchers record case details such as patient demographics, adverse event description, and drug information.
+- Sponsors review and validate the accuracy of the reported cases before submission.
+- Investigators confirm the authenticity of the submitted reports and attach any supporting documents.
+
+## 2. Case Review and Validation
+
+Performed By: FDA Reviewers
+
+Activity:
+- FDA reviewers assess the completeness and validity of each case report according to ICH guidelines.
+- They verify if the reported adverse events are related to the specific drug or medical product.
+- If necessary, they request additional information from the submitter for a comprehensive evaluation.
+
+## 3. Case Categorization and Analysis
+
+Performed By: FDA Analysts
+
+Activity:
+- FDA analysts categorize adverse events based on their severity, nature, and potential impact on public health.
+- They analyze the trends and patterns of reported cases to identify any potential safety concerns or risks associated with specific drugs or medical products.
+
+## 4. Case Follow-up and Investigation
+
+Performed By: FDA Investigators
+
+Activity:
+- FDA investigators conduct further investigation on complex or serious adverse events to determine their cause, frequency, and potential solutions.
+- They collaborate with relevant stakeholders, such as drug manufacturers and healthcare providers, to gather additional information.
+
+## 5. Case Closure and Reporting
+
+Performed By: FDA Managers
+
+Activity:
+- FDA managers review the findings of the investigation and make decisions on whether to take regulatory action or close the case.
+- They prepare and distribute reports summarizing the adverse event, its impact, and any recommended actions to relevant parties, including drug manufacturers and healthcare providers.
+
+## 6. Regulatory Action and Compliance Monitoring
+
+Performed By: FDA Enforcement Officers
+
+Activity:
+- FDA enforcement officers take appropriate regulatory action based on the findings of the adverse event investigation.
+- They monitor compliance with regulations and guidelines related to drug safety, ensuring that manufacturers address identified issues promptly.
+
+## 7. Data Management and Maintenance
+
+Performed By: FDA Database Administrators
+
+Activity:
+- FDA database administrators maintain the integrity and accuracy of the Adverse Events database by regularly updating and backing up data.
+- They ensure that the system is secure, accessible, and scalable to accommodate growing amounts of case reports.

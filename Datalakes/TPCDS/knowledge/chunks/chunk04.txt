@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Administrator, Directors
+
+Activity:
+- Administrators designate the place for call center meetings based on the current meeting type.
+- Directors call meetings to discuss and make decisions about the corporation's operations.
+- The Administrator notifies Directors of meetings according to the specified notice requirements.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff, Customers
+
+Activity:
+- Call center staff answer incoming calls during designated hours.
+- Customers place calls to the call centers for various inquiries or services.
+
+## 3. Call Center Performance Tracking
+
+Performed By: Warehouse Staff, Call Center Managers
+
+Activity:
+- Warehouse staff update call center records when a customer's order is ready for pickup or delivery.
+- Call center managers track the performance of individual call centers based on metrics like hours and employee count.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details such as code, name, category, and list price.
+- Marketing managers update the catalog page information for each department.
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details like date, time, reason, and ship mode.
+- Warehouse staff update the warehouse records when a returned item is received and processed.
+
+## 6. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- The finance team records tax percentage for each call center location in the database.

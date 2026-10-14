@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Membership Management
+
+Performed By: Council, Administrator
+
+Activity:
+- The Council establishes requirements for new member payment of dues.
+- The Administrator sends annual dues notifications to Primary Representatives.
+- The Administrator determines the amount and times of payment based on Council's decisions.
+- Individual bills are mailed for each payment by the Administrator.
+- The Administrator suspends membership rights if payment becomes more than 30 days past due.
+
+## 2. Membership Rights Suspension
+
+Performed By: Administrator, Legal Department
+
+Activity:
+- The Administrator suspends membership privileges when the validity of a Primary Representative is in question.
+- The Administrator notifies the legal department of the Member in question.
+- Membership privileges remain suspended until the Member designates the appointment of the Primary Representative in writing to the Administrator.
+
+## 3. Dues Payment Collection
+
+Performed By: Members, Administrator
+
+Activity:
+- Members pay their annual dues on January 1st or within 60 days after notification is sent.
+- The Administrator collects past due charges when membership rights and privileges are terminated.
+
+## 4. Pro-Rated Dues Assessment
+
+Performed By: Administrator
+
+Activity:
+- The Administrator assesses a prorated percentage of the annual dues for companies joining in the second half of the year.
+
+## 5. Membership Rights and Privileges Reinstatement
+
+Performed By: Administrator
+
+Activity:
+- The Administrator reinstates membership rights and privileges when the TPC receives payment for all past due charges.
+
+## 6. Primary Representative Appointment
+
+Performed By: Members, Administrator
+
+Activity:
+- Members designate the appointment of the Primary Representative in writing to the Administrator.
+
+## 7. Pro-Rated Dues Calculation
+
+Performed By: Administrator
+
+Activity:
+- The Administrator calculates the prorated percentage of the annual dues based on how many months remain in the year for companies joining in the second half of the year.

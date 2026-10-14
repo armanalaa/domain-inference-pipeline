@@ -1,0 +1,57 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and department assignments.
+- HR managers update employee information when necessary, modifying the relevant fields in the HumanResources Employee table.
+- HR managers manage employee departures by updating the EndDate in the HumanResources EmployeeDepartmentHistory table.
+
+## 2. Department Assignment Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers assign employees to departments and update their organizational structure by recording the DepartmentID, ShiftID, StartDate, and EndDate in the HumanResources EmployeeDepartmentHistory table.
+- Warehouse staff manage employee shifts by updating the ShiftID in the HumanResources EmployeeDepartmentHistory table.
+
+## 3. Employee Pay Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers update employee salaries and pay frequencies by recording the RateChangeDate, Rate, and PayFrequency in the HumanResources EmployeePayHistory table.
+- Finance department records and manages employee payments using the information from the HumanResources EmployeePayHistory table.
+
+## 4. Address Management
+
+Performed By: HR Managers, Customers
+
+Activity:
+- HR managers record employees' addresses by associating them with AddressID, AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation in the Person Address table.
+- Customers provide their addresses during registration or order placement, which are recorded in the Person Address table.
+
+## 5. Contact Management
+
+Performed By: HR Managers, Customers
+
+Activity:
+- HR managers record employees' contact information by associating it with AddressTypeID and rowguid in the Person BusinessEntityContact table.
+- Customers provide their contact information during registration or order placement, which are recorded in the Person BusinessEntityContact table.
+
+## 6. Product Management
+
+Performed By: Sales Representatives, Purchasing Teams
+
+Activity:
+- Sales representatives manage product catalog by recording product code, name, category, and list price.
+- Purchasing teams issue purchase orders based on product requirements.
+
+## 7. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity of products in stock.

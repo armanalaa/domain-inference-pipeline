@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "E-commerce Management",
+    "definition": "The process of managing all aspects related to e-commerce transactions, including shopping cart management and sales transaction recording.",
+    "tables": [
+      "Sales ShoppingCartItem"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 6,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Sales ShoppingCartItem": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "ShoppingCartItemID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales ShoppingCartItem",
+          "samples": [
+            2,
+            4,
+            5,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ShoppingCartID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales ShoppingCartItem",
+          "samples": [
+            14951,
+            20621,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of items in a shopping cart for sales.",
+          "samples": [
+            3,
+            4,
+            7,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Product entity",
+          "samples": [
+            862,
+            881,
+            874,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "DateCreated",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of shopping cart item creation (format: YYYY-MM-DD HH:MI:SS.MS).",
+          "samples": [
+            "2013-11-09 17:54:07.603",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of last modification for each shopping cart item.",
+          "samples": [
+            "2013-11-09 17:54:07.603",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

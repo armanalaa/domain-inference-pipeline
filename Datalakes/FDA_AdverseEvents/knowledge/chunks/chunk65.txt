@@ -1,0 +1,58 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: FDA Officers, Manufacturers, and Consumers
+
+Activity:
+- FDA officers monitor adverse events related to FDA-regulated products.
+- Manufacturers report adverse events associated with their products.
+- Consumers submit reports about adverse experiences with FDA-regulated products.
+
+## 2. Event Classification
+
+Performed By: FDA Officers
+
+Activity:
+- FDA officers classify adverse events based on the level of hazard involved.
+- They assess the severity and potential impact on public health.
+
+## 3. Recall Initiation
+
+Performed By: Manufacturers, FDA Officers
+
+Activity:
+- If necessary, manufacturers initiate a recall to address defective or potentially harmful products.
+- FDA officers may request or order a recall in rare cases.
+
+## 4. Recall Strategy Oversight
+
+Performed By: FDA Officers
+
+Activity:
+- FDA officers oversee the company's strategy for recalling defective or potentially harmful products.
+- They ensure the recall is appropriate and effective.
+
+## 5. Enforcement Reporting
+
+Performed By: FDA Officers
+
+Activity:
+- Once classified, FDA officers post recall information in the Enforcement Reports.
+- Recall information includes details about the recalled products and the level of hazard involved.
+
+## 6. Recall Information Updates
+
+Performed By: FDA Officers
+
+Activity:
+- If necessary, FDA officers make corrections or changes to recall information previously disclosed in a past Enforcement Report.
+- This may include expanding the recall to include more batches or lots of the same recalled product.
+
+## 7. Public Health Protection
+
+Performed By: FDA Officers
+
+Activity:
+- FDA officers work with industry and state partners to protect public health from products that present a risk of injury or gross deception.
+- They publish press releases and other public notices about recalls that may potentially present a significant or serious risk to the consumer or user of the product.

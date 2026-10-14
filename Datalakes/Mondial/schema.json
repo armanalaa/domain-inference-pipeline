@@ -1,0 +1,1689 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Supports geographical and socio-cultural data management across cities, countries, continents, and natural features.",
+    "database": "mondial",
+    "created": "2026-07-16"
+  },
+  "tables": {
+    "city": {
+      "_description": "Captures geographical and demographic data of cities worldwide, including their names, countries, provinces, populations, longitudes, and latitudes.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of city names for Albanian cities.",
+          "samples": [
+            "Tirane",
+            "Shkoder",
+            "Durres",
+            "Vlore",
+            "Elbasan"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of inhabitants (in thousands) for cities.",
+          "samples": [
+            192000,
+            62000,
+            60000,
+            56000,
+            53000
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes of cities in decimal degrees.",
+          "samples": [
+            19.8,
+            19.2,
+            19.3,
+            20.1,
+            20.5
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for cities.",
+          "samples": [
+            41.3,
+            42.2,
+            40.3,
+            41.1,
+            40.4
+          ]
+        }
+      ]
+    },
+    "continent": {
+      "_description": "Captures geographical regions of the world, including their respective areas.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of continents: Europe, Asia, Australia/Oceania, Africa, America.",
+          "samples": [
+            "Europe",
+            "Asia",
+            "Australia/Oceania",
+            "Africa",
+            "America"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the approximate square kilometers of each continent.",
+          "samples": [
+            9562488.0,
+            45095292.0,
+            8503474.0,
+            30254708.0,
+            39872000.0
+          ]
+        }
+      ]
+    },
+    "country": {
+      "_description": "Captures geographical and demographic information of various countries worldwide.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of country names for Balkan nations.",
+          "samples": [
+            "Albania",
+            "Greece",
+            "Macedonia",
+            "Serbia",
+            "Montenegro"
+          ]
+        },
+        {
+          "name": "Code",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 country codes.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Capital",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names of respective countries' capitals (e.g., Tirane for Albania).",
+          "samples": [
+            "Tirane",
+            "Athens",
+            "Skopje",
+            "Belgrade",
+            "Podgorica"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Albania",
+            "Attiki",
+            "Macedonia",
+            "Serbia",
+            "Montenegro"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total land area (in square kilometers) for each country.",
+          "samples": [
+            28750.0,
+            131940.0,
+            25333.0,
+            77474.0,
+            14026.0
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the total number of inhabitants for each country as integers.",
+          "samples": [
+            3249136,
+            10538594,
+            2104035,
+            7379339,
+            672180
+          ]
+        }
+      ]
+    },
+    "desert": {
+      "_description": "Tracks geographical data for various desert regions worldwide.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of various desert regions worldwide.",
+          "samples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores square kilometers of desert areas.",
+          "samples": [
+            1200000.0,
+            95000.0,
+            70000.0,
+            50000.0,
+            80000.0
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes for various desert locations.",
+          "samples": [
+            21.0,
+            15.0,
+            -14.0,
+            -15.0,
+            -11.0
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for various desert locations.",
+          "samples": [
+            -22.0,
+            -25.0,
+            15.0,
+            18.0,
+            21.0
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "_description": "Tracks economic data of countries, including GDP, agriculture, service, industry, and inflation rates.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "GDP",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores countries' gross domestic products as floating point numbers.",
+          "samples": [
+            4100.0,
+            101700.0,
+            1900.0,
+            52180.0,
+            4515.0
+          ]
+        },
+        {
+          "name": "Agriculture",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores percentage of GDP contributed by agriculture.",
+          "samples": [
+            55.0,
+            11.8,
+            24.0,
+            12.3,
+            20.0
+          ]
+        },
+        {
+          "name": "Service",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores average cost of services in floating point format (e.g., dollars) for each economy record.",
+          "samples": [
+            22.2,
+            44.0,
+            24.2,
+            20.0,
+            26.5
+          ]
+        },
+        {
+          "name": "Industry",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores proportions of GDP distributed across various industries.",
+          "samples": [
+            66.0,
+            32.0,
+            63.5,
+            60.0,
+            71.1
+          ]
+        },
+        {
+          "name": "Inflation",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores annual inflation rates as decimal percentages.",
+          "samples": [
+            16.0,
+            8.1,
+            14.8,
+            6.8,
+            3.4
+          ]
+        }
+      ]
+    },
+    "ethnicGroup": {
+      "_description": "Captures demographic data representing ethnic groups and their percentage distribution across various countries.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters representing ethnic group names, such as Greeks, Albanians, Serbs, Macedonians.",
+          "samples": [
+            "Greeks",
+            "Albanian",
+            "Greek",
+            "Serb",
+            "Macedonian"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion of a population belonging to each ethnic group.",
+          "samples": [
+            3.0,
+            95.0,
+            98.0,
+            22.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    "geo_desert": {
+      "_description": "Tracks geographical distribution of deserts across countries and provinces globally.",
+      "columns": [
+        {
+          "name": "Desert",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Desert entity",
+          "samples": [
+            "Kalahari",
+            "Namib",
+            "Ferlo",
+            "Trarza",
+            "Erg Ouarane"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "ANG",
+            "NAM",
+            "Z",
+            "RB",
+            "RSA"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Moxico",
+            "Cuando Cubango",
+            "Namibia",
+            "Southern",
+            "Western"
+          ]
+        }
+      ]
+    },
+    "geo_estuary": {
+      "_description": "Records geographical estuaries of rivers across different provinces in various countries.",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "R",
+            "SF"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Iceland",
+            "Oestfold",
+            "Akershus",
+            "Goteborg och Bohus",
+            "Varmland"
+          ]
+        }
+      ]
+    },
+    "geo_island": {
+      "_description": "Captures geographical data of individual islands, including their respective countries and provinces.",
+      "columns": [
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of various islands, such as Svalbard, Greenland, Iceland, Aust-Vagoey, Streymoy.",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Aust-Vagoey",
+            "Streymoy"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "SVAX",
+            "GROX",
+            "IS",
+            "N",
+            "FARX"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Nordland",
+            "Faroe Islands"
+          ]
+        }
+      ]
+    },
+    "geo_lake": {
+      "_description": "Tracks geographical distribution of lakes across countries and provinces worldwide.",
+      "columns": [
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Lake entity",
+          "samples": [
+            "Inari",
+            "Oulujaervi",
+            "Kallavesi",
+            "Saimaa",
+            "Paeijaenne"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "SF",
+            "N",
+            "S",
+            "DK",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Lappia",
+            "Oulu",
+            "Kuopio",
+            "Kymi",
+            "Mikkeli"
+          ]
+        }
+      ]
+    },
+    "geo_mountain": {
+      "_description": "Tracks geographical data of mountains and their locations within countries and provinces.",
+      "columns": [
+        {
+          "name": "Mountain",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for Arctic and Alpine mountains.",
+          "samples": [
+            "Oeraefajoekull",
+            "Snoefell",
+            "Haltiatunturi",
+            "Kebnekaise",
+            "Sarektjokko"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "IS",
+            "SF",
+            "S",
+            "N",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Iceland",
+            "Lappia",
+            "Norrbotten",
+            "Nordland",
+            "Oppland"
+          ]
+        }
+      ]
+    },
+    "geo_river": {
+      "_description": "Tracks geographical distribution of rivers across countries and provinces.",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "R",
+            "SF"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Iceland",
+            "Akershus",
+            "Oestfold",
+            "Hedmark",
+            "Soer Trondelag"
+          ]
+        }
+      ]
+    },
+    "geo_sea": {
+      "_description": "Tracks geographical distribution of seas within countries and provinces.",
+      "columns": [
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Sea entity",
+          "samples": [
+            "Skagerrak",
+            "Kattegat",
+            "North Sea",
+            "The Channel",
+            "Black Sea"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "DK",
+            "N",
+            "S",
+            "F",
+            "D"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Denmark",
+            "Oslo",
+            "Akershus",
+            "Oestfold",
+            "Buskerud"
+          ]
+        }
+      ]
+    },
+    "geo_source": {
+      "_description": "Tracks geographical distribution of rivers across countries and provinces.",
+      "columns": [
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "IS",
+            "N",
+            "S",
+            "SF",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Iceland",
+            "Soer Trondelag",
+            "Oppland",
+            "Alvsborg",
+            "Hedmark"
+          ]
+        }
+      ]
+    },
+    "islandIn": {
+      "_description": "Records geographical data of islands located in seas, lakes, or rivers.",
+      "columns": [
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands in various locations, such as Svalbard, Greenland, Iceland, Aust-Vagoey, Streymoy.",
+          "samples": [
+            "Svalbard",
+            "Greenland",
+            "Iceland",
+            "Aust-Vagoey",
+            "Streymoy"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Sea entity",
+          "samples": [
+            "Norwegian Sea",
+            "Barents Sea",
+            "Arctic Ocean",
+            "Atlantic Ocean",
+            "Irish Sea"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Lake entity",
+          "samples": [
+            "Ozero Baikal",
+            "Lake Toba",
+            "Lake Manicouagan",
+            "Lake Huron",
+            "Lake Nicaragua"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "isMember": {
+      "_description": "Tracks membership of organizations within specific countries across various types.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "TL",
+            "PNG",
+            "AG",
+            "BS",
+            "BDS"
+          ]
+        },
+        {
+          "name": "Organization",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Organization entity",
+          "samples": [
+            "ACP",
+            "AfDB",
+            "ACCT",
+            "OPANAL",
+            "AG"
+          ]
+        },
+        {
+          "name": "Type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores membership type designation (member, regional member, nonregional member, associate member, observer) for records in the isMember table.",
+          "samples": [
+            "member",
+            "regional member",
+            "nonregional member",
+            "associate member",
+            "observer"
+          ]
+        }
+      ]
+    },
+    "lake": {
+      "_description": "Tracks geographical data for various lakes worldwide, including their names, areas, depths, altitudes, types, rivers, and coordinates.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of names for Finnish lakes.",
+          "samples": [
+            "Inari",
+            "Oulujaervi",
+            "Kallavesi",
+            "Saimaa",
+            "Paeijaenne"
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores surface area (in square kilometers) of various lakes.",
+          "samples": [
+            1040.0,
+            928.0,
+            472.0,
+            4370.0,
+            1118.0
+          ]
+        },
+        {
+          "name": "Depth",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the water depth (in float) of various lakes.",
+          "samples": [
+            92.0,
+            35.0,
+            85.0,
+            95.0,
+            449.0
+          ]
+        },
+        {
+          "name": "Altitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the elevation (in meters) of various lakes.",
+          "samples": [
+            119.0,
+            123.0,
+            76.0,
+            78.0,
+            419.0
+          ]
+        },
+        {
+          "name": "Type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores type of lake: impact, caldera, salt, artificial, acid.",
+          "samples": [
+            "impact",
+            "caldera",
+            "salt",
+            "artificial",
+            "acid"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            "Paatsjoki",
+            "Oulujoki",
+            "Vuoksi",
+            "Kymijoki",
+            "Lagen"
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes of lakes in decimal degrees.",
+          "samples": [
+            27.7,
+            27.25,
+            28.0,
+            25.4,
+            11.0
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for various lakes.",
+          "samples": [
+            68.95,
+            64.3,
+            62.9,
+            61.3,
+            61.5
+          ]
+        }
+      ]
+    },
+    "language": {
+      "_description": "Tracks linguistic composition of countries by recording their names and corresponding language percentages.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "MK",
+            "SRB",
+            "MNE",
+            "F",
+            "E"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of up to 50 distinct languages spoken in the Mondial database.",
+          "samples": [
+            "Albanian",
+            "Macedonian",
+            "Turkish",
+            "Serbian",
+            "Hungarian"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion of a language's usage within the Mondial database.",
+          "samples": [
+            21.0,
+            70.0,
+            3.0,
+            88.3,
+            3.8
+          ]
+        }
+      ]
+    },
+    "located": {
+      "_description": "Records geographical locations of cities, provinces, countries, rivers, lakes, and seas.",
+      "columns": [
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the City entity",
+          "samples": [
+            "Shkoder",
+            "Durres",
+            "Vlore",
+            "Kavalla",
+            "Athens"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Ionioi Nisoi"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "SRB",
+            "F",
+            "E"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the River entity",
+          "samples": [
+            "Donau",
+            "Save",
+            "Rhein",
+            "Garonne",
+            "Loire"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Lake entity",
+          "samples": [
+            "Lake Skutari",
+            "Bodensee",
+            "Lac Leman",
+            "Vierwaldstattersee",
+            "Zurichsee"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Sea entity",
+          "samples": [
+            "Mediterranean Sea",
+            "Atlantic Ocean",
+            "The Channel",
+            "North Sea",
+            "Baltic Sea"
+          ]
+        }
+      ]
+    },
+    "locatedOn": {
+      "_description": "Captures geographical locations of entities within a city, province, country, and island.",
+      "columns": [
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the City entity",
+          "samples": [
+            "Iraklion",
+            "Mytilini",
+            "Ajaccio",
+            "Palma de Mallorca",
+            "Santa Cruz de Tenerife"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Kriti",
+            "Voreion Aiyaion",
+            "Corse",
+            "Balearic Islands",
+            "Canary Islands"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "GR",
+            "F",
+            "E",
+            "I",
+            "R"
+          ]
+        },
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands where Mondial entities are located.",
+          "samples": [
+            "Kreta",
+            "Lesbos",
+            "Corse",
+            "Mallorca",
+            "Teneriffa"
+          ]
+        }
+      ]
+    },
+    "mergesWith": {
+      "_description": "MergesWith table records historical sea mergers or acquisitions in the Mondial database.",
+      "columns": [
+        {
+          "name": "Sea1",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas involved in geographical merges.",
+          "samples": [
+            "Kattegat",
+            "North Sea",
+            "Black Sea",
+            "Baltic Sea",
+            "Atlantic Ocean"
+          ]
+        },
+        {
+          "name": "Sea2",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of seas that a given sea merges with.",
+          "samples": [
+            "Skagerrak",
+            "The Channel",
+            "Norwegian Sea",
+            "Sea of Azov",
+            "Mediterranean Sea"
+          ]
+        }
+      ]
+    },
+    "mountainOnIsland": {
+      "_description": "Tracks geographical data of mountains located on specific islands.",
+      "columns": [
+        {
+          "name": "Mountain",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for mountains located on islands.",
+          "samples": [
+            "Oeraefajoekull",
+            "Snoefell",
+            "Ben Nevis",
+            "Monte Cinto",
+            "Etna"
+          ]
+        },
+        {
+          "name": "Island",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of islands where mountains are located.",
+          "samples": [
+            "Iceland",
+            "Great Britain",
+            "Corse",
+            "Sicilia",
+            "Kreta"
+          ]
+        }
+      ]
+    },
+    "organization": {
+      "_description": "Captures details of various organizations, including their abbreviations, names, locations (city, country, province), and establishment dates.",
+      "columns": [
+        {
+          "name": "Abbreviation",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of abbreviated names for international organizations such as ACP, AfDB, ACCT, OPANAL, AG.",
+          "samples": [
+            "ACP",
+            "AfDB",
+            "ACCT",
+            "OPANAL",
+            "AG"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores names of international organizations, such as regional groups and development banks.",
+          "samples": [
+            "African, Caribbean, and Pacific Countries",
+            "African Development Bank",
+            "Agency for Cultural and Technical Cooperation",
+            "Agency for the Prohibition of Nuclear Weapons in Latin America and the Caribbean",
+            "Andean Group"
+          ]
+        },
+        {
+          "name": "City",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the City entity",
+          "samples": [
+            "Brussels",
+            "Abidjan",
+            "Paris",
+            "Mexico City",
+            "Lima"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "B",
+            "CI",
+            "F",
+            "MEX",
+            "PE"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Province entity",
+          "samples": [
+            "Brabant",
+            "Cote dIvoire",
+            "Ile de France",
+            "Distrito Federal",
+            "Lima"
+          ]
+        },
+        {
+          "name": "Established",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores organization establishment dates as formatted YYYY-MM-DD strings.",
+          "samples": [
+            "1976-04-01",
+            "1963-08-04",
+            "1970-03-21",
+            "1967-02-14",
+            "1969-05-26"
+          ]
+        }
+      ]
+    },
+    "politics": {
+      "_description": "Captures political information about countries, including their independence status, any dependencies, and current government.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Independence",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the date of political independence as a formatted string (YYYY-MM-DD).",
+          "samples": [
+            "1912-11-28",
+            "1829-01-01",
+            "1991-09-17",
+            "2006-06-05",
+            "2006-06-03"
+          ]
+        },
+        {
+          "name": "Dependent",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO country codes for nations politically dependent or associated.",
+          "samples": [
+            "DK",
+            "GB",
+            "N",
+            "TJ",
+            "AUS"
+          ]
+        },
+        {
+          "name": "Government",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores political system type, ranging from emerging democracies to parliamentary republics or democracies, and coprincipalities.",
+          "samples": [
+            "emerging democracy",
+            "parliamentary republic",
+            "parliamentary democracy",
+            "republic",
+            "parliamentary democracy that retains as its heads of state a coprincipality"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "_description": "Tracks population data for countries, including growth rates and infant mortality statistics.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Population_Growth",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores annual population growth rates as positive for increase and negative for decrease.",
+          "samples": [
+            1.34,
+            0.42,
+            0.46,
+            -0.47,
+            -0.851
+          ]
+        },
+        {
+          "name": "Infant_Mortality",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores infant mortality rates per 1000 live births.",
+          "samples": [
+            49.2,
+            7.4,
+            29.7,
+            6.75,
+            2.2
+          ]
+        }
+      ]
+    },
+    "province": {
+      "_description": "Captures geographical and demographic data for administrative regions (provinces) within their respective countries.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of provinces in various formats, such as Albania, Anatoliki Makedhonia kai Thraki, etc.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of inhabitants for each province.",
+          "samples": [
+            3249136,
+            574308,
+            3522769,
+            702027,
+            292751
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the square kilometers of each province.",
+          "samples": [
+            14157.0,
+            3808.0,
+            11350.0,
+            9451.0,
+            2307.0
+          ]
+        },
+        {
+          "name": "Capital",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of capital cities for respective provinces.",
+          "samples": [
+            "Tirane",
+            "Komotini",
+            "Athens",
+            "Patrai",
+            "Kozani"
+          ]
+        },
+        {
+          "name": "CapProv",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of provinces in various formats across multiple countries.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        }
+      ]
+    },
+    "religion": {
+      "_description": "Tracks religious demographics by country and percentage of population.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the Country entity",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores religious denominations up to 50 characters.",
+          "samples": [
+            "Muslim",
+            "Roman Catholic",
+            "Christian Orthodox",
+            "Protestant",
+            "Jewish"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion (as a percentage) of each religion within the population.",
+          "samples": [
+            70.0,
+            10.0,
+            20.0,
+            1.3,
+            98.0
+          ]
+        }
+      ]
+    },
+    "river": {
+      "_description": "Tracks geographical data for global rivers, including names, lengths, sources, and estuaries.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of river names, primarily from Iceland and Scandinavia.",
+          "samples": [
+            "Thjorsa",
+            "Joekulsa a Fjoellum",
+            "Glomma",
+            "Lagen",
+            "Goetaaelv"
+          ]
+        },
+        {
+          "name": "River",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for major rivers worldwide.",
+          "samples": [
+            "Glomma",
+            "Dalaelv",
+            "Kemijoki",
+            "Rhone",
+            "Saone"
+          ]
+        },
+        {
+          "name": "Lake",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Lake entity",
+          "samples": [
+            "Mjoesa-See",
+            "Vaenern",
+            "Storuman",
+            "Siljan",
+            "Ozero Ladoga"
+          ]
+        },
+        {
+          "name": "Sea",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the Sea entity",
+          "samples": [
+            "Atlantic Ocean",
+            "Norwegian Sea",
+            "Skagerrak",
+            "Kattegat",
+            "Baltic Sea"
+          ]
+        },
+        {
+          "name": "Length",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the measured lengths (in float) of various rivers.",
+          "samples": [
+            230.0,
+            206.0,
+            604.0,
+            322.0,
+            93.0
+          ]
+        },
+        {
+          "name": "SourceLongitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores longitude coordinates of river sources.",
+          "samples": [
+            -18.0,
+            -16.5,
+            12.0,
+            8.45,
+            12.34
+          ]
+        },
+        {
+          "name": "SourceLatitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores latitude coordinates of river sources.",
+          "samples": [
+            65.0,
+            64.8,
+            62.6,
+            62.19,
+            58.4
+          ]
+        },
+        {
+          "name": "Mountains",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of mountain ranges bordering rivers.",
+          "samples": [
+            "Cevennes",
+            "Pyrenees",
+            "Alps",
+            "Vogesen",
+            "Jura"
+          ]
+        },
+        {
+          "name": "SourceAltitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores elevation (in meters) at the source of each river.",
+          "samples": [
+            860.0,
+            611.0,
+            44.0,
+            662.0,
+            119.0
+          ]
+        },
+        {
+          "name": "EstuaryLongitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores longitude coordinates of river estuaries.",
+          "samples": [
+            -20.8,
+            -16.6,
+            10.95,
+            11.45,
+            11.9
+          ]
+        },
+        {
+          "name": "EstuaryLatitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores latitude coordinates of river estuaries.",
+          "samples": [
+            63.9,
+            66.2,
+            59.2,
+            61.1,
+            57.7
+          ]
+        }
+      ]
+    },
+    "sea": {
+      "_description": "Tracks geographical data for various ocean bodies, recording their names and depths.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical names of seas.",
+          "samples": [
+            "Skagerrak",
+            "Kattegat",
+            "North Sea",
+            "The Channel",
+            "Black Sea"
+          ]
+        },
+        {
+          "name": "Depth",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the water depths of various seas in floating point format.",
+          "samples": [
+            725.0,
+            94.0,
+            200.0,
+            175.0,
+            2211.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Staff, FDA Employees
+
+Activity:
+- Pharmaceutical company staff record adverse event details, including product information and patient data. (A.1.2 Local Message Number, A.1.3 ICSR Message Sender Identifier)
+- Staff assign unique identifiers to each report sent to the FDA. (B.1.1 Safety Report ID)
+- FDA employees receive and acknowledge receipt of adverse event reports. (B.1.7 a and b Date of Receipt of the Most Recent Information)
+- FDA staff process reports, determining if they were successfully loaded into the database or require correction. (B.1.8 Acknowledgment Code for a Report)
+
+## 2. Error Handling
+
+Performed By: FDA Employees
+
+Activity:
+- In case of errors during report loading, FDA staff provide error messages and relevant field information to help the pharmaceutical company correct issues. (B.1.9 Error Message or Comment)
+
+## 3. Case Safety Report Processing
+
+Performed By: FDA Employees
+
+Activity:
+- FDA employees review adverse event reports for potential safety concerns and take appropriate action if necessary. (Not specified in the provided materials)
+
+## 4. Database Management
+
+Performed By: IT Staff, FDA Employees
+
+Activity:
+- IT staff manage the database structure and ensure it can handle adverse event report data. (Not specified in the provided materials)
+
+## 5. Regulatory Compliance Monitoring
+
+Performed By: FDA Employees
+
+Activity:
+- FDA employees monitor compliance with regulatory standards for adverse event reporting. (Not specified in the provided materials)

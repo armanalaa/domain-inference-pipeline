@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal information and qualifications (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls from customers and provide assistance (cc_rec_start_date).
+- Call center managers monitor employee performance and adjust schedules as needed (cc_hours).
+
+## 3. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers assign call centers to specific markets based on geographical location or market segment (cc_mkt_id, cc_division).
+- Call center managers update call center information related to the assigned market and division (cc_mkt_class, cc_division_name).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_description, cp_type).
+- IT staff maintain the catalog database to ensure data integrity and availability (not specified in provided schema).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details (cr_returned_date_sk, cr_item_sk, etc.).
+- Warehouse staff update inventory levels and process returned items accordingly (not specified in provided schema).
+
+## 6. Analytics and Reporting
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract and analyze data from the call center and catalog databases to generate reports on performance metrics (not specified in provided schema).
+- Management uses these reports to make informed decisions about operations and strategy (not specified in provided schema).

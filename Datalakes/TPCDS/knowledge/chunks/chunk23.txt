@@ -1,0 +1,67 @@
+ # TPC-DS — Business Workflows
+
+## 1. Affiliate Management
+
+Performed By: TPC Council, SC (Strategic Committee)
+
+Activity:
+- The TPC Council determines the eligibility of new affiliates based on their qualifications and alignment with TPC's mission.
+- The SC reviews and approves affiliate applications.
+- The SC recommends to the Council the termination, reduction, or suspension of an affiliate's status when necessary.
+
+## 2. Affiliate Obligations
+
+Performed By: TPC Affiliates
+
+Activity:
+- Affiliates maintain all TPC Confidential information as confidential.
+- Affiliates do not have access to budgets, contracts, or other restricted TPC information without explicit permission.
+
+## 3. Expulsion Procedure Initiation
+
+Performed By: TPC Council
+
+Activity:
+- The Council votes to initiate the expulsion process for a member based on grounds specified in the bylaws.
+
+## 4. Expulsion Procedure Study
+
+Performed By: SC (Strategic Committee)
+
+Activity:
+- The SC studies the issue and makes a recommendation at the next General Meeting regarding the expulsion of a member.
+
+## 5. Member Hearing
+
+Performed By: Affected Member, SC (Strategic Committee), Council
+
+Activity:
+- The affected member is given an opportunity to be heard before the SC or in writing.
+
+## 6. Expulsion Notification
+
+Performed By: TPC Administrator
+
+Activity:
+- The administrator notifies all members of the proposed expulsion and reasons for proposed expulsion 15 days prior to the General Meeting.
+
+## 7. Council Discussion and Vote on Expulsion
+
+Performed By: SC (Strategic Committee), Council
+
+Activity:
+- The council discusses whether or not the member should be expelled, suspended, or sanctioned in some other way at the next General Meeting.
+
+## 8. Mail Ballot for Expulsion
+
+Performed By: TPC Council
+
+Activity:
+- If the council votes to send out a Mail Ballot, members have 30 days to respond regarding the expulsion of the affected member.
+
+## 9. Merger, Acquisition, or Divestiture Management
+
+Performed By: TPC Council
+
+Activity:
+- The council manages mergers, acquisitions, or divestitures of memberships according to the policies outlined in the TPC bylaws.

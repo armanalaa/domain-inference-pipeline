@@ -1,0 +1,52 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies' Safety Officers, Healthcare Providers
+
+Activity:
+- Safety officers within pharmaceutical companies record adverse event details such as patient demographics, product information, and event description. (AdverseEvent, PatientDemographics, ProductInfo, EventDescription)
+- Healthcare providers submit reports on observed adverse events to the relevant regulatory bodies. (ReportSubmission)
+
+## 2. Case Processing
+
+Performed By: FDA Case Processors
+
+Activity:
+- Case processors at the Food and Drug Administration review incoming adverse event reports for completeness and validity. (CaseReview, ReportValidation)
+- If necessary, case processors request additional information from the reporting party to ensure a thorough investigation. (InformationRequest)
+
+## 3. Adverse Event Coding
+
+Performed By: FDA Coders
+
+Activity:
+- Coders within the FDA assign Medical Dictionary for Regulatory Activities (MedDRA) codes to adverse events based on their nature and effects. (MedDRACoding)
+
+## 4. Case Analysis
+
+Performed By: FDA Analysts
+
+Activity:
+- Analysts at the FDA analyze coded adverse event cases to identify potential safety concerns or trends related to specific products. (CaseAnalysis, SafetyConcernIdentification)
+
+## 5. Risk Assessment
+
+Performed By: FDA Risk Assessors
+
+Activity:
+- Risk assessors evaluate the identified safety concerns and determine the level of risk associated with each adverse event. (RiskAssessment, RiskLevelDetermination)
+
+## 6. Communication with Sponsors
+
+Performed By: FDA Liaisons
+
+Activity:
+- Liaisons between the FDA and pharmaceutical companies communicate findings from the risk assessment process, including any necessary actions to address potential safety issues. (CommunicationWithSponsors)
+
+## 7. Adverse Event Follow-up
+
+Performed By: Pharmaceutical Companies' Safety Officers
+
+Activity:
+- Safety officers within pharmaceutical companies follow up on FDA communications and take appropriate actions to address identified safety concerns, such as updating product labels or conducting further investigations. (FollowUpActions)

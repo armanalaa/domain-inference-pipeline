@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Subcommittee Management
+
+Performed By: Benchmark Subcommittee Members
+
+Activity:
+- Propose software updates based on feedback and analysis (call_center, policies_v6.19.pdf).
+- Coordinate with Council for formal review and approval of proposed updates (call_center, policies_v6.19.pdf).
+- Assign problem reporting, development, testing, and release activities to subcommittee members or third parties (procedures_v1.0.0.pdf).
+
+## 2. Software Development
+
+Performed By: Subcommittee Members, Third Parties
+
+Activity:
+- Develop TPC-Provided Software according to defined procedures (procedures_v1.0.0.pdf).
+- Contribute code to the software, ensuring a signed CLA is on file with the TPC Administrator (procedures_v1.0.0.pdf).
+- Assign copyright to the contributor or TPC, depending on contractual agreements (procedures_v1.0.0.pdf).
+
+## 3. Software Testing and Quality Assurance
+
+Performed By: Subcommittee Members, Third Parties
+
+Activity:
+- Test the developed software for quality assurance according to defined procedures (procedures_v1.0.0.pdf).
+- Report any issues or problems found during testing to the Benchmark Subcommittee (procedures_v1.0.0.pdf).
+
+## 4. Software Approval and Publication
+
+Performed By: Benchmark Subcommittee, Council
+
+Activity:
+- Propose resolution of comments from formal review as an updated draft of the TPC-Provided Software (policies_v6.19.pdf).
+- Bring forward a motion to the Council for approval of the TPC-Provided Software (policies_v6.19.pdf).
+- Publish the approved TPC-Provided Software upon Council's approval (policies_v6.19.pdf).
+
+## 5. Formal Review and Approval Process
+
+Performed By: Benchmark Subcommittee, Council, All Members, Public
+
+Activity:
+- Make the software available for formal review by All Members and the public (policies_v6.19.pdf).
+- Consider comments and proposed changes generated from the review (policies_v6.19.pdf).
+
+## 6. Software Maintenance and Support
+
+Performed By: Benchmark Subcommittee, TPC Administrator
+
+Activity:
+- Provide support via the problem reporting mechanism for TPC-Provided Software (procedures_v1.0.0.pdf).
+
+## 7. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, and list price (catalog_page).
+
+## 8. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Record returned items with relevant details such as returned date, time, item SKU, customer information, warehouse SKU, and reason for return (catalog_returns).

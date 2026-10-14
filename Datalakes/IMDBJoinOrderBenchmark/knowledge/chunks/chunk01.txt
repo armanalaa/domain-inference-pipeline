@@ -1,0 +1,54 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrator, Data Analyst
+
+Activity:
+- Database administrators maintain the structure and integrity of the database by creating and updating tables and indexes (IMDBJoinOrderBenchmark schema).
+- Data analysts load and validate movie data from external sources into the appropriate tables.
+
+## 2. Actor/Actress Data Management
+
+Performed By: Database Administrator, Data Analyst
+
+Activity:
+- Database administrators manage the structure of actor/actress-related tables (aka_name, char_name).
+- Data analysts load and validate actor/actress data from external sources into the appropriate tables.
+
+## 3. Movie Company Data Management
+
+Performed By: Database Administrator, Data Analyst
+
+Activity:
+- Database administrators manage the structure of movie company-related tables (company_name, movie_companies).
+- Data analysts load and validate movie company data from external sources into the appropriate tables.
+
+## 4. Movie Keyword Association
+
+Performed By: Content Analyst
+
+Activity:
+- Content analysts associate relevant keywords with movies to facilitate search and categorization (movie_keyword).
+
+## 5. Movie Link Creation
+
+Performed By: Content Analyst
+
+Activity:
+- Content analysts create links between related movies based on shared themes, actors, or production companies (movie_link).
+
+## 6. Cast Information Recording
+
+Performed By: Data Entry Clerk
+
+Activity:
+- Data entry clerks record cast information for each movie, including actor roles and character names (cast_info, char_name).
+
+## 7. Movie Information Management
+
+Performed By: Database Administrator, Data Analyst
+
+Activity:
+- Database administrators manage the structure of movie-related tables (movie_info, complete_cast).
+- Data analysts load and validate movie information from external sources into the appropriate tables.

@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers recruit new employees by posting job openings and reviewing applications.
+- HR managers onboard new hires by providing training materials, setting up workstations, and assigning roles.
+- Call center managers allocate employees to specific call centers based on skills and availability.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Agents, Warehouse Staff
+
+Activity:
+- Call center agents answer incoming calls from customers and assist with inquiries or troubleshooting issues.
+- Warehouse staff track inventory levels and process orders for shipped items based on customer requests.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details such as code, name, category, and list price.
+- Marketing managers create and update catalog pages to showcase products and provide descriptions.
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return details and updating the database.
+- Warehouse staff receive returned items, verify their condition, and update inventory levels accordingly.
+
+## 5. Financial Record Keeping
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records financial transactions such as sales, returns, and expenses related to call center operations and catalog management.
+
+## 6. Performance Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts collect and analyze performance data to identify trends and areas for improvement in call center operations and catalog management.
+- Management reviews the analysis results and makes decisions based on the insights gained.

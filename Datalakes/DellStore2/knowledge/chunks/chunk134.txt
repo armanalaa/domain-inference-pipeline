@@ -1,0 +1,62 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update the quan_in_stock for each product based on incoming shipments.
+- Product managers assign common_prod_id to similar products for easier categorization and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering firstname, lastname, address details, email, phone, creditcardtype, and password.
+- HR managers update customer information such as age, income, gender, and region.
+- Customers log in to their accounts using username and password for browsing products and placing orders.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog, select desired products, and add them to their shopping carts.
+- Customers proceed to checkout, enter shipping information, and confirm order details.
+- Sales representatives review orders for accuracy before they are processed.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives generate invoices based on customer orders and record netamount, tax, and totalamount.
+- Warehouse staff pick and pack ordered items, updating quan_in_stock accordingly.
+- Warehouse staff prepare shipments for delivery to the customer's specified address.
+
+## 5. Inventory Replenishment
+
+Performed By: Purchasing Teams, Inventory Staff
+
+Activity:
+- Purchasing teams issue purchase orders for products with quan_low or date_low.
+- Inventory staff receive and verify incoming shipments, updating quan_in_stock and sales accordingly.
+- Inventory staff reorder products when necessary, recording date_reordered, quan_reordered, and date_expected.
+
+## 6. Financial Record Keeping
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record financial transactions related to orders, such as netamount, tax, and totalamount.
+- Finance staff generate reports on sales, revenue, and expenses for analysis and decision making.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints regarding orders, products, or account issues.
+- Customer service representatives assist customers with password resets and other account management tasks.

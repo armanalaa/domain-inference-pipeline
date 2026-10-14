@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign call centers to specific markets based on the market's classification and description (cc_mkt_class, cc_mkt_desc).
+- Market managers determine the appropriate division for each call center within their jurisdiction (cc_division).
+- Call center managers set up new call centers by providing details such as name, square footage, operating hours, and manager information (cc_name, cc_sq_ft, cc_hours, cc_manager).
+
+## 2. Market Division Allocation
+
+Performed By: Market Managers
+
+Activity:
+- Market managers allocate call centers to specific divisions based on strategic considerations (cc_division).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Manager
+
+Activity:
+- Call center employees handle customer inquiries and sales calls during the specified operating hours (cc_hours).
+- Call center manager monitors call center performance and makes adjustments as needed to ensure efficient operations.
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Catalog Page Maintenance
+
+Performed By: Product Managers
+
+Activity:
+- Product managers update or remove catalog pages as needed to reflect changes in product offerings (cp_start_date_sk, cp_end_date_sk).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time, item SKU, refunded customer information, and reason for return (cr_returned_date_sk, cr_item_sk, cr_refunded_customer_sk, cr_reason_sk).
+- Warehouse staff update inventory levels after processing a return (cr_quan).
+
+## 7. Order Fulfillment
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process orders by selecting the appropriate catalog page and shipping mode (cp_catalog_page_sk, cr_ship_mode_sk).
+- Warehouse staff pick and pack items for shipment, update inventory levels, and generate shipping labels (cr_warehouse_sk).

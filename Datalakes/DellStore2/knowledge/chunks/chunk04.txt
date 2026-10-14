@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Categorization
+
+Performed By: Category Managers
+
+Activity:
+- Assign products to appropriate categories based on their content or genre. (categories)
+- Update category names and descriptions as needed to reflect changes in product offerings. (categories)
+
+## 2. New Product Registration
+
+Performed By: Product Managers
+
+Activity:
+- Input new product details, including title, actor, price, and common product ID. (products)
+- Assign the product to a category for easy browsing by customers. (products, categories)
+
+## 3. Customer Registration
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Create new customer accounts with required personal information such as name, address, email, and phone number. (customers)
+- Set up credit card details for the customer's account. (customers)
+
+## 4. Order Placement
+
+Performed By: Customers
+
+Activity:
+- Browse products by category or search for specific items. (products, categories)
+- Add desired products to the shopping cart and proceed to checkout. (orderlines)
+- Enter shipping and billing information to complete the order. (customers, orders)
+
+## 5. Order Processing
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieve ordered items from inventory based on order details. (inventory, orderlines)
+- Package the items for shipping and update their stock levels accordingly. (inventory)
+
+## 6. Inventory Management
+
+Performed By: Inventory Managers
+
+Activity:
+- Monitor product quantities in real-time to ensure adequate stock levels. (inventory)
+- Reorder low-stock items when necessary, providing expected delivery dates. (reorder)
+
+## 7. Order Fulfillment and Delivery
+
+Performed By: Shipping Department
+
+Activity:
+- Prepare orders for shipping by attaching labels and addressing packages appropriately.
+- Coordinate with courier services to arrange pickups and track deliveries. (orders)

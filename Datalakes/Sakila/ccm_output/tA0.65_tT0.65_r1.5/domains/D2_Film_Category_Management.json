@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Film Category Management",
+    "definition": "The set of activities related to managing film categories and their associated data.",
+    "tables": [
+      "category"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 3,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "category": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "category_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in category",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores movie genre names such as Action, Animation, Children, Classics, Comedy.",
+          "samples": [
+            "Action",
+            "Animation",
+            "Children",
+            "Classics",
+            "Comedy"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for all category records.",
+          "samples": [
+            "2006-02-15 04:46:27",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

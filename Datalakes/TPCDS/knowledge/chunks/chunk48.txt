@@ -1,0 +1,30 @@
+ # TPC-DS — Business Workflows
+
+## 1. Result Submission and Review Process
+
+Performed By: Test Sponsors, TAB (Technical Advisory Board)
+
+Activity:
+- Test Sponsors submit new Results for review to the Web Site upon completion (call_center).
+- Upon issuance of a waiver, Problem Reports are opened to describe issues (catalog_page).
+- During the Review Period, All Members can submit objections related to compliance with TPC Benchmark Standard (call_center).
+- The TAB evaluates challenges following the process described in Policies § 3.3.3 (call_center).
+- If no challenge is submitted within the Review Period, the Result is automatically given the status of Accepted (call_center).
+- After the Review Period, new challenges must pertain to objections already filed or issues specified in Policies § 6.11.3 (call_center).
+
+## 2. Challenge Evaluation and Resolution Process
+
+Performed By: TAB (Technical Advisory Board)
+
+Activity:
+- The TAB meets to discuss challenges that may occur after the Review Period has expired (call_center).
+- If a Test Sponsor submits documentation in response to a challenge, it is subject to the standard Review Period (call_center).
+- Once all matters are heard by the Council, the Result passes into Accepted status under certain conditions (call_center).
+
+## 3. Result Promotion and Trademark Usage Policy
+
+Performed By: Test Sponsors
+
+Activity:
+- Test Sponsors promote Submitted for Review Results in the press (call_center).
+- Test Sponsors are required to cite the TPC trademark in their public relations materials (call_center).

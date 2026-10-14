@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when receiving shipments related to specific prod_id.
+- Product managers set special and common_prod_id for each item based on its characteristics.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives create customer accounts with firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcard details.
+- Customer service agents update contact information (email, phone) for existing customers.
+- HR managers record username, "password", age, income, gender, and creditcardexpiration for new employees.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products (prod_id) and specifying quantities.
+- Sales representatives confirm order details, including orderdate, netamount, tax, and totalamount, before finalizing the order.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff retrieve products (prod_id) from inventory based on orderlineid and quantity.
+- Shipping agents package orders for delivery and record the orderdate.
+
+## 5. Inventory Tracking
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update quan_in_stock when products (prod_id) are sold or returned.
+- Purchasing teams issue purchase orders to replenish low stock levels based on date_low and quan_low for each prod_id.
+
+## 6. Reordering
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff record date_reordered, quan_reordered, and date_expected when restocking products (prod_id).
+- Purchasing teams update date_low and quan_low for each prod_id based on reordering information.
+
+## 7. Financial Reporting
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record sales data from inventory (sales) to calculate netamount, tax, and totalamount for orders.
+- Finance staff generate financial reports for analysis and decision-making purposes.
+
+## 8. Data Governance
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators ensure data integrity by validating and correcting inconsistent definitions for key metrics like "Graduation Rate" or "Retention Rate".
+- IT administrators implement access controls to protect sensitive customer data (PII, student records, research data) from unauthorized access.

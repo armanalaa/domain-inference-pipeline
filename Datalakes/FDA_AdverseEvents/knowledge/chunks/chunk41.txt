@@ -1,0 +1,51 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Regulatory Affairs Specialists, Case Processors
+
+Activity:
+- Regulatory affairs specialists receive adverse event reports from various sources.
+- Case processors review the received reports to ensure completeness and validity.
+- Case processors assign unique identifiers to each report for tracking purposes.
+- Case processors verify the patient's relevant medical history and concurrent conditions.
+- Case processors record details about the reaction(s) or event(s).
+
+## 2. Drug Information Collection
+
+Performed By: Case Processors, Data Entry Clerks
+
+Activity:
+- Case processors collect information about the drug involved in the adverse event.
+- Data entry clerks input the drug's characterization, medicinal product, and dosage details.
+- Data entry clerks record the drug's authorization number and country of origin.
+- Data entry clerks document the drug's administration route, dosage form, and paradministration (if applicable).
+- Data entry clerks input the reaction gestation period and related information.
+
+## 3. Test Results Recording
+
+Performed By: Case Processors, Data Entry Clerks
+
+Activity:
+- Case processors collect test results relevant to the investigation of the patient.
+- Data entry clerks record the test date, name, result, unit, and any additional information.
+- Data entry clerks input low and high test range values (if applicable).
+
+## 4. Parent Information Documentation
+
+Performed By: Case Processors, Data Entry Clerks
+
+Activity:
+- Case processors document the parent's identification details.
+- Data entry clerks record the parent's birthdate, age, sex, weight, and height.
+- Data entry clerks input the parent's medical history and concurrent conditions.
+- Data entry clerks record the relevant past drug therapy of the parent.
+
+## 5. Death Reporting and Autopsy Information Recording
+
+Performed By: Case Processors, Data Entry Clerks
+
+Activity:
+- Case processors document details about the patient's death (if applicable).
+- Data entry clerks record the death date and autopsy information (if applicable).
+- Data entry clerks input the cause of death report and determine autopsy findings.

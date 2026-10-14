@@ -1,0 +1,55 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign initial department and shift for the employee.
+- Record the employee's address and contact information.
+
+## 2. Employee Department Management
+
+Performed By: Human Resources Managers, Warehouse Staff
+
+Activity:
+- Update an employee's department assignment by recording the new DepartmentID, ShiftID, StartDate, and EndDate.
+- Transfer employees between departments as needed.
+
+## 3. Employee Salary Management
+
+Performed By: Human Resources Managers, Finance Team
+
+Activity:
+- Adjust an employee's salary rate by recording the RateChangeDate and new Rate.
+- Update the pay frequency for an employee.
+
+## 4. Address Management
+
+Performed By: Employees, Customers, Vendors
+
+Activity:
+- Register a new address by providing the AddressLine1, AddressLine2, City, StateProvinceID, and PostalCode.
+- Update an existing address with new information as needed.
+
+## 5. Address Type Management
+
+Performed By: Data Administrators
+
+Activity:
+- Define types of addresses for use in the system by recording the Name.
+
+## 6. Employee Contact Information Management
+
+Performed By: Employees, Customers, Vendors
+
+Activity:
+- Record contact information associated with an employee's business entity.
+
+## 7. Business Entity Management
+
+Performed By: Data Administrators
+
+Activity:
+- Register new business entities (employees, customers, vendors) by recording their unique identifier and other relevant details.

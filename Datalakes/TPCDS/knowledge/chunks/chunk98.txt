@@ -1,0 +1,46 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Market Managers, HR Managers
+
+Activity:
+- Call center managers assign specific divisions to each call center (cc_division).
+- Market managers determine the market class and description for a call center (cc_mkt_class, cc_mkt_desc).
+- HR managers recruit and hire new employees for the call center (cc_employees).
+- Call center managers set the operating hours for each call center (cc_hours).
+- HR managers assign a manager to oversee each call center (cc_manager).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Sales Representatives
+
+Activity:
+- Sales representatives answer incoming calls from customers (cc_rec_start_date).
+- Sales representatives assist customers in navigating the catalog pages (cp_catalog_page_number).
+- Call center employees record customer orders, including product details and shipping information (cr_item_sk, cr_ship_mode_sk, cr_warehouse_sk).
+- Call center employees update the call center's open and closed dates (cc_open_date_sk, cc_closed_date_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog with their respective codes, names, categories, and list prices (cp_catalog_number, cp_description, cp_type).
+- Marketing managers categorize each item based on market class (cc_mkt_id).
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the return date and time (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse location for returned items (cr_warehouse_sk).
+- Customer service representatives determine the reason for each return (cr_reason_sk).
+
+## 5. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance records the tax percentage for each call center (cc_tax_percentage).

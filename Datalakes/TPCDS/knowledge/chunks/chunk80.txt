@@ -1,0 +1,60 @@
+ # TPC-DS — Business Workflows
+
+## 1. Code Maintenance Team Management
+
+Performed By: Code Maintenance Team Lead, Committers
+
+Activity:
+- Code Maintenance Team Lead schedules meetings for the team to discuss and prioritize issues (cc_call_center_sk).
+- Committers review project goals and processes during Code Maintenance Team meetings.
+- The team opens new issues related to the open source project in the GitHub repository (not specified in the database schema).
+- Committers assign issues to TPC members or non-TPC individuals for resolution.
+- Once an issue is resolved, a Committter closes it in the GitHub repository.
+- The team approves pull requests submitted by TPC members or non-TPC individuals.
+
+## 2. Code Maintenance Team Reporting
+
+Performed By: Code Maintenance Team Lead, Committers
+
+Activity:
+- The Code Maintenance Team provides a report on the current work in the open source project to the sponsoring subcommittee at a requested cadence (not specified in the database schema).
+
+## 3. Code Maintenance Team Membership Management
+
+Performed By: Sponsoring Subcommittee, Code Maintenance Team Lead, Committers
+
+Activity:
+- The initial members of a Code Maintenance Team are voted on by the sponsoring subcommittee (not specified in the database schema).
+- A Code Maintenance Team always has at least two Committers coming from the sponsoring subcommittee from at least two different member companies.
+- Changes to the membership of the Code Maintenance Team can be proposed by either the Code Maintenance Team or the sponsoring subcommittee, and must be approved by a majority vote in the sponsoring subcommittee (not specified in the database schema).
+- Dissolution of a Code Maintenance Team is done by a super majority vote in the sponsoring subcommittee (not specified in the database schema).
+
+## 4. Issue Tracking and Management
+
+Performed By: Committers, TPC members or non-TPC individuals
+
+Activity:
+- Committers track issues related to the open source project in the GitHub repository (not specified in the database schema).
+- TPC members or non-TPC individuals work on assigned issues.
+
+## 5. Pull Request Approval and Merging
+
+Performed By: Committers
+
+Activity:
+- Committers review pull requests submitted by TPC members or non-TPC individuals.
+- If approved, Committers merge the pull request into the main branch of the GitHub repository (not specified in the database schema).
+
+## 6. Project Documentation and Updates
+
+Performed By: Committers
+
+Activity:
+- Committers update project documentation as needed to reflect changes made to the open source project.
+
+## 7. Code Maintenance Team Communication
+
+Performed By: Code Maintenance Team Members
+
+Activity:
+- Code Maintenance Team members maintain good attendance at Code Maintenance Team meetings (See Policies § 3.5.4.7 as guidance).

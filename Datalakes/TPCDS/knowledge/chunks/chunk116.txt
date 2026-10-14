@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal details, qualifications, and performance metrics (cc_name, cc_company_name, cc_street_number, cc_street_name, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Call center managers determine the number of employees needed for each shift and adjust staffing levels accordingly (cc_employees, cc_hours).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls and provide assistance with inquiries or issues (cc_call_center_id).
+- Representatives record call details such as start and end dates, duration, and customer information (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk, cc_open_date_sk, cr_returning_customer_sk, cr_refunded_customer_sk).
+- Representatives offer promotions or upsell products to customers based on their preferences and purchase history (cc_mkt_id, cp_catalog_page_sk).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by entering product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing managers create promotional pages for specific departments or products in the catalog (cp_department, cp_catalog_page_sk).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting items from the catalog and entering order details (cr_order_number).
+- Warehouse staff retrieve ordered items from inventory and prepare them for shipping (cr_warehouse_sk).
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns by recording return details such as returned date, time, item SKU, and reason (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk).
+- Warehouse staff receive returned items, inspect them for damage or defects, and update their status in the system (cr_warehouse_sk).
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records transactional data such as sales, returns, and expenses to generate financial reports (cc_tax_percentage).
+
+## 7. Performance Monitoring
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers monitor call center performance by analyzing key metrics like average handling time, service level, and sales per representative (cc_hours, cc_tax_percentage).
+- HR managers review employee performance data to identify training needs or potential issues (cc_employees).

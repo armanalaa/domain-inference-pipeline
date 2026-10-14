@@ -1,0 +1,75 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 12
+Edges in G_T         : 7
+θ_T applied in Step 4: 0.75
+Domains discovered   : 7
+Modularity Q         : 0.4271
+
+──────────────────────────────────────────────────────────────────────
+D0  AdverseEventReportingManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of adverse event reports, encompassing data collection, formatting, organization, processing, analysis, and communication.
+  Tables     : receivers, senders
+  Phi top-3  : C3=0.422  C1=0.406  C9=0.404
+
+──────────────────────────────────────────────────────────────────────
+D1  PharmaceuticalAdverseEventDataManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of data related to adverse events associated with pharmaceuticals.
+  Tables     : drug_brand_names, drug_openfda, drug_substances, drugs
+  Phi top-3  : C30=0.438  C35=0.411  C39=0.398
+
+──────────────────────────────────────────────────────────────────────
+D2  AdverseEventDataOrganization
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of formatting, organizing, and maintaining adverse event data using a standard format.
+  Tables     : seriousness
+  Phi top-3  : C9=0.401  C3=0.373  C17=0.365
+
+──────────────────────────────────────────────────────────────────────
+D3  AdverseEventDataManagementSystem
+──────────────────────────────────────────────────────────────────────
+  Definition : A system for managing and organizing adverse event data collected from various sources, including reporting, formatting, processing, analysis, and storage.
+  Tables     : report_duplicates
+  Phi top-3  : C1=0.379  C30=0.373  C9=0.361
+
+──────────────────────────────────────────────────────────────────────
+D4  AdverseEventDataOrganizationAndManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the tables that organize and manage adverse event data for patients, including patient demographics, onset age, weight, sex, and death date.
+  Tables     : patients
+  Phi top-3  : C3=0.390  C17=0.361  C9=0.358
+
+──────────────────────────────────────────────────────────────────────
+D5  AdverseEventDataFormattingAndOrganization
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of formatting and organizing adverse event data using a standard format, including primary sources and reports
+  Tables     : primary_sources, reports
+  Phi top-3  : C3=0.434  C9=0.413  C17=0.392
+
+──────────────────────────────────────────────────────────────────────
+D6  AdverseEventDataManagementAndAnalysis
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing and analyzing adverse event data associated with pharmaceuticals
+  Tables     : reactions
+  Phi top-3  : C30=0.459  C1=0.451  C7=0.436
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  receivers                            D       0  AdverseEventReportingManagement
+  senders                              D       0  AdverseEventReportingManagement
+  drug_brand_names                     D       1  PharmaceuticalAdverseEventDataManagement
+  drug_openfda                         D       1  PharmaceuticalAdverseEventDataManagement
+  drug_substances                      D       1  PharmaceuticalAdverseEventDataManagement
+  drugs                                D       1  PharmaceuticalAdverseEventDataManagement
+  seriousness                          D       2  AdverseEventDataOrganization
+  report_duplicates                    D       3  AdverseEventDataManagementSystem
+  patients                             D       4  AdverseEventDataOrganizationAndManagement
+  primary_sources                      D       5  AdverseEventDataFormattingAndOrganization
+  reports                              D       5  AdverseEventDataFormattingAndOrganization
+  reactions                            D       6  AdverseEventDataManagementAndAnalysis
+======================================================================

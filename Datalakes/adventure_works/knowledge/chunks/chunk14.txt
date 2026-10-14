@@ -1,0 +1,59 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources Team
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- Update employee personal information such as NationalIDNumber, BirthDate, MaritalStatus, Gender, and rowguid.
+- Assign employees to departments by recording DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate in the EmployeeDepartmentHistory table.
+- Update employee login details including OrganizationNode, LoginID, JobTitle, HireDate, CurrentFlag, and rowguid.
+
+## 2. Employee Onboarding
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- Provide new employees with necessary equipment by updating the inventory levels for assigned items.
+- Assign workstations to new employees based on their department and shift.
+- Train new employees on company policies, procedures, and job-specific skills.
+
+## 3. Employee Performance Evaluation
+
+Performed By: Managers, HR Managers
+
+Activity:
+- Conduct regular performance evaluations for employees to assess their job performance and identify areas for improvement.
+- Update employee performance records with evaluation results and feedback.
+
+## 4. Employee Promotion and Transfer
+
+Performed By: HR Managers, Department Heads
+
+Activity:
+- Identify suitable candidates for promotion or transfer based on performance evaluations, skill sets, and department needs.
+- Update employee records to reflect new job titles, departments, and pay rates following a successful promotion or transfer.
+
+## 5. Employee Termination
+
+Performed By: HR Managers, Department Heads
+
+Activity:
+- Initiate termination process for employees who no longer meet company requirements or have violated company policies.
+- Update employee records to reflect termination date and final pay details.
+
+## 6. Address Management
+
+Performed By: Employees, HR Managers
+
+Activity:
+- Register home addresses by recording AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, SpatialLocation, rowguid, and ModifiedDate.
+- Update employee addresses as needed, including changing the address type (e.g., home, work).
+
+## 7. Employee Search
+
+Performed By: Recruiters, HR Managers
+
+Activity:
+- Search for candidates based on searchString, useInflectional, useThesaurus, and language parameters to find suitable applicants for open positions.

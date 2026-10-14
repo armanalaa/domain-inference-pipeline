@@ -1,0 +1,81 @@
+ # Mondial — Business Workflows
+
+## 1. Country Management
+
+Performed By: Country Managers, Data Analysts
+
+Activity:
+- Country managers register new countries by recording the name, code, capital, province, area, and population.
+- Data analysts update country information as needed, referencing the relevant columns in the country table.
+
+## 2. City Management
+
+Performed By: City Managers, Data Analysts
+
+Activity:
+- City managers register new cities by recording the name, country, province, population, longitude, and latitude.
+- Data analysts update city information as needed, referencing the relevant columns in the city table.
+
+## 3. Continent Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new continents by recording the name and area.
+- Data analysts update continent information as needed, referencing the relevant columns in the continent table.
+
+## 4. Lake Management
+
+Performed By: Hydrologists, Data Analysts
+
+Activity:
+- Hydrologists register new lakes by recording the name, area, depth, altitude, type, river (if any), longitude, and latitude.
+- Data analysts update lake information as needed, referencing the relevant columns in the lake table.
+
+## 5. River Management
+
+Performed By: Hydrologists, Data Analysts
+
+Activity:
+- Hydrologists register new rivers by recording the name, country, province, longitude, and latitude (source and merge points if applicable).
+- Data analysts update river information as needed, referencing the relevant columns in the geo_river table.
+
+## 6. Sea Management
+
+Performed By: Maritime Specialists, Data Analysts
+
+Activity:
+- Maritime specialists register new seas by recording the name, country, province, and mergesWith (if applicable).
+- Data analysts update sea information as needed, referencing the relevant columns in the geo_sea table.
+
+## 7. Mountain Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new mountains by recording the name, country, province, and location on an island (if applicable).
+- Data analysts update mountain information as needed, referencing the relevant columns in the geo_mountain table.
+
+## 8. Island Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new islands by recording the name, country, province, and location (sea, lake, or river).
+- Data analysts update island information as needed, referencing the relevant columns in the geo_island table.
+
+## 9. Desert Management
+
+Performed By: Geographers, Data Analysts
+
+Activity:
+- Geographers register new deserts by recording the name, area, longitude, and latitude.
+- Data analysts update desert information as needed, referencing the relevant columns in the desert table.
+
+## 10. Organization Management
+
+Performed By: Administrators, Data Analysts
+
+Activity:
+- Administrators register new organizations by recording the abbreviation, name, city, country, province, and establishment details.
+- Data analysts update organization information as needed, referencing the relevant columns in the organization table.

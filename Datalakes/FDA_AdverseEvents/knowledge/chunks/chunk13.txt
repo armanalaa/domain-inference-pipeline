@@ -1,0 +1,66 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Medical Professionals, Pharmaceutical Company Representatives
+
+Activity:
+- Medical professionals document adverse events observed in patients.
+- Pharmaceutical company representatives collect and verify reported adverse events.
+- Medical professionals provide detailed descriptions of the adverse events.
+- Pharmaceutical company representatives record the date of the event.
+- Medical professionals specify the product involved in the adverse event.
+
+## 2. Data Preparation for Transmission
+
+Performed By: SGML Editors, IT Specialists
+
+Activity:
+- SGML editors prepare data sets specific to the ICH_ICSR.DTD.
+- IT specialists associate the prepared data with the prologue.
+- SGML editors ensure the data maintains relationships specified by the DTD.
+- IT specialists validate the message with available off-the-shelf software.
+- IT specialists create and process messages on current document technology.
+
+## 3. Adverse Event Transmission
+
+Performed By: Electronic Data Interchange Systems
+
+Activity:
+- Electronic Data Interchange systems transmit the prepared adverse event reports to the FDA.
+
+## 4. Receipt and Validation at FDA
+
+Performed By: FDA IT Staff
+
+Activity:
+- FDA IT staff receive the transmitted adverse event reports.
+- FDA IT staff validate the received messages using available off-the-shelf software.
+
+## 5. Adverse Event Processing and Analysis
+
+Performed By: FDA Case Processors, Data Analysts
+
+Activity:
+- FDA Case Processors review the validated adverse event reports for completeness.
+- Data Analysts analyze the processed adverse event data to identify trends or patterns.
+- FDA Case Processors assign each report a unique identifier.
+- Data Analysts categorize the adverse events based on their nature and severity.
+
+## 6. Adverse Event Follow-up
+
+Performed By: FDA Case Processors, Medical Officers
+
+Activity:
+- FDA Case Processors follow up on incomplete or unclear adverse event reports.
+- Medical Officers provide additional information if needed to complete the report.
+- FDA Case Processors update the status of the adverse event report accordingly.
+
+## 7. Adverse Event Database Maintenance
+
+Performed By: FDA Database Administrators
+
+Activity:
+- FDA Database Administrators maintain the database containing the adverse event reports.
+- FDA Database Administrators ensure data integrity and consistency.
+- FDA Database Administrators perform regular backups of the database.

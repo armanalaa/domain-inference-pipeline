@@ -1,0 +1,61 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies document adverse events related to their products and submit reports to regulatory bodies.
+- Healthcare providers record details of patient's adverse reactions to medications and forward the reports to pharmaceutical companies.
+- Adverse event reports are reviewed by pharmaceutical companies for medical confirmation before submission.
+- Duplicate reports from different sources are identified and consolidated.
+- Reports are submitted in a standardized format, following ICH ICSR Specifications.
+
+## 2. Duplicate Report Management
+
+Performed By: Pharmaceutical Companies, Data Analysts
+
+Activity:
+- Duplicate reports from various sources are compared and matched based on common identifiers.
+- The source of duplicate reports is documented for future reference.
+- Duplicates are marked as such in the database to prevent redundancy.
+
+## 3. Adverse Event Investigation
+
+Performed By: Pharmaceutical Companies, Safety Officers
+
+Activity:
+- Adverse event reports are investigated to determine if there is a causal relationship between the event and the product.
+- Findings from the investigation are documented and used for further analysis or action.
+
+## 4. Adverse Event Analysis
+
+Performed By: Pharmaceutical Companies, Data Analysts, Safety Officers
+
+Activity:
+- Adverse event data is analyzed to identify trends, patterns, and potential risks associated with the product.
+- Results of the analysis are used for risk assessment and management decisions.
+
+## 5. Regulatory Compliance Reporting
+
+Performed By: Pharmaceutical Companies, Legal Teams
+
+Activity:
+- Regulatory bodies' requirements and guidelines are followed during adverse event reporting and management.
+- Reports are prepared to demonstrate compliance with regulatory standards.
+
+## 6. Adverse Event Follow-up
+
+Performed By: Pharmaceutical Companies, Customer Service Representatives, Safety Officers
+
+Activity:
+- Patients or healthcare providers are contacted for additional information if needed during the adverse event investigation.
+- Updates on the investigation findings and any necessary actions are communicated to patients or healthcare providers.
+
+## 7. Adverse Event Database Maintenance
+
+Performed By: IT Staff, Data Analysts
+
+Activity:
+- The adverse event database is regularly updated with new reports and information.
+- Data integrity is ensured through proper data entry, validation, and error handling procedures.

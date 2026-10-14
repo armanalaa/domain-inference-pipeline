@@ -1,0 +1,42 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers, Patients
+
+Activity:
+- Pharmaceutical companies register new drugs by providing details such as product code, name, dosage form, and route of administration.
+- Healthcare providers record adverse events related to a specific drug, including the reaction, gestation period at exposure, and date of start of drug.
+- Patients or their representatives report adverse reactions experienced with a particular drug, providing details like the drug's name, dosage text, and action taken with the drug.
+
+## 2. Drug Dosage Information Management
+
+Performed By: Pharmaceutical Companies
+
+Activity:
+- Pharmaceutical companies specify structured dosage units for each drug, including separated dosage numbers, interval dosage unit numbers, and cumulative dose to first reaction.
+- They also provide the definition of the dosage interval and the pharmaceutical form (dosage form) of the drug.
+
+## 3. Adverse Event Timeline Documentation
+
+Performed By: Healthcare Providers
+
+Activity:
+- Healthcare providers document the time interval between beginning of drug administration and start of reaction/event, as well as the time interval between last dose of drug and start of reaction/event.
+- They also record the date of last administration and the duration of drug administration.
+
+## 4. Adverse Event Assessment and Action
+
+Performed By: Medical Experts, Healthcare Providers
+
+Activity:
+- Medical experts assess the recurrence of reactions on readministration and the reaction that recurred if applicable.
+- They also evaluate the adverse event and document the source of assessment.
+
+## 5. Adverse Event Report Submission
+
+Performed By: Healthcare Providers, Pharmaceutical Companies, Regulatory Bodies
+
+Activity:
+- Healthcare providers submit adverse event reports to regulatory bodies, including all relevant details about the drug and the adverse event.
+- Pharmaceutical companies monitor adverse event reports and respond with any necessary actions or updates.

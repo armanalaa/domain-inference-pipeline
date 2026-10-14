@@ -1,0 +1,22 @@
+table,domain_id,domain_name
+cast_info,0,Content Information Management
+complete_cast,0,Content Information Management
+info_type,0,Content Information Management
+movie_companies,0,Content Information Management
+movie_info,0,Content Information Management
+movie_info_idx,0,Content Information Management
+movie_keyword,0,Content Information Management
+movie_link,0,Content Information Management
+person_info,0,Content Information Management
+role_type,0,Content Information Management
+aka_name,1,Alias and Name Information Management
+char_name,1,Alias and Name Information Management
+company_name,1,Alias and Name Information Management
+name,1,Alias and Name Information Management
+aka_title,2,Media Asset and Metadata Management
+comp_cast_type,2,Media Asset and Metadata Management
+company_type,2,Media Asset and Metadata Management
+keyword,2,Media Asset and Metadata Management
+kind_type,2,Media Asset and Metadata Management
+link_type,2,Media Asset and Metadata Management
+title,2,Media Asset and Metadata Management

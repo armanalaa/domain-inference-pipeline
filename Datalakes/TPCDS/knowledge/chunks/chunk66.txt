@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Pre-Publication Board Appointment and Management
+
+Performed By: Benchmark Subcommittee, Pre-Publication Board Members
+
+Activity:
+- The Benchmark Subcommittee appoints Pre-Publication Board members for a six-month term (call_center).
+- Pre-Publication Board members are selected based on their prior familiarity and extensive knowledge of the TPC benchmark.
+- A substitute member is appointed if necessary, to serve temporarily or for the duration of the current term.
+- Contact information for the Pre-Publication Board is posted on the TPC website (call_center).
+
+## 2. Pre-Publication Board Certification Process
+
+Performed By: Pre-Publiculation Board Members, Steering Committee (if needed)
+
+Activity:
+- The Pre-Publication Board reviews Results for compliance with the Benchmark Standard within ten business days.
+- If a certification decision has not been reached within the allotted time, the chairperson requests involvement of the Steering Committee.
+- The Steering Committee resolves the certification decision within five business days if needed.
+
+## 3. Result Confidentiality Maintenance
+
+Performed By: Pre-Publication Board Members
+
+Activity:
+- Results are confidential to the Pre-Publication Board until published.
+- Pre-Publication Board members may not use knowledge gained during the review of a Result until it is public.
+
+## 4. Conflict Resolution
+
+Performed By: Pre-Publication Board, Test Sponsor, TAB (if needed)
+
+Activity:
+- A Test Sponsor cannot sit in review of their own publication and must recuse themselves from the Pre-Publication Board.
+- Conflict resolution between the Pre-Publication Board and the Test Sponsor is handled by the TAB if necessary.
+
+## 5. Result Publication Approval
+
+Performed By: Pre-Publication Board Chairperson
+
+Activity:
+- The chairperson generates the approval report and handles communications upon successful certification of a Result.
+
+## 6. Pre-Publication Board Member Qualifications Evaluation
+
+Performed By: Benchmark Subcommittee
+
+Activity:
+- The Benchmark Subcommittee ensures an adequate number of board members are available to provide coverage in a timely manner.
+- The Benchmark Subcommittee certifies those individuals who best meet the criteria for prior familiarity and extensive knowledge, as well as adequate certification coverage.
+
+## 7. Result Submission Notification
+
+Performed By: Pre-Publication Board Chairperson
+
+Activity:
+- Upon receiving a Result submission, the chairperson notifies the Test Sponsor and the Steering Committee of its status.

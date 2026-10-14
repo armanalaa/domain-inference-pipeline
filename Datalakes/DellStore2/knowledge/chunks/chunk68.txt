@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers based on the required quantity of common_prod_id products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product details and handling order modifications.
+- Customers place orders by specifying the desired products, quantities, and shipping information.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Order Processors
+
+Activity:
+- Order processors review and confirm incoming customer orders against inventory levels.
+- Warehouse staff pick and pack ordered items for shipment based on orderline details.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff track the quantity of products in stock by updating quan_in_stock when items are received or shipped.
+- Inventory managers monitor sales and reorder levels to ensure adequate stock for popular products.
+
+## 5. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams calculate the net amount, tax, and total amount for each order based on product prices and quantities.
+- Accounting staff record financial transactions related to orders, including payments and revenue recognition.
+
+## 6. Customer History Tracking
+
+Performed By: HR Managers, Marketing Teams
+
+Activity:
+- HR managers maintain customer records, including personal information, credit card details, and purchase history.
+- Marketing teams analyze customer data to identify trends and opportunities for targeted promotions.
+
+## 7. Reordering Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers set reorder levels for each product based on sales history and expected demand.
+- Purchasing teams place reorders when inventory falls below the specified quan_low threshold for a given product.

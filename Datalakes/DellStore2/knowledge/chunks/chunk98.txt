@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or shipped.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering contact details, credit card information, and preferences.
+- HR managers update customer records with personal information changes such as address, email, or phone number.
+- Customers place orders by selecting products, providing shipping information, and making payments.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate orders for customers based on their selections.
+- Warehouse staff pick and pack items from inventory for each order.
+- Purchasing teams issue purchase orders to suppliers when inventory levels fall below quan_low.
+
+## 4. Invoice Generation
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on the netamount and tax calculated for each order.
+- Finance records the totalamount, payment details, and account receivable information in the appropriate columns.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff prepare orders for shipping by assembling items, printing labels, and updating orderlines with tracking numbers.
+- Shipping teams deliver orders to customers according to the provided address and tracking information.
+
+## 6. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams place orders for products when quan_in_stock falls below a certain level (quan_low).
+- Warehouse staff receive and update inventory levels when new shipments arrive.
+
+## 7. Reorder Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers monitor the date_expected for each reorder to ensure timely replenishment of products.
+- Purchasing teams adjust purchase orders and expected delivery dates based on changes in the date_expected column.
+
+## 8. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries, complaints, and returns by updating relevant columns in cust_hist and customers tables.

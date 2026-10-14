@@ -1,0 +1,252 @@
+{
+  "_meta": {
+    "domain_id": 9,
+    "domain_name": "Customer Relationship Management",
+    "definition": "The unifying capability across all tables is the management and maintenance of customer records, interactions, and transactions.",
+    "tables": [
+      "customer"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "customer": {
+      "_description": "Captures customer demographic and transactional data, including personal details, preferences, and historical interactions.",
+      "columns": [
+        {
+          "name": "c_customer_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for each customer record.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "c_customer_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the c_customer_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "c_current_cdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential surrogate keys for current demographic groups of customers.",
+          "samples": [
+            980124,
+            819667,
+            1473522,
+            1703214,
+            953372
+          ]
+        },
+        {
+          "name": "c_current_hdemo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for active customers in the current hierarchy demo.",
+          "samples": [
+            7135,
+            1461,
+            6247,
+            3986,
+            4470
+          ]
+        },
+        {
+          "name": "c_current_addr_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for current customer addresses.",
+          "samples": [
+            32946,
+            31655,
+            48572,
+            39558,
+            36368
+          ]
+        },
+        {
+          "name": "c_first_shipto_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique integer keys for the first ship-to date of each customer.",
+          "samples": [
+            2452238,
+            2452318,
+            2449130,
+            2450030,
+            2449438
+          ]
+        },
+        {
+          "name": "c_first_sales_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for the first sales dates of customers.",
+          "samples": [
+            2452208,
+            2452288,
+            2449100,
+            2450000,
+            2449408
+          ]
+        },
+        {
+          "name": "c_salutation",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer's formal title (e.g., Mr., Dr., Miss) up to 10 characters.",
+          "samples": [
+            "Mr.",
+            "Dr.",
+            "Miss",
+            "Sir",
+            "Ms."
+          ]
+        },
+        {
+          "name": "c_first_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of a customer's first name.",
+          "samples": [
+            "Javier",
+            "Amy",
+            "Latisha",
+            "Michael",
+            "Robert"
+          ]
+        },
+        {
+          "name": "c_last_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of the last names for customers.",
+          "samples": [
+            "Lewis",
+            "Moses",
+            "Hamilton",
+            "White",
+            "Moran"
+          ]
+        },
+        {
+          "name": "c_preferred_cust_flag",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Indicates whether a customer is preferred (Y) or not (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "c_birth_day",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer birthdays as integers (e.g., day of month).",
+          "samples": [
+            9,
+            18,
+            7,
+            8,
+            4
+          ]
+        },
+        {
+          "name": "c_birth_month",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the month of birth for customers (12, 4, 9, 6, 5 represent December, April, September, June, and May respectively).",
+          "samples": [
+            12,
+            4,
+            9,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "c_birth_year",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the birth year of customers as integers.",
+          "samples": [
+            1936,
+            1966,
+            1979,
+            1983,
+            1956
+          ]
+        },
+        {
+          "name": "c_birth_country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the birth country of customers (up to 50 characters), represented by CHILE, TOGO, NIUE, MEXICO, FIJI.",
+          "samples": [
+            "CHILE",
+            "TOGO",
+            "NIUE",
+            "MEXICO",
+            "FIJI"
+          ]
+        },
+        {
+          "name": "c_login",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer login credentials as text (assuming from context).",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "c_email_address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer email addresses up to 50 characters, including domain names.",
+          "samples": [
+            "Javier.Lewis@VFAxlnZEvOx.org",
+            "Amy.Moses@Ovk9KjHH.com",
+            "Latisha.Hamilton@V.com",
+            "Michael.White@i.org",
+            "Robert.Moran@Hh.edu"
+          ]
+        },
+        {
+          "name": "c_last_review_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers of customer's last review dates.",
+          "samples": [
+            2452508,
+            2452318,
+            2452313,
+            2452361,
+            2452469
+          ]
+        }
+      ]
+    }
+  }
+}

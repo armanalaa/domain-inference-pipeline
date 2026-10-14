@@ -1,0 +1,50 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers with specific details such as name, class, employees, square footage, hours, and market information.
+- Warehouse staff update the warehouse location for each call center.
+
+## 2. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price.
+- Sales representatives create or update catalog pages with department, catalog number, catalog page number, description, and type.
+
+## 3. Customer Returns Processing
+
+Performed By: Customers, Warehouse Staff, Call Center Representatives
+
+Activity:
+- Customers initiate returns by providing the returned date and time, item SKU, and reason for return.
+- Warehouse staff update the warehouse inventory with the returned quantity.
+- Call center representatives process refunds for customers based on their customer details and return information.
+
+## 4. Error Handling and Reporting
+
+Performed By: Application Developers, Call Center Representatives
+
+Activity:
+- Application developers implement error handling mechanisms to detect and report errors that could result in an invalid TPC-C transaction.
+- Call center representatives report detected errors to customers as part of the output screen or delivery log.
+
+## 5. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers assign call centers to specific markets with market class and description.
+- Call center managers update the division, division name, company, and company name for each call center based on market assignments.
+
+## 6. Transaction Monitoring
+
+Performed By: Application Developers, Call Center Managers
+
+Activity:
+- Application developers implement transaction monitoring to detect and terminate long-running transactions based on predefined time-out intervals.
+- Call center managers ensure application transparency by managing message contexts between client and server applications without any knowledge of the underlying communication mechanisms.

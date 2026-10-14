@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers with unique identifiers and define their operational details such as opening and closing dates, square footage, hours of operation, and market classification.
+- Warehouse staff update the call center's location details including street number, name, type, suite number, city, county, state, zip code, country, and GMT offset.
+
+## 2. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product codes, names, categories, and list prices.
+- Marketing managers create and manage catalog pages, assigning department, catalog number, catalog page number, description, and type.
+
+## 3. Customer Interaction
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives handle customer calls at the call centers to process orders, provide information, or address inquiries.
+- Customers place orders by specifying items of interest, quantities, and shipping preferences.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Call Center Representatives
+
+Activity:
+- Warehouse staff track inventory levels and fulfill customer orders by selecting appropriate items and updating their status to "shipped".
+- Call center representatives update order details with the shipped date, ship mode, warehouse location, and reason for any returns or cancellations.
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record customer returns by noting the returned date and time, item details, and reasons for return.
+- Warehouse staff process returns by updating the inventory levels and marking the items as "returned".
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records tax percentages for each call center based on their location.
+- Finance department generates financial reports summarizing sales, returns, and profits for each warehouse and time period.

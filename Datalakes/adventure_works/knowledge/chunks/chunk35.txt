@@ -1,0 +1,52 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign employees to departments by selecting a DepartmentID and recording the OrganizationNode, OrganizationLevel, and ModifiedDate.
+- Record employee addresses by specifying AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation.
+
+## 2. Employee Departure Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Document employee departures by recording the EndDate for each employee-department association in the EmployeeDepartmentHistory table.
+
+## 3. Employee Salary Adjustments
+
+Performed By: Human Resources Managers, Finance Department
+
+Activity:
+- Update employee salaries by modifying the Rate column in the EmployeePayHistory table.
+
+## 4. Shift Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Record shift details such as ShiftID, Name, StartTime, and EndTime.
+
+## 5. Address Management
+
+Performed By: Employees, Customers
+
+Activity:
+- Register or update addresses by specifying AddressTypeID, AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation.
+
+## 6. Sales Territory Assignment
+
+Performed By: Sales Managers
+
+Activity:
+- Assign sales territories to employees by selecting a TerritoryID and recording the BusinessEntityID, StartDate, and EndDate in the SalesTerritoryHistory table.
+
+## 7. Cost Tracking for Sales Territories
+
+Performed By: Finance Department
+
+Activity:
+- Record business costs in the territory year to date (CostYTD) and the previous year (CostLastYear).

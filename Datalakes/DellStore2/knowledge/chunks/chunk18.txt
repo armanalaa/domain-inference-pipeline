@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their first name, last name, address details, email, phone number, credit card type, and password.
+- HR managers update customer information such as age, income, gender, and region when necessary.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, list price, and common product ID.
+- Inventory specialists update product information like quantity in stock and sales.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details such as order date and billing information.
+- Sales representatives review and confirm customer orders before they are processed further.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory based on the order ID.
+- Purchasing teams issue purchase orders for reordering low stock items as needed.
+
+## 5. Order Fulfillment and Shipping
+
+Performed By: Warehouse Staff, Delivery Service Providers
+
+Activity:
+- Warehouse staff pack and prepare the ordered products for shipping.
+- Delivery service providers pick up the packages and deliver them to the customer's specified address.
+
+## 6. Invoice Generation and Payment Processing
+
+Performed By: Finance Teams, Customers
+
+Activity:
+- Finance teams generate invoices based on order details and calculate net amount, tax, and total amount.
+- Customers review invoices and make payments using their credit cards or other payment methods.
+
+## 7. Customer Support and Complaints Handling
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer complaints and provide support for product issues, returns, or refunds.
+
+## 8. Data Collection and Analytics
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators collect data about the event, product details, metadata repository type, license key ID, user ID/email, public IP address for analytics purposes.
+- Data analysts analyze customer behavior, sales trends, and system performance to improve the overall business operations.

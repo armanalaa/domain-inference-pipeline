@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee information in the system, including personal details, employment history, and performance records (cc_employees).
+
+## 2. Call Center Setup
+
+Performed By: Facilities Managers, IT Support
+
+Activity:
+- Facilities managers allocate space for new call centers by providing square footage and hours of operation (cc_sq_ft, cc_hours).
+- IT support configures the call center's hardware and software, ensuring all necessary tools are available for employees (not specified in schema).
+
+## 3. Market Division Assignment
+
+Performed By: Call Center Managers, Marketing Managers
+
+Activity:
+- Call center managers assign each call center to a specific market division based on geographical location or market segment (cc_division).
+- Marketing managers define the marketing strategy for each division, including target audience and advertising methods (not specified in schema).
+
+## 4. Call Center Classification
+
+Performed By: Call Center Managers, IT Support
+
+Activity:
+- Call center managers categorize call centers based on their function or service offered (cc_class).
+- IT support ensures the classification is accurately reflected in the system (not specified in schema).
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new products are added or existing ones are sold (not specified in schema).
+
+## 6. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording the returned date and time, item SKU, and customer information (cr_returned_date_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff update inventory levels when a return is processed (not specified in schema).
+
+## 7. Testing and Quality Assurance
+
+Performed By: QA Testers, Developers
+
+Activity:
+- QA testers perform platform testing of source code to validate the quality and compliance with coding best practices (not specified in schema).
+- Developers conduct unit testing for specific functionality on a routine or method basis (1.4.3 Unit testing).

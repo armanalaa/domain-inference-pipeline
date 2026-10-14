@@ -1,0 +1,72 @@
+ # Northwind — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives register new customers by recording their CompanyName, ContactName, and ContactTitle.
+- Customer service representatives update customer details such as Address, City, Phone, and Email when needed.
+- Sales representatives assign customers to specific territories based on their location.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update product information like QuantityPerUnit, UnitsInStock, and UnitsOnOrder as needed.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by specifying the required products, quantities, and shipping details.
+- Sales representatives confirm orders and update the OrderDate, RequiredDate, and ShippedDate.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff pick and pack ordered products based on the OrderID and Quantity.
+- Shippers prepare shipments by recording the ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, and ShipCountry.
+
+## 5. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices based on the orders and update the OrderID, CustomerID, and TotalAmountDue.
+
+## 6. Payment Processing
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records customer payments by updating the OrderID, CustomerID, and PaidStatus.
+
+## 7. Employee Management
+
+Performed By: HR Managers, Supervisors
+
+Activity:
+- HR managers hire new employees by recording their EmployeeID, personal details, and employment history.
+- Supervisors assign tasks to employees based on their roles and responsibilities.
+
+## 8. Performance Evaluation
+
+Performed By: Supervisors, HR Managers
+
+Activity:
+- Supervisors evaluate employee performance and update the EmployeeID, Title, and PerformanceRating.
+- HR managers review employee evaluations and make decisions regarding promotions or terminations.
+
+## 9. Reporting and Analytics
+
+Performed By: Management, Data Analysts
+
+Activity:
+- Management reviews sales reports to track performance and identify trends.
+- Data analysts generate custom reports based on specific business requirements.

@@ -1,0 +1,53 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies submit adverse event reports to regulatory bodies by providing report ID, product details, and event description.
+- Healthcare providers document adverse events experienced by patients, including patient demographics, event details, and outcome information.
+
+## 2. Case Safety Report Acknowledgement
+
+Performed By: Regulatory Bodies
+
+Activity:
+- Regulatory bodies acknowledge receipt of individual case safety reports with an acknowledgment number.
+
+## 3. Adverse Event Categorization
+
+Performed By: Regulatory Bodies
+
+Activity:
+- Regulatory bodies categorize adverse events based on their severity, nature, and relationship to the product.
+
+## 4. Case Safety Report Review
+
+Performed By: Regulatory Bodies
+
+Activity:
+- Regulatory bodies review case safety reports for completeness, accuracy, and relevance to the product's safety profile.
+
+## 5. Adverse Event Investigation
+
+Performed By: Pharmaceutical Companies, Regulatory Bodies
+
+Activity:
+- Pharmaceutical companies investigate adverse events reported for their products by gathering additional information and assessing causality.
+- Regulatory bodies may request further investigation from the pharmaceutical company to ensure thorough evaluation of the adverse event.
+
+## 6. Adverse Event Response
+
+Performed By: Pharmaceutical Companies, Regulatory Bodies
+
+Activity:
+- Pharmaceutical companies respond to adverse events by updating product labeling, modifying manufacturing processes, or initiating additional studies as necessary.
+- Regulatory bodies may issue communications to healthcare providers and the public regarding the adverse event and any actions taken in response.
+
+## 7. Adverse Event Database Maintenance
+
+Performed By: IT Staff
+
+Activity:
+- IT staff maintain the database by ensuring data integrity, performing backups, and addressing any technical issues that may arise.

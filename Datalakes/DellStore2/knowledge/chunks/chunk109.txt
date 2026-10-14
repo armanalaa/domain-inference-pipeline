@@ -1,0 +1,55 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage potential customers and register new accounts by capturing contact details (email, phone) from the customers' section in the customers table.
+- Customer service agents assist existing customers with account-related queries, updating customer information as necessary.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product details (product code, name, category, list price) in the products table.
+- Warehouse staff update inventory levels (quan_in_stock) when receiving shipments of new or restocked products.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff
+
+Activity:
+- Sales representatives assist customers in placing orders by providing product details and processing orders through the online store.
+- Customers browse the catalog, select items, and submit orders via the website, which are recorded in the orders table.
+- Warehouse staff pick and pack ordered items, updating inventory levels accordingly.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels (quan_in_stock) and notify purchasing teams when stock for a product falls below the reorder point (date_low).
+- Purchasing teams place orders to replenish inventory, updating the reorder table with details such as date_reordered and quan_reordered.
+
+## 5. Financial Management
+
+Performed By: Finance Team
+
+Activity:
+- The finance team calculates order totals (netamount, tax, totalamount) based on product prices and quantities in the orderlines table, and records these values in the orders table.
+
+## 6. Customer Service
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer complaints or issues related to orders, updating the cust_hist table with relevant details as necessary.
+
+## 7. Data Governance
+
+Performed By: Dataedo Team
+
+Activity:
+- The dataedo team maintains the integrity and accuracy of the DellStore2 database by monitoring data quality, lineage, and catalog using Dataedo's data governance solution.

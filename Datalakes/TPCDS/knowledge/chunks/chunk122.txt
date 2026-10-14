@@ -1,0 +1,41 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouses to specific call centers based on the number of configured warehouses (cc_warehouse).
+- Warehouse staff update the call center details, including square footage, operating hours, and manager information (cc_sq_ft, cc_hours, cc_manager).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers assign markets to each call center based on market class and division (cc_mkt_class, cc_division).
+- Market managers update their respective details, such as name, description, and company information (cc_market_manager, cc_company_name).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Warehouse staff update the catalog page information when necessary (cp_catalog_page_sk).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting items from the catalog and recording order details (cr_item_sk, cr_order_number).
+- Warehouse staff update the warehouse inventory levels accordingly (not specified in provided schema).
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle returns by recording return details such as date, time, and reason (cr_returned_date_sk, cr_returned_time_sk, cr_reason_sk).
+- Warehouse staff update the warehouse inventory levels and process refunds (not specified in provided schema).

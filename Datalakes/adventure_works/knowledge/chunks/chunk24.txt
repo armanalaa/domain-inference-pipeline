@@ -1,0 +1,62 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- Register new HR employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- Update employee information as needed, modifying the relevant fields such as MaritalStatus, Gender, or ModifiedDate.
+- Assign employees to departments by recording DepartmentID in the EmployeeDepartmentHistory table.
+- Track employee salary changes by recording RateChangeDate, Rate, PayFrequency, and ModifiedDate in the EmployeePayHistory table.
+
+## 2. Address Management
+
+Performed By: HR Managers, Person BusinessEntityAddress administrators
+
+Activity:
+- Register employee addresses by recording AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation in the Person Address table.
+- Define address types for employees (e.g., home, work) by recording Name in the Person AddressType table.
+- Associate employee addresses with their respective address types by recording BusinessEntityID, AddressID, AddressTypeID, and ModifiedDate in the Person BusinessEntityContact table.
+
+## 3. Employee Department History Management
+
+Performed By: HR Managers
+
+Activity:
+- Record employee department changes by documenting DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate in the HumanResources EmployeeDepartmentHistory table.
+
+## 4. Shift Management
+
+Performed By: HR Managers
+
+Activity:
+- Define shifts for employees by recording Name, StartTime, EndTime, and ModifiedDate in the HumanResources Shift table.
+
+## 5. Product Scrap Reason Management
+
+Performed By: Manufacturing managers
+
+Activity:
+- Document manufacturing failure reasons by recording the name of each reason in the Production.ScrapReason table.
+
+## 6. Transaction History Management
+
+Performed By: Sales representatives, Purchasing teams, and Work Order staff
+
+Activity:
+- Record transactions for purchase orders, sales orders, or work orders by documenting ProductID, ReferenceOrderID, ReferenceOrderLineID, TransactionDate, TransactionType, Quantity, ActualCost, and ModifiedDate in the Production.TransactionHistory table.
+
+## 7. Archived Transaction History Management
+
+Performed By: Data administrators
+
+Activity:
+- Archive transaction history from previous years by moving records to the Production.TransactionHistoryArchive table.
+
+## 8. Work Order Management
+
+Performed By: Manufacturing staff
+
+Activity:
+- Create manufacturing work orders by recording WorkOrderID, ProductID, OrderQty, StockedQty, ScrappedQty, StartDate, EndDate, DueDate, ScrapReasonID, and ModifiedDate in the Production.WorkOrder table.

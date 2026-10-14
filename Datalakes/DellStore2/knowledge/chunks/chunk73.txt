@@ -1,0 +1,55 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or shipped.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering contact information, credit card details, and login credentials.
+- HR managers update customer records with personal data changes such as address or employment status.
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate orders based on customer requests and update the orderlines table with product IDs, quantities, and order dates.
+- Warehouse staff pick and pack items for shipment according to the orderlines details.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and reorder requirements.
+
+## 4. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records invoices for customers, including order IDs, net amounts, taxes, and total amounts.
+
+## 5. Reporting and Analytics
+
+Performed By: Data Analysts, Business Intelligence Team
+
+Activity:
+- Data analysts create reports and dashboards using data from the orders, orderlines, inventory, customers, and products tables to monitor sales performance and customer behavior.
+
+## 6. Data Maintenance
+
+Performed By: IT Administrators, Database Administrators
+
+Activity:
+- IT administrators manage database schema changes, including renaming columns, modifying data types, or retiring tables as systems evolve.
+
+## 7. Impact Analysis
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team uses impact analysis tools to identify reports, dashboards, and processes that will be affected by database changes before they are implemented.

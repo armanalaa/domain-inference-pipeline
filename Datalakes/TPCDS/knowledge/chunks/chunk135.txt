@@ -1,0 +1,47 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal information and employment details (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Configuration
+
+Performed By: IT Administrators, Call Center Managers
+
+Activity:
+- IT administrators configure call center settings such as opening hours, square footage, and GMT offset (cc_hours, cc_sq_ft, cc_gmt_offset).
+- Call center managers assign market classes and descriptions to each call center (cc_mkt_class, cc_mkt_desc).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers oversee the division of markets and assign call centers to specific markets (cc_division, cc_market_manager).
+
+## 4. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives handle incoming calls from customers and provide assistance (cc_call_center_id).
+- Call center representatives record call details such as start date, end date, closed date, and reason for call (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 5. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 6. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return date and time, item SKU, and customer details (cr_returned_date_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff update inventory levels when processing a return (cr_quan).

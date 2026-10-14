@@ -1,0 +1,62 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- HR managers update employee information as needed by modifying the relevant fields in the HumanResources Employee table.
+- HR managers assign employees to departments through the HumanResources EmployeeDepartmentHistory table.
+- HR managers track employee pay history using the HumanResources EmployeePayHistory table.
+
+## 2. Address Management
+
+Performed By: Data Entry Clerks, HR Managers
+
+Activity:
+- Data entry clerks record employee addresses in the Person Address table, including AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation.
+- HR managers update employee addresses as needed by modifying the relevant fields in the Person BusinessEntityAddress table.
+
+## 3. Employee Department History Management
+
+Performed By: HR Managers
+
+Activity:
+- HR managers record changes in an employee's department history using the HumanResources EmployeeDepartmentHistory table, including DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate.
+
+## 4. Employee Pay History Management
+
+Performed By: HR Managers
+
+Activity:
+- HR managers record changes in an employee's pay history using the HumanResources EmployeePayHistory table, including RateChangeDate, Rate, PayFrequency, and ModifiedDate.
+
+## 5. Shift Management
+
+Performed By: HR Managers
+
+Activity:
+- HR managers define shifts for employees using the HumanResources Shift table, including ShiftID, Name, StartTime, EndTime, and ModifiedDate.
+
+## 6. Special Offer Management
+
+Performed By: Marketing Managers
+
+Activity:
+- Marketing managers create new special offers by recording their description, discount percentage, type, category, start date, end date, minimum discount percent allowed, max quantity, and modified date in the Sales.SpecialOffer table.
+
+## 7. Special Offer Product Management
+
+Performed By: Marketing Managers
+
+Activity:
+- Marketing managers map products to special offer discounts using the Sales.SpecialOfferProduct table, including SpecialOfferID, ProductID, and ModifiedDate.
+
+## 8. Shopping Cart Item Management
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers add items to their shopping cart by specifying the ProductID, quantity, and date created in the Sales.ShoppingCartItem table.
+- Sales representatives update shopping cart items as needed by modifying the relevant fields in the Sales.ShoppingCartItem table.

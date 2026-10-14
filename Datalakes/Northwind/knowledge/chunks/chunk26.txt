@@ -1,0 +1,68 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the units in stock when products are received or shipped.
+- Product managers set the reorder level to trigger automatic replenishment orders.
+- Warehouse staff mark a product as discontinued when it is no longer available.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer details such as company name, contact information, and shipping address.
+- Customer service agents update customer records with new contact information or address changes.
+- Sales representatives create orders for customers by selecting products, setting quantities, and specifying shipping details.
+- Customer service agents process returns and issue refunds or credits to customers.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives confirm order details with customers and mark orders as shipped when they are ready for dispatch.
+- Warehouse staff pick and pack ordered items based on the order details.
+- Shipping clerks label packages with the correct shipping information and send them to the designated shipper.
+- Warehouse staff update the units in stock when products are shipped out.
+
+## 4. Shipment Tracking
+
+Performed By: Shipping Clerks, Customers
+
+Activity:
+- Shipping clerks assign a shipper to each order based on the chosen shipping method and location.
+- Shippers update the shipped date and tracking number for each order once it has been dispatched.
+- Customers track their orders using the tracking number provided by the shipper.
+
+## 5. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices based on the order details and shipment information.
+- Accounting staff send invoices to customers via email or mail.
+- Customers review their invoices for accuracy and make payments as required.
+
+## 6. Payment Processing
+
+Performed By: Accounting Staff, Banking Staff
+
+Activity:
+- Accounting staff record customer payments and update the order status accordingly.
+- Banking staff process incoming payments and credit the appropriate accounts.
+- Accounting staff reconcile bank statements to ensure accurate records.
+
+## 7. Reporting and Analysis
+
+Performed By: Management, Sales Representatives, Accounting Staff
+
+Activity:
+- Management reviews sales reports to identify trends and opportunities for growth.
+- Sales representatives use customer reports to target marketing efforts and build relationships with key accounts.
+- Accounting staff generate financial reports for internal analysis and external reporting purposes.
+- Management uses analytical reports to make informed decisions about pricing, inventory levels, and business strategy.

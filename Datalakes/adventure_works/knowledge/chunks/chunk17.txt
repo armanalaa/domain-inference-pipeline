@@ -1,0 +1,80 @@
+ # adventure_works — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels for each product and update them accordingly when new shipments arrive or products are sold.
+
+## 2. Employee Onboarding
+
+Performed By: HR Managers, New Hires
+
+Activity:
+- HR managers assign a unique employee ID to each new hire during the onboarding process.
+- New hires provide their personal information such as birthdate, marital status, and gender for record keeping.
+
+## 3. Employee Department Assignment
+
+Performed By: HR Managers, Warehouse Staff (if needed)
+
+Activity:
+- HR managers assign new employees to specific departments based on job titles and organizational structure.
+- If necessary, warehouse staff update the employee's department history with the start date of their assignment.
+
+## 4. Employee Salary Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers determine the salary for each employee based on job title and experience level.
+- Finance department records the salaries in the employee pay history table along with other relevant details like pay frequency and rate changes.
+
+## 5. Address Management
+
+Performed By: Employees, HR Managers (if needed)
+
+Activity:
+- Employees provide their home addresses for company records.
+- If an employee moves, they update their address in the system, and HR managers verify and confirm the change if necessary.
+
+## 6. Shift Scheduling
+
+Performed By: Warehouse Managers, HR Managers (if needed)
+
+Activity:
+- Warehouse managers create shift schedules for warehouse staff based on workload and operational requirements.
+- If required, HR managers update the employee's shift information in the system.
+
+## 7. Inventory Replenishment Requests
+
+Performed By: Warehouse Staff
+
+Activity:
+- When inventory levels reach a predefined threshold, warehouse staff submit requests for reordering products to the purchasing team.
+
+## 8. Purchase Order Processing
+
+Performed By: Purchasing Teams, Finance Department
+
+Activity:
+- Purchasing teams review and approve purchase orders based on inventory needs and vendor offers.
+- Once approved, finance department records the purchase order details in the system.
+
+## 9. Invoice Processing
+
+Performed By: Accounts Payable Team, Finance Department
+
+Activity:
+- Accounts payable team receives invoices from vendors and verifies their accuracy.
+- If validated, finance department records the invoice details and updates the corresponding purchase orders in the system.
+
+## 10. Sales Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff (if needed)
+
+Activity:
+- Sales representatives receive customer orders and process them into sales orders.
+- If necessary, warehouse staff update the product inventory levels to reflect sold items and prepare shipments accordingly.

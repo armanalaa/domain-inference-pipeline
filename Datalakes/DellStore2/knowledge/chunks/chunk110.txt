@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column for each product when items are received or shipped.
+- Product managers monitor sales data from the sales table to determine which products need reordering.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and income into the customers table during account creation.
+- HR managers update the customers table with changes to a customer's personal information or credit card details.
+- Customers place orders by selecting products from the catalog, specifying quantities, and providing their order and billing information.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Team
+
+Activity:
+- Sales representatives create new orders in the orders table when a customer places an order.
+- Warehouse staff update the inventory table as they pick and pack items for each order.
+- Finance team calculates the netamount, tax, and totalamount for each order and updates the orders table accordingly.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory table when items are received or shipped, adjusting the quan_in_stock column as needed.
+- Purchasing teams issue purchase orders to suppliers based on reorder information from the reorder table and current inventory levels.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff pick items for each order, pack them, and prepare shipping labels.
+- Warehouse staff update the orderlines table with the quantity of each product shipped for each order.
+
+## 6. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team generates invoices based on the totalamount column from the orders table and sends them to customers.
+
+## 7. Data Analysis
+
+Performed By: Analytics Team, Management
+
+Activity:
+- Analytics team extracts data from various tables for analysis, such as sales trends, customer behavior, and inventory performance.
+- Management reviews the findings and makes decisions based on the insights gained from the data analysis.

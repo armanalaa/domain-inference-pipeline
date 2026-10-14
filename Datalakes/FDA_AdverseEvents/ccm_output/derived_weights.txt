@@ -1,0 +1,74 @@
+======================================================================
+CCM Pipeline — Data-Driven Weight Derivation for Step 3.4.2
+======================================================================
+
+Formula:  Sim_attr(Ai,Aj) = w1*(1-P_stat/P_stat_max) + w2*P_name + w3*P_sem
+P_stat_max (global normaliser) = 2.0433
+Column pairs analysed          = 2701
+
+──────────────────────────────────────────────────────────────────────
+SIGNAL STATISTICS  (all converted to similarity ∈ [0,1])
+──────────────────────────────────────────────────────────────────────
+Signal            Min      Max     Mean      Std        Var    Range
+----------------------------------------------------------------------
+stat           0.0000   1.0000   0.7347   0.1614   0.026052   1.0000
+name           0.0000   1.0000   0.2169   0.1709   0.029212   1.0000
+sem            0.1159   0.2862   0.1762   0.0296   0.000876   0.1703
+
+──────────────────────────────────────────────────────────────────────
+OPTION 1 — Range-based weights
+──────────────────────────────────────────────────────────────────────
+  w_k = range_k / sum(ranges)
+  w1(stat) = 1.0000 / 2.1703 = 0.4608
+  w2(name) = 1.0000 / 2.1703 = 0.4608
+  w3(sem)  = 0.1703  / 2.1703 = 0.0785
+  → w1=0.4608  w2=0.4608  w3=0.0785
+
+──────────────────────────────────────────────────────────────────────
+OPTION 2 — Variance-based weights  (RECOMMENDED)
+──────────────────────────────────────────────────────────────────────
+  w_k = Var(signal_k) / sum(Var)
+  Rationale: variance measures discriminative power.
+  Higher variance → signal better separates similar from dissimilar pairs.
+  Var(stat) = 0.026052
+  Var(name) = 0.029212
+  Var(sem)  = 0.000876
+  Total Var = 0.056140
+
+  Raw weights  : w1=0.4641  w2=0.5203  w3=0.0156
+  Rounded (0.05 step): w1=0.4500  w2=0.5000  w3=0.0500
+
+──────────────────────────────────────────────────────────────────────
+OPTION 3 — Correlation diagnostic
+──────────────────────────────────────────────────────────────────────
+  Checks whether any two signals are redundant (|r| > 0.7).
+
+  stat vs name : r = +0.2135
+  stat vs sem  : r = -0.0202
+  name vs sem  : r = -0.0666
+
+  stat vs name: |r|=0.2135 < 0.3 → signals are independent ✓
+  stat vs sem: |r|=0.0202 < 0.3 → signals are independent ✓
+  name vs sem: |r|=0.0666 < 0.3 → signals are independent ✓
+
+──────────────────────────────────────────────────────────────────────
+FINAL RECOMMENDATION
+──────────────────────────────────────────────────────────────────────
+
+  Derived weights (variance-based, rounded to 0.05):
+    w1 (statistical) = 0.45
+    w2 (name)        = 0.5
+    w3 (semantic)    = 0.05
+
+  Previous heuristic weights:
+    w1=0.4  w2=0.3  w3=0.3
+
+  ⚠ The derived weights DIFFER from the heuristic weights.
+  Update column_graph.py with the derived weights.
+
+  Paper justification:
+  "Weights were derived from the variance of each proximity signal
+   across all column pairs, following the PCA principle that higher
+   variance indicates greater discriminative power (Eq. X).
+   This yielded w1=0.45, w2=0.5, w3=0.05."
+======================================================================

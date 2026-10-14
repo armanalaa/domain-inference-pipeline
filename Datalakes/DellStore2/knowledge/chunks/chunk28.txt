@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Data Governance Team
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update existing item details as needed, such as title, actor, or special designation.
+- The data governance team ensures data quality and consistency across the product catalog.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer information, including first name, last name, address, contact details, credit card information, username, and password.
+- Customer service agents update customer records with new contact information or changes to account status.
+- HR managers maintain employee data related to customers (age, income, gender) for internal reporting purposes.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track the quantity in stock and sales of each product.
+- Purchasing teams issue purchase orders to replenish inventory when quan_in_stock falls below a certain threshold.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff
+
+Activity:
+- Sales representatives create new orders for customers by specifying the order date, customer ID, net amount, tax, and total amount.
+- Customers place orders online or through other channels, providing necessary details such as order date, quantity, and product ID.
+- Warehouse staff fulfill orders by selecting the appropriate products from inventory and shipping them to the customer.
+
+## 5. Order Line Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff record each line item in an order, including the orderline ID, order ID, product ID, quantity, and order date.
+
+## 6. Reordering Inventory
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels and update the reorder table when quan_in_stock falls below a predetermined threshold (quan_low).
+- Purchasing teams use this information to issue purchase orders for replenishing low-stock items.
+
+## 7. Data Lineage and Quality Assurance
+
+Performed By: Data Governance Team, IT Administrators
+
+Activity:
+- The data governance team tracks how data flows across systems and visualizes transformations, dependencies, and impacts to ensure transparency, support compliance, and reduce errors.
+- IT administrators perform automated data quality checks to detect errors, anomalies, and missing values before they propagate downstream.

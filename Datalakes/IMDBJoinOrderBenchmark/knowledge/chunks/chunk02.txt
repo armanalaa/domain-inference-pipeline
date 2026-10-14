@@ -1,0 +1,58 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema and indexes for efficient data management (schema.sql, fkindexes.sql).
+- Content managers register new movies by entering title, production year, kind, and associated companies (aka_title, company_name).
+- Content managers assign unique identifiers to each movie (movie_id).
+
+## 2. Actor Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema for actor data (char_name, aka_name).
+- Content managers register new actors by entering name, gender, and associated movies (cast_info, char_name).
+- Content managers assign unique identifiers to each actor (person_id).
+
+## 3. Keyword Assignment
+
+Performed By: Content Managers
+
+Activity:
+- Content managers categorize movies and actors by assigning relevant keywords (keyword).
+
+## 4. Link Creation
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema for linking movies (movie_link).
+- Content managers create links between related movies based on specified criteria (linked_movie_id, link_type_id).
+
+## 5. Company Data Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema for company data (company_name, company_type).
+- Content managers register new companies by entering name, country code, and associated movies (movie_companies).
+
+## 6. Information Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema for movie information (movie_info, movie_info_idx).
+- Content managers record various types of information about movies (info_type, info).
+
+## 7. Complete Cast Management
+
+Performed By: Database Administrators, Content Managers
+
+Activity:
+- Database administrators maintain the schema for complete cast data (complete_cast).
+- Content managers mark which actors are part of a movie's complete cast (subject_id, status_id).

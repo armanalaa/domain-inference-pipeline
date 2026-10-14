@@ -1,0 +1,95 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Content Information Management",
+    "definition": "The unifying capability across all tables is the management of various entities related to content such as movies, actors, companies, and keywords.",
+    "tables": [
+      "cast_info",
+      "complete_cast",
+      "info_type",
+      "movie_companies",
+      "movie_info",
+      "movie_info_idx",
+      "movie_keyword",
+      "movie_link",
+      "person_info",
+      "role_type"
+    ],
+    "phi_scores": {
+      "C7": 0.2961,
+      "C10": 0.2571,
+      "C5": 0.2288,
+      "C8": 0.2282,
+      "C9": 0.2269,
+      "C4": 0.2217,
+      "C1": 0.2118,
+      "C11": 0.2112,
+      "C6": 0.1925,
+      "C3": 0.1894,
+      "C2": 0.1887,
+      "C12": 0.1336,
+      "C14": 0.1332,
+      "C15": 0.0722,
+      "C13": 0.0689
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Alias and Name Information Management",
+    "definition": "Unifying activities related to managing aliases, names, and associated data for actors, movies, and companies.",
+    "tables": [
+      "aka_name",
+      "char_name",
+      "company_name",
+      "name"
+    ],
+    "phi_scores": {
+      "C7": 0.3596,
+      "C6": 0.2623,
+      "C10": 0.2454,
+      "C1": 0.2396,
+      "C5": 0.2387,
+      "C3": 0.222,
+      "C8": 0.2183,
+      "C4": 0.2167,
+      "C9": 0.2048,
+      "C2": 0.1678,
+      "C11": 0.1586,
+      "C12": 0.1163,
+      "C14": 0.1016,
+      "C13": 0.1014,
+      "C15": 0.0912
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Media Asset and Metadata Management",
+    "definition": "Activities related to managing and registering various media assets such as movies, aliases, cast types, companies, keywords, and links.",
+    "tables": [
+      "aka_title",
+      "comp_cast_type",
+      "company_type",
+      "keyword",
+      "kind_type",
+      "link_type",
+      "title"
+    ],
+    "phi_scores": {
+      "C7": 0.3252,
+      "C10": 0.269,
+      "C8": 0.249,
+      "C5": 0.2363,
+      "C1": 0.2169,
+      "C4": 0.2135,
+      "C3": 0.2096,
+      "C6": 0.2074,
+      "C9": 0.1891,
+      "C11": 0.1852,
+      "C2": 0.1819,
+      "C14": 0.1292,
+      "C12": 0.1067,
+      "C15": 0.0808,
+      "C13": 0.0762
+    }
+  }
+]

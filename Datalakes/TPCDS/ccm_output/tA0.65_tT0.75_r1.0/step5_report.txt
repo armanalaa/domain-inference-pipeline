@@ -1,0 +1,103 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 19
+Edges in G_T         : 18
+θ_T applied in Step 4: 0.75
+Domains discovered   : 10
+Modularity Q         : 0.5760
+
+──────────────────────────────────────────────────────────────────────
+D0  Sales and Inventory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifies the tables related to sales transactions, inventory levels, and associated customer and product details, enabling efficient management of sales operations and inventory control.
+  Tables     : catalog_sales, inventory, store_sales, web_sales
+  Phi top-3  : C9=0.294  C12=0.254  C34=0.251
+
+──────────────────────────────────────────────────────────────────────
+D1  Inventory and Product Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of inventory items, including their descriptions, prices, brands, classes, categories, manufacturers, sizes, formulations, colors, units, containers, and associated operations such as ordering and returns.
+  Tables     : item
+  Phi top-3  : C9=0.264  C6=0.195  C25=0.194
+
+──────────────────────────────────────────────────────────────────────
+D2  Catalog and Product Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of creating, updating, and managing the structure and details of the online catalog, including product information and inventory levels.
+  Tables     : catalog_page
+  Phi top-3  : C41=0.352  C9=0.278  C24=0.266
+
+──────────────────────────────────────────────────────────────────────
+D3  Return and Inventory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of customer returns and associated inventory updates.
+  Tables     : catalog_returns, store_returns, web_returns
+  Phi top-3  : C9=0.317  C4=0.316  C23=0.303
+
+──────────────────────────────────────────────────────────────────────
+D4  Web Content Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of creating, updating, and managing web content, including pages, URLs, types, and associated metadata.
+  Tables     : web_page
+  Phi top-3  : C30=0.281  C9=0.237  C23=0.210
+
+──────────────────────────────────────────────────────────────────────
+D5  Customer Interaction Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of customer interactions, including call center operations, order processing, returns processing, and customer relationship management.
+  Tables     : reason
+  Phi top-3  : C9=0.280  C8=0.273  C43=0.254
+
+──────────────────────────────────────────────────────────────────────
+D6  CallCenterInfrastructureManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of call centers' infrastructure, including locations, employees, and financial details.
+  Tables     : call_center, customer_address, store, warehouse, web_site
+  Phi top-3  : C34=0.282  C9=0.275  C43=0.270
+
+──────────────────────────────────────────────────────────────────────
+D7  CallCenterOperationsInventoryManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : Unified management of call center operations and inventory levels
+  Tables     : ship_mode
+  Phi top-3  : C35=0.242  C9=0.239  C23=0.208
+
+──────────────────────────────────────────────────────────────────────
+D8  Marketing Campaign Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of marketing campaigns, including promotion details, channel management, and customer interaction.
+  Tables     : promotion
+  Phi top-3  : C9=0.284  C34=0.279  C8=0.248
+
+──────────────────────────────────────────────────────────────────────
+D9  Customer Relationship Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management and maintenance of customer records, interactions, and transactions.
+  Tables     : customer
+  Phi top-3  : C43=0.373  C46=0.319  C8=0.297
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  catalog_sales                        D       0  Sales and Inventory Management
+  inventory                            D       0  Sales and Inventory Management
+  store_sales                          D       0  Sales and Inventory Management
+  web_sales                            D       0  Sales and Inventory Management
+  item                                 D       1  Inventory and Product Management
+  catalog_page                         D       2  Catalog and Product Information Management
+  catalog_returns                      D       3  Return and Inventory Management
+  store_returns                        D       3  Return and Inventory Management
+  web_returns                          D       3  Return and Inventory Management
+  web_page                             D       4  Web Content Management
+  reason                               D       5  Customer Interaction Management
+  call_center                          D       6  CallCenterInfrastructureManagement
+  customer_address                     D       6  CallCenterInfrastructureManagement
+  store                                D       6  CallCenterInfrastructureManagement
+  warehouse                            D       6  CallCenterInfrastructureManagement
+  web_site                             D       6  CallCenterInfrastructureManagement
+  ship_mode                            D       7  CallCenterOperationsInventoryManagement
+  promotion                            D       8  Marketing Campaign Management
+  customer                             D       9  Customer Relationship Management
+======================================================================

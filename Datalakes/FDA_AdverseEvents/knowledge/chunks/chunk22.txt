@@ -1,0 +1,44 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies record adverse event details such as product name, patient information, and reaction description for each case.
+- Healthcare providers document the occurrence of adverse events, including severity level, date of occurrence, and patient outcome.
+- Companies assign unique identifiers to each reported adverse event.
+- Both parties input relevant medical history and concomitant medications.
+
+## 2. Data Preparation for Electronic Submission
+
+Performed By: Data Analysts, IT Specialists
+
+Activity:
+- Data analysts verify the accuracy of adverse event data against ICH ICSR specifications.
+- IT specialists format the data according to the specified DTD (Document Type Definition).
+- They ensure that start and end tags are correctly placed and that all required fields are populated.
+- If necessary, they make the data more readable by adding carriage returns within large text fields.
+
+## 3. Duplicate Report Handling
+
+Performed By: Data Analysts, IT Specialists
+
+Activity:
+- Data analysts check for duplicate reports based on source and report number.
+- If duplicates are found, they create a new record with the appropriate tags and populate it with the combined data from both records.
+
+## 4. Acknowledgement Generation
+
+Performed By: IT Specialists
+
+Activity:
+- Upon successful submission of an adverse event report, IT specialists generate an acknowledgement message containing a unique identifier for the submitted report.
+
+## 5. Adverse Event Review and Analysis
+
+Performed By: FDA Reviewers, Data Analysts
+
+Activity:
+- FDA reviewers assess the reported adverse events to determine if they warrant further investigation or action.
+- Data analysts compile statistical data on adverse event trends and patterns for analytical purposes.

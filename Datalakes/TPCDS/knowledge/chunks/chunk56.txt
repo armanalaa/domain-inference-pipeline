@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the number of staff needed, job roles, and qualifications. (cc_employees)
+- HR managers onboard new hires by providing necessary training materials, company policies, and equipment assignments. (cc_sq_ft)
+- Call center managers assign employees to specific call centers based on their skills, experience, and availability. (cc_call_center_id)
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers determine the appropriate market division for each call center based on geographical location and customer demographics. (cc_mkt_id, cc_division)
+- Market managers assign specific markets to each call center to ensure efficient service delivery and resource allocation. (cc_market_manager)
+
+## 3. Call Center Facility Setup
+
+Performed By: Warehouse Staff, IT Support
+
+Activity:
+- Warehouse staff set up the physical call center facilities by arranging furniture, equipment, and signage according to the specified layout. (cc_street_number, cc_street_name, cc_suite_number)
+- IT support configures and installs necessary technology infrastructure, including phones, computers, and network connections. (Not specified in the database schema)
+
+## 4. Call Center Operations Planning
+
+Performed By: Call Center Managers, Purchasing Teams
+
+Activity:
+- Call center managers establish operational schedules for each call center, including opening and closing hours. (cc_hours)
+- Purchasing teams procure necessary supplies and equipment to maintain the smooth running of the call centers. (Not specified in the database schema)
+
+## 5. Customer Service Delivery
+
+Performed By: Call Center Employees
+
+Activity:
+- Call center employees answer customer inquiries, resolve issues, and provide product information during active call center hours. (Not specified in the database schema)
+
+## 6. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price. (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type)
+- Marketing teams create and update catalog pages to ensure accurate and up-to-date information for customers. (Not specified in the database schema)
+
+## 7. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return details, such as returned date, time, item SKU, and reason for return. (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk)
+- Warehouse staff receive and inspect returned items before updating their inventory status. (Not specified in the database schema)

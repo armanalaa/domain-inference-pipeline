@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Player Awards and Recognition Management",
+    "definition": "The process of managing awards, nominations, and recognitions for players based on their performance.",
+    "tables": [
+      "HallOfFame"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "HallOfFame": {
+      "_description": "Tracks baseball players inducted into the Hall of Fame, including voting details and eligibility criteria.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "aaronha01",
+            "abbotji01",
+            "abreubo01",
+            "adamsba01",
+            "adamsbo03"
+          ]
+        },
+        {
+          "name": "yearid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1982,
+            2005,
+            2020,
+            2021,
+            2022
+          ]
+        },
+        {
+          "name": "votedBy",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores voter group (BBWAA) for baseball players inducted into the Hall of Fame.",
+          "samples": [
+            "BBWAA",
+            "Nominating Vote",
+            "Veterans",
+            "Veterans - Players",
+            "Veterans - Pre-Integration Era"
+          ]
+        },
+        {
+          "name": "ballots",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of ballots a player has received for Hall of Fame consideration.",
+          "samples": [
+            415,
+            516,
+            397,
+            401,
+            394
+          ]
+        },
+        {
+          "name": "needed",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of players inducted into the Baseball Hall of Fame.",
+          "samples": [
+            312,
+            387,
+            298,
+            301,
+            296
+          ]
+        },
+        {
+          "name": "votes",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the total number of votes received by baseball players for Hall of Fame induction.",
+          "samples": [
+            406,
+            13,
+            22,
+            35,
+            34
+          ]
+        },
+        {
+          "name": "inducted",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a binary indicator (Y/N) for players inducted into the Baseball Hall of Fame.",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "category",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the category of each Hall of Fame member (Player).",
+          "samples": [
+            "Player",
+            "Pioneer",
+            "Manager",
+            "Executive",
+            "Umpire"
+          ]
+        },
+        {
+          "name": "needed_note",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores notes regarding eligibility statuses of baseball players in various ballots.",
+          "samples": [
+            "Players in top 20 proceed to final ballot",
+            "Preliminary poll",
+            "Group A - Holdover from 1962 ballot - two could be elected from Group A",
+            "Preliminary ballot (200 players)",
+            "At least 1 vote"
+          ]
+        }
+      ]
+    }
+  }
+}

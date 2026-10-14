@@ -1,0 +1,74 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set quan_low for each item to trigger reordering when stock reaches a minimum level.
+
+## 2. Customer Registration
+
+Performed By: Sales Representatives, HR Managers
+
+Activity:
+- Sales representatives create new customer accounts by entering firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and age.
+- HR managers verify and approve customer information for account activation.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details such as billing and shipping addresses.
+- Sales representatives confirm orders in the system, generating an orderid and updating cust_hist with customerid, orderid, and prod_id.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack ordered items based on orderlines and quan_in_stock.
+- Shipping department prepares shipments for delivery by recording orderid, customerid, netamount, tax, totalamount, and shipping details in the orders table.
+
+## 5. Inventory Tracking
+
+Performed By: Warehouse Staff, Inventory Staff
+
+Activity:
+- Warehouse staff update quan_in_stock when products are shipped to customers or returned.
+- Inventory staff monitor sales and adjust quan_in_stock accordingly.
+
+## 6. Reordering Management
+
+Performed By: Purchasing Teams, Inventory Staff
+
+Activity:
+- Inventory staff check reorder for low stock items and place purchase orders with suppliers when quan_reordered is reached.
+- Purchasing teams process the orders and update inventory accordingly.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives, Technical Support
+
+Activity:
+- Customer service representatives handle customer inquiries related to orders, returns, or product issues.
+- Technical support assists customers with product-related problems and provides solutions or escalates issues as needed.
+
+## 8. Billing and Payment
+
+Performed By: Finance Department, Customers
+
+Activity:
+- Finance records creditcard, creditcardexpiration, and other payment details for each customer account.
+- Customers make payments using their stored credit card information or other approved methods.
+
+## 9. Data Analysis and Reporting
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on sales, inventory levels, customer behavior, and other key performance indicators (KPIs).
+- Management reviews the reports to make informed decisions about pricing, marketing strategies, and operational improvements.

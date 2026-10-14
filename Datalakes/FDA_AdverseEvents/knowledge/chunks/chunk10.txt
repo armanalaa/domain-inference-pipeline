@@ -1,0 +1,56 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Employees (Safety Officers, Data Entry Clerks)
+
+Activity:
+- Safety officers investigate adverse events and gather relevant details such as patient information, event description, and product details.
+- Data entry clerks record the collected data into the AdverseEvents database, including the report ID, reporter type, report date, and event start date.
+- Safety officers assign a severity level to each reported adverse event based on its impact on the patient's health.
+
+## 2. Case Report Processing
+
+Performed By: Pharmaceutical Company Employees (Safety Officers)
+
+Activity:
+- Safety officers review and validate incoming case reports for completeness and accuracy, ensuring all required data elements are present.
+- If a report is incomplete, safety officers follow up with the reporter to obtain missing information.
+- Once validated, safety officers update the status of the case report in the AdverseEvents database.
+
+## 3. Data Transmission
+
+Performed By: Pharmaceutical Company IT Staff (System Administrators)
+
+Activity:
+- System administrators transmit validated adverse event reports to the FDA using the Electronic Transmission protocol, including the ICSR Acknowledgment Message.
+
+## 4. Data Reception and Validation
+
+Performed By: FDA IT Staff (System Administrators)
+
+Activity:
+- System administrators receive adverse event reports from pharmaceutical companies and validate them for compliance with the ICH ICSR Specifications.
+
+## 5. Case Review and Analysis
+
+Performed By: FDA Employees (Medical Officers, Data Analysts)
+
+Activity:
+- Medical officers review adverse event reports to assess their potential impact on public health and determine any necessary follow-up actions.
+- Data analysts analyze the collected data to identify trends, patterns, and potential risks associated with specific products or patient groups.
+
+## 6. Follow-Up and Communication
+
+Performed By: FDA Employees (Medical Officers, Communications Staff)
+
+Activity:
+- Medical officers initiate follow-up actions if necessary, such as contacting the pharmaceutical company for additional information or requesting a risk assessment.
+- Communications staff inform the public and healthcare professionals about potential risks associated with specific products, based on the analysis of adverse event reports.
+
+## 7. Report Archiving and Retrieval
+
+Performed By: FDA IT Staff (System Administrators)
+
+Activity:
+- System administrators archive adverse event reports in a secure database for future reference and retrieval as needed.

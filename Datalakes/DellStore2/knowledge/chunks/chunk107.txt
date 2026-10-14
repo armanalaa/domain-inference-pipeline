@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Data Analysts
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data analysts update product information based on market trends and customer feedback.
+- Product managers assign common product IDs to similar products for easier categorization.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives reach out to potential customers via email or phone calls to promote products and offers.
+- Customer service agents handle customer inquiries regarding orders, returns, or product information.
+- Customer service agents update customer profiles with new contact details or preferences.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+- Sales representatives assist customers in placing complex or large orders.
+- Orders are automatically generated with order IDs, order dates, customer IDs, net amounts, taxes, and total amounts.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track the quantity in stock for each product and update inventory records accordingly.
+- Purchasing teams issue purchase orders to replenish low-stock items based on sales data and reorder points.
+- Inventory records are updated with new quantities and sales data.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders based on order line IDs, product IDs, and quantities.
+- Shipping teams prepare shipments for delivery by printing shipping labels and arranging packages for pickup or dropoff.
+
+## 6. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record financial transactions related to orders, such as net amounts, taxes, and total amounts.
+- Finance teams generate invoices based on order data and send them to customers.
+- Finance teams update customer profiles with payment history and credit card information.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Data Analysts, Business Intelligence Teams
+
+Activity:
+- Data analysts extract and analyze sales, inventory, and financial data from the database for reporting purposes.
+- Business intelligence teams create reports and dashboards to visualize key performance indicators (KPIs) for various stakeholders.
+- Reports are shared with relevant teams to inform decision-making and identify areas for improvement.

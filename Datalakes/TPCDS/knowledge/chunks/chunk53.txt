@@ -1,0 +1,56 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign specific warehouses to each call center for handling returns requests (cc_call_center_sk).
+- Warehouse staff track the status of returned items and update the warehouse inventory accordingly (cr_warehouse_sk).
+
+## 2. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Marketing managers update the catalog page to reflect changes or promotions (cp_catalog_page_sk).
+
+## 3. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process return requests from customers and record relevant details (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff verify the returned items and update the warehouse inventory accordingly (cr_warehouse_sk).
+
+## 4. Privacy Policy Enforcement
+
+Performed By: TPC Council
+
+Activity:
+- The TPC Council ensures personal information collected from the public remains confidential to the TPC (cc_rec_start_date, cc_rec_end_date, cr_returning_customer_sk, cr_refunded_cdemo_sk, cr_refunded_hdemo_sk, cr_refunded_addr_sk).
+
+## 5. Press Relations
+
+Performed By: Spokesperson, Member Companies
+
+Activity:
+- The spokesperson communicates with the press or public on behalf of the TPC (cc_county, cc_state, cc_zip, cc_country).
+- Member companies may speak to their customers about their own participation in the TPC (cr_returning_customer_sk).
+
+## 6. Press Release Approval
+
+Performed By: Council, PRC
+
+Activity:
+- The council approves any TPC press release except for the standard quarterly press release (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- The PRC is authorized to issue the standard quarterly press release without Council approval.
+
+## 7. Website Management
+
+Performed By: PRC
+
+Activity:
+- The PRC maintains the design and layout of the TPC website in a manner consistent with the TPC mission and policies (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- The PRC publishes highlights of technical subcommittee reports on the TPC website and posts them on social media accounts (cp_catalog_page_sk, cr_call_center_sk).

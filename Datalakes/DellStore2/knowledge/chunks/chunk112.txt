@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when receiving shipments of newly registered products.
+- Product managers set special and common_prod_id for each item based on its features and market positioning.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives create customer profiles with firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and username.
+- Customer service agents update customer details when customers contact them for changes or inquiries.
+- HR managers add creditcard, creditcardexpiration, age, income, gender to customer profiles during onboarding.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance
+
+Activity:
+- Sales representatives place orders by specifying orderid, netamount, tax, totalamount, and customerid.
+- Warehouse staff track quan_in_stock to ensure sufficient stock for each order.
+- Purchasing teams issue purchase orders when inventory levels are low.
+- Finance records orderdate, sales, and updates the reorder table with date_low, quan_low, date_reordered, quan_reordered, and date_expected.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack orderlines based on orderid and prod_id.
+- Shipping department assigns shipping labels and sends orders to customers.
+
+## 5. Invoice Generation
+
+Performed By: Finance
+
+Activity:
+- Finance generates invoices for each order using customer details, order information, and sales data.
+
+## 6. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards maintain the business glossary by defining terms, KPIs, policies, and rules linked to relevant data assets.
+- IT administrators ensure user authentication through enterprise identity systems like Active Directory, SAML, and OAuth2.
+
+## 7. Compliance and Security
+
+Performed By: Compliance Officers, Data Privacy Team
+
+Activity:
+- Compliance officers monitor data usage to maintain industry standards and support regulatory compliance.
+- Data privacy team ensures data privacy by design, keeping all governance data within the organization's environment.

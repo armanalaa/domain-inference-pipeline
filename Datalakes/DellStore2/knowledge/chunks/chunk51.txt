@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column for each product.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, inputting their contact details (email, phone) into the customers table.
+- Customer service agents handle customer inquiries and update the username and password columns for each customer.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products from the catalog and specifying quantities.
+- Sales representatives confirm orders and record order details (orderid, orderdate, netamount, tax, totalamount) in the orders table.
+- Warehouse staff pick and pack ordered items and update the quan_in_stock column accordingly.
+
+## 4. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders for products with low stock levels based on the date_low and quan_low columns in the reorder table.
+- Warehouse staff receive and record incoming shipments, updating the quan_in_stock column for each product.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff prepare orders for shipping by packing items and printing shipping labels.
+- Shipping teams deliver orders to customers and update the orderlines table with tracking information.
+
+## 6. Financial Management
+
+Performed By: Finance Department
+
+Activity:
+- Finance records sales transactions (orderid, netamount) in the orders table and calculates total revenue.
+- Finance generates invoices based on order details and updates customer accounts accordingly.
+
+## 7. Data Governance
+
+Performed By: Data Management Team
+
+Activity:
+- Data management team ensures data quality by validating and correcting entries in the customers, orders, and inventory tables.
+- Data management team documents data lineage and metadata in a shared repository for future reference.

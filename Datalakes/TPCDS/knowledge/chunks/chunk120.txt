@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and available positions (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_division, cc_company).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls during operational hours (cc_hours) and assist with inquiries or troubleshoot issues.
+- Representatives record call details, including the customer's name, contact information, and issue description (cc_call_center_id, cc_rec_start_date, cc_closed_date_sk).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers define market strategies for each call center, including target customer demographics and marketing campaigns (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- They monitor the performance of each call center against these strategies and adjust as necessary (cc_market_manager).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- They update product details when necessary to ensure accuracy and relevance (cp_catalog_page_sk).
+
+## 5. Customer Returns Processing
+
+Performed By: Warehouse Staff, Customer Service Representatives
+
+Activity:
+- Warehouse staff receive returned items from customers and record the return details (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk).
+- Customer service representatives process refunds for the returned items, updating customer records accordingly (cr_refunded_customer_sk).
+
+## 6. Order Processing and Fulfillment
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders from customers, including selecting the appropriate shipping method (cr_ship_mode_sk).
+- Warehouse staff pick, pack, and ship the ordered items to the customer's specified address (cr_warehouse_sk).
+
+## 7. Performance Monitoring and Reporting
+
+Performed By: Call Center Managers, Analytics Team
+
+Activity:
+- Call center managers monitor call center performance metrics, such as average handling time and service level (cc_hours, cc_closed_date_sk).
+- The analytics team generates reports based on these metrics to identify trends and areas for improvement (not specified in the database schema).

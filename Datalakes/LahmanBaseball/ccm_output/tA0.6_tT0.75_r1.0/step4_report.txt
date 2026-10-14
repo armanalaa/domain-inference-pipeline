@@ -1,0 +1,89 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 351
+Threshold θ_T           : 0.75
+Edges in G_T            : 52
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.2676
+  max    : 0.9571
+  mean   : 0.5372
+  median : 0.5393
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  AwardsShareManagers             AwardsSharePlayers              0.9571      7  1.000  0.9571
+  Fielding                        FieldingOFsplit                 0.9561     18  1.000  0.9561
+  AwardsManagers                  AwardsPlayers                   0.9508      6  1.000  0.9508
+  Pitching                        PitchingPost                    0.9407     30  1.000  0.9407
+  Batting                         BattingPost                     0.9333     22  1.000  0.9333
+  Fielding                        FieldingPost                    0.9039     17  1.000  0.9039
+  FieldingOFsplit                 FieldingPost                    0.8967     17  1.000  0.8967
+  Teams                           TeamsHalf                       0.8907     10  1.000  0.8907
+  Managers                        ManagersHalf                    0.8793     10  1.000  0.8793
+  BattingPost                     Teams                           0.8312     22  1.000  0.8312
+  ManagersHalf                    Salaries                        0.8275      5  1.000  0.8275
+  Batting                         Teams                           0.8245     22  1.000  0.8245
+  AllstarFull                     Salaries                        0.8029      5  1.000  0.8029
+  Fielding                        Salaries                        0.8022      5  1.000  0.8022
+  Managers                        Salaries                        0.8021      5  1.000  0.8021
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  AwardsShareManagers             AwardsSharePlayers              0.9571
+  Fielding                        FieldingOFsplit                 0.9561
+  AwardsManagers                  AwardsPlayers                   0.9508
+  Pitching                        PitchingPost                    0.9407
+  Batting                         BattingPost                     0.9333
+  Fielding                        FieldingPost                    0.9039
+  FieldingOFsplit                 FieldingPost                    0.8967
+  Teams                           TeamsHalf                       0.8907
+  Managers                        ManagersHalf                    0.8793
+  BattingPost                     Teams                           0.8312
+  ManagersHalf                    Salaries                        0.8275
+  Batting                         Teams                           0.8245
+  AllstarFull                     Salaries                        0.8029
+  Fielding                        Salaries                        0.8022
+  Managers                        Salaries                        0.8021
+  Appearances                     Salaries                        0.8021
+  Batting                         Salaries                        0.8020
+  Batting                         Pitching                        0.8016
+  FieldingOFsplit                 Salaries                        0.8016
+  Pitching                        Salaries                        0.8015
+  BattingPost                     PitchingPost                    0.8008
+  ManagersHalf                    TeamsHalf                       0.7862
+  BattingPost                     Pitching                        0.7768
+  Pitching                        Teams                           0.7761
+  FieldingPost                    Salaries                        0.7761
+  PitchingPost                    Salaries                        0.7756
+  Appearances                     FieldingOF                      0.7753
+  BattingPost                     Salaries                        0.7751
+  PitchingPost                    Teams                           0.7740
+  Batting                         PitchingPost                    0.7719
+  Managers                        PitchingPost                    0.7654
+  ManagersHalf                    PitchingPost                    0.7618
+  CollegePlaying                  Fielding                        0.7614
+  Managers                        Teams                           0.7614
+  CollegePlaying                  PitchingPost                    0.7613
+  CollegePlaying                  Managers                        0.7612
+  CollegePlaying                  FieldingPost                    0.7612
+  Batting                         CollegePlaying                  0.7612
+  Appearances                     CollegePlaying                  0.7611
+  AllstarFull                     CollegePlaying                  0.7610
+  CollegePlaying                  FieldingOFsplit                 0.7610
+  BattingPost                     CollegePlaying                  0.7608
+  CollegePlaying                  Pitching                        0.7608
+  CollegePlaying                  Salaries                        0.7600
+  AwardsPlayers                   CollegePlaying                  0.7597
+  CollegePlaying                  ManagersHalf                    0.7578
+  AwardsSharePlayers              CollegePlaying                  0.7570
+  AwardsManagers                  CollegePlaying                  0.7568
+  ManagersHalf                    Teams                           0.7560
+  AwardsPlayers                   AwardsSharePlayers              0.7544
+  AwardsShareManagers             CollegePlaying                  0.7540
+  AwardsManagers                  AwardsSharePlayers              0.7512
+======================================================================

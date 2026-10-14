@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products arrive or existing ones are sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customer service agents assist customers with inquiries about orders, returns, or account information.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff, Order Processors
+
+Activity:
+- Customers place orders by selecting products and providing shipping details.
+- Sales representatives review and confirm customer orders.
+- Warehouse staff pick and pack items for shipment based on order details.
+- Order processors generate invoices, update inventory levels, and mark orders as shipped.
+
+## 4. Financial Management
+
+Performed By: Accounting Staff, Finance Managers
+
+Activity:
+- Accounting staff record transactions related to sales, returns, and payments.
+- Finance managers analyze financial data to monitor performance and make strategic decisions.
+
+## 5. Reordering and Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and notify purchasing teams when stock is low.
+- Purchasing teams order additional products to maintain optimal inventory levels.
+
+## 6. Compliance and Regulatory Reporting
+
+Performed By: HR Managers, Legal Team
+
+Activity:
+- HR managers ensure employee data is accurate and up-to-date in compliance with regulations.
+- The legal team generates reports for regulatory bodies as required.
+
+## 7. Data Governance and Lineage
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team documents the lineage, quality, and context of data across all processes to ensure compliance and transparency.

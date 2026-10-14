@@ -1,0 +1,68 @@
+ # Northwind — Business Workflows
+
+## 1. Company Management
+
+Performed By: Administrators, Data Entry Clerks
+
+Activity:
+- Administrators manage company data by adding new companies (CompanyName, ContactName, etc.) using the Add Company command button.
+- Data Entry Clerks update existing company information as needed.
+
+## 2. Company Filtering
+
+Performed By: Users
+
+Activity:
+- Users filter the list of companies based on their requirements (Customers Only, Shippers Only, Vendors Only) using radio buttons or built-in, on-demand filtering options.
+
+## 3. Company Detail View
+
+Performed By: Users
+
+Activity:
+- Users view detailed information about a specific company by double-clicking anywhere in a detail row or clicking on the ID field (set up as a hyperlink).
+
+## 4. Company Label Creation
+
+Performed By: Users
+
+Activity:
+- Users create labels for companies using the Create Labels button and Access Label Wizard.
+
+## 5. Company Deletion
+
+Performed By: Administrators
+
+Activity:
+- Administrators delete a company after confirming referential integrity and business rules.
+
+## 6. Company Type Change Control
+
+Performed By: Administrators
+
+Activity:
+- Administrators control when a company type can be changed based on business rules.
+
+## 7. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products (ProductName, Quantity), providing shipping details, and clicking the Add Order button.
+- Sales representatives review and confirm customer orders before they are processed.
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels (UnitsInStock) and update them as products are shipped or received.
+- Purchasing teams order new products when the quantity falls below the ReorderLevel.
+
+## 9. Invoice Processing
+
+Performed By: Finance, Customers
+
+Activity:
+- Finance generates invoices based on orders (OrderID, Total Amount) and sends them to customers.
+- Customers review and pay their invoices as needed.

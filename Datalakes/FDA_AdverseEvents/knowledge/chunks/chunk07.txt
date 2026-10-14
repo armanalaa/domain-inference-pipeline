@@ -1,0 +1,62 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Manufacturers
+
+Activity:
+- Healthcare professionals document adverse events experienced by patients.
+- Patients report adverse events directly to the FDA through various channels.
+- Manufacturers submit reports on adverse events related to their products.
+- Reports include demographic and administrative information.
+- Reports detail drug information from the case reports.
+- Reports provide reaction information from the reports.
+- Reports record patient outcome information from the reports.
+
+## 2. Adverse Event Data Collection
+
+Performed By: FDA IT Staff
+
+Activity:
+- Collect adverse event data from various sources, including initial report image ID numbers (if available).
+- Store collected data in the FDA_AdverseEvents database.
+
+## 3. Adverse Event Data Processing
+
+Performed By: FDA Data Analysts
+
+Activity:
+- Process and organize adverse event data for analysis.
+- Ensure data accuracy and completeness before further processing.
+
+## 4. Adverse Event Analysis
+
+Performed By: FDA Researchers, Data Scientists
+
+Activity:
+- Analyze processed adverse event data to identify trends and patterns.
+- Evaluate the potential relationship between drugs and adverse events.
+
+## 5. Adverse Event Report Distribution
+
+Performed By: FDA Communication Officers
+
+Activity:
+- Distribute summarized adverse event reports to relevant stakeholders, such as drug manufacturers.
+- Provide individual case reports upon request through the Freedom of Information Act (FOIA).
+
+## 6. Adverse Event Database Maintenance
+
+Performed By: FDA IT Staff
+
+Activity:
+- Maintain and update the FDA_AdverseEvents database regularly.
+- Ensure data integrity, security, and accessibility for authorized users.
+
+## 7. FOIA Request Handling
+
+Performed By: FDA Administrative Staff
+
+Activity:
+- Handle FOIA requests related to adverse event reports.
+- Provide summarized FAERS reports or individual case reports upon request.

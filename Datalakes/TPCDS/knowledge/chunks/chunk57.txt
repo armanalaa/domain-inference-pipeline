@@ -1,0 +1,52 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Market Managers, Division Managers
+
+Activity:
+- Assign call centers to specific markets and divisions based on market class, division name, and company name (call_center).
+- Determine the number of employees required for each call center (call_center).
+- Allocate square footage for each call center according to the number of employees (call_center).
+- Set operating hours for each call center (call_center).
+- Designate a manager for each call center (call_center).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Answer incoming calls during operational hours (call_center).
+- Route calls to appropriate departments based on customer inquiries (not specified in the schema).
+- Record start and end dates for each call (call_center).
+- Close calls when issues are resolved or escalated (call_center).
+- Update call center open and closed dates as needed (call_center).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Market Managers
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, and list price (catalog_page).
+- Assign each item to a specific department (catalog_page).
+- Create unique catalog numbers for each item (catalog_page).
+- Update catalog pages as needed (catalog_page).
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Record returned items and their quantities (catalog_returns).
+- Assign returned items to appropriate warehouses (catalog_returns).
+- Update the status of the order associated with the return (not specified in the schema).
+- Determine the reason for each return (catalog_returns).
+- Refund customers based on return reasons and applicable policies (not specified in the schema).
+
+## 5. Policy Compliance Monitoring
+
+Performed By: Council Members, TPC Administration
+
+Activity:
+- Review claims to ensure they adhere to TPC Policies (Policies_v6.19.pdf).
+- Investigate alleged policy violations and take appropriate response measures if necessary (TPC Policies, Revision 6.19).

@@ -1,0 +1,54 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the required skills and qualifications. (cc_employees)
+- HR managers onboard new hires by providing training materials, company policies, and equipment. (cc_sq_ft, cc_hours)
+- Call center managers assign employees to specific call centers based on their skills and availability. (cc_call_center_id)
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers determine the market division for each call center based on geographical location or customer demographics. (cc_mkt_id, cc_division)
+
+## 3. Call Center Classification
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers classify call centers based on their size, specialization, or service level. (cc_class)
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type)
+
+## 5. Catalog Page Maintenance
+
+Performed By: Marketing Teams, Web Developers
+
+Activity:
+- Marketing teams update catalog pages with new products or promotions, while web developers ensure the website's layout and functionality remain optimal. (cp_catalog_page_sk)
+
+## 6. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details and assigning a return reason. (cr_returned_date_sk, cr_reason_sk)
+- Warehouse staff receive returned items, verify their condition, and update the inventory accordingly. (cr_warehouse_sk)
+
+## 7. Policy Enforcement
+
+Performed By: TPC Council Members, Administrator
+
+Activity:
+- TPC Council members review policy violations and categorize them based on severity. (8.4.1.6 Violation Severity)
+- The administrator takes appropriate response measures in accordance with the violation level. (8.4.3 Response Phase)

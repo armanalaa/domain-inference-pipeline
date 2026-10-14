@@ -1,0 +1,62 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Data Stewards
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data stewards maintain reliable data for analytics, AI, and ensure up-to-date metadata for the catalog.
+- Data stewards group related assets, link tables to terms, auto-generate descriptions, and monitor quality trends.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives engage with customers, capturing their contact information, credit card details, and preferences.
+- HR managers create customer profiles, including personal data, age, income, gender, and region.
+- Customers place orders by specifying products, quantities, shipping addresses, and payment methods.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance
+
+Activity:
+- Sales representatives generate orders based on customer requests and update order statuses.
+- Warehouse staff track inventory levels and prepare items for shipment upon order confirmation.
+- Purchasing teams issue purchase orders to suppliers when quan_in_stock falls below a certain threshold.
+- Finance records order details, calculates net amount, tax, and total amount for each order.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update quan_in_stock when items are received or shipped.
+- Purchasing teams monitor inventory levels and reorder products when date_low is reached.
+
+## 5. Order Line Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff create order lines for each product in an order, specifying quantity and orderdate.
+- Sales representatives update orderlines with any changes to the order, such as cancellations or modifications.
+
+## 6. Reordering Management
+
+Performed By: Purchasing Teams, Data Stewards
+
+Activity:
+- Purchasing teams update date_reordered and quan_reordered when products are reordered.
+- Data stewards forecast future inventory needs based on sales trends and reorder patterns.
+
+## 7. Data Governance and Compliance
+
+Performed By: Data Stewards, HR Managers, Business Users
+
+Activity:
+- Data stewards discover and classify sensitive data, assign ownership, and manage roles for audit-readiness and regulatory compliance.
+- HR managers ensure that employee access to sensitive data is properly controlled and monitored.
+- Business users flag issues, assign tasks, and contribute insights, turning the data catalog into a living, collaborative resource.

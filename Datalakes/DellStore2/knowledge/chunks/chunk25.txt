@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Category Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category managers maintain the categories hierarchy and assign products to appropriate categories.
+- Product managers update product details such as title, actor, price, special, and common_prod_id when necessary.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer information including firstname, lastname, address, email, phone, creditcardtype, and username during the onboarding process.
+- Customer service agents update customer details like address, email, or phone when customers request changes.
+- HR managers record creditcard, creditcardexpiration, age, income, gender, and region for new employees.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track quan_in_stock and sales for each product in the inventory.
+- Purchasing teams issue purchase orders to replenish products when quan_in_stock falls below a certain threshold.
+- Warehouse staff update quan_in_stock upon receiving new shipments.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff
+
+Activity:
+- Sales representatives create orders for customers by specifying orderdate, customerid, and netamount.
+- Customers place orders by selecting products, quantities, and providing orderdate.
+- Warehouse staff update quan_in_stock and orderlines when an order is fulfilled.
+
+## 5. Reordering Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels and update date_low and quan_low for products that are running low on stock.
+- Purchasing teams reorder products when date_reordered is triggered based on date_expected and quan_reordered.
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams calculate tax and totalamount for each order.
+- Accounting staff record these values along with netamount in the orders table.
+
+## 7. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team ensures data quality by implementing configurable thresholds or reusable rules to monitor and manage data.

@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column for each product when items are received or shipped.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering contact information, credit card details, and other relevant data from potential clients.
+- HR managers update customer profiles with personal details, employment history, and income levels.
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate orders for customers based on their selections and submit them to the warehouse for fulfillment.
+- Warehouse staff pick items from inventory, pack orders, and update the orderlines table with product IDs, quantities, and order dates.
+- Purchasing teams issue purchase orders to suppliers when inventory levels fall below a certain threshold.
+
+## 4. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records each order in the orders table, calculating net amount, tax, and total amount based on product prices, quantities, and shipping costs.
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers pay for their orders using credit cards or other payment methods, which are recorded in the customers table.
+- Finance department verifies payments and updates order statuses accordingly.
+
+## 6. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams monitor inventory levels and place orders for replenishments when necessary.
+- Warehouse staff receive shipments from suppliers, update the inventory table with new quantities, and process incoming products into stock.
+
+## 7. Reorder Management
+
+Performed By: Inventory Managers
+
+Activity:
+- Inventory managers set reorder points for each product based on historical sales data and expected demand.
+- When inventory levels fall below the reorder point, inventory managers generate purchase orders to replenish stock.
+
+## 8. Security and Compliance
+
+Performed By: IT Department, Dataedo Team
+
+Activity:
+- IT department ensures secure connections and implements encryption practices for data protection.
+- Dataedo team performs regular security testing and vulnerability response to maintain the system's integrity.

@@ -1,0 +1,66 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the call center's capacity (cc_employees).
+- HR managers update employee details in the call center table (cc_name, cc_class, cc_sq_ft, cc_hours) upon hiring.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers set the operating hours for each call center (cc_hours).
+- Sales representatives handle customer inquiries and process payments during call center operations.
+
+## 3. Customer Selection
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff select customers based on either their customer number or last name for processing payments.
+
+## 4. Payment Processing - Case 1
+
+Performed By: Call Center Staff
+
+Activity:
+- Upon selecting a customer based on their number, call center staff retrieve and update the customer's balance (C_BALANCE) and payment count (C_PAYMENT_CNT).
+
+## 5. Payment Processing - Case 2
+
+Performed By: Call Center Staff
+
+Activity:
+- Upon selecting a customer based on their last name, call center staff retrieve the relevant customer's details from the sorted set of selected rows.
+
+## 6. Customer History Recording
+
+Performed By: Call Center Staff
+
+Activity:
+- If a customer's credit status is "BC", call center staff record the payment transaction in the customer's history (C_DATA).
+
+## 7. Warehouse and District Balance Updates
+
+Performed By: Call Center Staff
+
+Activity:
+- Upon successful payment, call center staff update the warehouse and district year-to-date balances (W_YTD, D_YTD).
+
+## 8. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 9. Return Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process customer returns by recording the returned item's details and updating the customer's balance (cr_item_sk, cr_refunded_customer_sk, cr_BALANCE).

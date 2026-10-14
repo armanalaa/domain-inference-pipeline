@@ -1,0 +1,114 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Order Processing and Management",
+    "definition": "The unifying capability across all tables is the management of orders, including customer history tracking, order line item management, and order processing.",
+    "tables": [
+      "cust_hist",
+      "orderlines",
+      "orders"
+    ],
+    "phi_scores": {
+      "C4": 0.3366,
+      "C9": 0.3315,
+      "C10": 0.3173,
+      "C14": 0.3056,
+      "C3": 0.2898,
+      "C12": 0.2739,
+      "C11": 0.2304,
+      "C16": 0.2293,
+      "C6": 0.2252,
+      "C15": 0.2155,
+      "C5": 0.1966,
+      "C8": 0.195,
+      "C7": 0.1768,
+      "C2": 0.1545,
+      "C17": 0.1286,
+      "C13": 0.1265,
+      "C1": 0.0959
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Product Information Management",
+    "definition": "The process of managing and maintaining product information, including categories and details, across the enterprise system.",
+    "tables": [
+      "categories",
+      "products"
+    ],
+    "phi_scores": {
+      "C5": 0.2631,
+      "C1": 0.2477,
+      "C15": 0.213,
+      "C12": 0.1821,
+      "C6": 0.1762,
+      "C8": 0.1726,
+      "C9": 0.1709,
+      "C11": 0.17,
+      "C16": 0.1596,
+      "C4": 0.1423,
+      "C10": 0.1376,
+      "C3": 0.1328,
+      "C17": 0.1182,
+      "C14": 0.1053,
+      "C13": 0.1038,
+      "C2": 0.1029,
+      "C7": 0.0977
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Inventory and Reorder Management",
+    "definition": "The process of managing inventory levels, reordering products, and tracking order-related data.",
+    "tables": [
+      "inventory",
+      "reorder"
+    ],
+    "phi_scores": {
+      "C12": 0.3777,
+      "C6": 0.355,
+      "C4": 0.2952,
+      "C5": 0.2773,
+      "C9": 0.2751,
+      "C3": 0.2515,
+      "C14": 0.2475,
+      "C16": 0.2232,
+      "C10": 0.2225,
+      "C8": 0.1778,
+      "C11": 0.1751,
+      "C1": 0.1703,
+      "C17": 0.1618,
+      "C15": 0.1613,
+      "C7": 0.1324,
+      "C13": 0.1138,
+      "C2": 0.0897
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Customer Profile Management",
+    "definition": "The process of managing and maintaining customer profiles, including personal information, account details, and purchasing history.",
+    "tables": [
+      "customers"
+    ],
+    "phi_scores": {
+      "C10": 0.3073,
+      "C11": 0.297,
+      "C2": 0.2956,
+      "C15": 0.2594,
+      "C8": 0.1994,
+      "C3": 0.1674,
+      "C16": 0.1612,
+      "C14": 0.1486,
+      "C13": 0.1486,
+      "C7": 0.1486,
+      "C4": 0.1307,
+      "C17": 0.1258,
+      "C9": 0.1233,
+      "C12": 0.1108,
+      "C6": 0.0948,
+      "C5": 0.093,
+      "C1": 0.0746
+    }
+  }
+]

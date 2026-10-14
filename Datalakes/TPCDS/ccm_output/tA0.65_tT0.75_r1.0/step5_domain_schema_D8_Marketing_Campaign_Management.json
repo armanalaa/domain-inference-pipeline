@@ -1,0 +1,265 @@
+{
+  "_meta": {
+    "domain_id": 8,
+    "domain_name": "Marketing Campaign Management",
+    "definition": "The unifying capability across all tables is the management of marketing campaigns, including promotion details, channel management, and customer interaction.",
+    "tables": [
+      "promotion"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "promotion": {
+      "_description": "Tracks marketing promotions for various sales campaigns across multiple channels.",
+      "columns": [
+        {
+          "name": "p_promo_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential identifiers for individual promotions.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "p_promo_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the p_promo_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "p_start_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for promotion start dates.",
+          "samples": [
+            2450164,
+            2450118,
+            2450675,
+            2450633,
+            2450347
+          ]
+        },
+        {
+          "name": "p_end_date_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequential integer keys for the end dates of promotions.",
+          "samples": [
+            2450185,
+            2450150,
+            2450712,
+            2450646,
+            2450357
+          ]
+        },
+        {
+          "name": "p_item_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for items associated with promotions.",
+          "samples": [
+            10022,
+            2410,
+            10843,
+            9794,
+            6655
+          ]
+        },
+        {
+          "name": "p_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the fixed cost for each promotion event.",
+          "samples": [
+            1000.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_response_target",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores a binary indicator for promotion response targets consistently meeting their goals (1 = met).",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_promo_name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores short, alphabetic names for promotions, such as 'ought', 'able', 'pri', 'ese', and 'anti'.",
+          "samples": [
+            "ought",
+            "able",
+            "pri",
+            "ese",
+            "anti"
+          ]
+        },
+        {
+          "name": "p_channel_dmail",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores whether a promotion was distributed via direct email marketing (Y) or not (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_email",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores email addresses for promotions distributed via email channels.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_catalog",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a channel identifier for catalog promotion offers.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_tv",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the promotion medium as 'N', indicating television channel.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_radio",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotion channel type, consistently set to 'N' for non-internet sales.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_press",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotion channel type for press media.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_event",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotional event type for each occurrence, consistently set to 'N' in these samples.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_demo",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores promotional channel demonstration codes, all samples are 'N'.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_channel_details",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores descriptive text for various promotional channels in a diplomatic and often metaphorical manner.",
+          "samples": [
+            "Men will not say merely. Old, available ",
+            "Keen ways speak measurements. Futur",
+            "At all rich attempts achieve possible, certain mat",
+            "Royal, available groups might lose ",
+            "Clothes channel diplomatic, other women. Selecti"
+          ]
+        },
+        {
+          "name": "p_purpose",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores purpose type for promotions (e.g., Unknown).",
+          "samples": [
+            "Unknown",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "p_discount_active",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Indicates whether a promotion is currently active (N denotes inactive).",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when they receive shipments or process returns.
+- Product managers set special and common_prod_id for promotional offers or related products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details during the onboarding process, including firstname, lastname, address, email, phone, creditcardtype, and income.
+- Customers update their personal information or password through the account settings.
+- HR managers verify and approve new customer accounts based on credit checks and compliance with company policies.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams, Finance Department
+
+Activity:
+- Sales representatives place orders for customers by specifying orderdate, netamount, tax, totalamount, and customerid in the orders table.
+- Warehouse staff track quan_in_stock to ensure sufficient inventory for each orderline.
+- Purchasing teams issue purchase orders when stock levels are low based on reorder data.
+- Finance records invoices and payments related to each order.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update sales when products are sold or returned.
+- Purchasing teams monitor date_low and quan_low to initiate reorders.
+- Warehouse staff record date_reordered and quan_reordered once a new shipment arrives.
+- Purchasing teams update date_expected for future inventory replenishment.
+
+## 5. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards define and manage key business terms in the glossary for consistent understanding.
+- IT administrators configure Data Quality checks to ensure data accuracy and completeness.
+- Data stewards schedule tasks such as Metadata Download Imports to maintain the data catalog.
+
+## 6. Reporting and Analytics
+
+Performed By: Sales Managers, Marketing Teams, Finance Department
+
+Activity:
+- Sales managers generate sales reports based on orderlines and inventory data.
+- Marketing teams analyze customer demographics and purchasing patterns for targeted promotions.
+- Finance department uses financial data from orders to create budgets and forecasts.

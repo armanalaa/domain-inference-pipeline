@@ -1,0 +1,58 @@
+table,domain_id,domain_name
+Sales ShoppingCartItem,0,E-commerce Management
+HumanResources EmployeePayHistory,1,EmployeeCompensationManagement
+Production TransactionHistory,2,Sales Transaction Management
+Production TransactionHistoryArchive,2,Sales Transaction Management
+HumanResources Department,3,Core Business Operations Management
+HumanResources Shift,3,Core Business Operations Management
+Person AddressType,3,Core Business Operations Management
+Person ContactType,3,Core Business Operations Management
+Person CountryRegion,3,Core Business Operations Management
+Person PersonPhone,3,Core Business Operations Management
+Person PhoneNumberType,3,Core Business Operations Management
+Person StateProvince,3,Core Business Operations Management
+Production Culture,3,Core Business Operations Management
+Production Location,3,Core Business Operations Management
+Production Product,3,Core Business Operations Management
+Production ProductCategory,3,Core Business Operations Management
+Production ProductModel,3,Core Business Operations Management
+Production ProductSubcategory,3,Core Business Operations Management
+Production ScrapReason,3,Core Business Operations Management
+Production UnitMeasure,3,Core Business Operations Management
+Purchasing ShipMethod,3,Core Business Operations Management
+Sales CountryRegionCurrency,3,Core Business Operations Management
+Sales Currency,3,Core Business Operations Management
+Sales SalesReason,3,Core Business Operations Management
+Sales SalesTaxRate,3,Core Business Operations Management
+Sales SalesTerritory,3,Core Business Operations Management
+Purchasing PurchaseOrderDetail,4,Purchase Order Management
+Production ProductReview,5,Product Review and Customer Feedback Management
+HumanResources Employee,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,6,Operational Data Management
+Person Address,6,Operational Data Management
+Person BusinessEntity,6,Operational Data Management
+Person BusinessEntityAddress,6,Operational Data Management
+Person BusinessEntityContact,6,Operational Data Management
+Person EmailAddress,6,Operational Data Management
+Person Person,6,Operational Data Management
+Production ProductDescription,6,Operational Data Management
+Production ProductInventory,6,Operational Data Management
+Purchasing ProductVendor,6,Operational Data Management
+Purchasing PurchaseOrderHeader,6,Operational Data Management
+Sales Customer,6,Operational Data Management
+Sales PersonCreditCard,6,Operational Data Management
+Sales SalesOrderDetail,6,Operational Data Management
+Sales SalesOrderHeader,6,Operational Data Management
+Sales SalesPerson,6,Operational Data Management
+Sales SalesPersonQuotaHistory,6,Operational Data Management
+Sales SalesTerritoryHistory,6,Operational Data Management
+Sales SpecialOffer,6,Operational Data Management
+Sales SpecialOfferProduct,6,Operational Data Management
+Sales Store,6,Operational Data Management
+Production BillOfMaterials,7,Production Management
+Production ProductCostHistory,7,Production Management
+Production ProductListPriceHistory,7,Production Management
+Production WorkOrder,7,Production Management
+Production WorkOrderRouting,7,Production Management
+Sales CreditCard,8,Payment and Transaction Management
+Sales CurrencyRate,9,Currency Exchange Rate Management

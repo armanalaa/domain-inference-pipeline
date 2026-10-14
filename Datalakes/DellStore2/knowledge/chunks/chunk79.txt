@@ -1,0 +1,68 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, IT Team
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- IT team updates the common_prod_id for a product when it undergoes a rebranding or renaming.
+- Product managers mark special products with appropriate tags to highlight promotions or seasonal offers.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, IT Team
+
+Activity:
+- Sales representatives input customer details such as name, address, contact information, and credit card data.
+- Customer service agents update customer records with changes in personal or billing information.
+- IT team ensures the security of sensitive customer data by implementing encryption and access controls.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping details.
+- Sales representatives process orders for customers with special requests or complex order requirements.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams, IT Team
+
+Activity:
+- Warehouse staff update the quantity in stock for each product as items are received or shipped out.
+- Purchasing teams issue purchase orders to suppliers when inventory levels fall below a certain threshold.
+- IT team automates reordering of products based on sales data and predefined thresholds.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders according to the orderlines and shipping details.
+- Shipping teams prepare and ship orders to customers, updating the order status accordingly.
+
+## 6. Invoice Generation
+
+Performed By: Accounting Team, IT Team
+
+Activity:
+- Accounting team calculates the net amount, tax, and total amount for each order based on product prices and shipping costs.
+- IT team generates invoices using the calculated amounts and customer details from the orders and customers tables.
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers pay their invoices using the provided payment methods (credit card, bank transfer, etc.).
+- Finance team records payments and updates customer accounts accordingly.
+
+## 8. Data Analysis and Reporting
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts use data from orders, customers, inventory, and products to generate reports and insights for decision making.
+- Management reviews the reports and makes strategic decisions based on the analysis.

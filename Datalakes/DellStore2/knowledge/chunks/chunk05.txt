@@ -1,0 +1,65 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives register new customers by recording their first name, last name, address details, contact information, credit card details, age, income, gender, and username/password.
+- IT administrators manage customer accounts by updating account information, password resets, and account deactivation or deletion when necessary.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, list price, and special offers (if any).
+- Inventory specialists update product information, such as quantity in stock, sales, and common product ID when necessary.
+
+## 3. Category Management
+
+Performed By: Product Managers, IT Administrators
+
+Activity:
+- Product managers assign products to appropriate categories for easy navigation.
+- IT administrators manage the category database by adding or removing categories as needed.
+
+## 4. Inventory Management and Replenishment
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists track inventory levels and sales to determine when products need to be reordered.
+- Purchasing teams issue purchase orders for the necessary quantities of each product that needs replenishing.
+
+## 5. Order Placement
+
+Performed By: Customers, Sales Representatives (if needed)
+
+Activity:
+- Customers browse the catalog and place orders by selecting products, specifying quantities, and providing order details such as shipping address and payment information.
+- If a customer encounters difficulties during the ordering process, sales representatives assist them in completing their order.
+
+## 6. Order Processing and Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory and prepare them for shipping.
+- Shipping teams package the orders and arrange for delivery to the customer's specified address.
+
+## 7. Order Tracking and Customer Service
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives handle customer inquiries about order status, shipping details, and returns or exchanges.
+- IT administrators monitor the order processing system to ensure smooth operation and address any technical issues that may arise.
+
+## 8. Financial Management and Reporting
+
+Performed By: Finance Teams, IT Administrators
+
+Activity:
+- Finance teams record net amount, tax, and total amount for each order in the orders table.
+- IT administrators generate reports on sales, inventory levels, customer demographics, and other key performance indicators to help inform business decisions.

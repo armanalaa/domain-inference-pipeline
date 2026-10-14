@@ -1,0 +1,59 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Management
+
+Performed By: Baseball Operations Team, Data Entry Clerks
+
+Activity:
+- Baseball operations team assigns a unique playerID to each athlete joining the league.
+- Data entry clerks record player details such as name, schoolID, and yearID in the CollegePlaying table for players with college backgrounds.
+- Data entry clerks input player statistics like G, AB, R, H, 2B, 3B, HR, RBI, SB, CS, BB, SO, IBB, HBP, SH, SF, and GIDP in the Batting table.
+- For fielding statistics, data entry clerks record POS, G, GS, InnOuts, PO, A, E, DP, PB, WP, SB, CS, ZR in the Fielding table.
+
+## 2. Team Management and Scheduling
+
+Performed By: League Administrators, Schedulers
+
+Activity:
+- League administrators assign teamID and lgID to each baseball team participating in the league.
+- Schedulers create game schedules for teams within a league (lgID) and record gameNum, gameID, teamID, and yearID in the AllstarFull table.
+
+## 3. Game Tracking and Reporting
+
+Performed By: Game Scorers, Data Entry Clerks
+
+Activity:
+- Game scorers track game events like runs scored (R), hits (H), errors (E), etc., during live games.
+- Data entry clerks record game statistics from game scores in the AllstarFull and Batting tables.
+
+## 4. Award Nomination and Recognition
+
+Performed By: Awards Committee, League Administrators
+
+Activity:
+- The awards committee nominates players for various awards based on their performance.
+- League administrators record awardID, playerID, yearID, lgID, tie, and notes in the AwardsPlayers and AwardsManagers tables.
+
+## 5. Award Point Allocation and Distribution
+
+Performed By: Awards Committee, League Administrators
+
+Activity:
+- The awards committee allocates points to players based on voting results for each award.
+- League administrators record pointsWon, pointsMax, and votesFirst in the AwardsSharePlayers and AwardsShareManagers tables.
+
+## 6. College Data Management
+
+Performed By: Data Entry Clerks, Database Administrators
+
+Activity:
+- Data entry clerks input college names for players without existing schoolIDs in the CollegePlaying table.
+- Database administrators create new school records with year suffixes to represent old college names.
+
+## 7. Team and League Analysis
+
+Performed By: Statisticians, Analysts
+
+Activity:
+- Statisticians calculate team and player statistics like batting average (AVG), on-base percentage (OBP), slugging percentage (SLG), etc., using data from the Batting table.
+- Analysts compare team records against all teams versus within league to identify strengths and weaknesses.

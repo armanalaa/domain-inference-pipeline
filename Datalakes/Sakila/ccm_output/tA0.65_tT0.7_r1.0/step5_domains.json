@@ -1,0 +1,71 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Film Rental Management",
+    "definition": "The unifying capability across all tables is the management of film rentals, encompassing inventory tracking, customer transactions, and payment processing.",
+    "tables": [
+      "inventory",
+      "payment",
+      "rental"
+    ],
+    "phi_scores": {
+      "C5": 0.2187,
+      "C4": 0.2105,
+      "C1": 0.2001,
+      "C2": 0.1797,
+      "C3": 0.1448
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing the locations, their associated cities, film categories, and their relationships.",
+    "tables": [
+      "address",
+      "city",
+      "film_category"
+    ],
+    "phi_scores": {
+      "C1": 0.1686,
+      "C3": 0.1452,
+      "C2": 0.1436,
+      "C5": 0.1214,
+      "C4": 0.1148
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Film Inventory and Language Management",
+    "definition": "The set of activities related to managing film inventory levels, language details, and their associated data.",
+    "tables": [
+      "film",
+      "language"
+    ],
+    "phi_scores": {
+      "C2": 0.2827,
+      "C4": 0.2201,
+      "C3": 0.1956,
+      "C5": 0.1833,
+      "C1": 0.1386
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Customer and Store Management",
+    "definition": "The set of activities related to managing customer accounts, store information, and staff details.",
+    "tables": [
+      "actor",
+      "category",
+      "customer",
+      "staff",
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2352,
+      "C4": 0.1272,
+      "C2": 0.1251,
+      "C3": 0.1172,
+      "C5": 0.1088
+    }
+  }
+]

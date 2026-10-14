@@ -1,0 +1,58 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Data Collection and Submission
+
+Performed By: FDA Staff, Registered Drug Establishments
+
+Activity:
+- FDA staff collect and update the list of all drugs manufactured by registered drug establishments (Drug Listing Act of 1972).
+- Registered drug establishments submit current lists of their drugs for commercial distribution to the FDA.
+- FDA staff publish the listed National Drug Code (NDC) numbers and information submitted as part of the listing process in the NDC Directory, which is updated daily.
+
+## 2. API Querying
+
+Performed By: Researchers, Developers
+
+Activity:
+- Researchers and developers use openFDA APIs to search for specific drug data based on various parameters such as effective dates or product types.
+- They formulate search queries using the provided API endpoints (e.g., https://api.fda.gov/drug/label.json).
+
+## 3. API Result Analysis
+
+Performed By: Researchers, Data Analysts
+
+Activity:
+- Researchers and data analysts examine the results section of the API responses to identify matching SPL reports or count queries.
+- They analyze the returned data, which includes standard SPL fields, product-specific fields, and openfda annotations with additional product identifiers.
+
+## 4. Data Harmonization
+
+Performed By: openFDA Team
+
+Activity:
+- The openFDA team harmonizes specific identifiers across different datasets to make it easier to find the same drug in each dataset.
+- They attach harmonized fields, such as manufacturer_name, unii, product_type, and brand_name, to records in all categories if applicable.
+
+## 5. Data Validation and Reporting
+
+Performed By: openFDA Team
+
+Activity:
+- The openFDA team ensures data accuracy and validates the results returned by the API.
+- They provide a disclaimer that users should not rely on openFDA to make decisions regarding medical care, as all results are unvalidated.
+
+## 6. Data Access Management
+
+Performed By: openFDA Team
+
+Activity:
+- The openFDA team manages access to the API in line with their Terms of Service.
+- They may limit or restrict access if necessary.
+
+## 7. Documentation and Support
+
+Performed By: openFDA Team
+
+Activity:
+- The openFDA team provides documentation on the searchable fields, fields reference document, and API usage guidelines to help users understand the data and make effective queries.
+- They also offer support for any issues accessing the data or related concerns via the CDER Contact form.

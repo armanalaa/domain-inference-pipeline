@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their details such as name, qualifications, and employment history.
+- HR managers process employee paperwork, including tax forms and benefits enrollment.
+
+## 2. Call Center Setup
+
+Performed By: Facilities Management, IT Support
+
+Activity:
+- Facilities management assigns square footage and work hours to each call center.
+- IT support configures call center systems, ensuring compatibility with the database and communication networks.
+
+## 3. Market Division Assignment
+
+Performed By: Call Center Managers, Market Managers
+
+Activity:
+- Call center managers allocate call centers to specific markets based on geographical coverage and market segment.
+- Market managers oversee the performance of assigned call centers, providing guidance and resources as needed.
+
+## 4. Call Center Operations
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls, assist customers with inquiries or troubleshoot issues.
+- Call center managers monitor call quality, coach employees on performance, and address customer complaints.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers update the catalog by adding new items with product codes, names, categories, and list prices.
+- Marketing managers create and manage the layout of catalog pages for different departments.
+
+## 6. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return details such as date, time, reason, and item information.
+- Warehouse staff receive returned items, verify their condition, and update the inventory accordingly.
+
+## 7. Sales Reporting and Analysis
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts collect and analyze sales data from various sources, including call center transactions and catalog page views.
+- Management reviews sales reports to identify trends, make informed decisions, and set strategic goals for the business.

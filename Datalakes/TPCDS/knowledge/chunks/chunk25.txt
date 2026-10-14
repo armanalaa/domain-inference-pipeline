@@ -1,0 +1,67 @@
+ # TPC-DS — Business Workflows
+
+## 1. Standing Committee Elections
+
+Performed By: Council Members, Nominees
+
+Activity:
+- Council members nominate candidates for Standing Committees (SC, TAB, PRC).
+- Nominees campaign for election by submitting their profiles and statements.
+- Council members cast votes in a closed ballot to elect representatives for each committee.
+- The candidate with the most votes is chosen as the representative, ensuring a Simple Majority.
+- In case of a run-off, the candidate with the fewest votes is eliminated and voting is repeated.
+
+## 2. Standing Committee Chairperson Election
+
+Performed By: Council Members, Nominees
+
+Activity:
+- Council members nominate candidates for Standing Committee chairpersons (SC, TAB, PRC).
+- The candidate with the most votes in a closed ballot is chosen as the chairperson, ensuring a Simple Majority.
+- In case of a run-off, the candidate with the fewest votes is eliminated and voting is repeated.
+- If there is a single nominee for the chairperson position, they may be elected by acclamation.
+
+## 3. Standing Committee Membership Management
+
+Performed By: Council Members, Standing Committee Members
+
+Activity:
+- Council members determine membership on all Standing Committees based on individuals affiliated with Member companies.
+- A Member company can only have one seat on a Standing Committee, with only one individual representing that company.
+- An individual can belong to multiple Standing Committees concurrently.
+- If an individual's affiliation with a Member terminates, their position on the committee becomes vacant and is filled through a new election at the next General Meeting.
+
+## 4. Standing Committee Attendance Tracking
+
+Performed By: Standing Committee Chairperson, Members
+
+Activity:
+- The Standing Committee chairperson maintains attendance records for meetings in ½ hour increments.
+- To encourage participation, the chairperson may require a Member be present for the majority of the ½ hour to be credited for the time.
+- Attendance is recorded for both face-to-face meetings and video conferences.
+
+## 5. Standing Committee Vacancy Filling
+
+Performed By: Council Members, New Nominees
+
+Activity:
+- In case of a vacancy on a Standing Committee due to attendance requirements or other reasons, the resulting vacancy is filled through a new election at the General Meeting.
+- New nominees campaign for election by submitting their profiles and statements.
+- Council members cast votes in a closed ballot to elect representatives for the vacant position.
+
+## 6. Call Center Management
+
+Performed By: Call Center Managers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Call center managers assign call center employees and allocate resources based on market needs.
+- Sales representatives handle customer inquiries and process orders through the call center system.
+- Warehouse staff track inventory levels and ship products to customers as orders are processed.
+
+## 7. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details such as name, category, and list price.
+- Marketing managers create and manage catalog pages to display products for customers.

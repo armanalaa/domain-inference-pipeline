@@ -1,0 +1,51 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and open positions (cc_employees).
+- HR managers recruit and hire new employees, recording their personal details (cc_name, cc_company_name, cc_street_number, cc_street_name, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Call center managers determine the number of employees needed for each call center and adjust staffing levels accordingly (cc_employees).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls, providing assistance with inquiries or troubleshooting issues (cc_call_center_id, cc_rec_start_date, cc_closed_date_sk).
+- Representatives record customer details during calls, such as their contact information and the nature of their inquiry (cc_name, cc_phone, cc_address).
+- After resolving a customer's issue, representatives may update the call center's records with the outcome of the call (cc_closed_date_sk).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers oversee the performance of individual call centers within their market, analyzing key metrics like call volume and customer satisfaction (cc_mkt_id, cc_mkt_class, cc_market_manager).
+- They set goals for each call center and provide guidance on improving operations to meet those targets.
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers maintain the catalog, adding new items with their respective details like product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- They may also update existing items in the catalog as needed.
+
+## 5. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned item's details (cr_returned_date_sk, cr_item_sk).
+- Warehouse staff then physically receive and inspect the returned items before updating their inventory records (cr_warehouse_sk).
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting the appropriate items from the catalog, determining shipping options, and calculating the total cost (cr_order_number, cr_ship_mode_sk).
+- Once an order is confirmed, warehouse staff retrieve the necessary items from inventory and prepare them for shipment (cr_warehouse_sk).

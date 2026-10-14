@@ -1,0 +1,108 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 406
+Threshold θ_T           : 0.75
+Edges in G_T            : 71
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.1511
+  max    : 0.9904
+  mean   : 0.5447
+  median : 0.5506
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  geo_river                       geo_source                      0.9904      3  1.000  0.9904
+  geo_estuary                     geo_source                      0.9896      3  1.000  0.9896
+  geo_estuary                     geo_river                       0.9896      3  1.000  0.9896
+  ethnicGroup                     language                        0.9884      3  1.000  0.9884
+  lake                            sea                             0.9878      2  1.000  0.9878
+  ethnicGroup                     religion                        0.9878      3  1.000  0.9878
+  language                        religion                        0.9877      3  1.000  0.9877
+  desert                          lake                            0.9872      4  1.000  0.9872
+  geo_island                      locatedOn                       0.9871      3  1.000  0.9871
+  geo_estuary                     located                         0.9847      3  1.000  0.9847
+  geo_source                      located                         0.9840      3  1.000  0.9840
+  geo_river                       located                         0.9839      3  1.000  0.9839
+  geo_sea                         located                         0.9837      3  1.000  0.9837
+  geo_lake                        located                         0.9826      3  1.000  0.9826
+  continent                       desert                          0.9516      2  1.000  0.9516
+
+G_T edges (Sim_T ≥ 0.75):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  geo_river                       geo_source                      0.9904
+  geo_estuary                     geo_source                      0.9896
+  geo_estuary                     geo_river                       0.9896
+  ethnicGroup                     language                        0.9884
+  lake                            sea                             0.9878
+  ethnicGroup                     religion                        0.9878
+  language                        religion                        0.9877
+  desert                          lake                            0.9872
+  geo_island                      locatedOn                       0.9871
+  geo_estuary                     located                         0.9847
+  geo_source                      located                         0.9840
+  geo_river                       located                         0.9839
+  geo_sea                         located                         0.9837
+  geo_lake                        located                         0.9826
+  continent                       desert                          0.9516
+  continent                       lake                            0.9507
+  continent                       country                         0.9507
+  continent                       province                        0.9476
+  city                            geo_lake                        0.8451
+  locatedOn                       organization                    0.8347
+  geo_lake                        organization                    0.8328
+  city                            geo_mountain                    0.8163
+  located                         locatedOn                       0.8106
+  islandIn                        river                           0.8071
+  geo_desert                      geo_source                      0.8038
+  geo_desert                      geo_river                       0.8037
+  geo_desert                      geo_estuary                     0.8030
+  city                            desert                          0.8016
+  geo_desert                      located                         0.8014
+  province                        religion                        0.7937
+  ethnicGroup                     province                        0.7914
+  language                        province                        0.7914
+  city                            ethnicGroup                     0.7900
+  city                            language                        0.7893
+  city                            religion                        0.7881
+  geo_island                      organization                    0.7853
+  islandIn                        located                         0.7817
+  river                           sea                             0.7784
+  organization                    religion                        0.7783
+  language                        organization                    0.7776
+  geo_mountain                    organization                    0.7766
+  ethnicGroup                     organization                    0.7761
+  locatedOn                       mountainOnIsland                0.7760
+  geo_island                      mountainOnIsland                0.7759
+  geo_estuary                     locatedOn                       0.7662
+  geo_estuary                     organization                    0.7658
+  geo_source                      locatedOn                       0.7658
+  geo_river                       locatedOn                       0.7658
+  geo_source                      organization                    0.7654
+  geo_river                       organization                    0.7653
+  geo_lake                        geo_source                      0.7650
+  geo_lake                        geo_river                       0.7649
+  country                         province                        0.7645
+  geo_sea                         geo_source                      0.7644
+  geo_river                       geo_sea                         0.7644
+  geo_estuary                     geo_lake                        0.7641
+  geo_estuary                     geo_sea                         0.7636
+  city                            geo_estuary                     0.7629
+  city                            geo_source                      0.7622
+  city                            geo_river                       0.7622
+  city                            geo_island                      0.7616
+  geo_desert                      geo_lake                        0.7573
+  geo_island                      geo_sea                         0.7568
+  geo_lake                        locatedOn                       0.7565
+  geo_desert                      organization                    0.7563
+  geo_desert                      geo_sea                         0.7563
+  geo_island                      geo_lake                        0.7559
+  geo_sea                         locatedOn                       0.7559
+  city                            geo_desert                      0.7550
+  geo_sea                         organization                    0.7546
+  geo_island                      located                         0.7537
+======================================================================

@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, IT Administrators
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update existing item details as needed, such as changing the title or adjusting the price.
+- IT administrators ensure the product catalog is accessible to authorized users and maintain its overall integrity.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer information, including name, address, contact details, credit card information, and account preferences.
+- Customer service agents update customer records with any changes to personal or billing information.
+- HR managers maintain employee records related to customers, such as age, income, and gender for demographic analysis.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+- Sales representatives review and confirm customer orders before they are processed further.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory levels when products are received or shipped, adjusting the quantity in stock accordingly.
+- Purchasing teams monitor low inventory levels and initiate reorders for restocking purposes.
+
+## 5. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff pick and pack ordered items based on the orderlines and ship them to the customer's specified address.
+- Sales representatives update the order status in the system when an order is shipped.
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams calculate the net amount for each order based on the product prices and quantities.
+- Accounting staff record the total amount for each order, including taxes and any applicable fees.
+
+## 7. Data Governance
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators catalog all data sources, including databases, ETLs, BI tools, data lakes, applications, and cloud & on-premises data sources and catalogs like Databricks, Cloudera, and Microsoft Purview.
+- Data analysts use the centralized repository to monitor data quality, define bespoke data quality rules, and perform continuous monitoring for quick issue detection and trend analysis.

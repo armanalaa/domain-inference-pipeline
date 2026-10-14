@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the number of available positions and employee qualifications.
+- HR managers update employee records with personal details, contact information, and employment history.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, IT Support
+
+Activity:
+- Facility managers allocate square footage for call centers, ensuring adequate space for employees and equipment.
+- IT support configures call center systems, including phones, computers, and software, to meet specific operational needs.
+
+## 3. Call Center Operations
+
+Performed By: Call Center Employees, Supervisors
+
+Activity:
+- Call center employees answer incoming calls, assist customers with inquiries, and process transactions as needed.
+- Supervisors monitor call center performance, addressing any issues that arise during operations.
+
+## 4. Market Segmentation
+
+Performed By: Marketing Managers, Market Researchers
+
+Activity:
+- Marketing managers divide the market into segments based on demographic, geographic, and psychographic factors.
+- Market researchers gather data on customer preferences, behavior, and trends to inform segmentation decisions.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products are added or existing ones are sold.
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives take customer orders over the phone, entering order details into the system.
+- Customer service agents confirm order details with customers and process returns when necessary.
+
+## 7. Delivery Coordination
+
+Performed By: Warehouse Staff, Shipping Clerks
+
+Activity:
+- Warehouse staff pick and pack orders based on customer requests and shipping requirements.
+- Shipping clerks label packages, arrange for delivery, and update order status in the system.
+
+## 8. Performance Monitoring
+
+Performed By: IT Administrators, Management
+
+Activity:
+- IT administrators monitor call center performance metrics, such as tpmC (transactions per minute), to ensure steady state conditions are met.
+- Management reviews these metrics and makes decisions about system upgrades or capacity adjustments based on the results.

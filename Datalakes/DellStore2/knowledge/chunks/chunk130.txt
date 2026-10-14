@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information.
+- Customer service agents update customer records with changes to contact information or account status.
+- Sales representatives assign customers to specific sales regions based on their location.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product details and categorizing them.
+- Inventory specialists update product information when stock levels change or products go out of production.
+- Product managers mark common products as such for easier customer browsing.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting items from the catalog and specifying quantities.
+- Sales representatives process orders by confirming availability, calculating prices, and recording order details.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Specialists
+
+Activity:
+- Warehouse staff pick items from inventory based on order details.
+- Shipping specialists package orders for delivery and record shipping information.
+
+## 5. Inventory Management
+
+Performed By: Inventory Specialists, Purchasing Teams
+
+Activity:
+- Inventory specialists update stock levels when items are sold or received.
+- Purchasing teams order replenishments based on low inventory thresholds and expected demand.
+
+## 6. Financial Transactions
+
+Performed By: Finance Department, Accounting Staff
+
+Activity:
+- Finance department calculates net amounts, taxes, and total amounts for each order.
+- Accounting staff records financial transactions in the system and generates invoices for customers.
+
+## 7. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer inquiries related to orders, products, or account issues.
+- Customer service agents update customer records with any relevant support notes.
+
+## 8. Compliance and Legal Matters
+
+Performed By: Legal Department, Dataedo Team
+
+Activity:
+- Legal department reviews and manages contracts and agreements with customers and partners.
+- Dataedo team ensures compliance with data privacy regulations and handles any related issues.

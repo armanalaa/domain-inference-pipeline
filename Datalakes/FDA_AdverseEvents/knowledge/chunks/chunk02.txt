@@ -1,0 +1,53 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Manufacturers
+
+Activity:
+- Healthcare professionals document adverse events observed in patients.
+- Patients report their own adverse events directly to the FDA.
+- Manufacturers submit reports on adverse events related to their products.
+- Reports include details about the drug product, reactions, indications for use, route of administration, and dose.
+
+## 2. Data Submission
+
+Performed By: Manufacturers, Healthcare Professionals, FDA Staff
+
+Activity:
+- Manufacturers submit adverse event reports to the FDA through various channels.
+- Healthcare professionals report adverse events via the MedWatch Safety Information and Adverse Event Reporting Program.
+- FDA staff process and store incoming adverse event reports in the FDA_AdverseEvents database.
+
+## 3. Data Validation and Verification
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff do not extensively validate or verify adverse event reports.
+- Reports are not medically validated, and a causal relationship cannot be established between product and reactions listed in a report.
+
+## 4. Data Analysis and Interpretation
+
+Performed By: Researchers, Public Health Officials, FDA Staff
+
+Activity:
+- Researchers and public health officials analyze adverse event reports to identify trends and potential safety issues.
+- FDA staff use the data for regulatory decision making and product risk assessment.
+
+## 5. API Usage
+
+Performed By: Developers, Researchers, Public Health Officials
+
+Activity:
+- Users read the API Basics documentation to learn how to access the FDA_AdverseEvents data.
+- Users review the list of searchable fields available in the Drug Adverse Event dataset.
+- Users construct queries using the openFDA API to retrieve specific adverse event reports.
+
+## 6. Data Limitations Awareness
+
+Performed By: Users, FDA Staff
+
+Activity:
+- Users are aware that the reported events do not necessarily represent a cause and effect relationship.
+- Users understand that the data has limitations, such as potential underreporting and lack of certainty about the causal relationship between products and events.

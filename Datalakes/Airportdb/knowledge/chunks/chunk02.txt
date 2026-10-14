@@ -1,0 +1,56 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Operations Team, Airline Management
+
+Activity:
+- Airline operations team registers new airlines by recording the airline code (iata), name, and base airport.
+- Airline management assigns airplanes to registered airlines based on capacity and type.
+- Airline management updates airline details when changes occur, such as modifying the airline name or base airport.
+
+## 2. Airplane Management
+
+Performed By: Airline Operations Team, Maintenance Staff
+
+Activity:
+- Airline operations team registers new airplanes by recording the airplane code (airplane_id), capacity, type, and assigned airline.
+- Maintenance staff performs routine checks and maintenance on airplanes to ensure they are safe for operation.
+- Maintenance staff records any necessary repairs or updates in the database.
+
+## 3. Airplane Type Management
+
+Performed By: Airline Operations Team
+
+Activity:
+- Airline operations team registers new airplane types by recording the type code (type_id), identifier, and description.
+
+## 4. Airport Management
+
+Performed By: Airport Operations Team
+
+Activity:
+- Airport operations team registers new airports by recording the airport code (airport_id), IATA, ICAO, name, city, country, latitude, longitude, and geolocation.
+
+## 5. Flight Scheduling
+
+Performed By: Airline Operations Team, Airport Operations Team
+
+Activity:
+- Airline operations team creates flight schedules by specifying the flight number, from airport, to airport, departure time, arrival time, airline, and assigned airplane.
+- Airport operations team updates flight schedules when changes occur, such as modifying departure or arrival times.
+
+## 6. Flight Booking
+
+Performed By: Passengers, Travel Agents, Airline Staff
+
+Activity:
+- Passengers or travel agents book flights by selecting a flight, choosing seats, and providing passenger information (passport number, first name, last name).
+- Airline staff records the booking details, including the booking ID, flight ID, seat, passenger ID, and price.
+
+## 7. Weather Data Collection
+
+Performed By: Meteorological Staff
+
+Activity:
+- Meteorological staff collects weather data by recording the log date, time, station, temperature, humidity, air pressure, wind speed, wind direction, and weather conditions.

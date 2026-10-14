@@ -1,0 +1,60 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- HR managers update employee information such as MaritalStatus, Gender, or HireDate when necessary.
+- HR managers track employee department changes by recording the DepartmentID, ShiftID, StartDate, EndDate, and ModifiedDate in the EmployeeDepartmentHistory table.
+
+## 2. Employee Payroll Management
+
+Performed By: Finance and HR Managers
+
+Activity:
+- Finance records employees' pay history including RateChangeDate, Rate, PayFrequency, and ModifiedDate.
+- HR managers update employee salaries when necessary.
+
+## 3. Work Order Creation
+
+Performed By: Production Managers
+
+Activity:
+- Production managers create work orders by recording the WorkOrderID, ProductID, OperationSequence, LocationID, ScheduledStartDate, ScheduledEndDate, ActualStartDate, ActualEndDate, ActualResourceHrs, PlannedCost, and ActualCost.
+
+## 4. Work Order Tracking
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff track work order progress by updating the ActualStartDate, ActualEndDate, and ActualResourceHrs as work is completed.
+
+## 5. Vendor Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams record vendor details such as BusinessEntityID, AverageLeadTime, StandardPrice, LastReceiptCost, LastReceiptDate, MinOrderQty, MaxOrderQty, OnOrderQty, UnitMeasureCode, and ModifiedDate.
+
+## 6. Product Vendor Mapping
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams map vendors to the products they supply by recording the ProductID and BusinessEntityID in the ProductVendor table.
+
+## 7. Purchase Order Creation
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams create purchase orders by recording the PurchaseOrderID, PurchaseOrderDetailID, DueDate, OrderQty, ProductID, UnitPrice, LineTotal, ReceivedQty, and ModifiedDate.
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff update the quantity of products in stock by recording the received Qty when new products are received.

@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products arrive or are sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives generate customer profiles during sales interactions, including contact details, credit card information, and purchase history.
+- HR managers maintain customer records with personal data such as name, address, age, income, gender, and employment history.
+- Customers create accounts by providing their email, phone number, and setting a username and password.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives assist customers in placing orders by selecting products, quantities, and delivery addresses.
+- Customers confirm their order details and make payments using credit cards or other accepted methods.
+- Warehouse staff pick and pack ordered items for shipment.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and sales forecasts.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor stock levels and update the inventory table when items are sold or received from suppliers.
+- Purchasing teams reorder products when quantities drop below a predetermined threshold.
+
+## 5. Financial Management
+
+Performed By: Finance Team, Sales Representatives
+
+Activity:
+- Sales representatives calculate net amounts and taxes for each order based on the product list price and any applicable fees.
+- The finance team records total amounts, taxes, and payments in the orders table.
+
+## 6. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team maintains data quality by validating and correcting inconsistencies in customer, product, order, and inventory data.
+
+## 7. Analytics and Reporting
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on sales performance, inventory levels, and customer behavior using data from the orders, inventory, and customers tables.
+- Management uses these reports to make informed decisions about pricing strategies, marketing campaigns, and operational improvements.

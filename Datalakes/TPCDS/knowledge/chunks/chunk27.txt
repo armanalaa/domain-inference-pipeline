@@ -1,0 +1,72 @@
+ # TPC-DS — Business Workflows
+
+## 1. Corporate Governance and Legal Compliance
+
+Performed By: Legal Team, Administrator
+
+Activity:
+- Legal team reviews all legal agreements between members and the TPC. (call_center.cc_mkt_id)
+- Legal team reviews all legal agreements between the TPC and other outside organizations. (N/A)
+- The Administrator compiles accounting reviews and reports, including preparing and submitting tax returns. (N/A)
+- The Administrator publishes financial reports and compiles financial statements of corporate income and expenses. (N/A)
+
+## 2. Public Relations and Communications
+
+Performed By: TPC Spokesperson, Administrator
+
+Activity:
+- The TPC Spokesperson serves as the primary contact with the press concerning TPC public relations. (N/A)
+- The TPC Spokesperson coordinates with the Steering Committee and the PRC. (N/A)
+
+## 3. Business Administration and Management
+
+Performed By: Administrator, SC Members
+
+Activity:
+- The Administrator is the primary contact for business within the TPC. (N/A)
+- The SC maintains a running list of issues for SC consideration. (N/A)
+- Each SC meeting has minutes posted to the Private Web Site. (N/A)
+- SC decisions and/or actions that require Council approval are posted to the Private Web Site at least ten working days prior to presentation at a General Meeting. (N/A)
+
+## 4. Steering Committee Meetings Management
+
+Performed By: SC Members, Administrator
+
+Activity:
+- All SC meetings are open to Members. (N/A)
+- The agenda is posted to the Private Web Site. (N/A)
+- The SC may declare a meeting, or portion of a meeting, to be a closed session when discussing sensitive topics. (N/A)
+- Minutes capture actions taken and decisions reached in SC meetings. (N/A)
+
+## 5. Issue Tracking and Resolution
+
+Performed By: SC Members, Administrator
+
+Activity:
+- The SC maintains a running list of issues for SC consideration. (N/A)
+- Some issues will require resolution within the two weeks between an announced agenda and the next General Meeting. (N/A)
+
+## 6. Call Center Operations Management
+
+Performed By: Call Center Managers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Call center managers oversee call center operations, including managing employees and facilities. (call_center.cc_manager)
+- Sales representatives handle customer inquiries and process orders. (N/A)
+- Warehouse staff track inventory levels and fulfill orders. (N/A)
+
+## 7. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details. (catalog_page.cp_catalog_number, catalog_page.cp_description, catalog_page.cp_type)
+- Marketing managers categorize and describe products for easier navigation on the website. (catalog_page.cp_department, catalog_page.cp_catalog_page_number)
+
+## 8. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and refunds. (catalog_returns.cr_returned_date_sk, catalog_returns.cr_refunded_customer_sk)
+- Warehouse staff update inventory levels after processing a return. (N/A)

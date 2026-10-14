@@ -1,0 +1,63 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new call centers with unique identifiers (cc_call_center_sk).
+- HR managers recruit and onboard employees for the call centers (cc_employees).
+- Call center managers determine the size of each call center in square feet (cc_sq_ft).
+
+## 2. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize and describe markets for call centers (cc_mkt_class, cc_mkt_desc).
+- Call center managers assign specific markets to their call centers (cc_mkt_id).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff open and close calls during specified time periods (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk, cc_open_date_sk).
+- They record the name of each call (cc_name) and classify it according to its nature (cc_class).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Order Placement
+
+Performed By: Customers, Call Center Staff
+
+Activity:
+- Customers place orders for specific items from the catalog (cr_item_sk).
+- Call center staff process these orders by determining the supplying warehouse (cr_warehouse_sk) and quantity (cr_return_quan).
+
+## 6. Order Processing
+
+Performed By: Call Center Staff, Warehouse Staff
+
+Activity:
+- Call center staff check if an order is home or remote based on the supplying warehouse (cr_OL_SUPPLY_W_ID).
+- Warehouse staff track and ship orders to customers according to their locations (cr_refunded_addr_sk, cr_ship_mode_sk).
+
+## 7. Tax Calculation
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff calculate the total tax percentage for an order based on warehouse and district tax rates (W_TAX, D_TAX).
+
+## 8. Order Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records the details of each order in the ORDER table (O_CARRIER_ID, O_ALL_LOCAL).

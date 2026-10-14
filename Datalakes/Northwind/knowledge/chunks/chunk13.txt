@@ -1,0 +1,65 @@
+ # Northwind — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, IT Administrators
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Product managers update existing item details such as description, category, or price when necessary.
+- IT administrators manage product images by uploading and updating them in the ProductCategories table.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives add new customers to the system with their contact information and address details.
+- Customer service agents update customer records with any changes to contact or address information.
+
+## 3. Employee Territory Assignment
+
+Performed By: HR Managers, IT Administrators
+
+Activity:
+- HR managers assign employees to specific territories based on geographical coverage and business needs.
+- IT administrators update the employee_territories table with the assigned territoryID for each employee.
+
+## 4. Employee Information Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- HR managers enter employee details such as name, title, hire date, and contact information into the employees table.
+- Employees update their personal information in the employees table as needed.
+
+## 5. Order Placement
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives place orders on behalf of customers by specifying the customerID, selected products, and quantities.
+- Customers can also place orders directly through the system using their account information.
+
+## 6. Order Processing
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory based on order details in the order_details table.
+- Shipping teams pack and prepare orders for shipment, updating the orders table with the ship date and shipping information.
+
+## 7. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the unitsInStock column in the products table when items are received or shipped.
+- Purchasing teams order new stock based on the UnitsOnOrder and ReorderLevel columns in the products table.
+
+## 8. Financial Record Keeping
+
+Performed By: Finance Department
+
+Activity:
+- Finance records transactions related to orders, such as freight costs and payments, in the orders table.

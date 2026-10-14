@@ -1,0 +1,70 @@
+{
+  "distinct_values_cnt": {
+    "mu": 4.957627,
+    "sigma": 0.458333
+  },
+  "distinct_values_pct": {
+    "mu": 0.991525,
+    "sigma": 0.091667
+  },
+  "missing_values_pct": {
+    "mu": 0.008475,
+    "sigma": 0.091667
+  },
+  "val_size_avg": {
+    "mu": 7.738095,
+    "sigma": 5.701376
+  },
+  "val_size_min": {
+    "mu": 4.857143,
+    "sigma": 2.641892
+  },
+  "val_size_max": {
+    "mu": 12.309524,
+    "sigma": 12.360629
+  },
+  "val_size_std": {
+    "mu": 2.741338,
+    "sigma": 3.828629
+  },
+  "val_pct_median": {
+    "mu": 0.2,
+    "sigma": 1.0
+  },
+  "val_pct_min": {
+    "mu": 0.2,
+    "sigma": 1.0
+  },
+  "val_pct_max": {
+    "mu": 0.2,
+    "sigma": 1.0
+  },
+  "val_pct_std": {
+    "mu": 0.0,
+    "sigma": 1.0
+  },
+  "mean": {
+    "mu": 1018136.654721,
+    "sigma": 4613006.212182
+  },
+  "std": {
+    "mu": 630591.850246,
+    "sigma": 2652633.000634
+  },
+  "min_val": {
+    "mu": 290627.14997,
+    "sigma": 1457112.103018
+  },
+  "max_val": {
+    "mu": 1842613.425152,
+    "sigma": 7875007.776327
+  },
+  "range_val": {
+    "mu": 1551986.275182,
+    "sigma": 6439980.015975
+  },
+  "co_of_var": {
+    "mu": 3.658325,
+    "sigma": 8.53013
+  }
+}

@@ -1,0 +1,63 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Standard Management
+
+Performed By: Benchmark Subcommittee
+
+Activity:
+- Develop and maintain the TPC-Provided Software required by a Benchmark Standard.
+- Create and update an auditor exam for each Benchmark Standard.
+- Conduct work on behalf of proposed or completed Benchmark Standards until disbanded by the Council.
+- Maintain minimum membership of at least six Members or Committee Members.
+- Elect a chairperson by Simple Majority of the Council, with a run-off if necessary.
+
+## 2. Working Group Creation and Management
+
+Performed By: Council
+
+Activity:
+- Create technical subcommittees (working groups) to complete specific tasks.
+- Set a specific time for working groups to report their findings to the Council.
+- Disband working groups once they have completed their task.
+- Ensure minimum membership of at least four Members or Committee Members on a working group.
+- Elect a chairperson by Simple Majority of the Council for each working group.
+
+## 3. Benchmark Standard Approval Process
+
+Performed By: Benchmark Subcommittee, TPC Council
+
+Activity:
+- Own and drive the Specification to become an approved TPC Benchmark Standard.
+- Handle suggestions for clarifying the Benchmark Standard in the next revision.
+- Request rulings on compliance issues from the TAB.
+- Make recommendations to the Council to change the Benchmark Standard.
+- Create a new version of a Specification and submit it to the Council for approval as a Benchmark Standard.
+
+## 4. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff, Sales Representatives
+
+Activity:
+- Register new call centers with details such as name, location, size, hours, and market information.
+- Assign call center managers to oversee operations.
+- Track call center performance metrics like open dates, closed dates, and employee counts.
+- Allocate call centers to divisions and markets based on their class and description.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Register new items in the catalog with product code, name, category, and list price.
+- Organize items into departments within the catalog.
+- Maintain a record of catalog pages for each item.
+
+## 6. Returns Processing
+
+Performed By: Customers, Call Center Representatives, Warehouse Staff
+
+Activity:
+- Initiate returns by customers due to various reasons (e.g., defective items).
+- Record return details like returned date, time, and reason.
+- Refund customers based on their customer demographic, home demographic, address, or order number.
+- Track warehouse inventory levels after processing returns.

@@ -1,0 +1,620 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Content Information Management",
+    "definition": "The unifying capability across all tables is the management of various entities related to content such as movies, actors, companies, and keywords.",
+    "tables": [
+      "cast_info",
+      "complete_cast",
+      "info_type",
+      "movie_companies",
+      "movie_info",
+      "movie_info_idx",
+      "movie_keyword",
+      "movie_link",
+      "person_info",
+      "role_type"
+    ],
+    "n_tables": 10,
+    "n_columns_total": 42,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "cast_info": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for cast members in the cast_info table.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "person_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the person_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the movie_ entity",
+          "samples": [
+            968504,
+            2163857,
+            2324528,
+            1851347,
+            1681365
+          ]
+        },
+        {
+          "name": "person_role_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the person_role_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "note",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores additional information about cast members, such as voice roles, stage names, rumors, and footage types.",
+          "samples": [
+            "(voice)",
+            "(as Too Short)",
+            "(rumored)",
+            "(archive footage)",
+            "(as Michael 'Power' Viera)"
+          ]
+        },
+        {
+          "name": "nr_order",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores the sequential order of cast members in a movie.",
+          "samples": [
+            "25",
+            "22",
+            "12",
+            "1",
+            "27"
+          ]
+        },
+        {
+          "name": "role_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the role_ entity",
+          "samples": [
+            "1",
+            "8",
+            "6",
+            "18",
+            "44"
+          ]
+        }
+      ]
+    },
+    "complete_cast": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "The \"complete_cast\" table's \"id\" column stores unique identifiers for cast members.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the movie_ entity",
+          "samples": [
+            1634350,
+            1634391,
+            1634423,
+            1634434,
+            1634450
+          ]
+        },
+        {
+          "name": "subject_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the subject_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "status_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the status_ entity",
+          "samples": [
+            4,
+            3,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "info_type": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for different types of movie information.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "info",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores descriptive information about film attributes such as runtimes, color info, genres, languages, and certificates.",
+          "samples": [
+            "runtimes",
+            "color info",
+            "genres",
+            "languages",
+            "certificates"
+          ]
+        }
+      ]
+    },
+    "movie_companies": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movie production companies.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_companies",
+          "samples": [
+            2,
+            11,
+            44,
+            50,
+            51
+          ]
+        },
+        {
+          "name": "company_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the company_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "company_type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the company_type_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "note",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores additional information about a movie company, such as year, country, and media type.",
+          "samples": [
+            "(2006) (USA) (TV)",
+            "(2006) (worldwide) (TV)",
+            "(2012) (worldwide) (all media)",
+            "(2013) (USA) (all media)",
+            "(2011) (UK) (TV)"
+          ]
+        }
+      ]
+    },
+    "movie_info": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movies in the database.",
+          "samples": [
+            7266123,
+            7266124,
+            7266125,
+            7266126,
+            7266127
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_info",
+          "samples": [
+            921521,
+            921522,
+            921523,
+            921524,
+            921525
+          ]
+        },
+        {
+          "name": "info_type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the info_type_ entity",
+          "samples": [
+            4,
+            18,
+            1,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "info",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores the language of a movie.",
+          "samples": [
+            "English",
+            "Japanese",
+            "Bulgarian",
+            "Czech",
+            "Hungarian"
+          ]
+        },
+        {
+          "name": "note",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores additional notes about a movie, such as language versions, subtitles, or dialogue.",
+          "samples": [
+            "(Original version)",
+            "( Plattdeutsch)",
+            "(some dialogue)",
+            "(a few words)",
+            "(Chinese and English subtitles)"
+          ]
+        }
+      ]
+    },
+    "movie_info_idx": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movies in the movie_info_idx index.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_info_idx",
+          "samples": [
+            2,
+            11,
+            24,
+            50,
+            51
+          ]
+        },
+        {
+          "name": "info_type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the info_type_ entity",
+          "samples": [
+            99,
+            100,
+            101,
+            112,
+            113
+          ]
+        },
+        {
+          "name": "info",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores movie identifiers, ratings, duration, genres, and number of genres.",
+          "samples": [
+            "1000000103",
+            "53",
+            "4.0",
+            "1..1..3.11",
+            "6"
+          ]
+        },
+        {
+          "name": "note",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "The movie_info_idx table's note column stores additional textual information about movies.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "movie_keyword": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movie keywords.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_keyword",
+          "samples": [
+            2,
+            11,
+            22,
+            44,
+            24
+          ]
+        },
+        {
+          "name": "keyword_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_keyword",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    "movie_link": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for movie links.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "movie_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in movie_link",
+          "samples": [
+            2,
+            50,
+            53,
+            54,
+            55
+          ]
+        },
+        {
+          "name": "linked_movie_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the linked_movie_ entity",
+          "samples": [
+            619801,
+            1450538,
+            257907,
+            260637,
+            766538
+          ]
+        },
+        {
+          "name": "link_type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the link_type_ entity",
+          "samples": [
+            6,
+            10,
+            8,
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "person_info": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for individuals in the person_info table.",
+          "samples": [
+            1,
+            3,
+            4,
+            5,
+            8
+          ]
+        },
+        {
+          "name": "person_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in person_info",
+          "samples": [
+            4147861,
+            4,
+            5,
+            2701137,
+            31
+          ]
+        },
+        {
+          "name": "info_type_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the info_type_ entity",
+          "samples": [
+            22,
+            24,
+            28,
+            17,
+            15
+          ]
+        },
+        {
+          "name": "info",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "The IMDBJoinOrderBenchmark's person_info table's TEXT column stores detailed personal information about individuals, including their height, ID numbers, date of birth, stage names, and professions.",
+          "samples": [
+            "5' 9\\\",\n2,4147861,19,Richard Matthew Clark was born and raised in southeastern",
+            "'Tene Clark' (17 November 2005 - present)",
+            "Ghost",
+            "5' 7\\\",\n6,4,21,28 April 1966,\n7,4,20,Los Angeles",
+            "Well known as rapper Too Short"
+          ]
+        },
+        {
+          "name": "note",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "The person_info 'note' column stores personal annotations, locations, film details, and educational backgrounds.",
+          "samples": [
+            " NC",
+            " California",
+            " which featured zombie-like creatures known as \\\"Jackals\\\".\"",
+            " Ja'far moved with his family to other parts of the Arab world before settling in London in the mid 1980s. While reading social sciences at the University of London",
+            " Bachelor Degree in \\\"The Arts"
+          ]
+        }
+      ]
+    },
+    "role_type": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "id",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique role types (1-5) for movies or TV shows.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "role",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores characterizations such as actor, actress, producer, writer, or cinematographer for roles in films.",
+          "samples": [
+            "actor",
+            "actress",
+            "producer",
+            "writer",
+            "cinematographer"
+          ]
+        }
+      ]
+    }
+  }
+}

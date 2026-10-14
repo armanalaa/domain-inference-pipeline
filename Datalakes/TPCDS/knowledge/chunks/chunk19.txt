@@ -1,0 +1,41 @@
+ # TPC-DS — Business Workflows
+
+## 1. Policy Proposal and Approval
+
+Performed By: Council Members, Steering Committee
+
+Activity:
+- Council members or Standing Committees propose policy modifications (cc_manager).
+- The Steering Committee reviews the proposed changes and prepares a recommendation (cc_mkt_id).
+- The proposal is added to the agenda for the next General Meeting (cp_catalog_page_number).
+- At least ten working days prior to the next General Meeting, the proposal and recommendation are distributed to all Members for review (cr_refunded_customer_sk).
+- At the next General Meeting, the SC presents the proposal and its recommendation for a vote by the Council (cp_catalog_page_id). If approved, the policy modification is effective immediately unless specified otherwise.
+
+## 2. Policy Modification Review
+
+Performed By: Steering Committee
+
+Activity:
+- The Steering Committee reviews proposed changes to associated documents (TPC Procedures, TPC Membership List, Fair Use Quick Reference Guide).
+
+## 3. Document Maintenance and Approval
+
+Performed By: TPC Administrator, Steering Committee
+
+Activity:
+- The TPC Administrator maintains the "TPC Membership List" document (TPC_Membership.pdf).
+- The Steering Committee approves changes to the "TPC Procedures" and "Fair Use Quick Reference Guide" documents (TPC_Procedures.pdf, TPC_Fair_Use_Quick_Reference.pdf).
+
+## 4. Policy Distribution
+
+Performed By: Web Administrator
+
+Activity:
+- When distributed via the Web Site or as part of TPC-Provided Software, associated documents use prescribed file names and formats (CLA.pdf, EULA.txt, TPC_Fair_Use_Quick_Reference.pdf, TPC_Membership.pdf, TPC_Procedures.pdf).
+
+## 5. Mission Statement Management
+
+Performed By: Council Members, Steering Committee
+
+Activity:
+- The TPC is focused on developing data-centric benchmark standards and disseminating objective, verifiable performance data to the industry (TPC mission statement).

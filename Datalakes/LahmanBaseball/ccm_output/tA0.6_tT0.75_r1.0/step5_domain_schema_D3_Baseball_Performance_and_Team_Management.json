@@ -1,0 +1,2426 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "Baseball Performance and Team Management",
+    "definition": "The process of recording, analyzing, and managing baseball player performance statistics, team statistics, and team management details.",
+    "tables": [
+      "Batting",
+      "BattingPost",
+      "Managers",
+      "ManagersHalf",
+      "Pitching",
+      "PitchingPost",
+      "Teams",
+      "TeamsHalf"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Batting": {
+      "_description": "Tracks individual baseball game statistics for each player in a specific season across different leagues and teams.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "aardsda01",
+            "aaronha01",
+            "aaronto01",
+            "aasedo01",
+            "abadan01"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            2004,
+            2006,
+            2007,
+            2008,
+            2009
+          ]
+        },
+        {
+          "name": "stint",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of consecutive seasons a player spent with one team.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "SFN",
+            "CHN",
+            "CHA",
+            "BOS",
+            "SEA"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "AL",
+            "NA",
+            "AA",
+            "EAS"
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the total number of games played by a batter in a season.",
+          "samples": [
+            11,
+            45,
+            25,
+            47,
+            73
+          ]
+        },
+        {
+          "name": "AB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of at-bats for each batting event.",
+          "samples": [
+            0,
+            2,
+            1,
+            468,
+            602
+          ]
+        },
+        {
+          "name": "R",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores runs scored by a player in a game.",
+          "samples": [
+            0,
+            58,
+            105,
+            106,
+            118
+          ]
+        },
+        {
+          "name": "H",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of hits (at-bats without a base hit) for each batting event.",
+          "samples": [
+            0,
+            131,
+            189,
+            200,
+            198
+          ]
+        },
+        {
+          "name": "2B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of two-base hits (doubles) for each batting event.",
+          "samples": [
+            0,
+            27,
+            37,
+            34,
+            46
+          ]
+        },
+        {
+          "name": "3B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of three-base hits (triples) for each batting event.",
+          "samples": [
+            0,
+            6,
+            9,
+            14,
+            4
+          ]
+        },
+        {
+          "name": "HR",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of home runs hit by a player in a season.",
+          "samples": [
+            0,
+            13,
+            27,
+            26,
+            44
+          ]
+        },
+        {
+          "name": "RBI",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of runs batted in by a player.",
+          "samples": [
+            0,
+            69,
+            106,
+            92,
+            132
+          ]
+        },
+        {
+          "name": "SB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of stolen bases by batters.",
+          "samples": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ]
+        },
+        {
+          "name": "CS",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of caught stealing attempts by a batter.",
+          "samples": [
+            0,
+            2,
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "name": "BB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of walks (BB) for each player in a game.",
+          "samples": [
+            0,
+            28,
+            49,
+            37,
+            57
+          ]
+        },
+        {
+          "name": "SO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Strikes out count for batters during games.",
+          "samples": [
+            0,
+            1,
+            39,
+            61,
+            54
+          ]
+        },
+        {
+          "name": "IBB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of intentional base walks (intentional bases on balls) for batters.",
+          "samples": [
+            0,
+            5,
+            6,
+            15,
+            16
+          ]
+        },
+        {
+          "name": "HBP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of times a player was hit by a pitch during a game.",
+          "samples": [
+            0,
+            3,
+            2,
+            1,
+            4
+          ]
+        },
+        {
+          "name": "SH",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores whether a batter started (1) or did not start (0) a game.",
+          "samples": [
+            0,
+            1,
+            6,
+            7,
+            5
+          ]
+        },
+        {
+          "name": "SF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of sacrifice flies by a player.",
+          "samples": [
+            0,
+            4,
+            7,
+            3,
+            9
+          ]
+        },
+        {
+          "name": "GIDP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of grounded into double plays by batters.",
+          "samples": [
+            0,
+            13,
+            20,
+            21,
+            19
+          ]
+        }
+      ]
+    },
+    "BattingPost": {
+      "_description": "Tracks individual batting statistics for each baseball game in a season.",
+      "columns": [
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1884,
+            1885,
+            1886,
+            1887,
+            1888
+          ]
+        },
+        {
+          "name": "round",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the round number (WS) for each at-bat event in the BattingPost table.",
+          "samples": [
+            "WS",
+            "CS",
+            "NWS",
+            "NNC",
+            "NSC"
+          ]
+        },
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "becanbu01",
+            "bradyst01",
+            "carrocl01",
+            "dennyje01",
+            "esterdu01"
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "NY4",
+            "PRO",
+            "CHN",
+            "SL4",
+            "DTN"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "AA",
+            "NL",
+            "AL",
+            "NNL",
+            "ECL"
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of games played by a batter.",
+          "samples": [
+            1,
+            3,
+            2,
+            7,
+            4
+          ]
+        },
+        {
+          "name": "AB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of at-bats for each batting event.",
+          "samples": [
+            2,
+            10,
+            9,
+            3,
+            8
+          ]
+        },
+        {
+          "name": "R",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the position number of a batter (0=DH, 1=C, 2=1B, 3=2B, 4=3B, 5=SS, 6=LF, 7=CF, 8=RF) in a game.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "name": "H",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores hits (base hits) for each batting event.",
+          "samples": [
+            1,
+            0,
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "2B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of two-base hits (doubles) for each batting event.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "name": "3B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores count of three-base hits (triples) for each batting event.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "HR",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of home runs hit by a player during a game.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "RBI",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of runs batted in (RBI) by a player in a game.",
+          "samples": [
+            0,
+            1,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "name": "SB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of stolen bases by batters.",
+          "samples": [
+            0,
+            1,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "name": "CS",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of caught stealing attempts by a batter during baseball games.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "name": "BB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of times a player was walked (BB = Base on Balls).",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "SO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Strikes Out count for each batting event.",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "IBB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of intentional base on balls (IBB) for each batting event.",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "HBP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of times a player was hit by a pitch during a game.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "SH",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores whether a batter started (1) or did not start (0) a game.",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "SF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of sacrifice flies committed by a player.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            null
+          ]
+        },
+        {
+          "name": "GIDP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of grounded into double plays by batters.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      ]
+    },
+    "Managers": {
+      "_description": "Tracks baseball managers and their in-season statistics for specific teams across leagues.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "wrighha01",
+            "woodji01",
+            "paborch01",
+            "lennobi01",
+            "deaneha01"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1871,
+            1872,
+            1873,
+            1874,
+            1875
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "BS1",
+            "CH1",
+            "CL1",
+            "FW1",
+            "NY2"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NA",
+            "NL",
+            "AA",
+            "UA",
+            "PL"
+          ]
+        },
+        {
+          "name": "inseason",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores whether a manager was active during the season (1) or not (2).",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of games managed by a baseball team's manager.",
+          "samples": [
+            31,
+            28,
+            29,
+            14,
+            5
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the win totals for baseball managers.",
+          "samples": [
+            20,
+            19,
+            10,
+            5,
+            2
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique manager identifiers across multiple seasons.",
+          "samples": [
+            10,
+            9,
+            19,
+            3,
+            17
+          ]
+        },
+        {
+          "name": "rank",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Ranks the managers by number of championships (based on sample values).",
+          "samples": [
+            3,
+            2,
+            8,
+            5,
+            1
+          ]
+        },
+        {
+          "name": "plyrMgr",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a single character indicating if a manager is also a player (Y = yes).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "ManagersHalf": {
+      "_description": "Captures baseball managers and their statistics for each half of a season across different teams, leagues, and years.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "hanlone01",
+            "vanhage01",
+            "waltzjo99",
+            "wardjo01",
+            "seleefr99"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1892,
+            1981,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "BLN",
+            "BRO",
+            "BSN",
+            "CHN",
+            "CIN"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "AL",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "inseason",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the season number (1, 2, 3, etc.) a manager was in charge during the first half of a game.",
+          "samples": [
+            3,
+            1,
+            2,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "half",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the half (1 for first, 2 for second) of a game managed by each manager.",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the game number for which a manager is responsible in the second half of a baseball game.",
+          "samples": [
+            56,
+            11,
+            8,
+            77,
+            78
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the World Series wins for each manager half.",
+          "samples": [
+            17,
+            1,
+            2,
+            26,
+            51
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores manager ID for the second half of a baseball game.",
+          "samples": [
+            39,
+            10,
+            6,
+            46,
+            26
+          ]
+        },
+        {
+          "name": "rank",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the league ranking of managers during the second half of a baseball season.",
+          "samples": [
+            12,
+            10,
+            2,
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    "Pitching": {
+      "_description": "Tracks pitching statistics for individual players across Major League Baseball seasons and games.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "aardsda01",
+            "aasedo01",
+            "abadfe01",
+            "abbeybe01",
+            "abbeych01"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            2004,
+            2006,
+            2007,
+            2008,
+            2009
+          ]
+        },
+        {
+          "name": "stint",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of consecutive seasons a pitcher played for the same team.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "SFN",
+            "CHN",
+            "CHA",
+            "BOS",
+            "SEA"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "AL",
+            "AA",
+            "EAS",
+            "FL"
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores win-loss record of pitchers (wins).",
+          "samples": [
+            1,
+            3,
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are pitcher appearances (0=did not appear, 1=pitched in one game, etc.)",
+          "samples": [
+            0,
+            1,
+            2,
+            6,
+            8
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of games pitched by a player.",
+          "samples": [
+            11,
+            45,
+            25,
+            47,
+            73
+          ]
+        },
+        {
+          "name": "GS",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are counts of games started by pitchers.",
+          "samples": [
+            0,
+            13,
+            29,
+            28,
+            21
+          ]
+        },
+        {
+          "name": "CG",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are counts of complete games pitched (0 indicates no complete game).",
+          "samples": [
+            0,
+            4,
+            6,
+            7,
+            5
+          ]
+        },
+        {
+          "name": "SHO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are indicators for games started as a pitcher (0 means did not start).",
+          "samples": [
+            0,
+            2,
+            1,
+            3,
+            6
+          ]
+        },
+        {
+          "name": "SV",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are saves (SV) by pitchers in baseball games.",
+          "samples": [
+            0,
+            38,
+            31,
+            2,
+            11
+          ]
+        },
+        {
+          "name": "IPouts",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the total number of outs recorded by a pitcher during an inning.",
+          "samples": [
+            32,
+            159,
+            97,
+            146,
+            214
+          ]
+        },
+        {
+          "name": "H",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are pitcher's home runs allowed in a season.",
+          "samples": [
+            20,
+            41,
+            39,
+            49,
+            33
+          ]
+        },
+        {
+          "name": "ER",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are earned runs conceded by pitchers.",
+          "samples": [
+            8,
+            24,
+            23,
+            30,
+            20
+          ]
+        },
+        {
+          "name": "HR",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of home runs conceded by a pitcher.",
+          "samples": [
+            1,
+            9,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "name": "BB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of walks (base on balls) a pitcher has during a game.",
+          "samples": [
+            10,
+            28,
+            17,
+            35,
+            34
+          ]
+        },
+        {
+          "name": "SO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are numbers representing strikeouts by pitchers.",
+          "samples": [
+            5,
+            49,
+            36,
+            80,
+            1
+          ]
+        },
+        {
+          "name": "BAOpp",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stored are opponents' batting averages against pitchers.",
+          "samples": [
+            0.417,
+            0.214,
+            0.3,
+            0.268,
+            0.19
+          ]
+        },
+        {
+          "name": "ERA",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores pitchers' earned run averages (ERA) during a season.",
+          "samples": [
+            6.75,
+            4.08,
+            6.4,
+            5.55,
+            2.52
+          ]
+        },
+        {
+          "name": "IBB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of intentional base on balls issued by pitchers.",
+          "samples": [
+            0,
+            3,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "WP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are Wild Pitches for pitchers in baseball games.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "name": "HBP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of times a pitcher was hit by a pitched ball.",
+          "samples": [
+            2,
+            1,
+            5,
+            0,
+            4
+          ]
+        },
+        {
+          "name": "BK",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of times a pitcher committed a balk.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "BFP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of Batter Faces Perceived by each pitcher.",
+          "samples": [
+            61,
+            225,
+            151,
+            228,
+            296
+          ]
+        },
+        {
+          "name": "GF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are numbers representing games finished by pitchers.",
+          "samples": [
+            5,
+            9,
+            7,
+            53,
+            43
+          ]
+        },
+        {
+          "name": "R",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are numbers of relief appearances by pitchers.",
+          "samples": [
+            8,
+            25,
+            24,
+            32,
+            23
+          ]
+        },
+        {
+          "name": "SH",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of shutouts pitched by a player.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "name": "SF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of saves credited to a pitcher.",
+          "samples": [
+            1,
+            3,
+            2,
+            0,
+            8
+          ]
+        },
+        {
+          "name": "GIDP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of ground balls turned double plays by pitchers.",
+          "samples": [
+            1,
+            2,
+            4,
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    "PitchingPost": {
+      "_description": "Tracks pitching statistics for individual players in a given season across multiple teams and leagues.",
+      "columns": [
+        {
+          "name": "playerID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the player entity",
+          "samples": [
+            "becanbu01",
+            "keefeti01",
+            "radboch01",
+            "carutbo01",
+            "clarkjo01"
+          ]
+        },
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1884,
+            1885,
+            1886,
+            1887,
+            1888
+          ]
+        },
+        {
+          "name": "round",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the round number (WS) for each pitching event in a game.",
+          "samples": [
+            "WS",
+            "CS",
+            "NWS",
+            "NNC",
+            "NSC"
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the team entity",
+          "samples": [
+            "NY4",
+            "PRO",
+            "SL4",
+            "CHN",
+            "DTN"
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "AA",
+            "NL",
+            "AL",
+            "NNL",
+            "ECL"
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores win decisions for pitchers.",
+          "samples": [
+            0,
+            3,
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of games a pitcher started (1 for start, 0 for relief).",
+          "samples": [
+            1,
+            2,
+            0,
+            4,
+            3
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of games pitched by a player.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "GS",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are counts of games started by pitchers.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "CG",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of complete games pitched by a player.",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "SHO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are indicators for starting pitchers (1) or relief pitchers (0).",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            null
+          ]
+        },
+        {
+          "name": "SV",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of saves by pitchers.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "IPouts",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the total number of innings pitched minus batters faced (outs) for each game.",
+          "samples": [
+            18,
+            45,
+            66,
+            78,
+            48
+          ]
+        },
+        {
+          "name": "H",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores pitcher's jersey number during postseason games.",
+          "samples": [
+            9,
+            10,
+            11,
+            25,
+            15
+          ]
+        },
+        {
+          "name": "ER",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are earned runs conceded by pitchers in baseball games.",
+          "samples": [
+            7,
+            6,
+            0,
+            2,
+            8
+          ]
+        },
+        {
+          "name": "HR",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of home runs conceded by a pitcher.",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "name": "BB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of walks (base on errors) a pitcher has in a game.",
+          "samples": [
+            2,
+            3,
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "name": "SO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are numbers representing strikeouts by pitchers in baseball games.",
+          "samples": [
+            1,
+            12,
+            17,
+            16,
+            15
+          ]
+        },
+        {
+          "name": "BAOpp",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores opponents' batting average against a pitcher.",
+          "samples": [
+            0.23,
+            0.4,
+            0.294,
+            0.295,
+            0.222
+          ]
+        },
+        {
+          "name": "ERA",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores pitchers' earned run averages (ERA) during a season.",
+          "samples": [
+            10.5,
+            3.6,
+            0.0,
+            2.42,
+            1.13
+          ]
+        },
+        {
+          "name": "IBB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of intentional base on balls (IBB) by pitchers.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "WP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are wins produced by a pitcher, indicated by non-zero integers.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "HBP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Hits by pitch count for each pitching performance.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "BK",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stored are instances where a pitcher committed a balk (0 indicates no balk).",
+          "samples": [
+            "0",
+            "1",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "BFP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of Batter Faces Performed by a pitcher.",
+          "samples": [
+            134,
+            12,
+            38,
+            48,
+            178
+          ]
+        },
+        {
+          "name": "GF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are game factors for pitchers, as all samples are zeros.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ]
+        },
+        {
+          "name": "R",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of runs allowed by a pitcher in a game.",
+          "samples": [
+            12,
+            9,
+            3,
+            18,
+            14
+          ]
+        },
+        {
+          "name": "SH",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of shutouts pitched by a player.",
+          "samples": [
+            0,
+            1,
+            3,
+            2,
+            7
+          ]
+        },
+        {
+          "name": "SF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of saves by pitchers.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            null
+          ]
+        },
+        {
+          "name": "GIDP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are instances of grounded into double plays by pitchers.",
+          "samples": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "Teams": {
+      "_description": "Captures statistical data for Major League Baseball teams across various seasons and leagues.",
+      "columns": [
+        {
+          "name": "﻿yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the ﻿year entity",
+          "samples": [
+            1871,
+            1872,
+            1873,
+            1874,
+            1875
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NA",
+            "NL",
+            "AA",
+            "UA",
+            "PL"
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Teams",
+          "samples": [
+            "BS1",
+            "CH1",
+            "CL1",
+            "FW1",
+            "NY2"
+          ]
+        },
+        {
+          "name": "franchID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the franch entity",
+          "samples": [
+            "BNA",
+            "CNA",
+            "CFC",
+            "KEK",
+            "NNA"
+          ]
+        },
+        {
+          "name": "divID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the div entity",
+          "samples": [
+            "W",
+            "E",
+            "C",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Rank",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the team rankings in the league during the season.",
+          "samples": [
+            3,
+            2,
+            8,
+            7,
+            5
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team's games played count (e.g., 31, 28, 29, 19, 33).",
+          "samples": [
+            31,
+            28,
+            29,
+            19,
+            33
+          ]
+        },
+        {
+          "name": "Ghome",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of home games won by a team.",
+          "samples": [
+            3,
+            0,
+            5,
+            4,
+            1
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of wins for each team in a baseball season.",
+          "samples": [
+            20,
+            19,
+            10,
+            7,
+            16
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team league IDs, where 10, 9, 19, 12, 17 correspond to American League (AL), National League (NL), Pacific Coast League (PCL), International League (IL), and Minor League (MiLB) respectively.",
+          "samples": [
+            10,
+            9,
+            19,
+            12,
+            17
+          ]
+        },
+        {
+          "name": "DivWin",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores whether a team won their division (Y) or not (N).",
+          "samples": [
+            "Y",
+            "N",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "WCWin",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores team's World Series win status (N = No World Series win) in Teams table.",
+          "samples": [
+            "N",
+            "Y",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "LgWin",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores team league abbreviations for wins (e.g., N for National).",
+          "samples": [
+            "N",
+            "Y",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "WSWin",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores team's win status as 'N' for no win during the season.",
+          "samples": [
+            "N",
+            "Y",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "R",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team numbers for home games (e.g., 401 is Yankees, 302 is Oakland A's)",
+          "samples": [
+            401,
+            302,
+            249,
+            137,
+            376
+          ]
+        },
+        {
+          "name": "AB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores total at-bats for each team in a baseball season.",
+          "samples": [
+            1372,
+            1196,
+            1186,
+            746,
+            1404
+          ]
+        },
+        {
+          "name": "H",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team IDs in LahmanBaseball database.",
+          "samples": [
+            426,
+            323,
+            328,
+            178,
+            403
+          ]
+        },
+        {
+          "name": "2B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of two-base hits (doubles) for each team.",
+          "samples": [
+            70,
+            52,
+            35,
+            19,
+            43
+          ]
+        },
+        {
+          "name": "3B",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team IDs for third base coaches.",
+          "samples": [
+            37,
+            21,
+            40,
+            8,
+            27
+          ]
+        },
+        {
+          "name": "HR",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores total home runs scored by a team in a season.",
+          "samples": [
+            3,
+            10,
+            7,
+            2,
+            1
+          ]
+        },
+        {
+          "name": "BB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team IDs as integers, possibly indicating different leagues (e.g., 60 for American League, 26 for National League).",
+          "samples": [
+            60,
+            26,
+            33,
+            46,
+            38
+          ]
+        },
+        {
+          "name": "SO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of saves by a baseball team during a season.",
+          "samples": [
+            19,
+            22,
+            25,
+            9,
+            15
+          ]
+        },
+        {
+          "name": "SB",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are total stolen bases for each team in a season.",
+          "samples": [
+            73,
+            69,
+            18,
+            16,
+            46
+          ]
+        },
+        {
+          "name": "CS",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are the number of times a team successfully executed a double play.",
+          "samples": [
+            16,
+            21,
+            8,
+            4,
+            15
+          ]
+        },
+        {
+          "name": "HBP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of times a team was hit by pitches during a season.",
+          "samples": [
+            64,
+            16,
+            59,
+            52,
+            22
+          ]
+        },
+        {
+          "name": "SF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores whether a team is from San Francisco (0 = no, unused).",
+          "samples": [
+            0,
+            3,
+            7,
+            1,
+            12
+          ]
+        },
+        {
+          "name": "RA",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are runs allowed by a team in a season (RA), as indicated by sample values.",
+          "samples": [
+            303,
+            241,
+            341,
+            243,
+            313
+          ]
+        },
+        {
+          "name": "ER",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores total errors committed by a baseball team during a season.",
+          "samples": [
+            109,
+            77,
+            116,
+            97,
+            121
+          ]
+        },
+        {
+          "name": "ERA",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores team's earned run average (ERA) in baseball games.",
+          "samples": [
+            3.55,
+            2.76,
+            4.11,
+            5.17,
+            3.72
+          ]
+        },
+        {
+          "name": "CG",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores number of complete games pitched by a team.",
+          "samples": [
+            22,
+            25,
+            23,
+            19,
+            32
+          ]
+        },
+        {
+          "name": "SHO",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team's status for home games (1=home, 0=away).",
+          "samples": [
+            1,
+            0,
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "SV",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of times a team won a pennant (SV = Series Victory).",
+          "samples": [
+            3,
+            1,
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "name": "IPouts",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores total number of innings pitched by a team, including outs made.",
+          "samples": [
+            828,
+            753,
+            762,
+            507,
+            879
+          ]
+        },
+        {
+          "name": "HA",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores home arena ID for baseball teams.",
+          "samples": [
+            367,
+            308,
+            346,
+            261,
+            373
+          ]
+        },
+        {
+          "name": "HRA",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores home run averages for baseball teams.",
+          "samples": [
+            2,
+            6,
+            13,
+            5,
+            7
+          ]
+        },
+        {
+          "name": "BBA",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team identifiers for Baseball Almanac (BBA) in the Teams table.",
+          "samples": [
+            42,
+            28,
+            53,
+            21,
+            34
+          ]
+        },
+        {
+          "name": "SOA",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores sequence of team appearances in the World Series order of finish.",
+          "samples": [
+            23,
+            22,
+            34,
+            17,
+            16
+          ]
+        },
+        {
+          "name": "E",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team IDs in the LahmanBaseball database.",
+          "samples": [
+            243,
+            229,
+            234,
+            163,
+            235
+          ]
+        },
+        {
+          "name": "DP",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of double plays executed by a baseball team.",
+          "samples": [
+            24,
+            16,
+            15,
+            8,
+            14
+          ]
+        },
+        {
+          "name": "FP",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores team's Pythagorean winning percentage, a statistical measure predicting win-loss record based on runs scored and allowed.",
+          "samples": [
+            0.834,
+            0.829,
+            0.818,
+            0.803,
+            0.84
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of team names from the 19th century baseball era.",
+          "samples": [
+            "Boston Red Stockings",
+            "Chicago White Stockings",
+            "Cleveland Forest Citys",
+            "Fort Wayne Kekiongas",
+            "New York Mutuals"
+          ]
+        },
+        {
+          "name": "park",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores names of baseball parks associated with teams.",
+          "samples": [
+            "South End Grounds I",
+            "Union Base-Ball Grounds",
+            "National Association Grounds",
+            "Hamilton Field",
+            "Union Grounds (Brooklyn)"
+          ]
+        },
+        {
+          "name": "attendance",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of spectators at baseball games for each team.",
+          "samples": [
+            121412,
+            147539,
+            102536,
+            131980,
+            47478
+          ]
+        },
+        {
+          "name": "BPF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores franchise identifiers for baseball teams (103, 104, 96, 101, 90 correspond to Boston Red Sox, Oakland Athletics, Houston Astros, New York Yankees, and Chicago Cubs respectively).",
+          "samples": [
+            103,
+            104,
+            96,
+            101,
+            90
+          ]
+        },
+        {
+          "name": "PPF",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores total home games won by a team in a season (PPF stands for Park Factored Wins at Home).",
+          "samples": [
+            98,
+            102,
+            100,
+            107,
+            88
+          ]
+        },
+        {
+          "name": "teamIDBR",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for baseball teams (e.g., BOS, CHI, CLE, KEK, NYU) in a 10-character format.",
+          "samples": [
+            "BOS",
+            "CHI",
+            "CLE",
+            "KEK",
+            "NYU"
+          ]
+        },
+        {
+          "name": "teamIDlahman45",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for Major League Baseball teams in the LahmanBaseball database (2019 version).",
+          "samples": [
+            "BS1",
+            "CH1",
+            "CL1",
+            "FW1",
+            "NY2"
+          ]
+        },
+        {
+          "name": "teamIDretro",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for teams in retroactive seasons (e.g., BS1 for 1876 Boston Red Stockings).",
+          "samples": [
+            "BS1",
+            "CH1",
+            "CL1",
+            "FW1",
+            "NY2"
+          ]
+        }
+      ]
+    },
+    "TeamsHalf": {
+      "_description": "Captures half-season statistics for each team in a specific league and division during a given year.",
+      "columns": [
+        {
+          "name": "yearID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the year entity",
+          "samples": [
+            1892,
+            1925,
+            1926,
+            1927,
+            1928
+          ]
+        },
+        {
+          "name": "lgID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the lg entity",
+          "samples": [
+            "NL",
+            "NNL",
+            "ECL",
+            "ANL",
+            "NSL"
+          ]
+        },
+        {
+          "name": "teamID",
+          "sql_type": "VARCHAR(10)",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in TeamsHalf",
+          "samples": [
+            "BLN",
+            "BRO",
+            "BSN",
+            "CHN",
+            "CIN"
+          ]
+        },
+        {
+          "name": "Half",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the half (1st or 2nd) of a game played by each team.",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "divID",
+          "sql_type": "VARCHAR(10)",
+          "key": "FK",
+          "description": "Foreign key linking to the div entity",
+          "samples": [
+            "W",
+            "E",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "DivWin",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores team division win status (N for non-winning) across multiple seasons.",
+          "samples": [
+            "N",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "Rank",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the team rank order within their respective league half.",
+          "samples": [
+            12,
+            10,
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "name": "G",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the half season (1 or 2) for each team record in the database.",
+          "samples": [
+            75,
+            77,
+            78,
+            80,
+            71
+          ]
+        },
+        {
+          "name": "W",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of wins for each team in the first half of a baseball season.",
+          "samples": [
+            20,
+            26,
+            51,
+            44,
+            52
+          ]
+        },
+        {
+          "name": "L",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores team half identifiers for games, where 55, 46, etc. represent home and away teams respectively.",
+          "samples": [
+            55,
+            46,
+            26,
+            33,
+            22
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+table,domain_id,domain_name
+AwardsManagers,0,Awards and Recognition Management
+AwardsPlayers,0,Awards and Recognition Management
+AwardsShareManagers,0,Awards and Recognition Management
+AwardsSharePlayers,0,Awards and Recognition Management
+CollegePlaying,0,Awards and Recognition Management
+People,1,Player and Statistical Data Management
+HallOfFame,2,Player Awards and Recognition Management
+Batting,3,Baseball Performance and Team Management
+BattingPost,3,Baseball Performance and Team Management
+Managers,3,Baseball Performance and Team Management
+ManagersHalf,3,Baseball Performance and Team Management
+Pitching,3,Baseball Performance and Team Management
+PitchingPost,3,Baseball Performance and Team Management
+Teams,3,Baseball Performance and Team Management
+TeamsHalf,3,Baseball Performance and Team Management
+AllstarFull,4,Baseball Player Performance and Statistical Data Management
+Appearances,4,Baseball Player Performance and Statistical Data Management
+Fielding,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,4,Baseball Player Performance and Statistical Data Management
+Salaries,4,Baseball Player Performance and Statistical Data Management
+Schools,5,Baseball Team and Player Data Management
+TeamsFranchises,6,Baseball Team and Player Data Governance
+SeriesPost,7,Baseball Performance and Team Analysis
+HomeGames,8,Baseball Game and Statistical Data Management
+Parks,9,Stadium and Park Management

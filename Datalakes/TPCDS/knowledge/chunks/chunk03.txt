@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign specific areas to new hires based on their skills and expertise (cc_division).
+- HR managers update employee count for each call center location (cc_employees).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Marketing Team
+
+Activity:
+- Call center managers assign market classes to each call center based on strategic considerations (cc_mkt_class).
+- Marketing team updates the division name for each market class (cc_division_name).
+
+## 3. Call Center Information Registration
+
+Performed By: Administrators, Warehouse Staff
+
+Activity:
+- Administrators register new call centers with their details including location and square footage (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country, cc_sq_ft).
+- Warehouse staff track inventory levels for each call center (not specified in the schema).
+
+## 4. Catalog Page Management
+
+Performed By: Product Managers, Marketing Team
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (not specified in the schema).
+- Marketing team updates the description and type of each catalog page (cp_description, cp_type).
+
+## 5. Customer Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record returned items with their details such as returned date and time, item SKU, and customer information (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_refunded_customer_sk).
+- Warehouse staff update the warehouse location for each returned item (cr_warehouse_sk).
+
+## 6. Call Center Performance Monitoring
+
+Performed By: Call Center Managers, Finance Team
+
+Activity:
+- Call center managers monitor call center performance metrics such as hours of operation and GMT offset (cc_hours, cc_gmt_offset).
+- Finance team records tax percentage for each call center location (cc_tax_percentage).

@@ -1,0 +1,409 @@
+table,column,domain_id,domain_name
+Sales ShoppingCartItem,DateCreated,0,E-commerce Management
+Sales ShoppingCartItem,ModifiedDate,0,E-commerce Management
+Sales ShoppingCartItem,ProductID,0,E-commerce Management
+Sales ShoppingCartItem,Quantity,0,E-commerce Management
+Sales ShoppingCartItem,ShoppingCartID,0,E-commerce Management
+Sales ShoppingCartItem,ShoppingCartItemID,0,E-commerce Management
+HumanResources EmployeePayHistory,BusinessEntityID,1,EmployeeCompensationManagement
+HumanResources EmployeePayHistory,ModifiedDate,1,EmployeeCompensationManagement
+HumanResources EmployeePayHistory,PayFrequency,1,EmployeeCompensationManagement
+HumanResources EmployeePayHistory,Rate,1,EmployeeCompensationManagement
+HumanResources EmployeePayHistory,RateChangeDate,1,EmployeeCompensationManagement
+Production TransactionHistory,ActualCost,2,Sales Transaction Management
+Production TransactionHistory,ModifiedDate,2,Sales Transaction Management
+Production TransactionHistory,ProductID,2,Sales Transaction Management
+Production TransactionHistory,Quantity,2,Sales Transaction Management
+Production TransactionHistory,ReferenceOrderID,2,Sales Transaction Management
+Production TransactionHistory,ReferenceOrderLineID,2,Sales Transaction Management
+Production TransactionHistory,TransactionDate,2,Sales Transaction Management
+Production TransactionHistory,TransactionID,2,Sales Transaction Management
+Production TransactionHistory,TransactionType,2,Sales Transaction Management
+Production TransactionHistoryArchive,ActualCost,2,Sales Transaction Management
+Production TransactionHistoryArchive,ModifiedDate,2,Sales Transaction Management
+Production TransactionHistoryArchive,ProductID,2,Sales Transaction Management
+Production TransactionHistoryArchive,Quantity,2,Sales Transaction Management
+Production TransactionHistoryArchive,ReferenceOrderID,2,Sales Transaction Management
+Production TransactionHistoryArchive,ReferenceOrderLineID,2,Sales Transaction Management
+Production TransactionHistoryArchive,TransactionDate,2,Sales Transaction Management
+Production TransactionHistoryArchive,TransactionID,2,Sales Transaction Management
+Production TransactionHistoryArchive,TransactionType,2,Sales Transaction Management
+HumanResources Department,DepartmentID,3,Core Business Operations Management
+HumanResources Department,GroupName,3,Core Business Operations Management
+HumanResources Department,ModifiedDate,3,Core Business Operations Management
+HumanResources Department,Name,3,Core Business Operations Management
+HumanResources Shift,EndTime,3,Core Business Operations Management
+HumanResources Shift,ModifiedDate,3,Core Business Operations Management
+HumanResources Shift,Name,3,Core Business Operations Management
+HumanResources Shift,ShiftID,3,Core Business Operations Management
+HumanResources Shift,StartTime,3,Core Business Operations Management
+Person AddressType,AddressTypeID,3,Core Business Operations Management
+Person AddressType,ModifiedDate,3,Core Business Operations Management
+Person AddressType,Name,3,Core Business Operations Management
+Person AddressType,rowguid,3,Core Business Operations Management
+Person ContactType,ContactTypeID,3,Core Business Operations Management
+Person ContactType,ModifiedDate,3,Core Business Operations Management
+Person ContactType,Name,3,Core Business Operations Management
+Person CountryRegion,CountryRegionCode,3,Core Business Operations Management
+Person CountryRegion,ModifiedDate,3,Core Business Operations Management
+Person CountryRegion,Name,3,Core Business Operations Management
+Person PersonPhone,BusinessEntityID,3,Core Business Operations Management
+Person PersonPhone,ModifiedDate,3,Core Business Operations Management
+Person PersonPhone,PhoneNumber,3,Core Business Operations Management
+Person PersonPhone,PhoneNumberTypeID,3,Core Business Operations Management
+Person PhoneNumberType,ModifiedDate,3,Core Business Operations Management
+Person PhoneNumberType,Name,3,Core Business Operations Management
+Person PhoneNumberType,PhoneNumberTypeID,3,Core Business Operations Management
+Person StateProvince,CountryRegionCode,3,Core Business Operations Management
+Person StateProvince,IsOnlyStateProvinceFlag,3,Core Business Operations Management
+Person StateProvince,ModifiedDate,3,Core Business Operations Management
+Person StateProvince,Name,3,Core Business Operations Management
+Person StateProvince,StateProvinceCode,3,Core Business Operations Management
+Person StateProvince,StateProvinceID,3,Core Business Operations Management
+Person StateProvince,TerritoryID,3,Core Business Operations Management
+Person StateProvince,rowguid,3,Core Business Operations Management
+Production Culture,CultureID,3,Core Business Operations Management
+Production Culture,ModifiedDate,3,Core Business Operations Management
+Production Culture,Name,3,Core Business Operations Management
+Production Location,Availability,3,Core Business Operations Management
+Production Location,CostRate,3,Core Business Operations Management
+Production Location,LocationID,3,Core Business Operations Management
+Production Location,ModifiedDate,3,Core Business Operations Management
+Production Location,Name,3,Core Business Operations Management
+Production Product,Class,3,Core Business Operations Management
+Production Product,Color,3,Core Business Operations Management
+Production Product,DaysToManufacture,3,Core Business Operations Management
+Production Product,DiscontinuedDate,3,Core Business Operations Management
+Production Product,FinishedGoodsFlag,3,Core Business Operations Management
+Production Product,ListPrice,3,Core Business Operations Management
+Production Product,MakeFlag,3,Core Business Operations Management
+Production Product,ModifiedDate,3,Core Business Operations Management
+Production Product,Name,3,Core Business Operations Management
+Production Product,ProductID,3,Core Business Operations Management
+Production Product,ProductLine,3,Core Business Operations Management
+Production Product,ProductModelID,3,Core Business Operations Management
+Production Product,ProductNumber,3,Core Business Operations Management
+Production Product,ProductSubcategoryID,3,Core Business Operations Management
+Production Product,ReorderPoint,3,Core Business Operations Management
+Production Product,SafetyStockLevel,3,Core Business Operations Management
+Production Product,SellEndDate,3,Core Business Operations Management
+Production Product,SellStartDate,3,Core Business Operations Management
+Production Product,Size,3,Core Business Operations Management
+Production Product,SizeUnitMeasureCode,3,Core Business Operations Management
+Production Product,StandardCost,3,Core Business Operations Management
+Production Product,Style,3,Core Business Operations Management
+Production Product,Weight,3,Core Business Operations Management
+Production Product,WeightUnitMeasureCode,3,Core Business Operations Management
+Production Product,rowguid,3,Core Business Operations Management
+Production ProductCategory,ModifiedDate,3,Core Business Operations Management
+Production ProductCategory,Name,3,Core Business Operations Management
+Production ProductCategory,ProductCategoryID,3,Core Business Operations Management
+Production ProductCategory,rowguid,3,Core Business Operations Management
+Production ProductModel,CatalogDescription,3,Core Business Operations Management
+Production ProductModel,Instructions,3,Core Business Operations Management
+Production ProductModel,ModifiedDate,3,Core Business Operations Management
+Production ProductModel,Name,3,Core Business Operations Management
+Production ProductModel,ProductModelID,3,Core Business Operations Management
+Production ProductModel,rowguid,3,Core Business Operations Management
+Production ProductSubcategory,ModifiedDate,3,Core Business Operations Management
+Production ProductSubcategory,Name,3,Core Business Operations Management
+Production ProductSubcategory,ProductCategoryID,3,Core Business Operations Management
+Production ProductSubcategory,ProductSubcategoryID,3,Core Business Operations Management
+Production ProductSubcategory,rowguid,3,Core Business Operations Management
+Production ScrapReason,ModifiedDate,3,Core Business Operations Management
+Production ScrapReason,Name,3,Core Business Operations Management
+Production ScrapReason,ScrapReasonID,3,Core Business Operations Management
+Production UnitMeasure,ModifiedDate,3,Core Business Operations Management
+Production UnitMeasure,Name,3,Core Business Operations Management
+Production UnitMeasure,UnitMeasureCode,3,Core Business Operations Management
+Purchasing ShipMethod,ModifiedDate,3,Core Business Operations Management
+Purchasing ShipMethod,Name,3,Core Business Operations Management
+Purchasing ShipMethod,ShipBase,3,Core Business Operations Management
+Purchasing ShipMethod,ShipMethodID,3,Core Business Operations Management
+Purchasing ShipMethod,ShipRate,3,Core Business Operations Management
+Purchasing ShipMethod,rowguid,3,Core Business Operations Management
+Sales CountryRegionCurrency,CountryRegionCode,3,Core Business Operations Management
+Sales CountryRegionCurrency,CurrencyCode,3,Core Business Operations Management
+Sales CountryRegionCurrency,ModifiedDate,3,Core Business Operations Management
+Sales Currency,CurrencyCode,3,Core Business Operations Management
+Sales Currency,ModifiedDate,3,Core Business Operations Management
+Sales Currency,Name,3,Core Business Operations Management
+Sales SalesReason,ModifiedDate,3,Core Business Operations Management
+Sales SalesReason,Name,3,Core Business Operations Management
+Sales SalesReason,ReasonType,3,Core Business Operations Management
+Sales SalesReason,SalesReasonID,3,Core Business Operations Management
+Sales SalesTaxRate,ModifiedDate,3,Core Business Operations Management
+Sales SalesTaxRate,Name,3,Core Business Operations Management
+Sales SalesTaxRate,SalesTaxRateID,3,Core Business Operations Management
+Sales SalesTaxRate,StateProvinceID,3,Core Business Operations Management
+Sales SalesTaxRate,TaxRate,3,Core Business Operations Management
+Sales SalesTaxRate,TaxType,3,Core Business Operations Management
+Sales SalesTaxRate,rowguid,3,Core Business Operations Management
+Sales SalesTerritory,CostLastYear,3,Core Business Operations Management
+Sales SalesTerritory,CostYTD,3,Core Business Operations Management
+Sales SalesTerritory,CountryRegionCode,3,Core Business Operations Management
+Sales SalesTerritory,Group,3,Core Business Operations Management
+Sales SalesTerritory,ModifiedDate,3,Core Business Operations Management
+Sales SalesTerritory,Name,3,Core Business Operations Management
+Sales SalesTerritory,SalesLastYear,3,Core Business Operations Management
+Sales SalesTerritory,SalesYTD,3,Core Business Operations Management
+Sales SalesTerritory,TerritoryID,3,Core Business Operations Management
+Sales SalesTerritory,rowguid,3,Core Business Operations Management
+Purchasing PurchaseOrderDetail,DueDate,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,LineTotal,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,ModifiedDate,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,OrderQty,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,ProductID,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,PurchaseOrderDetailID,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,PurchaseOrderID,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,ReceivedQty,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,RejectedQty,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,StockedQty,4,Purchase Order Management
+Purchasing PurchaseOrderDetail,UnitPrice,4,Purchase Order Management
+Production ProductReview,Comments,5,Product Review and Customer Feedback Management
+Production ProductReview,EmailAddress,5,Product Review and Customer Feedback Management
+Production ProductReview,ModifiedDate,5,Product Review and Customer Feedback Management
+Production ProductReview,ProductID,5,Product Review and Customer Feedback Management
+Production ProductReview,ProductReviewID,5,Product Review and Customer Feedback Management
+Production ProductReview,Rating,5,Product Review and Customer Feedback Management
+Production ProductReview,ReviewDate,5,Product Review and Customer Feedback Management
+Production ProductReview,ReviewerName,5,Product Review and Customer Feedback Management
+HumanResources Employee,BirthDate,6,Operational Data Management
+HumanResources Employee,BusinessEntityID,6,Operational Data Management
+HumanResources Employee,CurrentFlag,6,Operational Data Management
+HumanResources Employee,Gender,6,Operational Data Management
+HumanResources Employee,HireDate,6,Operational Data Management
+HumanResources Employee,JobTitle,6,Operational Data Management
+HumanResources Employee,LoginID,6,Operational Data Management
+HumanResources Employee,MaritalStatus,6,Operational Data Management
+HumanResources Employee,ModifiedDate,6,Operational Data Management
+HumanResources Employee,NationalIDNumber,6,Operational Data Management
+HumanResources Employee,OrganizationLevel,6,Operational Data Management
+HumanResources Employee,OrganizationNode,6,Operational Data Management
+HumanResources Employee,SalariedFlag,6,Operational Data Management
+HumanResources Employee,SickLeaveHours,6,Operational Data Management
+HumanResources Employee,VacationHours,6,Operational Data Management
+HumanResources Employee,rowguid,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,BusinessEntityID,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,DepartmentID,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,EndDate,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,ModifiedDate,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,ShiftID,6,Operational Data Management
+HumanResources EmployeeDepartmentHistory,StartDate,6,Operational Data Management
+Person Address,AddressID,6,Operational Data Management
+Person Address,AddressLine1,6,Operational Data Management
+Person Address,AddressLine2,6,Operational Data Management
+Person Address,City,6,Operational Data Management
+Person Address,ModifiedDate,6,Operational Data Management
+Person Address,PostalCode,6,Operational Data Management
+Person Address,SpatialLocation,6,Operational Data Management
+Person Address,StateProvinceID,6,Operational Data Management
+Person Address,rowguid,6,Operational Data Management
+Person BusinessEntity,BusinessEntityID,6,Operational Data Management
+Person BusinessEntity,ModifiedDate,6,Operational Data Management
+Person BusinessEntity,rowguid,6,Operational Data Management
+Person BusinessEntityAddress,AddressID,6,Operational Data Management
+Person BusinessEntityAddress,AddressTypeID,6,Operational Data Management
+Person BusinessEntityAddress,BusinessEntityID,6,Operational Data Management
+Person BusinessEntityAddress,ModifiedDate,6,Operational Data Management
+Person BusinessEntityAddress,rowguid,6,Operational Data Management
+Person BusinessEntityContact,BusinessEntityID,6,Operational Data Management
+Person BusinessEntityContact,ContactTypeID,6,Operational Data Management
+Person BusinessEntityContact,ModifiedDate,6,Operational Data Management
+Person BusinessEntityContact,PersonID,6,Operational Data Management
+Person BusinessEntityContact,rowguid,6,Operational Data Management
+Person EmailAddress,BusinessEntityID,6,Operational Data Management
+Person EmailAddress,EmailAddress,6,Operational Data Management
+Person EmailAddress,EmailAddressID,6,Operational Data Management
+Person EmailAddress,ModifiedDate,6,Operational Data Management
+Person EmailAddress,rowguid,6,Operational Data Management
+Person Person,AdditionalContactInfo,6,Operational Data Management
+Person Person,BusinessEntityID,6,Operational Data Management
+Person Person,Demographics,6,Operational Data Management
+Person Person,EmailPromotion,6,Operational Data Management
+Person Person,FirstName,6,Operational Data Management
+Person Person,LastName,6,Operational Data Management
+Person Person,MiddleName,6,Operational Data Management
+Person Person,ModifiedDate,6,Operational Data Management
+Person Person,NameStyle,6,Operational Data Management
+Person Person,PersonType,6,Operational Data Management
+Person Person,Suffix,6,Operational Data Management
+Person Person,Title,6,Operational Data Management
+Person Person,rowguid,6,Operational Data Management
+Production ProductDescription,Description,6,Operational Data Management
+Production ProductDescription,ModifiedDate,6,Operational Data Management
+Production ProductDescription,ProductDescriptionID,6,Operational Data Management
+Production ProductDescription,rowguid,6,Operational Data Management
+Production ProductInventory,Bin,6,Operational Data Management
+Production ProductInventory,LocationID,6,Operational Data Management
+Production ProductInventory,ModifiedDate,6,Operational Data Management
+Production ProductInventory,ProductID,6,Operational Data Management
+Production ProductInventory,Quantity,6,Operational Data Management
+Production ProductInventory,Shelf,6,Operational Data Management
+Production ProductInventory,rowguid,6,Operational Data Management
+Purchasing ProductVendor,AverageLeadTime,6,Operational Data Management
+Purchasing ProductVendor,BusinessEntityID,6,Operational Data Management
+Purchasing ProductVendor,LastReceiptCost,6,Operational Data Management
+Purchasing ProductVendor,LastReceiptDate,6,Operational Data Management
+Purchasing ProductVendor,MaxOrderQty,6,Operational Data Management
+Purchasing ProductVendor,MinOrderQty,6,Operational Data Management
+Purchasing ProductVendor,ModifiedDate,6,Operational Data Management
+Purchasing ProductVendor,OnOrderQty,6,Operational Data Management
+Purchasing ProductVendor,ProductID,6,Operational Data Management
+Purchasing ProductVendor,StandardPrice,6,Operational Data Management
+Purchasing ProductVendor,UnitMeasureCode,6,Operational Data Management
+Purchasing PurchaseOrderHeader,EmployeeID,6,Operational Data Management
+Purchasing PurchaseOrderHeader,Freight,6,Operational Data Management
+Purchasing PurchaseOrderHeader,ModifiedDate,6,Operational Data Management
+Purchasing PurchaseOrderHeader,OrderDate,6,Operational Data Management
+Purchasing PurchaseOrderHeader,PurchaseOrderID,6,Operational Data Management
+Purchasing PurchaseOrderHeader,RevisionNumber,6,Operational Data Management
+Purchasing PurchaseOrderHeader,ShipDate,6,Operational Data Management
+Purchasing PurchaseOrderHeader,ShipMethodID,6,Operational Data Management
+Purchasing PurchaseOrderHeader,Status,6,Operational Data Management
+Purchasing PurchaseOrderHeader,SubTotal,6,Operational Data Management
+Purchasing PurchaseOrderHeader,TaxAmt,6,Operational Data Management
+Purchasing PurchaseOrderHeader,TotalDue,6,Operational Data Management
+Purchasing PurchaseOrderHeader,VendorID,6,Operational Data Management
+Sales Customer,AccountNumber,6,Operational Data Management
+Sales Customer,CustomerID,6,Operational Data Management
+Sales Customer,ModifiedDate,6,Operational Data Management
+Sales Customer,PersonID,6,Operational Data Management
+Sales Customer,StoreID,6,Operational Data Management
+Sales Customer,TerritoryID,6,Operational Data Management
+Sales Customer,rowguid,6,Operational Data Management
+Sales PersonCreditCard,BusinessEntityID,6,Operational Data Management
+Sales PersonCreditCard,CreditCardID,6,Operational Data Management
+Sales PersonCreditCard,ModifiedDate,6,Operational Data Management
+Sales SalesOrderDetail,CarrierTrackingNumber,6,Operational Data Management
+Sales SalesOrderDetail,LineTotal,6,Operational Data Management
+Sales SalesOrderDetail,ModifiedDate,6,Operational Data Management
+Sales SalesOrderDetail,OrderQty,6,Operational Data Management
+Sales SalesOrderDetail,ProductID,6,Operational Data Management
+Sales SalesOrderDetail,SalesOrderDetailID,6,Operational Data Management
+Sales SalesOrderDetail,SalesOrderID,6,Operational Data Management
+Sales SalesOrderDetail,SpecialOfferID,6,Operational Data Management
+Sales SalesOrderDetail,UnitPrice,6,Operational Data Management
+Sales SalesOrderDetail,UnitPriceDiscount,6,Operational Data Management
+Sales SalesOrderDetail,rowguid,6,Operational Data Management
+Sales SalesOrderHeader,AccountNumber,6,Operational Data Management
+Sales SalesOrderHeader,BillToAddressID,6,Operational Data Management
+Sales SalesOrderHeader,Comment,6,Operational Data Management
+Sales SalesOrderHeader,CreditCardApprovalCode,6,Operational Data Management
+Sales SalesOrderHeader,CreditCardID,6,Operational Data Management
+Sales SalesOrderHeader,CurrencyRateID,6,Operational Data Management
+Sales SalesOrderHeader,CustomerID,6,Operational Data Management
+Sales SalesOrderHeader,DueDate,6,Operational Data Management
+Sales SalesOrderHeader,Freight,6,Operational Data Management
+Sales SalesOrderHeader,ModifiedDate,6,Operational Data Management
+Sales SalesOrderHeader,OnlineOrderFlag,6,Operational Data Management
+Sales SalesOrderHeader,OrderDate,6,Operational Data Management
+Sales SalesOrderHeader,PurchaseOrderNumber,6,Operational Data Management
+Sales SalesOrderHeader,RevisionNumber,6,Operational Data Management
+Sales SalesOrderHeader,SalesOrderID,6,Operational Data Management
+Sales SalesOrderHeader,SalesOrderNumber,6,Operational Data Management
+Sales SalesOrderHeader,SalesPersonID,6,Operational Data Management
+Sales SalesOrderHeader,ShipDate,6,Operational Data Management
+Sales SalesOrderHeader,ShipMethodID,6,Operational Data Management
+Sales SalesOrderHeader,ShipToAddressID,6,Operational Data Management
+Sales SalesOrderHeader,Status,6,Operational Data Management
+Sales SalesOrderHeader,SubTotal,6,Operational Data Management
+Sales SalesOrderHeader,TaxAmt,6,Operational Data Management
+Sales SalesOrderHeader,TerritoryID,6,Operational Data Management
+Sales SalesOrderHeader,TotalDue,6,Operational Data Management
+Sales SalesOrderHeader,rowguid,6,Operational Data Management
+Sales SalesPerson,Bonus,6,Operational Data Management
+Sales SalesPerson,BusinessEntityID,6,Operational Data Management
+Sales SalesPerson,CommissionPct,6,Operational Data Management
+Sales SalesPerson,ModifiedDate,6,Operational Data Management
+Sales SalesPerson,SalesLastYear,6,Operational Data Management
+Sales SalesPerson,SalesQuota,6,Operational Data Management
+Sales SalesPerson,SalesYTD,6,Operational Data Management
+Sales SalesPerson,TerritoryID,6,Operational Data Management
+Sales SalesPerson,rowguid,6,Operational Data Management
+Sales SalesPersonQuotaHistory,BusinessEntityID,6,Operational Data Management
+Sales SalesPersonQuotaHistory,ModifiedDate,6,Operational Data Management
+Sales SalesPersonQuotaHistory,QuotaDate,6,Operational Data Management
+Sales SalesPersonQuotaHistory,SalesQuota,6,Operational Data Management
+Sales SalesPersonQuotaHistory,rowguid,6,Operational Data Management
+Sales SalesTerritoryHistory,BusinessEntityID,6,Operational Data Management
+Sales SalesTerritoryHistory,EndDate,6,Operational Data Management
+Sales SalesTerritoryHistory,ModifiedDate,6,Operational Data Management
+Sales SalesTerritoryHistory,StartDate,6,Operational Data Management
+Sales SalesTerritoryHistory,TerritoryID,6,Operational Data Management
+Sales SalesTerritoryHistory,rowguid,6,Operational Data Management
+Sales SpecialOffer,Category,6,Operational Data Management
+Sales SpecialOffer,Description,6,Operational Data Management
+Sales SpecialOffer,DiscountPct,6,Operational Data Management
+Sales SpecialOffer,EndDate,6,Operational Data Management
+Sales SpecialOffer,MaxQty,6,Operational Data Management
+Sales SpecialOffer,MinQty,6,Operational Data Management
+Sales SpecialOffer,ModifiedDate,6,Operational Data Management
+Sales SpecialOffer,SpecialOfferID,6,Operational Data Management
+Sales SpecialOffer,StartDate,6,Operational Data Management
+Sales SpecialOffer,Type,6,Operational Data Management
+Sales SpecialOffer,rowguid,6,Operational Data Management
+Sales SpecialOfferProduct,ModifiedDate,6,Operational Data Management
+Sales SpecialOfferProduct,ProductID,6,Operational Data Management
+Sales SpecialOfferProduct,SpecialOfferID,6,Operational Data Management
+Sales SpecialOfferProduct,rowguid,6,Operational Data Management
+Sales Store,BusinessEntityID,6,Operational Data Management
+Sales Store,Demographics,6,Operational Data Management
+Sales Store,ModifiedDate,6,Operational Data Management
+Sales Store,Name,6,Operational Data Management
+Sales Store,SalesPersonID,6,Operational Data Management
+Sales Store,rowguid,6,Operational Data Management
+Production BillOfMaterials,BOMLevel,7,Production Management
+Production BillOfMaterials,BillOfMaterialsID,7,Production Management
+Production BillOfMaterials,ComponentID,7,Production Management
+Production BillOfMaterials,EndDate,7,Production Management
+Production BillOfMaterials,ModifiedDate,7,Production Management
+Production BillOfMaterials,PerAssemblyQty,7,Production Management
+Production BillOfMaterials,ProductAssemblyID,7,Production Management
+Production BillOfMaterials,StartDate,7,Production Management
+Production BillOfMaterials,UnitMeasureCode,7,Production Management
+Production ProductCostHistory,EndDate,7,Production Management
+Production ProductCostHistory,ModifiedDate,7,Production Management
+Production ProductCostHistory,ProductID,7,Production Management
+Production ProductCostHistory,StandardCost,7,Production Management
+Production ProductCostHistory,StartDate,7,Production Management
+Production ProductListPriceHistory,EndDate,7,Production Management
+Production ProductListPriceHistory,ListPrice,7,Production Management
+Production ProductListPriceHistory,ModifiedDate,7,Production Management
+Production ProductListPriceHistory,ProductID,7,Production Management
+Production ProductListPriceHistory,StartDate,7,Production Management
+Production WorkOrder,DueDate,7,Production Management
+Production WorkOrder,EndDate,7,Production Management
+Production WorkOrder,ModifiedDate,7,Production Management
+Production WorkOrder,OrderQty,7,Production Management
+Production WorkOrder,ProductID,7,Production Management
+Production WorkOrder,ScrapReasonID,7,Production Management
+Production WorkOrder,ScrappedQty,7,Production Management
+Production WorkOrder,StartDate,7,Production Management
+Production WorkOrder,StockedQty,7,Production Management
+Production WorkOrder,WorkOrderID,7,Production Management
+Production WorkOrderRouting,ActualCost,7,Production Management
+Production WorkOrderRouting,ActualEndDate,7,Production Management
+Production WorkOrderRouting,ActualResourceHrs,7,Production Management
+Production WorkOrderRouting,ActualStartDate,7,Production Management
+Production WorkOrderRouting,LocationID,7,Production Management
+Production WorkOrderRouting,ModifiedDate,7,Production Management
+Production WorkOrderRouting,OperationSequence,7,Production Management
+Production WorkOrderRouting,PlannedCost,7,Production Management
+Production WorkOrderRouting,ProductID,7,Production Management
+Production WorkOrderRouting,ScheduledEndDate,7,Production Management
+Production WorkOrderRouting,ScheduledStartDate,7,Production Management
+Production WorkOrderRouting,WorkOrderID,7,Production Management
+Sales CreditCard,CardNumber,8,Payment and Transaction Management
+Sales CreditCard,CardType,8,Payment and Transaction Management
+Sales CreditCard,CreditCardID,8,Payment and Transaction Management
+Sales CreditCard,ExpMonth,8,Payment and Transaction Management
+Sales CreditCard,ExpYear,8,Payment and Transaction Management
+Sales CreditCard,ModifiedDate,8,Payment and Transaction Management
+Sales CurrencyRate,AverageRate,9,Currency Exchange Rate Management
+Sales CurrencyRate,CurrencyRateDate,9,Currency Exchange Rate Management
+Sales CurrencyRate,CurrencyRateID,9,Currency Exchange Rate Management
+Sales CurrencyRate,EndOfDayRate,9,Currency Exchange Rate Management
+Sales CurrencyRate,FromCurrencyCode,9,Currency Exchange Rate Management
+Sales CurrencyRate,ModifiedDate,9,Currency Exchange Rate Management
+Sales CurrencyRate,ToCurrencyCode,9,Currency Exchange Rate Management

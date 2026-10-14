@@ -1,0 +1,61 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, and CurrentFlag.
+- Assign employees to departments by specifying DepartmentID, ShiftID, StartDate, and EndDate in the EmployeeDepartmentHistory table.
+- Record employee pay history by entering RateChangeDate, Rate, PayFrequency, and ModifiedDate in the EmployeePayHistory table.
+
+## 2. Employee Information Management
+
+Performed By: Human Resources Managers, Warehouse Staff
+
+Activity:
+- Update employee information such as AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and ModifiedDate in the PersonAddress table.
+- Record changes to employee addresses by specifying BusinessEntityID, AddressID, AddressTypeID, rowguid, and ModifiedDate in the PersonBusinessEntityAddress table.
+- Update employee contact information by entering BusinessEnityID, EmailAddress, and ModifiedDate in the PersonBusinessEntityContact table.
+
+## 3. Department Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Create or modify departments by recording DepartmentID, Name, GroupName, and ModifiedDate in the HumanResources Department table.
+
+## 4. Shift Scheduling
+
+Performed By: Warehouse Staff
+
+Activity:
+- Define shift details like ShiftID, Name, StartTime, EndTime, and ModifiedDate in the HumanResources Shift table.
+
+## 5. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Register new items in the catalog by recording the product code, name, category, and list price.
+
+## 6. Product Image Management
+
+Performed By: IT Staff
+
+Activity:
+- Upload small and large images of products to the ThumbNailPhoto and LargePhoto columns in the Production.ProductPhoto table respectively.
+
+## 7. Product Photo Assignment
+
+Performed By: IT Staff
+
+Activity:
+- Designate principal product photos by setting the appropriate bit value for each record in the Production.ProductProductPhoto table.
+
+## 8. Customer Review Collection
+
+Performed By: Customers
+
+Activity:
+- Submit reviews of purchased products, including ReviewerName, ReviewDate, EmailAddress, Rating, and ModifiedDate in the Production.ProductReview table.

@@ -1,0 +1,61 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update the UnitsInStock when products are received or shipped.
+- Product managers set the ReorderLevel to trigger restocking when inventory falls below a certain threshold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives add new customers by entering their details such as CompanyName, ContactName, and Address.
+- Customer service agents update customer records with any changes to contact information or account status.
+- Sales representatives assign territories to employees for sales coverage.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives create new orders by specifying the CustomerID, required delivery date, and shipping details.
+- Warehouse staff pick and pack order items based on the OrderID and ProductID.
+- Purchasing teams issue purchase orders for products that are out of stock or have low inventory levels.
+
+## 4. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting staff generate invoices by calculating the total order value, applying any discounts, and adding freight charges.
+- Invoices are sent to customers with their OrderID as reference.
+
+## 5. Shipping and Delivery
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff prepare orders for shipping by printing shipping labels with the ShipName, ShipAddress, and ShipCity.
+- Shippers pick up or deliver orders based on the OrderID and ShipVia.
+
+## 6. Employee Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers hire new employees by recording their personal details such as LastName, FirstName, Title, and HireDate.
+- Finance department records the HomePhone and Extension for payroll purposes.
+- HR managers assign employees to specific territories based on their skills and expertise.
+
+## 7. Performance Evaluation
+
+Performed By: Managers, Employees
+
+Activity:
+- Managers evaluate employee performance by reviewing Notes and ReportsTo relationships.
+- Employees update their Notes to reflect their achievements and areas for improvement.

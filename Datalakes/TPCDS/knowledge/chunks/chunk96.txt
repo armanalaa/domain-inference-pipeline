@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and the call center's workload (cc_employees).
+- HR managers update employee records with personal details, qualifications, and employment history (cc_name, cc_division, cc_company).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Sales Representatives
+
+Activity:
+- Call center employees answer incoming calls and route them to the appropriate sales representative (cc_call_center_id).
+- Sales representatives assist customers with inquiries, process orders, and handle returns (cr_returned_date_sk, cr_order_number).
+
+## 3. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers define marketing strategies for specific markets and assign call centers to execute these strategies (cc_mkt_id, cc_market_manager).
+- Call center managers adjust staffing levels and hours of operation according to market demands and call volume (cc_employees, cc_hours).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers add new items to the catalog with detailed information such as product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description).
+- Marketing teams create and update catalog pages to showcase products and promotions (cp_department).
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording the reason for return, shipping mode, and warehouse location (cr_reason_sk, cr_ship_mode_sk, cr_warehouse_sk).
+- Warehouse staff receive returned items, verify their condition, and update inventory levels accordingly (cr_item_sk).
+
+## 6. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record financial transactions such as tax percentage for each call center location (cc_tax_percentage).
+- They generate reports on revenue, expenses, and profitability for the entire call center network (not specified columns/tables).

@@ -1,0 +1,53 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Information Management
+
+Performed By: Data Entry Clerk, Baseball Analyst
+
+Activity:
+- Data entry clerks record player details such as nameFirst, nameLast, weight, height, bats, throws, debut, bbrefID, finalGame, retroID into the Players table.
+- Baseball analysts update player information in the CollegePlaying and Batting tables based on available data.
+
+## 2. Team Management
+
+Performed By: Team Owners, League Administrators
+
+Activity:
+- Team owners register their teams with the necessary details like name, park, attendance into the Teams table.
+- League administrators assign teamIDs, lgID, and divID to each team in the corresponding tables.
+
+## 3. Franchise Management
+
+Performed By: League Administrators
+
+Activity:
+- League administrators link teams to their respective franchises using the TeamsFranchise table.
+
+## 4. Ballpark Information Management
+
+Performed By: Data Entry Clerk, League Administrators
+
+Activity:
+- Data entry clerks record park details like city, state, country into the Parks table.
+- League administrators assign parkkey to each ballpark.
+
+## 5. Game and Season Tracking
+
+Performed By: Scorekeepers, Statisticians
+
+Activity:
+- Scorekeepers and statisticians record game results, player statistics (e.g., G, AB, R, H, BB, SO), and team statistics (e.g., W, L, R, ER) into the AllstarFull, Appearances, Batting, Fielding, and Teams tables.
+
+## 6. Award Allocation
+
+Performed By: Awards Committee
+
+Activity:
+- The awards committee assigns awards to players based on their performance in a given year using the AwardsPlayers and AwardsManagers tables.
+
+## 7. Statistical Analysis and Reporting
+
+Performed By: Baseball Analysts, Data Scientists
+
+Activity:
+- Baseball analysts and data scientists analyze player and team statistics to generate reports and insights using the Batting, Pitching, Fielding, Teams, AwardsPlayers, AwardsManagers tables.

@@ -1,0 +1,48 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for new products based on inventory levels and sales forecasts.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives engage with potential customers through demos or consultations to understand their needs.
+- HR managers process new customer applications by verifying identity and creditworthiness.
+- Customers place orders for products by specifying quantity, delivery address, and payment method.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Finance Department
+
+Activity:
+- Warehouse staff pick and pack ordered items according to the order lines and ship them to the customer's specified address.
+- Finance department records the order details in the orders table, calculates net amount, tax, and total amount based on the orderlines and prices.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating quan_in_stock for each product in the inventory table.
+- Purchasing teams reorder low stock products based on the date_low and quan_low in the reorder table.
+
+## 5. Customer Support
+
+Performed By: Support Team
+
+Activity:
+- Support team responds to customer queries or complaints via email or live chat, aiming to resolve issues within 2 business days as per SLA.
+
+## 6. Data Governance
+
+Performed By: Dataedo Success Manager
+
+Activity:
+- Dataedo Success Manager provides individual onboarding and review meetings to help customers smoothly transition from the trial to a standard license without losing progress.

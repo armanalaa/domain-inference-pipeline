@@ -1,0 +1,62 @@
+ # TPC-DS — Business Workflows
+
+## 1. Web Content Management
+
+Performed By: Webmaster, Content Creators
+
+Activity:
+- Webmasters ensure content is accessible in generic HTML formats for Google Chrome and Microsoft Edge (call_center).
+- Content creators develop and post documents on the TPC's public website in a preferred non-HTML format such as Adobe PDF (Portable Document Format) when necessary (call_center).
+
+## 2. Privacy Policy Management
+
+Performed By: Privacy Officer, Webmaster
+
+Activity:
+- Privacy Officer maintains and updates the TPC's privacy policy to address questions related to information collection, usage, sharing, unsubscribe, data removal, correction, and update (call_center).
+- Webmasters publish the updated privacy policy on the TPC's website for public access (call_center).
+
+## 3. User Data Collection
+
+Performed By: Users, Privacy Officer
+
+Activity:
+- Users voluntarily provide personal information such as name, fax, telephone number, street address, and email address when interacting with the TPC's site for feedback or report requests (call_center).
+
+## 4. User Data Processing and Use
+
+Performed By: Privacy Officer, Data Analysts
+
+Activity:
+- Privacy Officer collects, processes, and uses personal information only for providing relevant services to users (call_center).
+- Data analysts analyze the collected data for various purposes such as feedback analysis or report generation.
+
+## 5. User Data Sharing
+
+Performed By: Privacy Officer, Data Analysts
+
+Activity:
+- Privacy Officer shares user data with third parties only with the user's knowledge and approval (call_center).
+
+## 6. User Data Access and Modification
+
+Performed By: Users, Privacy Officer
+
+Activity:
+- Users can request to review, delete, correct, or update their personal information that they have previously provided (call_center).
+- Privacy Officer assists users in accessing and modifying their personal data as requested.
+
+## 7. User Data Removal
+
+Performed By: Privacy Officer
+
+Activity:
+- Upon user request, Privacy Officer deletes or deactivates the user's name from the TPC's database (call_center).
+
+## 8. User Support and Inquiry Handling
+
+Performed By: Customer Support, Privacy Officer
+
+Activity:
+- Users can contact customer support for assistance with various issues related to the TPC's site or services (call_center).
+- Privacy Officer addresses concerns regarding the collecting and/or use of personal information or privacy policy inquiries (call_center).

@@ -1,0 +1,54 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required skills and open positions (cc_employees).
+- HR managers update employee information, including personal details, qualifications, and employment history (cc_name, cc_division, cc_company).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming customer calls during business hours (cc_hours) and handle inquiries or complaints.
+- They record call details such as start date, end date, and closed date (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 3. Market Management
+
+Performed By: Market Managers
+
+Activity:
+- Market managers oversee the operations of multiple call centers within a market (cc_mkt_id) and ensure they adhere to company standards (cc_mkt_class, cc_market_manager).
+
+## 4. Call Center Expansion
+
+Performed By: Call Center Managers, Finance
+
+Activity:
+- Call center managers collaborate with finance to determine the need for expanding call centers based on performance metrics and budget considerations (cc_sq_ft, cc_tax_percentage).
+
+## 5. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 6. Catalog Updates
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers update catalog information when new products are added or existing ones discontinued (cp_catalog_page_sk).
+- Warehouse staff ensure that the updated product information is reflected in their inventory records (not specified in provided schema).
+
+## 7. Customer Returns
+
+Performed By: Customers, Call Center Representatives
+
+Activity:
+- Customers initiate returns by contacting call centers and providing return reasons (cr_reason_sk).
+- Call center representatives process the returns, record the returned date and time, and update the relevant inventory records (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_warehouse_sk).

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Maria (Product Manager), Hubert (Metadata Engineer, Tech Lead)
+
+Activity:
+- Maria registers new products by specifying the title, category, actor, price, and special attributes.
+- Hubert updates product common_prod_id based on the unique identifier assigned to the product.
+- Maria assigns a common_prod_id to each variant of a product with different attributes.
+
+## 2. Inventory Management
+
+Performed By: Sven (IT Admin & Support), Miłosz (Developer)
+
+Activity:
+- Sven updates inventory quan_in_stock for each product based on the latest stock count.
+- Miłosz records sales data for each product, updating the sales column accordingly.
+- Sven sets reorder points and levels for each product, determining when to restock items.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customers
+
+Activity:
+- Sales representatives create new orders by entering customerid, orderdate, netamount, tax, and totalamount.
+- Customers place orders by providing orderid, orderdate, customerid, and product details (prod_id, quantity).
+- Warehouse staff track orderlines, updating quan_in_stock as products are shipped to customers.
+
+## 4. Customer Relationship Management
+
+Performed By: Maria (Product Manager), Sven (IT Admin & Support)
+
+Activity:
+- Maria updates customer information such as firstname, lastname, address, email, phone, creditcardtype, and income.
+- Sven records customer history in cust_hist, detailing previous orders and interactions.
+
+## 5. Order Reordering
+
+Performed By: Miłosz (Developer), Marcin (QA Engineer)
+
+Activity:
+- Miłosz updates reorder with date_low, quan_low, date_reordered, quan_reordered, and date_expected for each product.
+- Marcin verifies that the reordering process is functioning correctly and adjusts as necessary.
+
+## 6. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- The finance team records financial transactions related to orders, such as netamount, tax, and totalamount.
+- They generate reports based on this data for analysis and decision making.
+
+## 7. Quality Assurance
+
+Performed By: QA Engineers (Marcin, Maciej, Sławomir)
+
+Activity:
+- QA engineers test the functionality of DellStore2, ensuring accurate data processing and proper workflows.
+- They identify and report any issues or bugs that may impact the system's performance.

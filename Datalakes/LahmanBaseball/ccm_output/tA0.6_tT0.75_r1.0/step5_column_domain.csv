@@ -1,0 +1,373 @@
+table,column,domain_id,domain_name
+AwardsManagers,awardID,0,Awards and Recognition Management
+AwardsManagers,lgID,0,Awards and Recognition Management
+AwardsManagers,notes,0,Awards and Recognition Management
+AwardsManagers,playerID,0,Awards and Recognition Management
+AwardsManagers,tie,0,Awards and Recognition Management
+AwardsManagers,yearID,0,Awards and Recognition Management
+AwardsPlayers,awardID,0,Awards and Recognition Management
+AwardsPlayers,lgID,0,Awards and Recognition Management
+AwardsPlayers,notes,0,Awards and Recognition Management
+AwardsPlayers,playerID,0,Awards and Recognition Management
+AwardsPlayers,tie,0,Awards and Recognition Management
+AwardsPlayers,yearID,0,Awards and Recognition Management
+AwardsShareManagers,awardID,0,Awards and Recognition Management
+AwardsShareManagers,lgID,0,Awards and Recognition Management
+AwardsShareManagers,playerID,0,Awards and Recognition Management
+AwardsShareManagers,pointsMax,0,Awards and Recognition Management
+AwardsShareManagers,pointsWon,0,Awards and Recognition Management
+AwardsShareManagers,votesFirst,0,Awards and Recognition Management
+AwardsShareManagers,yearID,0,Awards and Recognition Management
+AwardsSharePlayers,awardID,0,Awards and Recognition Management
+AwardsSharePlayers,lgID,0,Awards and Recognition Management
+AwardsSharePlayers,playerID,0,Awards and Recognition Management
+AwardsSharePlayers,pointsMax,0,Awards and Recognition Management
+AwardsSharePlayers,pointsWon,0,Awards and Recognition Management
+AwardsSharePlayers,votesFirst,0,Awards and Recognition Management
+AwardsSharePlayers,yearID,0,Awards and Recognition Management
+CollegePlaying,playerID,0,Awards and Recognition Management
+CollegePlaying,schoolID,0,Awards and Recognition Management
+CollegePlaying,yearID,0,Awards and Recognition Management
+People,bats,1,Player and Statistical Data Management
+People,bbrefID,1,Player and Statistical Data Management
+People,birthCity,1,Player and Statistical Data Management
+People,birthCountry,1,Player and Statistical Data Management
+People,birthDay,1,Player and Statistical Data Management
+People,birthMonth,1,Player and Statistical Data Management
+People,birthState,1,Player and Statistical Data Management
+People,birthYear,1,Player and Statistical Data Management
+People,deathCity,1,Player and Statistical Data Management
+People,deathCountry,1,Player and Statistical Data Management
+People,deathDay,1,Player and Statistical Data Management
+People,deathMonth,1,Player and Statistical Data Management
+People,deathState,1,Player and Statistical Data Management
+People,deathYear,1,Player and Statistical Data Management
+People,debut,1,Player and Statistical Data Management
+People,finalGame,1,Player and Statistical Data Management
+People,height,1,Player and Statistical Data Management
+People,nameFirst,1,Player and Statistical Data Management
+People,nameGiven,1,Player and Statistical Data Management
+People,nameLast,1,Player and Statistical Data Management
+People,playerID,1,Player and Statistical Data Management
+People,retroID,1,Player and Statistical Data Management
+People,throws,1,Player and Statistical Data Management
+People,weight,1,Player and Statistical Data Management
+People,﻿ID,1,Player and Statistical Data Management
+HallOfFame,ballots,2,Player Awards and Recognition Management
+HallOfFame,category,2,Player Awards and Recognition Management
+HallOfFame,inducted,2,Player Awards and Recognition Management
+HallOfFame,needed,2,Player Awards and Recognition Management
+HallOfFame,needed_note,2,Player Awards and Recognition Management
+HallOfFame,playerID,2,Player Awards and Recognition Management
+HallOfFame,votedBy,2,Player Awards and Recognition Management
+HallOfFame,votes,2,Player Awards and Recognition Management
+HallOfFame,yearid,2,Player Awards and Recognition Management
+Batting,2B,3,Baseball Performance and Team Management
+Batting,3B,3,Baseball Performance and Team Management
+Batting,AB,3,Baseball Performance and Team Management
+Batting,BB,3,Baseball Performance and Team Management
+Batting,CS,3,Baseball Performance and Team Management
+Batting,G,3,Baseball Performance and Team Management
+Batting,GIDP,3,Baseball Performance and Team Management
+Batting,H,3,Baseball Performance and Team Management
+Batting,HBP,3,Baseball Performance and Team Management
+Batting,HR,3,Baseball Performance and Team Management
+Batting,IBB,3,Baseball Performance and Team Management
+Batting,R,3,Baseball Performance and Team Management
+Batting,RBI,3,Baseball Performance and Team Management
+Batting,SB,3,Baseball Performance and Team Management
+Batting,SF,3,Baseball Performance and Team Management
+Batting,SH,3,Baseball Performance and Team Management
+Batting,SO,3,Baseball Performance and Team Management
+Batting,lgID,3,Baseball Performance and Team Management
+Batting,playerID,3,Baseball Performance and Team Management
+Batting,stint,3,Baseball Performance and Team Management
+Batting,teamID,3,Baseball Performance and Team Management
+Batting,yearID,3,Baseball Performance and Team Management
+BattingPost,2B,3,Baseball Performance and Team Management
+BattingPost,3B,3,Baseball Performance and Team Management
+BattingPost,AB,3,Baseball Performance and Team Management
+BattingPost,BB,3,Baseball Performance and Team Management
+BattingPost,CS,3,Baseball Performance and Team Management
+BattingPost,G,3,Baseball Performance and Team Management
+BattingPost,GIDP,3,Baseball Performance and Team Management
+BattingPost,H,3,Baseball Performance and Team Management
+BattingPost,HBP,3,Baseball Performance and Team Management
+BattingPost,HR,3,Baseball Performance and Team Management
+BattingPost,IBB,3,Baseball Performance and Team Management
+BattingPost,R,3,Baseball Performance and Team Management
+BattingPost,RBI,3,Baseball Performance and Team Management
+BattingPost,SB,3,Baseball Performance and Team Management
+BattingPost,SF,3,Baseball Performance and Team Management
+BattingPost,SH,3,Baseball Performance and Team Management
+BattingPost,SO,3,Baseball Performance and Team Management
+BattingPost,lgID,3,Baseball Performance and Team Management
+BattingPost,playerID,3,Baseball Performance and Team Management
+BattingPost,round,3,Baseball Performance and Team Management
+BattingPost,teamID,3,Baseball Performance and Team Management
+BattingPost,yearID,3,Baseball Performance and Team Management
+Managers,G,3,Baseball Performance and Team Management
+Managers,L,3,Baseball Performance and Team Management
+Managers,W,3,Baseball Performance and Team Management
+Managers,inseason,3,Baseball Performance and Team Management
+Managers,lgID,3,Baseball Performance and Team Management
+Managers,playerID,3,Baseball Performance and Team Management
+Managers,plyrMgr,3,Baseball Performance and Team Management
+Managers,rank,3,Baseball Performance and Team Management
+Managers,teamID,3,Baseball Performance and Team Management
+Managers,yearID,3,Baseball Performance and Team Management
+ManagersHalf,G,3,Baseball Performance and Team Management
+ManagersHalf,L,3,Baseball Performance and Team Management
+ManagersHalf,W,3,Baseball Performance and Team Management
+ManagersHalf,half,3,Baseball Performance and Team Management
+ManagersHalf,inseason,3,Baseball Performance and Team Management
+ManagersHalf,lgID,3,Baseball Performance and Team Management
+ManagersHalf,playerID,3,Baseball Performance and Team Management
+ManagersHalf,rank,3,Baseball Performance and Team Management
+ManagersHalf,teamID,3,Baseball Performance and Team Management
+ManagersHalf,yearID,3,Baseball Performance and Team Management
+Pitching,BAOpp,3,Baseball Performance and Team Management
+Pitching,BB,3,Baseball Performance and Team Management
+Pitching,BFP,3,Baseball Performance and Team Management
+Pitching,BK,3,Baseball Performance and Team Management
+Pitching,CG,3,Baseball Performance and Team Management
+Pitching,ER,3,Baseball Performance and Team Management
+Pitching,ERA,3,Baseball Performance and Team Management
+Pitching,G,3,Baseball Performance and Team Management
+Pitching,GF,3,Baseball Performance and Team Management
+Pitching,GIDP,3,Baseball Performance and Team Management
+Pitching,GS,3,Baseball Performance and Team Management
+Pitching,H,3,Baseball Performance and Team Management
+Pitching,HBP,3,Baseball Performance and Team Management
+Pitching,HR,3,Baseball Performance and Team Management
+Pitching,IBB,3,Baseball Performance and Team Management
+Pitching,IPouts,3,Baseball Performance and Team Management
+Pitching,L,3,Baseball Performance and Team Management
+Pitching,R,3,Baseball Performance and Team Management
+Pitching,SF,3,Baseball Performance and Team Management
+Pitching,SH,3,Baseball Performance and Team Management
+Pitching,SHO,3,Baseball Performance and Team Management
+Pitching,SO,3,Baseball Performance and Team Management
+Pitching,SV,3,Baseball Performance and Team Management
+Pitching,W,3,Baseball Performance and Team Management
+Pitching,WP,3,Baseball Performance and Team Management
+Pitching,lgID,3,Baseball Performance and Team Management
+Pitching,playerID,3,Baseball Performance and Team Management
+Pitching,stint,3,Baseball Performance and Team Management
+Pitching,teamID,3,Baseball Performance and Team Management
+Pitching,yearID,3,Baseball Performance and Team Management
+PitchingPost,BAOpp,3,Baseball Performance and Team Management
+PitchingPost,BB,3,Baseball Performance and Team Management
+PitchingPost,BFP,3,Baseball Performance and Team Management
+PitchingPost,BK,3,Baseball Performance and Team Management
+PitchingPost,CG,3,Baseball Performance and Team Management
+PitchingPost,ER,3,Baseball Performance and Team Management
+PitchingPost,ERA,3,Baseball Performance and Team Management
+PitchingPost,G,3,Baseball Performance and Team Management
+PitchingPost,GF,3,Baseball Performance and Team Management
+PitchingPost,GIDP,3,Baseball Performance and Team Management
+PitchingPost,GS,3,Baseball Performance and Team Management
+PitchingPost,H,3,Baseball Performance and Team Management
+PitchingPost,HBP,3,Baseball Performance and Team Management
+PitchingPost,HR,3,Baseball Performance and Team Management
+PitchingPost,IBB,3,Baseball Performance and Team Management
+PitchingPost,IPouts,3,Baseball Performance and Team Management
+PitchingPost,L,3,Baseball Performance and Team Management
+PitchingPost,R,3,Baseball Performance and Team Management
+PitchingPost,SF,3,Baseball Performance and Team Management
+PitchingPost,SH,3,Baseball Performance and Team Management
+PitchingPost,SHO,3,Baseball Performance and Team Management
+PitchingPost,SO,3,Baseball Performance and Team Management
+PitchingPost,SV,3,Baseball Performance and Team Management
+PitchingPost,W,3,Baseball Performance and Team Management
+PitchingPost,WP,3,Baseball Performance and Team Management
+PitchingPost,lgID,3,Baseball Performance and Team Management
+PitchingPost,playerID,3,Baseball Performance and Team Management
+PitchingPost,round,3,Baseball Performance and Team Management
+PitchingPost,teamID,3,Baseball Performance and Team Management
+PitchingPost,yearID,3,Baseball Performance and Team Management
+Teams,2B,3,Baseball Performance and Team Management
+Teams,3B,3,Baseball Performance and Team Management
+Teams,AB,3,Baseball Performance and Team Management
+Teams,BB,3,Baseball Performance and Team Management
+Teams,BBA,3,Baseball Performance and Team Management
+Teams,BPF,3,Baseball Performance and Team Management
+Teams,CG,3,Baseball Performance and Team Management
+Teams,CS,3,Baseball Performance and Team Management
+Teams,DP,3,Baseball Performance and Team Management
+Teams,DivWin,3,Baseball Performance and Team Management
+Teams,E,3,Baseball Performance and Team Management
+Teams,ER,3,Baseball Performance and Team Management
+Teams,ERA,3,Baseball Performance and Team Management
+Teams,FP,3,Baseball Performance and Team Management
+Teams,G,3,Baseball Performance and Team Management
+Teams,Ghome,3,Baseball Performance and Team Management
+Teams,H,3,Baseball Performance and Team Management
+Teams,HA,3,Baseball Performance and Team Management
+Teams,HBP,3,Baseball Performance and Team Management
+Teams,HR,3,Baseball Performance and Team Management
+Teams,HRA,3,Baseball Performance and Team Management
+Teams,IPouts,3,Baseball Performance and Team Management
+Teams,L,3,Baseball Performance and Team Management
+Teams,LgWin,3,Baseball Performance and Team Management
+Teams,PPF,3,Baseball Performance and Team Management
+Teams,R,3,Baseball Performance and Team Management
+Teams,RA,3,Baseball Performance and Team Management
+Teams,Rank,3,Baseball Performance and Team Management
+Teams,SB,3,Baseball Performance and Team Management
+Teams,SF,3,Baseball Performance and Team Management
+Teams,SHO,3,Baseball Performance and Team Management
+Teams,SO,3,Baseball Performance and Team Management
+Teams,SOA,3,Baseball Performance and Team Management
+Teams,SV,3,Baseball Performance and Team Management
+Teams,W,3,Baseball Performance and Team Management
+Teams,WCWin,3,Baseball Performance and Team Management
+Teams,WSWin,3,Baseball Performance and Team Management
+Teams,attendance,3,Baseball Performance and Team Management
+Teams,divID,3,Baseball Performance and Team Management
+Teams,franchID,3,Baseball Performance and Team Management
+Teams,lgID,3,Baseball Performance and Team Management
+Teams,name,3,Baseball Performance and Team Management
+Teams,park,3,Baseball Performance and Team Management
+Teams,teamID,3,Baseball Performance and Team Management
+Teams,teamIDBR,3,Baseball Performance and Team Management
+Teams,teamIDlahman45,3,Baseball Performance and Team Management
+Teams,teamIDretro,3,Baseball Performance and Team Management
+Teams,﻿yearID,3,Baseball Performance and Team Management
+TeamsHalf,DivWin,3,Baseball Performance and Team Management
+TeamsHalf,G,3,Baseball Performance and Team Management
+TeamsHalf,Half,3,Baseball Performance and Team Management
+TeamsHalf,L,3,Baseball Performance and Team Management
+TeamsHalf,Rank,3,Baseball Performance and Team Management
+TeamsHalf,W,3,Baseball Performance and Team Management
+TeamsHalf,divID,3,Baseball Performance and Team Management
+TeamsHalf,lgID,3,Baseball Performance and Team Management
+TeamsHalf,teamID,3,Baseball Performance and Team Management
+TeamsHalf,yearID,3,Baseball Performance and Team Management
+AllstarFull,GP,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,gameID,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,gameNum,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,lgID,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,playerID,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,startingPos,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,teamID,4,Baseball Player Performance and Statistical Data Management
+AllstarFull,yearID,4,Baseball Player Performance and Statistical Data Management
+Appearances,GS,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_1b,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_2b,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_3b,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_all,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_batting,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_c,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_cf,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_defense,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_dh,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_lf,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_of,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_p,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_ph,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_pr,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_rf,4,Baseball Player Performance and Statistical Data Management
+Appearances,G_ss,4,Baseball Player Performance and Statistical Data Management
+Appearances,lgID,4,Baseball Player Performance and Statistical Data Management
+Appearances,playerID,4,Baseball Player Performance and Statistical Data Management
+Appearances,teamID,4,Baseball Player Performance and Statistical Data Management
+Appearances,yearID,4,Baseball Player Performance and Statistical Data Management
+Fielding,A,4,Baseball Player Performance and Statistical Data Management
+Fielding,CS,4,Baseball Player Performance and Statistical Data Management
+Fielding,DP,4,Baseball Player Performance and Statistical Data Management
+Fielding,E,4,Baseball Player Performance and Statistical Data Management
+Fielding,G,4,Baseball Player Performance and Statistical Data Management
+Fielding,GS,4,Baseball Player Performance and Statistical Data Management
+Fielding,InnOuts,4,Baseball Player Performance and Statistical Data Management
+Fielding,PB,4,Baseball Player Performance and Statistical Data Management
+Fielding,PO,4,Baseball Player Performance and Statistical Data Management
+Fielding,POS,4,Baseball Player Performance and Statistical Data Management
+Fielding,SB,4,Baseball Player Performance and Statistical Data Management
+Fielding,WP,4,Baseball Player Performance and Statistical Data Management
+Fielding,ZR,4,Baseball Player Performance and Statistical Data Management
+Fielding,lgID,4,Baseball Player Performance and Statistical Data Management
+Fielding,playerID,4,Baseball Player Performance and Statistical Data Management
+Fielding,stint,4,Baseball Player Performance and Statistical Data Management
+Fielding,teamID,4,Baseball Player Performance and Statistical Data Management
+Fielding,yearID,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,Gcf,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,Glf,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,Grf,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,playerID,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,stint,4,Baseball Player Performance and Statistical Data Management
+FieldingOF,yearID,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,A,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,CS,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,DP,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,E,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,G,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,GS,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,InnOuts,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,PB,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,PO,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,POS,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,SB,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,WP,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,ZR,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,lgID,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,playerID,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,stint,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,teamID,4,Baseball Player Performance and Statistical Data Management
+FieldingOFsplit,yearID,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,A,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,CS,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,DP,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,E,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,G,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,GS,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,InnOuts,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,PB,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,PO,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,POS,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,SB,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,TP,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,lgID,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,playerID,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,round,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,teamID,4,Baseball Player Performance and Statistical Data Management
+FieldingPost,yearID,4,Baseball Player Performance and Statistical Data Management
+Salaries,lgID,4,Baseball Player Performance and Statistical Data Management
+Salaries,playerID,4,Baseball Player Performance and Statistical Data Management
+Salaries,salary,4,Baseball Player Performance and Statistical Data Management
+Salaries,teamID,4,Baseball Player Performance and Statistical Data Management
+Salaries,yearID,4,Baseball Player Performance and Statistical Data Management
+Schools,city,5,Baseball Team and Player Data Management
+Schools,country,5,Baseball Team and Player Data Management
+Schools,name_full,5,Baseball Team and Player Data Management
+Schools,state,5,Baseball Team and Player Data Management
+Schools,﻿schoolID,5,Baseball Team and Player Data Management
+TeamsFranchises,NAassoc,6,Baseball Team and Player Data Governance
+TeamsFranchises,active,6,Baseball Team and Player Data Governance
+TeamsFranchises,franchID,6,Baseball Team and Player Data Governance
+TeamsFranchises,franchName,6,Baseball Team and Player Data Governance
+SeriesPost,lgIDloser,7,Baseball Performance and Team Analysis
+SeriesPost,lgIDwinner,7,Baseball Performance and Team Analysis
+SeriesPost,losses,7,Baseball Performance and Team Analysis
+SeriesPost,round,7,Baseball Performance and Team Analysis
+SeriesPost,teamIDloser,7,Baseball Performance and Team Analysis
+SeriesPost,teamIDwinner,7,Baseball Performance and Team Analysis
+SeriesPost,ties,7,Baseball Performance and Team Analysis
+SeriesPost,wins,7,Baseball Performance and Team Analysis
+SeriesPost,yearID,7,Baseball Performance and Team Analysis
+HomeGames,attendance,8,Baseball Game and Statistical Data Management
+HomeGames,games,8,Baseball Game and Statistical Data Management
+HomeGames,leaguekey,8,Baseball Game and Statistical Data Management
+HomeGames,openings,8,Baseball Game and Statistical Data Management
+HomeGames,parkkey,8,Baseball Game and Statistical Data Management
+HomeGames,spanfirst,8,Baseball Game and Statistical Data Management
+HomeGames,spanlast,8,Baseball Game and Statistical Data Management
+HomeGames,teamkey,8,Baseball Game and Statistical Data Management
+HomeGames,yearkey,8,Baseball Game and Statistical Data Management
+Parks,city,9,Stadium and Park Management
+Parks,country,9,Stadium and Park Management
+Parks,parkalias,9,Stadium and Park Management
+Parks,parkkey,9,Stadium and Park Management
+Parks,parkname,9,Stadium and Park Management
+Parks,state,9,Stadium and Park Management
+Parks,﻿ID,9,Stadium and Park Management

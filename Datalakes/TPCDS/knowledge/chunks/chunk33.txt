@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by posting job openings and reviewing applications (cc_employees).
+- HR managers onboard new hires by providing training materials and setting up workstations (cc_sq_ft, cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Council Members
+
+Activity:
+- Call center managers assign call centers to specific markets based on capacity and demand (cc_mkt_id, cc_division).
+- Council members approve market division assignments during regular meetings (cc_company).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Staff, Customers
+
+Activity:
+- Call center staff answer incoming calls from customers seeking assistance or information (cc_call_center_id, cc_rec_start_date).
+- Customers place orders, ask questions, or report issues during their interactions with call center staff.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product details such as code, name, category, and list price (cp_catalog_number, cp_description).
+- Marketing managers update catalog pages to reflect changes in product offerings or promotions (cp_catalog_page_sk, cp_type).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return details and assigning a return number (cr_returned_date_sk, cr_order_number).
+- Warehouse staff receive returned items, verify their condition, and update inventory levels accordingly (cr_item_sk, cr_warehouse_sk).
+
+## 6. Technical Subcommittee Formation
+
+Performed By: Council Members, Steering Committee
+
+Activity:
+- Council members propose new technical subcommittees based on emerging issues or needs (not specific to TPC-DS database).
+- The Steering Committee reviews proposals and approves the formation of new technical subcommittees.
+
+## 7. Technical Subcommittee Operations
+
+Performed By: Subcommittee Members, Subcommittee Chairperson
+
+Activity:
+- Subcommittee members collaborate to address technical issues and make recommendations (not specific to TPC-DS database).
+- The subcommittee chairperson facilitates meetings, maintains attendance records, and ensures quorum is met (cc_call_center_sk, cr_returned_time_sk).

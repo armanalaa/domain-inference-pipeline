@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received from suppliers.
+- Product managers set special and common_prod_id for promotional or related products.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives create customer accounts with firstname, lastname, address, contact details, credit card information, and login credentials.
+- Customer service agents update customer information as needed.
+- HR managers assign age, income, gender, and region to customers for targeted marketing efforts.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, quantities, and providing order details.
+- Sales representatives confirm orders and generate orderids in the cust_hist table.
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Order Processing Team
+
+Activity:
+- Warehouse staff pick and pack items based on orderlines and quan_in_stock.
+- Order processing team updates netamount, tax, totalamount, and orderdate in the orders table.
+
+## 5. Inventory Tracking
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff update sales when products are sold to customers.
+- Purchasing teams reorder items when quan_low is reached and date_low is due.
+
+## 6. Reordering Management
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff update date_reordered, quan_reordered, and date_expected when items are restocked.
+- Purchasing teams monitor date_expected to plan future orders.
+
+## 7. Reporting and Analysis
+
+Performed By: Finance, Data Analysts
+
+Activity:
+- Finance records financial transactions related to orders, taxes, and net amounts.
+- Data analysts generate reports and insights from the data in the DellStore2 database for business decision making.

@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Analysts
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data analysts monitor product data quality to ensure accuracy and consistency.
+- Product managers update product details as needed based on feedback or market trends.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer information such as name, address, contact details, credit card data, and account details into the customers table.
+- Customer service agents update customer records with changes in contact information or account status.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Team
+
+Activity:
+- Sales representatives create new orders by linking them to customer accounts and specifying products, quantities, and order dates.
+- Warehouse staff track inventory levels and prepare items for shipment based on order details.
+- Finance team records net amount, tax, and total amount for each order in the orders table.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update quan_in_stock when items are received or shipped.
+- Purchasing teams issue purchase orders to replenish low stock levels based on reorder data.
+
+## 5. Order Line Management
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives add order lines for each product in an order.
+- Warehouse staff update quan_in_stock and sales when items are shipped or returned.
+
+## 6. Data Quality Assurance
+
+Performed By: Data Analysts, Data Governance Team
+
+Activity:
+- Data analysts run automated quality checks to uncover errors, anomalies, and inconsistencies in the database.
+- Data governance team monitors data quality scores over time and assigns fixes as needed.
+
+## 7. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents respond to customer inquiries or complaints related to orders, products, or account information.
+
+## 8. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team establishes and enforces data quality standards across the organization.
+- They also crowdsource feedback from data consumers to improve data quality and trustworthiness.

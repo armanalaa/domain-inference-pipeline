@@ -1,0 +1,50 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column for each product when new shipments arrive.
+- Product managers monitor sales data from the orders table to determine which products need reordering.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts by entering firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and creditcard details.
+- HR managers update the username and password for each customer account as needed.
+- Customers place orders by selecting products from the catalog, specifying quantity, and providing order date.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives generate invoices based on customer orders and record netamount, tax, and totalamount in the orders table.
+- Warehouse staff pick and pack ordered items, updating the quan_in_stock column for each product accordingly.
+- Purchasing teams issue purchase orders to suppliers based on reorder data from the reorder table.
+
+## 4. Inventory Control
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the sales column in the inventory table when products are sold.
+- Purchasing teams monitor the date_low and quan_low columns in the reorder table to determine when to place new orders for low-stock items.
+
+## 5. Financial Reporting
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams generate financial reports by analyzing data from the orders, inventory, and reorder tables.
+
+## 6. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team ensures data quality by monitoring and enforcing data standards across all tables in DellStore2.

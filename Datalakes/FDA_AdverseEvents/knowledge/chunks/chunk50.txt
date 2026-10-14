@@ -1,0 +1,50 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Staff, Healthcare Providers, Patients
+
+Activity:
+- Pharmaceutical company staff register new adverse events by recording the event details, product information, and MedDRA version for reaction/event term (reactionmeddraversionpt).
+- Healthcare providers report adverse events to pharmaceutical companies by providing case narrative including clinical course, therapeutic measures, outcome, and additional relevant information (narrativeincludeclinical).
+- Patients or their representatives submit reports of adverse events experienced with a specific product (reportercomment).
+
+## 2. MedDRA Term Assignment
+
+Performed By: Pharmaceutical Company Staff
+
+Activity:
+- Pharmaceutical company staff assign MedDRA version for medical history (patientepisodenamemeddraversion) and indication (patientindicationmeddraversion) to the patient's medical history.
+- They also assign MedDRA version for autopsy-determined cause(s) of death (patientdetermautopsmeddraversion) when applicable.
+
+## 3. Adverse Event Assessment
+
+Performed By: Medical Experts, Pharmacovigilance Team
+
+Activity:
+- Medical experts assess the adverse event and determine the drug assessment method (drugassessmentmethod) and result (drugresult).
+- They also record additional information on the drug (drugadditional).
+
+## 4. Case Closure and Follow-up
+
+Performed By: Pharmaceutical Company Staff, Medical Experts
+
+Activity:
+- Pharmaceutical company staff close the case by recording the final assessment and outcome (drugreactionassesmeddraversion).
+- Medical experts follow up on the adverse event to monitor its progression and potential impact (sendercomment).
+
+## 5. Sender's Diagnosis/Syndrome Recording
+
+Performed By: Healthcare Providers, Patients
+
+Activity:
+- Healthcare providers record their diagnosis or syndrome related to the adverse event (senderdiagnosis).
+- Patients or their representatives provide information about their health status and any relevant syndromes (senderdiagnosismeddraversion).
+
+## 6. Data Management and Analysis
+
+Performed By: Pharmaceutical Company IT Staff, Data Analysts
+
+Activity:
+- Pharmaceutical company IT staff manage the database and ensure data integrity (not specified in provided materials).
+- Data analysts analyze adverse event data to identify trends, patterns, and potential risks associated with specific products (not specified in provided materials).

@@ -1,0 +1,62 @@
+ # Northwind — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers, IT Administrators
+
+Activity:
+- HR managers register new employees by recording their personal details, titles, and contact information.
+- HR managers update employee records with changes in personal or professional information.
+- IT administrators manage employee access rights and permissions based on roles and responsibilities.
+- HR managers assign employees to specific territories for sales and support purposes.
+
+## 2. Employee Onboarding
+
+Performed By: HR Managers, New Hires
+
+Activity:
+- HR managers provide new hires with employment contracts, job descriptions, and company policies.
+- New hires sign and return the necessary documents to confirm their acceptance of terms.
+- HR managers enter the signed documents into the employee records for future reference.
+
+## 3. Employee Performance Tracking
+
+Performed By: Managers, Employees
+
+Activity:
+- Managers evaluate employees' performance based on set goals and objectives.
+- Employees submit self-evaluations detailing their achievements and areas for improvement.
+- Managers update employee records with the evaluation results and notes for future reference.
+
+## 4. Employee Offboarding
+
+Performed By: HR Managers, Exiting Employees
+
+Activity:
+- HR managers initiate offboarding procedures when an employee leaves the company.
+- Exiting employees return company property such as laptops, ID cards, and uniforms.
+- HR managers update employee records to reflect the termination date and exit status.
+
+## 5. Employee Training and Development
+
+Performed By: HR Managers, Trainers, Employees
+
+Activity:
+- HR managers identify training needs for employees based on performance evaluations and department requirements.
+- Trainers develop and deliver training programs to address identified needs.
+- Employees participate in the training sessions and complete any required assessments or assignments.
+
+## 6. Employee Benefits Administration
+
+Performed By: HR Managers, Payroll Department
+
+Activity:
+- HR managers process employee benefit requests such as health insurance, retirement plans, and paid time off.
+- Payroll department updates employee records with the approved benefits and corresponding deductions.
+
+## 7. Employee Data Maintenance
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators ensure accurate and up-to-date employee data by performing regular database backups and system maintenance.

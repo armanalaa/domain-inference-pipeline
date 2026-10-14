@@ -1,0 +1,59 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by recording their personal details and qualifications.
+- HR managers onboard new hires by providing them with training materials and schedules.
+- Call center managers assign employees to specific call centers based on their skills and availability.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, Warehouse Staff
+
+Activity:
+- Facility managers allocate square footage for new call centers according to the number of employees assigned.
+- Warehouse staff equip call centers with necessary equipment such as phones and computers.
+- Facility managers set up call center locations based on market requirements and company divisions.
+
+## 3. Market Allocation
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers determine the appropriate market class for each call center.
+- Call center managers assign market classes to their centers based on the services they will provide.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product codes, names, categories, and list prices.
+- Warehouse staff update inventory levels when new products are added to the catalog.
+
+## 5. Catalog Page Management
+
+Performed By: Marketing Team, Web Developers
+
+Activity:
+- Marketing team creates and organizes catalog pages by department and product category.
+- Web developers design and publish these pages on the company's website for customers to browse.
+
+## 6. Customer Returns
+
+Performed By: Call Center Representatives, Warehouse Staff
+
+Activity:
+- Call center representatives process customer returns by recording return details and reasons.
+- Warehouse staff receive returned items, update inventory levels, and prepare them for restocking or disposal.
+
+## 7. Performance Analysis
+
+Performed By: Data Analysts, Management Team
+
+Activity:
+- Data analysts collect and analyze performance data from call centers, such as call volume and average handling time.
+- Management team reviews the analysis to identify areas for improvement and make necessary adjustments.

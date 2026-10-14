@@ -1,0 +1,56 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers, HR Assistants
+
+Activity:
+- Human Resources managers review job applications and select candidates for interviews.
+- HR assistants schedule interviews with potential employees.
+- HR managers conduct interviews and make hiring decisions based on candidate qualifications.
+- Once hired, HR managers enter new employee information into the HumanResources Employee table.
+- HR assistants assign departments to new hires by updating the HumanResources EmployeeDepartmentHistory table.
+
+## 2. Employee Information Management
+
+Performed By: HR Managers, HR Assistants, Employees
+
+Activity:
+- Employees update their personal information, such as address or marital status, in the HumanResources Employee table.
+- HR managers verify and approve employee updates to ensure accuracy.
+- HR assistants update employee records in the HumanResources EmployeeDepartmentHistory table when employees change departments.
+
+## 3. Employee Salary Management
+
+Performed By: HR Managers, Payroll Specialists
+
+Activity:
+- HR managers determine employee salaries based on job titles and performance evaluations.
+- Payroll specialists update the HumanResources EmployeePayHistory table with new salary rates and pay frequencies.
+
+## 4. Department Management
+
+Performed By: Department Managers, HR Managers
+
+Activity:
+- Department managers request changes to their department structure or composition.
+- HR managers approve or deny department requests and update the HumanResources Department table accordingly.
+
+## 5. Address Management
+
+Performed By: Employees, HR Assistants
+
+Activity:
+- Employees update their personal addresses in the Person Address table.
+- HR assistants verify and approve address updates to ensure accuracy.
+
+## 6. Inventory Management
+
+(To be continued in a separate document due to token limit)
+
+Performed By: Warehouse Staff, Purchasing Teams, Sales Representatives
+
+Activity:
+- Warehouse staff track inventory levels and update the inventory database as items are received or sold.
+- Purchasing teams issue purchase orders for new inventory based on sales forecasts and current stock levels.
+- Sales representatives update the inventory database when they sell products to customers.

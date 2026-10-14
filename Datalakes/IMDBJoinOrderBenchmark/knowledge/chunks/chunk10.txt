@@ -1,0 +1,59 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Content Management and Data Entry
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers register new movies by recording title, production year, kind, and related information.
+- Data entry clerks input actor details such as name, role, and character name.
+- Data entry clerks assign appropriate categories to each movie and actor.
+
+## 2. Actor and Character Information Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers update aka_name table with aliases for actors and actresses.
+- Data entry clerks record additional information about actors like gender and nationality.
+- Data entry clerks link characters to their respective movies using the cast_info table.
+
+## 3. Company Information Management
+
+Performed By: HR Managers, Company Representatives
+
+Activity:
+- HR managers register company details including name, country, type, and imdb_id.
+- Company representatives update company_name with any changes or additions to the company's name.
+
+## 4. Movie Information Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers input movie details like title, production year, and kind into the aka_title table.
+- Data entry clerks record additional information about movies such as episode number, season, and note.
+
+## 5. Keyword and Link Association
+
+Performed By: Content Managers, Data Analysts
+
+Activity:
+- Content managers assign relevant keywords to movies using the keyword table.
+- Data analysts link related movies together through the movie_link table based on common themes or genres.
+
+## 6. Movie Information and Metadata Management
+
+Performed By: Data Analysts, IT Administrators
+
+Activity:
+- Data analysts add and update various types of information about movies using the movie_info and movie_info_idx tables.
+- IT administrators ensure proper indexing for efficient data retrieval and query performance.
+
+## 7. Query Optimization and Analysis
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators analyze query performance and identify potential issues or bottlenecks.
+- Data analysts optimize queries to improve efficiency and reduce response time.

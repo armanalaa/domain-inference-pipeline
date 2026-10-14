@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details, contact information, and account credentials.
+- HR managers maintain customer profiles, updating demographic data, income levels, and preferences as needed.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product codes, names, categories, list prices, and special offers.
+- Inventory specialists update product information related to quantity in stock, sales, and common product IDs.
+
+## 3. Order Placement and Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products, quantities, and providing order details.
+- Sales representatives review orders, confirm availability, and process payments.
+- Warehouse staff pick, pack, and ship ordered items to customers.
+
+## 4. Inventory Replenishment and Tracking
+
+Performed By: Purchasing Teams, Warehouse Staff, Inventory Specialists
+
+Activity:
+- Purchasing teams issue purchase orders for products with low stock levels.
+- Warehouse staff receive and verify incoming shipments, updating inventory accordingly.
+- Inventory specialists monitor stock levels and reorder items when quantities drop below specified thresholds.
+
+## 5. Order Fulfillment and Delivery
+
+Performed By: Warehouse Staff, Shipping Providers
+
+Activity:
+- Warehouse staff prepare orders for shipment by packing items, affixing shipping labels, and updating order statuses.
+- Shipping providers transport orders to customers' specified addresses.
+
+## 6. Financial Management and Reporting
+
+Performed By: Finance Teams, Accountants
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order.
+- Accountants record financial transactions related to sales, expenses, and inventory costs.
+
+## 7. Customer Support and Complaints Handling
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries, complaints, and returns.
+- They update order statuses, product information, and customer profiles as needed.

@@ -1,0 +1,65 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: FDA Staff, Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- FDA staff review adverse event reports submitted by pharmaceutical companies and healthcare providers.
+- Healthcare providers record patient details, drugs taken, and reactions experienced in the Patient Information, Drugs, and Reactions sections of the report.
+- Pharmaceutical companies submit adverse event reports to FDA through the API using search queries or count queries.
+
+## 2. Adverse Event Data Processing
+
+Performed By: FDA IT Staff
+
+Activity:
+- FDA IT staff process incoming adverse event reports and store them in the FDA_AdverseEvents database.
+- They ensure data quality and consistency by applying standardized reporting protocols.
+
+## 3. Adverse Event Data Analysis
+
+Performed By: Data Analysts, FDA Staff
+
+Activity:
+- Data analysts extract adverse event reports from the FDA_AdverseEvents database for analysis.
+- They identify trends across diverse product categories to support timely regulatory decision-making.
+
+## 4. Adverse Event Report Verification and Validation
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff verify and validate adverse event reports to ensure their accuracy and completeness.
+- They may request additional information from the reporting party if necessary.
+
+## 5. Adverse Event Case Processing
+
+Performed By: FDA Case Processors
+
+Activity:
+- FDA case processors review and classify adverse event cases based on their severity, nature, and potential impact on public health.
+- They may escalate cases to relevant FDA centers for further investigation or action.
+
+## 6. Adverse Event Report Redaction
+
+Performed By: AI Tools
+
+Activity:
+- AI tools automatically redact sensitive information from adverse event reports before they are stored in the FDA_AdverseEvents database.
+
+## 7. Consumer Complaints Management
+
+Performed By: FDA Staff, Consumers
+
+Activity:
+- Consumers submit consumer complaints related to FDA-regulated products through various channels.
+- FDA staff review and process these complaints, investigating potential issues and taking appropriate action if necessary.
+
+## 8. Regulatory Misconduct Reporting
+
+Performed By: Whistleblowers, FDA Staff
+
+Activity:
+- Whistleblowers report regulatory misconduct related to FDA-regulated products.
+- FDA staff investigate these reports and take appropriate action if misconduct is confirmed.

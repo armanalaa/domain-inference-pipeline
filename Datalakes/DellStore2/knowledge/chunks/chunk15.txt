@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives engage with potential customers and register new accounts by capturing customer details such as name, address, email, phone, credit card information, and password.
+- Customer support agents assist existing customers with account inquiries, updates, or issues by accessing their personal data.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product code, name, category, list price, and other relevant details.
+- Warehouse staff update inventory levels when products are received or sold, adjusting quantities in stock accordingly.
+
+## 3. Order Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting items from the catalog and specifying quantities.
+- Sales representatives review customer orders for accuracy before confirming them.
+- Warehouse staff prepare orders for shipment once they are confirmed.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels and reorder low stock items based on predefined thresholds.
+- Purchasing teams issue purchase orders to suppliers for necessary products.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff pick and pack ordered items for shipment.
+- Shipping agents label packages and arrange for delivery to the customer's specified address.
+
+## 6. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on product prices and quantities.
+- They record these financial details in the orders table for future reference.
+
+## 7. Analytics and Reporting
+
+Performed By: Data Analysts, Marketing Teams
+
+Activity:
+- Data analysts collect and analyze data from various sources to generate reports on sales performance, customer behavior, and inventory levels.
+- Marketing teams use these insights to optimize marketing strategies and improve the overall customer experience.

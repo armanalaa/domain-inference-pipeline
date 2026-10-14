@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the number of available positions and employee qualifications.
+- HR managers update employee records with personal details, employment history, and performance evaluations.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, Warehouse Staff
+
+Activity:
+- Facility managers determine the size, layout, and equipment needs for each call center based on the number of employees and operational requirements.
+- Warehouse staff procure and install necessary furniture, technology, and communication equipment in the designated call centers.
+
+## 3. Call Center Operations Planning
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers establish work schedules for sales representatives to ensure optimal coverage during peak business hours.
+- Sales representatives prepare scripts and strategies for handling customer inquiries and sales calls.
+
+## 4. Customer Service
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives answer incoming calls from customers, providing information about products and services, and assisting with orders or complaints.
+- Warehouse staff verify product availability and process orders for shipping.
+
+## 5. Call Center Performance Monitoring
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers review call center performance metrics such as average handling time, call volume, and customer satisfaction ratings.
+- HR managers identify training needs and implement improvement strategies for sales representatives based on performance evaluations.
+
+## 6. Marketing Strategy Development
+
+Performed By: Market Managers, Sales Representatives
+
+Activity:
+- Market managers analyze market trends and customer demographics to develop targeted marketing campaigns.
+- Sales representatives collaborate with market managers to implement marketing strategies and track their effectiveness.
+
+## 7. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers update the catalog with new items, including product code, name, category, and list price.
+- Warehouse staff ensure that newly added items are properly stocked and available for order fulfillment.
+
+## 8. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording return reasons, item details, and contact information.
+- Warehouse staff receive returned items, inspect them for damage or defects, and update inventory levels accordingly.

@@ -1,0 +1,65 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Team Management
+
+Performed By: League Administrators, Data Analysts
+
+Activity:
+- Maintain league structure and team affiliations for each season.
+- Assign teams to appropriate leagues based on their primary games played.
+- Record wins, losses, and ties for each team within their respective leagues.
+
+## 2. Player Registration
+
+Performed By: Data Analysts
+
+Activity:
+- Identify players who participated in the season's games, both major and independent.
+- Register player details, including game numbers and primary teams, in the AllstarFull table.
+
+## 3. Game Participation Tracking
+
+Performed By: Data Analysts
+
+Activity:
+- Record each player's appearances across all games within a season.
+- Populate the Appearances table with relevant details such as games played and positions.
+
+## 4. Batting Performance Recording
+
+Performed By: Data Analysts
+
+Activity:
+- Track batting statistics for each player in their respective games.
+- Update the Batting table with game, at-bat, run, hit, and other relevant data.
+
+## 5. Fielding Performance Recording
+
+Performed By: Data Analysts
+
+Activity:
+- Record fielding statistics for each player in their defensive games.
+- Populate the Fielding table with position, games played, outs, assists, errors, and other relevant data.
+
+## 6. All-Star Game Selection
+
+Performed By: League Managers, Coaches
+
+Activity:
+- Select players to participate in North-South and East-West All-Star Games.
+- Record player details and award information in the AwardsPlayers table.
+
+## 7. Manager Assignment
+
+Performed By: League Administrators
+
+Activity:
+- Assign managers to each team for the season, if available.
+- Populate the Managers table with manager details.
+
+## 8. Series and Championship Tracking
+
+Performed By: League Administrators, Data Analysts
+
+Activity:
+- Record series postings, championships, and playoff results in the appropriate tables (SeriesPost, TeamsHalf).

@@ -1,0 +1,62 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers define the call center's structure by specifying its name, class, employees, square footage, hours of operation, and manager.
+- HR managers recruit new employees for the call center by recording their personal details such as street number, street name, city, county, state, zip code, country, and GMT offset.
+- Call center managers assign market managers to specific markets based on market ID, market class, and market description.
+
+## 2. Market Segmentation
+
+Performed By: Market Managers
+
+Activity:
+- Market managers categorize customers into different divisions based on the division name and company name.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels by updating the quantity of each item in stock.
+
+## 4. Catalog Page Management
+
+Performed By: Web Administrators
+
+Activity:
+- Web administrators create and manage catalog pages by assigning a department, catalog number, and catalog page number to each page.
+
+## 5. Customer Interaction
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives assist customers in navigating the catalog pages and placing orders.
+- Customers browse through the catalog pages, select items they wish to purchase, and place orders by providing their contact information.
+
+## 6. Order Processing
+
+Performed By: Warehouse Staff, Finance Department
+
+Activity:
+- Warehouse staff process incoming orders by picking the selected items from inventory and preparing them for shipping.
+- Finance department records each order in the system by recording the order number, customer details, item details, and transaction date.
+
+## 7. Returns Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer returns by recording the returned date and time, item SKU, refunded customer SKU, reason for return, and shipping mode.
+
+## 8. Performance Analysis
+
+Performed By: Data Analysts
+
+Activity:
+- Data analysts analyze sales performance by accessing order details, customer details, item details, and transaction dates from the database.

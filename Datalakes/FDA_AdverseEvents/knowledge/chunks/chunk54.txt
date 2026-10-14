@@ -1,0 +1,46 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies document adverse events related to their products. (Product_Details)
+- Healthcare providers record patient information and details of the adverse event. (Patient_Info, Adverse_Event_Details)
+- Both parties submit the reports to the FDA through the Electronic Submission Gateway. (Submission_Details)
+
+## 2. Case Processing
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff verify the authenticity of the submitted adverse event reports. (Report_Verification)
+- They assign a unique identifier to each report for tracking purposes. (Report_ID)
+- FDA staff review the reported adverse events for potential safety concerns. (Safety_Review)
+
+## 3. Data Analysis and Aggregation
+
+Performed By: FDA Data Analysts, Epidemiologists
+
+Activity:
+- Data analysts aggregate adverse event reports based on common factors such as product, patient demographics, and symptoms. (Data_Aggregation)
+- Epidemiologists analyze the aggregated data to identify trends and potential risks associated with specific products or patient groups. (Risk_Analysis)
+- They prepare reports summarizing their findings for further review by FDA management. (Report_Preparation)
+
+## 4. Risk Assessment and Management
+
+Performed By: FDA Management, Regulatory Affairs
+
+Activity:
+- FDA management evaluates the risk posed by the identified adverse events and determines appropriate actions. (Risk_Evaluation)
+- Regulatory affairs team communicates with pharmaceutical companies regarding any necessary product updates or safety warnings. (Communication_with_Pharma)
+- They monitor the implementation of these changes to ensure compliance. (Compliance_Monitoring)
+
+## 5. Adverse Event Database Maintenance
+
+Performed By: FDA IT Staff
+
+Activity:
+- IT staff maintain and update the FDA_AdverseEvents database with new reports, aggregated data, and risk assessments. (Database_Updates)
+- They ensure the database remains secure and accessible only to authorized personnel. (Security_Management)
+- IT staff perform regular backups and troubleshoot any issues that may arise. (Backup_and_Troubleshooting)

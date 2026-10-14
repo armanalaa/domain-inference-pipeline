@@ -1,0 +1,49 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Company Staff (e.g., Safety Officers, Data Entry Clerks)
+
+Activity:
+- Safety officers identify adverse events and gather relevant details (e.g., product name, patient information).
+- Data entry clerks input the collected data into the ICH ICSR Message Header section.
+- They record the message type, format version, message number, sender identifier, receiver identifier, message date, and safety report identifier.
+
+## 2. Case Safety Report Identification
+
+Performed By: Pharmaceutical Company Staff (e.g., Data Entry Clerks)
+
+Activity:
+- Data entry clerks assign a unique safety report identifier to each case safety report.
+- They identify the primary source country and the occur country where the reaction/event occurred.
+
+## 3. Safety Report Version Management
+
+Performed By: Pharmaceutical Company IT Staff (e.g., System Administrators)
+
+Activity:
+- System administrators manage the safety report version number in the ICH ICSR Message Header section.
+
+## 4. Data Processing and Validation
+
+Performed By: Pharmaceutical Company IT Staff (e.g., Data Analysts, Quality Assurance)
+
+Activity:
+- Data analysts process and validate the collected data against predefined standards (e.g., ICH M2 Numeric Codes for Routes of Administration).
+- Quality assurance checks the accuracy and compliance of the processed data.
+
+## 5. Acknowledgment Message Preparation
+
+Performed By: Pharmaceutical Company IT Staff (e.g., Data Analysts, System Administrators)
+
+Activity:
+- Data analysts prepare the ICSR Acknowledgment Message using the ICSR Acknowledgment DTD.
+- System administrators send the acknowledgment message to the recipient.
+
+## 6. Adverse Event Analysis and Reporting
+
+Performed By: Regulatory Agencies Staff (e.g., FDA Analysts, Medical Officers)
+
+Activity:
+- FDA analysts receive, validate, and acknowledge ICSR messages from pharmaceutical companies.
+- Medical officers analyze the adverse events reported in the ICSR messages to assess potential risks and make recommendations for further action.

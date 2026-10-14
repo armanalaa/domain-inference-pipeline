@@ -1,0 +1,47 @@
+ # TPC-DS — Business Workflows
+
+## 1. Benchmark Standard Approval and Obsolescence Management
+
+Performed By: Council, Steering Committee, Primary Representatives, Affiliates
+
+Activity:
+- Council members review proposed new or revised TPC-Express Benchmark Standards (call_center).
+- Council votes on approval of a new TPC-Express Benchmark Standard or Major Revision (not specified).
+- Council or Steering Committee votes on approval of a Third Tier Revision.
+- Council sets obsolescence date for older versions of a TPC-Express Benchmark Standard.
+- Council evaluates obsolescence requirements and passes a motion to extend the life of a TPC-Express Benchmark Standard.
+- Steering Committee notifies Primary Representatives and Affiliates about the obsolescence of a TPC-Express Benchmark Standard.
+
+## 2. TPC-Express Benchmark Submission
+
+Performed By: Benchmark submitters, Council
+
+Activity:
+- Benchmark submitters conduct tests using TPC-Express TPC-Provided Software.
+- Benchmark submitters prepare and submit results for a TPC-Express Benchmark Standard.
+- Council reviews submitted results for a TPC-Express Benchmark Standard.
+- Council approves or rejects the type of revision level for changes to TPC-Express TPC-Provided Software.
+
+## 3. Catalog Management
+
+Performed By: Product managers, Warehouse staff
+
+Activity:
+- Product managers register new items in the catalog (catalog_page).
+- Warehouse staff track inventory levels and update product information accordingly.
+
+## 4. Return Processing
+
+Performed By: Customer service representatives, Warehouse staff
+
+Activity:
+- Customer service representatives process customer returns (catalog_returns).
+- Warehouse staff receive returned items and update inventory levels.
+
+## 5. Call Center Operations
+
+Performed By: Call center employees, Market managers
+
+Activity:
+- Call center employees handle incoming calls from customers or affiliates (call_center).
+- Market managers oversee call center operations within their market division.

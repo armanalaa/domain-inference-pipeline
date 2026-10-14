@@ -1,0 +1,42 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Manager, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific call centers based on capacity needs (cc_employees).
+- Warehouse staff track the square footage (cc_sq_ft) and hours of operation (cc_hours) for each call center.
+- Call center managers update the contact information (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country, cc_gmt_offset) for each call center.
+- Warehouse staff record the tax percentage (cc_tax_percentage) for each call center.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Customers
+
+Activity:
+- Call center employees answer incoming calls from customers and assist with inquiries or issues related to products or services.
+- Customers place orders for products by providing necessary details (catalog_number, list price) to call center employees.
+
+## 3. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 4. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns by recording the returned date and time (cr_returned_date_sk, cr_returned_time_sk), item SKU (cr_item_sk), and reason for return (cr_reason_sk).
+- Warehouse staff update the warehouse inventory (not specified in provided schema) based on customer returns.
+
+## 5. Market Management
+
+Performed By: Market Managers, Call Center Manager
+
+Activity:
+- Market managers assign call centers to specific markets based on market class and description (cc_mkt_class, cc_mkt_desc).
+- Call center managers update the market manager for each call center (cc_market_manager).

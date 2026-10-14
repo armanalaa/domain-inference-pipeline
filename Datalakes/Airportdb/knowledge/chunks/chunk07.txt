@@ -1,0 +1,63 @@
+ # Airportdb — Business Workflows
+
+## 1. Airline Management
+
+Performed By: Airline Administrators, Airline Managers
+
+Activity:
+- Airline administrators register new airlines by providing the IATA code, airline name, and base airport.
+- Airline managers update airline details as needed, including changes to the airline name or base airport.
+
+## 2. Airplane Management
+
+Performed By: Airplane Administrators, Maintenance Staff
+
+Activity:
+- Airplane administrators register new aircraft by specifying the capacity, type, and assigning them to an airline.
+- Maintenance staff track airplane maintenance schedules and record any necessary repairs or updates.
+
+## 3. Airplane Type Management
+
+Performed By: Airplane Administrators
+
+Activity:
+- Airplane administrators define new aircraft types by providing a unique identifier and description.
+
+## 4. Airport Management
+
+Performed By: Airport Managers, Ground Staff
+
+Activity:
+- Airport managers register new airports with their IATA, ICAO, and name.
+- Ground staff update airport details such as city, country, and geolocation.
+
+## 5. Flight Scheduling
+
+Performed By: Airline Managers, Ground Staff
+
+Activity:
+- Airline managers create flight schedules for specific routes, including departure and arrival times, days of operation, and assigning aircraft.
+- Ground staff update flight schedules as needed due to changes in operations or cancellations.
+
+## 6. Booking Management
+
+Performed By: Travel Agents, Passengers
+
+Activity:
+- Travel agents book flights for passengers by selecting a flight, assigning seats, and recording passenger information.
+- Passengers confirm their bookings and pay the associated price.
+
+## 7. Passenger Information Management
+
+Performed By: Passenger Service Representatives
+
+Activity:
+- Passenger service representatives record passenger details such as passport number, name, birthdate, sex, address, email address, and telephone number.
+
+## 8. Weather Data Collection
+
+Performed By: Meteorologists, Ground Staff
+
+Activity:
+- Meteorologists collect weather data from various stations, recording temperature, humidity, air pressure, wind speed, direction, and weather conditions.
+- Ground staff update the weather data for specific airports as needed.

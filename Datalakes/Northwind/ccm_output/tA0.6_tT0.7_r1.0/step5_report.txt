@@ -1,0 +1,53 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 11
+Edges in G_T         : 9
+θ_T applied in Step 4: 0.7
+Domains discovered   : 4
+Modularity Q         : 0.5536
+
+──────────────────────────────────────────────────────────────────────
+D0  Order Process Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is the management of order-related details, including customer, employee, shipper, and financial aspects.
+  Tables     : orders
+  Phi top-3  : C7=0.290  C3=0.243  C2=0.207
+
+──────────────────────────────────────────────────────────────────────
+D1  Customer-Employee-Shipper Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing customer, employee, and shipper details and information.
+  Tables     : customers, employees, shippers, suppliers
+  Phi top-3  : C2=0.233  C9=0.212  C1=0.193
+
+──────────────────────────────────────────────────────────────────────
+D2  Product Order Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing product details and order-related information
+  Tables     : order_details, products
+  Phi top-3  : C6=0.277  C5=0.275  C7=0.273
+
+──────────────────────────────────────────────────────────────────────
+D3  Territory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing territories and their associated regions, employees, and categories.
+  Tables     : categories, employee_territories, regions, territories
+  Phi top-3  : C9=0.184  C2=0.174  C4=0.162
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  orders                               D       0  Order Process Management
+  customers                            D       1  Customer-Employee-Shipper Management
+  employees                            D       1  Customer-Employee-Shipper Management
+  shippers                             D       1  Customer-Employee-Shipper Management
+  suppliers                            D       1  Customer-Employee-Shipper Management
+  order_details                        D       2  Product Order Information Management
+  products                             D       2  Product Order Information Management
+  categories                           D       3  Territory Management
+  employee_territories                 D       3  Territory Management
+  regions                              D       3  Territory Management
+  territories                          D       3  Territory Management
+======================================================================

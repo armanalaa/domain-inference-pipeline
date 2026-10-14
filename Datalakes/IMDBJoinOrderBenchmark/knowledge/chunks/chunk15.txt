@@ -1,0 +1,71 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Movie Catalog Management
+
+Performed By: Content Managers, Data Analysts
+
+Activity:
+- Content managers register new movies by recording title, production year, and genre.
+- Data analysts assign unique identifiers to each movie for easy tracking.
+- Content managers update movie information as necessary, including cast details and keywords.
+- Data analysts maintain the integrity of the database by validating and verifying all updates.
+
+## 2. Actor/Actress Management
+
+Performed By: Casting Directors, Data Analysts
+
+Activity:
+- Casting directors add new actors and actresses to the system with their names, roles, and notable works.
+- Data analysts assign unique identifiers to each actor or actress for easy tracking.
+- Casting directors update actor/actress profiles as necessary, including biographical information and images.
+- Data analysts validate and verify all updates to ensure accuracy.
+
+## 3. Company Management
+
+Performed By: Production Managers, Data Analysts
+
+Activity:
+- Production managers add production companies to the system with their names, countries of origin, and types.
+- Data analysts assign unique identifiers to each company for easy tracking.
+- Production managers update company information as necessary, including contact details and affiliated movies.
+- Data analysts validate and verify all updates to ensure accuracy.
+
+## 4. Character Management
+
+Performed By: Scriptwriters, Data Analysts
+
+Activity:
+- Scriptwriters create characters for movies with their names, roles, and relationships.
+- Data analysts assign unique identifiers to each character for easy tracking.
+- Scriptwriters update character details as necessary, including descriptions and backstories.
+- Data analysts validate and verify all updates to ensure accuracy.
+
+## 5. Join Estimation and Optimization
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators analyze the structure of the database to optimize join operations.
+- Data analysts develop models for estimating the size and cost of joins based on historical data.
+- Database administrators implement these models to improve query performance.
+- Data analysts monitor the system's performance and adjust models as needed.
+
+## 6. Query Execution and Monitoring
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators execute queries on the database to retrieve specific information.
+- Data analysts analyze query results to gain insights into movie data trends.
+- Database administrators monitor query performance and identify bottlenecks for optimization.
+- Data analysts use visualization tools to present findings in an easily understandable format.
+
+## 7. Quality Assurance and Error Handling
+
+Performed By: Quality Assurance Analysts, Data Analysts
+
+Activity:
+- Quality assurance analysts test the system for errors and inconsistencies.
+- Data analysts analyze error reports to identify patterns and root causes.
+- Quality assurance analysts work with content managers, casting directors, production managers, and scriptwriters to correct any issues.
+- Data analysts implement fixes and verify their effectiveness to maintain data integrity.

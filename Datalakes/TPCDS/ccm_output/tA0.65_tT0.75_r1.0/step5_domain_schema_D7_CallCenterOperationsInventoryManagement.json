@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "domain_id": 7,
+    "domain_name": "CallCenterOperationsInventoryManagement",
+    "definition": "Unified management of call center operations and inventory levels",
+    "tables": [
+      "ship_mode"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "ship_mode": {
+      "_description": "Tracks various shipping modes (e.g., air, sea) and their associated details for order deliveries in the TPC-DS database.",
+      "columns": [
+        {
+          "name": "sm_ship_mode_sk",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for shipment modes (1, 2, 3, 4, 5).",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "sm_ship_mode_id",
+          "sql_type": "VARCHAR(50)",
+          "key": "FK",
+          "description": "Foreign key linking to the sm_ship_mode_ entity",
+          "samples": [
+            "AAAAAAAABAAAAAAA",
+            "AAAAAAAACAAAAAAA",
+            "AAAAAAAADAAAAAAA",
+            "AAAAAAAAEAAAAAAA",
+            "AAAAAAAAFAAAAAAA"
+          ]
+        },
+        {
+          "name": "sm_type",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores transportation mode types such as EXPRESS, NEXT DAY, OVERNIGHT, TWO DAY, LIBRARY.",
+          "samples": [
+            "EXPRESS",
+            "NEXT DAY",
+            "OVERNIGHT",
+            "TWO DAY",
+            "LIBRARY"
+          ]
+        },
+        {
+          "name": "sm_code",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores a 10-character alphabetic code representing air transport modes.",
+          "samples": [
+            "AIR",
+            "SURFACE",
+            "SEA",
+            "BIKE",
+            null
+          ]
+        },
+        {
+          "name": "sm_carrier",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of carriers for shipments (e.g., UPS, FEDEX, USPS, DHL).",
+          "samples": [
+            "UPS",
+            "FEDEX",
+            "AIRBORNE",
+            "USPS",
+            "DHL"
+          ]
+        },
+        {
+          "name": "sm_contract",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique alphanumeric identifiers for ship mode contracts.",
+          "samples": [
+            "YvxVaJI10",
+            "ldhM8IvpzHgdbBgDfI",
+            "6Hzzp4JkzjqD8MGXLCDa",
+            "UaAJjKDnL4gTOqbpj",
+            "HVDFCcQ"
+          ]
+        }
+      ]
+    }
+  }
+}

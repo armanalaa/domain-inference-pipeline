@@ -1,0 +1,360 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Geospatial Data Management",
+    "definition": "The process of managing geographical data related to cities, provinces, countries, mountains, languages, and religions.",
+    "tables": [
+      "city",
+      "ethnicGroup",
+      "geo_mountain",
+      "language",
+      "province",
+      "religion"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "city": {
+      "_description": "Captures geographical and demographic information of cities worldwide.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names for Albanian cities.",
+          "samples": [
+            "Tirane",
+            "Shkoder",
+            "Durres",
+            "Vlore",
+            "Elbasan"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-2 alpha-2 code of the country where each city is located.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the country (Albania) for each city entry.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of inhabitants (in thousands) for each city.",
+          "samples": [
+            192000,
+            62000,
+            60000,
+            56000,
+            53000
+          ]
+        },
+        {
+          "name": "Longitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical longitudes of cities in decimal degrees.",
+          "samples": [
+            19.8,
+            19.2,
+            19.3,
+            20.1,
+            20.5
+          ]
+        },
+        {
+          "name": "Latitude",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores geographical latitude coordinates for cities.",
+          "samples": [
+            41.3,
+            42.2,
+            40.3,
+            41.1,
+            40.4
+          ]
+        }
+      ]
+    },
+    "ethnicGroup": {
+      "_description": "Captures demographic data representing ethnic groups and their percentage distribution across various countries.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the two-letter ISO country code for the predominant nation of origin within each ethnic group.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of ethnic group names, such as Greeks, Albanians, and Serbs.",
+          "samples": [
+            "Greeks",
+            "Albanian",
+            "Greek",
+            "Serb",
+            "Macedonian"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion of individuals within each ethnic group in the Mondial database.",
+          "samples": [
+            3.0,
+            95.0,
+            98.0,
+            22.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    "geo_mountain": {
+      "_description": "Records geographical data of mountains, including their country and province locations.",
+      "columns": [
+        {
+          "name": "Mountain",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of up to 50 characters for prominent mountains worldwide.",
+          "samples": [
+            "Oeraefajoekull",
+            "Snoefell",
+            "Haltiatunturi",
+            "Kebnekaise",
+            "Sarektjokko"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO country code for the location of each mountain.",
+          "samples": [
+            "IS",
+            "SF",
+            "S",
+            "N",
+            "GB"
+          ]
+        },
+        {
+          "name": "Province",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical provinces associated with mountain locations, as indicated by sample values.",
+          "samples": [
+            "Iceland",
+            "Lappia",
+            "Norrbotten",
+            "Nordland",
+            "Oppland"
+          ]
+        }
+      ]
+    },
+    "language": {
+      "_description": "Tracks linguistic composition of countries by recording their names and corresponding language percentages.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-alpha-2 country codes for languages predominantly spoken.",
+          "samples": [
+            "MK",
+            "SRB",
+            "MNE",
+            "F",
+            "E"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of languages spoken in countries such as Albania, Macedonia, Turkey, Serbia.",
+          "samples": [
+            "Albanian",
+            "Macedonian",
+            "Turkish",
+            "Serbian",
+            "Hungarian"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion of a language within the Mondial Corporation.",
+          "samples": [
+            21.0,
+            70.0,
+            3.0,
+            88.3,
+            3.8
+          ]
+        }
+      ]
+    },
+    "province": {
+      "_description": "Represents geographical provinces within their respective countries, including details on population, area, capital city, and the relationship between capitals and provinces.",
+      "columns": [
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of provinces in various formats, such as Albania, Anatoliki Makedhonia kai Thraki, etc.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        },
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the ISO 3166-2 alpha-2 code of the country for each province.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Population",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of inhabitants for each province.",
+          "samples": [
+            3249136,
+            574308,
+            3522769,
+            702027,
+            292751
+          ]
+        },
+        {
+          "name": "Area",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the square kilometers of each province.",
+          "samples": [
+            14157.0,
+            3808.0,
+            11350.0,
+            9451.0,
+            2307.0
+          ]
+        },
+        {
+          "name": "Capital",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores names of capital cities for provinces.",
+          "samples": [
+            "Tirane",
+            "Komotini",
+            "Athens",
+            "Patrai",
+            "Kozani"
+          ]
+        },
+        {
+          "name": "CapProv",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the names of provinces or regions in various formats across multiple countries.",
+          "samples": [
+            "Albania",
+            "Anatoliki Makedhonia kai Thraki",
+            "Attiki",
+            "Dhytiki Ellas",
+            "Dhytiki Makedhonia"
+          ]
+        }
+      ]
+    },
+    "religion": {
+      "_description": "Tracks religious demographics by country and denomination.",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries of religious affiliation.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores religious denominations such as Muslim, Roman Catholic, Christian Orthodox.",
+          "samples": [
+            "Muslim",
+            "Roman Catholic",
+            "Christian Orthodox",
+            "Protestant",
+            "Jewish"
+          ]
+        },
+        {
+          "name": "Percentage",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the proportion (as a percentage) of each country's population that follows a specific religion.",
+          "samples": [
+            70.0,
+            10.0,
+            20.0,
+            1.3,
+            98.0
+          ]
+        }
+      ]
+    }
+  }
+}

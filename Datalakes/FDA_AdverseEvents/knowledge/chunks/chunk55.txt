@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Providers, Pharmaceutical Companies' Safety Officers
+
+Activity:
+- Healthcare providers document adverse events related to drug usage (adversetevent).
+- Pharmaceutical companies' safety officers input the event details into the FDA Adverse Events database.
+
+## 2. Case Report Creation
+
+Performed By: Pharmaceutical Companies' Safety Officers
+
+Activity:
+- Safety officers compile adverse event data into a structured case report (casereport).
+- They include relevant patient information, drug details, and event description.
+
+## 3. Case Report Transmission
+
+Performed By: Pharmaceutical Companies' IT Staff
+
+Activity:
+- IT staff electronically transmit the completed case reports to the FDA (transmittedata).
+- They use the Individual Case Safety Reports Message Specification for transmission.
+
+## 4. Acknowledgement of Transmission
+
+Performed By: FDA IT Staff
+
+Activity:
+- FDA IT staff receive and validate the transmitted data set (transmittedata).
+- Upon successful validation, they send an acknowledgment message to the pharmaceutical company.
+
+## 5. Case Review and Investigation
+
+Performed By: FDA Safety Officers
+
+Activity:
+- Safety officers review received adverse event case reports (casereport).
+- They investigate potential safety concerns related to the reported drug.
+
+## 6. Risk Assessment and Action
+
+Performed By: FDA Regulatory Committees
+
+Activity:
+- Regulatory committees assess the risk level of the adverse event (risklevel).
+- Based on the assessment, they decide on appropriate actions such as warnings or drug recalls.
+
+## 7. Data Analysis and Reporting
+
+Performed By: FDA Data Analysts
+
+Activity:
+- Data analysts analyze trends in reported adverse events (trendanalysis).
+- They generate reports for further investigation, risk assessment, and public dissemination.

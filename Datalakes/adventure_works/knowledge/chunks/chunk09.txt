@@ -1,0 +1,76 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their business entity ID, national ID number, login ID, job title, birth date, marital status, gender, hire date, salaried flag, vacation hours, sick leave hours, current flag, and rowguid.
+- Assign employees to departments by specifying department ID, shift ID, start date, end date, and modifying date.
+- Record employee pay history by noting rate change date, rate, pay frequency, and modifying date.
+
+## 2. Employee Information Update
+
+Performed By: Human Resources Managers
+
+Activity:
+- Modify employee information by updating their business entity details, rowguid, and modifying date.
+
+## 3. Department Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Create new departments by recording department ID, name, group name, and modifying date.
+- Update department information by modifying the department's name, group name, and modifying date.
+
+## 4. Employee Address Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record employee addresses by specifying address ID, address line 1, address line 2, city, state province ID, postal code, spatial location, rowguid, and modifying date.
+- Update employee addresses by modifying the corresponding details.
+
+## 5. Employee Contact Information Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record contact information for employees by specifying address type ID, additional contact info (in XML format), personal information (such as hobbies and income), rowguid, and modifying date.
+
+## 6. Employee Phone Number Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record phone numbers for employees by specifying business entity ID, phone number, phone number type ID, rowguid, and modifying date.
+
+## 7. Customer Management
+
+Performed By: Sales Representatives
+
+Activity:
+- Register new customers by recording their business entity ID, contact details (first name, last name, suffix), title, email promotion preference, additional contact info (in XML format), personal information (such as hobbies and income), rowguid, and modifying date.
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Track inventory levels by recording product code, name, category, list price, and quantity in stock.
+
+## 9. Order Placement
+
+Performed By: Customers
+
+Activity:
+- Place orders by specifying product details (product code, name, category, list price, and quantity), shipping information (address ID, address type ID), and modifying date.
+
+## 10. Invoice Processing
+
+Performed By: Finance Department
+
+Activity:
+- Generate invoices by recording order details (order ID, customer ID, product details, shipping information, total cost, payment terms, and modifying date).
+- Record payments by specifying payment ID, payment amount, payment date, and modifying date.

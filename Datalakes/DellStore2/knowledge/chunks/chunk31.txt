@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Stewards
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data stewards document business and technical data elements for each product, including title, actor, common_prod_id, and special attributes.
+
+## 2. Inventory Management
+
+Performed By: Warehouse Staff, Inventory Managers
+
+Activity:
+- Warehouse staff track the quantity in stock for each product and update it accordingly as items are sold or received.
+- Inventory managers set reorder points based on quan_low and date_low for each product to ensure timely restocking.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives process customer orders by selecting products, quantities, and providing order details.
+- Customer service agents confirm order placement, provide order status updates, and handle any issues that arise during the transaction.
+
+## 4. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Clerks
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory and prepare them for shipment.
+- Shipping clerks package and label orders, then coordinate with carriers to arrange delivery to the customer's specified address.
+
+## 5. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents, Data Stewards
+
+Activity:
+- Sales representatives maintain relationships with existing customers by following up on orders, offering promotions, and addressing any concerns.
+- Customer service agents handle customer inquiries, complaints, and returns to ensure a positive shopping experience.
+- Data stewards collect and organize metadata related to customer interactions for analysis and improvement of the sales process.
+
+## 6. Financial Management
+
+Performed By: Accounting Staff, Finance Managers
+
+Activity:
+- Accounting staff record transactions such as netamount, tax, and totalamount for each order in the orders table.
+- Finance managers analyze financial data to monitor revenue, expenses, and profitability of the business.
+
+## 7. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards ensure data remains usable and trustworthy by defining standards, monitoring compliance, and documenting metadata across all tables in DellStore2.
+- IT administrators maintain the database infrastructure, perform backups, and troubleshoot any issues that arise.

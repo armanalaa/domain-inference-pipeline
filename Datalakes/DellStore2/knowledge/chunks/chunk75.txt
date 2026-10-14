@@ -1,0 +1,52 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Representatives
+
+Activity:
+- Customer service representatives retrieve customer details by searching for a specific username or email address in the customers table.
+- Sales representatives update customer information such as address, phone number, and credit card details in the customers table.
+- Sales representatives add new customers to the customers table after verifying their identity and completing the registration process.
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price in the products table.
+- Inventory specialists update the quan_in_stock column in the inventory table when products are sold or restocked.
+- Inventory specialists set the date_low and quan_low columns in the reorder table to trigger automatic reordering of low-stock items.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives create new orders by linking customer details, product information, and quantities in the orderlines table.
+- Warehouse staff update the quan_in_stock column in the inventory table when products are shipped to customers.
+- Warehouse staff mark orders as shipped in the orders table after verifying that all items have been packaged and sent.
+
+## 4. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- The finance department calculates the netamount, tax, and totalamount for each order in the orders table based on product prices and quantities.
+- The finance department generates invoices by extracting order details from the orders table and sending them to customers via email or mail.
+
+## 5. Account Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers update the customer's age, income, gender, and employment status in the customers table.
+- The finance department records credit card transactions and updates the creditcard column in the customers table.
+
+## 6. Data Maintenance and Compliance
+
+Performed By: IT Administrators, Compliance Officers
+
+Activity:
+- IT administrators ensure data integrity by maintaining database backups and implementing security measures to protect customer data.
+- Compliance officers review customer data to ensure it complies with regulations like GDPR and CCPA, and take appropriate actions when necessary.

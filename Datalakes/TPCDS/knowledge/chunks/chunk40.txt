@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee records with personal information, qualifications, and performance evaluations (cc_name, cc_sq_ft, cc_hours).
+
+## 2. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers determine the market class and division for each call center (cc_mkt_class, cc_division, cc_division_name).
+- Call center managers update the call center's market information accordingly (cc_mkt_id, cc_market_manager).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Staff, Customers
+
+Activity:
+- Call center staff answer incoming calls from customers and provide assistance (cc_call_center_id, cc_rec_start_date).
+- Customers place orders or inquire about products through the call centers (cr_item_sk, cr_order_number).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price (cp_catalog_page_id, cp_catalog_number, cp_description, cp_type).
+- Warehouse staff update inventory levels when new items are added or sold (cr_item_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns initiated by customers (cr_returned_date_sk, cr_refunded_customer_sk).
+- Warehouse staff update inventory levels and record returned items (cr_item_sk, cr_warehouse_sk).
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records tax percentage for each call center (cc_tax_percentage).
+- Finance department generates financial reports based on call center performance data (all columns in call_center table).

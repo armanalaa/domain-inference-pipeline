@@ -1,0 +1,69 @@
+ # Northwind — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- They update product details as needed, including description, picture, quantity per unit, units in stock, units on order, reorder level, and discontinued status.
+- Warehouse staff track inventory levels and adjust them accordingly when products are added or removed from the warehouse.
+
+## 2. Category Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers create and manage product categories to organize items in a logical manner.
+- IT staff maintain the category database, ensuring accurate and up-to-date information.
+
+## 3. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, providing product recommendations based on their needs and preferences.
+- They record customer contact information, such as company name, contact name, address, city, region, postal code, country, phone, and fax.
+- Customer service agents handle inquiries and complaints from existing customers, addressing any issues or concerns related to orders, products, or services.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives place new orders for customers by specifying the customer ID, employee ID, order date, required date, shipped date, ship via, freight, ship name, ship address, ship city, ship region, ship postal code, and ship country.
+- Warehouse staff prepare the ordered products for shipping by adjusting inventory levels accordingly.
+- Shipping clerks package and label orders before handing them over to the designated shipper.
+
+## 5. Employee Management
+
+Performed By: HR Managers, IT Staff
+
+Activity:
+- HR managers hire new employees by recording their employee ID, last name, first name, title, title of courtesy, birth date, hire date, address, city, region, postal code, country, home phone, extension, photo, notes, reports to, and photo path.
+- IT staff maintain the employee database, ensuring accurate and up-to-date information.
+
+## 6. Shipper Management
+
+Performed By: Purchasing Teams, IT Staff
+
+Activity:
+- Purchasing teams select shippers for orders based on factors such as cost, reliability, and delivery speed.
+- IT staff maintain the shipper database, ensuring accurate and up-to-date information about each shipper's company name, phone, and other relevant details.
+
+## 7. Supplier Management
+
+Performed By: Purchasing Teams, IT Staff
+
+Activity:
+- Purchasing teams establish relationships with suppliers by recording their supplier ID, company name, contact name, contact title, address, city, region, postal code, country, phone, fax, and other relevant details.
+- IT staff maintain the supplier database, ensuring accurate and up-to-date information.
+
+## 8. Financial Management
+
+Performed By: Finance Teams, IT Staff
+
+Activity:
+- Finance teams record financial transactions related to orders, such as order date, required date, shipped date, ship via, freight, and payment details.
+- They generate invoices for customers based on their orders and track payments received.
+- IT staff maintain the financial database, ensuring accurate and up-to-date information.

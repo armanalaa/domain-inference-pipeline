@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Data Stewards
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Data stewards maintain product information accuracy by updating common_prod_id, title, actor, price, and special when necessary.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives create customer accounts with firstname, lastname, address1, address2, city, state, zip, country, region, email, phone, creditcardtype, and username.
+- HR managers update customer details such as age, income, gender, and creditcardexpiration.
+- Customers manage their personal information through the account settings page.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing order details.
+- Sales representatives review and confirm orders before they are recorded in the orders table with orderid, orderdate, customerid, netamount, tax, and totalamount.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track quan_in_stock for each product in the inventory table.
+- Purchasing teams issue purchase orders to replenish low stock levels based on date_low and quan_low from the reorder table.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff retrieve ordered products and pack them for shipping.
+- Shipping teams generate shipping labels and update orderlines with orderlineid, orderid, prod_id, quantity, and orderdate.
+
+## 6. Invoice Generation
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams generate invoices based on the netamount, tax, and totalamount from the orders table.
+
+## 7. Data Governance
+
+Performed By: Data Stewards, IT Administrators
+
+Activity:
+- Data stewards maintain a business glossary with terms, KPIs, policies, and rules linked to data assets.
+- IT administrators ensure user authentication through enterprise identity systems like Active Directory, SAML, and OAuth2 for secure access to the platform.

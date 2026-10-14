@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Medical Professionals, Patients, Sponsors
+
+Activity:
+- Medical professionals document adverse events observed in patients.
+- Patients report their own adverse events to healthcare providers.
+- Sponsors collect and submit reports from various sources.
+
+## 2. Data Entry and Validation
+
+Performed By: Data Entry Clerks, Quality Assurance Specialists
+
+Activity:
+- Data entry clerks input received reports into the system.
+- Quality assurance specialists verify the accuracy of entered data.
+
+## 3. Case Processing
+
+Performed By: Case Processors
+
+Activity:
+- Case processors review and assess each adverse event report for validity.
+
+## 4. Coding and Classification
+
+Performed By: Coders, Classifiers
+
+Activity:
+- Coders assign relevant medical codes to the reported events.
+- Classifiers categorize the events based on their nature and severity.
+
+## 5. Safety Signal Detection
+
+Performed By: Data Analysts, Risk Managers
+
+Activity:
+- Data analysts identify potential safety signals from the coded and classified data.
+- Risk managers evaluate these signals for potential risks associated with the product.
+
+## 6. Regulatory Reporting
+
+Performed By: Regulatory Affairs Specialists, Legal Counsel
+
+Activity:
+- Regulatory affairs specialists prepare reports for submission to regulatory bodies.
+- Legal counsel review and approve the reports before submission.
+
+## 7. Follow-up and Response Management
+
+Performed By: Case Managers, Product Safety Teams
+
+Activity:
+- Case managers follow up on reported adverse events with relevant parties.
+- Product safety teams take appropriate actions based on the findings.

@@ -1,0 +1,67 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources (HR) Managers
+
+Activity:
+- HR managers register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and department assignments.
+- HR managers update employee information as needed, modifying the relevant fields in the Employee table.
+- HR managers track employee movements within the organization by recording StartDate, EndDate, DepartmentID, and ShiftID in the EmployeeDepartmentHistory table.
+- HR managers manage employee pay history by updating RateChangeDate, Rate, PayFrequency, and ModifiedDate in the EmployeePayHistory table.
+
+## 2. Address Management
+
+Performed By: Person Address Administrators
+
+Activity:
+- Address administrators add new addresses for employees or customers by recording AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, and SpatialLocation in the PersonAddress table.
+- Address administrators update employee or customer addresses as needed, modifying the relevant fields in the PersonAddress table.
+- Address administrators assign address types to each address by recording AddressTypeID in the PersonBusinessEntityAddress table.
+
+## 3. Employee Department Assignment
+
+Performed By: HR Managers and Warehouse Staff (for location-specific assignments)
+
+Activity:
+- HR managers assign employees to departments, recording DepartmentID in the EmployeeDepartmentHistory table.
+- Warehouse staff assign employees to specific locations within the warehouse, updating ShiftID in the EmployeeDepartmentHistory table as needed.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff and Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by recording ProductID, LocationID, OnHandQty, and AvailableQty in the Production.ProductInventory table.
+- Purchasing teams order new products based on inventory levels, updating the relevant fields in the Sales.SalesOrderHeader and Sales.SalesOrderDetail tables.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives and Customer Service Agents
+
+Activity:
+- Sales representatives process customer orders by recording ProductID, Quantity, UnitPrice, and ModifiedDate in the Sales.SalesOrderHeader and Sales.SalesOrderDetail tables.
+- Customer service agents handle order modifications or cancellations, updating the relevant fields in the Sales.SalesOrderHeader table.
+
+## 6. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance department generates invoices by recording OrderID, DueDate, and TotalDue in the Sales.SalesInvoiceHeader table.
+
+## 7. Payment Processing
+
+Performed By: Customer Service Agents and Finance Department
+
+Activity:
+- Customer service agents process customer payments by updating the relevant fields in the Sales.CreditCard and Sales.PersonCreditCard tables.
+- Finance department records payment details, updating the relevant fields in the Sales.SalesInvoicePayment table.
+
+## 8. Analytics and Reporting
+
+Performed By: Data Analysts and Management
+
+Activity:
+- Data analysts generate reports on sales performance, inventory levels, and employee productivity by querying the relevant tables (e.g., Sales.SalesOrderHeader, Production.ProductInventory, HumanResources.Employee).
+- Management reviews these reports to make informed decisions about business strategy and resource allocation.

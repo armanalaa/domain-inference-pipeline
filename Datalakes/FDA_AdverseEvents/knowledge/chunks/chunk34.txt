@@ -1,0 +1,51 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Professionals, Patients, Pharmaceutical Companies
+
+Activity:
+- Healthcare professionals record patient details and adverse event information (patientdemographics, reactionmeddraversionllt).
+- Patients or their representatives report adverse events related to a specific drug (primarysourcereaction).
+- Adverse event terms are translated into MedDRA terminology (reactionmeddrallt).
+- The seriousness of the reported adverse event is highlighted by the reporter (termhighlighted).
+- The date of start and end of the adverse event, as well as its duration, are recorded (reactionstartdate, reactionenddate, reactionduration, reactiondurationunit).
+- Time intervals between suspect drug administration and the start/last dose of the adverse event are documented (reactionfirsttimeunit, reactionlasttimeunit).
+
+## 2. Case Report Submission
+
+Performed By: Pharmaceutical Companies' Submission Teams
+
+Activity:
+- Pharmaceutical companies compile adverse event reports into a case report (casereportid).
+- The case report includes all relevant adverse events, patient information, and drug details (casereportdata).
+
+## 3. Case Review and Validation
+
+Performed By: Pharmaceutical Companies' Safety Assessment Teams
+
+Activity:
+- Pharmaceutical companies review each submitted case report for accuracy and completeness (casestatus).
+- The safety assessment team validates the adverse event reports, patient details, and drug information (validatedby).
+
+## 4. Case Analysis and Investigation
+
+Performed By: Pharmaceutical Companies' Medical and Scientific Teams
+
+Activity:
+- Medical and scientific teams analyze the validated case report to determine if the adverse event is related to the drug (adverseeventanalysis).
+- Relevant test procedures are conducted on the patient to support the investigation (testdate, testname, testresult, testunit).
+
+## 5. Case Outcome Determination
+
+Performed By: Pharmaceutical Companies' Medical and Scientific Teams
+
+Activity:
+- The medical and scientific teams determine the outcome of the adverse event (reactionoutcome).
+
+## 6. Case Report Updates and Archiving
+
+Performed By: Pharmaceutical Companies' Data Management Teams
+
+Activity:
+- Updated case reports are archived for future reference (casereportarchive).

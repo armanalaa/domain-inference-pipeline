@@ -1,0 +1,56 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, and rowguid.
+- Assign employees to departments by selecting a DepartmentID and recording the StartDate and EndDate of their employment in the HumanResources EmployeeDepartmentHistory table.
+- Record employee pay history by specifying RateChangeDate, Rate, PayFrequency for each change in compensation.
+
+## 2. Employee Information Update
+
+Performed By: Human Resources Managers
+
+Activity:
+- Modify employee information by updating their MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, or rowguid.
+- Update employee department history by modifying the EndDate of an existing employment record or adding a new one.
+- Record changes in employee pay history by updating RateChangeDate, Rate, and PayFrequency.
+
+## 3. Employee Address Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register employee addresses by recording the AddressID, AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, SpatialLocation, rowguid, and ModifiedDate.
+- Associate an address with an employee by linking the BusinessEntityID, AddressID, and AddressTypeID.
+
+## 4. Employee Contact Information Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Record employee credit card information by associating the CreditCardID and BusinessEntityID.
+
+## 5. Sales Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Place a sales order by specifying the SalesOrderID, CarrierTrackingNumber, OrderQty, ProductID, SpecialOfferID, and UnitPrice for each product sold.
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Track inventory levels by recording the quantity of products available in stock.
+
+## 7. Customer Information Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Register new customers by recording their AccountNumber, PersonID, StoreID, and TerritoryID.
+- Update customer information by modifying the AccountNumber or rowguid.

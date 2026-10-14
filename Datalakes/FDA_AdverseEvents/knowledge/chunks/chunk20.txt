@@ -1,0 +1,50 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies document adverse events related to their products. (Product_Details)
+- Healthcare providers record patient information and details of the adverse event. (Patient_Info, Adverse_Event_Details)
+- Both parties assign a unique identifier to each report. (Report_ID)
+
+## 2. Data Preparation for Transmission
+
+Performed By: Pharmaceutical Companies
+
+Activity:
+- Pharmaceutical companies map adverse event data to the ICH ICSR DTD. (ICH_ICSR_DTD_Mapping)
+- They populate required fields with unit measurements using ICH M2 numeric codes. (Unit_Measurements, E2BM_Unit_Codes)
+- They specify routes of administration using ICH M2 numeric codes. (Routes_of_Administration, E2BM_Route_Codes)
+
+## 3. SGML Declaration Preparation
+
+Performed By: Pharmaceutical Companies
+
+Activity:
+- Pharmaceutical companies choose the appropriate DCL file based on the character set used in the report. (DCL_File)
+- They include information about the character encoding, delimiters, and SGML features used in the report. (SGML_Declaration)
+
+## 4. Transmission of Adverse Event Reports
+
+Performed By: Pharmaceutical Companies, FDA
+
+Activity:
+- Pharmaceutical companies transmit adverse event reports to the FDA using the ICH ICSR message specification. (Transmitted_Report)
+- The FDA receives and validates the report based on the provided SGML declaration. (Received_and_Validated_Report)
+
+## 5. Acknowledgement of Received Report
+
+Performed By: FDA
+
+Activity:
+- The FDA sends an acknowledgment message to the pharmaceutical company confirming receipt of the report. (Acknowledgement_Message)
+
+## 6. Adverse Event Review and Analysis
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff reviews adverse event reports for potential safety concerns. (Reviewed_Report)
+- They analyze the data to identify trends, patterns, or signals that may indicate a safety issue. (Analyzed_Data)

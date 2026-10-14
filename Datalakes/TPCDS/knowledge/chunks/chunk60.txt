@@ -1,0 +1,59 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the required skills, qualifications, and job roles.
+- HR managers onboard new hires by providing training materials, company policies, and equipment.
+- Call center managers assign employees to specific call centers based on their skills, availability, and business needs.
+
+## 2. Call Center Setup
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers determine the necessary square footage for a new call center.
+- Warehouse staff prepare and deliver equipment (phones, computers, etc.) to the designated call center location.
+- Call center managers set up the call center infrastructure according to the company's standards.
+
+## 3. Market Division Assignment
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers and HR managers assign each call center to a specific market division based on geographical location or market segment.
+
+## 4. Call Center Operations
+
+Performed By: Call Center Employees, Sales Representatives, Customer Service Agents
+
+Activity:
+- Call center employees answer incoming calls from customers and route them to the appropriate department (sales or customer service).
+- Sales representatives assist customers in placing orders by providing product information, answering questions, and processing transactions.
+- Customer service agents handle customer complaints, returns, and refunds by following established procedures and updating relevant records.
+
+## 5. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by recording product details (code, name, category, list price).
+- Marketing managers create and update catalog pages to showcase products and provide relevant information to customers.
+
+## 6. Returns Processing
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents process customer returns by recording return details (date, time, reason) and updating the order status.
+- Warehouse staff receive returned items, inspect them for damage or defects, and prepare them for restocking or disposal.
+
+## 7. Auditor Certification
+
+Performed By: TPC Council, Prospective Candidates
+
+Activity:
+- Prospective candidates apply to become apprentice auditors by submitting their background information, familiarity with benchmarking, and desired benchmarks for certification.
+- The TPC Council reviews the applications and decides whether to accept or reject the candidates based on their qualifications and the number of existing Auditors.

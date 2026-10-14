@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on their skills and qualifications (cc_employees).
+- HR managers update employee records with personal details, contact information, and employment history (cc_name, cc_company, cc_street_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Call center employees handle customer inquiries and sales calls during the specified operating hours (cc_hours).
+- Market managers oversee call center operations within their respective market segments, ensuring quality service and adherence to company policies (cc_mkt_id, cc_market_manager).
+
+## 3. Call Center Performance Tracking
+
+Performed By: Warehouse Staff, Finance Department
+
+Activity:
+- Warehouse staff track inventory levels and update the database with new product information when needed (cp_catalog_page_sk, cp_catalog_number, cp_catalog_page_number).
+- Finance department records call center performance metrics such as revenue, average handling time, and service level (cc_tax_percentage).
+
+## 4. Customer Interaction Recording
+
+Performed By: Call Center Employees, Quality Assurance Team
+
+Activity:
+- Call center employees record customer interactions for quality assurance purposes (cc_rec_start_date, cc_rec_end_date).
+- Quality assurance team reviews recorded calls to evaluate employee performance and identify areas for improvement.
+
+## 5. Return Management
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and issue refunds (cr_returned_date_sk, cr_refunded_customer_sk).
+- Warehouse staff update inventory levels to reflect returned items (cr_item_sk, cr_warehouse_sk).
+
+## 6. Marketing Analysis
+
+Performed By: Market Managers, Data Analysts
+
+Activity:
+- Market managers analyze market trends and customer preferences to optimize call center strategies (cc_mkt_class, cc_mkt_desc).
+- Data analysts use the database to generate reports on call center performance and identify opportunities for improvement (cc_call_center_sk).

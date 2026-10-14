@@ -1,0 +1,1568 @@
+{
+  "0": {
+    "_meta": {
+      "domain_id": 0,
+      "domain_name": "Content Information Management",
+      "definition": "The unifying capability across all tables is the management of various entities related to content such as movies, actors, companies, and keywords.",
+      "tables": [
+        "cast_info",
+        "complete_cast",
+        "info_type",
+        "movie_companies",
+        "movie_info",
+        "movie_info_idx",
+        "movie_keyword",
+        "movie_link",
+        "person_info",
+        "role_type"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "cast_info": {
+        "_description": "Records movie cast information, linking actors to their roles in specific films.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for cast members in the cast_info table.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "person_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the person_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the movie_ entity",
+            "samples": [
+              968504,
+              2163857,
+              2324528,
+              1851347,
+              1681365
+            ]
+          },
+          {
+            "name": "person_role_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the person_role_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores additional information about cast members, such as voice roles, stage names, rumors, and footage types.",
+            "samples": [
+              "(voice)",
+              "(as Too Short)",
+              "(rumored)",
+              "(archive footage)",
+              "(as Michael 'Power' Viera)"
+            ]
+          },
+          {
+            "name": "nr_order",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores the sequential order of cast members in a movie.",
+            "samples": [
+              "25",
+              "22",
+              "12",
+              "1",
+              "27"
+            ]
+          },
+          {
+            "name": "role_id",
+            "sql_type": "TEXT",
+            "key": "FK",
+            "description": "Foreign key linking to the role_ entity",
+            "samples": [
+              "1",
+              "8",
+              "6",
+              "18",
+              "44"
+            ]
+          }
+        ]
+      },
+      "complete_cast": {
+        "_description": "Records movie cast members and their associated roles in the IMDBJoinOrderBenchmark database.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "The \"complete_cast\" table's \"id\" column stores unique identifiers for cast members.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the movie_ entity",
+            "samples": [
+              1634350,
+              1634391,
+              1634423,
+              1634434,
+              1634450
+            ]
+          },
+          {
+            "name": "subject_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the subject_ entity",
+            "samples": [
+              1,
+              2,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "status_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the status_ entity",
+            "samples": [
+              4,
+              3,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "info_type": {
+        "_description": "Records various types of information associated with entities in the IMDBJoinOrderBenchmark database.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for different types of movie information.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "info",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores descriptive information about film attributes such as runtimes, color info, genres, languages, and certificates.",
+            "samples": [
+              "runtimes",
+              "color info",
+              "genres",
+              "languages",
+              "certificates"
+            ]
+          }
+        ]
+      },
+      "movie_companies": {
+        "_description": "Records movie production companies and their types associated with specific films.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie production companies.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_companies",
+            "samples": [
+              2,
+              11,
+              44,
+              50,
+              51
+            ]
+          },
+          {
+            "name": "company_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the company_ entity",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "company_type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the company_type_ entity",
+            "samples": [
+              1,
+              2,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores additional information about a movie company, such as year, country, and media type.",
+            "samples": [
+              "(2006) (USA) (TV)",
+              "(2006) (worldwide) (TV)",
+              "(2012) (worldwide) (all media)",
+              "(2013) (USA) (all media)",
+              "(2011) (UK) (TV)"
+            ]
+          }
+        ]
+      },
+      "movie_info": {
+        "_description": "Stores movie details and additional information associated with unique movies.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movies in the database.",
+            "samples": [
+              7266123,
+              7266124,
+              7266125,
+              7266126,
+              7266127
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_info",
+            "samples": [
+              921521,
+              921522,
+              921523,
+              921524,
+              921525
+            ]
+          },
+          {
+            "name": "info_type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the info_type_ entity",
+            "samples": [
+              4,
+              18,
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "name": "info",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores the language of a movie.",
+            "samples": [
+              "English",
+              "Japanese",
+              "Bulgarian",
+              "Czech",
+              "Hungarian"
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores additional notes about a movie, such as language versions, subtitles, or dialogue.",
+            "samples": [
+              "(Original version)",
+              "( Plattdeutsch)",
+              "(some dialogue)",
+              "(a few words)",
+              "(Chinese and English subtitles)"
+            ]
+          }
+        ]
+      },
+      "movie_info_idx": {
+        "_description": "Stores specific details about movies indexed by type for efficient retrieval.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movies in the movie_info_idx index.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_info_idx",
+            "samples": [
+              2,
+              11,
+              24,
+              50,
+              51
+            ]
+          },
+          {
+            "name": "info_type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the info_type_ entity",
+            "samples": [
+              99,
+              100,
+              101,
+              112,
+              113
+            ]
+          },
+          {
+            "name": "info",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores movie identifiers, ratings, duration, genres, and number of genres.",
+            "samples": [
+              "1000000103",
+              "53",
+              "4.0",
+              "1..1..3.11",
+              "6"
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "The movie_info_idx table's note column stores additional textual information about movies.",
+            "samples": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "movie_keyword": {
+        "_description": "Captures relationships between movies and associated keywords for indexing and search functionality.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie keywords.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_keyword",
+            "samples": [
+              2,
+              11,
+              22,
+              44,
+              24
+            ]
+          },
+          {
+            "name": "keyword_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_keyword",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "movie_link": {
+        "_description": "Records movie connections, such as sequels, prequels, or remakes, between different films.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie links.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in movie_link",
+            "samples": [
+              2,
+              50,
+              53,
+              54,
+              55
+            ]
+          },
+          {
+            "name": "linked_movie_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the linked_movie_ entity",
+            "samples": [
+              619801,
+              1450538,
+              257907,
+              260637,
+              766538
+            ]
+          },
+          {
+            "name": "link_type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the link_type_ entity",
+            "samples": [
+              6,
+              10,
+              8,
+              5,
+              7
+            ]
+          }
+        ]
+      },
+      "person_info": {
+        "_description": "Stores personal information about individuals associated with movies.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for individuals in the person_info table.",
+            "samples": [
+              1,
+              3,
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "name": "person_id",
+            "sql_type": "INT",
+            "key": "PK",
+            "description": "Primary key uniquely identifying each row in person_info",
+            "samples": [
+              4147861,
+              4,
+              5,
+              2701137,
+              31
+            ]
+          },
+          {
+            "name": "info_type_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the info_type_ entity",
+            "samples": [
+              22,
+              24,
+              28,
+              17,
+              15
+            ]
+          },
+          {
+            "name": "info",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "The IMDBJoinOrderBenchmark's person_info table's TEXT column stores detailed personal information about individuals, including their height, ID numbers, date of birth, stage names, and professions.",
+            "samples": [
+              "5' 9\\\",\n2,4147861,19,Richard Matthew Clark was born and raised in southeastern",
+              "'Tene Clark' (17 November 2005 - present)",
+              "Ghost",
+              "5' 7\\\",\n6,4,21,28 April 1966,\n7,4,20,Los Angeles",
+              "Well known as rapper Too Short"
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "The person_info 'note' column stores personal annotations, locations, film details, and educational backgrounds.",
+            "samples": [
+              " NC",
+              " California",
+              " which featured zombie-like creatures known as \\\"Jackals\\\".\"",
+              " Ja'far moved with his family to other parts of the Arab world before settling in London in the mid 1980s. While reading social sciences at the University of London",
+              " Bachelor Degree in \\\"The Arts"
+            ]
+          }
+        ]
+      },
+      "role_type": {
+        "_description": "Captures movie character roles and their associated types (e.g., actor, director, writer).",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique role types (1-5) for movies or TV shows.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "role",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores characterizations such as actor, actress, producer, writer, or cinematographer for roles in films.",
+            "samples": [
+              "actor",
+              "actress",
+              "producer",
+              "writer",
+              "cinematographer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "1": {
+    "_meta": {
+      "domain_id": 1,
+      "domain_name": "Alias and Name Information Management",
+      "definition": "Unifying activities related to managing aliases, names, and associated data for actors, movies, and companies.",
+      "tables": [
+        "aka_name",
+        "char_name",
+        "company_name",
+        "name"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "aka_name": {
+        "_description": "Captures alternate names and biographical information for individuals in the IMDb database.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for alternate names of movie entities.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "person_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the person_ entity",
+            "samples": [
+              4061927,
+              4,
+              2701136,
+              15,
+              19
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores variant names of actors and actresses.",
+            "samples": [
+              "Smith, Jessica Noel",
+              "Short, Too",
+              "Abdul-Hamid, Jaffar",
+              "Al-Hamid, Jaffar Abd",
+              "Viera, Michael 'Power'"
+            ]
+          },
+          {
+            "name": "imdb_index",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores alternate names for individuals, often including nicknames or stage names.",
+            "samples": [
+              " Chaz 'We'll sail without'em'\"",
+              " \\\"The\"",
+              " Mario Moreno\"",
+              " Michael\"",
+              " José Luís\""
+            ]
+          },
+          {
+            "name": "name_pcode_cf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores IMDB alias names encoded as 10-character alphanumeric codes.",
+            "samples": [
+              "S5325",
+              "S63",
+              "A1345",
+              "A4532",
+              "V6524"
+            ]
+          },
+          {
+            "name": "name_pcode_nf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores IMDB alias names with a 10-character numeric prefix code.",
+            "samples": [
+              "J2542",
+              "T263",
+              "J1613",
+              "M2416",
+              "J2524"
+            ]
+          },
+          {
+            "name": "surname_pcode",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores abbreviated surnames of actors/actresses in IMDB database.",
+            "samples": [
+              "S53",
+              "A453",
+              "V6",
+              "S24",
+              "S362"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores MD5 hashes of alternate film names.",
+            "samples": [
+              "25c9d464e3ff2957533546aa92b397ed",
+              "4e26116e5f9800cef90c8f8c38de2584",
+              "fb5126fe9992e13156c636d726cec257",
+              "179ad5f75c84c4bddd6733c66b6b0bb7",
+              "354cea2b99f8b1f745ea6092eefa2bd7"
+            ]
+          }
+        ]
+      },
+      "char_name": {
+        "_description": "Captures character names and their associated metadata from IMDb, including unique identifiers, names, surnames, and checksums.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for characters in the IMDBJoinOrderBenchmark database.",
+            "samples": [
+              6010,
+              98533,
+              98721,
+              7058,
+              99474
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores character names from various films and television shows.",
+            "samples": [
+              "U.S.S. Soldier",
+              "Chris Teigler",
+              "Frankie Mulholland",
+              "Count Rood",
+              "Keach"
+            ]
+          },
+          {
+            "name": "imdb_index",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores IMDb identifiers for characters, represented as text strings, often enclosed in quotes.",
+            "samples": [
+              " amigo de Mateo\"",
+              " medic\"",
+              " in episode...\\\"\"",
+              "DM",
+              "I"
+            ]
+          },
+          {
+            "name": "imdb_id",
+            "sql_type": "TEXT",
+            "key": "FK",
+            "description": "Foreign key linking to the imdb_ entity",
+            "samples": [
+              " 6",
+              " JEOL Microscopes\"",
+              " Baseball\"",
+              " Alter Ellerkamp",
+              " Storz\""
+            ]
+          },
+          {
+            "name": "name_pcode_nf",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique 50-character alphanumeric codes for character names.",
+            "samples": [
+              "U2436",
+              "C6232",
+              "F6525",
+              "C5363",
+              "K2"
+            ]
+          },
+          {
+            "name": "surname_pcode",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores surname initials encoded as five-digit codes for characters in the IMDBJoinOrderBenchmark database.",
+            "samples": [
+              "S436",
+              "T246",
+              "M453",
+              "R3",
+              "V23"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores MD5 hashes of character names.",
+            "samples": [
+              "ff2690cc3b3b8486ecc17fc597bc9d47",
+              "3b77037f2161dae4d2d860a2cf66291b",
+              "9b43f308c87dbac17adb9f4fc9137c4f",
+              "10c0099f53636b7a10e36ecd2b12b510",
+              "557f7f53be50c1ee5caa2614382ec1e3"
+            ]
+          }
+        ]
+      },
+      "company_name": {
+        "_description": "Captures information about international film production companies and their unique identifiers.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for various IMDB companies.",
+            "samples": [
+              34634,
+              63635,
+              35051,
+              23380,
+              31373
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores up to 255 characters of the names of various film production companies.",
+            "samples": [
+              "Comfilm.de",
+              "Dusty Nose Productions",
+              "WTTW National Productions",
+              "Film House",
+              "AVI Group"
+            ]
+          },
+          {
+            "name": "country_code",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores ISO 3166-1 alpha-2 codes for countries associated with film companies.",
+            "samples": [
+              "[de]",
+              "[us]",
+              "[gb]",
+              "[it]",
+              "[es]"
+            ]
+          },
+          {
+            "name": "imdb_id",
+            "sql_type": "VARCHAR(10)",
+            "key": "FK",
+            "description": "Foreign key linking to the imdb_ entity",
+            "samples": [
+              "[ru]",
+              "[us]",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "name_pcode_nf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores 10-character alphanumeric codes for IMDB company names.",
+            "samples": [
+              "C5145",
+              "D2352",
+              "W3535",
+              "F452",
+              "A1261"
+            ]
+          },
+          {
+            "name": "name_pcode_sf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores a 10-character alphanumeric code for IMDB company names.",
+            "samples": [
+              "C5145",
+              "D2352",
+              "W3535",
+              "F452",
+              "A1261"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique MD5 hashes of company names.",
+            "samples": [
+              "103fec65d8a8129bfea07e4a98dfa0e5",
+              "7a9718e93925d720de807fe027665fbe",
+              "002eb2b89338ca14386743e11e7a425f",
+              "20c818c9a457fa6e902ff4b0d406525e",
+              "d90465c48c1e51f556562ad903aacdfa"
+            ]
+          }
+        ]
+      },
+      "name": {
+        "_description": "Captures actor and actress names along with associated metadata for IMDB indexing and hashing.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie names in the database.",
+            "samples": [
+              3343,
+              446,
+              126,
+              1678,
+              3610
+            ]
+          },
+          {
+            "name": "name",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores up to 255 characters of filmmakers' names, including first names with initials and surnames.",
+            "samples": [
+              "Abela, Mike",
+              "A., David",
+              "-Alverio, Esteban Rodriguez",
+              "Abbas, Athar",
+              "Aberer, Leo"
+            ]
+          },
+          {
+            "name": "imdb_index",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique identifiers for IMDb movies (II, XII, I, IV, V).",
+            "samples": [
+              "II",
+              "XII",
+              "I",
+              "IV",
+              "V"
+            ]
+          },
+          {
+            "name": "imdb_id",
+            "sql_type": "TEXT",
+            "key": "FK",
+            "description": "Foreign key linking to the imdb_ entity",
+            "samples": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "gender",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores character gender as either 'm' for male or 'f' for female (up to 10 characters).",
+            "samples": [
+              "m",
+              "f",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "name": "name_pcode_cf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores 10-character alphanumeric production codes for movie names.",
+            "samples": [
+              "A1452",
+              "A313",
+              "A4162",
+              "A1236",
+              "A164"
+            ]
+          },
+          {
+            "name": "name_pcode_nf",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores 10-character alphanumeric production codes for movie names.",
+            "samples": [
+              "M214",
+              "D13",
+              "E2315",
+              "A3612",
+              "L16"
+            ]
+          },
+          {
+            "name": "surname_pcode",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores abbreviated last names with a 10-character alphanumeric code.",
+            "samples": [
+              "A14",
+              "A",
+              "A416",
+              "A12",
+              "A16"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique MD5 hashes of movie names.",
+            "samples": [
+              "61f733c0298a7cb5a461fd787a655d70",
+              "cf45e7b42fbc800c61462988ad1156d2",
+              "f5c410bff6839b545d04c531f776e8f2",
+              "cf230f6ed718a330dc688c20b8d741d3",
+              "05684f16b84db387e613d3de57eca5b7"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+    "_meta": {
+      "domain_id": 2,
+      "domain_name": "Media Asset and Metadata Management",
+      "definition": "Activities related to managing and registering various media assets such as movies, aliases, cast types, companies, keywords, and links.",
+      "tables": [
+        "aka_title",
+        "comp_cast_type",
+        "company_type",
+        "keyword",
+        "kind_type",
+        "link_type",
+        "title"
+      ],
+      "source_schema": "schema.json"
+    },
+    "tables": {
+      "aka_title": {
+        "_description": "Captures movie aliases and variations, including title details, IMDb index, production year, and episode information.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for alternate titles of movies.",
+            "samples": [
+              13117,
+              6017,
+              32738,
+              30289,
+              27209
+            ]
+          },
+          {
+            "name": "movie_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the movie_ entity",
+            "samples": [
+              833595,
+              393076,
+              1662042,
+              1651366,
+              1639798
+            ]
+          },
+          {
+            "name": "title",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores movie/TV show titles in various languages.",
+            "samples": [
+              "Malhação - Adolescência: A Passagem da Infância Para a Vida Adulta",
+              "Dirty Pair",
+              "Aasman",
+              "Un lac pour la prairie",
+              "28 Tage"
+            ]
+          },
+          {
+            "name": "imdb_index",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores sequential identifiers for alternate film titles (e.g., I, II, III, V, XI).",
+            "samples": [
+              "I",
+              "II",
+              "III",
+              "V",
+              "XI"
+            ]
+          },
+          {
+            "name": "kind_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the kind_ entity",
+            "samples": [
+              2,
+              1,
+              7,
+              3,
+              4
+            ]
+          },
+          {
+            "name": "production_year",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the production year for alternate titles.",
+            "samples": [
+              2011,
+              1985,
+              1952,
+              1961,
+              2000
+            ]
+          },
+          {
+            "name": "phonetic_code",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores phonetic codes for alternate film titles.",
+            "samples": [
+              "M4342",
+              "D6316",
+              "A25",
+              "L2164",
+              "T2"
+            ]
+          },
+          {
+            "name": "episode_of_id",
+            "sql_type": "VARCHAR(10)",
+            "key": "FK",
+            "description": "Foreign key linking to the episode_of_ entity",
+            "samples": [
+              "17147",
+              "17787",
+              "4243",
+              "24748",
+              "14723"
+            ]
+          },
+          {
+            "name": "season_nr",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the number of television series seasons associated with a title.",
+            "samples": [
+              1,
+              3,
+              11,
+              2,
+              4
+            ]
+          },
+          {
+            "name": "episode_nr",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores episode numbers for alternate titles of media content.",
+            "samples": [
+              13,
+              1,
+              3,
+              179,
+              5
+            ]
+          },
+          {
+            "name": "note",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores alternative titles or translations for films in various languages.",
+            "samples": [
+              "(Brazil) (nineteenth season title)",
+              "(USA)",
+              "(India: Hindi title) (alternative transliteration)",
+              "(Canada: French title)",
+              "(Germany)"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique 128-bit hash digests of title alternative names.",
+            "samples": [
+              "320b4fa8ae74411e55cde509d9883e9c",
+              "f77196370d0815fd72eb57ea2896c0e3",
+              "98743dd72fbc5135079ea0e658deee3d",
+              "ff3bbe8a003d03d7bbc55c55f464ce0b",
+              "107c90b89a3dc3b296453e3d57a9ab36"
+            ]
+          }
+        ]
+      },
+      "comp_cast_type": {
+        "_description": "Records movie cast member roles and their types (e.g., actor, director, producer).",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for different types of cast members (e.g., lead, supporting, guest) in the IMDBJoinOrderBenchmark database.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              null
+            ]
+          },
+          {
+            "name": "kind",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores type of IMDB entity (cast or crew) and status (complete or complete+verified).",
+            "samples": [
+              "cast",
+              "crew",
+              "complete",
+              "complete+verified",
+              null
+            ]
+          }
+        ]
+      },
+      "company_type": {
+        "_description": "Records various types of companies in the IMDBJoinOrderBenchmark database.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for different types of companies (1, 2, 3, 4).",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              null
+            ]
+          },
+          {
+            "name": "kind",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores types of companies involved in film production, such as distributors, production, special effects, and miscellaneous.",
+            "samples": [
+              "distributors",
+              "production companies",
+              "special effects companies",
+              "miscellaneous companies",
+              null
+            ]
+          }
+        ]
+      },
+      "keyword": {
+        "_description": "Stores unique keywords and their phonetic codes for efficient search and recommendation of movie titles and actors.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie keywords (e.g., genres, themes) within the IMDBJoinOrderBenchmark database.",
+            "samples": [
+              2068,
+              157,
+              8309,
+              1059,
+              3991
+            ]
+          },
+          {
+            "name": "keyword",
+            "sql_type": "VARCHAR(255)",
+            "key": "",
+            "description": "Stores descriptive phrases or terms associated with movies or TV shows.",
+            "samples": [
+              "handcuffed-to-a-bed",
+              "jane-austen",
+              "narcotic",
+              "woods",
+              "hanging"
+            ]
+          },
+          {
+            "name": "phonetic_code",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores phonetic representations (H5321, J5235, etc.) of movie keywords for search and matching purposes.",
+            "samples": [
+              "H5321",
+              "J5235",
+              "N6232",
+              "W32",
+              "H5252"
+            ]
+          }
+        ]
+      },
+      "kind_type": {
+        "_description": "Records movie genre types and their respective identifiers.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for different types of movie genres.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "kind",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores type of media content: movie, TV series, TV movie, video movie, TV mini series.",
+            "samples": [
+              "movie",
+              "tv series",
+              "tv movie",
+              "video movie",
+              "tv mini series"
+            ]
+          }
+        ]
+      },
+      "link_type": {
+        "_description": "Records various types of relationships between entities in the IMDBJoinOrderBenchmark database.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for different types of relationships between entities in the IMDBJoinOrderBenchmark database.",
+            "samples": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "link",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores relationship types between movies (e.g., follows, remake of, references).",
+            "samples": [
+              "follows",
+              "followed by",
+              "remake of",
+              "remade as",
+              "references"
+            ]
+          }
+        ]
+      },
+      "title": {
+        "_description": "Captures information about individual movies and TV episodes, including their metadata, IMDb index, production year, and series details.",
+        "columns": [
+          {
+            "name": "id",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores unique identifiers for movie titles.",
+            "samples": [
+              80889,
+              5156,
+              197772,
+              111913,
+              117556
+            ]
+          },
+          {
+            "name": "title",
+            "sql_type": "TEXT",
+            "key": "",
+            "description": "Stores movie/TV show titles, along with some containing numbers or dates.",
+            "samples": [
+              "(#1.66)",
+              "Josie Duggar's 1st Shoes",
+              "(#2.8)",
+              "(2012-09-13)",
+              "(#1.1042)"
+            ]
+          },
+          {
+            "name": "imdb_index",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique IMDb identifiers for movie titles, represented as Roman numerals or codes by Danny Pardo.",
+            "samples": [
+              "II",
+              " Danny Pardo",
+              "I",
+              "III",
+              "IV"
+            ]
+          },
+          {
+            "name": "kind_id",
+            "sql_type": "VARCHAR(50)",
+            "key": "FK",
+            "description": "Foreign key linking to the kind_ entity",
+            "samples": [
+              "7",
+              "2",
+              " and Breanne Silvi\"",
+              " Jill Scott\"",
+              "1"
+            ]
+          },
+          {
+            "name": "production_year",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the year a movie was produced.",
+            "samples": [
+              1980,
+              2010,
+              1962,
+              2012,
+              1971
+            ]
+          },
+          {
+            "name": "imdb_id",
+            "sql_type": "INT",
+            "key": "FK",
+            "description": "Foreign key linking to the imdb_ entity",
+            "samples": [
+              7,
+              1997,
+              2008,
+              1951,
+              2012
+            ]
+          },
+          {
+            "name": "phonetic_code",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores phonetic representations (J2326, A5162, etc.) for movie titles.",
+            "samples": [
+              "J2326",
+              "A5162",
+              "M4312",
+              "K2523",
+              "B2314"
+            ]
+          },
+          {
+            "name": "episode_of_id",
+            "sql_type": "VARCHAR(10)",
+            "key": "FK",
+            "description": "Foreign key linking to the episode_of_ entity",
+            "samples": [
+              "80815",
+              "5022",
+              "197751",
+              "111095",
+              "117506"
+            ]
+          },
+          {
+            "name": "season_nr",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores numeric representation of television series seasons.",
+            "samples": [
+              "1",
+              "4",
+              "2",
+              "13",
+              "8"
+            ]
+          },
+          {
+            "name": "episode_nr",
+            "sql_type": "INT",
+            "key": "",
+            "description": "Stores the episode number within a TV series title.",
+            "samples": [
+              66,
+              13,
+              8,
+              1042,
+              9
+            ]
+          },
+          {
+            "name": "series_years",
+            "sql_type": "VARCHAR(10)",
+            "key": "",
+            "description": "Stores multiple years (separated by hyphens) for TV series episodes or seasons.",
+            "samples": [
+              "2004-????",
+              "1992-????",
+              "2005-????",
+              "1987-1988",
+              "1991-????"
+            ]
+          },
+          {
+            "name": "md5sum",
+            "sql_type": "VARCHAR(50)",
+            "key": "",
+            "description": "Stores unique 128-bit hash digests of movie titles.",
+            "samples": [
+              "4de45f35edf0b753c54ab72dcbe68bb5",
+              "8d492850166137b550ceb0e9a5b46086",
+              "152b0f7213dd467760823b0d6387a6ec",
+              "daf144630ef1ab1cd5d1d028b406cdcf",
+              "be62adfea75e456d47ddab5c68ac96b0"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

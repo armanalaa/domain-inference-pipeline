@@ -1,0 +1,269 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Awards and Recognition Management",
+    "definition": "Unifies the tables related to determining, managing, and recording awards for players.",
+    "tables": [
+      "AwardsManagers",
+      "AwardsPlayers",
+      "AwardsShareManagers",
+      "AwardsSharePlayers",
+      "CollegePlaying"
+    ],
+    "phi_scores": {
+      "C12": 0.4088,
+      "C4": 0.3993,
+      "C15": 0.3697,
+      "C13": 0.3654,
+      "C9": 0.3654,
+      "C1": 0.3649,
+      "C3": 0.3392,
+      "C5": 0.3228,
+      "C10": 0.2758,
+      "C11": 0.2715,
+      "C2": 0.2391,
+      "C8": 0.2388,
+      "C7": 0.2373,
+      "C6": 0.2003,
+      "C14": 0.1786
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Player and Statistical Data Management",
+    "definition": "The process of maintaining, updating, collecting, and analyzing player data and statistics.",
+    "tables": [
+      "People"
+    ],
+    "phi_scores": {
+      "C1": 0.3263,
+      "C3": 0.2991,
+      "C5": 0.2952,
+      "C15": 0.2722,
+      "C8": 0.2555,
+      "C10": 0.2479,
+      "C2": 0.2108,
+      "C11": 0.1949,
+      "C12": 0.1811,
+      "C4": 0.1781,
+      "C7": 0.1734,
+      "C9": 0.1686,
+      "C14": 0.1624,
+      "C13": 0.1516,
+      "C6": 0.1463
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Player Awards and Recognition Management",
+    "definition": "The process of managing awards, nominations, and recognitions for players based on their performance.",
+    "tables": [
+      "HallOfFame"
+    ],
+    "phi_scores": {
+      "C12": 0.3635,
+      "C1": 0.3596,
+      "C4": 0.3242,
+      "C3": 0.3151,
+      "C15": 0.3105,
+      "C5": 0.3061,
+      "C9": 0.297,
+      "C10": 0.2926,
+      "C13": 0.2797,
+      "C11": 0.2627,
+      "C8": 0.2553,
+      "C7": 0.2256,
+      "C2": 0.2199,
+      "C14": 0.1852,
+      "C6": 0.1736
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Baseball Performance and Team Management",
+    "definition": "The process of recording, analyzing, and managing baseball player performance statistics, team statistics, and team management details.",
+    "tables": [
+      "Batting",
+      "BattingPost",
+      "Managers",
+      "ManagersHalf",
+      "Pitching",
+      "PitchingPost",
+      "Teams",
+      "TeamsHalf"
+    ],
+    "phi_scores": {
+      "C15": 0.4405,
+      "C3": 0.4391,
+      "C5": 0.4039,
+      "C1": 0.3947,
+      "C2": 0.2979,
+      "C11": 0.287,
+      "C10": 0.2834,
+      "C7": 0.2749,
+      "C8": 0.2593,
+      "C12": 0.2503,
+      "C6": 0.2467,
+      "C13": 0.2313,
+      "C4": 0.2304,
+      "C9": 0.1965,
+      "C14": 0.1831
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "Baseball Player Performance and Statistical Data Management",
+    "definition": "The process of recording, analyzing, and managing baseball player performance statistics, fielding data, and salaries.",
+    "tables": [
+      "AllstarFull",
+      "Appearances",
+      "Fielding",
+      "FieldingOF",
+      "FieldingOFsplit",
+      "FieldingPost",
+      "Salaries"
+    ],
+    "phi_scores": {
+      "C3": 0.486,
+      "C15": 0.4181,
+      "C1": 0.4168,
+      "C5": 0.3977,
+      "C2": 0.3222,
+      "C10": 0.3094,
+      "C11": 0.3024,
+      "C8": 0.2854,
+      "C12": 0.2708,
+      "C7": 0.2692,
+      "C4": 0.2528,
+      "C13": 0.2473,
+      "C6": 0.2158,
+      "C9": 0.2091,
+      "C14": 0.1851
+    }
+  },
+  {
+    "domain_id": 5,
+    "domain_name": "Baseball Team and Player Data Management",
+    "definition": "The process of managing data related to schools, players, games, awards, and team statistics.",
+    "tables": [
+      "Schools"
+    ],
+    "phi_scores": {
+      "C1": 0.3523,
+      "C14": 0.338,
+      "C5": 0.286,
+      "C7": 0.2767,
+      "C15": 0.2734,
+      "C10": 0.2732,
+      "C3": 0.2607,
+      "C11": 0.2202,
+      "C8": 0.2126,
+      "C12": 0.202,
+      "C2": 0.1899,
+      "C4": 0.1892,
+      "C6": 0.187,
+      "C9": 0.1769,
+      "C13": 0.1549
+    }
+  },
+  {
+    "domain_id": 6,
+    "domain_name": "Baseball Team and Player Data Governance",
+    "definition": "The process of managing, maintaining, and governing data related to teams, players, awards, statistics, and other baseball-related information.",
+    "tables": [
+      "TeamsFranchises"
+    ],
+    "phi_scores": {
+      "C15": 0.4823,
+      "C1": 0.4795,
+      "C10": 0.4042,
+      "C5": 0.3959,
+      "C3": 0.3638,
+      "C6": 0.3579,
+      "C7": 0.3569,
+      "C12": 0.2966,
+      "C11": 0.2951,
+      "C8": 0.2909,
+      "C2": 0.2689,
+      "C4": 0.2612,
+      "C13": 0.2307,
+      "C14": 0.2213,
+      "C9": 0.2115
+    }
+  },
+  {
+    "domain_id": 7,
+    "domain_name": "Baseball Performance and Team Analysis",
+    "definition": "The process of recording, analyzing, and comparing team and player statistics in baseball.",
+    "tables": [
+      "SeriesPost"
+    ],
+    "phi_scores": {
+      "C15": 0.4211,
+      "C3": 0.3784,
+      "C5": 0.3776,
+      "C1": 0.3563,
+      "C11": 0.3096,
+      "C12": 0.279,
+      "C7": 0.2732,
+      "C4": 0.2728,
+      "C2": 0.2701,
+      "C13": 0.2665,
+      "C10": 0.2563,
+      "C8": 0.2527,
+      "C6": 0.2508,
+      "C9": 0.2322,
+      "C14": 0.1607
+    }
+  },
+  {
+    "domain_id": 8,
+    "domain_name": "Baseball Game and Statistical Data Management",
+    "definition": "The process of managing game details, player statistics, fielding statistics, and team analysis for baseball games.",
+    "tables": [
+      "HomeGames"
+    ],
+    "phi_scores": {
+      "C1": 0.4106,
+      "C15": 0.3917,
+      "C3": 0.3833,
+      "C5": 0.3811,
+      "C7": 0.3681,
+      "C11": 0.3066,
+      "C10": 0.3056,
+      "C2": 0.2914,
+      "C8": 0.2676,
+      "C12": 0.2382,
+      "C4": 0.2376,
+      "C6": 0.2299,
+      "C13": 0.2154,
+      "C14": 0.2021,
+      "C9": 0.1846
+    }
+  },
+  {
+    "domain_id": 9,
+    "domain_name": "Stadium and Park Management",
+    "definition": "The process of managing stadiums and parks information, including their details, locations, and updates.",
+    "tables": [
+      "Parks"
+    ],
+    "phi_scores": {
+      "C7": 0.4451,
+      "C1": 0.3931,
+      "C3": 0.3333,
+      "C5": 0.317,
+      "C10": 0.3022,
+      "C15": 0.2759,
+      "C11": 0.2328,
+      "C8": 0.2265,
+      "C2": 0.206,
+      "C4": 0.2021,
+      "C12": 0.2004,
+      "C14": 0.1958,
+      "C6": 0.179,
+      "C13": 0.1694,
+      "C9": 0.1688
+    }
+  }
+]

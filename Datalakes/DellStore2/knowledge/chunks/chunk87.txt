@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column when products are received or shipped.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, record their contact information in the customers table, and follow up on leads.
+- Customer service agents assist existing customers with queries, update customer details as necessary, and log interactions in the cust_hist table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Team
+
+Activity:
+- Sales representatives create new orders for customers by referencing the customers and inventory tables.
+- Warehouse staff pick and pack items based on orderlines and update the quan_in_stock column accordingly.
+- Finance team records the netamount, tax, and totalamount for each order in the orders table.
+
+## 4. Inventory Replenishment
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders to suppliers based on reorder data from the reorder table.
+- Warehouse staff receive and store new inventory items, updating the quan_in_stock column as needed.
+
+## 5. Financial Reporting
+
+Performed By: Finance Team
+
+Activity:
+- Finance team generates financial reports by querying the orders and customers tables for relevant data.
+
+## 6. Data Governance and Compliance
+
+Performed By: IT Department, Compliance Officers
+
+Activity:
+- IT department ensures that sensitive customer information is securely stored in the customers table and properly encrypted.
+- Compliance officers monitor access to sensitive data and log any potential breaches or unauthorized activity.
+
+## 7. Data Analysis and Insights
+
+Performed By: Data Analysts, Marketing Team
+
+Activity:
+- Data analysts extract insights from the orders, customers, and inventory tables using various analytical techniques.
+- Marketing team uses these insights to develop targeted marketing campaigns and strategies.

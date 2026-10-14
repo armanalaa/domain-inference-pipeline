@@ -1,0 +1,47 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and the call center's needs (cc_employees).
+- HR managers update employee records with personal details, qualifications, and performance evaluations (cc_name, cc_company, cc_division, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Market Managers
+
+Activity:
+- Call center employees answer incoming calls and assist customers with their inquiries or issues (cc_call_center_id).
+- Market managers oversee call center operations, monitor performance metrics, and make decisions to optimize service quality (cc_hours, cc_tax_percentage).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers add new items to the catalog by providing product details such as name, category, and list price (cp_catalog_number, cp_description, etc.).
+- Marketing managers update marketing information for each call center, including market class, description, and manager (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process new orders by entering customer details, item selections, and shipping information (cr_item_sk, cr_refunded_customer_sk, etc.).
+- Warehouse staff track inventory levels and fulfill orders by selecting appropriate warehouses for each order line (cr_warehouse_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process returns by recording return reasons, refunded customer details, and shipping modes (cr_reason_sk, cr_ship_mode_sk).
+
+## 6. Payment Processing
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record payments by entering payment transaction details, customer selections, and remote warehouse numbers (cr_order_number, cr_returning_addr_sk, etc.).

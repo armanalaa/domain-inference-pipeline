@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "Reservation Management",
+    "definition": "The process of managing airline reservations, including booking, seat allocation, passenger information, and pricing.",
+    "tables": [
+      "booking"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 5,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "booking": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "booking_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in booking",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "flight_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the flight_ entity",
+          "samples": [
+            3863,
+            12143,
+            12153,
+            12157,
+            28412
+          ]
+        },
+        {
+          "name": "seat",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores aircraft seat identifiers in a format of alphabetical row (e.g., F, E) and numerical column (e.g., 25, 24).",
+          "samples": [
+            "N",
+            "25F",
+            "25E",
+            "24D",
+            "24G"
+          ]
+        },
+        {
+          "name": "passenger_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the passenger_ entity",
+          "samples": [
+            2947,
+            20814,
+            33340,
+            21401,
+            24581
+          ]
+        },
+        {
+          "name": "price",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores booking prices in floating point format.",
+          "samples": [
+            110.1,
+            173.1,
+            323.15,
+            445.85,
+            198.32
+          ]
+        }
+      ]
+    }
+  }
+}

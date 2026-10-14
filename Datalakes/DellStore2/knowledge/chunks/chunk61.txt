@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products arrive or existing ones are sold.
+
+## 2. Customer Relationship Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, providing product information and handling orders.
+- Customer service agents assist existing customers with inquiries, returns, or complaints.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create new orders for customers based on their preferences and inventory availability.
+- Warehouse staff prepare and ship the ordered items to the customer's specified address.
+- The finance department records the order details, calculates the net amount, tax, and total amount.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels when products are sold or received.
+- Purchasing teams order new stock when the quantity in stock falls below a predetermined threshold.
+
+## 5. Reordering and Forecasting
+
+Performed By: Inventory Managers, Data Analysts
+
+Activity:
+- Inventory managers monitor inventory levels and reorder products based on historical sales data and forecasted demand.
+- Data analysts analyze sales trends to improve inventory management and forecasting accuracy.
+
+## 6. Customer History Tracking
+
+Performed By: Marketing Department, Sales Representatives
+
+Activity:
+- The marketing department uses customer history data to segment customers for targeted promotions.
+- Sales representatives access customer history to understand each customer's preferences and purchasing behavior.
+
+## 7. Account Management
+
+Performed By: Finance Department, Customer Service Agents
+
+Activity:
+- The finance department manages customer accounts, including credit card information, billing, and payments.
+- Customer service agents assist customers with account-related inquiries or issues.

@@ -1,0 +1,67 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the number of staff needed (cc_employees).
+- HR managers onboard new hires by recording their personal details (cc_name, cc_company_name, cc_street_number, etc.).
+- Call center managers assign roles and responsibilities to each employee.
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff answer incoming calls during operational hours (cc_hours).
+- They record call details such as start date, end date, and closed date (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+- Staff members categorize calls based on the nature of the inquiry or issue (cc_class).
+
+## 3. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers determine market class and description for each call center (cc_mkt_id, cc_mkt_class, cc_mkt_desc).
+- Call center managers assign a market manager to oversee the operations of specific centers within their division (cc_market_manager).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Customer Returns
+
+Performed By: Customers, Call Center Staff, Warehouse Staff
+
+Activity:
+- Customers return items and receive a refund by contacting the call center (cr_returned_date_sk, cr_call_center_sk).
+- Call center staff record return details such as reason for return (cr_reason_sk) and ship mode (cr_ship_mode_sk).
+- Warehouse staff process returns by updating inventory quantities (warehouse_sk).
+
+## 6. Meeting Management
+
+Performed By: Steering Committee Chairman, Board Members
+
+Activity:
+- The Chairman presides over meetings of the Board of Directors (in-person or through video conference) (iii).
+- Board members attend meetings and participate in discussions according to meeting requirements (iv).
+- A majority of directors may adjourn any meeting to another time and place if needed (h).
+
+## 7. Decision Making without Meeting
+
+Performed By: All Directors
+
+Activity:
+- Directors take action required or permitted by the Board without a meeting, by individually or collectively consenting in writing (3.6).
+
+## 8. Director Resignation and Vacancy Filling
+
+Performed By: Administrator, Members
+
+Activity:
+- A director may resign effective on giving written notice to the administrator or the Board of Directors (3.7).
+- In case of a vacancy created by the death or resignation of a Director, the member who was represented by such Director appoints a replacement Director (3.8).

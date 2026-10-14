@@ -1,0 +1,76 @@
+ # adventure_works — Business Workflows
+
+## 1. Sales Order Creation
+
+Performed By: Sales Person
+
+Activity:
+- Registers new sales orders by entering customer details, order items, and shipping information (SalesOrderID, CustomerID, BillToAddressID, ShipToAddressID, ShippingMethodID).
+- Records the sales subtotal, tax amount, and shipping cost (SubTotal, TaxAmt, Freight).
+- Assigns an order number and status (OrderNumber, OrderDate, Status).
+- Adds comments related to the order (Comment).
+
+## 2. Customer Onboarding
+
+Performed By: HR Manager
+
+Activity:
+- Creates new customer accounts by entering financial accounting numbers (AccountNumber).
+- Assigns a customer identification number (CustomerID).
+
+## 3. Employee Hiring
+
+Performed By: HR Manager
+
+Activity:
+- Registers new employees by recording personal details, employment history, and job information (BusinessEntityID, NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag).
+- Assigns an organizational role and level (OrganizationNode, OrganizationLevel).
+
+## 4. Employee Department Assignment
+
+Performed By: HR Manager
+
+Activity:
+- Assigns employees to departments by specifying department ID, shift ID, start date, and end date (EmployeeDepartmentHistory).
+
+## 5. Employee Salary Management
+
+Performed By: Finance
+
+Activity:
+- Updates employee salaries by entering rate change dates, rates, pay frequencies, and modifies the corresponding dates (EmployeePayHistory).
+
+## 6. Product Registration
+
+Performed By: Product Manager
+
+Activity:
+- Registers new items in the catalog by recording product code, name, category, and list price (Product).
+
+## 7. Order Approval
+
+Performed By: Sales Manager
+
+Activity:
+- Reviews and approves sales orders based on status (OrderDate, Status).
+
+## 8. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Tracks inventory levels by recording product ID and quantities (ProductID, OrderQty).
+
+## 9. Shipping Process
+
+Performed By: Warehouse Staff
+
+Activity:
+- Prepares orders for shipping by specifying ship date (ShipDate).
+
+## 10. Invoice Generation
+
+Performed By: Finance
+
+Activity:
+- Generates invoices based on total due from customer (TotalDue).

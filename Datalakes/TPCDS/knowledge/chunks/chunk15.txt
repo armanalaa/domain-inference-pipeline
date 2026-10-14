@@ -1,0 +1,49 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the number of open positions and employee qualifications (cc_employees).
+- HR managers update employee records with personal details, skills, and employment history (cc_name, cc_company, cc_company_name, cc_street_number, cc_street_name, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country).
+- Call center managers set operating hours for each call center (cc_hours).
+
+## 2. Market Division Assignment
+
+Performed By: Call Center Managers, Council
+
+Activity:
+- Call center managers assign call centers to specific markets based on market size and call volume (cc_mkt_id, cc_division).
+- The council reviews and approves the division assignments during General Meetings (cc_division_name, cc_company).
+
+## 3. Call Center Classification
+
+Performed By: Call Center Managers, Council
+
+Activity:
+- Call center managers classify call centers based on their specific functions and services (cc_class).
+- The council reviews and approves the classification during General Meetings (cc_division_name, cc_company).
+
+## 4. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record return requests from customers, including the returned date and time, item SKU, and reason for return (cr_returned_date_sk, cr_returned_time_sk, cr_item_sk, cr_reason_sk).
+- Warehouse staff update inventory levels to reflect returned items (not specified in provided schema).
+
+## 6. Order Fulfillment
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process orders by selecting the appropriate shipping mode and warehouse location (cr_ship_mode_sk, cr_warehouse_sk).
+- Warehouse staff pick, pack, and ship the ordered items to the customer's specified address (not specified in provided schema).

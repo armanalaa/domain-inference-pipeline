@@ -1,0 +1,59 @@
+ # adventure_works — Business Workflows
+
+## 1. Department Management
+
+Performed By: HR Managers
+
+Activity:
+- HR managers assign departments to employees by inputting department IDs in the HumanResources.EmployeeDepartmentHistory table.
+- HR managers update employee department assignments by modifying the EndDate column in the HumanResources.EmployeeDepartmentHistory table.
+- HR managers create new departments by entering department details like name and group name into the HumanResources.Department table.
+
+## 2. Employee Onboarding
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers register new employees by recording their personal information such as name, birthdate, gender, marital status, and hire date in the HumanResources.Employee table.
+- HR managers assign employees to departments by linking department IDs from the HumanResources.Department table to the HumanResources.EmployeeDepartmentHistory table.
+- Warehouse staff issue equipment to new employees by recording equipment details like item code, name, and category in the Production.ProductInventory table and updating the EmployeeID column accordingly.
+
+## 3. Employee Salary Management
+
+Performed By: HR Managers, Finance
+
+Activity:
+- HR managers update employee salaries by modifying the Rate column in the HumanResources.EmployeePayHistory table on specific rate change dates.
+- Finance records employee salary payments by referencing the BusinessEntityID from the HumanResources.Employee table in the Financial.TransactionHistory table.
+
+## 4. Employee Address Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- HR managers update employee addresses by recording address details like line1, city, state, and postal code in the Person.Address table and linking them to the corresponding BusinessEntityID from the HumanResources.Employee table.
+- Employees update their personal addresses by providing new address information which is then recorded by HR managers as mentioned above.
+
+## 5. Employee Performance Evaluation
+
+Performed By: HR Managers, Supervisors
+
+Activity:
+- Supervisors evaluate employee performance and provide feedback to HR managers who record the evaluations in the HumanResources.EmployeePerformanceEvaluation table.
+
+## 6. Inventory Tracking
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff track inventory levels by updating item quantities in the Production.ProductInventory table.
+- Sales representatives update order statuses by referencing the OrderID from the Sales.SalesOrderHeader table in the Sales.SalesOrderDetail table.
+
+## 7. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives create new orders by recording customer details, item codes, quantities, and prices in the Sales.SalesOrderHeader and Sales.SalesOrderDetail tables.
+- Warehouse staff pick and pack items for orders by updating the OnOrderQty column in the Production.ProductInventory table.
+- Shipping clerks prepare shipments by recording shipping details like carrier, tracking number, and delivery date in the Sales.ShipMethods table and linking them to the corresponding OrderID from the Sales.SalesOrderHeader table.

@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers to specific warehouses based on the call center's market class and division (call_center).
+- Warehouse staff update the square footage of each call center within their assigned warehouse (call_center).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Employees, Sales Representatives
+
+Activity:
+- Call center employees answer incoming calls from customers and route them to appropriate sales representatives (not specified in the provided materials).
+- Sales representatives assist customers with product inquiries, place orders, and provide order details (not specified in the provided materials).
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff retrieve items from inventory based on order details received from sales representatives (not specified in the provided materials).
+- Purchasing teams issue purchase orders for new items needed to replenish inventory levels (not specified in the provided materials).
+
+## 4. Order Delivery
+
+Performed By: Warehouse Staff, Delivery Personnel
+
+Activity:
+- Warehouse staff prepare orders for delivery by packaging them and assigning a carrier (O_CARRIER_ID) to each order.
+- Delivery personnel pick up the prepared orders from the warehouse and deliver them to customers according to the assigned delivery dates (OL_DELIVERY_D).
+
+## 5. Customer Account Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers update customer records with employment details such as address and demographic information (not specified in the provided materials).
+- Finance department updates customer balances after each order is delivered and paid for by the customer (C_BALANCE).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns initiated by customers, record the reason for return (cr_reason_sk), and assign a return number (cr_returned_date_sk).
+- Warehouse staff update inventory levels after receiving returned items from customers.
+
+## 7. Reporting and Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on various aspects of the business such as sales performance, customer demographics, and delivery statistics using data from multiple tables (not specified in the provided materials).
+- Management reviews the generated reports to make informed decisions about business operations and strategy.

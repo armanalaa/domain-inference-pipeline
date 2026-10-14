@@ -1,0 +1,61 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies document adverse events related to their products.
+- Healthcare providers report adverse events they've observed in patients.
+- Both parties input event details such as patient information, event description, and product involved.
+
+## 2. Data Validation
+
+Performed By: Quality Assurance Teams
+
+Activity:
+- Quality assurance teams verify the accuracy and completeness of reported adverse events.
+- They ensure all required fields are filled out and that data conforms to established standards.
+
+## 3. Event Categorization
+
+Performed By: Adverse Event Analysts
+
+Activity:
+- Adverse event analysts categorize reported events based on their nature, severity, and potential impact.
+
+## 4. Transmission Preparation
+
+Performed By: IT Staff
+
+Activity:
+- IT staff prepare the ICH ICSR message by encoding adverse event data according to specified standards.
+
+## 5. Transmission
+
+Performed By: Electronic Data Interchange (EDI) Systems
+
+Activity:
+- EDI systems transmit the prepared ICH ICSR messages to the FDA for processing.
+
+## 6. Acknowledgement Receipt
+
+Performed By: FDA Staff
+
+Activity:
+- FDA staff receive and acknowledge receipt of transmitted ICH ICSR messages.
+
+## 7. Event Review and Analysis
+
+Performed By: FDA Adverse Event Reviewers
+
+Activity:
+- FDA adverse event reviewers assess the reported events for potential safety concerns.
+
+## 8. Risk Assessment and Communication
+
+Performed By: FDA Regulatory Teams
+
+Activity:
+- Regulatory teams evaluate the risk posed by adverse events and determine appropriate actions, such as product label updates or recall.
+- They communicate their findings to relevant parties, including pharmaceutical companies and healthcare providers.

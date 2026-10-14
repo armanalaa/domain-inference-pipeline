@@ -1,0 +1,278 @@
+{
+  "_meta": {
+    "domain_id": 3,
+    "domain_name": "Customer Profile Management",
+    "definition": "The process of managing and maintaining customer profiles, including personal information, account details, and purchasing history.",
+    "tables": [
+      "customers"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "customers": {
+      "_description": "Captures customer details including personal information, contact data, and financial information for managing online sales at DellStore2.",
+      "columns": [
+        {
+          "name": "customerid",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in customers",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "firstname",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer names, represented as alphanumeric strings of up to 10 characters.",
+          "samples": [
+            "VKUUXF",
+            "HQNMZH",
+            "JTNRNB",
+            "XMFYXD",
+            "PGDTDU"
+          ]
+        },
+        {
+          "name": "lastname",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer surnames up to 10 characters long.",
+          "samples": [
+            "ITHOMQJNYX",
+            "UNUKXHJVXB",
+            "LYYSHTQJRE",
+            "WQLQHUHLFE",
+            "ETBYBNEGUT"
+          ]
+        },
+        {
+          "name": "address1",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores detailed street addresses of customers at Dell Way.",
+          "samples": [
+            "4608499546 Dell Way",
+            "5119315633 Dell Way",
+            "6297761196 Dell Way",
+            "9862764981 Dell Way",
+            "2841895775 Dell Way"
+          ]
+        },
+        {
+          "name": "address2",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores additional customer address information (if provided).",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores city names up to 10 characters long, possibly abbreviated.",
+          "samples": [
+            "QSDPAGD",
+            "YNCERXJ",
+            "LWVIFXJ",
+            "HOKEXCD",
+            "RZQTCDN"
+          ]
+        },
+        {
+          "name": "state",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores two-letter abbreviations for U.S. states of customers.",
+          "samples": [
+            "SD",
+            "AZ",
+            "OH",
+            "MS",
+            "IN"
+          ]
+        },
+        {
+          "name": "zip",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 5-digit postal codes for customers.",
+          "samples": [
+            24101,
+            11802,
+            96082,
+            78442,
+            16291
+          ]
+        },
+        {
+          "name": "country",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer countries as 50 character VARCHARs, with all provided examples being American (USA).",
+          "samples": [
+            "US",
+            "UK",
+            "Germany",
+            "France",
+            "South Africa"
+          ]
+        },
+        {
+          "name": "region",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer region IDs, all set to 1 in these samples.",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "email",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique email addresses of Dell customers.",
+          "samples": [
+            "ITHOMQJNYX@dell.com",
+            "UNUKXHJVXB@dell.com",
+            "LYYSHTQJRE@dell.com",
+            "WQLQHUHLFE@dell.com",
+            "ETBYBNEGUT@dell.com"
+          ]
+        },
+        {
+          "name": "phone",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer phone numbers as 10-digit integers.",
+          "samples": [
+            4608499546,
+            5119315633,
+            6297761196,
+            9862764981,
+            2841895775
+          ]
+        },
+        {
+          "name": "creditcardtype",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer credit card type identifiers (1: Visa, 4: Mastercard, 5: Amex, 3: Discover)",
+          "samples": [
+            1,
+            4,
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "creditcard",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 15-digit customer credit card numbers.",
+          "samples": [
+            1979279217775911,
+            3144519586581737,
+            8728086929768325,
+            7160005148965866,
+            8377095518168063
+          ]
+        },
+        {
+          "name": "creditcardexpiration",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores credit card expiration dates in YYYY/MM format.",
+          "samples": [
+            "2012/03",
+            "2012/11",
+            "2010/12",
+            "2009/09",
+            "2010/10"
+          ]
+        },
+        {
+          "name": "username",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores usernames up to 10 characters for customer accounts.",
+          "samples": [
+            "user1",
+            "user2",
+            "user3",
+            "user4",
+            "user5"
+          ]
+        },
+        {
+          "name": "\"password\"",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores encrypted customer passwords of maximum 10 characters.",
+          "samples": [
+            "password",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "age",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer ages as integers, ranging from 21 to 80 years.",
+          "samples": [
+            55,
+            80,
+            47,
+            44,
+            21
+          ]
+        },
+        {
+          "name": "income",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer's annual income as integer values, typically in thousands of dollars.",
+          "samples": [
+            100000,
+            40000,
+            20000,
+            60000,
+            80000
+          ]
+        },
+        {
+          "name": "gender",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer gender data as either 'M' for male or 'F' for female (up to 10 characters).",
+          "samples": [
+            "M",
+            "F",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "domain_id": 8,
+    "domain_name": "Payment and Transaction Management",
+    "definition": "The process of managing credit card information, purchase orders, shopping carts, sales transactions, and financial records related to payments and transactions.",
+    "tables": [
+      "Sales CreditCard"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 6,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Sales CreditCard": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "CreditCardID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Sales CreditCard",
+          "samples": [
+            144,
+            243,
+            362,
+            444,
+            473
+          ]
+        },
+        {
+          "name": "CardType",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores credit card type, consistently Distinguish in this database.",
+          "samples": [
+            "Distinguish",
+            "ColonialVoice",
+            "SuperiorCard",
+            "Vista",
+            null
+          ]
+        },
+        {
+          "name": "CardNumber",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 16-digit credit card numbers in numeric format.",
+          "samples": [
+            55552263625446,
+            55554566989903,
+            55553141509249,
+            55551030969773,
+            55559166090565
+          ]
+        },
+        {
+          "name": "ExpMonth",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the expiration month for credit cards in Sales transactions.",
+          "samples": [
+            3,
+            8,
+            9,
+            6,
+            1
+          ]
+        },
+        {
+          "name": "ExpYear",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the expiration year of credit cards associated with sales transactions.",
+          "samples": [
+            2007,
+            2008,
+            2006,
+            2005,
+            null
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores date and time of credit card sales modifications.",
+          "samples": [
+            "2014-01-18 00:00:00.000",
+            "2014-02-23 00:00:00.000",
+            "2014-06-05 00:00:00.000",
+            "2014-06-12 00:00:00.000",
+            "2013-09-06 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

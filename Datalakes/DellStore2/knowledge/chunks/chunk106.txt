@@ -1,0 +1,50 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for new products based on inventory levels and sales forecasts.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- HR managers create customer profiles containing personal information, credit card details, and contact information.
+- Customers place orders by selecting products, specifying quantities, and providing shipping details.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff retrieve ordered items from inventory based on order details.
+- Sales representatives confirm order fulfillment and update order status in the system.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating quan_in_stock for each product.
+- Purchasing teams reorder products when the quantity falls below the specified threshold (quan_low).
+
+## 5. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on product prices and quantities.
+- Finance teams record financial transactions related to orders in the appropriate columns of the orders table.
+
+## 6. Data Governance
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators ensure data quality by validating and cleaning customer and product data.
+- IT administrators document data lineage, data quality, and data catalog information for the DellStore2 database.

@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "AirlineInfrastructureManagement",
+    "definition": "The process of managing the infrastructure related to airlines, including airline registration, updates, and base airport management.",
+    "tables": [
+      "airline"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "airline": {
+      "_description": "Tracks airline details, including unique identifiers, IATA codes, names, and their base airports.",
+      "columns": [
+        {
+          "name": "airline_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in airline",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "iata",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the 2-letter IATA codes for airlines.",
+          "samples": [
+            "AF",
+            "AL",
+            "AM",
+            "AN",
+            "AR"
+          ]
+        },
+        {
+          "name": "airlinename",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of airline names from various countries.",
+          "samples": [
+            "Afghanistan Airlines",
+            "Albania Airlines",
+            "American Samoa Airli",
+            "Angola Airlines",
+            "Argentina Airlines"
+          ]
+        },
+        {
+          "name": "base_airport",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores airport identification codes for airline base locations.",
+          "samples": [
+            850,
+            10274,
+            9210,
+            190,
+            285
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+table,domain_id,domain_name
+geo_desert,0,Geographical Information Management
+geo_estuary,0,Geographical Information Management
+geo_island,0,Geographical Information Management
+geo_lake,0,Geographical Information Management
+geo_river,0,Geographical Information Management
+geo_sea,0,Geographical Information Management
+geo_source,0,Geographical Information Management
+located,0,Geographical Information Management
+locatedOn,0,Geographical Information Management
+mountainOnIsland,0,Geographical Information Management
+organization,0,Geographical Information Management
+city,1,Geospatial Data Management
+ethnicGroup,1,Geospatial Data Management
+geo_mountain,1,Geospatial Data Management
+language,1,Geospatial Data Management
+province,1,Geospatial Data Management
+religion,1,Geospatial Data Management
+continent,2,Geographical Feature Management
+country,2,Geographical Feature Management
+desert,2,Geographical Feature Management
+islandIn,2,Geographical Feature Management
+lake,2,Geographical Feature Management
+river,2,Geographical Feature Management
+sea,2,Geographical Feature Management
+mergesWith,3,Territory Administration
+economy,4,Economic Indicator Management
+population,5,Demographic Data Management
+politics,6,Nation Administration
+isMember,7,Nation Membership Management

@@ -1,0 +1,42 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Pharmaceutical Companies' Safety Officers, Regulatory Agencies' ICSR Processing Teams
+
+Activity:
+- Safety officers compile adverse event details and submit individual case safety reports (ICSRs) to regulatory agencies. (icsr_submission)
+- Regulatory teams verify the receipt of ICSRs and acknowledge their successful loading into the database. (receipt_acknowledgement)
+- In case of errors, regulatory teams provide specific error messages for rectification. (error_message)
+
+## 2. Error Handling and Resubmission
+
+Performed By: Pharmaceutical Companies' IT Support, Regulatory Agencies' ICSR Processing Teams
+
+Activity:
+- Upon receiving error messages, pharmaceutical companies' IT support rectifies the issues and resubmits the ICSRs. (error_rectification)
+- Regulatory teams reprocess the corrected ICSRs and update their status in the database. (icsr_reprocessing)
+
+## 3. ICSR Acknowledgment Generation
+
+Performed By: Regulatory Agencies' Automated Systems, Regulatory Agencies' ICSR Processing Teams
+
+Activity:
+- Upon successful loading of ICSRs, automated systems generate acknowledgement messages for each submitted report. (acknowledgement_generation)
+- Regulatory teams review the generated acknowledgements and ensure their accuracy before sending them back to the pharmaceutical companies. (acknowledgement_review)
+
+## 4. ICSR Database Management
+
+Performed By: Regulatory Agencies' Database Administrators
+
+Activity:
+- Database administrators maintain the database structure and ensure its integrity, allowing for efficient storage of ICSRs. (database_management)
+- Database administrators monitor the database for errors or inconsistencies and take corrective actions as necessary. (error_monitoring)
+
+## 5. Adverse Event Analysis
+
+Performed By: Regulatory Agencies' Safety Officers, Data Analysts
+
+Activity:
+- Safety officers and data analysts analyze the stored ICSRs to identify trends, patterns, or potential safety concerns related to specific drugs or medical devices. (adverse_event_analysis)
+- Based on their findings, they may recommend further investigation or regulatory actions. (recommendation_for_investigation)

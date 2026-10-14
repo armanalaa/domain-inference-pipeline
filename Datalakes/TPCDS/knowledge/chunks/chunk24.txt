@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers with specific square footage and hours of operation based on market requirements (cc_sq_ft, cc_hours).
+- Warehouse staff update the warehouse assigned to each call center (cc_warehouse_sk).
+
+## 2. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers categorize and describe markets for new call centers (cc_mkt_class, cc_mkt_desc).
+- Call center managers associate each call center with a specific market (cc_mkt_id).
+
+## 3. Call Center Classification
+
+Performed By: Call Center Managers
+
+Activity:
+- Call center managers classify call centers based on their type or division (cc_class, cc_division).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog with a product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type).
+- Sales representatives create new pages for the catalog showcasing specific products (cp_catalog_page_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record customer returns with their respective dates and times (cr_returned_date_sk, cr_returned_time_sk).
+- Warehouse staff update the warehouse where returned items are stored (cr_warehouse_sk).
+
+## 6. Financial Obligations Settlement
+
+Performed By: Finance Department
+
+Activity:
+- Finance records financial obligations of members involved in mergers or acquisitions (cc_tax_percentage).
+
+## 7. Committee Management
+
+Performed By: TPC Board of Directors, Primary Representative
+
+Activity:
+- The TPC Board of Directors determines the membership and committee representation after a merger or acquisition (cc_mkt_id, cc_division).
+- The Primary Representative designates a single committee member in case of conflicts (cr_reason_sk).

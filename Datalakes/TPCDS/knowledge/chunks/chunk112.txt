@@ -1,0 +1,26 @@
+ # TPC-DS — Business Workflows
+
+## 1. Stock-Level Transaction Initiation
+
+Performed By: Terminal Operator
+
+Activity:
+- The terminal operator initiates the stock-level transaction by entering the warehouse and district IDs associated with the terminal.
+- The operator sets the stock level threshold at random within [10..20].
+
+## 2. Stock-Level Transaction Execution
+
+Performed By: Terminal Operator, Database System
+
+Activity:
+- The operator requests the database system to determine the number of recently sold items that have a stock level below the specified threshold.
+- The operator provides the input data (Warehouse ID, District ID, and Stock Level Threshold) to the database system.
+- The database system retrieves the next available order number for the district and selects all items on the last 20 orders for the district.
+- For each distinct item selected, the database system checks if the level of stock available at the home warehouse is below the threshold.
+
+## 3. Stock-Level Transaction Output
+
+Performed By: Terminal Operator
+
+Activity:
+- The terminal operator receives the output data (low_stock count) from the database system and displays it on the terminal screen.

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received or shipped out.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details during the onboarding process, including firstname, lastname, address, email, phone, and creditcard information.
+- Customer service agents update customer information as needed, such as address changes or contact preferences.
+- HR managers maintain employee records, which may include customerid for employees who are also customers.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Customers, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives create new orders by associating orderid with the appropriate customerid and netamount.
+- Customers place orders online or over the phone, providing necessary details like orderdate and quantity for each product.
+- Warehouse staff track quan_in_stock to ensure sufficient inventory for order fulfillment.
+- Purchasing teams issue purchase orders when inventory levels are low.
+
+## 4. Inventory Tracking
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update sales when products are sold to customers.
+- Purchasing teams monitor quan_in_stock and reorder prod_id when the quantity falls below a specified threshold (quan_low).
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack products based on orderlines, ensuring the correct quantity for each prod_id is included in each shipment.
+- Shipping teams generate shipping labels and track packages until delivery.
+
+## 6. Financial Management
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record totalamount for each order based on netamount, tax, and any applicable shipping costs.
+- They also update the creditcard information for customers as needed.
+
+## 7. Data Quality Assurance
+
+Performed By: Data Analysts, BI Teams, Data Governance Staff
+
+Activity:
+- Data analysts and BI teams run automated quality checks on DellStore2 to uncover errors, anomalies, and inconsistencies in the data.
+- They monitor and improve data quality over time by assigning fixes and crowdsource feedback from the community.

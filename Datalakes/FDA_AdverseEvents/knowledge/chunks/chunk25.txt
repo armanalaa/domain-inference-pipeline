@@ -1,0 +1,52 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies generate adverse event reports and submit them to the regulatory authority.
+- Healthcare providers document adverse events related to pharmaceuticals and forward the reports to the relevant companies.
+
+## 2. Adverse Event Report Receipt by Regulatory Authority
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- Regulatory authority staff receives adverse event reports from various sources.
+- Regulatory authority staff verifies the authenticity and completeness of each report.
+
+## 3. Adverse Event Report Parsing
+
+Performed By: Application Software Engineers
+
+Activity:
+- Application software engineers parse the received adverse event reports, correcting any errors in the SGML file.
+
+## 4. Adverse Event Report Load Validation
+
+Performed By: Application Software Engineers
+
+Activity:
+- Application software engineers validate each loaded report for data type, length, field value, and required data.
+
+## 5. Adverse Event Report Acknowledgment Generation
+
+Performed By: Application Software Engineers
+
+Activity:
+- Application software engineers generate an acknowledgment message indicating the success or failure of parsing and loading each report.
+
+## 6. Adverse Event Report Assessment by Regulatory Authority
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- Regulatory authority staff assesses the adverse event reports based on their content and potential impact.
+
+## 7. Error Correction and Re-transmission of Non-loadable Reports
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies or healthcare providers correct errors in non-loadable reports and re-submit them to the regulatory authority.

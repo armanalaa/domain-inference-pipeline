@@ -1,0 +1,64 @@
+ # TPC-DS — Business Workflows
+
+## 1. Steering Committee Management
+
+Performed By: Steering Committee Members
+
+Activity:
+- Propose annual direction statement and implementation plans for the TPC (SC_sk) by the end of each calendar year.
+- Assure that the Bylaws, Policies, and Procedures are sufficient to support the TPC’s direction and operations.
+- Select and recommend support organization(s) for the TPC to accomplish administrative, legal, and accounting functions.
+- Establish banking agreements and practices for money management for the TPC.
+- Chair General Meetings and assure that minutes of all meetings are published and accurate financial records are maintained.
+
+## 2. Subcommittee Formation and Management
+
+Performed By: Steering Committee Members, Council Members
+
+Activity:
+- Propose subcommittees and workgroups as needed, with task assignments and select members for the subcommittees.
+- Require task definition from the subcommittee chairperson within 30 days of initiation of a subcommittee.
+- Each subcommittee will present a brief report at each General Meeting.
+- Request a formal written subcommittee report on an annual basis at the final General Meeting each year.
+
+## 3. Officers of the TPC Appointment and Duties
+
+Performed By: Steering Committee Members, Council Members
+
+Activity:
+- Assign duties of officers of the TPC (President, Chief Executive Officer, Secretary, and Chief Financial Officer) as defined in the Bylaws.
+- The chairperson of the SC is the legal representative of the TPC.
+
+## 4. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff, Sales Representatives
+
+Activity:
+- Register new call centers by recording details such as name, class, employees, square footage, hours, manager, market ID, market class, market description, and market manager.
+- Track open and closed dates for each call center (cc_rec_start_date, cc_closed_date_sk, cc_open_date_sk).
+- Assign divisions and company names to each call center (cc_division, cc_company).
+
+## 5. Catalog Page Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Register new items in the catalog by recording product code, name, category, list price, and description.
+- Assign departments to each catalog page (cp_department).
+- Record the type of each catalog page (cp_type).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Record returned items with details such as returned date and time, item SKU, refunded customer SKU, reason for return, order number, and ship mode (cr_returned_date_sk, cr_item_sk, cr_reason_sk, cr_order_number, cr_ship_mode_sk).
+- Track warehouse locations where returned items are stored (cr_warehouse_sk).
+
+## 7. Address Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Record customer and employee addresses including street number, name, type, suite number, city, county, state, zip, country, and GMT offset (cc_street_number, cc_street_name, cc_street_type, cc_suite_number, cc_city, cc_county, cc_state, cc_zip, cc_country, cc_gmt_offset).
+- Record addresses for returning customers and refunded customers (cr_returning_customer_sk, cr_refunded_customer_sk, cr_returning_addr_sk, cr_refunded_addr_sk).

@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign new call centers with details like name, class, employees, square footage, hours of operation, and market information.
+- Warehouse staff update the year-to-date sales for a specific warehouse when a payment transaction is processed.
+
+## 2. District Management
+
+Performed By: District Managers
+
+Activity:
+- District managers register new districts with details such as street, city, state, zip code, and name.
+- District managers update the year-to-date sales for a specific district when a payment transaction is processed.
+
+## 3. Customer Management
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process customer payments by updating the customer's balance and recording the transaction details.
+- If a customer has a credit card, customer service representatives check if it's blocked ("BC") before processing the payment.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives register new orders with details like order ID, carrier ID, and entry date.
+- Warehouse staff track the quantity of each item ordered for a specific order.
+
+## 5. Order Status Inquiry
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives retrieve the status of a customer's orders, including order ID, carrier ID, and entry date.
+- For a specific customer, they also access details about each line item in the order, such as item ID, supplying warehouse ID, quantity, amount, and delivery date.
+
+## 6. Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price.
+- They also manage the content of the catalog pages, including department, catalog number, catalog page number, description, and type.
+
+## 7. Return Processing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives process returns by recording returned date and time, item SKU, refunded customer details, and reason for return.
+- They also update the warehouse and district's year-to-date sales when a return is processed.

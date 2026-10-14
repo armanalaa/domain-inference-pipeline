@@ -1,0 +1,5 @@
+table_i,table_j,Sim_T
+cust_hist,orderlines,0.846483
+cust_hist,orders,0.843332
+categories,products,0.775869
+inventory,reorder,0.751199

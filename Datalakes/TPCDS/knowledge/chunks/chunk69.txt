@@ -1,0 +1,43 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new employees by specifying the required skills, qualifications, and job roles. (cc_employees)
+- HR managers onboard new hires by providing training materials, work schedules, and company policies. (cc_company_name, cc_street_number, cc_street_name, cc_suite_number, cc_city, cc_county, cc_state, cc_zip)
+- Call center managers assign employees to specific call centers based on their skills and availability. (cc_call_center_sk, cc_call_center_id)
+
+## 2. Call Center Operations
+
+Performed By: Call Center Representatives
+
+Activity:
+- Call center representatives answer incoming calls from customers and provide assistance with inquiries or issues related to products or services. (cc_rec_start_date, cc_open_date_sk)
+- Representatives record customer information, such as names, contact details, and product interests, during interactions. (cc_name, cc_mkt_id, cc_catalog_page_sk)
+- They also handle complaints, process returns, or escalate issues to supervisors when necessary. (cr_returned_date_sk, cr_call_center_sk, cr_reason_sk)
+
+## 3. Market Segmentation and Strategy Development
+
+Performed By: Marketing Managers, Call Center Managers
+
+Activity:
+- Marketing managers segment the market based on demographic, geographic, or behavioral factors to target specific customer groups effectively. (cc_mkt_class, cc_market_manager)
+- Call center managers develop strategies for each market segment, such as tailoring product offerings, pricing, or promotions. (cp_catalog_page_sk, cp_department)
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price. (cp_catalog_number, cp_catalog_page_number, cp_description, cp_type)
+- Marketing managers update the product catalog with promotions, sales, or seasonal offerings to attract more customers. (cp_start_date_sk, cp_end_date_sk)
+
+## 5. Financial Management and Reporting
+
+Performed By: Finance Managers, Accountants
+
+Activity:
+- Finance managers record financial transactions, such as revenue, expenses, or taxes, for the call centers. (cc_tax_percentage)
+- Accountants generate financial reports, including balance sheets, income statements, or cash flow statements, to monitor the performance of the call centers. (Not specific table/column mentioned in the schema summary)

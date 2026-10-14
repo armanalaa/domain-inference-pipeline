@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers based on predicted demand and inventory levels.
+- Product managers update product details when necessary, such as changing the price or adding a special offer.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers, providing product information and assisting with orders.
+- Customer service agents handle customer inquiries about orders, returns, or account details.
+- New customers are registered by sales representatives, who input their personal and financial information into the customers table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives place orders for customers based on their preferences and available inventory.
+- Warehouse staff track order fulfillment by picking items from stock and preparing them for shipment.
+- The finance department records the net amount, tax, and total amount for each order in the orders table.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory table when items are added or removed from stock.
+- Purchasing teams monitor low stock levels and reorder products using the reorder table.
+
+## 5. Order Line Item Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff create order line items by associating each product with a quantity in an order.
+- Sales representatives update order line items if a customer requests changes to their order.
+
+## 6. Customer History Tracking
+
+Performed By: Sales Representatives, Marketing Department
+
+Activity:
+- Sales representatives record customer orders and interactions in the cust_hist table for future reference.
+- The marketing department analyzes customer history data to identify trends and opportunities for targeted promotions.
+
+## 7. Data Governance and Compliance
+
+Performed By: IT Administrators, Data Governance Team
+
+Activity:
+- IT administrators ensure the security and integrity of DellStore2's data by implementing access controls and backups.
+- The data governance team monitors data lineage and quality to maintain regulatory compliance and data accuracy.

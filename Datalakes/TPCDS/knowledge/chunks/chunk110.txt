@@ -1,0 +1,41 @@
+ # TPC-DS — Business Workflows
+
+## 1. Delivery Transaction Processing
+
+Performed By: Call Center Staff, Warehouse Staff
+
+Activity:
+- Call center staff process delivery transactions by entering the home warehouse number and carrier number for each order (cc_division, cc_manager, cc_mkt_id, cc_carrier_id).
+- Warehouse staff record the district number, order number, and delivery date for each order being delivered (D_ID, O_ID, OL_DELIVERY_D).
+- Call center staff queue the delivery transactions for deferred execution (cc_closed_date_sk).
+- Upon completion of a delivery transaction, warehouse staff record the time at which the transaction was queued and completed (cc_rec_start_date, cc_rec_end_date, cc_closed_date_sk).
+
+## 2. Carrier Selection
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff randomly select a carrier number within the range of 1 to 10 for each delivery transaction (cc_carrier_id).
+
+## 3. Delivery Transaction Result Recording
+
+Performed By: System Administrator
+
+Activity:
+- The system administrator records the execution information of the deferred delivery transactions into a result file (cc_closed_date_sk, O_ID, W_ID, O_CARRIER_ID).
+
+## 4. Delivery Transaction Queue Management
+
+Performed By: System Administrator
+
+Activity:
+- The system administrator manages the deferred delivery transaction queue by queuing transactions for execution and ensuring at least 90% of the business transactions complete within 80 seconds (cc_closed_date_sk).
+
+## 5. Terminal Input/Output Screen Management
+
+Performed By: Call Center Staff, System Administrator
+
+Activity:
+- The system administrator displays the input/output screen for each delivery transaction with all fields cleared except for the Warehouse field (cc_division, cc_manager).
+- Call center staff enter the required input data, which is organized as one distinct field: O_CARRIER_ID.
+- The system administrator displays all input data and the output data, which results from the queuing of the transaction (cc_carrier_id, "Delivery has been queued").

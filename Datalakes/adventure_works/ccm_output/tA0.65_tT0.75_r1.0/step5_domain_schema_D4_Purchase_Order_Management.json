@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Purchase Order Management",
+    "definition": "The process of managing purchase orders, including tracking, modification, and fulfillment.",
+    "tables": [
+      "Purchasing PurchaseOrderDetail"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "Purchasing PurchaseOrderDetail": {
+      "_description": "Tracks individual line items for purchase orders, including product details, quantities, prices, and statuses in the purchasing process.",
+      "columns": [
+        {
+          "name": "PurchaseOrderID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Purchasing PurchaseOrderDetail",
+          "samples": [
+            8,
+            56,
+            58,
+            87,
+            108
+          ]
+        },
+        {
+          "name": "PurchaseOrderDetailID",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in Purchasing PurchaseOrderDetail",
+          "samples": [
+            15,
+            123,
+            125,
+            129,
+            194
+          ]
+        },
+        {
+          "name": "DueDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores scheduled delivery dates for purchase order details.",
+          "samples": [
+            "2011-05-14 00:00:00.000",
+            "2012-02-07 00:00:00.000",
+            "2012-02-23 00:00:00.000",
+            "2012-03-22 00:00:00.000",
+            "2012-04-25 00:00:00.000"
+          ]
+        },
+        {
+          "name": "OrderQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of each item ordered in a purchase order.",
+          "samples": [
+            3,
+            4,
+            550,
+            60,
+            25
+          ]
+        },
+        {
+          "name": "ProductID",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the Product entity",
+          "samples": [
+            407,
+            375,
+            377,
+            409,
+            382
+          ]
+        },
+        {
+          "name": "UnitPrice",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the individual item prices (in decimal format) for each line item in a purchase order.",
+          "samples": [
+            43.2705,
+            41.1705,
+            39.0705,
+            36.9705,
+            45.3705
+          ]
+        },
+        {
+          "name": "LineTotal",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores individual line amounts for identical purchases in the Purchasing PurchaseOrderDetail table.",
+          "samples": [
+            129.8115,
+            123.5115,
+            117.2115,
+            110.9115,
+            136.1115
+          ]
+        },
+        {
+          "name": "ReceivedQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the quantity of each purchased item received.",
+          "samples": [
+            3,
+            550,
+            60,
+            468,
+            523
+          ]
+        },
+        {
+          "name": "RejectedQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores quantity of items rejected during purchase order detail processing.",
+          "samples": [
+            0,
+            1,
+            3,
+            125,
+            1250
+          ]
+        },
+        {
+          "name": "StockedQty",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stored are initial quantities of items in a purchase order.",
+          "samples": [
+            3,
+            550,
+            60,
+            468,
+            523
+          ]
+        },
+        {
+          "name": "ModifiedDate",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of detail row modifications within Purchasing Order transactions.",
+          "samples": [
+            "2011-05-07 00:00:00.000",
+            "2012-01-31 00:00:00.000",
+            "2012-02-16 00:00:00.000",
+            "2012-03-15 00:00:00.000",
+            "2012-04-18 00:00:00.000"
+          ]
+        }
+      ]
+    }
+  }
+}

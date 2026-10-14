@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "domain_id": 6,
+    "domain_name": "Nation Administration",
+    "definition": "The process of managing nations, including registration, updates, and diplomatic relations.",
+    "tables": [
+      "politics"
+    ],
+    "n_tables": 1,
+    "n_columns_total": 4,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "politics": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "Country",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO 3166-1 alpha-2 codes for countries in politics table.",
+          "samples": [
+            "AL",
+            "GR",
+            "MK",
+            "SRB",
+            "MNE"
+          ]
+        },
+        {
+          "name": "Independence",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the date of political independence for respective countries.",
+          "samples": [
+            "1912-11-28",
+            "1829-01-01",
+            "1991-09-17",
+            "2006-06-05",
+            "2006-06-03"
+          ]
+        },
+        {
+          "name": "Dependent",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores ISO country codes of politically dependent territories.",
+          "samples": [
+            "DK",
+            "GB",
+            "N",
+            "TJ",
+            "AUS"
+          ]
+        },
+        {
+          "name": "Government",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores political system type, ranging from emerging democracies to parliamentary republics.",
+          "samples": [
+            "emerging democracy",
+            "parliamentary republic",
+            "parliamentary democracy",
+            "republic",
+            "parliamentary democracy that retains as its heads of state a coprincipality"
+          ]
+        }
+      ]
+    }
+  }
+}

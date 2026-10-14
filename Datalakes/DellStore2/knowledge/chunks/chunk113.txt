@@ -1,0 +1,62 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for new products based on inventory levels and sales forecasts.
+- Product managers update product details when suppliers provide updated information or when product specifications change.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer contact information during lead generation and nurturing processes.
+- Customers place orders by providing shipping details, order preferences, and payment information.
+- Customer service agents handle customer inquiries related to orders, returns, or account updates.
+- HR managers maintain customer records for internal reporting and analytics purposes.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Sales Representatives, Customer Service Agents
+
+Activity:
+- Warehouse staff pick and pack items based on order details from the inventory table.
+- Sales representatives or customer service agents confirm order status with customers.
+- Warehouse staff ship orders to the specified address and update order status accordingly.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams, Sales Representatives
+
+Activity:
+- Warehouse staff track inventory levels by updating quan_in_stock for each product ID.
+- Purchasing teams issue purchase orders to replenish low stock items based on reorder data.
+- Sales representatives update sales data for each product ID when orders are fulfilled.
+
+## 5. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams calculate net amounts, taxes, and total amounts for each order based on product prices and customer location.
+- Accounting staff record financial transactions related to sales, expenses, and inventory costs in the appropriate ledgers.
+
+## 6. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team maintains business glossaries, data quality rules, and catalogs for all data assets within DellStore2.
+- They ensure data is accurate, secure, and trusted across the organization by monitoring data lineage and enforcing data quality standards.
+
+## 7. Reporting and Analytics
+
+Performed By: Data Analysts, Business Intelligence Team
+
+Activity:
+- Data analysts create reports and dashboards to provide insights into sales performance, inventory levels, customer behavior, and other key metrics.
+- Business intelligence team uses these insights to inform strategic decisions and identify opportunities for improvement.

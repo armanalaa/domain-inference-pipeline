@@ -1,0 +1,65 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Onboarding
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers register new employees by recording their national ID number, login ID, job title, birth date, marital status, gender, hire date, salaried flag, vacation hours, sick leave hours, current flag, and rowguid.
+- HR managers assign employees to departments based on organizational level and department ID.
+- Warehouse staff provide new employees with necessary equipment and workspace assignments.
+
+## 2. Employee Department Assignment Management
+
+Performed By: HR Managers, Warehouse Staff
+
+Activity:
+- HR managers update employee department history by recording the start date, end date, shift ID, and modified date when an employee moves to a new department.
+- Warehouse staff track changes in employee department assignments for proper workspace allocation.
+
+## 3. Employee Pay History Management
+
+Performed By: HR Managers, Finance Department
+
+Activity:
+- HR managers update employee pay history by recording the rate change date, rate, pay frequency, and modified date for each salary adjustment.
+- Finance department records the updated information in the employee pay history table.
+
+## 4. Employee Address Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- Employees provide their personal addresses to HR managers, who record the address line 1, address line 2, city, state province ID, postal code, spatial location, rowguid, and modified date.
+- HR managers assign an address type for each employee's address.
+
+## 5. Employee Contact Information Management
+
+Performed By: HR Managers, Employees
+
+Activity:
+- Employees provide their contact information to HR managers, who record the business entity ID, address ID, address type ID, rowguid, and modified date.
+
+## 6. Product Category Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers create new product categories by recording the category description, rowguid, and modified date.
+- Product managers assign unique identifiers (ProductCategoryID) to each product category.
+
+## 7. Product Description Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers write descriptions for products in various languages, recording the description, rowguid, and modified date.
+- Product managers assign unique identifiers (ProductDescriptionID) to each product description.
+
+## 8. Product Document Management
+
+Performed By: Product Managers, Document Department
+
+Activity:
+- Product managers link products with related documents by recording the product ID, document identification number, and modified date.
+- The document department manages the document node hierarchy for easy retrieval of product documents.

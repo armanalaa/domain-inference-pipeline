@@ -1,0 +1,58 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Pharmaceutical Companies, Healthcare Providers
+
+Activity:
+- Pharmaceutical companies submit adverse event reports to regulatory bodies by entering the report type, product details, and event description.
+- Healthcare providers document adverse events experienced by patients, including symptoms, duration, and severity.
+- Adverse event reporters attach any relevant supporting documentation, such as lab results or medical images.
+
+## 2. Case Identification and Duplicate Checking
+
+Performed By: Regulatory Body Staff
+
+Activity:
+- Regulatory body staff identify duplicate adverse event reports based on product details and event descriptions.
+- They compare new reports with existing ones to ensure no duplicates are being processed.
+
+## 3. Data Validation and Verification
+
+Performed By: Regulatory Body Staff
+
+Activity:
+- Regulatory body staff verify the accuracy and completeness of adverse event data, checking for missing or inconsistent information.
+- They validate the source of the report to ensure it is from a reliable provider.
+
+## 4. Adverse Event Coding and Classification
+
+Performed By: Regulatory Body Staff
+
+Activity:
+- Regulatory body staff assign codes to adverse events based on their nature, severity, and system affected.
+- They classify the events according to predefined categories for further analysis.
+
+## 5. Risk Assessment and Signal Detection
+
+Performed By: Regulatory Body Analysts
+
+Activity:
+- Analysts assess the risk associated with each adverse event, considering factors such as frequency, severity, and potential impact on public health.
+- They detect signals indicating a possible safety concern or product issue that may require further investigation.
+
+## 6. Signal Evaluation and Investigation
+
+Performed By: Regulatory Body Experts
+
+Activity:
+- Experts evaluate signals to determine if they represent a true safety concern or are false positives.
+- They investigate the causes, mechanisms, and potential solutions for any identified issues.
+
+## 7. Risk Management and Communication
+
+Performed By: Regulatory Body Staff, Pharmaceutical Companies
+
+Activity:
+- Regulatory body staff communicate risk management decisions to pharmaceutical companies, including any necessary label changes or product restrictions.
+- Companies update their product information and inform healthcare providers about the new safety guidelines.

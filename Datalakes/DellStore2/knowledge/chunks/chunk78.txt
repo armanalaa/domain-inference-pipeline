@@ -1,0 +1,50 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update quan_in_stock when products are received or sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives enter customer details such as firstname, lastname, address, email, phone, creditcardtype, and income during the sales process.
+- Customer service agents update contact information when customers request changes.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customers
+
+Activity:
+- Sales representatives create orders by linking customerid, orderdate, and netamount.
+- Customers place orders by specifying orderlineid, prod_id, quantity, and orderdate in the orderlines table.
+- Warehouse staff update quan_in_stock when orders are fulfilled.
+
+## 4. Inventory Control
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor sales by tracking sales in the inventory table.
+- Purchasing teams issue purchase orders based on date_low and quan_low from the reorder table.
+
+## 5. Financial Management
+
+Performed By: Finance Staff, Accounting Teams
+
+Activity:
+- Finance records totalamount for each order in the orders table.
+- Accounting teams calculate tax based on order details.
+
+## 6. Data Governance
+
+Performed By: IT Administrators, Dataedo Users
+
+Activity:
+- IT administrators ensure data quality and lineage using Dataedo's self-service analytics solution.
+- Dataedo users browse the catalog to understand data definitions and usage guidance.

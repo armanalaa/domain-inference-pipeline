@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers assign warehouse staff to specific districts based on D_ID from the DISTRICT table.
+- Warehouse staff check STOCK quantities (S_QUANTITY) for items requested by customers.
+
+## 2. District Management
+
+Performed By: District Managers, Warehouse Staff
+
+Activity:
+- District managers oversee warehouse operations within their district, using D_ID as a reference.
+- Warehouse staff update S_YTD and S_ORDER_CNT columns based on customer orders and stock levels.
+
+## 3. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives identify potential customers using C_ID from the CUSTOMER table.
+- Customer service agents assist customers with returns (cr_returned_date_sk, cr_returning_customer_sk) and refunds.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Call Center Agents
+
+Activity:
+- Sales representatives create new orders for customers based on their preferences and available stock (OL_QUANTITY).
+- Warehouse staff prepare items for shipment once orders are confirmed.
+- Call center agents update order statuses (cr_call_center_sk, cr_ship_mode_sk) as orders progress through the system.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor stock levels (S_QUANTITY) and reorder items when necessary.
+- Purchasing teams negotiate with suppliers to restock low inventory.
+
+## 6. Financial Reporting
+
+Performed By: Finance Department
+
+Activity:
+- Finance department records financial transactions (cr_amount, H_AMOUNT) related to customer orders and returns.
+
+## 7. Marketing Analysis
+
+Performed By: Marketing Managers, Data Analysts
+
+Activity:
+- Marketing managers analyze catalog page performance (cp_catalog_page_number, cp_type) to optimize product offerings.
+- Data analysts use customer data (C_ID, C_DELIVERY_CNT) to identify trends and make recommendations for future marketing strategies.

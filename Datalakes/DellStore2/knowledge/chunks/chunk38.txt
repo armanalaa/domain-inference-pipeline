@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders for stocking up on products with low quantity in inventory.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage customers by providing product information and assisting with order placement.
+- Customer service agents handle customer queries regarding orders, returns, or account details.
+
+## 3. Order Processing
+
+Performed By: Warehouse Staff, Order Processing Team
+
+Activity:
+- Order processing team verifies and confirms received orders against the customer history.
+- Warehouse staff pick and pack items based on orderlines and prepare them for shipping.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating quan_in_stock for each product.
+- Purchasing teams reorder products when the quantity falls below the specified threshold (quan_low).
+
+## 5. Financial Management
+
+Performed By: Finance Team, Accounting Department
+
+Activity:
+- Finance records net amount, tax, and total amount for each order in the orders table.
+- Accounting department generates invoices based on order details and customer information from customers.
+
+## 6. Reporting and Analytics
+
+Performed By: Data Analysts, Business Intelligence Team
+
+Activity:
+- Data analysts create reports using data from various tables (cust_hist, orders, inventory) to analyze sales trends and customer behavior.
+- Business intelligence team presents key performance indicators (KPIs) and insights to stakeholders for decision making.
+
+## 7. Compliance and Governance
+
+Performed By: Data Stewards, Compliance Officers
+
+Activity:
+- Data stewards maintain the business glossary, ensuring universal definitions of key concepts are up-to-date and consistent.
+- Compliance officers review and approve changes to the glossary, ensuring adherence to internal policies and external regulations.

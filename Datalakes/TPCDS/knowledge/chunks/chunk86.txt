@@ -1,0 +1,57 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and availability (cc_employees).
+- HR managers update employee information, including personal details and employment history (cc_name, cc_hours).
+
+## 2. Market Division Management
+
+Performed By: Market Managers, Division Managers
+
+Activity:
+- Market managers define market class and description for each call center (cc_mkt_class, cc_mkt_desc).
+- Division managers organize call centers into divisions according to geographical or operational criteria (cc_division, cc_division_name).
+
+## 3. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff answer incoming customer calls and provide assistance (cc_call_center_id).
+- Warehouse staff track inventory levels and handle product inquiries (cc_warehouse_sk).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Teams
+
+Activity:
+- Product managers register new items in the catalog with their codes, names, categories, and list prices (cp_catalog_number, cp_description, cp_type).
+- Marketing teams update product descriptions and categorization to reflect changes or promotions (cp_catalog_page_sk).
+
+## 5. Customer Interaction
+
+Performed By: Sales Representatives, Customers
+
+Activity:
+- Sales representatives assist customers in navigating the catalog pages (cp_catalog_page_number).
+- Customers place orders for specific items through the call center (cr_item_sk).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process customer returns and record return reasons (cr_reason_sk).
+- Warehouse staff update inventory levels after processing a returned item (cr_warehouse_sk).
+
+## 7. Reporting and Analytics
+
+Performed By: Finance Teams, Management
+
+Activity:
+- Finance teams record financial transactions, including tax percentages, for each call center (cc_tax_percentage).
+- Management reviews performance metrics to make informed business decisions (performance metrics defined in Clause 5).

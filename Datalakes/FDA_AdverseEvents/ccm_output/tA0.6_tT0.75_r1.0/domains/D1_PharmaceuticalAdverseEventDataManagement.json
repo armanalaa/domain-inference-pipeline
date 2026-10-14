@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "PharmaceuticalAdverseEventDataManagement",
+    "definition": "The unifying capability across all tables is the management of data related to adverse events associated with pharmaceuticals.",
+    "tables": [
+      "drug_brand_names",
+      "drug_openfda",
+      "drug_substances",
+      "drugs"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 28,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "drug_brand_names": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "drug_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in drug_brand_names",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "brand_name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores up to 255 characters of brand names for various pharmaceutical products.",
+          "samples": [
+            "XIGDUO XR",
+            "METHOTREXATE",
+            "JYLAMVO",
+            "TREXALL",
+            "RASUVO"
+          ]
+        }
+      ]
+    },
+    "drug_openfda": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "drug_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in drug_openfda",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "application_number",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identification numbers for New Drug Applications (NDA) and Abbreviated New Drug Applications (ANDA).",
+          "samples": [
+            "NDA205649",
+            "ANDA210454",
+            "ANDA201693",
+            "ANDA078252",
+            "NDA214876"
+          ]
+        },
+        {
+          "name": "generic_name",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores the names of generic drugs in a text format.",
+          "samples": [
+            "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+            "METHOTREXATE",
+            "NITROFURANTOIN",
+            "CIPROFLOXACIN",
+            "NIRAPARIB"
+          ]
+        },
+        {
+          "name": "pharm_class_cs",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores pharmaceutical class names for drugs, such as Nitrofurans, Fluoroquinolones, Estradiol Congeners.",
+          "samples": [
+            "Nitrofurans [CS]",
+            "Fluoroquinolones [CS]",
+            "Estradiol Congeners [CS]",
+            "Human Growth Hormone [CS]",
+            "Catecholamines [CS]"
+          ]
+        },
+        {
+          "name": "pharm_class_epc",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores pharmaceutical class names for drugs, often followed by EPC (Electronic Access to Adverse Event Reporting System) codes.",
+          "samples": [
+            "Folate Analog Metabolic Inhibitor [EPC]",
+            "Nitrofuran Antibacterial [EPC]",
+            "Fluoroquinolone Antibacterial [EPC]",
+            "Estrogen [EPC]",
+            "Glucose-dependent Insulinotropic Polypeptide Receptor Agonist [EPC]"
+          ]
+        },
+        {
+          "name": "product_type",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores type of human prescription drugs in this database.",
+          "samples": [
+            "HUMAN PRESCRIPTION DRUG",
+            "HUMAN OTC DRUG",
+            "CELLULAR THERAPY",
+            null,
+            null
+          ]
+        },
+        {
+          "name": "route",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the method of drug administration, such as oral or intravenous.",
+          "samples": [
+            "ORAL",
+            "INTRAVENOUS",
+            "TRANSDERMAL",
+            "SUBCUTANEOUS",
+            "TOPICAL"
+          ]
+        }
+      ]
+    },
+    "drug_substances": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "drug_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in drug_substances",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "substance_name",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores up to 255 characters of drug substance names, such as DAPAGLIFLOZIN PROPANEDIOL, METFORMIN HYDROCHLORIDE, etc.",
+          "samples": [
+            "DAPAGLIFLOZIN PROPANEDIOL",
+            "METFORMIN HYDROCHLORIDE",
+            "METHOTREXATE SODIUM",
+            "METHOTREXATE",
+            "NITROFURANTOIN"
+          ]
+        }
+      ]
+    },
+    "drugs": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "drug_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in drugs",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "safetyreportid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the safetyreport entity",
+          "samples": [
+            23688462,
+            23631092,
+            23631173,
+            23639474,
+            23566754
+          ]
+        },
+        {
+          "name": "drugcharacterization",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores numerical codes representing drug characterizations such as small molecule (1) or biologic (2).",
+          "samples": [
+            1,
+            2,
+            3,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "medicinalproduct",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores brand names of pharmaceutical products, such as XIGDUO XR, METHOTREXATE, NITROFURANTOIN, CIPROFLOXACIN, and NIRAPARIB.",
+          "samples": [
+            "XIGDUO XR",
+            "METHOTREXATE",
+            "NITROFURANTOIN",
+            "CIPROFLOXACIN",
+            "NIRAPARIB"
+          ]
+        },
+        {
+          "name": "drugbatchnumb",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique batch numbers for drugs, as demonstrated by repeated occurrence of D592967C and D656783E.",
+          "samples": [
+            "D592967C",
+            "D656783E",
+            "D700467A",
+            "D676238E",
+            "D680517A"
+          ]
+        },
+        {
+          "name": "drugauthorizationnumb",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique identification numbers for authorized drugs.",
+          "samples": [
+            "205649",
+            "217272",
+            "76037",
+            "215866",
+            "215446"
+          ]
+        },
+        {
+          "name": "drugdosagetext",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores text descriptions of drug dosages, including form (e.g., 2 X 500 MG / DAY, INTRAVAGINAL) and sometimes unknown values.",
+          "samples": [
+            "2 X 500 MG / DAY",
+            "INTRAVAGINAL",
+            "5 MG, UNKNOWN",
+            "10 MG, UNKNOWN",
+            "UNK"
+          ]
+        },
+        {
+          "name": "drugdosageform",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores various dosage forms of drugs, such as Tablets, Solutions for injection in pre-filled pens.",
+          "samples": [
+            "Tablet",
+            "Solution for injection in pre-filled pen",
+            "Oral suspension",
+            "Injection",
+            "Film-coated tablet"
+          ]
+        },
+        {
+          "name": "drugstartdate",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the starting date of drug administration in YYYYMMDD format.",
+          "samples": [
+            202306,
+            202308,
+            20200914,
+            202205,
+            20230621
+          ]
+        },
+        {
+          "name": "drugenddate",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the date (YYYYMMDD format) when a drug event ended or was reported to end.",
+          "samples": [
+            20240113,
+            20230820,
+            20230709,
+            202312,
+            20240221
+          ]
+        },
+        {
+          "name": "drugindication",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores indications for which drugs are used, such as diabetes mellitus, rheumatic disorder, urinary tract infection, and ovarian cancer metastatic.",
+          "samples": [
+            "Diabetes mellitus",
+            "Rheumatic disorder",
+            "Urinary tract infection",
+            "Ovarian cancer metastatic",
+            "Prostatitis"
+          ]
+        },
+        {
+          "name": "actiondrug",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores integer values indicating the role of a drug as an active (1), control (4), or both (5) agent in adverse event reports.",
+          "samples": [
+            4,
+            1,
+            5,
+            6,
+            2
+          ]
+        },
+        {
+          "name": "drugadditional",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores additional drug identifiers (1, 3, or 2) for multiple drugs in the database.",
+          "samples": [
+            1,
+            3,
+            2,
+            4,
+            null
+          ]
+        },
+        {
+          "name": "drugadministrationroute",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the method of drug administration (e.g., 048: oral, 065: injection, 067: topical) for each drug record.",
+          "samples": [
+            48,
+            65,
+            67,
+            58,
+            42
+          ]
+        }
+      ]
+    }
+  }
+}

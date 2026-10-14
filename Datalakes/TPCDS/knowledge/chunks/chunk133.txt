@@ -1,0 +1,55 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skills and the center's needs (cc_employees).
+- HR managers update employee information, including personal details and employment history (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff, Market Managers
+
+Activity:
+- Call center staff answer incoming calls and assist customers with their inquiries or issues (cc_call_center_id).
+- Market managers oversee call center operations, ensuring adherence to quality standards and service level agreements (cc_market_manager).
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers update the catalog with new items, providing details such as product code, name, category, and list price (cp_catalog_number, cp_description, etc.).
+- Warehouse staff track inventory levels and update them in the database when a new item is added or an existing one is sold (cr_item_sk).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by entering order details into the system (cr_order_number).
+- Warehouse staff pick and pack ordered items for shipment to customers (cr_ship_mode_sk, cr_warehouse_sk).
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns by recording return details in the system (cr_returned_date_sk, cr_reason_sk).
+- Warehouse staff process returned items, updating inventory levels and preparing them for restocking or refunding (cr_item_sk, cr_refunded_customer_sk).
+
+## 6. Performance Monitoring
+
+Performed By: System Administrators
+
+Activity:
+- System administrators monitor system performance to ensure it meets the required throughput and response times (50%, 80%, and 100% of reported throughput rate) (see Clause 5.6.2, 5.6.3, 5.6.4).
+
+## 7. Pricing and Availability Reporting
+
+Performed By: Finance Team
+
+Activity:
+- Finance team calculates the TPC-C Maximum Qualified Throughput (MQTh) rating, total 3-year pricing, and availability date for public reporting (see Clause 5.7.1).

@@ -1,0 +1,64 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Healthcare Providers, Patients, Pharmaceutical Companies
+
+Activity:
+- Healthcare providers record patient details and adverse event information.
+- Patients report their own adverse events related to medication usage.
+- Pharmaceutical companies input data from internal sources or external reports.
+
+## 2. Case Data Entry
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Data entry clerks input the received adverse event reports into the system.
+
+## 3. Case Validation and Verification
+
+Performed By: Case Validators, Medical Reviewers
+
+Activity:
+- Case validators verify the authenticity of the reported cases.
+- Medical reviewers assess the medical relevance and accuracy of the data.
+
+## 4. Case Categorization and Classification
+
+Performed By: Case Analysts
+
+Activity:
+- Case analysts categorize and classify adverse events based on their nature and severity.
+
+## 5. Data Analysis and Aggregation
+
+Performed By: Data Scientists, Statisticians
+
+Activity:
+- Data scientists analyze the aggregated data to identify trends and patterns.
+- Statisticians perform statistical analysis to determine the significance of findings.
+
+## 6. Risk Assessment and Communication
+
+Performed By: Risk Management Team, Regulatory Affairs
+
+Activity:
+- The risk management team assesses the potential risks associated with the adverse events.
+- Regulatory affairs communicate the identified risks to relevant stakeholders.
+
+## 7. Adverse Event Follow-up and Investigation
+
+Performed By: Investigators, Medical Experts
+
+Activity:
+- Investigators conduct follow-ups on reported cases for additional information.
+- Medical experts review the investigation findings and provide expert opinions.
+
+## 8. Regulatory Reporting and Compliance
+
+Performed By: Regulatory Affairs, Legal Team
+
+Activity:
+- Regulatory affairs prepare and submit reports to regulatory bodies as required.
+- The legal team ensures compliance with relevant regulations and guidelines.

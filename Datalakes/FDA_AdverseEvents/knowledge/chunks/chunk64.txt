@@ -1,0 +1,64 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: FDA Officers, Manufacturers, and Healthcare Providers
+
+Activity:
+- FDA officers review adverse event reports submitted by manufacturers or healthcare providers.
+- Manufacturers document adverse events related to their products in internal systems.
+- Healthcare providers record adverse events experienced by patients and report them to the FDA.
+- FDA officers assign unique NDC codes to each reported adverse event based on product, manufacturer, and package size.
+- Manufacturers update their internal records with the assigned NDC codes.
+
+## 2. Adverse Event Investigation
+
+Performed By: FDA Officers, Manufacturers, and Healthcare Providers
+
+Activity:
+- FDA officers investigate adverse events to determine if they are related to specific products.
+- Manufacturers collaborate with the FDA during investigations by providing product information and batch details.
+- Healthcare providers provide additional information about the adverse event and its impact on patients.
+
+## 3. Adverse Event Classification
+
+Performed By: FDA Officers
+
+Activity:
+- FDA officers classify adverse events based on their severity, type, and potential impact on public health.
+
+## 4. Adverse Event Recall Initiation
+
+Performed By: FDA Officers
+
+Activity:
+- If an adverse event is determined to be related to a specific product, the FDA initiates a recall of the affected products.
+
+## 5. Recall Information Documentation
+
+Performed By: Manufacturers and FDA Officers
+
+Activity:
+- Manufacturers document recall information in their internal systems, including affected products, reasons for recall, and corrective actions.
+- FDA officers record recall information in the FDA Recall Enterprise System (RES).
+
+## 6. Recall Information Dissemination
+
+Performed By: FDA Officers
+
+Activity:
+- FDA officers disseminate recall information to the public through various channels, including press releases and online databases.
+
+## 7. Adverse Event Analysis
+
+Performed By: Data Analysts and Researchers
+
+Activity:
+- Data analysts and researchers analyze adverse event data to identify trends, patterns, and potential risks associated with specific products or manufacturers.
+
+## 8. Adverse Event Reporting System Maintenance
+
+Performed By: IT Staff
+
+Activity:
+- IT staff maintain the FDA Adverse Events database, ensuring its accuracy, security, and accessibility for authorized users.

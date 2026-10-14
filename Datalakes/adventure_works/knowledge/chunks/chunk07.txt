@@ -1,0 +1,57 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources Managers, Warehouse Staff, Sales Representatives, Purchasing Teams
+
+Activity:
+- Human Resources managers register new employees by recording their national ID number, login ID, job title, hire date, and salaried flag.
+- Warehouse staff track employee shifts by updating the start and end times.
+- Purchasing teams issue purchase orders to vendors based on employee requests.
+- Sales representatives update employee department history when an employee transfers departments.
+
+## 2. Employee Address Management
+
+Performed By: HR Managers, Warehouse Staff, Sales Representatives
+
+Activity:
+- HR managers register new employee addresses by recording the address line1, city, state, postal code, and address type.
+- Warehouse staff update employee addresses when an employee changes location.
+- Sales representatives use employee addresses for customer relationship management.
+
+## 3. Employee Contact Management
+
+Performed By: HR Managers, Sales Representatives
+
+Activity:
+- HR managers register employee contact information by recording the contact type and person's business entity ID.
+- Sales representatives update employee contact information as needed for communication purposes.
+
+## 4. Employee Payroll Processing
+
+Performed By: Finance Department
+
+Activity:
+- Finance records employee pay history by updating rate, pay frequency, and vacation/sick leave hours.
+
+## 5. Vendor Management
+
+Performed By: Purchasing Teams
+
+Activity:
+- Purchasing teams register new vendors by recording their business entity ID and contact information.
+
+## 6. Store Management
+
+Performed By: Store Managers, Warehouse Staff
+
+Activity:
+- Store managers update store information by recording the name, start time, end time, and other relevant details.
+- Warehouse staff track inventory levels for each store location.
+
+## 7. Invoice Processing
+
+Performed By: Finance Department
+
+Activity:
+- Finance processes invoices from vendors by reviewing purchase orders and approving payments.

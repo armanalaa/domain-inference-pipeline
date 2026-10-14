@@ -1,0 +1,12 @@
+table,domain_id,domain_name
+airplane,0,Flight Management
+flight,0,Flight Management
+flightschedule,0,Flight Management
+weatherdata,1,ClimateDataManagement
+airplane_type,2,AircraftTypeManagement
+airport,3,AirportGeolocationManagement
+airport_geo,3,AirportGeolocationManagement
+airline,4,AirlineInfrastructureManagement
+passenger,5,Passenger Data Management
+passengerdetails,5,Passenger Data Management
+booking,6,Reservation Management

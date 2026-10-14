@@ -1,0 +1,79 @@
+ # adventure_works — Business Workflows
+
+## 1. Purchase Order Creation
+
+Performed By: Purchasing Team, HR Employee
+
+Activity:
+- Purchasing team members create new purchase orders by specifying vendor, shipping method, and order details (PurchaseOrderID, VendorID, ShipMethodID, OrderDate).
+- They assign the employee responsible for the purchase order (EmployeeID).
+- The HR employee enters or updates employee information related to the purchase order (BusinessEntityID, ModifiedDate).
+
+## 2. Purchase Order Approval
+
+Performed By: Purchasing Manager
+
+Activity:
+- Purchasing managers review and approve pending purchase orders by updating their status (Status).
+
+## 3. Purchase Order Detail Registration
+
+Performed By: Purchasing Team, Production Staff
+
+Activity:
+- Purchasing team members register product details for each line item in a purchase order (ProductID, LineTotal).
+- Production staff update the quantity accepted into inventory and any rejected during inspection (StockedQty, RejectedQty).
+
+## 4. Employee Onboarding
+
+Performed By: HR Manager, Finance Team
+
+Activity:
+- HR managers register new employees by recording their personal information, job title, hire date, and employment status (Name, GroupName, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag).
+- The finance team records the employee's initial salary and pay frequency (Rate, PayFrequency).
+
+## 5. Employee Department Assignment
+
+Performed By: HR Manager
+
+Activity:
+- HR managers assign employees to departments and record their start and end dates (DepartmentID, ShiftID, StartDate, EndDate).
+
+## 6. Employee Address Management
+
+Performed By: Employee, HR Assistant
+
+Activity:
+- Employees update their personal addresses by providing address details (AddressLine1, AddressLine2, City, StateProvinceID, PostalCode).
+- HR assistants manage employee addresses and record any changes (AddressTypeID, ModifiedDate).
+
+## 7. Purchase Order Tracking
+
+Performed By: Warehouse Staff, Finance Team
+
+Activity:
+- Warehouse staff track the inventory levels for each product (Quantity).
+- The finance team records any changes to the purchase order subtotal, tax amount, shipping cost, and total due to vendor (SubTotal, TaxAmt, Freight, TotalDue).
+
+## 8. Purchase Order Modification
+
+Performed By: Purchasing Team, Finance Team
+
+Activity:
+- Purchasing team members update purchase order details such as order status, shipping method, or vendor (Status, ShipMethodID, VendorID).
+- The finance team updates the purchase order subtotal, tax amount, shipping cost, and total due to vendor accordingly (SubTotal, TaxAmt, Freight, TotalDue).
+
+## 9. Employee Payroll Management
+
+Performed By: Finance Team
+
+Activity:
+- The finance team records employee salary changes and pay history (RateChangeDate, Rate).
+
+## 10. Employee Departure Processing
+
+Performed By: HR Manager, Finance Team
+
+Activity:
+- HR managers record an employee's departure by updating their current flag (CurrentFlag).
+- The finance team processes any final payroll adjustments and updates the employee's pay history (SickLeaveHours, VacationHours).

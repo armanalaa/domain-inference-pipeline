@@ -1,0 +1,61 @@
+ # Northwind — Business Workflows
+
+## 1. Company Management
+
+Performed By: Administrators, Data Entry Clerks
+
+Activity:
+- Administrators register new companies by entering the company name, contact details, and address information into the customers table.
+- Data Entry Clerks update existing company records with changes in contact information or addresses as needed.
+
+## 2. Employee Assignment
+
+Performed By: HR Managers
+
+Activity:
+- HR Managers assign employees to specific territories by matching employee IDs with corresponding territory IDs in the employee_territories table.
+
+## 3. Employee Information Management
+
+Performed By: HR Managers, Data Entry Clerks
+
+Activity:
+- HR Managers input employee details such as name, title, contact information, and employment history into the employees table.
+- Data Entry Clerks update employee records with changes in personal or professional data.
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product Managers add new items to the product catalog by recording the product code, name, category, description, and list price.
+
+## 5. Category Management
+
+Performed By: Product Managers
+
+Activity:
+- Product Managers create and manage product categories by entering category names, descriptions, and pictures in the categories table.
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales Representatives place orders for customers by specifying the required products, quantities, and shipping details in the orders table.
+- Warehouse staff track inventory levels and fulfill orders by updating the units on order and units in stock columns in the products table as needed.
+
+## 7. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Accounting Staff generate invoices for customers based on their order history, calculating total amounts due and recording them in the orders table.
+
+## 8. Shipping Coordination
+
+Performed By: Warehouse Staff, Shippers
+
+Activity:
+- Warehouse staff prepare orders for shipping by selecting a shipper from the shippers table and updating the corresponding columns in the orders table.
+- Shippers coordinate delivery of orders to customers based on the shipping details provided.

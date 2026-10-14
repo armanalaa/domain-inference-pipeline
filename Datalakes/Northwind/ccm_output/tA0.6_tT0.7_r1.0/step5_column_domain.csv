@@ -1,0 +1,85 @@
+table,column,domain_id,domain_name
+orders,CustomerID,0,Order Process Management
+orders,EmployeeID,0,Order Process Management
+orders,Freight,0,Order Process Management
+orders,OrderDate,0,Order Process Management
+orders,OrderID,0,Order Process Management
+orders,RequiredDate,0,Order Process Management
+orders,ShipAddress,0,Order Process Management
+orders,ShipCity,0,Order Process Management
+orders,ShipCountry,0,Order Process Management
+orders,ShipName,0,Order Process Management
+orders,ShipPostalCode,0,Order Process Management
+orders,ShipRegion,0,Order Process Management
+orders,ShipVia,0,Order Process Management
+orders,ShippedDate,0,Order Process Management
+customers,Address,1,Customer-Employee-Shipper Management
+customers,City,1,Customer-Employee-Shipper Management
+customers,CompanyName,1,Customer-Employee-Shipper Management
+customers,ContactName,1,Customer-Employee-Shipper Management
+customers,ContactTitle,1,Customer-Employee-Shipper Management
+customers,Country,1,Customer-Employee-Shipper Management
+customers,CustomerID,1,Customer-Employee-Shipper Management
+customers,Fax,1,Customer-Employee-Shipper Management
+customers,Phone,1,Customer-Employee-Shipper Management
+customers,PostalCode,1,Customer-Employee-Shipper Management
+customers,Region,1,Customer-Employee-Shipper Management
+employees,Address,1,Customer-Employee-Shipper Management
+employees,BirthDate,1,Customer-Employee-Shipper Management
+employees,City,1,Customer-Employee-Shipper Management
+employees,Country,1,Customer-Employee-Shipper Management
+employees,EmployeeID,1,Customer-Employee-Shipper Management
+employees,Extension,1,Customer-Employee-Shipper Management
+employees,FirstName,1,Customer-Employee-Shipper Management
+employees,HireDate,1,Customer-Employee-Shipper Management
+employees,HomePhone,1,Customer-Employee-Shipper Management
+employees,LastName,1,Customer-Employee-Shipper Management
+employees,Notes,1,Customer-Employee-Shipper Management
+employees,Photo,1,Customer-Employee-Shipper Management
+employees,PhotoPath,1,Customer-Employee-Shipper Management
+employees,PostalCode,1,Customer-Employee-Shipper Management
+employees,Region,1,Customer-Employee-Shipper Management
+employees,ReportsTo,1,Customer-Employee-Shipper Management
+employees,Title,1,Customer-Employee-Shipper Management
+employees,TitleOfCourtesy,1,Customer-Employee-Shipper Management
+shippers,CompanyName,1,Customer-Employee-Shipper Management
+shippers,Phone,1,Customer-Employee-Shipper Management
+shippers,ShipperID,1,Customer-Employee-Shipper Management
+suppliers,Address,1,Customer-Employee-Shipper Management
+suppliers,City,1,Customer-Employee-Shipper Management
+suppliers,CompanyName,1,Customer-Employee-Shipper Management
+suppliers,ContactName,1,Customer-Employee-Shipper Management
+suppliers,ContactTitle,1,Customer-Employee-Shipper Management
+suppliers,Country,1,Customer-Employee-Shipper Management
+suppliers,Fax,1,Customer-Employee-Shipper Management
+suppliers,HomePage,1,Customer-Employee-Shipper Management
+suppliers,Phone,1,Customer-Employee-Shipper Management
+suppliers,PostalCode,1,Customer-Employee-Shipper Management
+suppliers,Region,1,Customer-Employee-Shipper Management
+suppliers,SupplierID,1,Customer-Employee-Shipper Management
+order_details,Discount,2,Product Order Information Management
+order_details,OrderID,2,Product Order Information Management
+order_details,ProductID,2,Product Order Information Management
+order_details,Quantity,2,Product Order Information Management
+order_details,UnitPrice,2,Product Order Information Management
+products,CategoryID,2,Product Order Information Management
+products,Discontinued,2,Product Order Information Management
+products,ProductID,2,Product Order Information Management
+products,ProductName,2,Product Order Information Management
+products,QuantityPerUnit,2,Product Order Information Management
+products,ReorderLevel,2,Product Order Information Management
+products,SupplierID,2,Product Order Information Management
+products,UnitPrice,2,Product Order Information Management
+products,UnitsInStock,2,Product Order Information Management
+products,UnitsOnOrder,2,Product Order Information Management
+categories,CategoryID,3,Territory Management
+categories,CategoryName,3,Territory Management
+categories,Description,3,Territory Management
+categories,Picture,3,Territory Management
+employee_territories,employeeID,3,Territory Management
+employee_territories,territoryID,3,Territory Management
+regions,regionDescription,3,Territory Management
+regions,regionID,3,Territory Management
+territories,regionID,3,Territory Management
+territories,territoryDescription,3,Territory Management
+territories,territoryID,3,Territory Management

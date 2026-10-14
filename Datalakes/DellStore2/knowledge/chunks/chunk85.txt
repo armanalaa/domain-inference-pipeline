@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff track inventory levels and update the quan_in_stock column for each product when items are received or shipped.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives engage with potential customers to understand their needs and recommend suitable products.
+- Customer service agents assist existing customers with inquiries, process orders, and update customer details in the customers table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Agents
+
+Activity:
+- Sales representatives create new orders for customers by specifying products, quantities, and order dates.
+- Warehouse staff pick and pack the ordered items and update the inventory accordingly.
+- Customer service agents confirm order details with customers and mark orders as shipped in the orders table.
+
+## 4. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- The finance team calculates the net amount, tax, and total amount for each order based on product prices, quantities, and taxes.
+- They generate invoices containing order details and send them to customers via email or mail.
+
+## 5. Payment Processing
+
+Performed By: Finance Team
+
+Activity:
+- Customers make payments using their preferred credit card methods, which are recorded in the customers table.
+- The finance team verifies payments and updates the order status as paid in the orders table.
+
+## 6. Reordering Inventory
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff monitor inventory levels and update the reorder table when stock for a product falls below the quan_low threshold.
+- Purchasing teams place orders with suppliers to replenish low-stock items based on the date_reordered and quan_reordered in the reorder table.
+
+## 7. Reporting and Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts extract data from various tables (customers, orders, inventory, etc.) to generate reports on sales performance, customer behavior, and inventory levels.
+- Management uses these reports to make informed decisions about pricing strategies, marketing campaigns, and operational improvements.

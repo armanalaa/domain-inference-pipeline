@@ -1,0 +1,12 @@
+table,domain_id,domain_name
+orders,0,Order Process Management
+customers,1,Customer-Employee-Shipper Management
+employees,1,Customer-Employee-Shipper Management
+shippers,1,Customer-Employee-Shipper Management
+suppliers,1,Customer-Employee-Shipper Management
+order_details,2,Product Order Information Management
+products,2,Product Order Information Management
+categories,3,Territory Management
+employee_territories,3,Territory Management
+regions,3,Territory Management
+territories,3,Territory Management

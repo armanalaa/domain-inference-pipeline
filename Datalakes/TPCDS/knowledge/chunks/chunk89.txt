@@ -1,0 +1,81 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new employees to specific call centers based on the required number of staff and available positions.
+- HR managers update employee records with personal details, qualifications, and employment history.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, Warehouse Staff
+
+Activity:
+- Facility managers allocate square footage for call centers, ensuring adequate space for employees and equipment.
+- Warehouse staff equip call centers with necessary hardware such as phones, computers, and furniture.
+
+## 3. Call Center Operations Planning
+
+Performed By: Call Center Managers, Sales Representatives
+
+Activity:
+- Call center managers determine operating hours for each call center based on market demand and business needs.
+- Sales representatives create schedules for employees to ensure optimal coverage during peak calling times.
+
+## 4. Customer Service
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives answer customer inquiries regarding products, services, or orders.
+- Warehouse staff provide information about product availability and shipping status to customers.
+
+## 5. Call Center Performance Monitoring
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers monitor employee performance metrics such as call handling time, sales conversions, and customer satisfaction ratings.
+- HR managers evaluate employee performance based on these metrics and provide feedback or coaching as needed.
+
+## 6. Market Segmentation
+
+Performed By: Marketing Managers, Call Center Managers
+
+Activity:
+- Marketing managers categorize markets based on demographic, geographic, and psychographic factors.
+- Call center managers assign call centers to specific market segments to optimize sales efforts.
+
+## 7. Product Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers add new items to the product catalog with detailed information such as product code, name, category, and list price.
+- Sales representatives update product descriptions and images in the catalog as needed.
+
+## 8. Online Presence Management
+
+Performed By: IT Staff, Marketing Managers
+
+Activity:
+- IT staff maintain the online presence of the call center, ensuring that the website is functional and up-to-date.
+- Marketing managers create and manage online content to attract customers and promote products or services.
+
+## 9. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording customer information, reason for return, and product details.
+- Warehouse staff receive returned items, inspect them for damage or defects, and update inventory accordingly.
+
+## 10. Analytics and Reporting
+
+Performed By: Data Analysts, Call Center Managers
+
+Activity:
+- Data analysts generate reports on call center performance, sales trends, and customer behavior using data from various tables in the database.
+- Call center managers use these reports to make informed decisions about staffing, marketing strategies, and operational improvements.

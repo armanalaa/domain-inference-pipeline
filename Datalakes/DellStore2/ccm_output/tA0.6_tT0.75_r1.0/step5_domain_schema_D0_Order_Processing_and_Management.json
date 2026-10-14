@@ -1,0 +1,212 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Order Processing and Management",
+    "definition": "The unifying capability across all tables is the management of orders, including customer history tracking, order line item management, and order processing.",
+    "tables": [
+      "cust_hist",
+      "orderlines",
+      "orders"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "cust_hist": {
+      "_description": "Tracks historical customer purchases, linking each transaction to a specific customer and product.",
+      "columns": [
+        {
+          "name": "customerid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer entity",
+          "samples": [
+            7888,
+            4858,
+            15399,
+            17019,
+            14771
+          ]
+        },
+        {
+          "name": "orderid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the order entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "prod_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the prod_ entity",
+          "samples": [
+            9117,
+            3353,
+            2778,
+            4774,
+            3648
+          ]
+        }
+      ]
+    },
+    "orderlines": {
+      "_description": "Tracks individual product quantities and associated orders in the DellStore2 sales process.",
+      "columns": [
+        {
+          "name": "orderlineid",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in orderlines",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "orderid",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in orderlines",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "prod_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the prod_ entity",
+          "samples": [
+            9117,
+            3353,
+            2778,
+            4774,
+            3648
+          ]
+        },
+        {
+          "name": "quantity",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of items for each product line in an order.",
+          "samples": [
+            1,
+            3,
+            2,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "orderdate",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the date format of order placement (YYYY-MM-DD) in a consistent manner.",
+          "samples": [
+            "2004-01-27",
+            "2004-01-01",
+            "2004-01-17",
+            "2004-01-28",
+            "2004-01-09"
+          ]
+        }
+      ]
+    },
+    "orders": {
+      "_description": "Tracks details of individual customer orders and their associated financial information in DellStore2.",
+      "columns": [
+        {
+          "name": "orderid",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in orders",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "orderdate",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores formatted date strings for order placement in YYYY-MM-DD format.",
+          "samples": [
+            "2004-01-27",
+            "2004-01-01",
+            "2004-01-17",
+            "2004-01-28",
+            "2004-01-09"
+          ]
+        },
+        {
+          "name": "customerid",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer entity",
+          "samples": [
+            7888,
+            4858,
+            15399,
+            17019,
+            14771
+          ]
+        },
+        {
+          "name": "netamount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total floating-point value of items ordered in each transaction.",
+          "samples": [
+            313.24,
+            54.9,
+            160.1,
+            106.67,
+            256.0
+          ]
+        },
+        {
+          "name": "tax",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores floating-point values representing taxes for individual orders.",
+          "samples": [
+            25.84,
+            4.53,
+            13.21,
+            8.8,
+            21.12
+          ]
+        },
+        {
+          "name": "totalamount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the total monetary value (in decimal format) for each order.",
+          "samples": [
+            339.08,
+            59.43,
+            173.31,
+            115.47,
+            277.12
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+ # TPC-DS — Business Workflows
+
+## 1. General Meeting Management
+
+Performed By: Council Members, Administrator
+
+Activity:
+- Council members propose new motions for General Meetings.
+- Council members vote on proposed motions according to voting rules.
+- Council authorizes Mail Ballots for specific decisions requiring them.
+- Administrator distributes Mail Ballots to eligible Directors within seven days.
+- Administrator posts Mail Ballots on the Private Web Site.
+
+## 2. Mail Ballot Voting
+
+Performed By: TPC Members, Administrator
+
+Activity:
+- Eligible TPC members cast their votes on Mail Ballots via written form or email.
+- Administrator collects and tallies votes to determine ballot outcome.
+- Administrator notifies Council of the Mail Ballot results.
+
+## 3. Bylaws Amendment Proposal
+
+Performed By: Council Members, Administrator
+
+Activity:
+- Council members propose amendments to the Bylaws.
+- Council votes on proposed Bylaws amendments according to voting rules.
+- If approved, the Administrator implements the amended Bylaws.
+
+## 4. Member Expulsion
+
+Performed By: Council Members, Administrator
+
+Activity:
+- Council members propose expulsion of a member due to policy violations or non-compliance.
+- Council votes on proposed expulsion according to voting rules.
+- If approved, the Administrator implements the member's expulsion.
+
+## 5. Standard Adoption and Revision
+
+Performed By: Council Members, Administrator
+
+Activity:
+- Council members propose new TPC-Enterprise Benchmark Standards or revisions to existing ones.
+- Council votes on proposed standards or revisions according to voting rules.
+- If approved, the Administrator implements the new or revised standard.
+
+## 6. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff, Sales Representatives
+
+Activity:
+- Call center managers assign call center staff to specific markets and classes.
+- Warehouse staff track inventory levels and ship products to customers as needed.
+- Sales representatives handle customer inquiries and process orders.
+
+## 7. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog with product code, name, category, and list price.
+- Sales representatives update catalog pages with current information about products.

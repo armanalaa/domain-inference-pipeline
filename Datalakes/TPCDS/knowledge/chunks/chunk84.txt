@@ -1,0 +1,58 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers register new call centers by recording the call center ID, name, class, employees, square footage, hours, manager, market ID, division, and company.
+- Warehouse staff track inventory levels for each call center by updating the sq_ft column.
+
+## 2. Market Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers assign call centers to specific markets based on market ID.
+- Call center managers update the market class and market description for each call center.
+
+## 3. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Sales representatives update the catalog page number for each item.
+
+## 4. Catalog Page Maintenance
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives update the description and type of a catalog page.
+- Warehouse staff adjust the inventory levels associated with a specific catalog page.
+
+## 5. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives record returned items by specifying the returned date and time, item SKU, refunded customer details, reason for return, order number, and ship mode.
+- Warehouse staff update the warehouse SKU and adjust the inventory levels for each returned item.
+
+## 6. Access Control Management
+
+Performed By: TPC Administrators
+
+Activity:
+- TPC administrators grant read-write access to specific users with a signed CLA for private code repositories.
+- TPC administrators grant read-only access to all members for non-code repositories (except for Standing Committees).
+- TPC administrators grant read-write access to Standing Committee members only for non-code repositories related to Standing Committees.
+- TPC administrators grant read-write access to specific users with a signed CLA for public code repositories.
+
+## 7. Repository Creation
+
+Performed By: TPC Administrators, Technical Subcommittee Members
+
+Activity:
+- TPC administrators create new repositories when necessary for a new benchmark specification, software package or kit, major revision of a benchmark or software package, or license changes to a software package or kit.

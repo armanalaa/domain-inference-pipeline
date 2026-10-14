@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+actor,actor_id,0,Customer and Content Management
+actor,first_name,0,Customer and Content Management
+actor,last_name,0,Customer and Content Management
+actor,last_update,0,Customer and Content Management
+category,category_id,0,Customer and Content Management
+category,last_update,0,Customer and Content Management
+category,name,0,Customer and Content Management
+customer,active,0,Customer and Content Management
+customer,address_id,0,Customer and Content Management
+customer,create_date,0,Customer and Content Management
+customer,customer_id,0,Customer and Content Management
+customer,email,0,Customer and Content Management
+customer,first_name,0,Customer and Content Management
+customer,last_name,0,Customer and Content Management
+customer,last_update,0,Customer and Content Management
+customer,store_id,0,Customer and Content Management
+language,language_id,0,Customer and Content Management
+language,last_update,0,Customer and Content Management
+language,name,0,Customer and Content Management
+staff,active,0,Customer and Content Management
+staff,address_id,0,Customer and Content Management
+staff,email,0,Customer and Content Management
+staff,first_name,0,Customer and Content Management
+staff,last_name,0,Customer and Content Management
+staff,last_update,0,Customer and Content Management
+staff,password,0,Customer and Content Management
+staff,picture,0,Customer and Content Management
+staff,staff_id,0,Customer and Content Management
+staff,store_id,0,Customer and Content Management
+staff,username,0,Customer and Content Management
+inventory,film_id,1,Film Rental and Inventory Management
+inventory,inventory_id,1,Film Rental and Inventory Management
+inventory,last_update,1,Film Rental and Inventory Management
+inventory,store_id,1,Film Rental and Inventory Management
+payment,amount,1,Film Rental and Inventory Management
+payment,customer_id,1,Film Rental and Inventory Management
+payment,last_update,1,Film Rental and Inventory Management
+payment,payment_date,1,Film Rental and Inventory Management
+payment,payment_id,1,Film Rental and Inventory Management
+payment,rental_id,1,Film Rental and Inventory Management
+payment,staff_id,1,Film Rental and Inventory Management
+rental,customer_id,1,Film Rental and Inventory Management
+rental,inventory_id,1,Film Rental and Inventory Management
+rental,last_update,1,Film Rental and Inventory Management
+rental,rental_date,1,Film Rental and Inventory Management
+rental,rental_id,1,Film Rental and Inventory Management
+rental,return_date,1,Film Rental and Inventory Management
+rental,staff_id,1,Film Rental and Inventory Management
+store,address_id,1,Film Rental and Inventory Management
+store,last_update,1,Film Rental and Inventory Management
+store,manager_staff_id,1,Film Rental and Inventory Management
+store,store_id,1,Film Rental and Inventory Management
+address,address,2,Film Inventory and Categorization Management
+address,address2,2,Film Inventory and Categorization Management
+address,address_id,2,Film Inventory and Categorization Management
+address,city_id,2,Film Inventory and Categorization Management
+address,district,2,Film Inventory and Categorization Management
+address,last_update,2,Film Inventory and Categorization Management
+address,phone,2,Film Inventory and Categorization Management
+address,postal_code,2,Film Inventory and Categorization Management
+city,city,2,Film Inventory and Categorization Management
+city,city_id,2,Film Inventory and Categorization Management
+city,country_id,2,Film Inventory and Categorization Management
+city,last_update,2,Film Inventory and Categorization Management
+film,description,2,Film Inventory and Categorization Management
+film,film_id,2,Film Inventory and Categorization Management
+film,language_id,2,Film Inventory and Categorization Management
+film,last_update,2,Film Inventory and Categorization Management
+film,length,2,Film Inventory and Categorization Management
+film,original_language_id,2,Film Inventory and Categorization Management
+film,rating,2,Film Inventory and Categorization Management
+film,release_year,2,Film Inventory and Categorization Management
+film,rental_duration,2,Film Inventory and Categorization Management
+film,rental_rate,2,Film Inventory and Categorization Management
+film,replacement_cost,2,Film Inventory and Categorization Management
+film,special_features,2,Film Inventory and Categorization Management
+film,title,2,Film Inventory and Categorization Management
+film_category,category_id,2,Film Inventory and Categorization Management
+film_category,film_id,2,Film Inventory and Categorization Management
+film_category,last_update,2,Film Inventory and Categorization Management

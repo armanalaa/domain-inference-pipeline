@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Category Specialists
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Category specialists update and maintain the categories table with appropriate product categories.
+
+## 2. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives create new customer accounts by capturing customer details such as first name, last name, address, email, phone, credit card information, age, income, and gender.
+- HR managers update the customer table with any changes in customer details.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products from the catalog, specifying quantities, and providing order details like shipping address.
+- Sales representatives review and confirm orders before they are processed.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity in stock for each product in the inventory table.
+- Purchasing teams issue purchase orders to replenish products when the quantity in stock falls below a certain threshold.
+
+## 5. Order Processing and Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack ordered items from inventory.
+- Shipping teams prepare shipments, label packages, and coordinate with carriers for delivery.
+
+## 6. Order Tracking and Customer Service
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives track order status and provide updates to customers as needed.
+
+## 7. Invoice Generation and Payment Processing
+
+Performed By: Finance Teams, Customers
+
+Activity:
+- Finance teams generate invoices based on orders and calculate net amount, tax, and total amount for each order in the orders table.
+- Customers make payments using their preferred credit card or other payment methods.
+
+## 8. Reordering and Inventory Forecasting
+
+Performed By: Purchasing Teams, Data Analysts
+
+Activity:
+- Purchasing teams reorder products based on the expected date of arrival and minimum quantity required as indicated in the reorder table.
+- Data analysts forecast inventory needs by analyzing sales data and trends to determine when and how much to reorder for each product.

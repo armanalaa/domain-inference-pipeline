@@ -1,0 +1,57 @@
+ TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers assign new hires to specific call centers based on their skill sets and business needs (cc_employees).
+- HR managers update employee records with personal information, qualifications, and employment history (cc_name, cc_company, cc_street_number, etc.).
+
+## 2. Call Center Operations
+
+Performed By: Call Center Staff
+
+Activity:
+- Call center staff answer incoming calls from customers, providing assistance or handling queries (cc_call_center_id).
+- During customer interactions, call center staff record details about the call, such as start and end dates, reason for call, and resolution provided (cc_rec_start_date, cc_rec_end_date, etc.).
+
+## 3. Market Division Management
+
+Performed By: Market Managers, Call Center Managers
+
+Activity:
+- Market managers define market classes and descriptions to categorize call centers (cc_mkt_class, cc_mkt_desc).
+- Call center managers associate their call centers with specific markets based on geographical location or target demographic (cc_market_manager, cc_division, etc.).
+
+## 4. Catalog Management
+
+Performed By: Product Managers, IT Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cp_catalog_number, cp_catalog_page_number, etc.).
+- IT staff maintain the catalog's structure and organization, ensuring easy navigation for customers (cp_department).
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting items from the catalog, specifying quantities, and providing shipping details (ol_i_id, ol_quantity, etc.).
+- Warehouse staff track inventory levels to ensure sufficient stock for order fulfillment (warehouse_sk).
+
+## 6. Returns Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives handle customer returns by recording return reasons and dates (cr_reason_sk, cr_returned_date_sk).
+- Warehouse staff update inventory levels to reflect returned items (ol_i_id) and process the return for shipping back to the warehouse (cr_warehouse_sk).
+
+## 7. Financial Reporting
+
+Performed By: Finance Staff
+
+Activity:
+- Finance staff record financial transactions, such as sales, returns, and expenses, in the database (cr_amount, cr_order_number, etc.).
+- They generate reports on revenue, costs, and profitability based on this data for analysis and decision making (cc_tax_percentage).

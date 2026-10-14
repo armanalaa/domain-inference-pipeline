@@ -1,0 +1,65 @@
+ # adventure_works — Business Workflows
+
+## 1. Employee Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Register new employees by recording their personal details (NationalIDNumber, LoginID, BirthDate, MaritalStatus, Gender, HireDate), job title (JobTitle), and employment status (SalariedFlag).
+- Update employee information when necessary, such as changes in marital status or job title.
+- Track employee history within the organization by recording department transitions (HumanResources EmployeeDepartmentHistory) and pay history (HumanResources EmployeePayHistory).
+
+## 2. Department Management
+
+Performed By: Human Resources Managers
+
+Activity:
+- Create and manage departments within the organization (DepartmentID, Name, GroupName, ModifiedDate).
+- Assign employees to specific departments (HumanResources EmployeeDepartmentHistory).
+
+## 3. Address Management
+
+Performed By: Data Entry Clerks
+
+Activity:
+- Record employee addresses in the Person Address table, including address lines (AddressLine1, AddressLine2), city, state, postal code, and country.
+- Assign a type to each address (Person AddressType).
+
+## 4. Store Management
+
+Performed By: Sales Representatives, Store Managers
+
+Activity:
+- Register new stores by providing store details (BusinessEntityID, Name, Sales Person ID, Demographics).
+- Update store information when necessary (ModifiedDate).
+
+## 5. Customer Management
+
+Performed By: Sales Representatives
+
+Activity:
+- Identify and register individual customers (vIndividualCustomer) by recording their names, addresses, phone numbers, email addresses, and demographic information.
+- Update customer details when necessary.
+
+## 6. Sales Processing
+
+Performed By: Sales Representatives
+
+Activity:
+- Record sales transactions for each store (SalesOrderDetail).
+- Associate special offers with products (SpecialOfferIDProductID).
+
+## 7. Invoice Generation
+
+Performed By: Accounting Staff
+
+Activity:
+- Generate invoices based on recorded sales transactions (SalesOrderDetail).
+
+## 8. Financial Record Keeping
+
+Performed By: Finance Department
+
+Activity:
+- Record financial transactions, including employee salaries and store sales (HumanResources EmployeePayHistory, SalesOrderDetail).
+- Maintain a record of the company's financial status (vPersonDemographics).

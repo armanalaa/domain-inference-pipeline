@@ -1,0 +1,50 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, Warehouse Staff
+
+Activity:
+- Call center managers register new call centers by recording the call center ID, name, class, employees, square footage, hours, manager, market ID, market class, market description, market manager, division, division name, company, company name, street number, street name, street type, suite number, city, county, state, zip, country, GMT offset, tax percentage.
+- Warehouse staff track inventory levels and update them in the call center record when a new call center is added or an existing one is closed.
+
+## 2. Catalog Management
+
+Performed By: Product Managers, Sales Representatives
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Sales representatives update the catalog page record with the department, catalog number, catalog page number, description, and type for each item they sell.
+
+## 3. Customer Returns
+
+Performed By: Customers, Call Center Representatives, Warehouse Staff
+
+Activity:
+- Customers initiate a return by contacting the call center.
+- Call center representatives record the returned date and time, item SK, refunded customer SK, reason for return, order number, and ship mode in the returns table.
+- Warehouse staff update the inventory levels when they receive a returned item.
+
+## 4. Problem Reporting
+
+Performed By: Members, Call Center Representatives
+
+Activity:
+- Members report problems to the TPC via the problem reporting tool.
+- Call center representatives classify the reported problems as bug/error, new feature/enhancement, or portability issue.
+
+## 5. Code Maintenance
+
+Performed By: Committers, Code Maintenance Team
+
+Activity:
+- The Code Maintenance Team evaluates code changes and test cases for acceptance.
+- Committers make the accepted code changes in the GitHub repositories after signing a CLAs.
+
+## 6. Open Source Development Management
+
+Performed By: Subcommittee Members, Code Maintenance Team
+
+Activity:
+- A sponsoring subcommittee is assigned to each open source project on GitHub.
+- The Code Maintenance Team manages individual commits if the sponsoring subcommittee does not want to manage them directly.

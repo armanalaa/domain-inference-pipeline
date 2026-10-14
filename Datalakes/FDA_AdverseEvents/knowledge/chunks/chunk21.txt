@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Reporting
+
+Performed By: Regulatory Affairs Specialists, Data Entry Clerks
+
+Activity:
+- Regulatory affairs specialists review incoming adverse event reports to determine their relevance and completeness.
+- Data entry clerks input the approved reports into the FDA_AdverseEvents database, including report ID, product details, and patient information.
+- Data entry clerks assign each report a status (e.g., received, reviewed, accepted).
+
+## 2. Data Mapping and Validation
+
+Performed By: IT Specialists, Quality Assurance Analysts
+
+Activity:
+- IT specialists map the data from the FDA_AdverseEvents database to the ICH ICSR DTD, ensuring compatibility with the E2BM document.
+- Quality assurance analysts validate the mapped data for accuracy and completeness according to the ICH ICSR DTD specifications.
+
+## 3. Data Transformation and Packaging
+
+Performed By: IT Specialists
+
+Activity:
+- IT specialists transform the validated data into an SGML format compliant with the ICH ICSR Specifications.
+- IT specialists package the SGML data files for electronic transmission via EDI envelope or physical media.
+
+## 4. Adverse Event Submission
+
+Performed By: Data Transmission Specialists
+
+Activity:
+- Data transmission specialists submit the packaged SGML data files to the intended recipient, such as the FDA.
+
+## 5. Acknowledgement and Record Keeping
+
+Performed By: Data Transmission Specialists, Regulatory Affairs Specialists
+
+Activity:
+- Data transmission specialists request and record acknowledgement of receipt from the recipient.
+- Regulatory affairs specialists update the FDA_AdverseEvents database with the acknowledgement details and report status.
+
+## 6. Adverse Event Analysis
+
+Performed By: Safety Analysts, Medical Officers
+
+Activity:
+- Safety analysts analyze the adverse event data to identify trends, patterns, and potential safety concerns.
+- Medical officers evaluate the reported events for their impact on product safety and make recommendations for further action.
+
+## 7. Report Follow-up and Response
+
+Performed By: Regulatory Affairs Specialists, Medical Officers
+
+Activity:
+- Regulatory affairs specialists follow up with sponsors or manufacturers regarding incomplete or missing information in adverse event reports.
+- Medical officers collaborate with regulatory affairs specialists to respond to requests for additional information from the FDA or other regulatory bodies.

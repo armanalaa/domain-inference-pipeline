@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when new products arrive or existing ones are sold.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives enter customer details such as first name, last name, address, email, phone, credit card information, and age during registration.
+- HR managers maintain updated contact and personal information for each customer.
+- Customers update their own account details through the self-service portal.
+
+## 3. Order Placement
+
+Performed By: Customers
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Purchasing Teams
+
+Activity:
+- Sales representatives confirm order details and process payments.
+- Warehouse staff pick and pack ordered items for shipment.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and sales forecasts.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the quantity in stock for each product after shipments are received or dispatched.
+- Purchasing teams reorder products when the quantity in stock falls below a predefined threshold.
+
+## 6. Order Fulfillment and Shipping
+
+Performed By: Warehouse Staff, Shipping Providers
+
+Activity:
+- Warehouse staff prepare orders for shipping by packaging items and affixing shipping labels.
+- Shipping providers deliver orders to customers according to the specified address and delivery method.
+
+## 7. Financial Management
+
+Performed By: Finance Teams
+
+Activity:
+- Finance teams record order details, calculate net amounts, taxes, and total amounts for each order.
+- Finance teams update account balances and generate invoices for customers.
+
+## 8. Data Governance and Compliance
+
+Performed By: Data Governance Teams
+
+Activity:
+- Data governance teams ensure that all data is accurate, secure, and compliant with relevant regulations such as GDPR, CPPA, and HIPAA.
+- Data governance teams document data lineage and impact analysis for AI models to maintain transparency and compliance.

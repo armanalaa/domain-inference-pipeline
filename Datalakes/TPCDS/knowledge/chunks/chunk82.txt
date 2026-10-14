@@ -1,0 +1,25 @@
+ # TPC-DS — Business Workflows
+
+## 1. Software Revision Management
+
+Performed By: Subcommittee, Code Maintenance Team (if exists)
+
+Activity:
+- Propose changes to the TPC-Provided Software based on problem reports (Procedures § 1.1).
+- Test proposed changes to ensure they address the associated problems and introduce no new ones (Procedures § 1.4).
+- Gather feedback from at least one member company or community member in an end-to-end environment (Procedures § 1.4.5).
+- Document testing details in subcommittee meeting minutes.
+- Resolve any reported issues to the satisfaction of the subcommittee.
+- Vote on the release of an official revision of the TPC-Provided Software (Policies § Error! Reference source not found.).
+
+## 2. Open Source Development Management
+
+Performed By: Subcommittee, Code Maintenance Team (if exists)
+
+Activity:
+- Collect approved code changes for inclusion in a revision (Procedures § 1.2).
+- Optionally produce a "beta" revision with sufficient lead time for testing and integration.
+- Test proposed changes to ensure they address associated problems and introduce no new ones (Procedures § 1.4).
+- Gather feedback from at least one member company or community member in an end-to-end environment (Procedures § 1.4.5).
+- Resolve any reported issues to the satisfaction of the sponsoring subcommittee and/or Code Maintenance Team.
+- Vote on the release of an official revision of the TPC-Provided Software (Policies § Error! Reference source not found.).

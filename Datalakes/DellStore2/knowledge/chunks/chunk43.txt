@@ -1,0 +1,46 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Inventory Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Inventory staff update the quantity in stock for each product based on incoming shipments or sales.
+- Product managers assign common product IDs to similar products for easier categorization and management.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives enter customer details such as name, address, contact information, credit card data, and account information into the customers table.
+- Customer service agents update customer profiles with changes to personal or billing information.
+- HR managers add employee details related to a customer (e.g., age, income, gender) to the customers table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create new orders by specifying the order date, customer ID, and products with their respective quantities.
+- Warehouse staff pick and pack items for shipment based on order details from the orderlines table.
+- Finance department calculates the net amount, tax, and total amount for each order.
+
+## 4. Inventory Control
+
+Performed By: Inventory Staff, Purchasing Teams
+
+Activity:
+- Inventory staff monitor product quantities in stock by referring to the inventory table.
+- Purchasing teams place orders to replenish low-stock items based on the quan_low column in the reorder table.
+- Inventory staff update the sales column in the inventory table when products are sold.
+
+## 5. Reference Data Management
+
+Performed By: Data Administrators, IT Department
+
+Activity:
+- Data administrators define and document lookup values for categories, currencies, units of measure, departments, statuses, calendars, and more.
+- The IT department ensures that the defined lookups are correctly linked to multiple columns in relevant tables.
+- Data administrators explain values with titles, descriptions, and custom fields for better understanding across the organization.

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Product Management
+
+Performed By: Product Managers, Purchasing Teams
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price.
+- Purchasing teams issue purchase orders to suppliers based on inventory levels and demand forecasts.
+- Product managers update product information when receiving updated specifications or feedback from customers.
+
+## 2. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents, HR Managers
+
+Activity:
+- Sales representatives engage with potential customers, providing product recommendations and processing orders.
+- Customer service agents handle customer inquiries, process returns, and manage complaints.
+- HR managers recruit new employees, onboard them, and maintain employee records.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Teams
+
+Activity:
+- Sales representatives confirm order details with customers and update the order status in the system.
+- Warehouse staff pick, pack, and ship orders to customers based on the order details.
+- Finance teams record the order details, calculate taxes, and generate invoices for customers.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels when receiving new shipments or processing returns.
+- Purchasing teams monitor inventory levels and place reorders when the quantity falls below a predefined threshold.
+
+## 5. Financial Management
+
+Performed By: Finance Teams, Accountants
+
+Activity:
+- Finance teams record financial transactions, update account balances, and generate financial reports.
+- Accountants review financial records for accuracy and compliance with accounting standards.
+
+## 6. Security Management
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators implement security measures to protect the database from unauthorized access or data breaches.
+- Data analysts monitor system logs for suspicious activities and take appropriate action when necessary.
+
+## 7. Performance Analysis
+
+Performed By: Data Analysts, Marketing Teams
+
+Activity:
+- Data analysts extract and analyze sales data to identify trends, patterns, and areas for improvement.
+- Marketing teams use the insights gained from the analysis to optimize marketing strategies and improve customer engagement.

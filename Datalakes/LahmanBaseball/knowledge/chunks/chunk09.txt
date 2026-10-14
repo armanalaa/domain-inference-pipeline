@@ -1,0 +1,66 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Management
+
+Performed By: Data Administrators, League Officials
+
+Activity:
+- Data administrators assign unique playerIDs to new players joining the league.
+- League officials update playerIDs for players who change teams or leagues.
+
+## 2. Season Scheduling
+
+Performed By: League Schedulers
+
+Activity:
+- League schedulers determine game schedules for each team in a season.
+- They assign specific dates, times, and locations for each game.
+
+## 3. Game Management
+
+Performed By: Umpires, Players, Coaches
+
+Activity:
+- Umpires officiate games, calling balls, strikes, outs, and errors.
+- Players perform on the field, batting, fielding, pitching, and running bases.
+- Coaches strategize and make decisions during the game.
+
+## 4. Game Results Recording
+
+Performed By: Umpires, Scorers
+
+Activity:
+- Umpires record game results, including scores, hits, errors, and outs.
+- Scorers verify and update game statistics in the Batting and Fielding tables.
+
+## 5. Player Performance Tracking
+
+Performed By: Statisticians, Coaches
+
+Activity:
+- Statisticians calculate and record player performance metrics such as batting averages, earned run averages, and fielding percentages.
+- Coaches review player statistics to evaluate their team's performance and make strategic decisions.
+
+## 6. Award Nomination and Voting
+
+Performed By: League Committees, Managers, Players, Fans
+
+Activity:
+- League committees nominate players for various awards based on their performance.
+- Managers, players, and fans cast votes to determine the winners of each award.
+
+## 7. Award Allocation
+
+Performed By: League Officials
+
+Activity:
+- League officials tally the votes and announce the winners of each award.
+- They update the Awards Players and Awards Managers tables with the winning playerIDs, awardIDs, yearIDs, and leagueIDs.
+
+## 8. Season Analysis and Reporting
+
+Performed By: Analysts, Journalists
+
+Activity:
+- Analysts and journalists analyze season statistics to identify trends, patterns, and key performances.
+- They create reports and articles highlighting the most significant findings.

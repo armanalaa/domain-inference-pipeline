@@ -1,0 +1,78 @@
+ # TPC-DS — Business Workflows
+
+## 1. Call Center Management
+
+Performed By: Call Center Managers, HR Managers
+
+Activity:
+- Call center managers hire new staff by recording their details, including name, qualifications, and employment history.
+- HR managers onboard new employees by providing them with training materials, work schedules, and company policies.
+
+## 2. Call Center Setup
+
+Performed By: Facility Managers, Warehouse Staff
+
+Activity:
+- Facility managers allocate space for call centers based on the number of employees and required square footage.
+- Warehouse staff equip call centers with necessary equipment such as phones, headsets, and computers.
+
+## 3. Call Center Operation
+
+Performed By: Call Center Employees, Call Center Managers
+
+Activity:
+- Call center employees answer incoming calls from customers, addressing their inquiries or complaints.
+- Call center managers monitor employee performance, providing feedback and coaching to improve service quality.
+
+## 4. Catalog Management
+
+Performed By: Product Managers, Marketing Managers
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price.
+- Marketing managers create and update catalog pages, including descriptions and promotional content.
+
+## 5. Return Processing
+
+Performed By: Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Customer service representatives process returns by recording return dates, times, and reasons.
+- Warehouse staff receive returned items, verify their condition, and update inventory accordingly.
+
+## 6. Voting Process
+
+Performed By: Technical Subcommittee Members, Technical Subcommittee Chairperson
+
+Activity:
+- Technical subcommittee members present work for credit towards attendance time.
+- The technical subcommittee chairperson credits the outside work hours and resolves any disagreements through a vote.
+
+## 7. Voting Eligibility Determination
+
+Performed By: Technical Subcommittee Chairperson
+
+Activity:
+- The technical subcommittee chairperson determines voting eligibility based on attendance, meeting frequency, and membership status.
+
+## 8. Suspension of Voting Rights
+
+Performed By: Technical Subcommittee Chairperson
+
+Activity:
+- The technical subcommittee chairperson suspends a member's voting rights if they are not in compliance with the policies.
+
+## 9. Reinstatement of Voting Rights
+
+Performed By: Technical Subcommittee Chairperson
+
+Activity:
+- The technical subcommittee chairperson reinstates a member’s voting rights when their attendance is in compliance with the policies.
+
+## 10. Membership Termination
+
+Performed By: Technical Subcommittee Chairperson, Council
+
+Activity:
+- If a member's attendance falls below 20%, the subcommittee chairperson notifies the Council, leading to involuntary termination of membership.
+- A member can voluntarily terminate their membership by notifying the technical subcommittee chairperson and the TPC Administrator in writing.

@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and demographic information (customers).
+- Customer support agents update customer records with any changes to contact or personal information (customers).
+- Sales representatives assign each customer a unique username and password for account access (customers).
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Inventory Specialists
+
+Activity:
+- Product managers add new items to the catalog by recording product code, name, category, list price, and other relevant details (products).
+- Inventory specialists update product information when necessary, such as changing prices or categories (products).
+- Inventory specialists track inventory levels for each product and update the quan_in_stock column accordingly (inventory).
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers browse the catalog, select products, and place orders by specifying quantities and providing shipping information (orders, orderlines, customers).
+- Sales representatives assist customers with placing orders, ensuring accurate product selection and addressing any issues that may arise (orders, orderlines, customers).
+
+## 4. Order Processing
+
+Performed By: Warehouse Staff, Inventory Specialists
+
+Activity:
+- Warehouse staff retrieve ordered products from inventory based on the orderline details (inventory, orderlines).
+- Inventory specialists update the quan_in_stock column for each product as it is shipped to the customer (inventory, orderlines).
+
+## 5. Order Fulfillment and Delivery
+
+Performed By: Warehouse Staff, Shipping Agents
+
+Activity:
+- Warehouse staff package ordered products and prepare them for shipment (orders, orderlines).
+- Shipping agents coordinate with carriers to arrange delivery of orders to customers (orders, orderlines).
+
+## 6. Inventory Replenishment
+
+Performed By: Purchasing Teams, Inventory Specialists
+
+Activity:
+- Purchasing teams issue purchase orders for products when inventory levels reach a predetermined threshold (reorder).
+- Inventory specialists receive and record deliveries of new stock, updating the quan_in_stock column accordingly (inventory).
+
+## 7. Sales Reporting and Analysis
+
+Performed By: Finance Teams, Management
+
+Activity:
+- Finance teams generate sales reports by querying netamount, tax, totalamount columns from orders table (orders).
+- Management reviews sales reports to identify trends, set goals, and make strategic decisions (orders).
+
+## 8. Customer History Tracking
+
+Performed By: HR Managers, Sales Representatives
+
+Activity:
+- HR managers maintain a record of each customer's order history for future reference (cust_hist).
+- Sales representatives use the customer's order history to tailor recommendations and offers (cust_hist).

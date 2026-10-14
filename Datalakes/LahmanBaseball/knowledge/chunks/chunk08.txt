@@ -1,0 +1,65 @@
+ # LahmanBaseball — Business Workflows
+
+## 1. Player Registration and Management
+
+Performed By: Baseball League Administrators
+
+Activity:
+- Register new players by recording player ID, year of registration, and team assignment.
+- Assign players to specific positions (e.g., pitcher, catcher, first baseman) based on their skills and team needs.
+- Update player records with game statistics such as at bats, hits, runs, and errors.
+
+## 2. Game Management
+
+Performed By: Umpires, Scorers, Team Managers
+
+Activity:
+- Record the outcome of each game, including game number, team ID, league ID, and game result (win or loss).
+- Designate players as game starters and record their positions for each game.
+- Track player appearances in games, whether they are batting, playing defense, or pitching.
+
+## 3. Field Management
+
+Performed By: Fielders (e.g., outfielders, catchers)
+
+Activity:
+- Play defense during games by making putouts, assists, and errors.
+- Record double plays, passed balls, wild pitches, stolen bases, and caught stealing.
+- Track time played in the field expressed as outs.
+
+## 4. Position-Specific Field Management (Outfielders)
+
+Performed By: Left Fielders, Center Fielders, Right Fielders
+
+Activity:
+- Play games at specific outfield positions (left field, center field, right field).
+- Record the number of games played at each position.
+
+## 5. Position-Specific Field Management (Split)
+
+Performed By: Outfielders
+
+Activity:
+- Track games played in split positions (e.g., left and center fields, center and right fields).
+
+## 6. Appearances Tracking
+
+Performed By: League Statisticians
+
+Activity:
+- Record total games played by each player, games started, and games played in various roles (batting, defense, pitching).
+
+## 7. Awards and Recognition
+
+Performed By: Award Committees
+
+Activity:
+- Evaluate players based on their performance and award them for outstanding achievements.
+- Record the player ID, award ID, year of award, league ID, and any additional notes related to the award.
+
+## 8. Managerial Performance Tracking
+
+Performed By: League Statisticians
+
+Activity:
+- Track managerial performance by recording games managed, wins, losses, and final team position in standings.

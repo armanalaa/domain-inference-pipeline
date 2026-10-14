@@ -1,0 +1,57 @@
+ # FDA_AdverseEvents — Business Workflows
+
+## 1. Adverse Event Report Submission
+
+Performed By: Healthcare Professionals, Regulatory Authorities, Pharmaceutical Companies
+
+Activity:
+- Healthcare professionals record adverse event details following patient encounters (A.2.1.1a - reportertitle, A.2.1.1b - reportergivename, A.2.1.1c - reportermiddlename, A.2.1.1d - reporterfamilyname).
+- Regulatory authorities receive adverse event reports from healthcare professionals (A.2.1.2a - reporterorganization).
+- Pharmaceutical companies submit adverse event reports to regulatory authorities (A.1.10.2 - companynumb).
+
+## 2. Adverse Event Report Identification and Linking
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- Regulatory authority staff assign unique case numbers to each received adverse event report (A.1.12 - linkreportnumb).
+- If multiple reports exist for the same case, regulatory authority staff identify and link them (A.1.11 - duplicate).
+
+## 3. Adverse Event Report Nullification
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- Regulatory authority staff nullify adverse event reports when necessary (casenullification).
+- They provide reasons for nullification (nullificationreason).
+
+## 4. Adverse Event Report Medically Confirmation
+
+Performed By: Healthcare Professionals, Regulatory Authority Staff
+
+Activity:
+- Healthcare professionals confirm if the adverse event was medically confirmed (A.1.14 - medicallyconfirm).
+- If not initially from a health professional, regulatory authority staff may seek confirmation (A.1.14).
+
+## 5. Adverse Event Report Source Verification
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- Regulatory authority staff verify the source(s) of case identifiers in previous transmissions (duplicatesource).
+
+## 6. Duplicate Case Identifier Management
+
+Performed By: Regulatory Authority Staff
+
+Activity:
+- If multiple reports exist for the same case, regulatory authority staff maintain one number as the case number in its original field (A.1.11 - duplicate).
+- They list the second number as a suspected duplicate.
+
+## 7. Adverse Event Report Transmission
+
+Performed By: Regulatory Authorities, Pharmaceutical Companies
+
+Activity:
+- Regulatory authorities transmit adverse event reports to other regulatory authorities (A.1.10.1 - authoritynumb or A.1.10.2 - companynumb).
+- Pharmaceutical companies retransmit ICSRs if necessary, using their own sender's case report number (A.1.10.2 - companynumb).

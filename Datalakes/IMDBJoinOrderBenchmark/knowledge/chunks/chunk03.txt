@@ -1,0 +1,58 @@
+ # IMDBJoinOrderBenchmark — Business Workflows
+
+## 1. Data Acquisition and Preparation
+
+Performed By: Data Analysts, System Administrators
+
+Activity:
+- Data analysts download the required CSV files from the specified URLs (source materials).
+- System administrators create a PostgreSQL database named 'imdbload'.
+- System administrators use the provided script to transform the *gz files into the relational schema in the 'imdbload' database.
+
+## 2. Data Import and Indexing
+
+Performed By: System Administrators
+
+Activity:
+- System administrators import all tables from the CSV files into the 'imdbload' database.
+- System administrators create secondary indexes on some foreign key attributes in the 'imdbload' database (optional).
+
+## 3. Data Management and Maintenance
+
+Performed By: Database Administrators, Data Analysts
+
+Activity:
+- Database administrators monitor and maintain the 'imdbload' database to ensure its performance and integrity.
+- Data analysts update the data in the 'imdbload' database as new information becomes available.
+
+## 4. Movie Information Management
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers register new movies by entering their titles, production years, and other relevant details into the appropriate tables.
+- Data entry clerks input cast and character information for each movie, including roles, names, and companies involved.
+
+## 5. Keyword and Link Association
+
+Performed By: Content Managers, Data Entry Clerks
+
+Activity:
+- Content managers assign relevant keywords to movies based on their genres, themes, or other characteristics.
+- Content managers establish links between related movies using the link_type table.
+
+## 6. Company and Person Information Management
+
+Performed By: HR Managers, Data Entry Clerks
+
+Activity:
+- HR managers register new companies by entering their names, countries, types, and other relevant details into the appropriate tables.
+- Data entry clerks input information about individuals associated with movies, including their names, roles, and aliases.
+
+## 7. Information Retrieval and Reporting
+
+Performed By: Data Analysts, Researchers
+
+Activity:
+- Data analysts write SQL queries to extract specific data from the 'imdbload' database for analysis or reporting purposes.
+- Researchers use the extracted data to study various aspects of the movie industry, such as trends, patterns, and relationships between movies, actors, and companies.
