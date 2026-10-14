@@ -10,6 +10,7 @@ logs/
 # Large/generated files - never commit these
 *.docx
 *.xlsx
+!Datalakes/**/*.xlsx
 *.pdf
 *.json
 *.bacpac
@@ -22,7 +23,6 @@ logs/
 *.png
 
 # Raw data and generated outputs - archive separately, e.g. Zenodo
-/Datalakes/
 **/csv/
 **/data/
 **/knowledge/
