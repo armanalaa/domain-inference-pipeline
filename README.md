@@ -8,11 +8,12 @@ DomainMiner takes a collection of CSV files and groups them into business domain
 ## Table of Contents
 
 1. [How It Works](#how-it-works)
-2. [Requirements](#requirements)
-3. [Installation](#installation)
-4. [Folder Structure](#folder-structure)
-5. [All Scripts Reference](#all-scripts-reference)
-6. [Step-by-Step: Running the Pipeline](#step-by-step-running-the-pipeline)
+2. [Evaluated Datasets and Data Sources](#evaluated-datasets-and-data-sources)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Folder Structure](#folder-structure)
+6. [All Scripts Reference](#all-scripts-reference)
+7. [Step-by-Step: Running the Pipeline](#step-by-step-running-the-pipeline)
    - [Step 0 - Prepare your dataset](#step-0---prepare-your-dataset)
    - [Step 1 - Extract schema](#step-1---extract-schema)
    - [Step 2 - Crawl documentation](#step-2---crawl-documentation)
@@ -41,6 +42,25 @@ The pipeline implements the 5-stage methodology described in the submitted paper
 | **(5) Domain Realization** | Section 4.5 | `domain_discovery.py` | Runs Louvain clustering on $G_T$ at resolution $\gamma$ to maximize modularity $Q$; computes mean concept-affinity $\bar\phi(D_i,k)$ per domain; LLM assigns each domain a human-readable label $\ell_i$ |
 
 > **Naming note:** in code and CLI flags, $\theta_C$ (paper) = `theta_a` (script), and $\theta_T$ (paper) = `theta_t` (script). The Louvain resolution $\gamma$ (paper) = `resolution` (script).
+
+---
+
+## Evaluated Datasets and Data Sources
+
+The repository contains the schemas, external knowledge materials, and pipeline outputs used in the evaluation. The original input CSV files are not redistributed; obtain the source data from the links below and place the resulting CSV tables in `Datalakes/<Dataset>/csv/` before running the pipeline. Where a source is distributed as SQL scripts, a database dump, or an API rather than CSV files, use the corresponding source to create the CSV tables.
+
+| Dataset | Description | Tables | Columns | Original data source |
+|---|---|---:|---:|---|
+| Airportdb | Airport flight operations system | 11 | 70 | [MySQL AirportDB documentation](https://dev.mysql.com/doc/airportdb/en/) |
+| DellStore2 | Online DVD retail store system | 8 | 52 | [postgresDBSamples: dellstore2-normal-1.0](https://github.com/morenoh149/postgresDBSamples/tree/master/dellstore2-normal-1.0) |
+| TPC-DS | Retail sales decision-support system | 19 | 370 | [TPC-DS](https://www.tpc.org/tpcds) |
+| Northwind | Specialty-foods trading system | 11 | 84 | [Microsoft SQL Server samples: Northwind](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs) |
+| Sakila | DVD rental store chain system | 13 | 80 | [MySQL Sakila documentation](https://dev.mysql.com/doc/sakila/en/) |
+| JOB | IMDB movies, cast, and crew system | 21 | 28 | [Join Order Benchmark](https://github.com/gregrahn/join-order-benchmark) |
+| FDA Adverse Events | FDA adverse drug-event reporting system | 12 | 74 | [openFDA Drug Event API](https://open.fda.gov/apis/drug/event/) |
+| AdventureWorks | Bicycle manufacturing and sales sample system | 57 | 408 | [Microsoft AdventureWorks releases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) |
+| Mondial | World geography and demographics system | 29 | 118 | [Mondial database](https://www.dbis.informatik.uni-goettingen.de/Mondial/) |
+| Lahman Baseball | Major League Baseball statistics system | 27 | 372 | [Lahman Baseball Database](https://sabr.org/lahman-database/) |
 
 ---
 
