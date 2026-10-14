@@ -133,17 +133,17 @@ DomainMiner/
 |   +-- list_derived_weights.py    # Cross-dataset similarity weight summary
 |   +-- sum_row_col.py             # Dataset table/column totals
 |   +-- extract_erd.py             # Generate ERD files from one schema/subdomain JSON
-+-- erds/                         # ERDs used for evaluation
-|   +-- DomainMiner_ERDs.zip       # Zip archive of all ERDs
-|   +-- <Dataset>/                 # Complete schema and inferred-domain ERDs
-|       +-- schema.png             # ERD of the complete data lake schema
-|       +-- domains_<config>/      # ERDs of the inferred domains
-|           +-- D0_<label>.png     # Domain ERD; filename includes the assigned label
 +-- validation/                   # Expert validation material for review
 |   +-- Questionnaire.pdf          # Blank questionnaire shown to the experts
 |   +-- Expert_Validation_Responses_Anonymized.xlsx
 |   |                              # Coded responses with experts labeled E1-E16
 |   +-- README.txt                 # Validation protocol and file descriptions
+|   +-- erds/                      # ERDs used for evaluation
+|       +-- DomainMiner_ERDs.zip   # Zip archive of all ERDs
+|       +-- <Dataset>/             # Complete schema and inferred-domain ERDs
+|           +-- schema.png         # ERD of the complete data lake schema
+|           +-- domains_<config>/  # ERDs of the inferred domains
+|               +-- D0_<label>.png # Domain ERD; filename includes the assigned label
 +-- Datalakes/                    # Evaluated datasets and reproducibility materials
     +-- <YourDataset>/
         +-- csv/                   # Put all CSV files here
@@ -162,7 +162,7 @@ DomainMiner/
             +-- tune_params_summary.txt
 ```
 
-The `erds/` folder contains the ERDs used during evaluation, including full data lake schema ERDs and ERDs for the inferred labeled domains. The `validation/` folder contains only anonymized expert validation material. The original Google Forms export is not included because it contains identifying information such as names, email addresses, and timestamps.
+The `validation/erds/` folder contains the ERDs used during evaluation, including full data-lake schema ERDs and ERDs for the inferred labeled domains. The remaining files in `validation/` contain anonymized expert-validation material. The original Google Forms export is not included because it contains identifying information such as names, email addresses, and timestamps.
 
 ---
 
@@ -631,16 +631,16 @@ Generates Mermaid (`.mmd`) and Graphviz (`.dot`) ERD files from a single DomainM
 Run the script from the DomainMiner root. To generate the ERD of a complete data lake schema:
 
 ```bash
-python tools/extract_erd.py Datalakes/Sakila/schema.json --out erds/Sakila
+python tools/extract_erd.py Datalakes/Sakila/schema.json --out validation/erds/Sakila
 ```
 
 This writes:
 
 ```text
-erds/Sakila/schema.mmd
-erds/Sakila/schema.dot
-erds/Sakila/schema.svg   # if Graphviz is available
-erds/Sakila/schema.png   # if Graphviz is available
+validation/erds/Sakila/schema.mmd
+validation/erds/Sakila/schema.dot
+validation/erds/Sakila/schema.svg   # if Graphviz is available
+validation/erds/Sakila/schema.png   # if Graphviz is available
 ```
 
 To generate the ERD of one inferred domain, pass the corresponding domain JSON file and choose an output folder for that pipeline configuration:
@@ -648,27 +648,27 @@ To generate the ERD of one inferred domain, pass the corresponding domain JSON f
 ```bash
 python tools/extract_erd.py \
   Datalakes/Sakila/ccm_output/tA0.6_tT0.75_r1.0/domains/domain_01.json \
-  --out erds/Sakila/domains_tA0.6_tT0.75_r1.0
+  --out validation/erds/Sakila/domains_tA0.6_tT0.75_r1.0
 ```
 
 This writes files named after the input JSON stem, for example:
 
 ```text
-erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.mmd
-erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.dot
-erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.svg   # if Graphviz is available
-erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.png   # if Graphviz is available
+validation/erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.mmd
+validation/erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.dot
+validation/erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.svg   # if Graphviz is available
+validation/erds/Sakila/domains_tA0.6_tT0.75_r1.0/domain_01.png   # if Graphviz is available
 ```
 
 Use `--no-render` when you only need Mermaid and Graphviz source files, or when Graphviz is not installed:
 
 ```bash
-python tools/extract_erd.py Datalakes/Sakila/schema.json --out erds/Sakila --no-render
+python tools/extract_erd.py Datalakes/Sakila/schema.json --out validation/erds/Sakila --no-render
 ```
 
-If `--out` is omitted, outputs are written to an `erd/` folder next to the input JSON file. For review artifacts, use the explicit `erds/<Dataset>/` structure shown above so complete-schema ERDs and inferred-domain ERDs are easy to find.
+If `--out` is omitted, outputs are written to an `erd/` folder next to the input JSON file. For review artifacts, use the explicit `validation/erds/<Dataset>/` structure shown above so complete-schema ERDs and inferred-domain ERDs are easy to find.
 
-The checked-in `erds/` folder contains the evaluation ERDs already generated for the submitted experiments. Its `schema.png` files show complete data lake schemas; its `domains_<config>/D<index>_<label>.png` files show the inferred domains, with the generated domain label included in each filename.
+The checked-in `validation/erds/` folder contains the evaluation ERDs already generated for the submitted experiments. Its `schema.png` files show complete data-lake schemas; its `domains_<config>/D<index>_<label>.png` files show the inferred domains, with the generated domain label included in each filename.
 
 ---
 **Tables/Domain ratio** = Total Tables / Domains for the best-Q configuration. Lower values indicate finer-grained domain separation (e.g. eicu at 1.18); higher values indicate coarser clustering relative to schema size (e.g. adventure_works at 5.70). Generated automatically by `tools/list_best_configs.py`.
